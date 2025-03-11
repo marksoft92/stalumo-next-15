@@ -15,10 +15,30 @@ export default async function NavBar() {
         loading="lazy"
       />
       <div>
-        <Link href="/home">{t("home")}</Link>
-        <Link href="/about">{t("about")}</Link>
-        <Link href="/gallery">{t("gallery")}</Link>
-        <Link href="/contact">{t("contact")}</Link>
+        <Link
+          className="uppercase font-bold text-[1rem] font-oswald px-[20px] hover:text-[#EB4036]"
+          href="/home"
+        >
+          {t("home")}
+        </Link>
+        <Link
+          className="uppercase font-bold text-[1rem] font-oswald px-[20px] hover:text-[#EB4036]"
+          href="/about"
+        >
+          {t("about")}
+        </Link>
+        <Link
+          className="uppercase font-bold text-[1rem] font-oswald px-[20px] hover:text-[#EB4036]"
+          href="/gallery"
+        >
+          {t("gallery")}
+        </Link>
+        <Link
+          className="uppercase font-bold text-[1rem] font-oswald px-[20px] hover:text-[#EB4036]"
+          href="/contact"
+        >
+          {t("contact")}
+        </Link>
       </div>
 
       <LocaleSwitcher />
