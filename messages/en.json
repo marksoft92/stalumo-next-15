@@ -1,0 +1,23 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "welcome": {
+      "title": "Welcome to the home page"
+    },
+    "contact": "Contact",
+    "gallery": "Gallery",
+    "about": "About us",
+    "home": "Home"
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit"
+  },
+  "validation": {
+    "invalid": "Email invalid",
+    "required": "Name required",
+    "min": "Message required to be at least 10 characters"
+  }
+}
