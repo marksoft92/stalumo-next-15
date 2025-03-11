@@ -17,7 +17,7 @@ export default async function NavBar() {
       <div>
         <Link
           className="uppercase font-bold text-[1rem] font-oswald px-[20px] hover:text-[#EB4036]"
-          href="/home"
+          href="/"
         >
           {t("home")}
         </Link>

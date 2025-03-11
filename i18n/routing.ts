@@ -8,10 +8,10 @@ export const routing = defineRouting({
   // Used when no locale matches
   defaultLocale: "en",
   pathnames: {
-    "/home": {
-      en: "/home",
-      pl: "/strona-glowna",
-      de: "/heim",
+    "/": {
+      en: "/",
+      pl: "/",
+      de: "/",
     },
     "/about": {
       en: "/about-us",
