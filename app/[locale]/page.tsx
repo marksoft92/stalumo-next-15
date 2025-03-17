@@ -1,3 +1,4 @@
+import About from "@/components/sections/home/AboutUs";
 import Excellence from "@/components/sections/home/Excellence";
 import Steps from "@/components/sections/home/Steps";
 import Container from "@/components/ui/container";
@@ -11,6 +12,7 @@ export default async function HomePage() {
       <Container>
         <Excellence />
         <Steps />
+        <About />
       </Container>
     </>
   );
