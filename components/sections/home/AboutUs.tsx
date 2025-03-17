@@ -63,7 +63,7 @@ const AboutUs: React.FC = () => {
           najwyższej jakości, ale także satysfakcję i pewność, że ich
           oczekiwania zostały spełnione ponad oczekiwania.
         </p>
-        <Button href="/AboutUs" title={"Więcej o nas"} />
+        <Button href="/about" title={"Więcej o nas"} />
       </div>
     </section>
   );

@@ -34,7 +34,7 @@ const Excellence: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col items-center gap-[20px]">
-          <div className="h-full h-[200px] m-0 p-0 border-solid border-[0px] border-r-[1px] border-t-0 border-b-0 border-l-0 border-[#A5A5A5]"></div>
+          <div className="h-[200px] m-0 p-0 border-solid border-[0px] border-r-[1px] border-t-0 border-b-0 border-l-0 border-[#A5A5A5]"></div>
           <a
             href="#"
             className="box-content hover:bg-[#EB4036] transition-all duration-300 ease-in-out
