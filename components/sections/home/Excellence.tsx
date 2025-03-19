@@ -14,7 +14,6 @@ const Excellence: React.FC = () => {
   ];
   return (
     <>
-      {" "}
       <BackgroundSlider images={images} />
       <section className="min-h-[80vh] excellence py-20 flex flex-row relative mx-auto max-w-[1280px] p-4">
         <div className="w-[97%] ">

@@ -6,12 +6,14 @@ interface BackgroundSliderProps {
   images: string[];
   interval?: number;
   maxZoom?: number;
+  maxHeight?: string;
 }
 
 const BackgroundSlider: React.FC<BackgroundSliderProps> = ({
   images,
   interval = 6000,
   maxZoom = 1.05,
+  maxHeight,
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [zoom, setZoom] = useState(1);
@@ -48,9 +50,11 @@ const BackgroundSlider: React.FC<BackgroundSliderProps> = ({
 
   return (
     <>
-      <div className="w-full h-screen absolute left-0 bg-[#121212]/90"></div>
       <div
-        className="w-full h-screen bg-cover bg-center absolute z-[-1] transition-transform duration-[5000ms] ease-linear left-0"
+        className={`w-full h-screen absolute left-0 bg-[#121212]/90 max-h-[${maxHeight}]`}
+      ></div>
+      <div
+        className={`w-full h-screen bg-cover bg-center absolute z-[-1] transition-transform duration-[5000ms] ease-linear left-0 max-h-[${maxHeight}]`}
         style={{
           backgroundImage: `url(${images[currentImageIndex]})`,
           transform: `scaleX(${zoom})`,
