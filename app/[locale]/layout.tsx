@@ -7,6 +7,7 @@ import { getMessages } from "next-intl/server";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const oswaldVariable = localFont({
   src: "./fonts/Oswald-VariableFont_wght.ttf",
@@ -42,6 +43,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
