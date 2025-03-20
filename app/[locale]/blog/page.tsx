@@ -1,51 +1,44 @@
-"use client";
-import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { Metadata } from "next";
 import Container from "@/components/ui/container";
-// import { Metadata } from "next";
+import BlogPage from "@/components/BlogPage";
 
-// export const metadata: Metadata = {
-//   title: "Blog | My Website",
-//   description: "Najświeższe artykuły na temat X, Y, Z.",
-//   alternates: {
-//     canonical: "/blog",
-//   },
-//   openGraph: {
-//     title: "Blog | My Website",
-//     description: "Najświeższe artykuły na temat X, Y, Z.",
-//     url: "/blog",
-//     siteName: "My Website",
-//     type: "website",
-//   },
-// };
+// Funkcja do generowania metadanych SEO
+export const metadata: Metadata = {
+  title: "Blog | My Website",
+  description: "Najświeższe artykuły na temat X, Y, Z.",
+  openGraph: {
+    title: "Blog | My Website",
+    description: "Najświeższe artykuły na temat X, Y, Z.",
+    url: "/blog",
+    siteName: "My Website",
+    type: "website",
+  },
+};
 
-const BlogPage = () => {
-  const { locale } = useParams(); // Pobiera język z URL-a
-  const [posts, setPosts] = useState([]);
-  const [page, setPage] = useState(1);
-  const [total, setTotal] = useState(0);
+// Pobieranie początkowych postów z API
+const fetchPosts = async (lang: string, page: number, limit: number) => {
+  const res = await fetch(
+    `http://localhost:3001/api/blog?lang=${lang}&page=${page}`
+  );
+  if (!res.ok) {
+    throw new Error("Failed to fetch posts");
+  }
+  const data = await res.json();
+  return data.posts;
+};
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const res = await fetch(`/api/blog?lang=${locale}&page=${page}`);
-      const data = await res.json();
-      setPosts(data.posts);
-      setTotal(data.total);
-    };
-    fetchPosts();
-  }, [locale, page]);
+const BlogPageContainer = async ({
+  params,
+}: {
+  params: { locale: string };
+}) => {
+  const posts = await fetchPosts(params.locale, 1, 5);
 
   return (
     <Container>
-      <div>
-        <h1>Blog ({locale})</h1>
-        {/* <BlogList posts={posts} /> */}
-        {posts.length < total && (
-          <button onClick={() => setPage(page + 1)}>Załaduj więcej</button>
-        )}
-      </div>
+      <BlogPage initialPosts={posts} />
     </Container>
   );
 };
 
-export default BlogPage;
+export default BlogPageContainer;
