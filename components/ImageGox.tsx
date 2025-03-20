@@ -27,8 +27,9 @@ const BoxImg: React.FC<BoxImgProps> = ({ src, alt }) => {
           height={300}
           alt={alt}
           src={src}
+          className="object-cover cursor-pointer h-full "
           loading="lazy"
-          layout="responsive"
+          // layout="responsive"
         />
       </div>
 

@@ -28,6 +28,11 @@ export const routing = defineRouting({
       pl: "/kontakt",
       de: "/kontaktiere-mich",
     },
+    "/blog": {
+      en: "/blog",
+      pl: "/blog",
+      de: "/blog",
+    },
   },
 });
 

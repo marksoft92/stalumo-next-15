@@ -39,6 +39,12 @@ export default async function NavBar() {
         >
           {t("contact")}
         </Link>
+        <Link
+          className="uppercase font-bold text-[1rem] font-oswald px-[20px] hover:text-[#EB4036]"
+          href="/blog"
+        >
+          {t("blog")}
+        </Link>
       </div>
 
       <LocaleSwitcher />
