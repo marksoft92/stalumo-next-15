@@ -1,28 +1,34 @@
-"use client";
-import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import ArticleBox from "@/components/ArticleBox";
+import Container from "@/components/ui/container";
 
-const BlogPostPage = () => {
-  const { slug, locale } = useParams();
-  const [post, setPost] = useState(null);
+// Funkcja do generowania metadanych SEO
 
-  useEffect(() => {
-    const fetchPost = async () => {
-      const res = await fetch(`/api/blog/${slug}?lang=${locale}`);
-      const data = await res.json();
-      setPost(data);
-    };
-    fetchPost();
-  }, [slug, locale]);
+// Pobieranie początkowych postów z API
+const fetchPosts = async (lang: string, slug: string) => {
+  const res = await fetch(
+    `http://localhost:3001/api/blog/${slug}?lang=${lang}`
+  );
+  if (!res.ok) {
+    throw new Error("Failed to fetch posts");
+  }
+  const data = await res.json();
+  return data;
+};
 
-  if (!post) return <p>Ładowanie...</p>;
+const ArticlePageContainer = async ({
+  params,
+}: {
+  params: { locale: string; slug: string };
+}) => {
+  const data = await params;
+
+  const article = await fetchPosts(data.locale, data?.slug);
 
   return (
-    <article>
-      {/* <h1>{post.title}</h1>
-      <p>{post.content}</p> */}
-    </article>
+    <Container>
+      <ArticleBox article={article} />
+    </Container>
   );
 };
 
-export default BlogPostPage;
+export default ArticlePageContainer;

@@ -51,10 +51,10 @@ const BackgroundSlider: React.FC<BackgroundSliderProps> = ({
   return (
     <>
       <div
-        className={`w-full h-screen absolute left-0 bg-[#121212]/90 max-h-[${maxHeight}]`}
+        className={`max-h-[${maxHeight}] w-full h-screen absolute left-0 bg-[#121212]/90`}
       ></div>
       <div
-        className={`w-full h-screen bg-cover bg-center absolute z-[-1] transition-transform duration-[5000ms] ease-linear left-0 max-h-[${maxHeight}]`}
+        className={`max-h-[${maxHeight}] w-full h-screen bg-cover bg-center absolute z-[-1] transition-transform duration-[5000ms] ease-linear left-0`}
         style={{
           backgroundImage: `url(${images[currentImageIndex]})`,
           transform: `scaleX(${zoom})`,

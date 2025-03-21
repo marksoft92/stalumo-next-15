@@ -2,6 +2,7 @@ import allPosts from "@/lib/dataBlog";
 import { NextRequest } from "next/server";
 
 export async function GET(req: NextRequest) {
+  console.log("1");
   const { searchParams } = new URL(req.url);
   const lang = searchParams.get("lang") || "de";
   const page = parseInt(searchParams.get("page") || "1", 10);
