@@ -17,12 +17,12 @@ const Excellence: React.FC = () => {
       <BackgroundSlider images={images} />
       <section className="min-h-[80vh] excellence py-20 flex flex-row relative mx-auto max-w-[1280px] p-4">
         <div className="w-[97%] ">
-          <div className="text-left w-[52%] max-w-[52%] flex-grow-0 flex flex-col">
+          <div className="text-left lg:w-[70%] lg:max-w-[70%] flex-grow-0 flex flex-col">
             <h4 className="text-[#EB4036] font-oswald text-base font-semibold uppercase leading-[0.9em] tracking-[3.8px] relative">
               Doskonałe wykonanie
-              <div className="w-[15%] max-w-[15%] flex-grow-0 absolute top-[-30px] left-[450px] h-[50px] bg-transparent bg-gradient-to-r from-[#EB4036] to-[#02010100] opacity-[0.8]"></div>
+              <div className="hidden w-[15%] max-w-[15%] flex-grow-0 absolute top-[-30px] left-[450px] h-[50px] bg-transparent bg-gradient-to-r from-[#EB4036] to-[#02010100] opacity-[0.8]"></div>
             </h4>
-            <h1 className="mt-10 mb-10  --font-oswald text-[#FFFFFF] font-oswald text-[6.7rem] font-semibold uppercase leading-[1em] tracking-[3.8px]">
+            <h1 className="mt-10 mb-10 leading-tight --font-oswald text-[#FFFFFF] font-oswald text-[6.7rem] font-semibold uppercase leading-[1em] tracking-[3.8px] max-lg:text-[2.5rem]">
               Wypalone iskry rodzą doskonałość
             </h1>
             <p className="pt-[10px] pl-0 pr-0 pb-0 text-[#A5A5A5] font-raleway text-[1.2rem] font-normal leading-[1.6em] tracking-[1.6px] word-spacing-[normal] flex-grow-0">

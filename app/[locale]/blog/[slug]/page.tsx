@@ -1,12 +1,13 @@
 import ArticleBox from "@/components/ArticleBox";
 import Container from "@/components/ui/container";
 
+import { generateMetadata } from "./metadata";
 // Funkcja do generowania metadanych SEO
 
 // Pobieranie początkowych postów z API
 const fetchPosts = async (lang: string, slug: string) => {
   const res = await fetch(
-    `http://localhost:3001/api/blog/${slug}?lang=${lang}`
+    `http://localhost:3000/api/blog/${slug}?lang=${lang}`
   );
   if (!res.ok) {
     throw new Error("Failed to fetch posts");
@@ -30,5 +31,5 @@ const ArticlePageContainer = async ({
     </Container>
   );
 };
-
+export { generateMetadata };
 export default ArticlePageContainer;

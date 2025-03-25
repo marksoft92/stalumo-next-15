@@ -5,7 +5,7 @@ import Button from "@/components/ui/button";
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto">
+    <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto max-lg:flex-col">
       <div className="relative">
         <div>
           {" "}
@@ -29,7 +29,7 @@ const AboutUs: React.FC = () => {
             layout="responsive"
           />
         </div>
-        <div className="bg-transparent bg-gradient-to-l from-[#02010100] to-[#EB4036] absolute bottom-[0] right-[-2rem] max-h-[215px] flex items-center flex-row p-[32px]">
+        <div className="bg-transparent bg-gradient-to-l from-[#02010100] to-[#EB4036] absolute bottom-[0] lg:right-[-2rem] max-h-[215px] flex items-center flex-row p-[32px]">
           <Image
             src="/assets/images/icons/Icon-4.png"
             width={100}
@@ -47,9 +47,9 @@ const AboutUs: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-full lg:max-w-[50%] flex justify-center flex-col gap-5">
+      <div className="max-w-full lg:max-w-[50%] flex justify-center flex-col gap-5 max-lg:text-center max-lg:items-center max-lg:py-10">
         <h4 className="text-[#EB4036] text-[1rem] font-semibold">O NAS</h4>
-        <h2 className="text-[3.5rem] font-semibold uppercase">
+        <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem]">
           Kunszt spawalniczy kujący doskonałość
         </h2>
         <p className="text-[#A5A5A5] text-[1.2rem]">

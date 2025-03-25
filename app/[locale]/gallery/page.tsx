@@ -58,7 +58,7 @@ export default function GalleryPage() {
             </span>
           </h3>
         </div>
-        <section className="grid grid-cols-3 gap-5 my-10">
+        <section className="grid grid-cols-3 gap-5 my-10 max-lg:flex max-lg:flex-col max-lg:items-center">
           {images.map((imageUrl, index) => (
             <BoxImg key={index} src={imageUrl} alt={`Image ${index + 1}`} />
           ))}

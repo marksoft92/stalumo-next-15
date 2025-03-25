@@ -5,7 +5,7 @@ import Button from "@/components/ui/button";
 
 const OurProcess: React.FC = () => {
   return (
-    <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto">
+    <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto max-lg:flex-col">
       <div className="relative">
         <div>
           {" "}
@@ -47,7 +47,7 @@ const OurProcess: React.FC = () => {
           </div>
         </div> */}
 
-        <div className="bg-transparent bg-gradient-to-l from-[#02010100] to-[#EB4036] absolute bottom-[-5rem] right-[-5rem] max-h-[300px] flex items-center flex-row p-[32px]">
+        <div className="bg-transparent bg-gradient-to-l from-[#02010100] to-[#EB4036] lg:absolute lg:bottom-[-5rem] lg:right-[-5rem] lg:max-h-[300px] lg:flex items-center flex-row p-[32px] ">
           <div>
             <Image
               src="/assets/images/icons/Number-1.png"
@@ -108,11 +108,11 @@ const OurProcess: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-full lg:max-w-[50%] flex justify-center flex-col gap-5">
-        <h4 className="text-[#EB4036] text-[1rem] font-semibold">
+      <div className="max-w-full lg:max-w-[50%] flex justify-center flex-col gap-5 max-lg:text-center max-lg:py-10 items-center">
+        <h4 className="text-[#EB4036] text-[1rem] font-semibold max-lg:not">
           NASZ PROCES
         </h4>
-        <h2 className="text-[3.5rem] font-semibold uppercase">
+        <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem]">
           NAJLEPSZE DOŚWIADCZENIE W REALIZACJI
         </h2>
         <p className="text-[#A5A5A5] text-[1.2rem]">

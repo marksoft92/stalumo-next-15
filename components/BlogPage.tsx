@@ -42,7 +42,7 @@ const BlogPage = ({ initialPosts }: { initialPosts: BlogPost[] }) => {
     const newPage = page + 1;
     const res = await fetch(`/api/blog?lang=${locale}&page=${newPage}&limit=5`);
     const data = await res.json();
-    setPosts((prevPosts) => [...prevPosts, ...data?.posts]);
+    setPosts((prevPosts) => [...prevPosts, ...(data?.posts || [])]);
     setPage(newPage);
     setLoading(false);
   };

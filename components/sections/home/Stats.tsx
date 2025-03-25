@@ -5,12 +5,12 @@ import Button from "@/components/ui/button";
 
 const Stats: React.FC = () => {
   return (
-    <section className="flex items-center  justify-center p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem]">
+    <section className="flex items-center  justify-center p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] max-lg:m-[1rem] max-lg:flex-col">
       <div className="flex flex-col items-center justify-center">
         <h4 className="text-[#A5A5A5] text-[1.2rem] font-semibold uppercase ">
           Godziny ekspertyzy
         </h4>
-        <h2 className="text-[5.5rem] font-semibold uppercase">
+        <h2 className="text-[5.5rem] font-semibold uppercase max-lg:flex">
           1000 <span className="text-[#EB4036]">+</span>
         </h2>
       </div>
@@ -18,7 +18,7 @@ const Stats: React.FC = () => {
         <h4 className="text-[#A5A5A5] text-[1.2rem] font-semibold uppercase ">
           Zadowoleni klienci
         </h4>
-        <h2 className="text-[5.5rem] font-semibold uppercase">
+        <h2 className="text-[5.5rem] font-semibold uppercase max-lg:flex">
           50 <span className="text-[#EB4036]">+</span>
         </h2>
       </div>
@@ -26,7 +26,7 @@ const Stats: React.FC = () => {
         <h4 className="text-[#A5A5A5] text-[1.2rem] font-semibold uppercase">
           Wykonanych projektów
         </h4>
-        <h2 className="text-[5.5rem] font-semibold uppercase">
+        <h2 className="text-[5.5rem] font-semibold uppercase max-lg:flex">
           115 <span className="text-[#EB4036]">+</span>
         </h2>
       </div>

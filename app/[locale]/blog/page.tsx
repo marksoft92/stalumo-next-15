@@ -17,14 +17,19 @@ export const metadata: Metadata = {
 
 // Pobieranie początkowych postów z API
 const fetchPosts = async (lang: string, page: number, limit: number) => {
-  const res = await fetch(
-    `http://localhost:3001/api/blog?lang=${lang}&page=${page}`
-  );
-  if (!res.ok) {
-    throw new Error("Failed to fetch posts");
+  try {
+    const res = await fetch(
+      `http://localhost:3000/api/blog?lang=${lang}&page=${page}`
+    );
+    if (!res.ok) {
+      throw new Error("Failed to fetch posts");
+    }
+    const data = await res.json();
+    return data.posts;
+  } catch {
+    console.error("Błąd podczas pobierania postów:");
+    return [];
   }
-  const data = await res.json();
-  return data.posts;
 };
 
 const BlogPageContainer = async ({
@@ -37,7 +42,11 @@ const BlogPageContainer = async ({
 
   return (
     <Container>
-      <BlogPage initialPosts={posts} />
+      {(posts?.length && <BlogPage initialPosts={posts} />) || (
+        <>
+          <h2>Brak wpisów</h2>
+        </>
+      )}
     </Container>
   );
 };

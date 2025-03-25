@@ -1,30 +1,65 @@
-import allPosts from "@/lib/dataBlog";
+import { PrismaClient } from "@prisma/client";
 import { NextRequest } from "next/server";
 
+const prisma = new PrismaClient();
+
+interface BlogContent {
+  slug: string;
+  title: string;
+  content: string;
+  lang: string;
+}
+
 export async function GET(req: NextRequest, { params }: { params: any }) {
-  // const { searchParams } = new URL(req.url);
-  // const lang = searchParams.get("lang") || "en"; // Domyślnie angielski
-  // const slug = params.slug; // Używamy slug z params
-  // const allPostsFlat = Object.values(allPosts).flat(); // Łączenie wszystkich postów z różnych języków
-  // // Znajdź post po slug w całym zbiorze postów
-  // const postInAnyLanguage = allPostsFlat.find((p) => p.slug === slug);
-  // if (!postInAnyLanguage) {
-  //   return new Response(JSON.stringify({ error: "Post not found" }), {
-  //     status: 404,
-  //   });
-  // }
-  // // Teraz używamy id, aby znaleźć post w odpowiednim języku
-  // const post = allPosts[lang]?.find((p) => p.id === postInAnyLanguage.id);
-  // if (!post) {
-  //   return new Response(
-  //     JSON.stringify({ error: "Post not found in the selected language" }),
-  //     {
-  //       status: 404,
-  //     }
-  //   );
-  // }
-  // return new Response(JSON.stringify(post), {
-  //   status: 200,
-  //   headers: { "Content-Type": "application/json" },
-  // });
+  const { searchParams } = new URL(req.url);
+  const lang = searchParams.get("lang") || "en"; // Domyślny język angielski
+  const slug = params.slug; // Slug pobrany z URL
+
+  try {
+    // Zapytanie do bazy danych, aby znaleźć post na podstawie sluga i języka
+    const post = await prisma.blogTranslation.findFirst({
+      where: {
+        slug,
+        lang,
+      },
+      include: {
+        blog: true, // Uwzględnij dane z głównego bloga (np. imgUrl, alt)
+      },
+    });
+
+    if (!post) {
+      return new Response(JSON.stringify({ error: "Post not found" }), {
+        status: 404,
+      });
+    }
+
+    // Zwrócenie danych w odpowiednim języku
+    const translatedPost: BlogContent = {
+      slug: post.slug,
+      title: post.title,
+      content: post.content,
+      lang: post.lang,
+    };
+
+    return new Response(
+      JSON.stringify({
+        id: post.blog.id, // Pobierz id z głównej tabeli Blog
+        imgUrl: post.blog.imgUrl,
+        alt: post.blog.alt,
+        slug: translatedPost.slug,
+        title: translatedPost.title,
+        content: translatedPost.content,
+        lang: translatedPost.lang,
+      }),
+      {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
+  } catch (error) {
+    console.error(error);
+    return new Response(JSON.stringify({ error: "Error fetching post" }), {
+      status: 500,
+    });
+  }
 }

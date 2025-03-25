@@ -11,7 +11,7 @@ export default async function NavBar() {
   const t = await getTranslations("HomePage");
   return (
     <>
-      <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px]">
+      <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px] max-lg:flex-col">
         <Image
           src="/assets/images/stalumo.png"
           width={330}
@@ -19,7 +19,7 @@ export default async function NavBar() {
           alt="Logo Stalumo"
           loading="lazy"
         />
-        <div className="flex gap-5">
+        <div className="flex gap-5 max-lg:flex-col">
           <div className="flex flex-col gap-5">
             <span className="text-[#EB4036] border-[#EB4036] text-[1rem]">
               <SvgIcon className="!text-[3rem]">

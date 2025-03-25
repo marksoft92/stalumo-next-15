@@ -21,6 +21,7 @@ const BlogList = ({ article }: { article: Article }) => {
           alt={article?.alt}
           loading="lazy"
           layout="responsive"
+          className="max-h-[300px] object-cover"
         />
         <div className="flex flex-col gap-5">
           <h2 className="text-[rgb(235,64,54)]">{article.title}</h2>

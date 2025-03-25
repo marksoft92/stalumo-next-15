@@ -18,6 +18,7 @@ const oswaldVariable = localFont({
 export const metadata: Metadata = {
   title: "Stalumo",
   description: "Stalumo opis",
+  viewport: 'name="viewport" content="width=device-width, initial-scale=1.0"',
 };
 
 export default async function RootLayout({
@@ -35,7 +36,7 @@ export default async function RootLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
   return (
-    <html lang={locale}>
+    <html lang={locale} className="">
       <body
         className={`${oswaldVariable.variable} antialiased`}
         style={{ fontFamily: "var(--font-oswald), sans-serif" }}

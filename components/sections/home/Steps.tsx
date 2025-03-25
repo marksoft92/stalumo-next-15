@@ -5,7 +5,7 @@ import Button from "@/components/ui/button";
 
 const Steps: React.FC = () => {
   return (
-    <section className=" p-20 steps py-20 flex flex-row w-auto h-full flex-grow self-stretch gap-0 transition-bg duration-300 mt-[-77px] mb-0 ml-0 mr-0 relative gap-[30px] items-end">
+    <section className=" p-1 lg:p-20 steps py-20 flex flex-row w-auto h-full flex-grow self-stretch gap-0 transition-bg duration-300 mt-[-77px] mb-0 ml-0 mr-0 relative gap-[30px] items-end max-lg:flex-col max-lg:flex-col-reverse">
       <div className="flex-1 flex flex-col gap-4 h-full">
         <div className="flex flex-row items-end">
           <Image
@@ -70,7 +70,7 @@ const Steps: React.FC = () => {
         </p>
       </div>
 
-      <div className="bg-red-500 h-[466px] opacity-100 justify-between py-8 px-8 w-[31%] flex flex-col gap-4 h-full relativ bg-[url('/assets/images/spawacz10years.png')] bg-contain bg-no-repeat bg-[6rem]">
+      <div className="bg-red-500 h-[466px] opacity-100 justify-between py-8 px-8 lg:w-[31%] flex flex-col gap-4 h-full relativ bg-[url('/assets/images/spawacz10years.png')] bg-contain bg-no-repeat bg-[6rem]">
         <div className="flex flex-row items-end">
           <h4 className="text-xl font-semibold uppercase leading-[1.3em] tracking-[1.6px]">
             <strong

@@ -27,7 +27,7 @@ const RealizationBox: React.FC<RealizationBoxProps> = ({
           <h4 className="text-[#EB4036] text-[1rem]  font-semibold uppercase">
             {subTitle}
           </h4>
-          <h3 className="flex text-[2rem] font-semibold uppercase   my-[1rem]">
+          <h3 className="flex text-[2rem] font-semibold uppercase   my-[1rem] max-lg:text-[1.6rem]">
             {title}
           </h3>
         </div>

@@ -5,12 +5,12 @@ import Button from "@/components/ui/button";
 
 const VisionMission: React.FC = () => {
   return (
-    <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto">
-      <div className="max-w-full lg:max-w-[50%] flex justify-center flex-col gap-5">
+    <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto max-lg:flex-col">
+      <div className="max-w-full lg:max-w-[50%] flex justify-center flex-col gap-5 max-lg:text-center">
         <h4 className="text-[#EB4036] text-[1rem] font-semibold uppercase">
           Wizja i Misja
         </h4>
-        <h2 className="text-[3.5rem] font-semibold uppercase">
+        <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem]">
           KUJEMY POŁĄCZENIA. ROZPALAMY POSTĘP.
         </h2>
         <p className="text-[#A5A5A5] text-[1.2rem]">
@@ -56,9 +56,9 @@ const VisionMission: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="relative bg-[url('/assets/images/person_center.png')] bg-cover bg-no-repeat w-full ">
-        <div className="flex justify-end translate-x-[30%]">
-          <h4 className="text-[2rem] w-[55%] p-5 bg-[#EB4036] font-semibold uppercase">
+      <div className="relative bg-[url('/assets/images/person_center.png')] bg-cover bg-no-repeat w-full max-lg:flex max-lg:flex-col">
+        <div className="flex justify-end lg:translate-x-[30%]">
+          <h4 className="text-[2rem] w-[55%] p-5 bg-[#EB4036] font-semibold uppercase max-lg:w-full">
             "STALUMO - <br />{" "}
             <span className="text-[#000]">
               Twój solidny fundament,

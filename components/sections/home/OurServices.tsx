@@ -7,15 +7,15 @@ import IconBox from "@/components/IconBox";
 const OurServices: React.FC = () => {
   return (
     <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto flex-col">
-      <div className="w-full flex justify-center flex-col justify-center gap-5 items-center">
+      <div className="w-full flex justify-center flex-col justify-center gap-5 items-center max-lg:text-center">
         <h4 className="text-[#EB4036] text-[1rem]  font-semibold uppercase">
           Wizja i Misja
         </h4>
-        <h2 className="text-[3.5rem] font-semibold uppercase">
+        <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem]">
           KUJEMY POŁĄCZENIA. ROZPALAMY POSTĘP.
         </h2>
       </div>
-      <div className="grid grid-cols-3 gap-5 mt-[2rem]">
+      <div className="grid grid-cols-3 gap-5 mt-[2rem] max-lg:flex max-lg:flex-col">
         <IconBox
           iconUrl={"/assets/images/icons/Icon-5.png"}
           title={"Spawanie balustrad i ogrodzeń"}

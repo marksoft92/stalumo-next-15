@@ -33,18 +33,21 @@ const BlogList = ({ posts }: { posts: BlogPost[] }) => {
             href={`/${locale}/blog/${postContent.slug}`}
             className="opacity-100 hover:opacity-50 transition duration-300"
           >
-            <div className="flex gap-5 my-[2rem] border-b-[1px] border-[rgb(165 165 165)] p-[1rem]">
+            <div className="flex gap-5 my-[2rem] border-b-[1px] border-[rgb(165 165 165)] p-[1rem] max-lg:flex-col">
               <Image
                 src={post.imgUrl}
                 width={300}
                 height={300}
                 alt={post.alt}
                 loading="lazy"
+                className="max-h-[300]"
               />
               <div className="flex flex-col gap-5">
                 <h2 className="text-[rgb(235,64,54)]">{postContent.title}</h2>
                 <p
-                  dangerouslySetInnerHTML={{ __html: postContent.content }}
+                  dangerouslySetInnerHTML={{
+                    __html: postContent?.content?.slice(0, 300) + "...",
+                  }}
                 ></p>
               </div>
             </div>

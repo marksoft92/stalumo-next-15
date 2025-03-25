@@ -29,7 +29,7 @@ export default async function AboutPage() {
             </span>
           </h3>
         </div>
-        <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto">
+        <section className="flex  f-row p-7rem py-0 lg:gap-x-[70px] gap-y-0 m-[10rem] mx-auto max-lg:flex-col">
           <div className="relative">
             <div>
               <Image
@@ -57,7 +57,7 @@ export default async function AboutPage() {
             <h4 className="text-[#EB4036] text-[1rem] font-semibold">
               STALUMO
             </h4>
-            <h2 className="text-[3.5rem] font-semibold uppercase">
+            <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem]">
               Profesjonalne Spawanie i Wyroby Metalowe na Polskim i Niemieckim
               Rynku
             </h2>
