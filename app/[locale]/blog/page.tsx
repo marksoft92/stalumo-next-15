@@ -34,11 +34,7 @@ const fetchPosts = async (lang: string, page: number, limit: number) => {
   }
 };
 
-const BlogPageContainer = async ({
-  params,
-}: {
-  params: { locale: string };
-}) => {
+const BlogPageContainer = async ({ params }: { params: any }) => {
   const data = await params;
   const posts = await fetchPosts(data.locale, 1, 5);
 

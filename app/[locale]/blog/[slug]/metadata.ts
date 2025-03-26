@@ -3,7 +3,7 @@
 import { Metadata } from "next";
 
 // Funkcja do pobierania postów
-const fetchPosts = async (lang: string, slug: string) => {
+const fetchPosts = async (lang: any, slug: any) => {
   const res = await fetch(
     `http://localhost:3000/api/blog/${slug}?lang=${lang}`
   );
@@ -17,7 +17,7 @@ const fetchPosts = async (lang: string, slug: string) => {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string; slug: string };
+  params: any;
 }): Promise<Metadata> {
   const { locale, slug } = params;
 

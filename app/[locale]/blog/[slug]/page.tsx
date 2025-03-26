@@ -1,10 +1,8 @@
 import ArticleBox from "@/components/ArticleBox";
 import Container from "@/components/ui/container";
-
 import { generateMetadata } from "./metadata";
-// Funkcja do generowania metadanych SEO
 
-// Pobieranie początkowych postów z API
+// Funkcja do pobierania danych artykułów
 const fetchPosts = async (lang: string, slug: string) => {
   const res = await fetch(
     `http://localhost:3000/api/blog/${slug}?lang=${lang}`
@@ -16,14 +14,12 @@ const fetchPosts = async (lang: string, slug: string) => {
   return data;
 };
 
-const ArticlePageContainer = async ({
-  params,
-}: {
-  params: { locale: string; slug: string };
-}) => {
-  const data = await params;
+// Poprawiona wersja
+const ArticlePageContainer = async ({ params }: { params: any }) => {
+  // Typy params są poprawnie zadeklarowane, więc nie trzeba używać `await` dla params
+  const { locale, slug } = params;
 
-  const article = await fetchPosts(data.locale, data?.slug);
+  const article = await fetchPosts(locale, slug);
 
   return (
     <Container>
@@ -31,5 +27,6 @@ const ArticlePageContainer = async ({
     </Container>
   );
 };
+
 export { generateMetadata };
 export default ArticlePageContainer;

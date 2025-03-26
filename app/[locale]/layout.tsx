@@ -20,7 +20,7 @@ export function generateMetadata({
 }: {
   params: { locale: Locale };
 }): Metadata {
-  const locale = params.locale;
+  const { locale } = params;
 
   const meta = {
     en: {

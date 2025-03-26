@@ -22,13 +22,15 @@ export default async function NavBar() {
 
   return (
     <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px]">
-      <Image
-        src="/assets/images/stalumo.png"
-        width={145}
-        height={113}
-        alt="Logo Stalumo"
-        loading="lazy"
-      />
+      <Link href="/">
+        <Image
+          src="/assets/images/stalumo.png"
+          width={145}
+          height={113}
+          alt="Logo Stalumo"
+          loading="lazy"
+        />
+      </Link>
       <div className="max-lg:hidden">
         {navLinks.map((link, index) => (
           <Link
