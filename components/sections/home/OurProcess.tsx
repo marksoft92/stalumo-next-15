@@ -2,8 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import Button from "@/components/ui/button";
+import { getTranslations } from "next-intl/server";
+const OurProcess: React.FC = async () => {
+  const t = await getTranslations("HomePage.OurProcess");
 
-const OurProcess: React.FC = () => {
   return (
     <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto max-lg:flex-col">
       <div className="relative">
@@ -29,24 +31,6 @@ const OurProcess: React.FC = () => {
             layout="responsive"
           />
         </div>
-        {/* <div className="bg-transparent bg-gradient-to-l from-[#02010100] to-[#EB4036] absolute bottom-[0] right-[-2rem] max-h-[215px] flex items-center flex-row p-[32px]">
-          <Image
-            src="/assets/images/icons/Icon-4.png"
-            width={100}
-            height={120}
-            className="h-[120px]"
-            alt="ikona projektów"
-            loading="lazy"
-          />
-          <div className="">
-            <h3 className="text-[4.5rem] font-semibold">115 +</h3>
-            <p className="text-[1.5rem] font-semibold uppercase uppercase">
-              Wykonanych
-              <br /> Projektów
-            </p>
-          </div>
-        </div> */}
-
         <div className="bg-transparent bg-gradient-to-l from-[#02010100] to-[#EB4036] lg:absolute lg:bottom-[-5rem] lg:right-[-5rem] lg:max-h-[300px] lg:flex items-center flex-row p-[32px] ">
           <div>
             <Image
@@ -58,13 +42,9 @@ const OurProcess: React.FC = () => {
             />
             <div className="flex  flex-col gap-5">
               <p className="text-[1.5rem] font-semibold uppercase uppercase">
-                Konsultacja i projektowanie
+                {t("count1")}
               </p>
-              <p>
-                Rozpoczynamy od szczegółowej konsultacji, aby ustalić Twoje
-                potrzeby i preferencje. Następnie tworzymy spersonalizowany
-                projekt.
-              </p>
+              <p>{t("count1description")}</p>
             </div>
           </div>
 
@@ -78,13 +58,9 @@ const OurProcess: React.FC = () => {
             />
             <div className="flex  flex-col gap-5">
               <p className="text-[1.5rem] font-semibold uppercase uppercase">
-                Produkcja i spawanie
+                {t("count2")}
               </p>
-              <p>
-                Po zatwierdzeniu projektu, przechodzimy do produkcji i spawania.
-                Nasze doświadczone zespoły zapewniają wysoką jakość i precyzję
-                wykonania.
-              </p>
+              <p>{t("count2description")}</p>
             </div>
           </div>
 
@@ -98,33 +74,25 @@ const OurProcess: React.FC = () => {
             />
             <div className="flex  flex-col gap-5">
               <p className="text-[1.5rem] font-semibold uppercase uppercase">
-                Montaż i dostawa
+                {t("count3")}
               </p>
-              <p>
-                Po produkcji, dostarczamy zamówione elementy na miejsce i
-                dokładnie je montujemy, dbając o każdy detal.
-              </p>
+              <p>{t("count3description")}</p>
             </div>
           </div>
         </div>
       </div>
       <div className="max-w-full lg:max-w-[50%] flex justify-center flex-col gap-5 max-lg:text-center max-lg:py-10 items-center">
         <h4 className="text-[#EB4036] text-[1rem] font-semibold max-lg:not">
-          NASZ PROCES
+          {t("subTitle")}
         </h4>
         <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem]">
-          NAJLEPSZE DOŚWIADCZENIE W REALIZACJI
+          {t("title")}
         </h2>
-        <p className="text-[#A5A5A5] text-[1.2rem]">
-          Nasz proces realizacji zamówień to gwarancja najwyższej jakości i
-          profesjonalizmu na każdym etapie. Dzięki starannej konsultacji,
-          precyzyjnej produkcji i dokładnemu montażowi zapewniamy naszym
-          klientom niezrównane doświadczenie, które spełnia nawet najwyższe
-          oczekiwania. <br />
-          <br />
-          Nasza pasja do doskonałości jest kluczem do sukcesu każdego projektu.
-        </p>
-        <Button href="/contact" title={"Skontaktuj się z nami"} />
+        <p
+          className="text-[#A5A5A5] text-[1.2rem]"
+          dangerouslySetInnerHTML={{ __html: t("description") }}
+        ></p>
+        <Button href="/contact" title={t("button")} />
       </div>
     </section>
   );

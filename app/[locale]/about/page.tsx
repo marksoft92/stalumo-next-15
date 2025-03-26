@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/ui/container";
 import BackgroundSlider from "@/components/BackgroundSilder";
+import { getTranslations } from "next-intl/server";
 
 export default async function AboutPage() {
   const images: string[] = [
@@ -11,22 +12,23 @@ export default async function AboutPage() {
     "/assets/images/spawanie4.jpg",
     "/assets/images/spawanie5.jpg",
   ];
+  const t = await getTranslations("About");
 
   return (
     <Container>
       <BackgroundSlider images={images} maxHeight={"500px"} />
       <div>
         <div className="flex flex-col items-center relative min-h-[500px] justify-center">
-          <h2 className="text-[6rem] font-semibold uppercase">O nas</h2>
+          <h2 className="text-[6rem] font-semibold uppercase">{t("title")}</h2>
           <h3>
             <Link
               className="text-[1.6rem] font-semibold uppercase text-[#EB4036]"
               href="/"
             >
-              Strona Główna
+              {t("homeTitle")}
             </Link>
             <span className="text-[1.6rem] font-semibold uppercase ">
-              /O nas
+              / {t("title")}
             </span>
           </h3>
         </div>
@@ -62,49 +64,10 @@ export default async function AboutPage() {
               Profesjonalne Spawanie i Wyroby Metalowe na Polskim i Niemieckim
               Rynku
             </h2>
-            <p className="text-[#A5A5A5] text-[1.2rem]">
-              Witajcie w Stalumo - firmie z pasją do metalu i zobowiązaniem do
-              doskonałości. Z ponad 10-letnim doświadczeniem na rynku polskim i
-              niemieckim, jesteśmy dumni z naszej reputacji jako solidnego
-              partnera w branży metalowej.
-              <br /> <br />
-              Od samego początku naszej działalności w 2010 roku, nieustannie
-              dążymy do podnoszenia standardów jakości i profesjonalizmu w
-              naszej pracy. Nasze usługi obejmują szeroki zakres działań,
-              począwszy od spawania po produkcję bram, ogrodzeń, balustrad,
-              balkonów, aż po wiaty i ogrody zimowe - zawsze z dbałością o
-              detale i precyzję wykonania.
-              <br /> <br />
-              Jesteśmy przekonani, że nasze produkty i usługi wyróżniają się nie
-              tylko doskonałą jakością, ale także elastycznością i indywidualnym
-              podejściem do potrzeb klienta. Każde zamówienie traktujemy jako
-              wyjątkowe i dostosowujemy nasze rozwiązania do konkretnych
-              wymagań, gwarantując satysfakcję nawet najbardziej wymagających
-              klientów. <br />
-              <br />
-              Co nas wyróżnia? Oprócz naszego zaangażowania w dostarczanie
-              produktów najwyższej jakości, jesteśmy również zgranym zespołem
-              profesjonalistów, gotowym sprostać nawet najbardziej
-              skomplikowanym wyzwaniom. Nasza firma składa się z
-              wykwalifikowanych specjalistów, dla których metalowe wyroby to nie
-              tylko praca, ale prawdziwa pasja.
-              <br /> <br />
-              Działamy nie tylko na terenie Polski, ale również w Niemczech, co
-              pozwala nam poszerzyć nasz zasięg i zaoferować nasze produkty i
-              usługi klientom również za granicą. Nasza obecność na dwóch
-              rynkach umożliwia nam również ciągły rozwój i doskonalenie naszych
-              umiejętności, aby sprostać zmieniającym się potrzebom naszych
-              klientów. <br />
-              <br />
-              Jeśli szukasz profesjonalnego partnera w branży metalowej, który
-              dostarczy Ci nie tylko wysokiej jakości produkty, ale również
-              kompleksową obsługę i wsparcie na każdym etapie projektu - Stalumo
-              jest dla Ciebie idealnym wyborem. Dołącz do grona zadowolonych
-              klientów i przekonaj się, dlaczego Stalumo to gwarancja
-              solidności, jakości i profesjonalizmu.
-              <br />
-              <br /> Zapraszamy do współpracy!
-            </p>
+            <p
+              className="text-[#A5A5A5] text-[1.2rem]"
+              dangerouslySetInnerHTML={{ __html: t("description") }}
+            ></p>
           </div>
         </section>
       </div>

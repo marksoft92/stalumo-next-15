@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Container from "@/components/ui/container";
 import BlogPage from "@/components/BlogPage";
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/routing";
+import BackgroundSlider from "@/components/BackgroundSilder";
 
 // Funkcja do generowania metadanych SEO
 
@@ -34,17 +36,42 @@ const fetchPosts = async (lang: string, page: number, limit: number) => {
   }
 };
 
+const images: string[] = [
+  "/assets/images/spawanie1.jpg",
+  "/assets/images/spawanie2.jpg",
+  "/assets/images/spawanie3.jpg",
+  "/assets/images/spawanie4.jpg",
+  "/assets/images/spawanie5.jpg",
+];
+
 const BlogPageContainer = async ({ params }: { params: any }) => {
   const data = await params;
   const posts = await fetchPosts(data.locale, 1, 5);
-
+  const t = await getTranslations("Blog");
   return (
     <Container>
-      {(posts?.length && <BlogPage initialPosts={posts} />) || (
-        <>
-          <h2></h2>
-        </>
-      )}
+      <div>
+        <BackgroundSlider images={images} maxHeight={"500px"} />
+        <div className="flex flex-col items-center relative min-h-[500px] justify-center">
+          <h2 className="text-[6rem] font-semibold uppercase">Blog</h2>
+          <h3>
+            <Link
+              className="text-[1.6rem] font-semibold uppercase text-[#EB4036]"
+              href="/"
+            >
+              {t("homeTitle")}
+            </Link>
+            <span className="text-[1.6rem] font-semibold uppercase ">
+              /{t("title")}
+            </span>
+          </h3>
+        </div>
+        {(posts?.length && <BlogPage initialPosts={posts} />) || (
+          <>
+            <h2>{t("empty")}</h2>
+          </>
+        )}
+      </div>
     </Container>
   );
 };

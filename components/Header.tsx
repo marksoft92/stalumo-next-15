@@ -5,7 +5,7 @@ import Image from "next/image";
 import HamburgerMenu from "./ui/hamburgerMenu";
 
 export default async function NavBar() {
-  const t = await getTranslations("HomePage");
+  const t = await getTranslations("Header");
 
   type NavLink = {
     href: string | any;

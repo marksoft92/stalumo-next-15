@@ -1,9 +1,12 @@
+import { useTranslations } from "next-intl";
+
 interface LoadMoreButtonProps {
   loadMorePosts: () => void;
   loading: boolean;
 }
 
 const LoadMoreButton = ({ loadMorePosts, loading }: LoadMoreButtonProps) => {
+  const t = useTranslations("Blog");
   return (
     <div>
       <button
@@ -11,7 +14,7 @@ const LoadMoreButton = ({ loadMorePosts, loading }: LoadMoreButtonProps) => {
         disabled={loading}
         className="bg-blue-500 text-white py-2 px-4 rounded"
       >
-        {loading ? "Ładowanie..." : "Załaduj więcej"}
+        {loading ? t("loading") : t("loadMore")}
       </button>
     </div>
   );

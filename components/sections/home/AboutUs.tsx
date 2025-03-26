@@ -2,8 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import Button from "@/components/ui/button";
+import { getTranslations } from "next-intl/server";
 
-const AboutUs: React.FC = () => {
+const AboutUs: React.FC = async () => {
+  const t = await getTranslations("HomePage.AboutUs");
+
   return (
     <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto max-lg:flex-col">
       <div className="relative">
@@ -40,30 +43,25 @@ const AboutUs: React.FC = () => {
           />
           <div className="">
             <h3 className="text-[4.5rem] font-semibold">115 +</h3>
-            <p className="text-[1.5rem] font-semibold uppercase uppercase">
-              Wykonanych
-              <br /> Projektów
-            </p>
+            <p
+              className="text-[1.5rem] font-semibold uppercase uppercase"
+              dangerouslySetInnerHTML={{ __html: t("count") }}
+            ></p>
           </div>
         </div>
       </div>
       <div className="max-w-full lg:max-w-[50%] flex justify-center flex-col gap-5 max-lg:text-center max-lg:items-center max-lg:py-10">
-        <h4 className="text-[#EB4036] text-[1rem] font-semibold">O NAS</h4>
+        <h4 className="text-[#EB4036] text-[1rem] font-semibold">
+          {t("subTitle")}
+        </h4>
         <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem]">
-          Kunszt spawalniczy kujący doskonałość
+          {t("title")}
         </h2>
-        <p className="text-[#A5A5A5] text-[1.2rem]">
-          Jesteśmy zespołem specjalistów, których cechuje nie tylko umiejętność
-          perfekcyjnego spawania, ale także głęboka pasja do tworzenia. Nasze
-          doświadczenie oparte na dziesięcioletniej praktyce pozwala nam śmiało
-          kroczyć ścieżką doskonałości. <br />
-          <br />
-          Każdy projekt traktujemy jako wyzwanie, które podejmujemy z
-          determinacją, aby zapewnić naszym klientom nie tylko produkt o
-          najwyższej jakości, ale także satysfakcję i pewność, że ich
-          oczekiwania zostały spełnione ponad oczekiwania.
-        </p>
-        <Button href="/about" title={"Więcej o nas"} />
+        <p
+          className="text-[#A5A5A5] text-[1.2rem]"
+          dangerouslySetInnerHTML={{ __html: t("description") }}
+        ></p>
+        <Button href="/about" title={t("button")} />
       </div>
     </section>
   );

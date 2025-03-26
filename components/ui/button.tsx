@@ -1,8 +1,8 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 interface ButtonProps {
   title: string;
-  href: string;
+  href: string | any;
 }
 
 const Button: React.FC<ButtonProps> = ({ title, href }) => {

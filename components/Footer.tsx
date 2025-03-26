@@ -1,5 +1,3 @@
-import LocaleSwitcher from "./LocaleSwitcher";
-import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -8,7 +6,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import { SvgIcon } from "@mui/material";
 
 export default async function NavBar() {
-  const t = await getTranslations("HomePage");
+  const t = await getTranslations("Footer");
   return (
     <>
       <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px] max-lg:flex-col">
@@ -27,10 +25,10 @@ export default async function NavBar() {
               </SvgIcon>
             </span>
             <h4 className="text-[#A5A5A5] text-[1.2rem] font-semibold uppercase ">
-              Lokalizacja
+              {t("location")}
             </h4>
             <h2 className="text-[1.5rem] font-semibold uppercase">
-              DRAWNO, POLSKA
+              {t("country")}
             </h2>
           </div>
           <div className="flex flex-col gap-5">
@@ -40,7 +38,7 @@ export default async function NavBar() {
               </SvgIcon>
             </span>
             <h4 className="text-[#A5A5A5] text-[1.2rem] font-semibold uppercase ">
-              EMAIL
+              {t("email")}
             </h4>
             <h2 className="text-[1.5rem] font-semibold uppercase">
               biuro@stalumo.com
@@ -53,7 +51,7 @@ export default async function NavBar() {
               </SvgIcon>
             </span>
             <h4 className="text-[#A5A5A5] text-[1.2rem] font-semibold uppercase ">
-              Telefon
+              {t("phone")}
             </h4>
             <h2 className="text-[1.5rem] font-semibold uppercase">
               +48 784-532-549 <br />
@@ -63,7 +61,7 @@ export default async function NavBar() {
         </div>
       </div>
       <div className="flex items-center algin-center justify-center p-4">
-        <span>Copyright 202 © All Right Reserved</span>
+        <span> {t("copy")}</span>
       </div>
     </>
   );

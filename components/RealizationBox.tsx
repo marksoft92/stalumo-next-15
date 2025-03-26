@@ -1,14 +1,11 @@
 import React from "react";
-import Image from "next/image";
-import { before } from "node:test";
-import { isAbsolute } from "path";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 interface RealizationBoxProps {
   iconUrl: string;
   title: string;
   subTitle: string;
-  href: string;
+  href: string | any;
 }
 
 const RealizationBox: React.FC<RealizationBoxProps> = ({
