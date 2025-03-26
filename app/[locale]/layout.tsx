@@ -15,11 +15,78 @@ const oswaldVariable = localFont({
   weight: "100 200 300 400 500 600 700 800 900",
 });
 
-export const metadata: Metadata = {
-  title: "Stalumo",
-  description: "Stalumo opis",
-  viewport: 'name="viewport" content="width=device-width, initial-scale=1.0"',
-};
+export function generateMetadata({
+  params,
+}: {
+  params: { locale: Locale };
+}): Metadata {
+  const locale = params.locale;
+
+  const meta = {
+    en: {
+      title: "Steel Railings & Gates | Stalumo",
+      description: "Top-quality steel constructions for your needs.",
+      keywords:
+        "steel railings, gates, steel constructions, custom steel designs, railings, metal work",
+      url: "https://stalumo.com/en",
+      image: "https://stalumo.com/assets/images/logo.png",
+    },
+    pl: {
+      title: "Balustrady i Bramy Stalowe | Stalumo",
+      description: "Najwyższej jakości konstrukcje stalowe na zamówienie.",
+      keywords:
+        "balustrady stalowe, bramy stalowe, konstrukcje stalowe, ogrodzenia stalowe, stalowe na zamówienie",
+      url: "https://stalumo.com/pl",
+      image: "https://stalumo.com/assets/images/logo.png",
+    },
+    de: {
+      title: "Stahlgeländer und Tore | Stalumo",
+      description: "Hochwertige Stahlkonstruktionen nach Ihren Bedürfnissen.",
+      keywords:
+        "stahlgeländer, toren, stahlkonstruktionen, maßgefertigte stahlkonstruktionen",
+      url: "https://stalumo.com/de",
+      image: "https://stalumo.com/assets/images/logo.png",
+    },
+  };
+
+  const currentMeta = meta[locale] || meta["en"];
+
+  return {
+    title: currentMeta.title,
+    description: currentMeta.description,
+    keywords: currentMeta.keywords,
+    robots: "index, follow", // Wskazuje wyszukiwarkom, by indeksowały stronę i śledziły linki
+    openGraph: {
+      url: currentMeta.url,
+      title: currentMeta.title,
+      description: currentMeta.description,
+      images: [
+        {
+          url: currentMeta.image,
+          width: 1200,
+          height: 630,
+          alt: currentMeta.title,
+        },
+      ],
+      siteName: "Stalumo",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@Stalumo",
+      title: currentMeta.title,
+      description: currentMeta.description,
+      images: currentMeta.image,
+    },
+    alternates: {
+      canonical: "https://stalumo.com",
+      languages: {
+        en: "https://stalumo.com/en",
+        pl: "https://stalumo.com/pl",
+        de: "https://stalumo.com/de",
+      },
+    },
+  };
+}
 
 export default async function RootLayout({
   children,
@@ -28,15 +95,15 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: Locale };
 }>) {
-  const { locale } = await params;
+  const { locale } = params;
   if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
-  // Providing all messages to the client
-  // side is the easiest way to get started
+
   const messages = await getMessages();
+
   return (
-    <html lang={locale} className="">
+    <html lang={locale}>
       <body
         className={`${oswaldVariable.variable} antialiased`}
         style={{ fontFamily: "var(--font-oswald), sans-serif" }}

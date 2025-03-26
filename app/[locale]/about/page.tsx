@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/ui/container";
 import BackgroundSlider from "@/components/BackgroundSilder";
+
 export default async function AboutPage() {
   const images: string[] = [
     "/assets/images/spawanie1.jpg",

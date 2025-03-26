@@ -1,8 +1,10 @@
 import { Metadata } from "next";
 import Container from "@/components/ui/container";
 import BlogPage from "@/components/BlogPage";
+import { getTranslations } from "next-intl/server";
 
 // Funkcja do generowania metadanych SEO
+
 export const metadata: Metadata = {
   title: "Blog | My Website",
   description: "Najświeższe artykuły na temat X, Y, Z.",
@@ -44,7 +46,7 @@ const BlogPageContainer = async ({
     <Container>
       {(posts?.length && <BlogPage initialPosts={posts} />) || (
         <>
-          <h2>Brak wpisów</h2>
+          <h2></h2>
         </>
       )}
     </Container>

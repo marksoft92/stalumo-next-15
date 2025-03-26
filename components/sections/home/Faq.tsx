@@ -41,6 +41,31 @@ const faqData: FAQItem[] = [
       "Tak, zapewniamy gwarancję na wszystkie nasze produkty oraz wykonane przez nas prace montażowe. Naszym celem jest pełne zadowolenie klienta, dlatego też staramy się zapewnić nie tylko wysoką jakość naszych konstrukcji, ale także kompleksową obsługę posprzedażną. Jeśli pojawią się jakiekolwiek problemy z naszymi produktami lub usługami, jesteśmy gotowi podjąć odpowiednie kroki naprawcze, aby zapewnić Twoją satysfakcję.",
     question: "Czy oferujecie gwarancję na wasze produkty i usługi?",
   },
+  {
+    question: "Ile kosztuje spawanie konstrukcji stalowych?",
+    answer:
+      "Cena zależy od materiału, projektu i zakresu prac. Skontaktuj się, aby otrzymać darmową wycenę.",
+  },
+  {
+    question: "Jakie są rodzaje ogrodzeń stalowych?",
+    answer:
+      "Oferujemy ogrodzenia panelowe, kute oraz stalowe malowane proszkowo, dopasowane do Twoich potrzeb.",
+  },
+  {
+    question: "Czy wykonujecie bramy przesuwne i skrzydłowe na zamówienie? ",
+    answer:
+      "Tak, realizujemy indywidualne projekty bram stalowych, dopasowanych do Twojej posesji.",
+  },
+  {
+    question: "Jakie zabezpieczenia antykorozyjne stosujecie? ",
+    answer:
+      "Stosujemy cynkowanie ogniowe i malowanie proszkowe, aby zapewnić długowieczność stali.",
+  },
+  {
+    question: "Jak zamówić balustrady lub ogrodzenia stalowe?",
+    answer:
+      "Skontaktuj się z nami, podaj wymiary i oczekiwania, a my przygotujemy indywidualną ofertę.",
+  },
 ];
 
 const FAQ = () => {

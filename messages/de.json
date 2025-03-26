@@ -10,6 +10,12 @@
     "home": "Heim",
     "blog": "Blog"
   },
+  "Blog": {
+    "title": ""
+  },
+  "About": {},
+  "Contact": {},
+  "Gallery": {},
   "contactForm": {
     "name": "Name",
     "email": "Email",

@@ -23,13 +23,14 @@ const Excellence: React.FC = () => {
               <div className="hidden w-[15%] max-w-[15%] flex-grow-0 absolute top-[-30px] left-[450px] h-[50px] bg-transparent bg-gradient-to-r from-[#EB4036] to-[#02010100] opacity-[0.8]"></div>
             </h4>
             <h1 className="mt-10 mb-10 leading-tight --font-oswald text-[#FFFFFF] font-oswald text-[6.7rem] font-semibold uppercase leading-[1em] tracking-[3.8px] max-lg:text-[2.5rem]">
-              Wypalone iskry rodzą doskonałość
+              Konstrukcje stalowe na terenie całych Niemiec i Polski
             </h1>
             <p className="pt-[10px] pl-0 pr-0 pb-0 text-[#A5A5A5] font-raleway text-[1.2rem] font-normal leading-[1.6em] tracking-[1.6px] word-spacing-[normal] flex-grow-0">
               Nasza praca to nie tylko doskonałe wykonanie, to również pasja i
               zaangażowanie, które zawsze doprowadzają do doskonałości.
+              Wykonujemy konstrukcje stalowe w Polsce i każdym rejonie Niemiec.
             </p>
-            <Button href="/contact" title={"Rozpalcie swoje projekty"} />
+            <Button href="/contact" title={"Zamów darmową wycenę"} />
           </div>
         </div>
         <div className="flex flex-col items-center gap-[20px]">
