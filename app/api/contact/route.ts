@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 import { NextRequest, NextResponse } from "next/server";
 
 const prisma = new PrismaClient();
-console.log(prisma);
+
 export async function POST(req: NextRequest) {
   try {
     // Odczytujemy dane z body żądania
@@ -28,7 +28,9 @@ export async function POST(req: NextRequest) {
 
     // Zwracamy odpowiedź po pomyślnym zapisaniu danych
     return new NextResponse(
-      JSON.stringify({ message: "Message sent successfully", chat: newChat }),
+      JSON.stringify({
+        chat: newChat,
+      }),
       { status: 200 }
     );
   } catch (error) {

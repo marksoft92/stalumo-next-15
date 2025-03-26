@@ -30,7 +30,10 @@ export default function ContactForm() {
       const result = await response.json();
 
       if (response.ok) {
-        setSuccessMessage(result.message || "Message sent successfully!");
+        setSuccessMessage(
+          result.message ||
+            "Wiadomość została wysłana poprawnie. Odpowiemy jak najszybciej to możliwe na podany adres email."
+        );
       } else {
         setErrorMessage(result.error || "Something went wrong!");
       }
@@ -44,73 +47,90 @@ export default function ContactForm() {
 
   return (
     <Container>
-      <form onSubmit={handleSubmit} className="space-y-6 text-[#000] h-[60vh]">
-        {successMessage && <p className="text-green-500">{successMessage}</p>}
-        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
-        <div>
-          <label
-            htmlFor="topic"
-            className="block text-sm font-medium text-gray-700"
-          >
-            Topic
-          </label>
-          <input
-            type="text"
-            id="topic"
-            name="topic"
-            value={topic}
-            onChange={(e) => setTopic(e.target.value)}
-            required
-            className="mt-1 block w-full px-4 py-3 border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
-          />
-        </div>
+      <div className="flex max-lg:flex-col w-full gap-10 h-[60vh]">
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-6 text-[#000] lg:w-[50%] "
+        >
+          {successMessage && <p className="text-green-500">{successMessage}</p>}
+          {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+          <div>
+            <label
+              htmlFor="topic"
+              className="block text-sm font-medium  text-[rgb(235,64,54)]"
+            >
+              Topic
+            </label>
+            <input
+              type="text"
+              id="topic"
+              name="topic"
+              value={topic}
+              onChange={(e) => setTopic(e.target.value)}
+              required
+              className="mt-1 block w-full px-4 py-3 border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+            />
+          </div>
 
-        <div>
-          <label
-            htmlFor="email"
-            className="block text-sm font-medium text-gray-700"
-          >
-            Email Address
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="mt-1 block w-full px-4 py-3 border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
-          />
-        </div>
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium  text-[rgb(235,64,54)]"
+            >
+              Email Address
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="mt-1 block w-full px-4 py-3 border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+            />
+          </div>
 
-        <div>
-          <label
-            htmlFor="content"
-            className="block text-sm font-medium text-gray-700"
-          >
-            Your Message
-          </label>
-          <textarea
-            id="content"
-            name="content"
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-            rows={4}
-            required
-            className="mt-1 block w-full px-4 py-3 border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
-          ></textarea>
-        </div>
+          <div>
+            <label
+              htmlFor="content"
+              className="block text-sm font-medium  text-[rgb(235,64,54)]"
+            >
+              Your Message
+            </label>
+            <textarea
+              id="content"
+              name="content"
+              value={content}
+              onChange={(e) => setContent(e.target.value)}
+              rows={4}
+              required
+              className="mt-1 block w-full px-4 py-3 border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+            ></textarea>
+          </div>
 
-        <div>
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-            {isSubmitting ? "Sending..." : "Send Message"}
-          </button>
+          <div>
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            >
+              {isSubmitting ? "Sending..." : "Send Message"}
+            </button>
+          </div>
+        </form>
+        <div className="lg:w-[50%] flex flex-col gap-5">
+          <h2 className="text-[2.5rem] font-semibold uppercase">
+            Skontaktuj się z nami
+          </h2>
+          <p>
+            Masz projekt na myśli? Skontaktuj się z nami przez formularz
+            kontaktowy, a my odpowiemy jak najszybciej. Z przyjemnością pomożemy
+            Ci w realizacji Twojego pomysłu, zapewniając fachową pomoc i
+            najwyższą jakość wykonania. Czekamy na Twoje pytania i propozycje –
+            razem stworzymy coś wyjątkowego!
+          </p>
         </div>
-      </form>
+      </div>
     </Container>
   );
 }
