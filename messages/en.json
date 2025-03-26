@@ -133,8 +133,19 @@
     "descriptionTitle": "Professional Welding and Metal Products in the Polish and German Markets",
     "description": "Welcome to Stalumo – a company passionate about metal and committed to excellence. With over 10 years of experience in the Polish and German markets, we pride ourselves on our reputation as a reliable partner in the metal industry. <br /> <br /> Since our inception in 2010, we have been continually striving to raise the standards of quality and professionalism in our work. Our services cover a wide range of activities, from welding to the production of gates, fences, railings, balconies, canopies, and winter gardens – always with attention to detail and precision. <br /> <br /> We are confident that our products and services stand out not only for their excellent quality but also for flexibility and a personalized approach to client needs. Each order is treated as unique, and we tailor our solutions to specific requirements, guaranteeing satisfaction for even the most demanding clients. <br /> <br /> What sets us apart? In addition to our commitment to delivering the highest quality products, we are also a cohesive team of professionals ready to tackle even the most complex challenges. Our company consists of skilled specialists for whom metalworking is not just a job but a true passion. <br /> <br /> We operate not only in Poland but also in Germany, which allows us to expand our reach and offer our products and services to clients abroad. Our presence in two markets also enables us to continuously grow and improve our skills to meet the evolving needs of our clients. <br /> <br /> If you are looking for a professional partner in the metal industry who will provide you with not only high-quality products but also comprehensive service and support at every stage of your project – Stalumo is the perfect choice for you. Join our satisfied clients and see for yourself why Stalumo guarantees reliability, quality, and professionalism. <br /> <br /> We invite you to cooperate!"
   },
-  "Contact": {},
-  "Gallery": {},
+  "Contact": {
+    "title": "Contact Us",
+    "homeTitle": "Home",
+    "description": "Got a project in mind? Reach out to us via the contact form, and we'll respond as soon as possible. We're happy to assist you in bringing your idea to life, ensuring expert help and top-quality execution. We look forward to your questions and suggestions – together, we’ll create something exceptional!",
+    "button": "Send Message",
+    "topic": "Subject",
+    "email": "Email Address",
+    "content": "What would you like to ask us?",
+    "loading": "Loading...",
+    "success": "The message was successfully sent. We will respond as soon as possible to the provided email address.",
+    "error": "Something went wrong"
+  },
+  "Gallery": { "title": "Gallery", "homeTitle": "Home" },
   "contactForm": {
     "name": "Name",
     "email": "Email",

@@ -61,8 +61,7 @@ export default async function AboutPage() {
               STALUMO
             </h4>
             <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem]">
-              Profesjonalne Spawanie i Wyroby Metalowe na Polskim i Niemieckim
-              Rynku
+              {t("descriptionTitle")}
             </h2>
             <p
               className="text-[#A5A5A5] text-[1.2rem]"

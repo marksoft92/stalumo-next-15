@@ -133,8 +133,22 @@
     "descriptionTitle": "Profesjonalne Spawanie i Wyroby Metalowe na Polskim i Niemieckim Rynku",
     "description": "Witajcie w Stalumo - firmie z pasją do metalu i zobowiązaniem do doskonałości. Z ponad 10-letnim doświadczeniem na rynku polskim i niemieckim, jesteśmy dumni z naszej reputacji jako solidnego partnera w branży metalowej. <br /> <br /> Od samego początku naszej działalności w 2010 roku, nieustannie dążymy do podnoszenia standardów jakości i profesjonalizmu w naszej pracy. Nasze usługi obejmują szeroki zakres działań, począwszy od spawania po produkcję bram, ogrodzeń, balustrad, balkonów, aż po wiaty i ogrody zimowe - zawsze z dbałością o detale i precyzję wykonania. <br /> <br /> Jesteśmy przekonani, że nasze produkty i usługi wyróżniają się nie tylko doskonałą jakością, ale także elastycznością i indywidualnym podejściem do potrzeb klienta. Każde zamówienie traktujemy jako wyjątkowe i dostosowujemy nasze rozwiązania do konkretnych wymagań, gwarantując satysfakcję nawet najbardziej wymagających klientów. <br /> <br /> Co nas wyróżnia? Oprócz naszego zaangażowania w dostarczanie produktów najwyższej jakości, jesteśmy również zgranym zespołem profesjonalistów, gotowym sprostać nawet najbardziej skomplikowanym wyzwaniom. Nasza firma składa się z wykwalifikowanych specjalistów, dla których metalowe wyroby to nie tylko praca, ale prawdziwa pasja. <br /> <br /> Działamy nie tylko na terenie Polski, ale również w Niemczech, co pozwala nam poszerzyć nasz zasięg i zaoferować nasze produkty i usługi klientom również za granicą. Nasza obecność na dwóch rynkach umożliwia nam również ciągły rozwój i doskonalenie naszych umiejętności, aby sprostać zmieniającym się potrzebom naszych klientów. <br /> <br /> Jeśli szukasz profesjonalnego partnera w branży metalowej, który dostarczy Ci nie tylko wysokiej jakości produkty, ale również kompleksową obsługę i wsparcie na każdym etapie projektu - Stalumo jest dla Ciebie idealnym wyborem. Dołącz do grona zadowolonych klientów i przekonaj się, dlaczego Stalumo to gwarancja solidności, jakości i profesjonalizmu. <br /> <br /> Zapraszamy do współpracy!"
   },
-  "Contact": {},
-  "Gallery": {},
+  "Contact": {
+    "title": "Skontaktuj się z nami",
+    "homeTitle": "Strona główna",
+    "description": "Masz projekt na myśli? Skontaktuj się z nami przez formularz kontaktowy, a my odpowiemy jak najszybciej. Z przyjemnością pomożemy Ci w realizacji Twojego pomysłu, zapewniając fachową pomoc i najwyższą jakość wykonania. Czekamy na Twoje pytania i propozycje – razem stworzymy coś wyjątkowego!",
+    "button": "Wyślij wiadomość",
+    "topic": "Temat",
+    "email": "Adres e-mail",
+    "content": "O co chcesz nas zapytać ?",
+    "loading": "Ładowanie...",
+    "success": "Wiadomość została wysłana poprawnie. Odpowiemy jak najszybciej to możliwe na podany adres email.",
+    "error": "Coś poszło nie tak"
+  },
+  "Gallery": {
+    "title": "Galeria",
+    "homeTitle": "Strona główna"
+  },
   "contactForm": {
     "name": "Nom",
     "email": "Email",

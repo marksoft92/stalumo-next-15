@@ -133,8 +133,19 @@
     "descriptionTitle": "Professionelles Schweißen und Metallprodukte auf dem polnischen und deutschen Markt",
     "description": "Willkommen bei Stalumo – ein Unternehmen, das sich für Metall begeistert und sich der Exzellenz verpflichtet. Mit über 10 Jahren Erfahrung auf dem polnischen und deutschen Markt sind wir stolz auf unseren Ruf als zuverlässiger Partner in der Metallindustrie. <br /> <br /> Seit unserer Gründung im Jahr 2010 streben wir ständig danach, die Qualitäts- und Professionalitätsstandards in unserer Arbeit zu erhöhen. Unsere Dienstleistungen umfassen ein breites Spektrum an Tätigkeiten, von Schweißarbeiten bis hin zur Produktion von Toren, Zäunen, Geländern, Balkonen, Überdachungen und Wintergärten – immer mit Liebe zum Detail und präziser Ausführung. <br /> <br /> Wir sind überzeugt, dass unsere Produkte und Dienstleistungen nicht nur durch ihre hervorragende Qualität, sondern auch durch ihre Flexibilität und individuelle Herangehensweise an die Bedürfnisse der Kunden herausragen. Jede Bestellung betrachten wir als einzigartig und passen unsere Lösungen an die spezifischen Anforderungen an, um die Zufriedenheit selbst der anspruchsvollsten Kunden zu garantieren. <br /> <br /> Was zeichnet uns aus? Neben unserem Engagement, Produkte von höchster Qualität zu liefern, sind wir auch ein eingespieltes Team von Fachleuten, das bereit ist, selbst die komplexesten Herausforderungen anzunehmen. Unser Unternehmen besteht aus qualifizierten Spezialisten, für die Metallprodukte nicht nur Arbeit, sondern wahre Leidenschaft sind. <br /> <br /> Wir sind nicht nur in Polen tätig, sondern auch in Deutschland, was es uns ermöglicht, unsere Reichweite zu erweitern und unsere Produkte und Dienstleistungen auch Kunden im Ausland anzubieten. Unsere Präsenz auf zwei Märkten ermöglicht es uns auch, uns kontinuierlich weiterzuentwickeln und unsere Fähigkeiten zu verbessern, um den sich verändernden Bedürfnissen unserer Kunden gerecht zu werden. <br /> <br /> Wenn Sie einen professionellen Partner in der Metallbranche suchen, der Ihnen nicht nur Produkte von hoher Qualität, sondern auch umfassenden Service und Unterstützung in jeder Phase Ihres Projekts bietet – Stalumo ist die perfekte Wahl für Sie. Schließen Sie sich unseren zufriedenen Kunden an und überzeugen Sie sich selbst, warum Stalumo eine Garantie für Zuverlässigkeit, Qualität und Professionalität ist. <br /> <br /> Wir laden Sie ein, mit uns zusammenzuarbeiten!"
   },
-  "Contact": {},
-  "Gallery": {},
+  "Contact": {
+    "title": "Kontaktieren Sie uns",
+    "homeTitle": "Startseite",
+    "description": "Haben Sie ein Projekt im Kopf? Kontaktieren Sie uns über das Kontaktformular, und wir antworten so schnell wie möglich. Wir helfen Ihnen gerne dabei, Ihre Idee umzusetzen und garantieren fachkundige Unterstützung sowie höchste Ausführungsqualität. Wir freuen uns auf Ihre Fragen und Vorschläge – gemeinsam schaffen wir etwas Einzigartiges!",
+    "button": "Nachricht senden",
+    "topic": "Thema",
+    "email": "E-Mail-Adresse",
+    "content": "Worüber möchten Sie uns fragen?",
+    "loading": "Lädt...",
+    "success": "Die Nachricht wurde erfolgreich gesendet. Wir werden so schnell wie möglich an die angegebene E-Mail-Adresse antworten.",
+    "error": "Etwas ist schiefgelaufen"
+  },
+  "Gallery": { "title": "Projekte", "homeTitle": "Startseite" },
   "contactForm": {
     "name": "Name",
     "email": "Email",

@@ -1,10 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import Container from "@/components/ui/container";
 import BackgroundSlider from "@/components/BackgroundSilder";
 import BoxImg from "@/components/ImageGox";
+import { useTranslations } from "next-intl";
 export default function GalleryPage() {
   const imagesSlider: string[] = [
     "/assets/images/spawanie1.jpg",
@@ -13,6 +13,8 @@ export default function GalleryPage() {
     "/assets/images/spawanie4.jpg",
     "/assets/images/spawanie5.jpg",
   ];
+
+  const t = useTranslations("Gallery");
 
   const [images, setImages] = useState<string[]>([]); // Przechowujemy tylko listę URLi
   const [loading, setLoading] = useState<boolean>(true);
@@ -45,16 +47,16 @@ export default function GalleryPage() {
       <BackgroundSlider images={imagesSlider} maxHeight={"500px"} />
       <div>
         <div className="flex flex-col items-center relative min-h-[500px] justify-center">
-          <h2 className="text-[6rem] font-semibold uppercase">Galeria</h2>
+          <h2 className="text-[6rem] font-semibold uppercase">{t("title")}</h2>
           <h3>
             <Link
               className="text-[1.6rem] font-semibold uppercase text-[#EB4036]"
               href="/"
             >
-              Strona Główna
+              {t("homeTitle")}
             </Link>
             <span className="text-[1.6rem] font-semibold uppercase ">
-              /Galeria
+              /{t("title")}
             </span>
           </h3>
         </div>

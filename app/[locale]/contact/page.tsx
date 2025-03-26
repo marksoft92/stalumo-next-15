@@ -2,6 +2,7 @@
 
 import Container from "@/components/ui/container";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
   const [email, setEmail] = useState("");
@@ -10,6 +11,7 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const t = useTranslations("Contact");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,12 +32,9 @@ export default function ContactForm() {
       const result = await response.json();
 
       if (response.ok) {
-        setSuccessMessage(
-          result.message ||
-            "Wiadomość została wysłana poprawnie. Odpowiemy jak najszybciej to możliwe na podany adres email."
-        );
+        setSuccessMessage(result.message || t("success"));
       } else {
-        setErrorMessage(result.error || "Something went wrong!");
+        setErrorMessage(result.error || t("error"));
       }
     } catch (error) {
       console.error(error);
@@ -59,7 +58,7 @@ export default function ContactForm() {
               htmlFor="topic"
               className="block text-sm font-medium  text-[rgb(235,64,54)]"
             >
-              Topic
+              {t("topic")}
             </label>
             <input
               type="text"
@@ -77,7 +76,7 @@ export default function ContactForm() {
               htmlFor="email"
               className="block text-sm font-medium  text-[rgb(235,64,54)]"
             >
-              Email Address
+              {t("email")}
             </label>
             <input
               type="email"
@@ -95,7 +94,7 @@ export default function ContactForm() {
               htmlFor="content"
               className="block text-sm font-medium  text-[rgb(235,64,54)]"
             >
-              Your Message
+              {t("content")}
             </label>
             <textarea
               id="content"
@@ -114,21 +113,15 @@ export default function ContactForm() {
               disabled={isSubmitting}
               className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
             >
-              {isSubmitting ? "Sending..." : "Send Message"}
+              {isSubmitting ? t("loading") : t("button")}
             </button>
           </div>
         </form>
         <div className="lg:w-[50%] flex flex-col gap-5">
           <h2 className="text-[2.5rem] font-semibold uppercase">
-            Skontaktuj się z nami
+            {t("title")}
           </h2>
-          <p>
-            Masz projekt na myśli? Skontaktuj się z nami przez formularz
-            kontaktowy, a my odpowiemy jak najszybciej. Z przyjemnością pomożemy
-            Ci w realizacji Twojego pomysłu, zapewniając fachową pomoc i
-            najwyższą jakość wykonania. Czekamy na Twoje pytania i propozycje –
-            razem stworzymy coś wyjątkowego!
-          </p>
+          <p>{t("description")}</p>
         </div>
       </div>
     </Container>
