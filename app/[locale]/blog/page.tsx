@@ -7,11 +7,7 @@ import BackgroundSlider from "@/components/BackgroundSilder";
 
 // Funkcja do generowania metadanych SEO
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   const t = await getTranslations("Blog");
 
   return {
@@ -23,7 +19,7 @@ export async function generateMetadata({
       title: `${t("title")} | My Website`,
       description: t("description"),
       url: `/${params.locale}/blog`,
-      siteName: "My Website",
+      siteName: "Stalumo",
       type: "website",
     },
   };

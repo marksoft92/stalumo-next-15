@@ -3,6 +3,7 @@
 import Container from "@/components/ui/container";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 export default function ContactForm() {
   const [email, setEmail] = useState("");
@@ -11,22 +12,30 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const { executeRecaptcha } = useGoogleReCaptcha();
   const t = useTranslations("Contact");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!executeRecaptcha) {
+      setErrorMessage("Error loading reCAPTCHA.");
+      return;
+    }
 
     setIsSubmitting(true);
     setSuccessMessage("");
     setErrorMessage("");
 
     try {
+      const recaptchaToken = await executeRecaptcha("contact_form");
+
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, topic, content }),
+        body: JSON.stringify({ email, topic, content, recaptchaToken }),
       });
 
       const result = await response.json();
