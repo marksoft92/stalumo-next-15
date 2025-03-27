@@ -28,6 +28,7 @@ const Button: React.FC<ButtonProps> = ({ title, href }) => {
       duration-300 
       hover:bg-[#02010100] 
       hover:skew-[-10] transform
+      rounded-[5px]
     "
     >
       {title}

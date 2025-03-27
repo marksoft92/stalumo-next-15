@@ -65,7 +65,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="topic"
-              className="block text-sm font-medium  text-[rgb(235,64,54)]"
+              className="block text-sm font-medium  text-[#fff]"
             >
               {t("topic")}
             </label>
@@ -83,7 +83,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium  text-[rgb(235,64,54)]"
+              className="block text-sm font-medium  text-[#fff]"
             >
               {t("email")}
             </label>
@@ -101,7 +101,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="content"
-              className="block text-sm font-medium  text-[rgb(235,64,54)]"
+              className="block text-sm font-medium  text-[#fff]"
             >
               {t("content")}
             </label>
@@ -120,7 +120,26 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className=" text-[#fff] 
+      bg-[#EB4036] 
+      border-[1px] 
+      border-[#EB4036] 
+      mt-6
+      w-max
+      text-[1rem] 
+      font-[500] 
+      uppercase 
+      leading-[1em] 
+      tracking-[1.6px] 
+      px-[25px] 
+      py-[15px] 
+      rounded-[0px] 
+      transition-all 
+      duration-300 
+      hover:bg-[#02010100] 
+      hover:skew-[-10] transform
+      rounded-[5px]
+      "
             >
               {isSubmitting ? t("loading") : t("button")}
             </button>
@@ -130,7 +149,7 @@ export default function ContactForm() {
           <h2 className="text-[2.5rem] font-semibold uppercase">
             {t("title")}
           </h2>
-          <p>{t("description")}</p>
+          <p className="text-[#A5A5A5]">{t("description")}</p>
         </div>
       </div>
     </Container>

@@ -12,7 +12,26 @@ const LoadMoreButton = ({ loadMorePosts, loading }: LoadMoreButtonProps) => {
       <button
         onClick={loadMorePosts}
         disabled={loading}
-        className="bg-blue-500 text-white py-2 px-4 rounded"
+        className="text-[#fff] 
+      bg-[#EB4036] 
+      border-[1px] 
+      border-[#EB4036] 
+      mt-6
+      w-max
+      text-[1rem] 
+      font-[500] 
+      uppercase 
+      leading-[1em] 
+      tracking-[1.6px] 
+      px-[25px] 
+      py-[15px] 
+      rounded-[0px] 
+      transition-all 
+      duration-300 
+      hover:bg-[#02010100] 
+      hover:skew-[-10] transform
+   rounded-[5px]
+      "
       >
         {loading ? t("loading") : t("loadMore")}
       </button>

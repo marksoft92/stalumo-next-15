@@ -1,4 +1,3 @@
-import Navbar from "@/components/NavBar";
 import Header from "@/components/Header";
 import { Locale, routing } from "@/i18n/routing";
 import type { Metadata } from "next";
@@ -8,7 +7,6 @@ import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import GoogleRecaptchaWrapper from "@/components/GoogleCaptchaWrapper";
 import CookieBanner from "@/components/CookieBanner";
 import { Suspense } from "react";
@@ -88,6 +86,9 @@ export function generateMetadata({
         pl: "https://stalumo.com/pl",
         de: "https://stalumo.com/de",
       },
+    },
+    icons: {
+      icon: "/favicon.ico", // Ścieżka do favicon
     },
   };
 }

@@ -17,7 +17,7 @@ const RealizationBox: React.FC<RealizationBoxProps> = ({
   return (
     <Link href={href}>
       <div
-        className="realization-box-background relative flex items-start p-5 min-h-[320px] justify-end rounded-lg shadow-md flex-col border border-solid border-[#222222] bg-no-repeat bg-cover bg-center h-full height-max-[320px]"
+        className="realization-box-background relative flex items-start p-5 min-h-[320px] justify-end rounded-lg shadow-md flex-col border border-solid border-[#222222] bg-no-repeat bg-cover  bg-center h-full height-max-[320px] transition-all duration-900 ease-out hover:bg-[length:103%]"
         style={{ backgroundImage: `url(${iconUrl})` }}
       >
         <div className="flex  flex-col items-start z-[1]">
