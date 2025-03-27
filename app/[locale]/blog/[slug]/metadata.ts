@@ -30,15 +30,21 @@ export async function generateMetadata({
       return {
         title: article.title, // Tytuł posta
         description: article.content, // Krótki opis posta
+        keywords: article?.tags?.join(", ") || "blog, news, articles",
+        authors: [{ name: "Stalumo", url: "/about" }],
         openGraph: {
           title: article.title,
           description: article.content,
+          url: `https://stalumo.pl/${locale}/blog/${slug}`,
+          type: "article",
           images: [
             {
               url: article.featuredImage || "/default-image.jpg", // Obrazek wyróżniający
               alt: article.title,
             },
           ],
+          siteName: "Stalumo",
+          locale: locale,
         },
         twitter: {
           card: "summary_large_image", // Typ karty Twittera

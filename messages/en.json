@@ -125,7 +125,9 @@
     "homeTitle": "Home",
     "empty": "No posts",
     "loadMore": "Load more",
-    "loading": "Loading..."
+    "loading": "Loading...",
+    "description": "Discover our blog about welding, gates, garages, and railings. Find practical advice and information about steel structures in Germany and Poland.",
+    "keywords": "fence production, welding, steel structures, welding blog, steel structures Germany"
   },
   "About": {
     "title": "About Us",

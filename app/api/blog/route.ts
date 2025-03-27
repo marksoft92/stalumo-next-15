@@ -25,11 +25,8 @@ export async function GET(req: NextRequest) {
   const page = parseInt(searchParams.get("page") || "1", 10);
   const pageSize = 5;
 
-  console.log("Query params:", lang, page);
-
   try {
     const offset = (page - 1) * pageSize;
-    console.log("Running Prisma query...");
 
     // Fetch data from both tables using Prisma
     const posts = await prisma.blog.findMany({
@@ -43,8 +40,6 @@ export async function GET(req: NextRequest) {
         },
       },
     });
-
-    console.log("Fetched posts:", posts);
 
     // If no posts found
     if (posts.length === 0) {

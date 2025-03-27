@@ -125,7 +125,9 @@
     "homeTitle": "Strona główna",
     "empty": "Brak wpisów",
     "loadMore": "Załaduj więcej",
-    "loading": "Ładowanie..."
+    "loading": "Ładowanie...",
+    "description": "Odkryj nasz blog o spawaniu, bramach, garażach i barierkach. Znajdziesz praktyczne porady oraz informacje o konstrukcjach stalowych w Niemczech i Polsce.",
+    "keywords": "produkcja ogrodzeń, spawanie, konstrukcje stalowe, blog o spawaniu, kostrukcje stalowe niemcy"
   },
   "About": {
     "title": "O nas",

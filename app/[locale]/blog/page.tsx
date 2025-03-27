@@ -7,17 +7,27 @@ import BackgroundSlider from "@/components/BackgroundSilder";
 
 // Funkcja do generowania metadanych SEO
 
-export const metadata: Metadata = {
-  title: "Blog | My Website",
-  description: "Najświeższe artykuły na temat X, Y, Z.",
-  openGraph: {
-    title: "Blog | My Website",
-    description: "Najświeższe artykuły na temat X, Y, Z.",
-    url: "/blog",
-    siteName: "My Website",
-    type: "website",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const t = await getTranslations("Blog");
+
+  return {
+    title: `${t("title")} | My Website`, // Dynamiczny tytuł
+    description: t("description"), // Dynamiczny opis
+    authors: [{ name: "Stalumo", url: "/about" }],
+    keywords: `${t("keywords")}`,
+    openGraph: {
+      title: `${t("title")} | My Website`,
+      description: t("description"),
+      url: `/${params.locale}/blog`,
+      siteName: "My Website",
+      type: "website",
+    },
+  };
+}
 
 // Pobieranie początkowych postów z API
 const fetchPosts = async (lang: string, page: number, limit: number) => {
@@ -54,7 +64,7 @@ const BlogPageContainer = async ({ params }: { params: any }) => {
         <BackgroundSlider images={images} maxHeight={"500px"} />
         <div className="flex flex-col items-center relative min-h-[500px] justify-center">
           <h2 className="text-[6rem] font-semibold uppercase">Blog</h2>
-          <h3>
+          <h3 className="max-lg:text-center">
             <Link
               className="text-[1.6rem] font-semibold uppercase text-[#EB4036]"
               href="/"

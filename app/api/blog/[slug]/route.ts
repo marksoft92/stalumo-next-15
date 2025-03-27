@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import { NextRequest } from "next/server";
-
+import { redirect } from "next/navigation";
 const prisma = new PrismaClient();
 
 interface BlogContent {
@@ -20,7 +20,7 @@ export async function GET(req: NextRequest, { params }: { params: any }) {
     const post = await prisma.blogTranslation.findFirst({
       where: {
         slug,
-        lang,
+        // lang,
       },
       include: {
         blog: true, // Uwzględnij dane z głównego bloga (np. imgUrl, alt)
@@ -34,22 +34,29 @@ export async function GET(req: NextRequest, { params }: { params: any }) {
     }
 
     // Zwrócenie danych w odpowiednim języku
-    const translatedPost: BlogContent = {
-      slug: post.slug,
-      title: post.title,
-      content: post.content,
-      lang: post.lang,
-    };
+    // const translatedPost: BlogContent = {
+    //   slug: post.slug,
+    //   title: post.title,
+    //   content: post.content,
+    //   lang: post.lang,
+    // };
+
+    const translatedPost = await prisma.blogTranslation.findFirst({
+      where: {
+        blogId: post.blogId, // Szukamy wpisu o tym samym ID, ale w innym języku
+        lang,
+      },
+    });
 
     return new Response(
       JSON.stringify({
-        id: post.blog.id, // Pobierz id z głównej tabeli Blog
-        imgUrl: post.blog.imgUrl,
-        alt: post.blog.alt,
-        slug: translatedPost.slug,
-        title: translatedPost.title,
-        content: translatedPost.content,
-        lang: translatedPost.lang,
+        id: post?.blog.id, // Pobierz id z głównej tabeli Blog
+        imgUrl: post?.blog.imgUrl,
+        alt: post?.blog.alt,
+        slug: translatedPost?.slug,
+        title: translatedPost?.title,
+        content: translatedPost?.content,
+        lang: translatedPost?.lang,
       }),
       {
         status: 200,

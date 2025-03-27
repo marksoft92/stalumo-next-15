@@ -46,7 +46,7 @@ export default function ContactForm() {
 
   return (
     <Container>
-      <div className="flex max-lg:flex-col w-full gap-10 h-[60vh]">
+      <div className="flex max-lg:flex-col w-full gap-10 lg:h-[60vh]">
         <form
           onSubmit={handleSubmit}
           className="space-y-6 text-[#000] lg:w-[50%] "
