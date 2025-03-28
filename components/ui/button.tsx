@@ -3,10 +3,10 @@ import { Link } from "@/i18n/routing";
 interface ButtonProps {
   title: string;
   href: string | any;
-  cssClass: any;
+  cssClass?: string | any;
 }
 
-const Button: React.FC<ButtonProps> = ({ title, href, cssClass = "" }) => {
+const Button: React.FC<ButtonProps> = ({ title, href, cssClass }) => {
   return (
     <Link
       href={href}
