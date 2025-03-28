@@ -31,7 +31,7 @@ const Excellence: React.FC = async () => {
             <p className="pt-[10px] pl-0 pr-0 pb-0 text-[#A5A5A5] font-raleway text-[1.2rem] font-normal leading-[1.6em] tracking-[1.6px] word-spacing-[normal] flex-grow-0">
               {t("description")}
             </p>
-            <Button cssClass="w-full" href="/contact" title={t("button")} />
+            <Button href="/contact" title={t("button")} />
           </div>
         </div>
         <div className="flex flex-col items-center gap-[20px]">

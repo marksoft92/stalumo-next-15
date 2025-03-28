@@ -3,15 +3,13 @@ import { Link } from "@/i18n/routing";
 interface ButtonProps {
   title: string;
   href: string | any;
-  cssClass?: string | any;
 }
 
-const Button: React.FC<ButtonProps> = ({ title, href, cssClass }) => {
+const Button: React.FC<ButtonProps> = ({ title, href }) => {
   return (
     <Link
       href={href}
-      className={`
-        ${cssClass}
+      className="
       text-[#fff] 
       bg-[#EB4036] 
       border-[1px] 
@@ -30,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({ title, href, cssClass }) => {
       duration-300 
       hover:bg-[#02010100] 
       hover:skew-[-10] transform
-      rounded-[5px]`}
+      rounded-[5px]"
     >
       {title}
     </Link>

@@ -27,6 +27,7 @@ const HamburgerMenu = ({ navLinks }: { navLinks: NavLink[] }) => {
               key={index}
               className="block uppercase font-bold text-[1rem] font-oswald py-2"
               href={link.href}
+              onClick={toggleMenu}
             >
               {link.label}
             </Link>
