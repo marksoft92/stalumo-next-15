@@ -3,7 +3,7 @@ import { Link } from "@/i18n/routing";
 interface ButtonProps {
   title: string;
   href: string | any;
-  cssClass: string | any;
+  cssClass: any;
 }
 
 const Button: React.FC<ButtonProps> = ({ title, href, cssClass }) => {
