@@ -19,7 +19,7 @@ const Excellence: React.FC = async () => {
     <>
       <BackgroundSlider images={images} />
       <section className="min-h-[80vh] excellence py-20 flex flex-row relative mx-auto max-w-[1280px] p-4">
-        <div className="w-[97%] ">
+        <div className="w-[97%] max-lg:w-[90%]">
           <div className="text-left lg:w-[70%] lg:max-w-[70%] flex-grow-0 flex flex-col">
             <h4 className="text-[#EB4036] font-oswald text-base font-semibold uppercase leading-[0.9em] tracking-[3.8px] relative">
               {t("subTitle")}
@@ -31,7 +31,7 @@ const Excellence: React.FC = async () => {
             <p className="pt-[10px] pl-0 pr-0 pb-0 text-[#A5A5A5] font-raleway text-[1.2rem] font-normal leading-[1.6em] tracking-[1.6px] word-spacing-[normal] flex-grow-0">
               {t("description")}
             </p>
-            <Button href="/contact" title={t("button")} />
+            <Button cssClass="w-full" href="/contact" title={t("button")} />
           </div>
         </div>
         <div className="flex flex-col items-center gap-[20px]">
