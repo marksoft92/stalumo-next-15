@@ -6,7 +6,7 @@ interface ButtonProps {
   cssClass: any;
 }
 
-const Button: React.FC<ButtonProps> = ({ title, href, cssClass }) => {
+const Button: React.FC<ButtonProps> = ({ title, href, cssClass = "" }) => {
   return (
     <Link
       href={href}
