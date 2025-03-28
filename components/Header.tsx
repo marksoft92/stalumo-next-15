@@ -21,7 +21,7 @@ export default async function NavBar() {
   ];
 
   return (
-    <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px] max-lg:fixed max-lg:z-10 max-lg:w-full max-lg:bg-[#121212]">
+    <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px] max-lg:sticky max-lg:top-0 max-lg:z-10 max-lg:w-full max-lg:bg-[#121212]">
       <Link href="/">
         <Image
           src="/assets/images/stalumo.png"
