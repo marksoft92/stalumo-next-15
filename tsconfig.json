@@ -30,7 +30,15 @@
     "app/**/*"
   ],
   "images": {
-    "domains": ["panel.stalumo.pl"]
+    "remotePatterns": [
+      {
+        "protocol": "http", // Zmieniono na http, ponieważ używasz HTTP dla panel.stalumo.pl
+        "hostname": "panel.stalumo.pl",
+        "port": "",
+        "pathname": "/image-public-uploads/**",
+        "search": ""
+      }
+    ]
   },
   "exclude": ["node_modules"]
 }
