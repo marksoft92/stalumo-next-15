@@ -1,16 +1,37 @@
-import { NextResponse } from "next/server";
+import { PrismaClient } from "@prisma/client";
+import { NextRequest } from "next/server";
 
-// Przykład danych - w prawdziwej aplikacji te dane byłyby pobierane z bazy danych lub zewnętrznego API
-const images = [
-  { id: 1, url: "/assets/images/spawacz.jpg", alt: "Image 1" },
-  { id: 2, url: "/assets/images/spawanie2.jpg", alt: "Image 2" },
-  { id: 3, url: "/assets/images/spawacz2.jpg", alt: "Image 3" },
-  { id: 4, url: "/assets/images/spawacz3.jpg", alt: "Image 1" },
-  { id: 5, url: "/assets/images/spawacz4.jpg", alt: "Image 2" },
-  { id: 6, url: "/assets/images/spawanie1.jpg", alt: "Image 3" },
-];
+const prisma = new PrismaClient();
 
-export async function GET() {
-  // Możesz tutaj dodać logikę do pobierania danych, np. z bazy danych
-  return NextResponse.json(images);
+interface Image {
+  id: number;
+  url: string;
+  alt: string;
+}
+
+export async function GET(req: NextRequest) {
+  try {
+    const images = await prisma.image.findMany();
+
+    if (images.length === 0) {
+      return new Response(JSON.stringify({ error: "No images found" }), {
+        status: 404,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+
+    return new Response(JSON.stringify({ images }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  } catch (error) {
+    console.error(error);
+    return new Response(JSON.stringify({ error: "Error fetching images" }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
+  } finally {
+    // Always disconnect the Prisma Client
+    await prisma.$disconnect();
+  }
 }

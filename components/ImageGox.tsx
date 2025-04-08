@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 interface BoxImgProps {
-  src: string; // Przyjmujemy tylko src dla pojedynczego obrazu
+  url: string; // Przyjmujemy tylko src dla pojedynczego obrazu
   alt: string; // Dodajemy alt dla dostępności
 }
 
-const BoxImg: React.FC<BoxImgProps> = ({ src, alt }) => {
+const BoxImg: React.FC<BoxImgProps> = ({ url, alt }) => {
   const [isOpen, setIsOpen] = useState(false); // Stan kontrolujący widoczność popupu
 
   // Funkcja do otwierania popupu
@@ -26,7 +26,7 @@ const BoxImg: React.FC<BoxImgProps> = ({ src, alt }) => {
           width={300}
           height={300}
           alt={alt}
-          src={src}
+          src={url}
           className="object-cover cursor-pointer h-full "
           loading="lazy"
           // layout="responsive"
@@ -47,9 +47,9 @@ const BoxImg: React.FC<BoxImgProps> = ({ src, alt }) => {
               width={600}
               height={600}
               alt={alt}
-              src={src}
+              src={url}
               loading="lazy"
-              layout="responsive"
+              //   layout="responsive"
             />
             <button
               className="absolute top-0 right-0 p-2 text-white bg-red-600 rounded-full w-[40px] my-1 mx-1"

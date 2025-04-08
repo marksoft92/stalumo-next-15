@@ -16,7 +16,7 @@ export default function GalleryPage() {
 
   const t = useTranslations("Gallery");
 
-  const [images, setImages] = useState<string[]>([]); // Przechowujemy tylko listę URLi
+  const [images, setImages] = useState<{ url: string; alt: string }[]>([]); // Przechowujemy listę obiektów z url i alt
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -28,7 +28,7 @@ export default function GalleryPage() {
           throw new Error("Failed to fetch images");
         }
         const data = await response.json();
-        setImages(data.map((image: { url: string }) => image.url)); // Załaduj obrazy
+        setImages(data.images); // Załaduj obrazy
       } catch (error) {
         setError("Error fetching images");
       } finally {
@@ -41,7 +41,9 @@ export default function GalleryPage() {
 
   //   if (loading) return <div>Loading...</div>;
   //   if (error) return <div>{error}</div>;
-
+  {
+    console.log(images);
+  }
   return (
     <Container>
       <BackgroundSlider images={imagesSlider} maxHeight={"500px"} />
@@ -61,8 +63,8 @@ export default function GalleryPage() {
           </h3>
         </div>
         <section className="grid grid-cols-3 gap-5 my-10 max-lg:flex max-lg:flex-col max-lg:items-center">
-          {images.map((imageUrl, index) => (
-            <BoxImg key={index} src={imageUrl} alt={`Image ${index + 1}`} />
+          {images.map((image, index) => (
+            <BoxImg key={index} url={image?.url} alt={image?.alt} />
           ))}
         </section>
       </div>
