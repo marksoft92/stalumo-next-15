@@ -49,6 +49,7 @@ const BoxImg: React.FC<BoxImgProps> = ({ url, alt }) => {
               alt={alt}
               src={url}
               loading="lazy"
+              className="max-h-[90vh] max-w-[90vw]"
               //   layout="responsive"
             />
             <button
