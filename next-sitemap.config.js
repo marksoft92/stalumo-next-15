@@ -11,15 +11,15 @@ module.exports = {
     ],
     alternateRefs: [
         {
-            href: "https://stalumo.com/pl",
+            href: `${process.env.APP_URL}pl`,
             hreflang: "pl",
         },
         {
-            href: "https://stalumo.com/en",
+            href: `${process.env.APP_URL}en`,
             hreflang: "en",
         },
         {
-            href: "https://stalumo.com/en",
+            href: `${process.env.APP_URL}de`,
             hreflang: "de",
         },
     ],
