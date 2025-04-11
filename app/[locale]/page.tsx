@@ -19,7 +19,7 @@ export default async function HomePage() {
                 <ScrollAnimation direction="left"><Steps/></ScrollAnimation>
                 <ScrollAnimation direction="left"> <About/></ScrollAnimation>
                 <ScrollAnimation direction="left"><VisionMission/></ScrollAnimation>
-                <ScrollAnimation direction="left"> <OurServices/></ScrollAnimation>
+                 <OurServices/>
                 <ScrollAnimation direction="left"><Realization/></ScrollAnimation>
                 <ScrollAnimation direction="left"> <OurProcess/></ScrollAnimation>
                 <ScrollAnimation direction="left"> <Faq/></ScrollAnimation>
