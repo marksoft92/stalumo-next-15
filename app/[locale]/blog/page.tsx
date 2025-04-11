@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   const t = await getTranslations("Blog");
 
   return {
-    title: `${t("title")} | My Website`, // Dynamiczny tytuł
+    title: `${t("title")}`, // Dynamiczny tytuł
     description: t("description"), // Dynamiczny opis
     authors: [{ name: "Stalumo", url: "/about" }],
     keywords: `${t("keywords")}`,
