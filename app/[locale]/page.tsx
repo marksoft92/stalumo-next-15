@@ -8,22 +8,23 @@ import Stats from "@/components/sections/home/Stats";
 import Steps from "@/components/sections/home/Steps";
 import VisionMission from "@/components/sections/home/VisionMission";
 import Container from "@/components/ui/container";
+import ScrollAnimation from "@/components/ScrollAnimation";
 
 export default async function HomePage() {
-  return (
-    <>
-      {" "}
-      <Container>
-        <Excellence />
-        <Steps />
-        <About />
-        <VisionMission />
-        <OurServices />
-        <Realization />
-        <OurProcess />
-        <Faq />
-        <Stats />
-      </Container>
-    </>
-  );
+    return (
+        <>
+            {" "}
+            <Container>
+                <Excellence/>
+                <ScrollAnimation direction="left"><Steps/></ScrollAnimation>
+                <ScrollAnimation direction="left"> <About/></ScrollAnimation>
+                <ScrollAnimation direction="left"><VisionMission/></ScrollAnimation>
+                <ScrollAnimation direction="left"> <OurServices/></ScrollAnimation>
+                <ScrollAnimation direction="left"><Realization/></ScrollAnimation>
+                <ScrollAnimation direction="left"> <OurProcess/></ScrollAnimation>
+                <ScrollAnimation direction="left"> <Faq/></ScrollAnimation>
+                <ScrollAnimation direction="left"> <Stats/></ScrollAnimation>
+            </Container>
+        </>
+    );
 }
