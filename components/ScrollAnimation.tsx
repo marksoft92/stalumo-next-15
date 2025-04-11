@@ -70,7 +70,7 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, direction }
     }, [direction]);
 
     return (
-        <div className={`anim-${direction} opacity-0 transform transition-all duration-1000 ease-out`}>
+        <div className={!isMobile ? `anim-${direction} opacity-0 transform transition-all duration-1000 ease-out` : ''}>
             {children}
         </div>
     );
