@@ -4,6 +4,7 @@ import Container from "@/components/ui/container";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import {Alert} from "@mui/material";
 
 export default function ContactForm() {
   const [email, setEmail] = useState("");
@@ -60,8 +61,8 @@ export default function ContactForm() {
           onSubmit={handleSubmit}
           className="space-y-6 text-[#000] lg:w-[50%] "
         >
-          {successMessage && <p className="text-green-500">{successMessage}</p>}
-          {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+          {successMessage && <Alert severity="success">{successMessage}</Alert>}
+          {errorMessage && <Alert severity="error">{errorMessage}</Alert>}
           <div>
             <label
               htmlFor="topic"

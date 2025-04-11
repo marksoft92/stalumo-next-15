@@ -4,6 +4,7 @@ import BlogPage from "@/components/BlogPage";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import BackgroundSlider from "@/components/BackgroundSilder";
+import {Alert} from "@mui/material";
 
 // Funkcja do generowania metadanych SEO
 
@@ -74,7 +75,7 @@ const BlogPageContainer = async ({ params }: { params: any }) => {
         </div>
         {(posts?.length && <BlogPage initialPosts={posts} />) || (
           <>
-            <h2>{t("empty")}</h2>
+            <h2 className="my-5"><Alert severity="warning">{t("empty")}</Alert></h2>
           </>
         )}
       </div>
