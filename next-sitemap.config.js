@@ -7,7 +7,7 @@ module.exports = {
     priority: 0.7,
     exclude: ['/secret', '/api/*'],
     additionalSitemaps: [
-        `${process.env.APP_URL || 'https://stalumo.com'}/sitemap-blog.xml`,
+        `${process.env.APP_URL || 'https://stalumo.com/'}sitemap-blog.xml`,
     ],
     alternateRefs: [
         {
