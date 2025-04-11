@@ -5,7 +5,7 @@ import { generateMetadata } from "./metadata";
 // Funkcja do pobierania danych artykułów
 const fetchPosts = async (lang: string, slug: string) => {
   const res = await fetch(
-    `http://localhost:3000/api/blog/${slug}?lang=${lang}`
+    `${process.env.APP_URL}api/blog/${slug}?lang=${lang}`
   );
   if (!res.ok) {
     throw new Error("Failed to fetch posts");

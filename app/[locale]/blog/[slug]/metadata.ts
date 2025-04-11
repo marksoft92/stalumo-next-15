@@ -5,7 +5,7 @@ import { Metadata } from "next";
 // Funkcja do pobierania postów
 const fetchPosts = async (lang: any, slug: any) => {
   const res = await fetch(
-    `http://localhost:3000/api/blog/${slug}?lang=${lang}`
+    `${process.env.APP_URL}api/blog/${slug}?lang=${lang}`
   );
   if (!res.ok) {
     throw new Error("Failed to fetch posts");

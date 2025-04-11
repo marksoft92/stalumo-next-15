@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 const fetchPosts = async (lang: string, page: number, limit: number) => {
   try {
     const res = await fetch(
-      `http://localhost:3000/api/blog?lang=${lang}&page=${page}`
+      `${process.env.APP_URL}api/blog?lang=${lang}&page=${page}`
     );
     if (!res.ok) {
       throw new Error("Failed to fetch posts");

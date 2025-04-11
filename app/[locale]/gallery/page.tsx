@@ -39,11 +39,6 @@ export default function GalleryPage() {
     fetchImages();
   }, []);
 
-  //   if (loading) return <div>Loading...</div>;
-  //   if (error) return <div>{error}</div>;
-  {
-    console.log(images);
-  }
   return (
     <Container>
       <BackgroundSlider images={imagesSlider} maxHeight={"500px"} />
