@@ -121,7 +121,8 @@
     "copy": "2025 © Wszystkie prawa zasteżone"
   },
   "Blog": {
-    "title": "Blog - Stalumo",
+    "titleMain": "Blog - Stalumo",
+    "title": "Blog - Stalumo wszystko o stali konstrukcjach stawoych",
     "homeTitle": "Strona główna",
     "empty": "Brak wpisów",
     "loadMore": "Załaduj więcej",

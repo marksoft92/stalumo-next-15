@@ -121,7 +121,8 @@
     "copy": "2025 © All rights reserved"
   },
   "Blog": {
-    "title": "Blog - Stalumo",
+    "titleMain": "Blog - Stalumo",
+    "title": "Blog - Stalumo everything about steel constructions",
     "homeTitle": "Home",
     "empty": "No posts",
     "loadMore": "Load more",

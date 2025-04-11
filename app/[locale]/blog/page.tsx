@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
       title: `${t("title")} | My Website`,
       description: t("description"),
       url: `/${params.locale}/blog`,
-      siteName: "Stalumo",
+      siteName: "Stalumo.pl",
       type: "website",
     },
   };
@@ -68,7 +68,7 @@ const BlogPageContainer = async ({ params }: { params: any }) => {
               {t("homeTitle")}
             </Link>
             <span className="text-[1.6rem] font-semibold uppercase ">
-              /{t("title")}
+              /{t("titleMain")}
             </span>
           </h3>
         </div>
