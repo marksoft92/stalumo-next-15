@@ -1,4 +1,3 @@
-
 "use client"
 import React, { useEffect, useState } from 'react';
 
@@ -17,15 +16,12 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, direction }
 
         window.addEventListener('resize', handleResize);
 
-        // Check the initial window size
         handleResize();
 
         return () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
-    // Jeśli ekran jest mniejszy lub równy 1000px, nie uruchamiamy animacji
 
 
     useEffect(() => {
@@ -35,7 +31,6 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, direction }
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        // Usuń klasy transformacyjne w zależności od kierunku animacji
                         if (direction === 'left') {
                             entry.target.classList.remove('translate-x-full');
                             entry.target.classList.add('translate-x-0');
@@ -50,16 +45,15 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, direction }
                             entry.target.classList.add('translate-y-0');
                         }
 
-                        // Włącz animację zmieniając opacity
                         entry.target.classList.remove('opacity-0');
                         entry.target.classList.add('opacity-100');
 
-                        // Przestań obserwować element
+
                         observer.unobserve(entry.target);
                     }
                 });
             }, {
-                threshold: 0.2, // Animacja po 50% widoczności elementu
+                threshold: 0.2,
             });
 
             animateElements.forEach((element) => {
