@@ -59,7 +59,7 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, direction }
                     }
                 });
             }, {
-                threshold: 0.3, // Animacja po 50% widoczności elementu
+                threshold: 0.2, // Animacja po 50% widoczności elementu
             });
 
             animateElements.forEach((element) => {

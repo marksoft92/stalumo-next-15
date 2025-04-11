@@ -14,10 +14,10 @@ const fetchPosts = async (lang: string, slug: string) => {
   return data;
 };
 
-// Poprawiona wersja
+
 const ArticlePageContainer = async ({ params }: { params: any }) => {
-  // Typy params są poprawnie zadeklarowane, więc nie trzeba używać `await` dla params
-  const { locale, slug } = params;
+
+  const { locale, slug } = await params;
 
   const article = await fetchPosts(locale, slug);
 

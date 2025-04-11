@@ -19,7 +19,7 @@ export async function generateMetadata({
 }: {
   params: any;
 }): Promise<Metadata> {
-  const { locale, slug } = params;
+  const { locale, slug } = await params;
 
   try {
     // Pobieramy dane artykułu na podstawie slug

@@ -9,7 +9,7 @@ import BackgroundSlider from "@/components/BackgroundSilder";
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   const t = await getTranslations("Blog");
-
+  const p = await params
   return {
     title: `${t("title")}`, // Dynamiczny tytuł
     description: t("description"), // Dynamiczny opis
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
     openGraph: {
       title: `${t("title")} | My Website`,
       description: t("description"),
-      url: `/${params.locale}/blog`,
+      url: `/${p.locale}/blog`,
       siteName: "Stalumo.pl",
       type: "website",
     },

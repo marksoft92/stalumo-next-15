@@ -17,12 +17,12 @@ const oswaldVariable = localFont({
   weight: "100 200 300 400 500 600 700 800 900",
 });
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
   params: { locale: Locale };
 }): Metadata {
-  const { locale } = params;
+  const { locale } = await params;
 
   const meta = {
     en: {
@@ -100,7 +100,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: Locale };
 }>) {
-  const { locale } = params;
+  const { locale } = await params;
   if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
