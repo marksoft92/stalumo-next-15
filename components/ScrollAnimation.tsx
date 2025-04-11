@@ -7,6 +7,28 @@ interface ScrollAnimationProps {
 }
 
 const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, direction }) => {
+    const [isMobile, setIsMobile] = useState<boolean>(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 1000);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Check the initial window size
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    // Jeśli ekran jest mniejszy lub równy 1000px, nie uruchamiamy animacji
+    if (isMobile) {
+        return <div>{children}</div>;
+    }
+
     useEffect(() => {
         const animateElements = document.querySelectorAll(`.anim-${direction}`);
 
@@ -37,7 +59,7 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, direction }
                 }
             });
         }, {
-            threshold: 0.5, // Animacja po 50% widoczności elementu
+            threshold: 0.3, // Animacja po 50% widoczności elementu
         });
 
         animateElements.forEach((element) => {
