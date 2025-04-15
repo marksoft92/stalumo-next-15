@@ -40,7 +40,7 @@ const BlogList = ({ posts }: { posts: BlogPost[] }) => {
                 height={300}
                 alt={post.alt}
                 loading="lazy"
-                className="max-h-[300]"
+                className="max-h-[300] rounded-[6px]"
               />
               <div className="flex flex-col gap-5">
                 <h2 className="text-[rgb(235,64,54)]">{postContent.title}</h2>

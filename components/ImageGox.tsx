@@ -27,7 +27,7 @@ const BoxImg: React.FC<BoxImgProps> = ({ url, alt }) => {
           height={300}
           alt={alt}
           src={url}
-          className="object-cover cursor-pointer h-full "
+          className="object-cover cursor-pointer h-full rounded-[6px]"
           loading="lazy"
           // layout="responsive"
         />
@@ -49,7 +49,7 @@ const BoxImg: React.FC<BoxImgProps> = ({ url, alt }) => {
               alt={alt}
               src={url}
               loading="lazy"
-              className="max-h-[90vh] max-w-[90vw]"
+              className="max-h-[90vh] max-w-[90vw] rounded-[6px]"
               //   layout="responsive"
             />
             <button
