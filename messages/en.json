@@ -159,5 +159,11 @@
     "invalid": "Email invalid",
     "required": "Name required",
     "min": "Message required to be at least 10 characters"
+  },
+  "Cookies": {
+    "description": "This website use cookies to help you have a superior and more relevant browsing experience on the website.",
+    "title": "Cookies Consent",
+    "decline": "Decline",
+    "accept": "Accept"
   }
 }

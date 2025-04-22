@@ -4,10 +4,13 @@ import { useState, useEffect } from "react";
 import { getLocalStorage, setLocalStorage } from "@/lib/storage-helpers";
 import CookieIcon from "@mui/icons-material/Cookie";
 import { SvgIcon } from "@mui/material";
+import { useTranslations } from "next-intl";
 // CookieBanner component that displays a banner for cookie consent.
 export default function CookieBanner() {
   const [cookieConsent, setCookieConsent] = useState<boolean | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const t = useTranslations("Cookies");
+
 
   // Retrieve cookie consent status from local storage on component mount
   useEffect(() => {
@@ -50,11 +53,10 @@ export default function CookieBanner() {
               <SvgIcon className="!text-[3rem]">
                 <CookieIcon />
               </SvgIcon>
-              <span className="text-[2rem]">Cookies Consent</span>
+              <span className="text-[2rem]">{t("title")}</span>
             </h4>
             <p>
-              This website use cookies to help you have a superior and more
-              relevant browsing experience on the website.
+            {t("description")}
             </p>
           </div>
           <div className="cookie-banner-buttons text-[#fff] flex gap-5 text-center items-center algin-center justify-center p-2">
@@ -62,13 +64,15 @@ export default function CookieBanner() {
               className="p-2 text-[#4070f4]  border-[2px] border-solid border-[#4070f4] rounded-[8px]"
               onClick={() => setCookieConsent(false)}
             >
-              Decline
+              {t("decline")}
+
             </button>
             <button
               className="p-2 bg-[#4070f4]  border-[2px] border-solid border-[#4070f4] rounded-[8px]"
               onClick={() => setCookieConsent(true)}
             >
-              Accept
+              {t("accept")}
+
             </button>
           </div>
         </div>
