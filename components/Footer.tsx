@@ -7,8 +7,8 @@ import { SvgIcon } from "@mui/material";
 
 export default async function NavBar(locale:any) {
   const t = await getTranslations("Footer");
-
       const itsDe = locale?.locale === "de"
+
   return (
     <>
       <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px] max-lg:flex-col">
@@ -43,7 +43,7 @@ export default async function NavBar(locale:any) {
               {t("email")}
             </h4>
             <h2 className="text-[1.5rem] font-semibold uppercase">
-              biuro@stalumo.com
+              office@stalumo.com
             </h2>
           </div>
           <div className="flex flex-col gap-5">
