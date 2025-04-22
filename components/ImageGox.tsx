@@ -19,7 +19,7 @@ const BoxImg: React.FC<BoxImgProps> = ({ url, alt }) => {
     <div>
       {/* Obrazek */}
       <div
-        className="box-img w-full h-full max-h-[300px] min-w-[300px] max-lg:max-h-[100%]"
+        className="box-img w-full h-full max-h-[300px] min-w-[300px] max-lg:max-h-[100%] flex justify-center"
         onClick={openModal}
       >
         <Image
