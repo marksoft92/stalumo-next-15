@@ -24,7 +24,7 @@ const BlogList = ({ article }: { article: Article }) => {
           className="max-h-[300px] object-cover rounded-[6px]"
         />
         <div className="flex flex-col gap-5">
-          <h2 className="text-[rgb(235,64,54)]">{article.title}</h2>
+          <h2 className="text-[rgb(235,64,54)] text-[2.5rem]">{article.title}</h2>
           <p dangerouslySetInnerHTML={{ __html: article.content }}></p>
         </div>
       </div>
