@@ -5,7 +5,7 @@ import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import EmailIcon from "@mui/icons-material/Email";
 import { SvgIcon } from "@mui/material";
 
-export default async function NavBar(locale) {
+export default async function NavBar(locale:string) {
   const t = await getTranslations("Footer");
 
       const itsDe = locale?.locale === "de"
