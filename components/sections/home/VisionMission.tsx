@@ -6,7 +6,7 @@ import { getTranslations } from "next-intl/server";
 const VisionMission: React.FC = async () => {
   const t = await getTranslations("HomePage.VisionMission");
   return (
-    <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto max-lg:flex-col">
+    <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] max-lg:my-[5rem] mx-auto max-lg:flex-col">
       <div className="max-w-full lg:max-w-[50%] flex justify-center flex-col gap-5 max-lg:text-center">
         <h4 className="text-[#EB4036] text-[1rem] font-semibold uppercase">
           {t("subTitle")}

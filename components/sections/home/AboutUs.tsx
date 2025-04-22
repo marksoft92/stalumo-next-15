@@ -8,7 +8,7 @@ const AboutUs: React.FC = async () => {
   const t = await getTranslations("HomePage.AboutUs");
 
   return (
-    <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] mx-auto max-lg:flex-col">
+    <section className="flex  f-row p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] max-lg:my-[5rem] mx-auto max-lg:flex-col">
       <div className="relative">
         <div>
           {" "}

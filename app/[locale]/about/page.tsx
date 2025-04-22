@@ -32,7 +32,7 @@ export default async function AboutPage() {
             </span>
           </h3>
         </div>
-        <section className="flex  f-row p-7rem py-0 lg:gap-x-[70px] gap-y-0 m-[10rem] mx-auto max-lg:flex-col">
+        <section className="flex  f-row p-7rem py-0 lg:gap-x-[70px] gap-y-0 m-[10rem] max-lg:my-[5rem] mx-auto max-lg:flex-col">
           <div className="relative">
             <div>
               <Image

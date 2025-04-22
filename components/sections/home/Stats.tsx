@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 const Stats: React.FC = async () => {
   const t = await getTranslations("HomePage.Stats");
   return (
-    <section className="flex items-center  justify-center p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] max-lg:m-[1rem] max-lg:flex-col">
+    <section className="flex items-center  justify-center p-7rem py-0 gap-x-[70px] gap-y-0 m-[10rem] max-lg:my-[5rem] max-lg:m-[1rem] max-lg:flex-col">
       <div className="flex flex-col items-center justify-center">
         <h4 className="text-[#A5A5A5] text-[1.2rem] font-semibold uppercase ">
           {t("hours")}
