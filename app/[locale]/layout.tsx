@@ -120,7 +120,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <Header />
           <GoogleRecaptchaWrapper>{children}</GoogleRecaptchaWrapper>
-          <Footer />
+          <Footer locale={locale}/>
           <CookieBanner />
         </NextIntlClientProvider>
       </body>

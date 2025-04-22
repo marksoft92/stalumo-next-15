@@ -40,7 +40,7 @@ export default async function AboutPage() {
                 width={133}
                 height={133}
                 className="p-[0.3em] absolute top-[-1rem] left-[-1rem] z-[-1]"
-                alt="Logo Facebook"
+                alt="Icon"
                 loading="lazy"
               />
             </div>

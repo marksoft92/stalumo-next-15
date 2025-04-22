@@ -5,8 +5,10 @@ import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import EmailIcon from "@mui/icons-material/Email";
 import { SvgIcon } from "@mui/material";
 
-export default async function NavBar() {
+export default async function NavBar(locale) {
   const t = await getTranslations("Footer");
+
+      const itsDe = locale?.locale === "de"
   return (
     <>
       <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px] max-lg:flex-col">
@@ -54,8 +56,8 @@ export default async function NavBar() {
               {t("phone")}
             </h4>
             <h2 className="text-[1.5rem] font-semibold uppercase">
-              +48 784-532-549 <br />
-              +48 881-961-657
+
+              {itsDe ? "+49 151 58843944" : "+48 784-532-549"}
             </h2>
           </div>
         </div>

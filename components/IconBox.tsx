@@ -14,8 +14,7 @@ const IconBox: React.FC<IconBoxProps> = ({ iconUrl, title, description }) => {
         src={iconUrl}
         width={70}
         height={70}
-        //   className="p-[0.3em]"
-        alt="Logo Facebook"
+        alt="Icon"
         loading="lazy"
       />
       <div className="flex items-center flex-col">

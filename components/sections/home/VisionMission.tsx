@@ -42,7 +42,7 @@ const VisionMission: React.FC = async () => {
           <p className="text-[#A5A5A5]">{t("visionDescription")}</p>
         </div>
       </div>
-      <div className="relative bg-[url('/assets/images/person_center.png')] bg-cover bg-no-repeat w-full max-lg:flex max-lg:flex-col after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-[70%] after:bg-gradient-to-r after:from-[#02010100] after:via-[#EB4036] after:to-[#EB4036] after:rotate-90 after:z-[-1] max-lg:after:content-[none]">
+      <div className="relative bg-[url('/assets/images/person_center.png')] bg-cover bg-no-repeat w-full max-lg:flex max-lg:flex-col">
         <div className="flex justify-end lg:translate-x-[30%]">
           <h4 className="text-[2rem] w-[55%] p-5 bg-[#EB4036] font-semibold uppercase max-lg:w-full">
             "STALUMO - <br />{" "}
@@ -53,9 +53,9 @@ const VisionMission: React.FC = async () => {
             {t("sentencePart")}"
           </h4>
         </div>
-        <div className="flex items-end bg-transparent bg-gradient-to-r from-[#02010100] via-[#EB4036] to-[#EB4036] rotate-90 h-[72%] relative z-[-9]">
-          <div className="w-full"></div>
-        </div>
+        {/*<div className="flex items-end bg-transparent bg-gradient-to-r from-[#02010100] via-[#EB4036] to-[#EB4036] rotate-90 h-[72%] relative z-[-9] absolute bottom-0 h-full w-full left-1/2 -translate-x-1/2 transform">*/}
+        {/*  <div className="w-full"></div>*/}
+        {/*</div>*/}
       </div>
     </section>
   );

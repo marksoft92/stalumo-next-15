@@ -62,7 +62,7 @@ bg-[#02010100]  border-solid border-[1px] border-[#EB4036] text-[25px] leading-[
               width={33}
               height={33}
               className="p-[0.3em]"
-              alt="Logo Facebook"
+              alt="Logo TikTok"
               loading="lazy"
             />
           </a>
@@ -77,7 +77,7 @@ bg-[#02010100]  border-solid border-[1px] border-[#EB4036] text-[25px] leading-[
               width={33}
               height={33}
               className="p-[0.3em]"
-              alt="Logo Facebook"
+              alt="Logo Instagram"
               loading="lazy"
             />
           </a>

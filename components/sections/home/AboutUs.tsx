@@ -17,7 +17,7 @@ const AboutUs: React.FC = async () => {
             width={133}
             height={133}
             className="p-[0.3em] absolute top-[-1rem] left-[-1rem] z-[-1]"
-            alt="Logo Facebook"
+            alt="icon"
             loading="lazy"
           />
         </div>
@@ -38,7 +38,7 @@ const AboutUs: React.FC = async () => {
             width={100}
             height={120}
             className="h-[120px]"
-            alt="ikona projektów"
+            alt="icon"
             loading="lazy"
           />
           <div className="">
