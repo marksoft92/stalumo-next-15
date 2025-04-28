@@ -23,6 +23,15 @@ export default function middleware(request: NextRequest) {
 
     return NextResponse.next();
   }
+  const localeFromPath = pathname.split("/")[1];
+
+  if (
+    localeFromPath &&
+    !routing.locales.includes(localeFromPath as (typeof routing.locales)[number]) &&
+    localeFromPath !== ""
+  ) {
+    return NextResponse.redirect(new URL(`/${routing.defaultLocale}/404`, request.url));
+  }
 
   return intlMiddleware(request);
 }
@@ -32,5 +41,6 @@ export const config = {
     "/api/:path*",
     "/",
     "/(en|pl|de)/:path*",
+    "/:locale((?!api|_next|.*\\..*).*)"
   ],
 };

@@ -165,5 +165,10 @@
     "title": "Einwilligung zu Cookies",
     "decline": "Ablehnen",
     "accept":"Akzeptieren"
+  },
+  "NotFound": {
+ "description": "Die Seite, die Sie suchen, ist nicht verfügbar. Wenn Sie Fragen haben, besuchen Sie bitte die Kontaktseite und schreiben Sie uns.",
+  "title": "Diese Seite konnte nicht gefunden werden.",
+    "button": "Kontaktieren Sie uns"
   }
 }

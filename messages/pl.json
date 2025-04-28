@@ -168,5 +168,10 @@
     "title": "Zgoda na pliki cookie",
     "decline": "Odrzucam",
     "accept":"Akceptuje"
+  },
+  "NotFound": {
+  "description": "Strona, której szukasz, nie jest dostępna. Jeśli masz jakieś pytania, przejdź do strony kontaktowej i napisz do nas.",
+  "title": "Nie znaleziono strony.",
+    "button": "Skontaktuj się z nami"
   }
 }

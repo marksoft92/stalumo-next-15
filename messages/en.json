@@ -165,5 +165,10 @@
     "title": "Cookies Consent",
     "decline": "Decline",
     "accept": "Accept"
+  },
+  "NotFound": {
+    "description": "The page you are looking for is not available. If you have any questions, please visit the contact page and reach out to us.",
+    "title": "This page could not be found.",
+    "button": "Contact us"
   }
 }
