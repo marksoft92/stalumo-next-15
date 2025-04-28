@@ -4,6 +4,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import EmailIcon from "@mui/icons-material/Email";
 import { SvgIcon } from "@mui/material";
+import Link from "next/link";
 
 export default async function NavBar(locale:any) {
   const t = await getTranslations("Footer");
@@ -30,7 +31,7 @@ export default async function NavBar(locale:any) {
               {t("location")}
             </h4>
             <h2 className="text-[1.5rem] font-semibold uppercase">
-              {t("country")}
+              <Link href="https://www.google.com/maps/place/Stalumo/@53.2157609,15.7642279,17z/data=!4m6!3m5!1s0x47012f630a6437c1:0x5c53e80903d8fdc!8m2!3d53.2158315!4d15.7648368!16s%2Fg%2F11gf0pmv9x?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">{t("country")}</Link>
             </h2>
           </div>
           <div className="flex flex-col gap-5">
@@ -43,7 +44,8 @@ export default async function NavBar(locale:any) {
               {t("email")}
             </h4>
             <h2 className="text-[1.5rem] font-semibold uppercase">
-              office@stalumo.com
+           
+              <Link href="mailto:office@stalumo.com">office@stalumo.com</Link>
             </h2>
           </div>
           <div className="flex flex-col gap-5">
@@ -57,7 +59,7 @@ export default async function NavBar(locale:any) {
             </h4>
             <h2 className="text-[1.5rem] font-semibold uppercase">
 
-              {itsDe ? "+49 151 58843944" : "+48 784-532-549"}
+              {itsDe ? <Link href="tel:+4915158843944">+49 151 58843944</Link> : <Link href="tel:+48784532549">+48 784-532-549</Link>}
             </h2>
           </div>
         </div>
