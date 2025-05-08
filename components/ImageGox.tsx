@@ -1,23 +1,39 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-interface BoxImgProps {
-  url: string; // Przyjmujemy tylko src dla pojedynczego obrazu
-  alt: string; // Dodajemy alt dla dostępności
+interface ImageData {
+  url: string;
+  alt: string;
 }
 
-const BoxImg: React.FC<BoxImgProps> = ({ url, alt }) => {
-  const [isOpen, setIsOpen] = useState(false); // Stan kontrolujący widoczność popupu
+interface BoxImgProps {
+  images: ImageData[]; // Wszystkie obrazy
+  index: number; // Index aktualnego obrazu
+  alt: any;
+  url: any;
+}
 
-  // Funkcja do otwierania popupu
-  const openModal = () => setIsOpen(true);
+const BoxImg: React.FC<BoxImgProps> = ({ images, index, url, alt }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(index);
 
-  // Funkcja do zamykania popupu
+  const openModal = () => {
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
+
   const closeModal = () => setIsOpen(false);
+
+  const prevImage = () =>
+    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1));
+
+  const nextImage = () =>
+    setCurrentIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
+
+  const currentImage = images[currentIndex];
 
   return (
     <div>
-      {/* Obrazek */}
       <div
         className="box-img w-full h-full max-h-[300px] min-w-[300px] max-lg:max-h-[100%] flex justify-center"
         onClick={openModal}
@@ -29,11 +45,9 @@ const BoxImg: React.FC<BoxImgProps> = ({ url, alt }) => {
           src={url}
           className="object-cover cursor-pointer h-full rounded-[6px]"
           loading="lazy"
-          // layout="responsive"
         />
       </div>
 
-      {/* Popup (modale) */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
@@ -46,17 +60,30 @@ const BoxImg: React.FC<BoxImgProps> = ({ url, alt }) => {
             <Image
               width={600}
               height={600}
-              alt={alt}
-              src={url}
+              alt={currentImage.alt}
+              src={currentImage.url}
               loading="lazy"
               className="max-h-[90vh] max-w-[90vw] rounded-[6px]"
-              //   layout="responsive"
             />
+
             <button
               className="absolute top-0 right-0 p-2 text-white bg-red-600 rounded-full w-[40px] my-1 mx-1"
               onClick={closeModal}
             >
               X
+            </button>
+
+            <button
+              className="absolute left-0 top-1/2 -translate-y-1/2 p-2 text-white bg-black bg-opacity-70 rounded-full mx-2"
+              onClick={prevImage}
+            >
+              ◀
+            </button>
+            <button
+              className="absolute right-0 top-1/2 -translate-y-1/2 p-2 text-white bg-black bg-opacity-70 rounded-full mx-2"
+              onClick={nextImage}
+            >
+              ▶
             </button>
           </div>
         </div>

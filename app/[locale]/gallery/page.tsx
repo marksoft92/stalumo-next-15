@@ -59,7 +59,7 @@ export default function GalleryPage() {
         </div>
         <section className="grid grid-cols-3 gap-5 my-10 max-lg:flex max-lg:flex-col max-lg:items-center">
           {images.map((image, index) => (
-            <BoxImg key={index} url={image?.url} alt={image?.alt} />
+            <BoxImg key={index} url={image?.url} alt={image?.alt} images={images} index={index}/>
           ))}
         </section>
       </div>
