@@ -32,6 +32,9 @@ export async function GET(req: NextRequest) {
     const posts = await prisma.blog.findMany({
       skip: offset,
       take: pageSize,
+      orderBy: {
+        id: 'desc',
+      },
       include: {
         translations: {
           where: {
