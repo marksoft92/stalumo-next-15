@@ -63,6 +63,7 @@ export async function generateMetadata({
       url: currentMeta.url,
       title: currentMeta.title,
       description: currentMeta.description,
+      type: "website",
       images: [
         {
           url: currentMeta.image,
