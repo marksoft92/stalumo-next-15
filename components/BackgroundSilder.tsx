@@ -53,14 +53,7 @@ const BackgroundSlider: React.FC<BackgroundSliderProps> = ({
   }, [currentImageIndex, interval, maxZoom, images.length]);
 
 
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setShow(true), 1500); // opóźnij 2 sekundy
-    return () => clearTimeout(timeout);
-  }, []);
-
-  if (!show) return null;
+  
   return (
     <>
       <div
