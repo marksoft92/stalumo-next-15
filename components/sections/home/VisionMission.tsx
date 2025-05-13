@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 import { getTranslations } from "next-intl/server";
+import LazyBackground from "@/components/lazyBackground";
 const VisionMission: React.FC = async () => {
   const t = await getTranslations("HomePage.VisionMission");
   return (
@@ -42,7 +43,11 @@ const VisionMission: React.FC = async () => {
           <p className="text-[#A5A5A5]">{t("visionDescription")}</p>
         </div>
       </div>
-      <div className="relative bg-[url('/assets/images/person_center.png')] bg-cover bg-no-repeat w-full max-lg:flex max-lg:flex-col">
+
+      <LazyBackground
+        imageUrl="/assets/images/person_center.png"
+        className="relative bg-cover bg-no-repeat w-full max-lg:flex max-lg:flex-col"
+      >
         <div className="flex justify-end lg:translate-x-[30%]">
           <h4 className="text-[2rem] w-[55%] p-5 bg-[#EB4036] font-semibold uppercase max-lg:w-full">
             "STALUMO - <br />{" "}
@@ -56,7 +61,7 @@ const VisionMission: React.FC = async () => {
         {/*<div className="flex items-end bg-transparent bg-gradient-to-r from-[#02010100] via-[#EB4036] to-[#EB4036] rotate-90 h-[72%] relative z-[-9] absolute bottom-0 h-full w-full left-1/2 -translate-x-1/2 transform">*/}
         {/*  <div className="w-full"></div>*/}
         {/*</div>*/}
-      </div>
+      </LazyBackground>
     </section>
   );
 };
