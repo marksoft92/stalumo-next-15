@@ -81,7 +81,7 @@ export async function generateMetadata({
       images: currentMeta.image,
     },
     alternates: {
-      canonical: "https://stalumo.com",
+      canonical: currentMeta.url, 
       languages: {
         en: "https://stalumo.com/en",
         pl: "https://stalumo.com/pl",
