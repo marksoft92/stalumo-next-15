@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
+import LazyBackground from "@/components/lazyBackground";
 const Steps: React.FC = async () => {
   const t = await getTranslations("HomePage.Steps");
   return (
@@ -58,8 +59,12 @@ const Steps: React.FC = async () => {
         <p className="text-[#A5A5A5]">{t("priceDescription")}</p>
       </div>
 
-      <div className="bg-red-500 h-[466px] opacity-100 justify-between py-8 px-8 lg:w-[31%] flex flex-col gap-4 h-full relativ bg-[url('/assets/images/spawacz10years.png')] bg-contain bg-no-repeat bg-[6rem]">
-        <div className="flex flex-row items-end">
+
+      <LazyBackground
+        imageUrl="/assets/images/spawacz10years.png"
+        className="bg-red-500 h-[466px] opacity-100 justify-between py-8 px-8 lg:w-[31%] flex flex-col gap-4 h-full relativ  bg-contain bg-no-repeat bg-[6rem]"
+      >
+         <div className="flex flex-row items-end">
           <h4
             className="text-xl font-semibold uppercase leading-[1.3em] tracking-[1.6px]"
             dangerouslySetInnerHTML={{
@@ -74,7 +79,7 @@ const Steps: React.FC = async () => {
           {" "}
           {t("button")}
         </Link>
-      </div>
+      </LazyBackground>
     </section>
   );
 };
