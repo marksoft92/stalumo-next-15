@@ -15,7 +15,7 @@ const HamburgerMenu = ({ navLinks }: { navLinks: NavLink[] }) => {
 
   return (
     <div className="lg:hidden xxxx">
-      <button className="text-[#fff] relative z-[11]" onClick={toggleMenu}>
+      <button className="text-[#fff] relative z-[11]" onClick={toggleMenu} aria-label="menu open/close">
         <SvgIcon className="!text-[3rem]">
           {isOpen ? <CloseIcon /> : <MenuIcon />}
         </SvgIcon>
