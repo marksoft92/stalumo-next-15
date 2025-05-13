@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import LazyBackground from "./lazyBackground";
 
 interface BackgroundSliderProps {
   images: string[];
@@ -54,16 +55,22 @@ const BackgroundSlider: React.FC<BackgroundSliderProps> = ({
         style={{ maxHeight: maxHeight }}
         className={` w-full h-screen absolute left-0 bg-[#121212]/90 `}
       ></div>
-      <div
-        className={`w-full h-screen bg-cover bg-center absolute z-[-1] transition-transform duration-5000 ease-linear left-0`}
-        style={{
+
+<LazyBackground
+        imageUrl={images[currentImageIndex]}
+        className="w-full h-screen bg-cover bg-center absolute z-[-1] transition-transform duration-5000 ease-linear left-0"
+        styleCustom={{
           maxHeight: maxHeight,
-          backgroundImage: `url(${images[currentImageIndex]})`,
           transform: `scaleX(${zoom})`,
           opacity: opacity,
           transition: "opacity 0.5s ease-out", // Płynne wyblaknięcie
         }}
-      ></div>
+      ></LazyBackground>
+
+      {/* <div
+        className={`w-full h-screen bg-cover bg-center absolute z-[-1] transition-transform duration-5000 ease-linear left-0`}
+        style={}
+      ></div> */}
     </>
   );
 };

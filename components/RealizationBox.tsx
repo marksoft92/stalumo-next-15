@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "@/i18n/routing";
+import LazyBackground from "./lazyBackground";
 
 interface RealizationBoxProps {
   iconUrl: string;
@@ -16,9 +17,10 @@ const RealizationBox: React.FC<RealizationBoxProps> = ({
 }) => {
   return (
     <Link href={href}>
-      <div
+
+<LazyBackground
+        imageUrl={iconUrl}
         className="realization-box-background relative flex items-start p-5 min-h-[320px] justify-end rounded-lg shadow-md flex-col border border-solid border-[#222222] bg-no-repeat bg-cover  bg-center h-full height-max-[320px] transition-all duration-900 ease-out hover:bg-[length:103%]"
-        style={{ backgroundImage: `url(${iconUrl})` }}
       >
         <div className="flex  flex-col items-start z-[1]">
           <h4 className="text-[#EB4036] text-[1rem]  font-semibold uppercase">
@@ -28,7 +30,9 @@ const RealizationBox: React.FC<RealizationBoxProps> = ({
             {title}
           </h3>
         </div>
-      </div>
+        </LazyBackground>
+
+
     </Link>
   );
 };
