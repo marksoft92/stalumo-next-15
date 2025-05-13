@@ -9,7 +9,7 @@ import Link from "next/link";
 export default async function NavBar(locale:any) {
   const t = await getTranslations("Footer");
       const itsDe = locale?.locale === "de"
-
+const emailObfuscation = ['office', 'stalumo.com'].join('@')
   return (
     <>
       <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px] max-lg:flex-col">
@@ -44,8 +44,8 @@ export default async function NavBar(locale:any) {
               {t("email")}
             </h4>
             <h2 className="text-[1.5rem] font-semibold uppercase">
-           
-              <Link href="mailto:office@stalumo.com">office@stalumo.com</Link>
+          
+            <Link href={`mailto:${['office', 'stalumo.com'].join('@')}`}>{emailObfuscation}</Link>
             </h2>
           </div>
           <div className="flex flex-col gap-5">

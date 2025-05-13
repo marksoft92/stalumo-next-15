@@ -11,6 +11,7 @@ import GoogleRecaptchaWrapper from "@/components/GoogleCaptchaWrapper";
 import CookieBanner from "@/components/CookieBanner";
 import { Suspense } from "react";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import StructuredData from "@/components/StructuredData";
 const oswaldVariable = localFont({
   src: "./fonts/Oswald-VariableFont_wght.ttf",
   variable: "--font-oswald",
@@ -26,24 +27,24 @@ export async function generateMetadata({
 
   const meta = {
     en: {
-      title: "Steel Railings & Gates | Stalumo",
-      description: "Top-quality steel constructions for your needs.",
+      title: "Custom Steel Railings, Gates & Metalwork for Homes | Stalumo",
+      description: "Discover top-quality steel railings, gates, and custom metalwork tailored to your needs. Precision and durability from Stalumo.",
       keywords:
         "steel railings, gates, steel constructions, custom steel designs, railings, metal work",
       url: "https://stalumo.com/en",
       image: "https://stalumo.com/assets/images/logo.png",
     },
     pl: {
-      title: "Balustrady i Bramy Stalowe | Stalumo",
-      description: "Najwyższej jakości konstrukcje stalowe na zamówienie.",
+      title: "Balustrady, Bramy i Konstrukcje Stalowe na Zamówienie | Stalumo",
+      description: "Wykonujemy balustrady, bramy i konstrukcje stalowe na zamówienie. Precyzja, trwałość i estetyka – zaufaj firmie Stalumo.",
       keywords:
         "balustrady stalowe, bramy stalowe, konstrukcje stalowe, ogrodzenia stalowe, stalowe na zamówienie",
       url: "https://stalumo.com/pl",
       image: "https://stalumo.com/assets/images/logo.png",
     },
     de: {
-      title: "Stahlgeländer und Tore | Stalumo",
-      description: "Hochwertige Stahlkonstruktionen nach Ihren Bedürfnissen.",
+      title: "Stahlgeländer, Tore & Maßgefertigte Metallkonstruktionen | Stalumo",
+      description: "Stalumo bietet maßgefertigte Stahlgeländer, Tore und Metallarbeiten. Hochwertige Konstruktionen für Ihr Zuhause oder Gewerbe.",
       keywords:
         "stahlgeländer, toren, stahlkonstruktionen, maßgefertigte stahlkonstruktionen",
       url: "https://stalumo.com/de",
@@ -111,6 +112,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <Suspense fallback={null}>
         <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
+        <StructuredData locale={locale}/>
       </Suspense>
       <body
         className={`${oswaldVariable.variable} antialiased`}
