@@ -35,7 +35,7 @@ export async function generateMetadata({
       image: "https://stalumo.com/assets/images/logo.png",
     },
     pl: {
-      title: "Balustrady, Bramy i Konstrukcje Stalowe na Zamówienie | Stalumo",
+      title: "Balustrady, Bramy i Konstrukcje Stalowe na Zamówienie",
       description: "Wykonujemy balustrady, bramy i konstrukcje stalowe na zamówienie. Precyzja, trwałość i estetyka – zaufaj firmie Stalumo.",
       keywords:
         "balustrady stalowe, bramy stalowe, konstrukcje stalowe, ogrodzenia stalowe, stalowe na zamówienie",
@@ -43,7 +43,7 @@ export async function generateMetadata({
       image: "https://stalumo.com/assets/images/logo.png",
     },
     de: {
-      title: "Stahlgeländer, Tore & Maßgefertigte Metallkonstruktionen | Stalumo",
+      title: "Stahlgeländer, Tore & Maßgefertigte Metallkonstruktionen",
       description: "Stalumo bietet maßgefertigte Stahlgeländer, Tore und Metallarbeiten. Hochwertige Konstruktionen für Ihr Zuhause oder Gewerbe.",
       keywords:
         "stahlgeländer, toren, stahlkonstruktionen, maßgefertigte stahlkonstruktionen",
