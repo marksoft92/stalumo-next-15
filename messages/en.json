@@ -170,5 +170,27 @@
     "description": "The page you are looking for is not available. If you have any questions, please visit the contact page and reach out to us.",
     "title": "This page could not be found.",
     "button": "Contact us"
-  }
+  },
+  "Categories": {
+  "titleMain": "Product Categories - Stalumo",
+  "title": "Steel Products by Stalumo – Handcrafted Artistry",
+  "homeTitle": "Home",
+  "empty": "No products available",
+  "loadMore": "Load more",
+  "loading": "Loading...",
+  "description": "Discover unique, handcrafted steel products – durable, stylish, and made with passion. Browse our categories to find the perfect addition to your interior or garden.",
+  "keywords": "steel products, handmade steel decorations, steel ornaments, handcrafted steel, steel interior elements, steel craftsmanship, steel furniture, steel accessories, steel decor, artistic steel, handmade steelwork, steel interior accents"
+},
+"Products": {
+  "titleMain": "Product Categories - Stalumo",
+  "title": "Steel Products – Handcrafted Artistry",
+  "productTitle":"Grill",
+  "homeTitle": "Home",
+  "empty": "No products available",
+  "loadMore": "Load more",
+  "loading": "Loading...",
+  "description": "Discover unique, handcrafted steel products – durable, stylish, and made with passion. Browse our categories to find the perfect addition to your interior or garden.",
+  "keywords": "steel products, handmade steel decorations, steel ornaments, handcrafted steel, steel interior elements, steel craftsmanship, steel furniture, steel accessories, steel decor, artistic steel, handmade steelwork, steel interior accents"
+}
+
 }

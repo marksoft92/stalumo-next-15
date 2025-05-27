@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
       title: `${t("title")} | My Website`,
       description: t("description"),
       url: `/${p.locale}/blog`,
-      siteName: "Stalumo.pl",
+      siteName: "Stalumo.com",
       type: "website",
     },
   };

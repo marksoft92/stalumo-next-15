@@ -8,9 +8,9 @@
       "count": "Wykonanych<br/>Projektów"
     },
     "Excellence": {
-      "title": "Konstrukcje stalowe na terenie całych Niemiec i Polski",
-      "subTitle": "Doskonałe wykonanie",
-      "description": "Nasza praca to nie tylko doskonałe wykonanie, to również pasja i zaangażowanie, które zawsze doprowadzają do doskonałości. Wykonujemy konstrukcje stalowe w Polsce i każdym rejonie Niemiec.",
+      "title": "Konstrukcje Stalowe — z montażem na terenie całej Polski i Niemiec.",
+      "subTitle": "Twoja budowa. Nasza odpowiedzialność.",
+      "description": "Realizujemy projekty w całej Polsce i Niemczech — niezależnie, czy budujesz dom, biuro czy halę. Dostarczamy gotowe konstrukcje stalowe, balustrady, bramy od A do Z, a Ty zyskujesz święty spokój.",
       "button": "Zamów darmową wycenę"
     },
     "Faq": {
@@ -152,6 +152,7 @@
     "title": "Galeria",
     "homeTitle": "Strona główna"
   },
+
   "contactForm": {
     "name": "Nom",
     "email": "Email",
@@ -170,8 +171,29 @@
     "accept":"Akceptuje"
   },
   "NotFound": {
-  "description": "Strona, której szukasz, nie jest dostępna. Jeśli masz jakieś pytania, przejdź do strony kontaktowej i napisz do nas.",
-  "title": "Nie znaleziono strony.",
+    "description": "Strona, której szukasz, nie jest dostępna. Jeśli masz jakieś pytania, przejdź do strony kontaktowej i napisz do nas.",
+    "title": "Nie znaleziono strony.",
     "button": "Skontaktuj się z nami"
+  },
+  "Categories": {
+    "titleMain": "Produkty - Stalumo",
+    "title": "Produkty Stalowe firmy Stalumo - ręczne rzemiosło",
+    "homeTitle": "Strona główna",
+    "empty": "Brak produktów",
+    "loadMore": "Załaduj więcej",
+    "loading": "Ładowanie...",
+    "description": "Odkryj unikalne, ręcznie wykonane produkty stalowe – solidne, stylowe i tworzone z pasją. Przeglądaj nasze kategorie i znajdź idealny dodatek do wnętrza lub ogrodu.",
+    "keywords": "produkty stalowe, ręcznie robione stalowe dekoracje, stalowe ozdoby, stal ręcznie wykonana, stalowe elementy wystroju, rękodzieło stalowe, stalowe meble, stalowe akcesoria, dekoracje ze stali, stal artystyczna, ręczna produkcja stali, stalowe dodatki do wnętrz"
+  },
+  "Products": {
+    "titleMain": "Kategorie produktów - Stalumo",
+    "title": "Produkty Stalowe - ręczne rzemiosło",
+    "productTitle":"Grill",
+    "homeTitle": "Strona główna",
+    "empty": "Brak produktów",
+    "loadMore": "Załaduj więcej",
+    "loading": "Ładowanie...",
+    "description": "Odkryj unikalne, ręcznie wykonane produkty stalowe – solidne, stylowe i tworzone z pasją. Przeglądaj nasze kategorie i znajdź idealny dodatek do wnętrza lub ogrodu.",
+    "keywords": "produkty stalowe, ręcznie robione stalowe dekoracje, stalowe ozdoby, stal ręcznie wykonana, stalowe elementy wystroju, rękodzieło stalowe, stalowe meble, stalowe akcesoria, dekoracje ze stali, stal artystyczna, ręczna produkcja stali, stalowe dodatki do wnętrz"
   }
 }
