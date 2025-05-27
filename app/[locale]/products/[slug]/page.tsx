@@ -10,7 +10,7 @@ interface Props {
   };
 }
 
-export default async function ProductPage({ params }: Props) {
+export default async function ProductPage({ params }: any) {
   const { locale, slug } = params;
   const t = await getTranslations("Products");
 
