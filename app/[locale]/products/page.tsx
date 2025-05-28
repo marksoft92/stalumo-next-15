@@ -60,12 +60,12 @@ const CategoriesPage = async ({ params }: { params: any }) => {
     ],
     
     de: [
-      { title: "Gasgrill", slug: "/de/produkten/gasgrill", description: "Grill der Premiumklasse – hohe Qualität",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
-      { title: "Holzkohlegrill", slug: "/de/produkten/holzkohlegrill", description: "Grill der Premiumklasse – hohe Qualität",price: 222, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg' ,currency: '€'},
-      { title: "Gasgrill", slug: "/de/produkten/gasgrill", description: "Grill der Premiumklasse – hohe Qualität",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
-      { title: "Holzkohlegrill", slug: "/de/produkten/holzkohlegrill", description: "Grill der Premiumklasse – hohe Qualität",price: 222, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg' ,currency: '€'},
-      { title: "Gasgrill", slug: "/de/produkten/gasgrill", description: "Grill der Premiumklasse – hohe Qualität",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg',currency: '€' },
-      { title: "Holzkohlegrill", slug: "/de/produkten/holzkohlegrill", description: "Grill der Premiumklasse – hohe Qualität",price: 222, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg',currency: '€' },
+      { title: "Gasgrill", slug: "/de/producten/gasgrill", description: "Grill der Premiumklasse – hohe Qualität",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
+      { title: "Holzkohlegrill", slug: "/de/producten/holzkohlegrill", description: "Grill der Premiumklasse – hohe Qualität",price: 222, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg' ,currency: '€'},
+      { title: "Gasgrill", slug: "/de/producten/gasgrill", description: "Grill der Premiumklasse – hohe Qualität",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
+      { title: "Holzkohlegrill", slug: "/de/producten/holzkohlegrill", description: "Grill der Premiumklasse – hohe Qualität",price: 222, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg' ,currency: '€'},
+      { title: "Gasgrill", slug: "/de/producten/gasgrill", description: "Grill der Premiumklasse – hohe Qualität",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg',currency: '€' },
+      { title: "Holzkohlegrill", slug: "/de/producten/holzkohlegrill", description: "Grill der Premiumklasse – hohe Qualität",price: 222, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg',currency: '€' },
     ],
     
   }
