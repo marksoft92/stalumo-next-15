@@ -11,6 +11,8 @@ import GoogleRecaptchaWrapper from "@/components/GoogleCaptchaWrapper";
 import CookieBanner from "@/components/CookieBanner";
 import { Suspense } from "react";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import GTMHead from "@/components/GTMHead";
+import GTMNoScript from "@/components/GTMNoScript";
 import StructuredData from "@/components/StructuredData";
 const oswaldVariable = localFont({
   src: "./fonts/Oswald-VariableFont_wght.ttf",
@@ -111,6 +113,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <GTMHead />
+      </head>
       <Suspense fallback={null}>
         <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
         <StructuredData locale={locale}/>
@@ -119,7 +124,7 @@ export default async function RootLayout({
         className={`${oswaldVariable.variable} antialiased`}
         style={{ fontFamily: "var(--font-oswald), sans-serif" }}
       >
-        {" "}
+         <GTMNoScript />
         <NextIntlClientProvider messages={messages}>
           <Header />
           <GoogleRecaptchaWrapper>{children}</GoogleRecaptchaWrapper>
