@@ -16,7 +16,7 @@ const fetchPosts = async (lang: string, slug: string) => {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string; slug: string };
+  params: { locale: any; slug: any };
 }): Promise<Metadata> {
   const resolvedParams = await params;
   const locale = resolvedParams.locale;
