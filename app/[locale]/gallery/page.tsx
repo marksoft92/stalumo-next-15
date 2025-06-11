@@ -5,6 +5,7 @@ import Container from "@/components/ui/container";
 import BackgroundSlider from "@/components/BackgroundSilder";
 import BoxImg from "@/components/ImageGox";
 import { useTranslations } from "next-intl";
+
 export default function GalleryPage() {
   const imagesSlider: string[] = [
     "/assets/images/spawanie1.jpg",
@@ -59,7 +60,7 @@ export default function GalleryPage() {
         </div>
         <section className="grid grid-cols-3 gap-5 my-10 max-lg:flex max-lg:flex-col max-lg:items-center">
           {images.map((image, index) => (
-            <BoxImg key={index} url={image?.url} alt={image?.alt} images={images} index={index}/>
+            <BoxImg key={index} url={image?.url} alt={image?.alt} images={images} index={index} />
           ))}
         </section>
       </div>

@@ -7,20 +7,21 @@ module.exports = {
     priority: 0.7,
     exclude: ['/secret', '/api/*'],
     additionalSitemaps: [
-        `${process.env.APP_URL || 'https://stalumo.com/'}sitemap-blog.xml`,
+      `${process.env.APP_URL || 'https://stalumo.com'}/sitemap-blog.xml`,
     ],
     alternateRefs: [
-        {
-            href: `${process.env.APP_URL}pl`,
-            hreflang: "pl",
-        },
-        {
-            href: `${process.env.APP_URL}en`,
-            hreflang: "en",
-        },
-        {
-            href: `${process.env.APP_URL}de`,
-            hreflang: "de",
-        },
+      {
+        href: `${process.env.APP_URL || 'https://stalumo.com'}/pl`,
+        hreflang: "pl",
+      },
+      {
+        href: `${process.env.APP_URL || 'https://stalumo.com'}/en`,
+        hreflang: "en",
+      },
+      {
+        href: `${process.env.APP_URL || 'https://stalumo.com'}/de`,
+        hreflang: "de",
+      },
     ],
-};
+  };
+  

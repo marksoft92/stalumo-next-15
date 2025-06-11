@@ -4,8 +4,8 @@ import BlogPage from "@/components/BlogPage";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import BackgroundSlider from "@/components/BackgroundSilder";
-import {Alert} from "@mui/material";
-
+import { Alert } from "@mui/material";
+import { notFound } from "next/navigation";
 // Funkcja do generowania metadanych SEO
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
@@ -54,6 +54,9 @@ const images: string[] = [
 const BlogPageContainer = async ({ params }: { params: any }) => {
   const data = await params;
   const posts = await fetchPosts(data.locale, 1, 5);
+  if (!posts || posts.length === 0) {
+    notFound();
+  }
   const t = await getTranslations("Blog");
   return (
     <Container>

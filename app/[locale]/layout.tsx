@@ -84,7 +84,7 @@ export async function generateMetadata({
       images: currentMeta.image,
     },
     alternates: {
-      canonical: currentMeta.url, 
+      canonical: currentMeta.url,
       languages: {
         en: "https://stalumo.com/en",
         pl: "https://stalumo.com/pl",
@@ -116,19 +116,19 @@ export default async function RootLayout({
       <head>
         <GTMHead />
       </head>
-      <Suspense fallback={null}>
-        <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
-        <StructuredData locale={locale}/>
-      </Suspense>
       <body
         className={`${oswaldVariable.variable} antialiased`}
         style={{ fontFamily: "var(--font-oswald), sans-serif" }}
       >
-         <GTMNoScript />
+        <Suspense fallback={null}>
+          <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
+          <StructuredData locale={locale} />
+        </Suspense>
+        <GTMNoScript />
         <NextIntlClientProvider messages={messages}>
           <Header />
           <GoogleRecaptchaWrapper>{children}</GoogleRecaptchaWrapper>
-          <Footer locale={locale}/>
+          <Footer locale={locale} />
           <CookieBanner />
         </NextIntlClientProvider>
       </body>

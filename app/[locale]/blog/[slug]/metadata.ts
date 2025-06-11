@@ -1,14 +1,13 @@
-// app/[locale]/blog/metadata.ts
-
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
-// Funkcja do pobierania postów
-const fetchPosts = async (lang: any, slug: any) => {
+const fetchPosts = async (lang: string, slug: string) => {
   const res = await fetch(
-    `${process.env.APP_URL}api/blog/${slug}?lang=${lang}`
+    `${process.env.APP_URL}api/blog/${slug}?lang=${lang}`,
+    { cache: "no-store" } // świeże dane dla metadata
   );
   if (!res.ok) {
-    throw new Error("Failed to fetch posts");
+    notFound(); // przerwie render i wyświetli 404
   }
   const data = await res.json();
   return data;
@@ -17,54 +16,42 @@ const fetchPosts = async (lang: any, slug: any) => {
 export async function generateMetadata({
   params,
 }: {
-  params: any;
+  params: { locale: string; slug: string };
 }): Promise<Metadata> {
-  const { locale, slug } = await params;
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
+  const slug = resolvedParams.slug;
 
-  try {
-    // Pobieramy dane artykułu na podstawie slug
-    const article = await fetchPosts(locale, slug);
+  // fetchPosts wywoła notFound jeśli brak artykułu
+  const article = await fetchPosts(locale, slug);
 
-    // Jeżeli artykuł istnieje, generujemy metadane
-    if (article) {
-      return {
-        title: article.title, // Tytuł posta
-        description: article.content, // Krótki opis posta
-        keywords: article?.tags?.join(", ") || "blog, news, articles",
-        authors: [{ name: "Stalumo", url: "/about" }],
-        openGraph: {
-          title: article.title,
-          description: article.content,
-          url: `https://stalumo.pl/${locale}/blog/${slug}`,
-          type: "article",
-          images: [
-            {
-              url: article.featuredImage || "/default-image.jpg", // Obrazek wyróżniający
-              alt: article.title,
-            },
-          ],
-          siteName: "Stalumo",
-          locale: locale,
+  return {
+    title: article.title,
+    description: article.content,
+    keywords: article?.tags?.join(", ") || "blog, news, articles",
+    authors: [{ name: "Stalumo", url: "/about" }],
+    openGraph: {
+      title: article.title,
+      description: article.content,
+      url: `https://stalumo.com/${locale}/blog/${slug}`,
+      type: "article",
+      images: [
+        {
+          url: article.featuredImage || "/default-image.jpg",
+          alt: article.title,
         },
-        twitter: {
-          card: "summary_large_image", // Typ karty Twittera
-          title: article.title,
-          description: article.content,
-          images: article.featuredImage || "/default-image.jpg", // Obrazek do Twittera
-        },
-      };
-    }
-
-    // W przypadku braku artykułu zwróć domyślne metadane
-    return {
-      title: "Blog - Post not found",
-      description: "Post not found on this page.",
-    };
-  } catch (error) {
-    console.error("Error fetching post for metadata:", error);
-    return {
-      title: "Blog - Error",
-      description: "There was an error loading the post data.",
-    };
-  }
+      ],
+      siteName: "Stalumo",
+      locale,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.content,
+      images: article.featuredImage || "/default-image.jpg",
+    },
+    alternates: {
+      canonical: `https://stalumo.com/${locale}/blog/${slug}`,
+    },
+  };
 }
