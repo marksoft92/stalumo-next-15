@@ -3,7 +3,7 @@ import Container from "@/components/ui/container";
 import { generateMetadata } from "./metadata";
 import { notFound } from "next/navigation";
 // Funkcja do pobierania danych artykułów
-const fetchPosts = async (lang: string, slug: string) => {
+const fetchPosts = async (lang: any, slug: any) => {
   const res = await fetch(
     `${process.env.APP_URL}api/blog/${slug}?lang=${lang}`
   );

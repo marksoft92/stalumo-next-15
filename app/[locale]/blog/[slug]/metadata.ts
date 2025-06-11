@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-const fetchPosts = async (lang: string, slug: string) => {
+const fetchPosts = async (lang: any, slug: any) => {
   const res = await fetch(
     `${process.env.APP_URL}api/blog/${slug}?lang=${lang}`,
     { cache: "no-store" } // świeże dane dla metadata
