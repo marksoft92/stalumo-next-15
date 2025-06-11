@@ -17,7 +17,7 @@ const fetchPosts = async (lang: any, slug: any) => {
 
 const ArticlePageContainer = async ({ params }: { params: any }) => {
 
-  const resolvedParams = await params;
+  const resolvedParams = params;
   const locale = resolvedParams.locale;
   const slug = resolvedParams.slug;
 

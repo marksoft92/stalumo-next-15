@@ -18,7 +18,7 @@ export async function generateMetadata({
 }: {
   params: { locale: any; slug: any };
 }): Promise<Metadata> {
-  const resolvedParams = await params;
+  const resolvedParams = params;
   const locale = resolvedParams.locale;
   const slug = resolvedParams.slug;
 
