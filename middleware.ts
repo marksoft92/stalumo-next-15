@@ -19,7 +19,9 @@ function findTranslatedPath(path: string): { locale: string; basePath: string } 
 
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-
+  if (pathname.match(/\.(xml|txt|ico|svg|png|jpg|jpeg|webp|json)$/)) {
+    return NextResponse.next();
+  }
   if (pathname.startsWith("/api/")) {
     const referer = request.headers.get("referer") || "";
     const isFromBrowser = referer.includes(process.env.APP_URL || "");

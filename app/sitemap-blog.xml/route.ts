@@ -24,7 +24,7 @@ export async function GET() {
             return posts
                 .filter((post: any) => post[locale]?.slug) // ⬅️ filtrujemy błędne wpisy
                 .map((post: any) => ({
-                    loc: `${BASE_URL}/${locale}/blog/${post[locale].slug}`,
+                    loc: `${BASE_URL}${locale}/blog/${post[locale].slug}`,
                     lastmod: post.updatedAt || new Date().toISOString(),
                 }));
         })
