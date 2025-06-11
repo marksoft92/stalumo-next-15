@@ -25,7 +25,7 @@ export async function GET() {
 
     for (const locale of locales) {
         for (const path of localizedPaths[locale as keyof typeof localizedPaths]) {
-            urls.push(`${baseUrl}/${locale !== 'en' ? locale + '/' : ''}${path}`);
+            urls.push(`${baseUrl}/${locale}/${path}`);
         }
     }
 
