@@ -4,12 +4,10 @@ import type { Metadata } from "next";
 
 export async function generateMetadata({
   params,
-}: {
-  params: { locale: Locale };
-}): Promise<Metadata> {
+}: any): Promise<any> {
   const { locale } = params;
 
-  const meta = {
+  const meta:any = {
     en: {
       title: "Gallery | Stalumo - Custom Steel Projects & Inspiration",
       description:

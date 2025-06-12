@@ -7,12 +7,10 @@ import { Locale } from "@/i18n/routing";
 import type { Metadata } from "next";
 export async function generateMetadata({
   params,
-}: {
-  params: { locale: Locale };
-}): Promise<Metadata> {
+}: any): Promise<any> {
   const { locale } = params;
 
-  const meta = {
+  const meta: any = {
     en: {
       title: "About Us | Stalumo - Custom Steel Craftsmanship Experts",
       description:
@@ -84,7 +82,10 @@ export async function generateMetadata({
     },
   };
 }
-export default async function AboutPage() {
+export default async function AboutPage({
+  params,
+}: any) {
+  const { locale } = await params;
   const images: string[] = [
     "/assets/images/spawanie1.jpg",
     "/assets/images/spawanie2.jpg",

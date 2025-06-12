@@ -14,12 +14,10 @@ import type { Metadata } from "next";
 
 export async function generateMetadata({
     params,
-  }: {
-    params: { locale: Locale };
-  }): Promise<Metadata> {
+  }: any): Promise<any> {
     const { locale } = await params;
   
-    const meta = {
+    const meta:any = {
       en: {
         title: "Custom Steel Railings, Gates & Metalwork for Homes | Stalumo",
         description: "Discover top-quality steel railings, gates, and custom metalwork tailored to your needs. Precision and durability from Stalumo.",
