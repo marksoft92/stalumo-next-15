@@ -1,69 +1,87 @@
-"use client";
-import React, { use, useEffect, useState } from "react";
-import Link from "next/link";
-import Container from "@/components/ui/container";
-import BackgroundSlider from "@/components/BackgroundSilder";
-import BoxImg from "@/components/ImageGox";
-import { useTranslations } from "next-intl";
+import GalleryContainer from "./GalleryContainer";
+import { Locale } from "@/i18n/routing";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: Locale };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const meta = {
+    en: {
+      title: "Gallery | Stalumo - Custom Steel Projects & Inspiration",
+      description:
+        "Explore our gallery of custom steel railings, gates, and metalwork. See examples of Stalumo's craftsmanship and find inspiration for your own project.",
+      keywords:
+        "steel gallery, metalwork projects, custom steel railings, gates inspiration, Stalumo portfolio",
+      url: "https://stalumo.com/en/gallery",
+      image: "https://stalumo.com/assets/images/logo.png",
+    },
+    pl: {
+      title: "Galeria | Stalumo - Realizacje Balustrad, Bram i Konstrukcji",
+      description:
+        "Zobacz nasze realizacje balustrad, bram i konstrukcji stalowych. Przeglądaj galerię projektów Stalumo i zainspiruj się do własnych rozwiązań.",
+      keywords:
+        "galeria stalumo, realizacje stalowe, projekty balustrad, bramy stalowe, portfolio konstrukcji stalowych",
+      url: "https://stalumo.com/pl/projekty",
+      image: "https://stalumo.com/assets/images/logo.png",
+    },
+    de: {
+      title: "Galerie | Stalumo - Maßgeschneiderte Stahlprojekte & Inspiration",
+      description:
+        "Entdecken Sie unsere Galerie mit maßgefertigten Stahlgeländern, Toren und Metallarbeiten. Lassen Sie sich von unseren Projekten inspirieren.",
+      keywords:
+        "Stahl Galerie, Metallarbeiten Projekte, maßgefertigte Geländer, Tore Inspiration, Stalumo Referenzen",
+      url: "https://stalumo.com/de/projekte",
+      image: "https://stalumo.com/assets/images/logo.png",
+    },
+  };
+
+  const currentMeta = meta[locale] || meta["en"];
+
+  return {
+    title: currentMeta.title,
+    description: currentMeta.description,
+    keywords: currentMeta.keywords,
+    robots: "index, follow",
+    openGraph: {
+      url: currentMeta.url,
+      title: currentMeta.title,
+      description: currentMeta.description,
+      type: "website",
+      images: [
+        {
+          url: currentMeta.image,
+          width: 1200,
+          height: 630,
+          alt: currentMeta.title,
+        },
+      ],
+      siteName: "Stalumo",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@Stalumo",
+      title: currentMeta.title,
+      description: currentMeta.description,
+      images: currentMeta.image,
+    },
+    alternates: {
+      canonical: currentMeta.url,
+      languages: {
+        en: "https://stalumo.com/en/gallery",
+        pl: "https://stalumo.com/pl/projekty",
+        de: "https://stalumo.com/de/projekte",
+      },
+    },
+    icons: {
+      icon: "/favicon.ico",
+    },
+  };
+}
 
 export default function GalleryPage() {
-  const imagesSlider: string[] = [
-    "/assets/images/spawanie1.jpg",
-    "/assets/images/spawanie2.jpg",
-    "/assets/images/spawanie3.jpg",
-    "/assets/images/spawanie4.jpg",
-    "/assets/images/spawanie5.jpg",
-  ];
-
-  const t = useTranslations("Gallery");
-
-  const [images, setImages] = useState<{ url: string; alt: string }[]>([]); // Przechowujemy listę obiektów z url i alt
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const fetchImages = async () => {
-      try {
-        const response = await fetch("/api/gallery");
-        if (!response.ok) {
-          throw new Error("Failed to fetch images");
-        }
-        const data = await response.json();
-        setImages(data.images); // Załaduj obrazy
-      } catch (error) {
-        setError("Error fetching images");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchImages();
-  }, []);
-
-  return (
-    <Container>
-      <BackgroundSlider images={imagesSlider} maxHeight={"500px"} />
-      <div>
-        <div className="flex flex-col items-center relative min-h-[500px] justify-center">
-          <h2 className="text-[6rem] font-semibold uppercase">{t("title")}</h2>
-          <h3>
-            <Link
-              className="text-[1.6rem] font-semibold uppercase text-[#EB4036]"
-              href="/"
-            >
-              {t("homeTitle")}
-            </Link>
-            <span className="text-[1.6rem] font-semibold uppercase ">
-              /{t("title")}
-            </span>
-          </h3>
-        </div>
-        <section className="grid grid-cols-3 gap-5 my-10 max-lg:flex max-lg:flex-col max-lg:items-center">
-          {images.map((image, index) => (
-            <BoxImg key={index} url={image?.url} alt={image?.alt} images={images} index={index} />
-          ))}
-        </section>
-      </div>
-    </Container>
-  );
+  return <GalleryContainer />;
 }

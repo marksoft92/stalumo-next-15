@@ -1,158 +1,87 @@
-"use client";
+import ContactForm from "./ContactForm";
+import { Locale } from "@/i18n/routing";
+import type { Metadata } from "next";
 
-import Container from "@/components/ui/container";
-import { useState } from "react";
-import { useTranslations } from "next-intl";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import {Alert} from "@mui/material";
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: Locale };
+}): Promise<Metadata> {
+  const { locale } = params;
 
-export default function ContactForm() {
-  const [email, setEmail] = useState("");
-  const [topic, setTopic] = useState("");
-  const [content, setContent] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-  const { executeRecaptcha } = useGoogleReCaptcha();
-  const t = useTranslations("Contact");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (!executeRecaptcha) {
-      setErrorMessage("Error loading reCAPTCHA.");
-      return;
-    }
-
-    setIsSubmitting(true);
-    setSuccessMessage("");
-    setErrorMessage("");
-
-    try {
-      const recaptchaToken = await executeRecaptcha("contact_form");
-
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, topic, content, recaptchaToken }),
-      });
-
-      const result = await response.json();
-
-      if (response.ok) {
-        setSuccessMessage(result.message || t("success"));
-      } else {
-        setErrorMessage(result.error || t("error"));
-      }
-    } catch (error) {
-      console.error(error);
-      setErrorMessage("An error occurred while sending the message.");
-    } finally {
-      setIsSubmitting(false);
-    }
+  const meta = {
+    en: {
+      title: "Contact Stalumo | Custom Steel Solutions & Inquiries",
+      description:
+        "Get in touch with Stalumo for custom steel railings, gates, and metalwork. We're here to answer your questions and provide personalized solutions.",
+      keywords:
+        "contact Stalumo, steel railing contact, metalwork inquiry, custom steel gates, steel consultation",
+      url: "https://stalumo.com/en/contact",
+      image: "https://stalumo.com/assets/images/logo.png",
+    },
+    pl: {
+      title: "Kontakt ze Stalumo | Balustrady, Bramy i Konstrukcje Stalowe",
+      description:
+        "Skontaktuj się z nami w sprawie balustrad, bram i konstrukcji stalowych na zamówienie. Odpowiemy na Twoje pytania i przygotujemy indywidualną ofertę.",
+      keywords:
+        "kontakt stalumo, balustrady kontakt, bramy stalowe kontakt, stalowe konstrukcje zapytanie, oferta stalowa",
+      url: "https://stalumo.com/pl/kontakt",
+      image: "https://stalumo.com/assets/images/logo.png",
+    },
+    de: {
+      title: "Kontakt Stalumo | Maßgefertigte Stahlgeländer & Metallarbeiten",
+      description:
+        "Kontaktieren Sie Stalumo für individuelle Stahlgeländer, Tore und Metallkonstruktionen. Wir beraten Sie gern und erstellen ein passendes Angebot.",
+      keywords:
+        "kontakt Stalumo, stahlgeländer anfrage, metallarbeiten kontakt, maßgefertigte stahlkonstruktionen, tor kontakt",
+      url: "https://stalumo.com/de/kontaktiere-mich",
+      image: "https://stalumo.com/assets/images/logo.png",
+    },
   };
 
-  return (
-    <Container>
-      <div className="flex max-lg:flex-col w-full gap-10 lg:h-[60vh]">
-        <form
-          onSubmit={handleSubmit}
-          className="space-y-6 text-[#000] lg:w-[50%] "
-        >
-          {successMessage && <Alert severity="success">{successMessage}</Alert>}
-          {errorMessage && <Alert severity="error">{errorMessage}</Alert>}
-          <div>
-            <label
-              htmlFor="topic"
-              className="block text-sm font-medium  text-[#fff]"
-            >
-              {t("topic")}
-            </label>
-            <input
-              type="text"
-              id="topic"
-              name="topic"
-              value={topic}
-              onChange={(e) => setTopic(e.target.value)}
-              required
-              className="mt-1 block w-full px-4 py-3 border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
-            />
-          </div>
+  const currentMeta = meta[locale] || meta["en"];
 
-          <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium  text-[#fff]"
-            >
-              {t("email")}
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="mt-1 block w-full px-4 py-3 border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
-            />
-          </div>
+  return {
+    title: currentMeta.title,
+    description: currentMeta.description,
+    keywords: currentMeta.keywords,
+    robots: "index, follow",
+    openGraph: {
+      url: currentMeta.url,
+      title: currentMeta.title,
+      description: currentMeta.description,
+      type: "website",
+      images: [
+        {
+          url: currentMeta.image,
+          width: 1200,
+          height: 630,
+          alt: currentMeta.title,
+        },
+      ],
+      siteName: "Stalumo",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@Stalumo",
+      title: currentMeta.title,
+      description: currentMeta.description,
+      images: currentMeta.image,
+    },
+    alternates: {
+      canonical: currentMeta.url,
+      languages: {
+        en: "https://stalumo.com/en/contact",
+        pl: "https://stalumo.com/pl/kontakt",
+        de: "https://stalumo.com/de/kontaktiere-mich",
+      },
+    },
+    icons: {
+      icon: "/favicon.ico",
+    },
+  };
+}
 
-          <div>
-            <label
-              htmlFor="content"
-              className="block text-sm font-medium  text-[#fff]"
-            >
-              {t("content")}
-            </label>
-            <textarea
-              id="content"
-              name="content"
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
-              rows={4}
-              required
-              className="mt-1 block w-full px-4 py-3 border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
-            ></textarea>
-          </div>
-
-          <div>
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className=" text-[#fff] 
-      bg-[#EB4036] 
-      border-[1px] 
-      border-[#EB4036] 
-      mt-6
-      w-max
-      text-[1rem] 
-      font-[500] 
-      uppercase 
-      leading-[1em] 
-      tracking-[1.6px] 
-      px-[25px] 
-      py-[15px] 
-      rounded-[0px] 
-      transition-all 
-      duration-300 
-      hover:bg-[#02010100] 
-      hover:skew-[-10] transform
-      rounded-[5px]
-      "
-            >
-              {isSubmitting ? t("loading") : t("button")}
-            </button>
-          </div>
-        </form>
-        <div className="lg:w-[50%] flex flex-col gap-5">
-          <h2 className="text-[2.5rem] font-semibold uppercase">
-            {t("title")}
-          </h2>
-          <p className="text-[#A5A5A5]">{t("description")}</p>
-        </div>
-      </div>
-    </Container>
-  );
+export default function ContactPage() {
+  return <ContactForm />;
 }
