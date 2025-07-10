@@ -118,7 +118,8 @@
     "phone": "Phone",
     "email": "Email",
     "country": "Drawno, Poland",
-    "copy": "2025 © All rights reserved"
+    "copy": "2025 © All rights reserved",
+    "PrivacyPolicyTitle": "Privacy Policy – stalumo.com"
   },
   "Blog": {
     "titleMain": "Blog - Stalumo",
@@ -146,7 +147,9 @@
     "content": "What would you like to ask us?",
     "loading": "Loading...",
     "success": "The message was successfully sent. We will respond as soon as possible to the provided email address.",
-    "error": "Something went wrong"
+    "error": "Something went wrong",
+    "privacy": "By submitting a message via the contact form, you consent to the processing of your personal data in accordance with our ",
+  "PrivacyPolicyTitle": "Privacy Policy – stalumo.com"
   },
   "Gallery": { "title": "Gallery", "homeTitle": "Home" },
   "contactForm": {
@@ -191,6 +194,44 @@
   "loading": "Loading...",
   "description": "Discover unique, handcrafted steel products – durable, stylish, and made with passion. Browse our categories to find the perfect addition to your interior or garden.",
   "keywords": "steel products, handmade steel decorations, steel ornaments, handcrafted steel, steel interior elements, steel craftsmanship, steel furniture, steel accessories, steel decor, artistic steel, handmade steelwork, steel interior accents"
+},
+"PrivacyPolicy": {
+  "title": "Privacy Policy – stalumo.com",
+  "updated": "Last updated: [insert date]",
+  "intro": "Your privacy is important to us. This Privacy Policy explains what data we collect, why, who manages it, and what rights you have as a user of stalumo.com.",
+
+  "section1Title": "Data Controller",
+  "section1Content": "The data controller is:\nStalumo\nul. Kolejowa 6\n73-220 Drawno\nPoland\n📞 +48 784-532-549\n✉️ office@stalumo.com",
+
+  "section2Title": "What data do we collect?",
+  "section2aTitle": "a) Data from the contact form",
+  "section2aContent": "Name (if provided), email address, subject, and message content. This data is used only to handle your inquiry and is not shared with third parties without legal basis.",
+  "section2bTitle": "b) Cookies",
+  "section2bContent": "Our site uses cookies, including Google Analytics cookies, which may collect: anonymized IP address, system/browser data, and activity on the site. Consent is requested upon entry and can be revoked in your browser settings.",
+
+  "section3Title": "Purpose of data processing",
+  "section3Content": "We use the data to: respond to inquiries, analyze traffic (anonymously), and improve the website and user experience.",
+
+  "section4Title": "Legal basis",
+  "section4Content": "Art. 6(1)(a) GDPR – user consent; (b) – contacting us; (f) – legitimate interest (e.g. statistics, security).",
+
+  "section5Title": "Data recipients",
+  "section5Content": "Hosting providers, Google LLC (Analytics – anonymized), public authorities if legally required.",
+
+  "section6Title": "Data retention period",
+  "section6Content": "Contact form: 6 months; Analytics: 14 months; Cookies: until deleted by user or expired.",
+
+  "section7Title": "Your rights",
+  "section7Content": "Access, correction, deletion, restriction, objection, data portability, complaint to the Data Protection Authority.",
+
+  "section8Title": "Cookies & tracking technologies",
+  "section8Content": "We use cookies for: basic functionality, analytics (Google Analytics), and UX improvements. You can disable cookies in your browser at any time.",
+
+  "section9Title": "Changes to the policy",
+  "section9Content": "We reserve the right to update this policy. The latest version is always available at stalumo.com/privacy-policy.",
+
+  "contactNote": "Have questions? Contact us at: office@stalumo.com"
 }
+
 
 }

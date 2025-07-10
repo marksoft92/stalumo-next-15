@@ -118,7 +118,8 @@
     "phone": "Telefon",
     "email": "Email",
     "country": "Drawno, Polska",
-    "copy": "2025 © Wszystkie prawa zasteżone"
+    "copy": "2025 © Wszystkie prawa zasteżone",
+    "PrivacyPolicyTitle": "Polityka Prywatności – stalumo.com"
   },
   "Blog": {
     "titleMain": "Blog - Stalumo",
@@ -146,7 +147,9 @@
     "content": "O co chcesz nas zapytać ?",
     "loading": "Ładowanie...",
     "success": "Wiadomość została wysłana poprawnie. Odpowiemy jak najszybciej to możliwe na podany adres email.",
-    "error": "Coś poszło nie tak"
+    "error": "Coś poszło nie tak",
+    "privacy": "Przesyłając wiadomość za pośrednictwem formularza kontaktowego, wyrażasz zgodę na przetwarzanie swoich danych osobowych zgodnie z naszą",
+    "PrivacyPolicyTitle": "Polityką Prywatności – stalumo.com"
   },
   "Gallery": {
     "title": "Galeria",
@@ -195,5 +198,43 @@
     "loading": "Ładowanie...",
     "description": "Odkryj unikalne, ręcznie wykonane produkty stalowe – solidne, stylowe i tworzone z pasją. Przeglądaj nasze kategorie i znajdź idealny dodatek do wnętrza lub ogrodu.",
     "keywords": "produkty stalowe, ręcznie robione stalowe dekoracje, stalowe ozdoby, stal ręcznie wykonana, stalowe elementy wystroju, rękodzieło stalowe, stalowe meble, stalowe akcesoria, dekoracje ze stali, stal artystyczna, ręczna produkcja stali, stalowe dodatki do wnętrz"
-  }
+  },
+  "PrivacyPolicy": {
+  "title": "Polityka Prywatności – stalumo.com",
+  "updated": "Data ostatniej aktualizacji: [wstaw datę]",
+  "intro": "Twoja prywatność jest dla nas ważna. Niniejsza Polityka Prywatności wyjaśnia, jakie dane zbieramy, w jakim celu, kto jest ich administratorem i jakie masz prawa jako użytkownik strony stalumo.com.",
+
+  "section1Title": "Administrator danych osobowych",
+  "section1Content": "Administratorem danych osobowych jest:\nStalumo\nul. Kolejowa 6\n73-220 Drawno\nPolska\n📞 +48 784-532-549\n✉️ office@stalumo.com",
+
+  "section2Title": "Jakie dane zbieramy?",
+  "section2aTitle": "a) Dane przesyłane przez formularz kontaktowy",
+  "section2aContent": "Imię (jeśli podane), adres e-mail, temat wiadomości, treść wiadomości. Dane te są wykorzystywane wyłącznie do obsługi zapytania i nie są przekazywane osobom trzecim bez uzasadnionej podstawy prawnej.",
+  "section2bTitle": "b) Pliki cookies",
+  "section2bContent": "Nasza strona wykorzystuje pliki cookies, w tym pliki analityczne Google Analytics, które mogą zbierać m.in.: adres IP (zanonimizowany), dane o systemie operacyjnym i przeglądarce, informacje o aktywności na stronie. Zgoda na używanie cookies wyrażana jest po wejściu na stronę i może zostać cofnięta w ustawieniach przeglądarki.",
+
+  "section3Title": "Cel przetwarzania danych",
+  "section3Content": "Zbierane dane wykorzystujemy w następujących celach: udzielenie odpowiedzi na zapytania, prowadzenie anonimowej analityki, poprawa strony i UX.",
+
+  "section4Title": "Podstawa prawna przetwarzania",
+  "section4Content": "Art. 6 ust. 1 lit. a RODO – zgoda użytkownika; lit. b – kontakt; lit. f – uzasadniony interes (statystyka, bezpieczeństwo).",
+
+  "section5Title": "Odbiorcy danych",
+  "section5Content": "Hosting, Google LLC (Analytics – dane zanonimizowane), organy publiczne (jeśli wymagane).",
+
+  "section6Title": "Czas przechowywania danych",
+  "section6Content": "Formularz: 6 miesięcy; Analityka: 14 miesięcy; Cookies: do usunięcia przez użytkownika.",
+
+  "section7Title": "Twoje prawa",
+  "section7Content": "Dostęp, poprawianie, usunięcie, ograniczenie, sprzeciw, przeniesienie danych, skarga do UODO.",
+
+  "section8Title": "Cookies i technologie śledzące",
+  "section8Content": "Używamy cookies do: działania strony, statystyk (Analytics), poprawy komfortu. Można je wyłączyć w przeglądarce.",
+
+  "section9Title": "Zmiany w polityce",
+  "section9Content": "Zastrzegamy prawo do zmian. Aktualna wersja zawsze na stalumo.com/polityka-prywatnosci.",
+
+  "contactNote": "Masz pytania? Napisz do nas na: office@stalumo.com"
+}
+
 }

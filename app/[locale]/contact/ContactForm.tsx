@@ -5,8 +5,8 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import {Alert} from "@mui/material";
-
-export default function ContactForm() {
+import Link from "next/link";
+export default function ContactForm(locale: any) {
   const [email, setEmail] = useState("");
   const [topic, setTopic] = useState("");
   const [content, setContent] = useState("");
@@ -150,7 +150,9 @@ export default function ContactForm() {
             >
               {isSubmitting ? t("loading") : t("button")}
             </button>
+        
           </div>
+          <div className="text-white">{t('privacy')}<Link className="hover:text-[#EB4036]" href={`/${locale?.locale}/privace-policy`}>{" "+t('PrivacyPolicyTitle')}</Link></div>
         </form>
         <div className="lg:w-[50%] flex flex-col gap-5">
           <h2 className="text-[2.5rem] font-semibold uppercase">

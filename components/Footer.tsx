@@ -65,7 +65,7 @@ const emailObfuscation = ['office', 'stalumo.com'].join('@')
         </div>
       </div>
       <div className="flex items-center algin-center justify-center p-4">
-        <span> {t("copy")}</span>
+        <span> {t("copy")},<Link className="hover:text-[#EB4036]" href={`/${locale?.locale}/privace-policy`}>{" "+t('PrivacyPolicyTitle')}</Link></span>
       </div>
     </>
   );

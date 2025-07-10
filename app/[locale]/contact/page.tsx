@@ -80,6 +80,14 @@ export async function generateMetadata({
   };
 }
 
-export default function ContactPage() {
-  return <ContactForm />;
+type ContactPageProps = {
+  params: Promise<{
+    locale: string;  // better to type locale as string instead of any
+  }>;
+};
+
+export default async function  ContactPage({ params }: ContactPageProps) {
+  const { locale } =  await params;
+
+  return <ContactForm locale={locale} />;
 }

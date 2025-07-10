@@ -118,7 +118,8 @@
     "phone": "Telefon",
     "email": "E-Mail",
     "country": "Drawno, Polen",
-    "copy": "2025 © Alle Rechte vorbehalten"
+    "copy": "2025 © Alle Rechte vorbehalten",
+    "PrivacyPolicyTitle": "Datenschutzrichtlinie – stalumo.com"
   },
   "Blog": {
     "titleMain": "Blog - Stalumo",
@@ -146,7 +147,9 @@
     "content": "Worüber möchten Sie uns fragen?",
     "loading": "Lädt...",
     "success": "Die Nachricht wurde erfolgreich gesendet. Wir werden so schnell wie möglich an die angegebene E-Mail-Adresse antworten.",
-    "error": "Etwas ist schiefgelaufen"
+    "error": "Etwas ist schiefgelaufen",
+    "privacy": "Mit dem Absenden einer Nachricht über das Kontaktformular erklärst du dich mit der Verarbeitung deiner personenbezogenen Daten gemäß unserer ",
+    "PrivacyPolicyTitle": "Datenschutzrichtlinie – stalumo.com"
   },
   "Gallery": { "title": "Projekte", "homeTitle": "Startseite" },
   "contactForm": {
@@ -191,6 +194,44 @@
   "productTitle":"Grill",
   "description": "Entdecken Sie einzigartige, handgefertigte Stahlprodukte – robust, stilvoll und mit Leidenschaft gefertigt. Stöbern Sie in unseren Kategorien und finden Sie das perfekte Accessoire für Ihr Zuhause oder Ihren Garten.",
   "keywords": "Stahlprodukte, handgefertigte Stahldekorationen, Stahlornamente, handgearbeiteter Stahl, Stahlelemente für Innenräume, Stahlhandwerk, Stahlmöbel, Stahlzubehör, Stahldekor, künstlerischer Stahl, handgefertigte Stahlwaren, Stahlakzente für Innenräume"
+},
+"PrivacyPolicy": {
+  "title": "Datenschutzrichtlinie – stalumo.com",
+  "updated": "Letzte Aktualisierung: [Datum einfügen]",
+  "intro": "Deine Privatsphäre ist uns wichtig. Diese Datenschutzrichtlinie erklärt, welche Daten wir sammeln, warum wir sie verarbeiten, wer dafür verantwortlich ist und welche Rechte du hast.",
+
+  "section1Title": "Verantwortlicher für die Datenverarbeitung",
+  "section1Content": "Verantwortlicher:\nStalumo\nul. Kolejowa 6\n73-220 Drawno\nPolen\n📞 +48 784-532-549\n✉️ office@stalumo.com",
+
+  "section2Title": "Welche Daten sammeln wir?",
+  "section2aTitle": "a) Daten aus dem Kontaktformular",
+  "section2aContent": "Name (wenn angegeben), E-Mail-Adresse, Betreff, Nachrichtentext. Diese Daten werden nur zur Bearbeitung deiner Anfrage verwendet und nicht ohne rechtliche Grundlage weitergegeben.",
+  "section2bTitle": "b) Cookies",
+  "section2bContent": "Unsere Website verwendet Cookies, einschließlich Google Analytics. Diese können u. a. folgende Daten erfassen: anonymisierte IP-Adresse, System-/Browserdaten, Aktivität auf der Website. Deine Zustimmung wird beim Besuch eingeholt und kann in den Browsereinstellungen widerrufen werden.",
+
+  "section3Title": "Zweck der Datenverarbeitung",
+  "section3Content": "Wir verwenden die Daten zur: Beantwortung von Anfragen, anonymen Analyse der Website-Nutzung, Verbesserung der Website und Nutzererfahrung.",
+
+  "section4Title": "Rechtsgrundlage",
+  "section4Content": "Art. 6 Abs. 1 lit. a DSGVO – Einwilligung; lit. b – Kommunikation; lit. f – berechtigtes Interesse (z. B. Statistik, Sicherheit).",
+
+  "section5Title": "Empfänger der Daten",
+  "section5Content": "Hosting-Dienste, Google LLC (Analytics – anonymisiert), Behörden, sofern gesetzlich erforderlich.",
+
+  "section6Title": "Speicherdauer",
+  "section6Content": "Kontaktformular: 6 Monate; Analytics: 14 Monate; Cookies: bis zur Löschung oder Ablauf.",
+
+  "section7Title": "Deine Rechte",
+  "section7Content": "Zugriff, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit, Beschwerde bei der Datenschutzbehörde.",
+
+  "section8Title": "Cookies & Tracking-Technologien",
+  "section8Content": "Wir verwenden Cookies für: Grundfunktionen, Analyse (Google Analytics), Verbesserung der Nutzerfreundlichkeit. Du kannst Cookies jederzeit im Browser deaktivieren.",
+
+  "section9Title": "Änderungen der Richtlinie",
+  "section9Content": "Wir behalten uns das Recht vor, diese Richtlinie zu ändern. Die aktuelle Version findest du immer unter stalumo.com/datenschutz.",
+
+  "contactNote": "Bei Fragen kontaktiere uns bitte unter: office@stalumo.com"
 }
+
 
 }
