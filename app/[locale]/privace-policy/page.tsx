@@ -59,6 +59,11 @@ const PrivacyPolicyPage = async () => {
         <p>{t("section9Content")}</p>
       </section>
 
+      <section className="mb-6">
+        <h2 className="font-semibold text-xl mb-2">{t("section10Title")}</h2>
+        <p className="whitespace-pre-wrap">{t("section10Content")}</p>
+      </section>
+
       <p className="mt-10 italic">{t("contactNote")}</p>
     </main>
   );

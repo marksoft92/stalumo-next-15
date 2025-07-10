@@ -199,42 +199,48 @@
     "description": "Odkryj unikalne, ręcznie wykonane produkty stalowe – solidne, stylowe i tworzone z pasją. Przeglądaj nasze kategorie i znajdź idealny dodatek do wnętrza lub ogrodu.",
     "keywords": "produkty stalowe, ręcznie robione stalowe dekoracje, stalowe ozdoby, stal ręcznie wykonana, stalowe elementy wystroju, rękodzieło stalowe, stalowe meble, stalowe akcesoria, dekoracje ze stali, stal artystyczna, ręczna produkcja stali, stalowe dodatki do wnętrz"
   },
+
   "PrivacyPolicy": {
-  "title": "Polityka Prywatności – stalumo.com",
-  "updated": "Data ostatniej aktualizacji: 01-07-2025",
-  "intro": "Twoja prywatność jest dla nas ważna. Niniejsza Polityka Prywatności wyjaśnia, jakie dane zbieramy, w jakim celu, kto jest ich administratorem i jakie masz prawa jako użytkownik strony stalumo.com.",
+    "title": "Polityka Prywatności – stalumo.com",
+    "updated": "Data ostatniej aktualizacji: 01-07-2025",
+    "intro": "Twoja prywatność jest dla nas ważna. Niniejsza Polityka Prywatności wyjaśnia, jakie dane zbieramy, w jakim celu, kto jest ich administratorem i jakie masz prawa jako użytkownik strony stalumo.com. Podanie danych osobowych jest dobrowolne, ale może być konieczne do uzyskania odpowiedzi na zapytanie przesłane przez formularz kontaktowy.",
+    
+    "section1Title": "Administrator danych osobowych",
+    "section1Content": "Administratorem danych osobowych jest:\nStalumo\nul. Kolejowa 6\n73-220 Drawno\nPolska\n📞 +48 784-532-549\n✉️ office@stalumo.com\nW celu realizacji swoich praw związanych z danymi osobowymi prosimy o kontakt mailowy. Odpowiadamy nie później niż w ciągu 30 dni.",
+    
+    "section2Title": "Jakie dane zbieramy?",
+    "section2aTitle": "a) Dane przesyłane przez formularz kontaktowy",
+    "section2aContent": "Imię (jeśli podane), adres e-mail, temat wiadomości, treść wiadomości. Dane te są wykorzystywane wyłącznie do obsługi zapytania i nie są przekazywane osobom trzecim bez uzasadnionej podstawy prawnej. Podanie danych jest dobrowolne, ale konieczne do uzyskania odpowiedzi.",
+    "section2bTitle": "b) Pliki cookies",
+    "section2bContent": "Nasza strona wykorzystuje pliki cookies, w tym pliki analityczne Google Analytics, które mogą zbierać m.in.: adres IP (zanonimizowany), dane o systemie operacyjnym i przeglądarce, informacje o aktywności na stronie. Zgoda na używanie cookies wyrażana jest po wejściu na stronę i może zostać cofnięta w ustawieniach przeglądarki.",
+    
+    "section3Title": "Cel przetwarzania danych",
+    "section3Content": "Zbierane dane wykorzystujemy w następujących celach: udzielenie odpowiedzi na zapytania, prowadzenie anonimowej analityki, poprawa strony i UX. Dane nie są wykorzystywane do zautomatyzowanego podejmowania decyzji ani profilowania.",
+    
+    "section4Title": "Podstawa prawna przetwarzania",
+    "section4Content": "Art. 6 ust. 1 lit. a RODO – zgoda użytkownika; lit. b – przetwarzanie niezbędne do kontaktu; lit. f – uzasadniony interes administratora (statystyka, bezpieczeństwo).",
+    
+    "section5Title": "Odbiorcy danych",
+    "section5Content": "Hosting, Google LLC (Analytics – dane zanonimizowane), organy publiczne (jeśli wymagane). Dane mogą być także przetwarzane przez podmioty zewnętrzne na podstawie umowy powierzenia przetwarzania, np. dostawcę usług hostingowych lub firmę IT.",
+    
+    "section6Title": "Czas przechowywania danych",
+    "section6Content": "Formularz: 6 miesięcy; Analityka: 14 miesięcy; Cookies: do usunięcia przez użytkownika. Dane będą przechowywane nie dłużej, niż jest to konieczne do realizacji celu przetwarzania lub zgodnie z obowiązującym prawem.",
+    
+    "section7Title": "Twoje prawa",
+    "section7Content": "Masz prawo do: dostępu do danych, ich poprawiania, usunięcia, ograniczenia przetwarzania, wniesienia sprzeciwu, przeniesienia danych oraz złożenia skargi do Prezesa Urzędu Ochrony Danych Osobowych (UODO). W celu realizacji tych praw prosimy o kontakt mailowy na adres: office@stalumo.com.",
+    
+    "section8Title": "Cookies i technologie śledzące",
+    "section8Content": "Używamy cookies do: działania strony, statystyk (Analytics), poprawy komfortu. Można je wyłączyć w ustawieniach przeglądarki. Pliki cookies mogą być również stosowane przez zewnętrznych dostawców, z którymi współpracujemy (np. Google).",
+    
+    "section9Title": "Zmiany w polityce",
+    "section9Content": "Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej Polityce Prywatności. Aktualna wersja dokumentu jest zawsze dostępna na stronie stalumo.com/polityka-prywatnosci.",
+    
+    "contactNote": "Masz pytania? Napisz do nas na: office@stalumo.com",
+    
+    "section10Title": "Google Analytics i zgoda na cookies",
+    "section10Content": "Na naszej stronie korzystamy z Google Analytics 4, narzędzia analitycznego firmy Google LLC. Służy ono do anonimowego analizowania sposobu korzystania ze strony. Dane zbierane przez GA mogą obejmować zanonimizowany adres IP, informacje o systemie operacyjnym, przeglądarce oraz zachowaniu na stronie.\n\nDomyślnie, przed wyrażeniem zgody przez użytkownika, usługa Google Analytics nie przechowuje danych (analytics_storage: 'denied'). Śledzenie rozpoczyna się dopiero po uzyskaniu zgody za pośrednictwem banera cookies. Użytkownik może w każdej chwili wycofać zgodę, zmieniając ustawienia przeglądarki lub klikając ponownie w baner cookies (jeśli dostępny).\n\nW przypadku przekazywania danych do Google LLC (USA), stosowane są standardowe klauzule umowne zatwierdzone przez Komisję Europejską, zgodnie z art. 46 RODO.\n\nWięcej informacji:\n- Polityka prywatności Google: https://policies.google.com/privacy\n- Warunki Google Analytics: https://marketingplatform.google.com/about/analytics/terms/pl/\n- Standardowe klauzule umowne: https://support.google.com/analytics/answer/9012600"
+  }
 
-  "section1Title": "Administrator danych osobowych",
-  "section1Content": "Administratorem danych osobowych jest:\nStalumo\nul. Kolejowa 6\n73-220 Drawno\nPolska\n📞 +48 784-532-549\n✉️ office@stalumo.com",
 
-  "section2Title": "Jakie dane zbieramy?",
-  "section2aTitle": "a) Dane przesyłane przez formularz kontaktowy",
-  "section2aContent": "Imię (jeśli podane), adres e-mail, temat wiadomości, treść wiadomości. Dane te są wykorzystywane wyłącznie do obsługi zapytania i nie są przekazywane osobom trzecim bez uzasadnionej podstawy prawnej.",
-  "section2bTitle": "b) Pliki cookies",
-  "section2bContent": "Nasza strona wykorzystuje pliki cookies, w tym pliki analityczne Google Analytics, które mogą zbierać m.in.: adres IP (zanonimizowany), dane o systemie operacyjnym i przeglądarce, informacje o aktywności na stronie. Zgoda na używanie cookies wyrażana jest po wejściu na stronę i może zostać cofnięta w ustawieniach przeglądarki.",
-
-  "section3Title": "Cel przetwarzania danych",
-  "section3Content": "Zbierane dane wykorzystujemy w następujących celach: udzielenie odpowiedzi na zapytania, prowadzenie anonimowej analityki, poprawa strony i UX.",
-
-  "section4Title": "Podstawa prawna przetwarzania",
-  "section4Content": "Art. 6 ust. 1 lit. a RODO – zgoda użytkownika; lit. b – kontakt; lit. f – uzasadniony interes (statystyka, bezpieczeństwo).",
-
-  "section5Title": "Odbiorcy danych",
-  "section5Content": "Hosting, Google LLC (Analytics – dane zanonimizowane), organy publiczne (jeśli wymagane).",
-
-  "section6Title": "Czas przechowywania danych",
-  "section6Content": "Formularz: 6 miesięcy; Analityka: 14 miesięcy; Cookies: do usunięcia przez użytkownika.",
-
-  "section7Title": "Twoje prawa",
-  "section7Content": "Dostęp, poprawianie, usunięcie, ograniczenie, sprzeciw, przeniesienie danych, skarga do UODO.",
-
-  "section8Title": "Cookies i technologie śledzące",
-  "section8Content": "Używamy cookies do: działania strony, statystyk (Analytics), poprawy komfortu. Można je wyłączyć w przeglądarce.",
-
-  "section9Title": "Zmiany w polityce",
-  "section9Content": "Zastrzegamy prawo do zmian. Aktualna wersja zawsze na stalumo.com/polityka-prywatnosci.",
-
-  "contactNote": "Masz pytania? Napisz do nas na: office@stalumo.com"
-}
 
 }

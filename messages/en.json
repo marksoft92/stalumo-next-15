@@ -198,39 +198,42 @@
 "PrivacyPolicy": {
   "title": "Privacy Policy – stalumo.com",
   "updated": "Last updated: 01-07-2025",
-  "intro": "Your privacy is important to us. This Privacy Policy explains what data we collect, why, who manages it, and what rights you have as a user of stalumo.com.",
-
+  "intro": "Your privacy is important to us. This Privacy Policy explains what data we collect, why we collect it, who manages it, and what rights you have as a user of stalumo.com. Providing personal data is voluntary, but necessary to receive a reply when contacting us through the form.",
+  
   "section1Title": "Data Controller",
-  "section1Content": "The data controller is:\nStalumo\nul. Kolejowa 6\n73-220 Drawno\nPoland\n📞 +48 784-532-549\n✉️ office@stalumo.com",
-
+  "section1Content": "The data controller is:\nStalumo\nul. Kolejowa 6\n73-220 Drawno\nPoland\n📞 +48 784-532-549\n✉️ office@stalumo.com\nTo exercise your data rights, please contact us via email. We will respond within 30 days at the latest.",
+  
   "section2Title": "What data do we collect?",
   "section2aTitle": "a) Data from the contact form",
-  "section2aContent": "Name (if provided), email address, subject, and message content. This data is used only to handle your inquiry and is not shared with third parties without legal basis.",
+  "section2aContent": "Name (if provided), email address, subject of the message, and its content. This data is used solely for handling your inquiry and is not shared with third parties without a valid legal basis. Providing this data is voluntary but necessary to receive a reply.",
   "section2bTitle": "b) Cookies",
-  "section2bContent": "Our site uses cookies, including Google Analytics cookies, which may collect: anonymized IP address, system/browser data, and activity on the site. Consent is requested upon entry and can be revoked in your browser settings.",
-
+  "section2bContent": "Our website uses cookies, including analytical cookies from Google Analytics, which may collect: anonymized IP address, operating system and browser details, and information about your activity on the site. Consent to use cookies is requested upon your first visit and can be revoked at any time via your browser settings.",
+  
   "section3Title": "Purpose of data processing",
-  "section3Content": "We use the data to: respond to inquiries, analyze traffic (anonymously), and improve the website and user experience.",
-
+  "section3Content": "We use collected data for the following purposes: responding to inquiries, conducting anonymous analytics, and improving the website and user experience. Your data will not be used for automated decision-making or profiling.",
+  
   "section4Title": "Legal basis",
-  "section4Content": "Art. 6(1)(a) GDPR – user consent; (b) – contacting us; (f) – legitimate interest (e.g. statistics, security).",
-
+  "section4Content": "Art. 6(1)(a) GDPR – your consent; (b) – processing necessary for communication; (f) – our legitimate interest (e.g. statistics, website security).",
+  
   "section5Title": "Data recipients",
-  "section5Content": "Hosting providers, Google LLC (Analytics – anonymized), public authorities if legally required.",
-
+  "section5Content": "Hosting provider, Google LLC (for anonymized analytics data), and public authorities if legally required. Data may also be processed by external partners under data processing agreements, such as IT or hosting providers.",
+  
   "section6Title": "Data retention period",
-  "section6Content": "Contact form: 6 months; Analytics: 14 months; Cookies: until deleted by user or expired.",
-
+  "section6Content": "Contact form data: 6 months; Analytics data: 14 months; Cookies: until deleted by the user or expired. Data is stored only as long as necessary for the purposes listed above or in accordance with applicable law.",
+  
   "section7Title": "Your rights",
-  "section7Content": "Access, correction, deletion, restriction, objection, data portability, complaint to the Data Protection Authority.",
-
+  "section7Content": "You have the right to: access your data, request corrections, deletion, or restrictions, object to processing, request data portability, and file a complaint with your national Data Protection Authority. To exercise your rights, contact us at: office@stalumo.com.",
+  
   "section8Title": "Cookies & tracking technologies",
-  "section8Content": "We use cookies for: basic functionality, analytics (Google Analytics), and UX improvements. You can disable cookies in your browser at any time.",
-
+  "section8Content": "We use cookies for: website functionality, analytics (Google Analytics), and improving your experience. You can disable cookies at any time in your browser settings. Third-party services we use may also use their own cookies.",
+  
   "section9Title": "Changes to the policy",
-  "section9Content": "We reserve the right to update this policy. The latest version is always available at stalumo.com/privacy-policy.",
-
-  "contactNote": "Have questions? Contact us at: office@stalumo.com"
+  "section9Content": "We reserve the right to update this Privacy Policy. The latest version is always available at stalumo.com/privacy-policy.",
+  
+  "contactNote": "Have questions? Contact us at: office@stalumo.com",
+  
+  "section10Title": "Google Analytics and cookie consent",
+  "section10Content": "We use Google Analytics 4, a web analytics service provided by Google LLC, to anonymously analyze how users interact with our website. Collected data may include anonymized IP addresses, browser and system information, and activity on our site.\n\nBy default, before you give your consent, Google Analytics does not store or process your data (analytics_storage: 'denied'). Tracking begins only after you have given your consent via the cookie banner. You may withdraw your consent at any time by adjusting your browser settings or by revisiting the cookie banner (if available).\n\nIf any data is transferred to Google LLC (based in the USA), such transfer is based on the European Commission's Standard Contractual Clauses under Article 46 of the GDPR.\n\nMore information:\n- Google Privacy Policy: https://policies.google.com/privacy\n- Google Analytics Terms of Service: https://marketingplatform.google.com/about/analytics/terms/us/\n- Standard Contractual Clauses (SCC): https://support.google.com/analytics/answer/9012600"
 }
 
 
