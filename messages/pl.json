@@ -169,7 +169,7 @@
   },
   "Cookies": {
     "description": "Ta strona używa plików cookie, aby zapewnić Ci lepsze i bardziej trafne korzystanie ze strony. Klikając „Akceptuję”, wyrażasz zgodę na używanie plików cookie oraz akceptujesz naszą Politykę Prywatności.",
-    "title": "Zgoda na pliki cookie",
+    "title": "Zgoda na pliki cookie i Polityke prywatności",
     "privacePolicy": "Polityka Prywatności",
     "privacePolicyLink": "polityka-prywatnosci",
     "decline": "Odrzucam",

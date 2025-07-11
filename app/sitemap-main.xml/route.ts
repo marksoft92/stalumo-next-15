@@ -15,9 +15,9 @@ const pages = [
 const locales = ['en', 'pl', 'de'];
 
 const localizedPaths = {
-    en: ['', 'about-us', 'gallery', 'contact-me', 'blog', 'products'],
-    pl: ['', 'o-nas', 'projekty', 'kontakt', 'blog', 'produkty'],
-    de: ['', 'uber-uns', 'projekte', 'kontaktiere-mich', 'blog', 'producten'],
+    en: ['', 'about-us', 'gallery', 'contact-me', 'blog', 'products','privacy-policy'],
+    pl: ['', 'o-nas', 'projekty', 'kontakt', 'blog', 'produkty','polityka-prywatności'],
+    de: ['', 'uber-uns', 'projekte', 'kontaktiere-mich', 'blog', 'producten','datenschutzrichtlinie'],
 };
 
 export async function GET() {
