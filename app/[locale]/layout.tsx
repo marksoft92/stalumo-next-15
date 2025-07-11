@@ -129,7 +129,7 @@ export default async function RootLayout({
           <Header />
           <GoogleRecaptchaWrapper>{children}</GoogleRecaptchaWrapper>
           <Footer locale={locale} />
-          <CookieBanner />
+          <CookieBanner locale={locale}/>
         </NextIntlClientProvider>
       </body>
     </html>

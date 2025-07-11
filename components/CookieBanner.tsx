@@ -5,8 +5,9 @@ import { getLocalStorage, setLocalStorage } from "@/lib/storage-helpers";
 import CookieIcon from "@mui/icons-material/Cookie";
 import { SvgIcon } from "@mui/material";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 // CookieBanner component that displays a banner for cookie consent.
-export default function CookieBanner() {
+export default function CookieBanner(locale:any) {
   const [cookieConsent, setCookieConsent] = useState<boolean | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const t = useTranslations("Cookies");
@@ -74,6 +75,11 @@ export default function CookieBanner() {
               {t("accept")}
 
             </button>
+
+              <Link className="p-2 bg-[#4070f4]  border-[2px] border-solid border-[#4070f4] rounded-[8px]" href={`/${locale.locale}/privacy-policy`}>{t("privacePolicy")}</Link>
+              
+
+ 
           </div>
         </div>
       </div>

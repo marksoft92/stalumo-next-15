@@ -168,8 +168,10 @@
     "min": "Message requis pour être au moins 10 caractères"
   },
   "Cookies": {
-    "description": "Ta strona internetowa używa plików cookie, aby zapewnić Ci lepsze i bardziej trafne korzystanie ze strony.",
+    "description": "Ta strona używa plików cookie, aby zapewnić Ci lepsze i bardziej trafne korzystanie ze strony. Klikając „Akceptuję”, wyrażasz zgodę na używanie plików cookie oraz akceptujesz naszą Politykę Prywatności.",
     "title": "Zgoda na pliki cookie",
+    "privacePolicy": "Polityka Prywatności",
+    "privacePolicyLink": "polityka-prywatnosci",
     "decline": "Odrzucam",
     "accept":"Akceptuje"
   },

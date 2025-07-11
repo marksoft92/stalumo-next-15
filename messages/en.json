@@ -164,8 +164,10 @@
     "min": "Message required to be at least 10 characters"
   },
   "Cookies": {
-    "description": "This website use cookies to help you have a superior and more relevant browsing experience on the website.",
+    "description": "This website uses cookies to provide you with a better and more relevant user experience. By clicking “Accept”, you consent to the use of cookies and accept our Privacy Policy.",
     "title": "Cookies Consent",
+    "privacePolicy": "Privacy policy",
+    "privacePolicyLink": "privacy-policy",
     "decline": "Decline",
     "accept": "Accept"
   },

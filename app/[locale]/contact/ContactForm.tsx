@@ -152,7 +152,7 @@ export default function ContactForm(locale: any) {
             </button>
         
           </div>
-          <div className="text-white">{t('privacy')}<Link className="hover:text-[#EB4036]" href={`/${locale?.locale}/privace-policy`}>{" "+t('PrivacyPolicyTitle')}</Link></div>
+          <div className="text-white">{t('privacy')}<Link className="hover:text-[#EB4036]" href={`/${locale?.locale}/privacy-policy`}>{" "+t('PrivacyPolicyTitle')}</Link></div>
         </form>
         <div className="lg:w-[50%] flex flex-col gap-5">
           <h2 className="text-[2.5rem] font-semibold uppercase">
