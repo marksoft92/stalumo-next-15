@@ -149,7 +149,34 @@
     "success": "The message was successfully sent. We will respond as soon as possible to the provided email address.",
     "error": "Something went wrong",
     "privacy": "By submitting a message via the contact form, you consent to the processing of your personal data in accordance with our ",
-  "PrivacyPolicyTitle": "Privacy Policy – stalumo.com"
+  "PrivacyPolicyTitle": "Privacy Policy – stalumo.com",
+  "form": {
+  "category": "Category",
+  "project": "Do you have a project?",
+  "quantity": "Quantity (linear meters / pcs / m² – specify in the description or provide the dimensions of the structure)",
+  "assembly": "Installation service",
+  "phone": "Phone number",
+  "date": "Preferred start date",
+  "yes": "Yes",
+  "no": "No",
+  "withInstallation": "With installation",
+  "noInstallation": "Without installation",
+  "select": "Select...",
+  "balustrades": "Railings",
+  "gates": "Gates",
+  "fences": "Fences",
+  "wickets": "Wickets",
+  "structures": "Other steel structures",
+  "summary": {
+    "category": "Category",
+    "project": "Project provided?",
+    "quantity": "Quantity",
+    "assembly": "Installation service",
+    "phone": "Phone number",
+    "date": "Start date"
+  }
+}
+
   },
   "Gallery": { "title": "Gallery", "homeTitle": "Home" },
   "contactForm": {

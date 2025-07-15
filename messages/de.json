@@ -149,7 +149,34 @@
     "success": "Die Nachricht wurde erfolgreich gesendet. Wir werden so schnell wie möglich an die angegebene E-Mail-Adresse antworten.",
     "error": "Etwas ist schiefgelaufen",
     "privacy": "Mit dem Absenden einer Nachricht über das Kontaktformular erklärst du dich mit der Verarbeitung deiner personenbezogenen Daten gemäß unserer ",
-    "PrivacyPolicyTitle": "Datenschutzrichtlinie – stalumo.com"
+    "PrivacyPolicyTitle": "Datenschutzrichtlinie – stalumo.com",
+    "form": {
+  "category": "Kategorie",
+  "project": "Haben Sie ein Projekt?",
+  "quantity": "Menge (lfm / Stk. / m² – im Beschreibungstext präzisieren oder Konstruktionsmaße angeben)",
+  "assembly": "Montageservice",
+  "phone": "Telefonnummer",
+  "date": "Bevorzugter Starttermin",
+  "yes": "Ja",
+  "no": "Nein",
+  "withInstallation": "Mit Montage",
+  "noInstallation": "Ohne Montage",
+  "select": "Auswählen...",
+  "balustrades": "Geländer",
+  "gates": "Tore",
+  "fences": "Zäune",
+  "wickets": "Pforten",
+  "structures": "Andere Stahlkonstruktionen",
+  "summary": {
+    "category": "Kategorie",
+    "project": "Projekt vorhanden?",
+    "quantity": "Menge",
+    "assembly": "Montage",
+    "phone": "Telefonnummer",
+    "date": "Startdatum"
+  }
+}
+
   },
   "Gallery": { "title": "Projekte", "homeTitle": "Startseite" },
   "contactForm": {

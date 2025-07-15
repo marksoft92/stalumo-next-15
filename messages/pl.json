@@ -149,7 +149,34 @@
     "success": "Wiadomość została wysłana poprawnie. Odpowiemy jak najszybciej to możliwe na podany adres email.",
     "error": "Coś poszło nie tak",
     "privacy": "Przesyłając wiadomość za pośrednictwem formularza kontaktowego, wyrażasz zgodę na przetwarzanie swoich danych osobowych zgodnie z naszą",
-    "PrivacyPolicyTitle": "Polityką Prywatności – stalumo.com"
+    "PrivacyPolicyTitle": "Polityką Prywatności – stalumo.com",
+    "form": {
+  "category": "Kategoria",
+  "project": "Czy posiadasz projekt?",
+  "quantity": "Ilość (mb / szt / m² – doprecyzować przy opisie lub podać wymiar konstrukcji)",
+  "assembly": "Usługa montażu",
+  "phone": "Numer telefonu",
+  "date": "Preferowana data rozpoczęcia prac",
+  "yes": "Tak",
+  "no": "Nie",
+  "withInstallation": "Z montażem",
+  "noInstallation": "Bez montażu",
+  "select": "Wybierz...",
+  "balustrades": "Balustrady",
+  "gates": "Bramy",
+  "fences": "Ogrodzenia",
+  "wickets": "Furtki",
+  "structures": "Inne konstrukcje stalowe",
+  "summary": {
+    "category": "Kategoria",
+    "project": "Czy posiadasz projekt?",
+    "quantity": "Ilość",
+    "assembly": "Usługa montażu",
+    "phone": "Numer telefonu",
+    "date": "Data rozpoczęcia prac"
+  }
+}
+
   },
   "Gallery": {
     "title": "Galeria",
@@ -242,6 +269,7 @@
     "section10Title": "Google Analytics i zgoda na cookies",
     "section10Content": "Na naszej stronie korzystamy z Google Analytics 4, narzędzia analitycznego firmy Google LLC. Służy ono do anonimowego analizowania sposobu korzystania ze strony. Dane zbierane przez GA mogą obejmować zanonimizowany adres IP, informacje o systemie operacyjnym, przeglądarce oraz zachowaniu na stronie.\n\nDomyślnie, przed wyrażeniem zgody przez użytkownika, usługa Google Analytics nie przechowuje danych (analytics_storage: 'denied'). Śledzenie rozpoczyna się dopiero po uzyskaniu zgody za pośrednictwem banera cookies. Użytkownik może w każdej chwili wycofać zgodę, zmieniając ustawienia przeglądarki lub klikając ponownie w baner cookies (jeśli dostępny).\n\nW przypadku przekazywania danych do Google LLC (USA), stosowane są standardowe klauzule umowne zatwierdzone przez Komisję Europejską, zgodnie z art. 46 RODO.\n\nWięcej informacji:\n- Polityka prywatności Google: https://policies.google.com/privacy\n- Warunki Google Analytics: https://marketingplatform.google.com/about/analytics/terms/pl/\n- Standardowe klauzule umowne: https://support.google.com/analytics/answer/9012600"
   }
+  
 
 
 
