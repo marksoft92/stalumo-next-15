@@ -18,6 +18,11 @@ export const routing = defineRouting({
       pl: "/o-nas",
       de: "/uber-uns",
     },
+    "/offer": {
+      en: "/offer",
+      pl: "/oferta",
+      de: "/angebot",
+    },
     "/gallery": {
       en: "/gallery",
       pl: "/projekty",

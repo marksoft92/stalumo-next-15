@@ -10,14 +10,15 @@ const pages = [
     'contact',
     'blog',
     'products',
+    'offer'
 ];
 
 const locales = ['en', 'pl', 'de'];
 
 const localizedPaths = {
-    en: ['', 'about-us', 'gallery', 'contact-me', 'blog', 'products','privacy-policy'],
-    pl: ['', 'o-nas', 'projekty', 'kontakt', 'blog', 'produkty','polityka-prywatności'],
-    de: ['', 'uber-uns', 'projekte', 'kontaktiere-mich', 'blog', 'producten','datenschutzrichtlinie'],
+    en: ['', 'about-us', 'offer','gallery', 'contact-me', 'blog', 'products','privacy-policy'],
+    pl: ['', 'o-nas', 'oferta','projekty', 'kontakt', 'blog', 'produkty','polityka-prywatności'],
+    de: ['', 'uber-uns', 'angebot','projekte', 'kontaktiere-mich', 'blog', 'producten','datenschutzrichtlinie'],
 };
 
 export async function GET() {
