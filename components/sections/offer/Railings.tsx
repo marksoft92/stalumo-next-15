@@ -59,7 +59,7 @@ const {images,loading,error} = props
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div className="relative overflow-hidden rounded-xl border border-[#2e2e2e] shadow-md">
         <img
-          src="/assets/images/before-balustrada.jpg"
+          src="https://panel.stalumo.pl/image-public-uploads/82b2b099-ede2-41b2-a7a5-273eb998922c-balustrada4.jpg"
           alt="Stara balustrada - Before"
           className="w-full h-auto object-cover"
         />
@@ -69,7 +69,7 @@ const {images,loading,error} = props
       </div>
       <div className="relative overflow-hidden rounded-xl border border-[#2e2e2e] shadow-md">
         <img
-          src="/assets/images/after-balustrada.jpg"
+          src="https://panel.stalumo.pl/image-public-uploads/82b2b099-ede2-41b2-a7a5-273eb998922c-balustrada4.jpg"
           alt="Nowa balustrada - After"
           className="w-full h-auto object-cover"
         />

@@ -59,7 +59,7 @@ export default function OtherStelSection(props: any) {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div className="relative overflow-hidden rounded-xl border border-[#2e2e2e] shadow-md">
         <img
-          src="/assets/images/before-balustrada.jpg"
+          src="https://panel.stalumo.pl/image-public-uploads/4c148b8b-3313-4ee6-8eea-d027e52002ee-schodystalowe.JPG"
           alt="Stara balustrada - Before"
           className="w-full h-auto object-cover"
         />
@@ -69,7 +69,7 @@ export default function OtherStelSection(props: any) {
       </div>
       <div className="relative overflow-hidden rounded-xl border border-[#2e2e2e] shadow-md">
         <img
-          src="/assets/images/after-balustrada.jpg"
+          src="https://panel.stalumo.pl/image-public-uploads/4c148b8b-3313-4ee6-8eea-d027e52002ee-schodystalowe.JPG"
           alt="Nowa balustrada - After"
           className="w-full h-auto object-cover"
         />

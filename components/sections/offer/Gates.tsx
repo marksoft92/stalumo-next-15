@@ -59,7 +59,7 @@ export default function (props: any) {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div className="relative overflow-hidden rounded-xl border border-[#2e2e2e] shadow-md">
         <img
-          src="/assets/images/img_work9.jpg"
+          src="https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
           alt="Stara balustrada - Before"
           className="w-full h-auto object-cover"
         />
@@ -69,7 +69,7 @@ export default function (props: any) {
       </div>
       <div className="relative overflow-hidden rounded-xl border border-[#2e2e2e] shadow-md">
         <img
-          src="/assets/images/img_work9.jpg"
+          src="https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
           alt="Nowa balustrada - After"
           className="w-full h-auto object-cover"
         />

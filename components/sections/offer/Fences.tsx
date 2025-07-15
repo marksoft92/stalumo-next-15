@@ -59,7 +59,7 @@ export default function FencesSection(props: any) {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div className="relative overflow-hidden rounded-xl border border-[#2e2e2e] shadow-md">
         <img
-          src="/assets/images/before-balustrada.jpg"
+          src="https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
           alt="Stara balustrada - Before"
           className="w-full h-auto object-cover"
         />
@@ -69,7 +69,7 @@ export default function FencesSection(props: any) {
       </div>
       <div className="relative overflow-hidden rounded-xl border border-[#2e2e2e] shadow-md">
         <img
-          src="/assets/images/after-balustrada.jpg"
+          src="https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
           alt="Nowa balustrada - After"
           className="w-full h-auto object-cover"
         />
