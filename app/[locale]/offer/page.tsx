@@ -10,12 +10,12 @@ import GatesSection from "@/components/sections/offer/Gates";
 import OtherStelSection from "@/components/sections/offer/OtherSteelStructures";
 
 const categories = [
-    "railings",
-    "fences",
-    "gates",
-    "other-steel-structures",
-  ];
-  
+  "railings",
+  "fences",
+  "gates",
+  "other-steel-structures",
+];
+
 
 export default function OfferPage() {
   const imagesSlider: any[] = [
@@ -27,7 +27,7 @@ export default function OfferPage() {
 
   const t = useTranslations("Offer");
 
-  const [images, setImages] = useState<{ url: any; alt: any }[]>([]);
+  const [images, setImages] = useState<{ url: any; alt: any; category: any }[]>([]);
   const [loading, setLoading] = useState<any>(true);
   const [error, setError] = useState<any | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<any>("railings");
@@ -51,7 +51,10 @@ export default function OfferPage() {
     fetchImages();
   }, []);
 
-
+  const balustradesImages = images.filter(img => img.category === "balustrades");
+  const fencesImages = images.filter(img => img.category === "fences");
+  const gatesImages = images.filter(img => img.category === "gates");
+  const othersteelImages = images.filter(img => img.category === "othersteel");
 
   return (
     <Container>
@@ -78,27 +81,26 @@ export default function OfferPage() {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-6 py-2 uppercase font-semibold rounded-2xl shadow-md transition ${
-                selectedCategory === cat
-                  ? "bg-[#EB4036] text-white"
-                  : "bg-gray-200 text-red-500" 
-              }`}
+              className={`px-6 py-2 uppercase font-semibold rounded-2xl shadow-md transition ${selectedCategory === cat
+                ? "bg-[#EB4036] text-white"
+                : "bg-gray-200 text-red-500"
+                }`}
             >
               {t(cat)}
             </button>
           ))}
         </div>
 
-      <> { 
-      selectedCategory === "railings" && <RailingsSection images={images} loading={loading} error={error}/> || 
-        selectedCategory === "fences" && <FencesSection images={images} loading={loading} error={error}/> ||
-        selectedCategory === "gates" && <GatesSection images={images} loading={loading} error={error}/> ||
-        selectedCategory === "other-steel-structures" && <OtherStelSection images={images} loading={loading} error={error}/> ||
-        loading && <p className="text-center">Loading...</p>
-      
-      
-      }</>
-     
+        <> {
+          selectedCategory === "railings" && <RailingsSection images={balustradesImages} loading={loading} error={error} /> ||
+          selectedCategory === "fences" && <FencesSection images={fencesImages} loading={loading} error={error} /> ||
+          selectedCategory === "gates" && <GatesSection images={gatesImages} loading={loading} error={error} /> ||
+          selectedCategory === "other-steel-structures" && <OtherStelSection images={othersteelImages} loading={loading} error={error} /> ||
+          loading && <p className="text-center">Loading...</p>
+
+
+        }</>
+
       </div>
     </Container>
   );
