@@ -93,9 +93,9 @@ export default function OfferPage() {
 
         <> {
           selectedCategory === "railings" && <RailingsSection images={balustradesImages} loading={loading} error={error} beforeAfter={false} /> ||
-          selectedCategory === "fences" && <FencesSection images={fencesImages} loading={loading} error={error}  beforeAfter={true} /> ||
-          selectedCategory === "gates" && <GatesSection images={gatesImages} loading={loading} error={error}  beforeAfter={false} /> ||
-          selectedCategory === "other-steel-structures" && <OtherStelSection images={othersteelImages} loading={loading} error={error}  beforeAfter={false}/> ||
+          selectedCategory === "fences" && <FencesSection images={fencesImages} loading={loading} error={error} beforeAfter={true} /> ||
+          selectedCategory === "gates" && <GatesSection images={gatesImages} loading={loading} error={error} beforeAfter={false} /> ||
+          selectedCategory === "other-steel-structures" && <OtherStelSection images={othersteelImages} loading={loading} error={error} beforeAfter={true} /> ||
           loading && <p className="text-center">Loading...</p>
 
 

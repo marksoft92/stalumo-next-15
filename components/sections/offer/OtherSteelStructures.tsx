@@ -9,7 +9,7 @@ import Image from "next/image";
 
 
 export default function OtherStelSection(props: any) {
-  const { images, loading, error,beforeAfter } = props
+  const { images, loading, error, beforeAfter } = props
   const t = useTranslations("Offer");
   return (
     <section className="max-w-[1280px] mx-auto px-4 py-24 flex flex-col gap-16">
@@ -64,17 +64,17 @@ export default function OtherStelSection(props: any) {
 
 
         <BeforeAfterImages
-      beforeUrl="/assets/images/offer/before_otherstel.jpg"
-      afterUrl="/assets/images/offer/after_fences.jpg"
-      beforeLabel={t("descriptionPage.gates.before")}
-      afterLabel={t("descriptionPage.gates.after")}
-    />
-
-        
+          beforeUrl="/assets/images/offer/before_otherstel.jpg"
+          afterUrl="/assets/images/offer/after_otherstel.jpg"
+          beforeLabel={t("descriptionPage.gates.before")}
+          afterLabel={t("descriptionPage.gates.after")}
+        />
 
 
-        
-        
+
+
+
+
         <p className="text-[#A5A5A5] text-[1.1rem] leading-[2rem] tracking-wide max-w-[85ch] font-raleway mt-4">
           {t("descriptionPage.otherstell.efectDescription")} </p>
       </div>}
