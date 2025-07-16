@@ -14,40 +14,40 @@ export default async function NavBar() {
 
   const navLinks: NavLink[] = [
     { href: "/", label: t("home") },
-    { href: "/about", label: t("about") },
-    { href: "/gallery", label: t("gallery") },
     { href: "/offer", label: t("offer") },
     { href: "/contact", label: t("contact") },
+    { href: "/gallery", label: t("gallery") },
+    { href: "/about", label: t("about") },
     { href: "/blog", label: t("blog") },
   ];
 
   return (
     <div className="flex justify-between items-center max-w-full sticky top-0 z-10 w-full bg-[#121212]">
       <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px] sticky top-0 z-10 w-full bg-[#121212]">
-      <Link href="/">
-        <Image
-          src="/assets/images/stalumo.png"
-          width={145}
-          height={113}
-          alt="Logo Stalumo"
-          loading="lazy"
-        />
-      </Link>
-      <div className="max-lg:hidden">
-        {navLinks.map((link, index) => (
-          <Link
-            key={index}
-            className="uppercase font-bold text-[1rem] font-oswald px-[20px] hover:text-[#EB4036]"
-            href={link.href}
-          >
-            {link.label}
-          </Link>
-        ))}
-      </div>
-      <LocaleSwitcher />
+        <Link href="/">
+          <Image
+            src="/assets/images/stalumo.png"
+            width={145}
+            height={113}
+            alt="Logo Stalumo"
+            loading="lazy"
+          />
+        </Link>
+        <div className="max-lg:hidden">
+          {navLinks.map((link, index) => (
+            <Link
+              key={index}
+              className="uppercase font-bold text-[1rem] font-oswald px-[20px] hover:text-[#EB4036]"
+              href={link.href}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+        <LocaleSwitcher />
       </div>
       <HamburgerMenu navLinks={navLinks} />
-      
+
     </div>
   );
 }
