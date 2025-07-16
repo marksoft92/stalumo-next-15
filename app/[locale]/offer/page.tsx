@@ -60,7 +60,7 @@ export default function OfferPage() {
     <Container>
       <BackgroundSlider images={imagesSlider} maxHeight={"500px"} />
       <div>
-        <div className="flex flex-col items-center relative min-h-[400px] justify-center">
+        <div className="flex flex-col items-center relative min-h-[400px] max-lg:min-h-[250px] justify-center">
           <h2 className="text-[6rem] font-semibold uppercase">{t("title")}</h2>
           <h3>
             <Link
@@ -76,7 +76,7 @@ export default function OfferPage() {
         </div>
 
         {/* KATEGORIE */}
-        <div className="flex gap-4 justify-center  flex-wrap relative z-1 ">
+        <div className="flex gap-4 justify-center  flex-wrap relative z-1 max-lg:grid ">
           {categories.map((cat) => (
             <button
               key={cat}
