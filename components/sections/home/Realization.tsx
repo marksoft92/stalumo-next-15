@@ -19,25 +19,25 @@ const Realization: React.FC = async () => {
           iconUrl={"/assets/images/img_work15.jpg"}
           title={t("count1description")}
           subTitle={t("count1")}
-          href="/gallery"
+          href="/offer"
         />
         <RealizationBox
           iconUrl={"/assets/images/img_work9.jpg"}
           title={t("count2description")}
           subTitle={t("count2")}
-          href="/gallery"
+          href="/offer"
         />
         <RealizationBox
           iconUrl={"/assets/images/img_work37.jpg"}
           title={t("count3description")}
           subTitle={t("count3")}
-          href="/gallery"
+          href="/offer"
         />
         <RealizationBox
           iconUrl={"/assets/images/img_work21.jpg"}
           title={t("count4description")}
           subTitle={t("count4")}
-          href="/gallery"
+          href="/offer"
         />
       </div>
     </section>
