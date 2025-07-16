@@ -33,39 +33,26 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 
 const CategoriesPage = async ({ params }: { params: any }) => {
   const imagesSlider: string[] = [
-    "/assets/images/spawanie1.jpg",
-    "/assets/images/spawanie2.jpg",
-    "/assets/images/spawanie3.jpg",
-    "/assets/images/spawanie4.jpg",
-    "/assets/images/spawanie5.jpg",
+    "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg",
+    "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg",
+
   ];
   const data = await params;
   const locale = data.locale
-  const categories  = {
+  const categories  = { 
     pl: [
-      { title: "Grill gazowy", slug: "/pl/produkty/grill-gazowy", description: "Grill klasy premium - wysoka jakość",price: 888 , imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg',currency: 'zł'},
-      { title: "Grill węglowy", slug: "/pl/produkty/grill-weglowy", description: "Grill klasy premium - wysoka jakość",price: 777 , imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg',currency: 'zł'},
-      { title: "Grill gazowy", slug: "/pl/produkty/grill-gazowy", description: "Grill klasy premium - wysoka jakość",price: 888 , imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg',currency: 'zł'},
-      { title: "Grill węglowy", slug: "/pl/produkty/grill-weglowy", description: "Grill klasy premium - wysoka jakość",price: 777 , imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg',currency: 'zł'},
-      { title: "Grill gazowy", slug: "/pl/produkty/grill-gazowy", description: "Grill klasy premium - wysoka jakość",price: 888 , imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg',currency: 'zł'},
-      { title: "Grill węglowy", slug: "/pl/produkty/grill-weglowy", description: "Grill klasy premium - wysoka jakość",price: 777 , imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg',currency: 'zł'},
+      { title: "Grill gazowy", slug: "/pl/produkty/piecyk-stalumo", description: "Grill klasy premium - wysoka jakość",price: 888 , imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg',currency: 'zł'},
+
     ],
     en: [
-      { title: "Gas Grill", slug: "/en/products/gas-grill", description: "Premium-class grill – high quality",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
-      { title: "Charcoal Grill", slug: "/en/products/charcoal-grill", description: "Premium-class grill – high quality",price: 222 , imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg',currency: '€'},
-      { title: "Gas Grill", slug: "/en/products/gas-grill", description: "Premium-class grill – high quality",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
-      { title: "Charcoal Grill", slug: "/en/products/charcoal-grill", description: "Premium-class grill – high quality",price: 222 , imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg',currency: '€'},
-      { title: "Gas Grill", slug: "/en/products/gas-grill", description: "Premium-class grill – high quality",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
-      { title: "Charcoal Grill", slug: "/en/products/charcoal-grill", description: "Premium-class grill – high quality",price: 222 , imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg',currency: '€'},
+      { title: "Gas Grill", slug: "/en/products/stalumo-steel-stove", description: "Premium-class grill – high quality",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
+
+      
     ],
     
     de: [
-      { title: "Gasgrill", slug: "/de/producten/gasgrill", description: "Grill der Premiumklasse – hohe Qualität",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
-      { title: "Holzkohlegrill", slug: "/de/producten/holzkohlegrill", description: "Grill der Premiumklasse – hohe Qualität",price: 222, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg' ,currency: '€'},
-      { title: "Gasgrill", slug: "/de/producten/gasgrill", description: "Grill der Premiumklasse – hohe Qualität",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
-      { title: "Holzkohlegrill", slug: "/de/producten/holzkohlegrill", description: "Grill der Premiumklasse – hohe Qualität",price: 222, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg' ,currency: '€'},
-      { title: "Gasgrill", slug: "/de/producten/gasgrill", description: "Grill der Premiumklasse – hohe Qualität",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg',currency: '€' },
-      { title: "Holzkohlegrill", slug: "/de/producten/holzkohlegrill", description: "Grill der Premiumklasse – hohe Qualität",price: 222, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg',currency: '€' },
+      { title: "Gasgrill", slug: "/de/producten/stahlofen-stalumo", description: "Grill der Premiumklasse – hohe Qualität",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
+
     ],
     
   }
