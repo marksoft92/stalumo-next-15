@@ -24,6 +24,7 @@ export default function BeforeAfterImages({
           alt={beforeLabel}
           fill
           className="object-cover"
+           loading="lazy"
         />
          <div className="absolute top-4 left-4 bg-white text-red-600 border-2 border-red-600 text-sm px-3 py-1 rounded-full uppercase font-semibold tracking-wide">
 
@@ -38,6 +39,7 @@ export default function BeforeAfterImages({
           alt={afterLabel}
           fill
           className="object-cover"
+           loading="lazy"
         />
     <div className="absolute top-4 left-4 bg-white text-red-600 border-2 border-red-600 text-sm px-3 py-1 rounded-full uppercase font-semibold tracking-wide">
     {afterLabel}
