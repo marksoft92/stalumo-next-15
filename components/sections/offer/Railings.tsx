@@ -1,7 +1,10 @@
 "use client";
 
+import BeforeAfterImages from "@/components/BeforeAfterImages";
 import BoxImg from "@/components/ImageGox";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 
   
@@ -56,29 +59,12 @@ const {images,loading,error} = props
   {/* Sekcja "Before / After" */}
   <div className="flex flex-col gap-10">
     <h2 className="text-[2.5rem] font-semibold uppercase text-white"> {t("descriptionPage.railings.check")} </h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="relative overflow-hidden rounded-xl border border-[#2e2e2e] shadow-md">
-        <img
-          src="https://panel.stalumo.pl/image-public-uploads/82b2b099-ede2-41b2-a7a5-273eb998922c-balustrada4.jpg"
-          alt="Stara balustrada - Before"
-          className="w-full h-auto object-cover"
-        />
-        <div className="absolute top-4 left-4 bg-[#EB4036] text-white text-sm px-3 py-1 rounded-full uppercase font-semibold tracking-wide">
-        {t("descriptionPage.railings.before")}
-        </div>
-      </div>
-      <div className="relative overflow-hidden rounded-xl border border-[#2e2e2e] shadow-md">
-        <img
-          src="https://panel.stalumo.pl/image-public-uploads/82b2b099-ede2-41b2-a7a5-273eb998922c-balustrada4.jpg"
-          alt="Nowa balustrada - After"
-          className="w-full h-auto object-cover"
-        />
-        <div className="absolute top-4 left-4 bg-white text-red-600 border-2 border-red-600
- text-sm px-3 py-1 rounded-full uppercase font-semibold tracking-wide">
-        {t("descriptionPage.railings.after")}
-        </div>
-      </div>
-    </div>
+    <BeforeAfterImages
+      beforeUrl="/assets/images/offer/before_fences.jpg"
+      afterUrl="/assets/images/offer/after_fences.jpg"
+      beforeLabel={t("descriptionPage.gates.before")}
+      afterLabel={t("descriptionPage.gates.after")}
+    />
     <p className="text-[#A5A5A5] text-[1.1rem] leading-[2rem] tracking-wide max-w-[85ch] font-raleway mt-4">
     {t("descriptionPage.railings.efectDescription")} </p>
   </div>
@@ -112,12 +98,12 @@ const {images,loading,error} = props
     <p className="text-lg font-raleway leading-[2rem]">
     {t("descriptionPage.railings.contactDescription")}
     </p>
-    <a
-      href="/contact"
-      className="mt-4 inline-block px-6 py-3 bg-white text-[#EB4036] font-semibold rounded-xl uppercase tracking-wider hover:bg-[#f8f8f8] transition-all duration-200"
-    >
-     {t("descriptionPage.railings.contactButtonLabel")}
-    </a>
+    <Link
+          href="/contact"
+          className="mt-4 inline-block px-6 py-3 bg-white text-[#EB4036] font-semibold rounded-xl uppercase tracking-wider hover:bg-[#f8f8f8] transition-all duration-200"
+        >
+          {t("descriptionPage.fences.contactButtonLabel")}
+        </Link>
   </div>
 
   

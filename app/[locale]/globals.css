@@ -86,4 +86,10 @@ body {
       rgba(18, 18, 18, 1) 100%
     );
   }
+
+  .text-shadow-sm {
+    text-shadow: 0 10px 10px #EB4036
+  }
+  
+  
 }
