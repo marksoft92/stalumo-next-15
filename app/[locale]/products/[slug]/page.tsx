@@ -38,7 +38,7 @@ const fetchPosts = async (locale: any,slug: any) => {
   return null;
 };
 
-const ProductPage = async ({ params }: Props) => {
+const ProductPage = async ({ params }: { params: any }) => {
   const slug = params.slug;
   const locale = params.locale
 
