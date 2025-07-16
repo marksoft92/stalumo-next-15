@@ -92,10 +92,10 @@ export default function OfferPage() {
         </div>
 
         <> {
-          selectedCategory === "railings" && <RailingsSection images={balustradesImages} loading={loading} error={error} /> ||
-          selectedCategory === "fences" && <FencesSection images={fencesImages} loading={loading} error={error} /> ||
-          selectedCategory === "gates" && <GatesSection images={gatesImages} loading={loading} error={error} /> ||
-          selectedCategory === "other-steel-structures" && <OtherStelSection images={othersteelImages} loading={loading} error={error} /> ||
+          selectedCategory === "railings" && <RailingsSection images={balustradesImages} loading={loading} error={error} beforeAfter={false} /> ||
+          selectedCategory === "fences" && <FencesSection images={fencesImages} loading={loading} error={error}  beforeAfter={true} /> ||
+          selectedCategory === "gates" && <GatesSection images={gatesImages} loading={loading} error={error}  beforeAfter={false} /> ||
+          selectedCategory === "other-steel-structures" && <OtherStelSection images={othersteelImages} loading={loading} error={error}  beforeAfter={false}/> ||
           loading && <p className="text-center">Loading...</p>
 
 

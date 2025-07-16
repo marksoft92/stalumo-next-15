@@ -9,7 +9,7 @@ import Image from "next/image";
 
   
 export default function RailingsSection(props: any) {
-const {images,loading,error} = props
+const {images,loading,error,beforeAfter} = props
   const t = useTranslations("Offer");
   return (
 <>
@@ -57,7 +57,7 @@ const {images,loading,error} = props
   </div>
 
   {/* Sekcja "Before / After" */}
-  <div className="flex flex-col gap-10">
+  {beforeAfter && <div className="flex flex-col gap-10">
     <h2 className="text-[2.5rem] font-semibold uppercase text-white"> {t("descriptionPage.railings.check")} </h2>
     <BeforeAfterImages
       beforeUrl="/assets/images/offer/before_fences.jpg"
@@ -67,7 +67,7 @@ const {images,loading,error} = props
     />
     <p className="text-[#A5A5A5] text-[1.1rem] leading-[2rem] tracking-wide max-w-[85ch] font-raleway mt-4">
     {t("descriptionPage.railings.efectDescription")} </p>
-  </div>
+  </div>}
 
 
   

@@ -7,7 +7,7 @@ import { Link } from "@/i18n/routing";
 
 
 export default function FencesSection(props: any) {
-  const { images, loading, error } = props
+  const { images, loading, error, beforeAfter } = props
   const t = useTranslations("Offer");
   return (
     <section className="max-w-[1280px] mx-auto px-4 py-24 flex flex-col gap-16">
@@ -54,21 +54,21 @@ export default function FencesSection(props: any) {
       </div>
 
       {/* Sekcja "Before / After" */}
-      <div className="flex flex-col gap-10">
+     {beforeAfter && <div className="flex flex-col gap-10">
         <h2 className="text-[2.5rem] font-semibold uppercase text-white"> {t("descriptionPage.fences.check")} </h2>
         <div className="w-[12%] h-[5px] bg-gradient-to-r from-[#EB4036] to-transparent opacity-80 mb-2" />
         
         <BeforeAfterImages
-      beforeUrl="/assets/images/offer/before_fences.jpg"
-      afterUrl="/assets/images/offer/after_fences.jpg"
-      beforeLabel={t("descriptionPage.gates.before")}
-      afterLabel={t("descriptionPage.gates.after")}
-    />
+          beforeUrl="/assets/images/offer/before_fences.jpg"
+          afterUrl="/assets/images/offer/after_fences.jpg"
+          beforeLabel={t("descriptionPage.gates.before")}
+          afterLabel={t("descriptionPage.gates.after")}
+        />
 
 
         <p className="text-[#A5A5A5] text-[1.1rem] leading-[2rem] tracking-wide max-w-[85ch] font-raleway mt-4">
           {t("descriptionPage.fences.efectDescription")} </p>
-      </div>
+      </div>}
 
 
       {error && <p className="text-center text-red-500">{error}</p>}
