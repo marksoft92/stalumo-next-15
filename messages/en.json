@@ -180,7 +180,12 @@
 }
 
   },
-  "Gallery": { "title": "Gallery", "homeTitle": "Home" },
+  "Gallery": { "title": "Gallery", 
+  "homeTitle": "Home" ,
+  "cta":"Get in touch – we’ll advise and quote you",
+    "ctaTitle":"Modern steel railings, fences, gates and steel structures | STALUMO",
+    "contactDescription":"We create durable fences, railings, and custom steel structures. Operating in Poland and Germany. Free quote – quick contact!"
+  },
   "Offer": {
   "homeTitle":"Home",
   "title": "Offer",

@@ -180,7 +180,11 @@
 }
 
   },
-  "Gallery": { "title": "Projekte", "homeTitle": "Startseite" },
+  "Gallery": { "title": "Projekte", "homeTitle": "Startseite",
+"cta":"Melden Sie sich – wir beraten und erstellen ein Angebot",
+    "ctaTitle":"Moderne Geländer und Stahlzäune, Tore und Stahlkonstruktionen | STALUMO",
+    "contactDescription":"Modern steel railings, fences, gates and steel structures | STALUMO"
+},
   "Offer": {
   "homeTitle":"Startseite",
   "title": "Angebot",

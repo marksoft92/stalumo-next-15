@@ -1,6 +1,6 @@
 "use client";
 import React, { use, useEffect, useState } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Container from "@/components/ui/container";
 import BackgroundSlider from "@/components/BackgroundSilder";
 import BoxImg from "@/components/ImageGox";
@@ -66,6 +66,18 @@ export default function GalleryPage() {
           ))}
         </section>
       </div>
+      <div className="bg-gradient-to-r from-[#EB4036] to-[#9e1c12] rounded-xl p-10 text-white flex flex-col items-start gap-4 shadow-xl mt-20">
+    <h2 className="text-[2.5rem] font-semibold uppercase max-lg:text-[1.8rem]">{t("ctaTitle")}</h2>
+    <p className="text-lg font-raleway leading-[2rem]">
+    {t("contactDescription")}
+    </p>
+    <Link
+          href="/contact"
+          className="mt-4 inline-block px-6 py-3 bg-white text-[#EB4036] font-semibold rounded-xl uppercase tracking-wider hover:bg-[#f8f8f8] transition-all duration-200"
+        >
+          {t("cta")}
+        </Link>
+  </div>
     </Container>
 </>
   );
