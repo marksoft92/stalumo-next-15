@@ -141,7 +141,26 @@
     "homeTitle": "Strona główna",
     "descriptionTitle": "Profesjonalne Spawanie i Wyroby Metalowe na Polskim i Niemieckim Rynku",
     "description": "Witajcie w Stalumo - firmie z pasją do metalu i zobowiązaniem do doskonałości. Z ponad 10-letnim doświadczeniem na rynku polskim i niemieckim, jesteśmy dumni z naszej reputacji jako solidnego partnera w branży metalowej. <br /> <br /> Od samego początku naszej działalności w 2010 roku, nieustannie dążymy do podnoszenia standardów jakości i profesjonalizmu w naszej pracy. Nasze usługi obejmują szeroki zakres działań, począwszy od spawania po produkcję bram, ogrodzeń, balustrad, balkonów, aż po wiaty i ogrody zimowe - zawsze z dbałością o detale i precyzję wykonania. <br /> <br /> Jesteśmy przekonani, że nasze produkty i usługi wyróżniają się nie tylko doskonałą jakością, ale także elastycznością i indywidualnym podejściem do potrzeb klienta. Każde zamówienie traktujemy jako wyjątkowe i dostosowujemy nasze rozwiązania do konkretnych wymagań, gwarantując satysfakcję nawet najbardziej wymagających klientów. <br /> <br /> Co nas wyróżnia? Oprócz naszego zaangażowania w dostarczanie produktów najwyższej jakości, jesteśmy również zgranym zespołem profesjonalistów, gotowym sprostać nawet najbardziej skomplikowanym wyzwaniom. Nasza firma składa się z wykwalifikowanych specjalistów, dla których metalowe wyroby to nie tylko praca, ale prawdziwa pasja. <br /> <br /> Działamy nie tylko na terenie Polski, ale również w Niemczech, co pozwala nam poszerzyć nasz zasięg i zaoferować nasze produkty i usługi klientom również za granicą. Nasza obecność na dwóch rynkach umożliwia nam również ciągły rozwój i doskonalenie naszych umiejętności, aby sprostać zmieniającym się potrzebom naszych klientów. <br /> <br /> Jeśli szukasz profesjonalnego partnera w branży metalowej, który dostarczy Ci nie tylko wysokiej jakości produkty, ale również kompleksową obsługę i wsparcie na każdym etapie projektu - Stalumo jest dla Ciebie idealnym wyborem. Dołącz do grona zadowolonych klientów i przekonaj się, dlaczego Stalumo to gwarancja solidności, jakości i profesjonalizmu. <br /> <br />",
-    "buttonContact":"Zapraszamy do współpracy!"
+    "buttonContact":"Zapraszamy do współpracy!",
+    "ctaTitle":"Zainteresowany współpracą?",
+    "ctaDescription":"Skontaktuj się z nami, aby uzyskać wycenę, umówić pomiar lub dowiedzieć się więcej o naszej ofercie ogrodzeń.",
+"timeLineHeader":"Jak przebiega współpraca ze STALUMO?",
+    "timeLineTitleContact":"Kontakt i wycena",
+  "timeLineTitleSize":"Pomiar i projekt",
+  "timeLineTitleProduction":"Produkcja",
+  "timeLineTitleMake":"Montaż u klienta",
+  "timeLineTitleWarranty":"Gwarancja i wsparcie",
+"timeLineDescriptionContact": "Skontaktuj się z nami za pomocą formularza kontaktowego, telefonicznie lub mailowo. W oparciu o przesłane informacje przygotujemy dla Ciebie darmową, niezobowiązującą wycenę oraz odpowiemy na wszystkie pytania dotyczące realizacji zamówienia.",
+  
+  "timeLineDescriptionSize": "Nasz specjalista skontaktuje się z Tobą, aby umówić termin pomiaru na miejscu inwestycji. Dzięki temu możemy zaprojektować rozwiązanie idealnie dopasowane do Twoich oczekiwań oraz warunków technicznych budynku lub posesji.",
+  
+  "timeLineDescriptionProduction": "Na etapie produkcji wykorzystujemy wyłącznie sprawdzone technologie oraz stal najwyższej jakości. Każdy element jest precyzyjnie wykonany z dbałością o detale, aby konstrukcja była nie tylko estetyczna, ale również trwała i funkcjonalna przez lata.",
+  
+  "timeLineDescriptionMake": "Po zakończeniu produkcji nasz doświadczony zespół montażowy przeprowadza instalację bezpośrednio u klienta. Dbamy o czystość, precyzję oraz dotrzymywanie uzgodnionych terminów, by cała realizacja przebiegła sprawnie i profesjonalnie.",
+  
+  "timeLineDescriptionWarranty": "Wszystkie nasze produkty przechodzą szczegółową kontrolę jakości, co daje Ci pewność solidności wykonania. Oferujemy również stałe wsparcie posprzedażowe, abyś w każdej chwili mógł liczyć na naszą pomoc i doradztwo."
+
+ 
   },
   "Contact": {
     "title": "Skontaktuj się z nami",

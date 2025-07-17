@@ -6,6 +6,7 @@ import { getTranslations } from "next-intl/server";
 import { Locale } from "@/i18n/routing";
 import type { Metadata } from "next";
 import Button from "@/components/ui/button";
+import OurProcesTimeLine from "@/components/sections/about/OurProcesTimeLine";
 export async function generateMetadata({
   params,
 }: any): Promise<any> {
@@ -150,10 +151,11 @@ export default async function AboutPage({
               className="text-[#A5A5A5] text-[1.2rem]"
               dangerouslySetInnerHTML={{ __html: t("description") }}
             ></p>
-            <Button title={t("buttonContact")} href="/contact"/>
+            
           </div>
         </section>
       </div>
+      <OurProcesTimeLine />
     </Container>
     </>
   );
