@@ -1,12 +1,11 @@
 import { Metadata } from "next";
 import Container from "@/components/ui/container";
-import BlogPage from "@/components/BlogPage";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import BackgroundSlider from "@/components/BackgroundSilder";
-import {Alert} from "@mui/material";
-import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
+import { headers } from "next/headers";
+import { notFound } from "next/navigation";
 // Funkcja do generowania metadanych SEO
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
@@ -29,33 +28,43 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 
 // Pobieranie początkowych postów z AP
 
+const fetchPosts = async (locale: any,slug: any) => {
+  const headersList = await headers();
+  const host = headersList.get("host");
+  const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
+  const baseUrl = `${protocol}://${host}`;
+
+  const res = await fetch(`${baseUrl}/data/products.json`);
+  if (!res.ok) return null;
+  const data = await res.json();
+  const product = data?.products
+
+  if (product) {
+    return product
+  }
+
+  return null;
+};
 
 
 const CategoriesPage = async ({ params }: { params: any }) => {
+  const slug = params.slug;
+  const locale = params.locale
+
+  const productData = await fetchPosts(locale,slug);
+console.log(productData)
+
+  if (!productData[0]) {
+    notFound();
+  }
+
+
   const imagesSlider: string[] = [
     "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg",
     "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg",
 
   ];
-  const data = await params;
-  const locale = data.locale
-  const categories  = { 
-    pl: [
-      { title: "Grill gazowy", slug: "/pl/produkty/piecyk-stalumo", description: "Grill klasy premium - wysoka jakość",price: 888 , imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg',currency: 'zł'},
 
-    ],
-    en: [
-      { title: "Gas Grill", slug: "/en/products/stalumo-steel-stove", description: "Premium-class grill – high quality",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
-
-      
-    ],
-    
-    de: [
-      { title: "Gasgrill", slug: "/de/producten/stahlofen-stalumo", description: "Grill der Premiumklasse – hohe Qualität",price: 244, imageUrl: '/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg' ,currency: '€'},
-
-    ],
-    
-  }
   const t = await getTranslations("Products");
   return (
     <Container>
@@ -82,33 +91,16 @@ const CategoriesPage = async ({ params }: { params: any }) => {
 
 
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden mt-[5rem]">
-          {categories?.[locale as keyof typeof categories].map((cat:any) => (
-        //     <a
-        //       key={cat.slug}
-        //       href={`/${locale}/products/${cat.slug}`}
-        //       className="overflow-hidden bg-neutral-800 border border-neutral-700 hover:border-red-600 transition-all rounded-lg p-6 text-white shadow-md hover:shadow-xl hover:scale-[1.02]"
-        //     >
-        //       <h2 className="text-xl font-semibold uppercase tracking-wider mb-2">
-        //         {cat.title}
-        //       </h2>
-        //       <p className="text-sm text-neutral-400">{cat.description}</p>
-        //       <Image
-        //   width={300}
-        //   height={300}
-        //   alt={'Grill'}
-        //   src={'/miniatura.jpeg'}
-        //   className="cursor-pointer h-full rounded-[6px] w-[100%] h-[100%]"
-        //   loading="lazy"
-        // />
-        //     </a>
+          {productData.map((cat:any) => (
+  
             <ProductCard 
-            description={cat?.description}
-            slug={cat?.slug}
-            title={cat?.title}
-            imageUrl={cat?.imageUrl}
-            price= {cat?.price}
-currency={cat?.currency}
+            slug={(locale === 'pl' ? '/produkty/' : locale === 'en' ? '/products/' : '/producten/')+cat?.slugs?.[locale]}
+            title={cat?.locales?.[locale]?.title}
+            imageUrl={cat?.images?.[0]}
+            price= {cat?.locales?.[locale]?.price?.current}
+
             />
+           
           ))}
         </div>
       </div>

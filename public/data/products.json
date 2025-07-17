@@ -273,6 +273,280 @@
           ]
         }
       }
+    },
+    {
+      "slugs": { 
+        "pl": "piecyk-stalumo",
+        "en": "stalumo-steel-stove",
+        "de": "stahlofen-stalumo"}
+      ,
+      "images": [
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__0.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__1.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__2.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__0.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__1.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__2.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__0.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__1.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__2.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__0.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__1.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__2.jpg",
+        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__3.jpg"],
+      "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "locales": {
+        "pl": {
+          "title": "Grill Titan 900",
+          "description": [
+            "Grill Titan 900 to wyjątkowe rozwiązanie stworzone dla prawdziwych miłośników grillowania, którzy nie akceptują kompromisów w kwestii jakości i funkcjonalności. Ten nowoczesny grill został zaprojektowany z myślą o intensywnym użytkowaniu w każdych warunkach atmosferycznych. Wykonany ze stali walcowanej na zimno najwyższej jakości, charakteryzuje się niezwykłą odpornością na korozję, wysokie temperatury oraz mechaniczne uszkodzenia.",
+            "Dzięki przemyślanej konstrukcji i ergonomicznemu designowi, Grill Titan 900 zapewnia równomierne rozprowadzanie ciepła na całej powierzchni grillowania, co gwarantuje perfekcyjne przygotowanie każdej potrawy. Duży ruszt o powierzchni grillowania umożliwia jednoczesne przygotowanie posiłków dla całej rodziny lub grupy przyjaciół. Zaawansowany system regulacji ciepła pozwala na precyzyjne kontrolowanie temperatury i dostosowanie jej do rodzaju grillowanego produktu.",
+            "Idealny nie tylko do domowego ogrodu czy tarasu, ale także na wycieczki, camping i wszelkie imprezy plenerowe. Solidna, stabilna konstrukcja zapewnia bezpieczeństwo użytkowania, a matowe wykończenie w kolorze czarnym nadaje mu elegancki, profesjonalny wygląd."
+          ],
+          "specifications": [
+            "Materiał: Stal walcowana na zimno - najwyższa jakość i trwałość",
+            "Wymiary: 68 x 39 x 58.5 cm - optymalne proporcje",
+            "Powierzchnia grillowania: 39 x 68 cm (2652 cm²)",
+            "Kolor: Czarny mat - eleganckie wykończenie odporne na zarysowania",
+            "Waga: 15 kg - stabilność bez nadmiernej ciężkości",
+            "Wysokość robocza: 58.5 cm - komfortowe grillowanie",
+            "Stabilna konstrukcja - nogi z regulacją wysokości",
+            "Prosty montaż - instrukcja w języku polskim"
+          ],
+          "advantages": [
+            "Odporność na wysokie temperatury do 800°C",
+            "Powłoka antykorozyjna - długotrwała ochrona",
+            "System wentylacji - optymalne spalanie",
+            "Ergonomiczne uchwyty - bezpieczne przenoszenie",
+            "Łatwe czyszczenie - gładkie powierzchnie",
+            "Kompatybilność z węglem drzewnym i brykietem",
+            "Gwarancja producenta 24 miesiące"
+          ],
+          "included": [
+            "Korpus grilla ze stali walcowanej",
+            "Ruszt grillowy chromowany",
+            "Nogi z regulacją (4 szt.)",
+            "Elementy montażowe",
+            "Instrukcja obsługi w języku polskim",
+            "Karta gwarancyjna"
+          ],
+          "price": {
+            "old": "899,00 zł",
+            "discountPercent": "17%",
+            "current": "749,00 zł",
+            "freeShippingThreshold": "500 zł"
+          },
+          "availability": [
+            "Dostępny od ręki",
+            "Wysyłka w 24h",
+            "Gwarancja 24 miesiące"
+          ],
+          "reviews": {
+            "rating": 5,
+            "reviewCount": 14,
+            "reviewsList": [
+              {
+                "name": "Adam K.",
+                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja."
+              },
+              {
+                "name": "Marta P.",
+                "content": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam!"
+              }
+            ]
+          },
+          "relatedProducts": [
+            {
+              "name": "Grill Pro 600",
+              "price": "749,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg",
+              "url":"/pl/produkty"
+            },
+            {
+              "name": "Grill Master XL",
+              "price": "899,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg",
+              "url":"/pl/produkty"
+            },
+            {
+              "name": "Grill Compact 400",
+              "price": "549,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_2.jpg",
+              "url":"/pl/produkty"
+            },
+            {
+              "name": "Wędzarnia Stalumo",
+              "price": "999,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_3.jpg",
+              "url":"/pl/produkty"
+            }
+          ]
+        },
+        "en": {
+          "title": "Titan Grill 900",
+          "description": [
+            "The Titan Grill 900 is an exceptional solution created for true barbecue enthusiasts who do not accept compromises in quality and functionality. This modern grill is designed for heavy use in all weather conditions. Made from high-quality cold-rolled steel, it offers excellent resistance to corrosion, high temperatures, and mechanical damage.",
+            "Thanks to its thoughtful construction and ergonomic design, the Titan Grill 900 provides even heat distribution across the entire grilling surface, ensuring perfect preparation of every dish. The large grill grate allows for simultaneous cooking for the whole family or a group of friends. The advanced heat control system enables precise temperature regulation and adaptation to the type of food being grilled.",
+            "Perfect not only for the home garden or terrace, but also for trips, camping, and all outdoor events. The solid, stable construction ensures safe use, and the matte black finish gives it an elegant, professional look."
+          ],
+          "specifications": [
+            "Material: Cold-rolled steel – top quality and durability",
+            "Dimensions: 68 x 39 x 58.5 cm – optimal proportions",
+            "Grill surface: 39 x 68 cm (2652 cm²)",
+            "Color: Matte black – elegant and scratch-resistant finish",
+            "Weight: 15 kg – stability without excessive heaviness",
+            "Working height: 58.5 cm – comfortable grilling",
+            "Stable construction – adjustable legs",
+            "Easy assembly – English instruction manual"
+          ],
+          "advantages": [
+            "Heat resistance up to 800°C",
+            "Anti-corrosion coating – long-lasting protection",
+            "Ventilation system – optimal combustion",
+            "Ergonomic handles – safe transport",
+            "Easy cleaning – smooth surfaces",
+            "Compatible with charcoal and briquettes",
+            "24-month manufacturer warranty"
+          ],
+          "included": [
+            "Steel grill body made of cold-rolled steel",
+            "Chromed grill grate",
+            "Adjustable legs (4 pcs.)",
+            "Assembly components",
+            "User manual in English",
+            "Warranty card"
+          ],
+          "price": {
+            "old": "899.00 PLN",
+            "discountPercent": "17%",
+            "current": "749.00 PLN",
+            "freeShippingThreshold": "500 PLN"
+          },
+          "availability": [
+            "Available immediately",
+            "Shipping within 24h",
+            "24-month warranty"
+          ],
+          "reviews": {
+            "rating": 5,
+            "reviewCount": 14,
+            "reviewsList": [
+              {
+                "name": "John D.",
+                "content": "Great quality, works perfectly for every party. Solid build."
+              },
+              {
+                "name": "Emily S.",
+                "content": "Nice look and easy to use. Steel is indeed weatherproof. Recommended!"
+              }
+            ]
+          },
+          "relatedProducts": [
+            {
+              "name": "Grill Pro 600",
+              "price": "749,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg"
+            },
+            {
+              "name": "Grill Master XL",
+              "price": "899,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg"
+            },
+            {
+              "name": "Grill Compact 400",
+              "price": "549,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_2.jpg"
+            },
+            {
+              "name": "Wędzarnia Stalumo",
+              "price": "999,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_3.jpg"
+            }
+          ]
+        },
+        "de": {
+          "title": "Titan Grill 900",
+          "description": [
+            "Der Titan Grill 900 ist eine außergewöhnliche Lösung für echte Grillliebhaber, die keine Kompromisse bei Qualität und Funktionalität eingehen. Dieser moderne Grill wurde für den intensiven Einsatz bei allen Wetterbedingungen entwickelt. Hergestellt aus hochwertigem kaltgewalztem Stahl, ist er besonders widerstandsfähig gegen Korrosion, hohe Temperaturen und mechanische Beschädigungen.",
+            "Dank der durchdachten Konstruktion und dem ergonomischen Design sorgt der Titan Grill 900 für eine gleichmäßige Wärmeverteilung über die gesamte Grillfläche und garantiert so perfekte Grillergebnisse. Der große Grillrost ermöglicht die gleichzeitige Zubereitung von Speisen für die ganze Familie oder eine Gruppe von Freunden. Das fortschrittliche Wärmeregulierungssystem erlaubt eine präzise Temperaturkontrolle und Anpassung an das Grillgut.",
+            "Ideal nicht nur für den heimischen Garten oder die Terrasse, sondern auch für Ausflüge, Camping und alle Outdoor-Veranstaltungen. Die stabile Konstruktion gewährleistet Sicherheit bei der Nutzung und das mattschwarze Finish verleiht ihm ein elegantes, professionelles Aussehen."
+          ],
+          "specifications": [
+            "Material: Kaltgewalzter Stahl – höchste Qualität und Langlebigkeit",
+            "Maße: 68 x 39 x 58,5 cm – optimale Proportionen",
+            "Grillfläche: 39 x 68 cm (2652 cm²)",
+            "Farbe: Mattschwarz – elegantes und kratzfestes Finish",
+            "Gewicht: 15 kg – Stabilität ohne übermäßiges Gewicht",
+            "Arbeitshöhe: 58,5 cm – komfortables Grillen",
+            "Stabile Konstruktion – höhenverstellbare Beine",
+            "Einfache Montage – Anleitung auf Deutsch"
+          ],
+          "advantages": [
+            "Hitzebeständig bis zu 800°C",
+            "Korrosionsschutzbeschichtung – langlebiger Schutz",
+            "Belüftungssystem – optimales Verbrennen",
+            "Ergonomische Griffe – sicheres Tragen",
+            "Einfache Reinigung – glatte Oberflächen",
+            "Kompatibel mit Holzkohle und Briketts",
+            "24 Monate Herstellergarantie"
+          ],
+          "included": [
+            "Grillkörper aus kaltgewalztem Stahl",
+            "Verchromter Grillrost",
+            "Höhenverstellbare Beine (4 Stk.)",
+            "Montagezubehör",
+            "Bedienungsanleitung auf Deutsch",
+            "Garantiekarte"
+          ],
+          "price": {
+            "old": "899,00 zł",
+            "discountPercent": "17%",
+            "current": "749,00 zł",
+            "freeShippingThreshold": "500 zł"
+          },
+          "availability": [
+            "Sofort verfügbar",
+            "Versand innerhalb von 24h",
+            "24 Monate Garantie"
+          ],
+          "reviews": {
+            "rating": 5,
+            "reviewCount": 14,
+            "reviewsList": [
+              {
+                "name": "Thomas M.",
+                "content": "Top Qualität, perfekt für jede Gartenparty. Sehr stabil."
+              },
+              {
+                "name": "Lisa K.",
+                "content": "Sieht gut aus und ist einfach zu bedienen. Wirklich wetterfest. Sehr zu empfehlen!"
+              }
+            ]
+          },
+          "relatedProducts": [
+            {
+              "name": "Grill Pro 600",
+              "price": "749,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg"
+            },
+            {
+              "name": "Grill Master XL",
+              "price": "899,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg"
+            },
+            {
+              "name": "Grill Compact 400",
+              "price": "549,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_2.jpg"
+            },
+            {
+              "name": "Wędzarnia Stalumo",
+              "price": "999,00 zł",
+              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_3.jpg"
+            }
+          ]
+        }
+      }
     }
   ]
 }

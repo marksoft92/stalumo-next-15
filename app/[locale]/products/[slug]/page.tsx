@@ -2,14 +2,6 @@
 import { notFound } from "next/navigation";
 import ProductBox from "./product";
 import { headers } from "next/headers";
-import { any } from "zod";
-
-interface Props {
-  params: {
-    slug: any;
-    locale: any
-  };
-}
 
 const fetchPosts = async (locale: any,slug: any) => {
   const headersList = await headers();
