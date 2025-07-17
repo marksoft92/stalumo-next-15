@@ -36,7 +36,10 @@
       "question10": "What anti-corrosion protections do you use?",
       "answer10": "We use hot-dip galvanizing and powder coating to ensure the longevity of steel.",
       "question11": "How can I order steel railings or fences?",
-      "answer11": "Contact us, provide dimensions and expectations, and we will prepare a personalized offer."
+      "answer11": "Contact us, provide dimensions and expectations, and we will prepare a personalized offer.",
+        "cta": "Ask a question",
+        "ctaTitle": "Didn’t find the answer to your question?",
+        "contactDescription": "Contact us – we’ll respond quickly and recommend the best solution for you."
     },
     "OurProcess": {
       "title": "THE BEST EXPERIENCE IN IMPLEMENTATION",

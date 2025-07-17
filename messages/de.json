@@ -36,7 +36,12 @@
       "question10": "Welche Korrosionsschutzmaßnahmen verwenden Sie?",
       "answer10": "Wir verwenden Feuerverzinkung und Pulverbeschichtung, um die Langlebigkeit des Stahls zu gewährleisten.",
       "question11": "Wie kann ich Geländer oder Stahlzäune bestellen?",
-      "answer11": "Kontaktieren Sie uns, nennen Sie Maße und Erwartungen, und wir erstellen Ihnen ein individuelles Angebot."
+      "answer11": "Kontaktieren Sie uns, nennen Sie Maße und Erwartungen, und wir erstellen Ihnen ein individuelles Angebot.",
+        "cta": "Frage stellen",
+        "ctaTitle": "Keine Antwort auf Ihre Frage gefunden?",
+        "contactDescription": "Kontaktieren Sie uns – wir antworten schnell und beraten Sie gerne mit der besten Lösung."
+      
+      
     },
     "OurProcess": {
       "title": "DIE BESTE ERFAHRUNG IN DER UMSETZUNG",
