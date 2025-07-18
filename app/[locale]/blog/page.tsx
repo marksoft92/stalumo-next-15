@@ -8,20 +8,45 @@ import { Alert } from "@mui/material";
 import { notFound } from "next/navigation";
 // Funkcja do generowania metadanych SEO
 
-export async function generateMetadata({ params }: any): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { locale: any } }): Promise<Metadata> {
   const t = await getTranslations("Blog");
-  const p = await params
+  const locale = params.locale || "en";
+
+  const urlMap: Record<any, any> = {
+    en: "https://stalumo.com/en/blog",
+    pl: "https://stalumo.com/pl/blog",
+    de: "https://stalumo.com/de/blog",
+  };
+
+  const currentUrl = urlMap[locale] || urlMap.en;
+
   return {
-    title: `${t("title")}`, // Dynamiczny tytuł
-    description: t("description"), // Dynamiczny opis
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords"),
     authors: [{ name: "Stalumo", url: "/about" }],
-    keywords: `${t("keywords")}`,
     openGraph: {
-      title: `${t("title")} | My Website`,
+      title: `${t("title")} | Stalumo`,
       description: t("description"),
-      url: `/${p.locale}/blog`,
+      url: currentUrl,
       siteName: "Stalumo.com",
       type: "website",
+      images: [
+        {
+          url: "https://stalumo.com/assets/images/logo.png", // lub dedykowana grafika dla bloga
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
+    },
+    alternates: {
+      canonical: currentUrl,
+      languages: {
+        en: urlMap.en,
+        pl: urlMap.pl,
+        de: urlMap.de,
+      },
     },
   };
 }
