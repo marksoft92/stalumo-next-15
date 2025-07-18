@@ -19,10 +19,10 @@ const categories = [
 
 export default function OfferPage() {
   const imagesSlider: any[] = [
-    "/assets/images/img_work9.jpg",
-    "/assets/images/img_work15.jpg",
-    "/assets/images/img_work21.jpg",
-    "/assets/images/img_work37.jpg",
+    "/assets/images/img_work9.webp",
+    "/assets/images/img_work15.webp",
+    "/assets/images/img_work21.webp",
+    "/assets/images/img_work37.webp",
   ];
 
   const t = useTranslations("Offer");

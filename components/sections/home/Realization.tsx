@@ -16,25 +16,25 @@ const Realization: React.FC = async () => {
       </div>
       <div className="grid grid-cols-2 gap-5 mt-[2rem] max-lg:flex max-lg:flex-col">
         <RealizationBox
-          iconUrl={"/assets/images/img_work15.jpg"}
+          iconUrl={"/assets/images/img_work15.webp"}
           title={t("count1description")}
           subTitle={t("count1")}
           href="/offer"
         />
         <RealizationBox
-          iconUrl={"/assets/images/img_work9.jpg"}
+          iconUrl={"/assets/images/img_work9.webp"}
           title={t("count2description")}
           subTitle={t("count2")}
           href="/offer"
         />
         <RealizationBox
-          iconUrl={"/assets/images/img_work37.jpg"}
+          iconUrl={"/assets/images/img_work37.webp"}
           title={t("count3description")}
           subTitle={t("count3")}
           href="/offer"
         />
         <RealizationBox
-          iconUrl={"/assets/images/img_work21.jpg"}
+          iconUrl={"/assets/images/img_work21.webp"}
           title={t("count4description")}
           subTitle={t("count4")}
           href="/offer"
