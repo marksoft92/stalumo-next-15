@@ -8,7 +8,7 @@ import { Alert } from "@mui/material";
 import { notFound } from "next/navigation";
 // Funkcja do generowania metadanych SEO
 
-export async function generateMetadata({ params }: { params: { locale: any } }): Promise<Metadata> {
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   const t = await getTranslations("Blog");
   const locale = params.locale || "en";
 
