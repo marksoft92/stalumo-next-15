@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "@/components/ui/button";
-import BackgroundSlider from "@/components/BackgroundSilder";
+import PerformanceSlider from "@/components/PerformanceSlider";
 import { getTranslations } from "next-intl/server";
 
 const Excellence: React.FC = async () => {
@@ -17,7 +17,7 @@ const Excellence: React.FC = async () => {
 
   return (
     <>
-      <BackgroundSlider images={images} />
+      <PerformanceSlider images={images} />
       <section className="min-h-[80vh] excellence py-20 flex flex-row relative mx-auto max-w-[1280px] p-4">
         <div className="w-[97%] max-lg:w-[90%]">
           <div className="text-left lg:w-[70%] lg:max-w-[70%] flex-grow-0 flex flex-col">

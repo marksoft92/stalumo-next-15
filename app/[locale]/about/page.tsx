@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/ui/container";
-import BackgroundSlider from "@/components/BackgroundSilder";
+import PerformanceSlider from "@/components/PerformanceSlider";
 import { getTranslations } from "next-intl/server";
 import { Locale } from "@/i18n/routing";
 import type { Metadata } from "next";
@@ -100,7 +100,7 @@ export default async function AboutPage({
   return (
     <>
     <Container>
-      <BackgroundSlider images={images} maxHeight={"500px"} />
+      <PerformanceSlider images={images} maxHeight={"500px"} />
       <div>
         <div className="flex flex-col items-center relative min-h-[500px] justify-center">
           <h2 className="text-[6rem] font-semibold uppercase">{t("title")}</h2>

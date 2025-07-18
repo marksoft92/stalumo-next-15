@@ -2,7 +2,7 @@
 import React, { use, useEffect, useState } from "react";
 import { Link } from "@/i18n/routing";
 import Container from "@/components/ui/container";
-import BackgroundSlider from "@/components/BackgroundSilder";
+import PerformanceSlider from "@/components/PerformanceSlider";
 import BoxImg from "@/components/ImageGox";
 import { useTranslations } from "next-intl";
 
@@ -44,7 +44,7 @@ export default function GalleryPage() {
   return (
 <>
     <Container>
-      <BackgroundSlider images={imagesSlider} maxHeight={"500px"} />
+      <PerformanceSlider images={imagesSlider} maxHeight={"500px"} />
       <div>
         <div className="flex flex-col items-center relative min-h-[500px] justify-center">
           <h2 className="text-[6rem] font-semibold uppercase">{t("title")}</h2>

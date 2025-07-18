@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Container from "@/components/ui/container";
-import BackgroundSlider from "@/components/BackgroundSilder";
+import PerformanceSlider from "@/components/PerformanceSlider";
 import { useTranslations } from "next-intl";
 import RailingsSection from "@/components/sections/offer/Railings";
 import FencesSection from "@/components/sections/offer/Fences";
@@ -58,7 +58,7 @@ export default function OfferPage() {
 
   return (
     <Container>
-      <BackgroundSlider images={imagesSlider} maxHeight={"500px"} />
+      <PerformanceSlider images={imagesSlider} maxHeight={"500px"} />
       <div>
         <div className="flex flex-col items-center relative min-h-[400px] max-lg:min-h-[250px] justify-center">
           <h2 className="text-[6rem] font-semibold uppercase">{t("title")}</h2>

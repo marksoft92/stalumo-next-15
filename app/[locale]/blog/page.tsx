@@ -3,7 +3,7 @@ import Container from "@/components/ui/container";
 import BlogPage from "@/components/BlogPage";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
-import BackgroundSlider from "@/components/BackgroundSilder";
+import PerformanceSlider from "@/components/PerformanceSlider";
 import { Alert } from "@mui/material";
 import { notFound } from "next/navigation";
 // Funkcja do generowania metadanych SEO
@@ -86,7 +86,7 @@ const BlogPageContainer = async ({ params }: { params: any }) => {
   return (
     <Container>
       <div>
-        <BackgroundSlider images={images} maxHeight={"500px"} />
+        <PerformanceSlider images={images} maxHeight={"500px"} />
         <div className="flex flex-col items-center relative min-h-[500px] justify-center">
           <h2 className="text-[6rem] font-semibold uppercase">Blog</h2>
           <h3 className="max-lg:text-center">

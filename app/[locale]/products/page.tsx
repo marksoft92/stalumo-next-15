@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Container from "@/components/ui/container";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
-import BackgroundSlider from "@/components/BackgroundSilder";
+import PerformanceSlider from "@/components/PerformanceSlider";
 import ProductCard from "@/components/ProductCard";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
@@ -68,7 +68,7 @@ console.log(productData)
   const t = await getTranslations("Products");
   return (
     <Container>
-      <BackgroundSlider images={imagesSlider} maxHeight={"500px"} />
+      <PerformanceSlider images={imagesSlider} maxHeight={"500px"} />
       <div className="flex flex-col items-center relative min-h-[500px] justify-center">
           <h2 className="text-[6rem] font-semibold uppercase text-center max-lg:text-[4rem] ">{t("title")}</h2>
           <h3 className="text-center">

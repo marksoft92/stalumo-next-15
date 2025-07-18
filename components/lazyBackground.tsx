@@ -1,27 +1,23 @@
-"use client";
+'use client';
+import { useEffect, useRef, useState } from 'react';
 
-import React, { useEffect, useRef, useState } from "react";
-
-interface LazyBackgroundProps {
+type LazyBackgroundProps = {
   imageUrl: string;
   className?: string;
   children?: React.ReactNode;
-  styleCustom?: React.CSSProperties;
-  forceVisible?: boolean;
-}
+  styleCustom?: any;
+};
 
-const LazyBackground: React.FC<LazyBackgroundProps> = ({
+export default function LazyBackground({
   imageUrl,
-  className = "",
+  className = '',
   children,
-  styleCustom = {},
-  forceVisible = false,
-}) => {
+  styleCustom
+}: LazyBackgroundProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(forceVisible);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (forceVisible) return; 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -30,7 +26,7 @@ const LazyBackground: React.FC<LazyBackgroundProps> = ({
         }
       },
       {
-        rootMargin: "200px", // wczesne ładowanie
+        rootMargin: '0px',
         threshold: 0.1,
       }
     );
@@ -39,27 +35,22 @@ const LazyBackground: React.FC<LazyBackgroundProps> = ({
       observer.observe(ref.current);
     }
 
-    return () => {
-      observer.disconnect();
-    };
-  }, [forceVisible]);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div
       ref={ref}
-      className={className}
+      className={`${className}`}
       style={{
-        backgroundImage: isVisible ? `url(${imageUrl})` : undefined,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        willChange: "transform, opacity",
-        ...styleCustom,
+        backgroundImage: isVisible ? `url(${imageUrl})` : 'none',
+        ...styleCustom
       }}
     >
       {children}
     </div>
   );
-};
+}
 
-export default LazyBackground;
+
+
