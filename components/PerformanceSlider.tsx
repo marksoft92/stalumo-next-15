@@ -16,7 +16,7 @@ export default function DelayedSlider({ images, maxHeight, ...props }: any) {
     const timer = setTimeout(() => setShowSlider(true), 3000);
     return () => clearTimeout(timer);
   }, []);
-console.log(maxHeight)
+
   if (!showSlider) {
     return (
 
