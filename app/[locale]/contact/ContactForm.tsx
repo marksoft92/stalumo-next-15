@@ -28,44 +28,45 @@ export default function ContactForm(locale: any) {
   
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
+  
+    // 🚫 zapobiega podwójnemu kliknięciu
+    if (isSubmitting) return;
+  
     if (!executeRecaptcha) {
       setErrorMessage("Error loading reCAPTCHA.");
       return;
     }
-
+  
     setIsSubmitting(true);
     setSuccessMessage("");
     setErrorMessage("");
-
+  
     try {
       const recaptchaToken = await executeRecaptcha("contact_form");
       const generatedString = `
-${t("form.summary.category")}: ${category}
-${t("form.summary.project")}: ${project}
-${t("form.summary.quantity")}: ${quantity}
-${t("form.summary.assembly")}: ${assembly}
-${t("form.summary.phone")}: ${phone}
-${t("form.summary.date")}: ${startDate}
-`.trim();
-
-// Finalny content
-const finalContent = content + "\n\n" + generatedString;
-
-
+  ${t("form.summary.category")}: ${category}
+  ${t("form.summary.project")}: ${project}
+  ${t("form.summary.quantity")}: ${quantity}
+  ${t("form.summary.assembly")}: ${assembly}
+  ${t("form.summary.phone")}: ${phone}
+  ${t("form.summary.date")}: ${startDate}
+  `.trim();
+  
+      const finalContent = content + "\n\n" + generatedString;
+  
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ email, topic, content: finalContent, recaptchaToken }),
-
       });
-
+  
       const result = await response.json();
-
+  
       if (response.ok) {
         setSuccessMessage(result.message || t("success"));
+        resetForm();
       } else {
         setErrorMessage(result.error || t("error"));
       }
@@ -77,6 +78,19 @@ const finalContent = content + "\n\n" + generatedString;
     }
   };
   
+  const resetForm = () => {
+    setEmail("");
+    setTopic("");
+    setContent("");
+    setCategory("");
+    setProject("");
+    setQuantity("");
+    setAssembly("");
+    setPhone("");
+    setStartDate("");
+  };
+  
+  
   return (
     <>
 
@@ -86,8 +100,7 @@ const finalContent = content + "\n\n" + generatedString;
           onSubmit={handleSubmit}
           className="space-y-6 text-[#000] lg:w-[50%] "
         >
-          {successMessage && <Alert severity="success">{successMessage}</Alert>}
-          {errorMessage && <Alert severity="error">{errorMessage}</Alert>}
+          
           <div>
             <label
               htmlFor="topic"
@@ -108,7 +121,7 @@ const finalContent = content + "\n\n" + generatedString;
           <div>
   <label className="block text-sm font-medium text-[#fff]">{t("form.phone")}</label>
   <input
-    type="tel"
+    type="number"
     onChange={(e) => setPhone(e.target.value)}
     value={phone}
     required
@@ -230,6 +243,8 @@ const finalContent = content + "\n\n" + generatedString;
 
 
           <div>
+          {successMessage && <div className="z-1 top-[50%] left-[50%] w-full"><Alert severity="success">{successMessage}</Alert></div>}
+          {errorMessage && <Alert severity="error">{errorMessage}</Alert>}
             <button
               type="submit"
               disabled={isSubmitting}
