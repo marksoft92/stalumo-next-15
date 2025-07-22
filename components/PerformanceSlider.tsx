@@ -17,16 +17,18 @@ export default function DelayedSlider({ images, maxHeight, ...props }: any) {
     return () => clearTimeout(timer);
   }, []);
 
+  console.log(props)
+
   if (!showSlider) {
     return (
 
         <Image
           src={images[images?.length-1]}
-          alt=""
+          alt="Proces spawania / Schweißprozess / Welding process w nowoczesnej fabryce"
           fill
           style={{ objectFit: "cover" ,maxHeight: maxHeight, opacity: '0.1'}}
           priority
-className="w-full h-screen bg-cover bg-center absolute z-[-1] transition-transform duration-[1000ms] ease-linear left-0 !top-[10rem]"
+          className="w-full h-screen bg-cover bg-center absolute z-[-1] transition-transform duration-[1000ms] ease-linear left-0 !top-[10rem]"
           sizes="100vw"
         />
       
