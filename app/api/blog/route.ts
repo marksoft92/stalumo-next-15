@@ -21,40 +21,34 @@ interface BlogPost {
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
+
   const lang = searchParams.get("lang") || "de"; // Default language
   const page = parseInt(searchParams.get("page") || "1", 10);
-  const pageSize = 5;
+  const limit = parseInt(searchParams.get("limit") || "5", 10); // <-- domyślnie 5, ale można nadpisać
+
+  const offset = (page - 1) * limit;
 
   try {
-    const offset = (page - 1) * pageSize;
-
-    // Fetch data from both tables using Prisma
     const posts = await prisma.blog.findMany({
       skip: offset,
-      take: pageSize,
+      take: limit, 
       orderBy: {
-        id: 'desc',
+        id: "desc",
       },
       include: {
         translations: {
-          where: {
-            lang: lang,
-          },
+          where: { lang },
         },
       },
     });
 
-    // If no posts found
     if (posts.length === 0) {
       return new Response(
         JSON.stringify({ error: "No posts found for the selected language" }),
-        {
-          status: 404,
-        }
+        { status: 404 }
       );
     }
 
-    // Format posts according to the requested language
     const formattedPosts: BlogPost[] = posts.map((post: any) => {
       const blogPost: BlogPost = {
         id: post.id,
@@ -73,25 +67,18 @@ export async function GET(req: NextRequest) {
           lang: langContent.lang,
         };
 
-        if (langContent.lang === "pl") {
-          blogPost.pl = content;
-        } else if (langContent.lang === "en") {
-          blogPost.en = content;
-        } else if (langContent.lang === "de") {
-          blogPost.de = content;
-        }
+        if (langContent.lang === "pl") blogPost.pl = content;
+        else if (langContent.lang === "en") blogPost.en = content;
+        else if (langContent.lang === "de") blogPost.de = content;
       });
 
       return blogPost;
     });
 
-    // Count all posts for the selected language
     const totalPosts = await prisma.blog.count({
       where: {
         translations: {
-          some: {
-            lang: lang,
-          },
+          some: { lang },
         },
       },
     });
@@ -109,7 +96,6 @@ export async function GET(req: NextRequest) {
       status: 500,
     });
   } finally {
-    // Always disconnect the Prisma Client
     await prisma.$disconnect();
   }
 }
