@@ -8,6 +8,7 @@ module.exports = {
   exclude: ['/secret', '/api/*'],
   additionalSitemaps: [
     `${process.env.APP_URL || 'https://stalumo.com'}/sitemap-blog.xml`,
+    `${process.env.APP_URL || 'https://stalumo.com'}/sitemap-city.xml`,
   ],
   alternateRefs: [
     {
