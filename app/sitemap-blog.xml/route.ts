@@ -2,7 +2,7 @@
 
 import { NextResponse } from "next/server";
 
-const locales = ["en", "pl", "de"];
+const locales = ["pl"];
 const BASE_URL = process.env.APP_URL || "https://stalumo.com";
 
 async function fetchPosts(lang: string) {
