@@ -21,7 +21,7 @@ export default function DelayedSlider({ images, maxHeight, ...props }: any) {
   const params = useParams();
 console.log(params.locale)
   useEffect(() => {
-    const timer = setTimeout(() => setShowSlider(true), 3033300);
+    const timer = setTimeout(() => setShowSlider(true), 3000);
     return () => clearTimeout(timer);
   }, []);
 
