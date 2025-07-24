@@ -2,14 +2,15 @@
   {
     "slugCity": "szczecin",
     "city": "Szczecin",
+"defCity":"Szczecinie",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując spawanie barierek do potrzeb klienta. Zapewniamy solidność i estetykę – Twoje spawanie barierek będą służyć latami.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując tworzenie barierek do potrzeb klienta. Zapewniamy solidność i estetykę – Twoje barierki firmy Stalumo będą służyć latami.",
     "cta": "Sprawdź dostępność terminów!",
     "seo": {
-      "title": "Spawanie barierek – Szczecin | Rzetelne usługi spawalnicze",
-      "description": "Usługa spawanie barierek w mieście Szczecin. Gwarancja jakości, trwałości i terminowości. Skontaktuj się już dziś.",
-      "keywords": "Police, Mierzyn, Dobra Szczecińska, Przecław, Warzymice, balustrady stalowe, spawanie bram",
+      "title": "Barierki stalowe na wymiar - Szczecin | Rzetelne usługi spawalnicze",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Szczecin. Gwarancja jakości, trwałości i terminowości. Skontaktuj się już dziś.",
+      "keywords": "Police, Mierzyn, Dobra Szczecińska, Przecław, Warzymice, balustrady stalowe, Kompleksowa realizacja bram stalowych na wymiar",
     "street": "ul. Krzywoustego 14",
     "postalCode": "70-253"
     }
@@ -17,6 +18,7 @@
   {
     "slugCity": "szczecin",
     "city": "Szczecin",
+"defCity":"Szczecinie",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Gwarantujemy trwałość i estetykę. – Twoje spawanie balustrad będą służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta. Nasze doświadczenie w zakresie spawanie balustrad sprawia, że jesteśmy liderem w regionie.",
@@ -32,13 +34,14 @@
   {
     "slugCity": "szczecin",
     "city": "Szczecin",
+"defCity":"Szczecinie",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Łączymy solidność z elegancją. – Twoje spawanie bram będą służyć latami. Realizujemy zlecenia w całym Szczecin, zarówno dla klientów indywidualnych, jak i firm. W Szczecinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Łączymy solidność z elegancją. – Twoja nowoczesna brama będziesłużyć latami. Realizujemy zlecenia w całym Szczecin, zarówno dla klientów indywidualnych, jak i firm. W Szczecinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
     "cta": "Profesjonalne wykonanie – umów się!",
     "seo": {
-      "title": "Spawanie bram – Szczecin | Doświadczone usługi spawalnicze",
-      "description": "Usługa spawanie bram w mieście Szczecin. Gwarantujemy solidność, estetykę i terminowe wykonanie. Skontaktuj się z nami",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Szczecin | Doświadczone usługi spawalnicze",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Szczecin. Gwarantujemy solidność, estetykę i terminowe wykonanie. Skontaktuj się z nami",
       "keywords": "Gryfino, Stare Czarnowo, Radziszewo, Żabnica, Pniewo, schody metalowe, balustrady na wymiar",
     "street": "ul. Ku Słońcu 26",
     "postalCode": "71-073"
@@ -47,6 +50,7 @@
   {
     "slugCity": "szczecin",
     "city": "Szczecin",
+"defCity":"Szczecinie",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Realizujemy zlecenia w całym Szczecin, zarówno dla klientów indywidualnych, jak i firm. W Szczecinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie ogrodzeń do potrzeb klienta.",
@@ -62,6 +66,7 @@
   {
     "slugCity": "szczecin",
     "city": "Szczecin",
+"defCity":"Szczecinie",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "W Szczecinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie konstrukcji stalowych do potrzeb klienta. Realizujemy zlecenia w całym Szczecin, zarówno dla klientów indywidualnych, jak i firm.",
@@ -77,13 +82,14 @@
   {
     "slugCity": "szczecin",
     "city": "Szczecin",
+"defCity":"Szczecinie",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Tworzymy trwałe i piękne realizacje. – Twoje spawanie schodów stalowych będą służyć latami. W Szczecinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Tworzymy trwałe i piękne realizacje. – Nasza wyjotkowa konstrukcja będzie służyć latami. W Szczecinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie.",
     "cta": "Umów się na konsultację teraz!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Szczecin | Wykwalifikowane usługi spawalnicze",
-      "description": "Usługa spawanie schodów stalowych w mieście Szczecin. Solidność, precyzja i szybkie terminy. Skontaktuj się z nami teraz!",
+      "title": "Estetyczne konstrukcje schodowe -  Szczecin | Wykwalifikowane usługi spawalnicze",
+      "description": "Spawanie schodów stalowych w mieście Szczecin. Solidność, precyzja i szybkie terminy. Skontaktuj się z nami teraz!",
       "keywords": "Kołbaskowo, Barnisław, Smolęcin, Kamieniec, Siadło Dolne, produkcja balustrad, stalowe ogrodzenia",
     "street": "ul. Struga 78",
     "postalCode": "70-784"
@@ -91,14 +97,15 @@
   },
   {
     "slugCity": "koszalin",
-    "city": "koszalin",
+    "city": "Koszalin",
+"defCity":"Koszalinie",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "W Koszalinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie barierek do potrzeb klienta. Solidność konstrukcji, estetyka wykończenia. – Twoje spawanie barierek będą służyć latami.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "W Koszalinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując tworzenie barierek do potrzeb klienta. Solidność konstrukcji, estetyka wykończenia. – Twoje barierki firmy Stalumo będą służyć latami.",
     "cta": "Skorzystaj z bezpłatnej wyceny!",
     "seo": {
-      "title": "Spawanie barierek – Koszalin | Solidne usługi spawalnicze",
-      "description": "Usługa spawanie barierek w mieście Koszalin. Zapewniamy jakość, trwałość i punktualność. Zadzwoń po wycenę!",
+      "title": "Barierki stalowe na wymiar - Koszalin | Solidne usługi spawalnicze",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Koszalin. Zapewniamy jakość, trwałość i punktualność. Zadzwoń po wycenę!",
       "keywords": "Mielno, Sianów, Biesiekierz, Strzekęcino, Skwierzynka, spawanie Koszalin, stalowe balustrady",
     "street": "ul. Zwycięstwa 119",
     "postalCode": "75-601"
@@ -106,7 +113,8 @@
   },
   {
     "slugCity": "koszalin",
-    "city": "koszalin",
+    "city": "Koszalin",
+"defCity":"Koszalinie",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Pewność wykonania i stylowy efekt. – Twoje spawanie balustrad będą służyć latami. Realizujemy zlecenia w całym Koszalin, zarówno dla klientów indywidualnych, jak i firm. W Koszalinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -121,14 +129,15 @@
   },
   {
     "slugCity": "koszalin",
-    "city": "koszalin",
+    "city": "Koszalin",
+"defCity":"Koszalinie",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "W Koszalinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie. Estetyka i trwałość w każdym detalu. – Twoje spawanie bram będą służyć latami.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "W Koszalinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie. Estetyka i trwałość w każdym detalu. – Twoja nowoczesna brama będziesłużyć latami.",
     "cta": "Zapytaj o indywidualny projekt!",
     "seo": {
-      "title": "Spawanie bram – Koszalin | Szybkie usługi spawalnicze",
-      "description": "Usługa spawanie bram w mieście Koszalin. Najwyższa jakość i terminowa realizacja. Skontaktuj się już dzisiaj!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Koszalin | Szybkie usługi spawalnicze",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Koszalin. Najwyższa jakość i terminowa realizacja. Skontaktuj się już dzisiaj!",
       "keywords": "Nacław, Konikowo, Mścice, Kretomino, Rosnowo, balustrady metalowe, ogrodzenia spawane",
     "street": "ul. Gnieźnieńska 8",
     "postalCode": "75-736"
@@ -136,7 +145,8 @@
   },
   {
     "slugCity": "koszalin",
-    "city": "koszalin",
+    "city": "Koszalin",
+"defCity":"Koszalinie",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Połączenie funkcjonalności i piękna. – Twoje spawanie ogrodzeń będą służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując spawanie ogrodzeń do potrzeb klienta. W Koszalinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -151,7 +161,8 @@
   },
   {
     "slugCity": "koszalin",
-    "city": "koszalin",
+    "city": "Koszalin",
+"defCity":"Koszalinie",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Wytrzymałość spotyka się z designem. – Twoje spawanie konstrukcji stalowych będą służyć latami. Nasze doświadczenie w zakresie spawanie konstrukcji stalowych sprawia, że jesteśmy liderem w regionie. W Koszalinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -166,14 +177,15 @@
   },
   {
     "slugCity": "koszalin",
-    "city": "koszalin",
+    "city": "Koszalin",
+"defCity":"Koszalinie",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie. Budujemy na solidnych podstawach z dbałością o wygląd. – Twoje spawanie schodów stalowych będą służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie. Budujemy na solidnych podstawach z dbałością o wygląd. – Nasza wyjotkowa konstrukcja będzie służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta.",
     "cta": "Skontaktuj się z nami i zapytaj o szczegóły!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Koszalin | Kompleksowe usługi spawalnicze",
-      "description": "Usługa spawanie schodów stalowych w mieście Koszalin. Trwałe i estetyczne rozwiązania z terminowym wykonaniem. Skontaktuj się!",
+      "title": "Estetyczne konstrukcje schodowe -  Koszalin | Kompleksowe usługi spawalnicze",
+      "description": "Spawanie schodów stalowych w mieście Koszalin. Trwałe i estetyczne rozwiązania z terminowym wykonaniem. Skontaktuj się!",
       "keywords": "Maszkowo, Dobre, Włoki, Niekłonice, Parsowo, stalowe elementy, produkcja konstrukcji",
        "street": "ul. Franciszkańska 102",
         "postalCode": "75-255"
@@ -182,13 +194,14 @@
   {
     "slugCity": "stargard",
     "city": "Stargard",
+"defCity":"Stargardzie",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Estetyczne wykonanie oparte na solidnej konstrukcji. – Twoje spawanie barierek będą służyć latami. Realizujemy zlecenia w całym Stargard, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Estetyczne wykonanie oparte na solidnej konstrukcji. – Twoje barierki firmy Stalumo będą służyć latami. Realizujemy zlecenia w całym Stargard, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie.",
     "cta": "Skorzystaj z wyceny już teraz!",
     "seo": {
-      "title": "Spawanie barierek – Stargard | Niezawodne usługi spawalnicze",
-      "description": "Usługa spawanie barierek w mieście Stargard. Najwyższy standard usług, trwałość i punktualność. Zadzwoń teraz!",
+      "title": "Barierki stalowe na wymiar - Stargard | Niezawodne usługi spawalnicze",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Stargard. Najwyższy standard usług, trwałość i punktualność. Zadzwoń teraz!",
       "keywords": "Pyrzyce, Dolice, Suchań, Kobylanka, Marianowo, stalowe schody, bramy na wymiar Stargard",
     "street": "ul. Szczecińska 42",
     "postalCode": "73-121"
@@ -197,6 +210,7 @@
   {
     "slugCity": "stargard",
     "city": "Stargard",
+"defCity":"Stargardzie",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Solidność, która zachwyca wyglądem. – Twoje spawanie balustrad będą służyć latami. W Stargardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie balustrad sprawia, że jesteśmy liderem w regionie.",
@@ -212,14 +226,15 @@
   {
     "slugCity": "stargard",
     "city": "Stargard",
+"defCity":"Stargardzie",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Efekt wow z gwarancją trwałości. – Twoje spawanie bram będą służyć latami. W Stargardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Efekt wow z gwarancją trwałości. – Twoja nowoczesna brama będziesłużyć latami. W Stargardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta.",
     "cta": "Odkryj nasze realizacje – zadzwoń!",
     "seo": {
-      "title": "Spawanie bram – Stargard | Techniczne usługi spawalnicze",
-      "description": "Usługa spawanie bram w mieście Stargard. Jakość, trwałość i szybkie terminy. Skontaktuj się z nami już dziś!",
-      "keywords": "Pęzino, Kunowo, Kicko, Zieleniewo, Lipnik, ogrodzenia stalowe, spawanie bram",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Stargard | Techniczne usługi spawalnicze",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Stargard. Jakość, trwałość i szybkie terminy. Skontaktuj się z nami już dziś!",
+      "keywords": "Pęzino, Kunowo, Kicko, Zieleniewo, Lipnik, ogrodzenia stalowe, Kompleksowa realizacja bram stalowych na wymiar",
     "street": "ul. Wojska Polskiego 1",
     "postalCode": "73-110"
     }
@@ -227,6 +242,7 @@
   {
     "slugCity": "stargard",
     "city": "Stargard",
+"defCity":"Stargardzie",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Nie tylko trwałe – również piękne. – Twoje spawanie ogrodzeń będą służyć latami. Realizujemy zlecenia w całym Stargard, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie ogrodzeń do potrzeb klienta.",
@@ -242,6 +258,7 @@
   {
     "slugCity": "stargard",
     "city": "Stargard",
+"defCity":"Stargardzie",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Nasze doświadczenie w zakresie spawanie konstrukcji stalowych sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Stargard, zarówno dla klientów indywidualnych, jak i firm. Stylowe i niezawodne – jak zawsze. – Twoje spawanie konstrukcji stalowych będą służyć latami.",
@@ -257,13 +274,14 @@
   {
     "slugCity": "stargard",
     "city": "Stargard",
+"defCity":"Stargardzie",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Stargard, zarówno dla klientów indywidualnych, jak i firm.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Stargard, zarówno dla klientów indywidualnych, jak i firm.",
     "cta": "Skontaktuj się po szczegóły projektu!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Stargard | Mobilne usługi spawalnicze",
-      "description": "Usługa spawanie schodów stalowych w mieście Stargard. Solidne wykonanie i terminowa realizacja. Skontaktuj się z nami!",
+      "title": "Estetyczne konstrukcje schodowe -  Stargard | Mobilne usługi spawalnicze",
+      "description": "Spawanie schodów stalowych w mieście Stargard. Solidne wykonanie i terminowa realizacja. Skontaktuj się z nami!",
       "keywords": "Golczewo, Wierzchowo, Sowno, Dobrzany, Bielice, bramy stalowe Stargard, usługi metalowe",
     "street": "ul. 3 Maja 8",
     "postalCode": "73-130"
@@ -272,13 +290,14 @@
   {
     "slugCity": "kolobrzeg",
     "city": "Kołobrzeg",
+"defCity":"Kołobrzegu",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "W Kołobrzegu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Najlepsze połączenie: jakość i estetyka. – Twoje spawanie barierek będą służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując spawanie barierek do potrzeb klienta.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "W Kołobrzegu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Najlepsze połączenie: jakość i estetyka. – Twoje barierki firmy Stalumo będą służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując tworzenie barierek do potrzeb klienta.",
     "cta": "Zadzwoń i odkryj nasze usługi!",
     "seo": {
-      "title": "Spawanie barierek – Kołobrzeg | Profesjonalne spawanie stali",
-      "description": "Usługa spawanie barierek w mieście Kołobrzeg. Najwyższa jakość usług i punktualność. Czekamy na Twój telefon!",
+      "title": "Barierki stalowe na wymiar - Kołobrzeg | Profesjonalne spawanie stali",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Kołobrzeg. Najwyższa jakość usług i punktualność. Czekamy na Twój telefon!",
       "keywords": "Lubkowice, Leszczyn, Lubiechowo, Jarogniew, Dębogard, konstrukcje stalowe, usługi spawalnicze",
     "street": "ul. Armii Krajowej 1",
     "postalCode": "78-100"
@@ -287,6 +306,7 @@
   {
     "slugCity": "kolobrzeg",
     "city": "Kołobrzeg",
+"defCity":"Kołobrzegu",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta. Nasze doświadczenie w zakresie spawanie balustrad sprawia, że jesteśmy liderem w regionie. Piękno stali, pewność konstrukcji. – Twoje spawanie balustrad będą służyć latami.",
@@ -302,13 +322,14 @@
   {
     "slugCity": "kolobrzeg",
     "city": "Kołobrzeg",
+"defCity":"Kołobrzegu",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Detale robią różnicę – u nas są dopracowane. – Twoje spawanie bram będą służyć latami. Realizujemy zlecenia w całym Kołobrzeg, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Detale robią różnicę – u nas są dopracowane. – Twoja nowoczesna brama będziesłużyć latami. Realizujemy zlecenia w całym Kołobrzeg, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie.",
     "cta": "Umów się na spotkanie już dziś! ",
     "seo": {
-      "title": "Spawanie bram – Kołobrzeg | Spawamy z precyzją",
-      "description": "Usługa spawanie bram w mieście Kołobrzeg. Zapewniamy profesjonalizm i terminowość. Skontaktuj się z nami teraz!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Kołobrzeg | Spawamy z precyzją",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Kołobrzeg. Zapewniamy profesjonalizm i terminowość. Skontaktuj się z nami teraz!",
       "keywords": "Siemyśl, Gościno, Robuń, Obroty, Budzistowo, balustrady stalowe Kołobrzeg, stalumo",
     "street": "ul. Cicha 6B",
     "postalCode": "78-103"
@@ -317,6 +338,7 @@
   {
     "slugCity": "kolobrzeg",
     "city": "Kołobrzeg",
+"defCity":"Kołobrzegu",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "W Kołobrzegu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie ogrodzeń sprawia, że jesteśmy liderem w regionie. Stal w najlepszym wydaniu – mocna i elegancka. – Twoje spawanie ogrodzeń będą służyć latami.",
@@ -332,6 +354,7 @@
   {
     "slugCity": "kolobrzeg",
     "city": "Kołobrzeg",
+"defCity":"Kołobrzegu",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Realizujemy zlecenia w całym Kołobrzeg, zarówno dla klientów indywidualnych, jak i firm. W Kołobrzegu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie konstrukcji stalowych sprawia, że jesteśmy liderem w regionie.",
@@ -347,13 +370,14 @@
   {
     "slugCity": "kolobrzeg",
     "city": "Kołobrzeg",
+"defCity":"Kołobrzegu",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie. W Kołobrzegu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Realizujemy zlecenia w całym Kołobrzeg, zarówno dla klientów indywidualnych, jak i firm.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie. W Kołobrzegu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Realizujemy zlecenia w całym Kołobrzeg, zarówno dla klientów indywidualnych, jak i firm.",
     "cta": "Skontaktuj się po szczegóły usługi!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Kołobrzeg | Spawamy konstrukcje stalowe",
-      "description": "Usługa spawanie schodów stalowych w mieście Kołobrzeg. Jakość i terminowość w każdym detalu. Skontaktuj się już dziś!",
+      "title": "Estetyczne konstrukcje schodowe -  Kołobrzeg | Spawamy konstrukcje stalowe",
+      "description": "Spawanie schodów stalowych w mieście Kołobrzeg. Jakość i terminowość w każdym detalu. Skontaktuj się już dziś!",
       "keywords": "Stramnica, Kopydłówko, Rymanie, Skoczów, Pyszka, stalumo kołobrzeg, barierki na wymiar",
     "street": "ul. Kołątaja 8",
     "postalCode": "78-100"
@@ -361,14 +385,15 @@
   },
   {
     "slugCity": "swinoujscie",
-    "city": "Świnoujściee",
+    "city": "Świnoujście",
+"defCity":"Świnoujściu",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Świnoujście, zarówno dla klientów indywidualnych, jak i firm. Sprawdź jakość, która wygląda dobrze. – Twoje spawanie barierek będą służyć latami.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Świnoujście, zarówno dla klientów indywidualnych, jak i firm. Sprawdź jakość, która wygląda dobrze. – Twoje barierki firmy Stalumo będą służyć latami.",
     "cta": "Zadzwoń i odkryj naszą ofertę!",
     "seo": {
-      "title": "Spawanie barierek – Świnoujście | Spawamy solidnie i dokładnie",
-      "description": "Usługa spawanie barierek w mieście Świnoujście. Solidne rozwiązania i szybkie terminy. Zapytaj o wycenę!",
+      "title": "Barierki stalowe na wymiar - Świnoujście | Spawamy solidnie i dokładnie",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Świnoujście. Solidne rozwiązania i szybkie terminy. Zapytaj o wycenę!",
       "keywords": "Międzyzdroje, Wolin, Dziwnów, Kamień Pomorski, Stepnica, spawanie balustrad Stalumo",
     "street": "ul. Piłsudskiego 1",
     "postalCode": "72-600"
@@ -376,7 +401,8 @@
   },
   {
     "slugCity": "swinoujscie",
-    "city": "Świnoujściee",
+    "city": "Świnoujście",
+"defCity":"Świnoujściu",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Nasze doświadczenie w zakresie spawanie balustrad sprawia, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta. Realizujemy zlecenia w całym Świnoujście, zarówno dla klientów indywidualnych, jak i firm.",
@@ -391,14 +417,15 @@
   },
   {
     "slugCity": "swinoujscie",
-    "city": "Świnoujściee",
+    "city": "Świnoujście",
+"defCity":"Świnoujściu",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "W Świnoujściu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Konstrukcje, które cieszą oczy i służą latami. – Twoje spawanie bram będą służyć latami. Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "W Świnoujściu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Konstrukcje, które cieszą oczy i służą latami. – Twoja nowoczesna brama będziesłużyć latami. Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie.",
     "cta": "Zapytaj o projekt teraz!",
     "seo": {
-      "title": "Spawanie bram – Świnoujście | Spawanie na najwyższym poziomie",
-      "description": "Usługa spawanie bram w mieście Świnoujście. Profesjonalne usługi z gwarancją jakości. Zadzwoń już teraz!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Świnoujście | Spawanie na najwyższym poziomie",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Świnoujście. Profesjonalne usługi z gwarancją jakości. Zadzwoń już teraz!",
       "keywords": "Mokrzyca, Warnowo, Wicko, Kodrąb, Przytór, ogrodzenia metalowe Stalumo",
     "street": "ul. Barlickiego Norberta 17",
     "postalCode": "72-602"
@@ -406,7 +433,8 @@
   },
   {
     "slugCity": "swinoujscie",
-    "city": "Świnoujściee",
+    "city": "Świnoujście",
+"defCity":"Świnoujściu",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Wysoka odporność, staranne wykończenie. – Twoje spawanie ogrodzeń będą służyć latami. W Świnoujściu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie ogrodzeń sprawia, że jesteśmy liderem w regionie.",
@@ -421,7 +449,8 @@
   },
   {
     "slugCity": "swinoujscie",
-    "city": "Świnoujściee",
+    "city": "Świnoujście",
+"defCity":"Świnoujściu",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "W Świnoujściu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie konstrukcji stalowych do potrzeb klienta. Trwałość konstrukcyjna z estetyką wizualną. – Twoje spawanie konstrukcji stalowych będą służyć latami.",
@@ -436,14 +465,15 @@
   },
   {
     "slugCity": "swinoujscie",
-    "city": "Świnoujściee",
+    "city": "Świnoujście",
+"defCity":"Świnoujściu",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie. rofesjonalne wykonanie z dbałością o formę. – Twoje spawanie schodów stalowych będą służyć latami. Realizujemy zlecenia w całym Świnoujście, zarówno dla klientów indywidualnych, jak i firm.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie. rofesjonalne wykonanie z dbałością o formę. – Nasza wyjotkowa konstrukcja będzie służyć latami. Realizujemy zlecenia w całym Świnoujście, zarówno dla klientów indywidualnych, jak i firm.",
     "cta": "Zadzwoń i zacznij realizację!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Świnoujście | Spawanie konstrukcji i detali",
-      "description": "Usługa spawanie schodów stalowych w mieście Świnoujście. Solidność, estetyka i punktualność. Zapytaj o ofertę już dziś!",
+      "title": "Estetyczne konstrukcje schodowe -  Świnoujście | Spawanie konstrukcji i detali",
+      "description": "Spawanie schodów stalowych w mieście Świnoujście. Solidność, estetyka i punktualność. Zapytaj o ofertę już dziś!",
       "keywords": "Spawanie, stal nierdzewna, balustrady stalowe, konstrukcje na zamówienie, Stalumo",
     "street": "ul. Zalewowa 49",
     "postalCode": "72-604"
@@ -452,13 +482,14 @@
   {
     "slugCity": "police",
     "city": "Police",
+"defCity":"Policach",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Realizujemy zlecenia w całym Police, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie barierek do potrzeb klienta. W Policach zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Realizujemy zlecenia w całym Police, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując tworzenie barierek do potrzeb klienta. W Policach zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
     "cta": "Skontaktuj się po szczegóły!",
     "seo": {
-      "title": "Spawanie barierek – Police | Spawanie TIG i MIG",
-      "description": "Usługa spawanie barierek w mieście Police. Gwarantujemy jakość i terminową realizację. Zadzwoń po szczegóły!",
+      "title": "Barierki stalowe na wymiar - Police | Spawanie TIG i MIG",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Police. Gwarantujemy jakość i terminową realizację. Zadzwoń po szczegóły!",
       "keywords": "Tanowo, Trzebież, Nowe Warpno, Jasienica, Bartoszewo, spawanie ogrodzeń Stalumo",
     "street": "ul. Stefana Batorego 3",
     "postalCode": "72-010"
@@ -467,6 +498,7 @@
   {
     "slugCity": "police",
     "city": "Police",
+"defCity":"Policach",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Nasze doświadczenie w zakresie spawanie balustrad sprawia, że jesteśmy liderem w regionie. Stabilność techniczna i nowoczesny design. – Twoje spawanie balustrad będą służyć latami. W Policach zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -482,13 +514,14 @@
   {
     "slugCity": "police",
     "city": "Police",
+"defCity":"Policach",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Sprawdzone materiały, elegancki efekt. – Twoje spawanie bram będą służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta. Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Sprawdzone materiały, elegancki efekt. – Twoja nowoczesna brama będziesłużyć latami. Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta. Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie.",
     "cta": "Zadzwoń po indywidualną ofertę!",
     "seo": {
-      "title": "Spawanie bram – Police | Spawanie konstrukcji nośnych",
-      "description": "Usługa spawanie bram w mieście Police. Najwyższy standard usług i terminowość. Zadzwoń już dziś!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Police | Spawanie konstrukcji nośnych",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Police. Najwyższy standard usług i terminowość. Zadzwoń już dziś!",
       "keywords": "Węgornik, Zalesie, Dobra, Mierzyn, Bezrzecze, bramy metalowe Police",
     "street": "ul. Piaskowa 97",
     "postalCode": "72-010"
@@ -497,6 +530,7 @@
   {
     "slugCity": "police",
     "city": "Police",
+"defCity":"Policach",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Realizujemy zlecenia w całym Police, zarówno dla klientów indywidualnych, jak i firm. W Policach zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie ogrodzeń do potrzeb klienta.",
@@ -512,6 +546,7 @@
   {
     "slugCity": "police",
     "city": "Police",
+"defCity":"Policach",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Nasze doświadczenie w zakresie spawanie konstrukcji stalowych sprawia, że jesteśmy liderem w regionie. Równowaga między funkcją a formą. – Twoje spawanie konstrukcji stalowych będą służyć latami. Realizujemy zlecenia w całym Police, zarówno dla klientów indywidualnych, jak i firm.",
@@ -527,13 +562,14 @@
   {
     "slugCity": "police",
     "city": "Police",
+"defCity":"Policach",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Rzetelne podejście do wyglądu i jakości. – Twoje spawanie schodów stalowych będą służyć latami. W Policach zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Rzetelne podejście do wyglądu i jakości. – Nasza wyjotkowa konstrukcja będzie służyć latami. W Policach zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta.",
     "cta": "Zarezerwuj termin na usługę już dziś!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Police | Spawanie elementów przemysłowych",
-      "description": "Usługa spawanie schodów stalowych w mieście Police. Profesjonalizm i terminowa realizacja. Zapytaj o szczegóły już teraz!",
+      "title": "Estetyczne konstrukcje schodowe -  Police | Spawanie elementów przemysłowych",
+      "description": "Spawanie schodów stalowych w mieście Police. Profesjonalizm i terminowa realizacja. Zapytaj o szczegóły już teraz!",
       "keywords": "Spawanie, stalowe ogrodzenia, metaloplastyka, nowoczesne balustrady, Stalumo",
     "street": "ul. Spacerowa 15",
     "postalCode": "72-020"
@@ -542,13 +578,14 @@
   {
     "slugCity": "walcz",
     "city": "Wałcz",
+"defCity":"Wałczu",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "W Wałczu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Wałcz, zarówno dla klientów indywidualnych, jak i firm.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "W Wałczu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Wałcz, zarówno dla klientów indywidualnych, jak i firm.",
     "cta": "Skontaktuj się z nami dzisiaj!",
     "seo": {
-      "title": "Spawanie barierek – Wałcz | Profesjonalne usługi spawalnicze",
-      "description": "Usługa spawanie barierek w mieście Wałcz. Gwarancja solidności i punktualności. Skontaktuj się dzisiaj!",
+      "title": "Barierki stalowe na wymiar - Wałcz | Profesjonalne usługi spawalnicze",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Wałcz. Gwarancja solidności i punktualności. Skontaktuj się dzisiaj!",
       "keywords": "Strączno, Kłębowiec, Witankowo, Rusinowo, Różewo – balustrady stalowe Wałcz",
     "street": "ul. Budowlanych 3",
     "postalCode": "78-600"
@@ -557,6 +594,7 @@
   {
     "slugCity": "walcz",
     "city": "Wałcz",
+"defCity":"Wałczu",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Estetyka zgodna z normami technicznymi. – Twoje spawanie balustrad będą służyć latami. Nasze doświadczenie w zakresie spawanie balustrad sprawia, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta.",
@@ -572,13 +610,14 @@
   {
     "slugCity": "walcz",
     "city": "Wałcz",
+"defCity":"Wałczu",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Wałcz, zarówno dla klientów indywidualnych, jak i firm. Projektujemy piękne i trwałe rozwiązania. – Twoje spawanie bram będą służyć latami.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Wałcz, zarówno dla klientów indywidualnych, jak i firm. Projektujemy piękne i trwałe rozwiązania. – Twoja nowoczesna brama będziesłużyć latami.",
     "cta": "Zarezerwuj termin na konsultację!",
     "seo": {
-      "title": "Spawanie bram – Wałcz | Spawanie mebli stalowych",
-      "description": "Usługa spawanie bram w mieście Wałcz. Trwałość i terminowość w każdym projekcie. Czekamy na Ciebie!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Wałcz | Spawanie mebli stalowych",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Wałcz. Trwałość i terminowość w każdym projekcie. Czekamy na Ciebie!",
       "keywords": "Rudki, Czechyń, Lubno, Witankowo, Chrząstkowo – bramy i schody stalowe",
     "street": "ul. Kilińszczaków 30",
     "postalCode": "78-600"
@@ -587,6 +626,7 @@
   {
     "slugCity": "walcz",
     "city": "Wałcz",
+"defCity":"Wałczu",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "W Wałczu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Fachowe podejście – solidnie i stylowo. – Twoje spawanie ogrodzeń będą służyć latami. Realizujemy zlecenia w całym Wałcz, zarówno dla klientów indywidualnych, jak i firm.",
@@ -602,6 +642,7 @@
   {
     "slugCity": "walcz",
     "city": "Wałcz",
+"defCity":"Wałczu",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Realizujemy zlecenia w całym Wałcz, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie konstrukcji stalowych do potrzeb klienta. Nasze doświadczenie w zakresie spawanie konstrukcji stalowych sprawia, że jesteśmy liderem w regionie.",
@@ -617,13 +658,14 @@
   {
     "slugCity": "walcz",
     "city": "Wałcz",
+"defCity":"Wałczu",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "W Wałczu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Robimy dobrze i z klasą. – Twoje spawanie schodów stalowych będą służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "W Wałczu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Robimy dobrze i z klasą. – Nasza wyjotkowa konstrukcja będzie służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta.",
     "cta": "Zarezerwuj termin na realizację teraz!  ",
     "seo": {
-      "title": "Spawanie schodów stalowych – Wałcz | Spawanie z dojazdem do klienta",
-      "description": "Usługa spawanie schodów stalowych w mieście Wałcz. Profesjonalne usługi z gwarancją trwałości. Skontaktuj się z nami!",
+      "title": "Estetyczne konstrukcje schodowe -  Wałcz | Spawanie z dojazdem do klienta",
+      "description": "Spawanie schodów stalowych w mieście Wałcz. Profesjonalne usługi z gwarancją trwałości. Skontaktuj się z nami!",
       "keywords": "Wałcz, stalowe balustrady, solidność i estetyka, Stalumo",
     "street": "ul. Wojska Polskiego 76",
     "postalCode": "78-603"
@@ -632,13 +674,14 @@
   {
     "slugCity": "goleniow",
     "city": "Goleniów",
+"defCity":"Goleniowie",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Goleniów, zarówno dla klientów indywidualnych, jak i firm. Żeby było mocne i ładne – tak właśnie robimy. – Twoje spawanie barierek będą służyć latami.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Goleniów, zarówno dla klientów indywidualnych, jak i firm. Żeby było mocne i ładne – tak właśnie robimy. – Twoje barierki firmy Stalumo będą służyć latami.",
     "cta": "Skontaktuj się z nami teraz!",
     "seo": {
-      "title": "Spawanie barierek – Goleniów | Spawanie z dokumentacją",
-      "description": "Usługa spawanie barierek w mieście Goleniów. Najwyższy standard i punktualność. Zadzwoń już teraz!",
+      "title": "Barierki stalowe na wymiar - Goleniów | Spawanie z dokumentacją",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Goleniów. Najwyższy standard i punktualność. Zadzwoń już teraz!",
       "keywords": "Mosty, Rurzyca, Załom, Kliniska Wielkie, Komarowo, Stalumo balustrady",
     "street": "ul. Grenadierów 4",
     "postalCode": "72-100"
@@ -647,6 +690,7 @@
   {
     "slugCity": "goleniow",
     "city": "Goleniów",
+"defCity":"Goleniowie",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Nasze doświadczenie w zakresie spawanie balustrad sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Goleniów, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta.",
@@ -662,13 +706,14 @@
   {
     "slugCity": "goleniow",
     "city": "Goleniów",
+"defCity":"Goleniowie",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta. Estetyka? Mamy ją w pakiecie z jakością. – Twoje spawanie bram będą służyć latami. W Goleniowie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta. Estetyka? Mamy ją w pakiecie z jakością. – Twoja nowoczesna brama będziesłużyć latami. W Goleniowie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
     "cta": "Skontaktuj się z nami już teraz!",
     "seo": {
-      "title": "Spawanie bram – Goleniów | Spawanie z pomiarem i montażem",
-      "description": "Usługa spawanie bram w mieście Goleniów. Jakość, trwałość i szybkie wykonanie. Skontaktuj się dzisiaj!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Goleniów | Spawanie z pomiarem i montażem",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Goleniów. Jakość, trwałość i szybkie wykonanie. Skontaktuj się dzisiaj!",
       "keywords": "Krępsko, Budno, Żółwia Błoć, Czarna Łąka, Modrzewie, bramy stalowe spawane",
     "street": "ul. Sikorskiego 39",
     "postalCode": "72-100"
@@ -677,6 +722,7 @@
   {
     "slugCity": "goleniow",
     "city": "Goleniów",
+"defCity":"Goleniowie",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie ogrodzeń do potrzeb klienta. Trwałość i styl – to nasz znak rozpoznawczy. – Twoje spawanie ogrodzeń będą służyć latami. Nasze doświadczenie w zakresie spawanie ogrodzeń sprawia, że jesteśmy liderem w regionie.",
@@ -692,6 +738,7 @@
   {
     "slugCity": "goleniow",
     "city": "Goleniów",
+"defCity":"Goleniowie",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "W Goleniowie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie konstrukcji stalowych do potrzeb klienta. Mądre projekty z ładnym wykończeniem. – Twoje spawanie konstrukcji stalowych będą służyć latami.",
@@ -707,13 +754,14 @@
   {
     "slugCity": "goleniow",
     "city": "Goleniów",
+"defCity":"Goleniowie",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. W Goleniowie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. W Goleniowie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie.",
     "cta": "Odkryj nasze usługi – zadzwoń!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Goleniów | Spawanie zgodne z ISO",
-      "description": "Usługa spawanie schodów stalowych w mieście Goleniów. Najwyższa jakość i szybkie terminy. Skontaktuj się z nami!",
+      "title": "Estetyczne konstrukcje schodowe -  Goleniów | Spawanie zgodne z ISO",
+      "description": "Spawanie schodów stalowych w mieście Goleniów. Najwyższa jakość i szybkie terminy. Skontaktuj się z nami!",
       "keywords": "Spawanie, metalowe bramy, balustrady na wymiar, stal nierdzewna, Stalumo",
     "street": "ul. Pocztowa 1",
     "postalCode": "72-100"
@@ -722,13 +770,14 @@
   {
     "slugCity": "gryfino",
     "city": "Gryfino",
+"defCity":"Gryfinie",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Realizujemy zlecenia w całym Gryfino, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie. W Gryfinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Realizujemy zlecenia w całym Gryfino, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie. W Gryfinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
     "cta": "Zapytaj o nasze rozwiązania teraz!",
     "seo": {
-      "title": "Spawanie barierek – Gryfino | Spawanie w trudnych warunkach",
-      "description": "Usługa spawanie barierek w mieście Gryfino. Solidność i estetyka w każdym projekcie. Czekamy na Ciebie!",
+      "title": "Barierki stalowe na wymiar - Gryfino | Spawanie w trudnych warunkach",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Gryfino. Solidność i estetyka w każdym projekcie. Czekamy na Ciebie!",
       "keywords": "Gardno, Wełtyń, Chlebowo, Radziszewo, Żabnica, balustrady spawane Gryfino",
     "street": "ul. Sprzymierzonych 2",
     "postalCode": "74-100"
@@ -737,6 +786,7 @@
   {
     "slugCity": "gryfino",
     "city": "Gryfino",
+"defCity":"Gryfinie",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Na lata i z wyglądem. – Twoje spawanie balustrad będą służyć latami. Nasze doświadczenie w zakresie spawanie balustrad sprawia, że jesteśmy liderem w regionie. W Gryfinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -752,13 +802,14 @@
   {
     "slugCity": "gryfino",
     "city": "Gryfino",
+"defCity":"Gryfinie",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Realizujemy zlecenia w całym Gryfino, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta. W Gryfinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Realizujemy zlecenia w całym Gryfino, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta. W Gryfinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
     "cta": "Zarezerwuj termin na konsultację już dziś!",
     "seo": {
-      "title": "Spawanie bram – Gryfino | Spawanie od projektu po realizację",
-      "description": "Usługa spawanie bram w mieście Gryfino. Profesjonalizm i szybkie wykonanie. Skontaktuj się teraz!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Gryfino | Spawanie od projektu po realizację",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Gryfino. Profesjonalizm i szybkie wykonanie. Skontaktuj się teraz!",
       "keywords": "Mieszkowice, Widuchowa, Krzywin, Trzcińsko-Zdrój, Chojna, Stalumo bramy i konstrukcje",
     "street": "ul. 11 Listopada 8",
     "postalCode": "74-101"
@@ -767,6 +818,7 @@
   {
     "slugCity": "gryfino",
     "city": "Gryfino",
+"defCity":"Gryfinie",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Robimy porządnie i z gustem. – Twoje spawanie ogrodzeń będą służyć latami. W Gryfinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie ogrodzeń sprawia, że jesteśmy liderem w regionie.",
@@ -782,6 +834,7 @@
   {
     "slugCity": "gryfino",
     "city": "Gryfino",
+"defCity":"Gryfinie",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "W Gryfinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie konstrukcji stalowych do potrzeb klienta. Realizujemy zlecenia w całym Gryfino, zarówno dla klientów indywidualnych, jak i firm.",
@@ -797,13 +850,14 @@
   {
     "slugCity": "gryfino",
     "city": "Gryfino",
+"defCity":"Gryfinie",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
     "description": "W Gryfinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Realizujemy zlecenia w całym Gryfino, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta.",
     "cta": "Zapytaj o szczegóły już teraz!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Gryfino | Spawanie małoseryjne i jednostkowe",
-      "description": "Usługa spawanie schodów stalowych w mieście Gryfino. Najwyższy standard usług i trwałość. Skontaktuj się dzisiaj!",
+      "title": "Estetyczne konstrukcje schodowe -  Gryfino | Spawanie małoseryjne i jednostkowe",
+      "description": "Spawanie schodów stalowych w mieście Gryfino. Najwyższy standard usług i trwałość. Skontaktuj się dzisiaj!",
       "keywords": "Spawanie, balustrady stalowe, konstrukcje metalowe, bramy przesuwne, Stalumo",
     "street": "ul. Szczecińska 25",
     "postalCode": "74-100"
@@ -812,13 +866,14 @@
   {
     "slugCity": "szczecinek",
     "city": "Szczecinek",
+"defCity":"Szczecinku",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Szczecinek, zarówno dla klientów indywidualnych, jak i firm. W Szczecinku zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Szczecinek, zarówno dla klientów indywidualnych, jak i firm. W Szczecinku zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
     "cta": "Skorzystaj z naszej oferty dziś!",
     "seo": {
-      "title": "Spawanie barierek – Szczecinek | Spawanie małych i dużych zleceń",
-      "description": "Usługa spawanie barierek w mieście Szczecinek. Trwałość, jakość i punktualność. Zadzwoń po szczegóły!",
+      "title": "Barierki stalowe na wymiar - Szczecinek | Spawanie małych i dużych zleceń",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Szczecinek. Trwałość, jakość i punktualność. Zadzwoń po szczegóły!",
       "keywords": "Gwda Wielka, Trzcinno, Parsęcko, Wilcze Laski, Żółtnica, balustrady stalowe Szczecinek",
     "street": "ul. Koszalińska 62A",
     "postalCode": "78-400"
@@ -827,6 +882,7 @@
   {
     "slugCity": "szczecinek",
     "city": "Szczecinek",
+"defCity":"Szczecinku",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Mocne rzeczy w dobrym stylu. – Twoje spawanie balustrad będą służyć latami. Nasze doświadczenie w zakresie spawanie balustrad sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Szczecinek, zarówno dla klientów indywidualnych, jak i firm.",
@@ -842,13 +898,14 @@
   {
     "slugCity": "szczecinek",
     "city": "Szczecinek",
+"defCity":"Szczecinku",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Realizujemy zlecenia w całym Szczecinek, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Realizujemy zlecenia w całym Szczecinek, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta.",
     "cta": "Umów się na wycenę dzisiaj!",
     "seo": {
-      "title": "Spawanie bram – Szczecinek | Spawanie na zamówienie",
-      "description": "Usługa spawanie bram w mieście Szczecinek. Profesjonalne wykonanie i terminowość. Zapytaj już teraz!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Szczecinek | Spawanie na zamówienie",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Szczecinek. Profesjonalne wykonanie i terminowość. Zapytaj już teraz!",
       "keywords": "Omulna, Sitno, Dalęcino, Żółtnica, Trzebiechowo, stalowe konstrukcje Stalumo",
     "street": "ul. Spółdzielcza 8",
     "postalCode": "78-403"
@@ -857,6 +914,7 @@
   {
     "slugCity": "szczecinek",
     "city": "Szczecinek",
+"defCity":"Szczecinku",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Realizujemy zlecenia w całym Szczecinek, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie ogrodzeń do potrzeb klienta. Praktyczne i piękne – to możliwe. – Twoje spawanie ogrodzeń będą służyć latami.",
@@ -872,6 +930,7 @@
   {
     "slugCity": "szczecinek",
     "city": "Szczecinek",
+"defCity":"Szczecinku",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Nasze doświadczenie w zakresie spawanie konstrukcji stalowych sprawia, że jesteśmy liderem w regionie. Bo liczy się nie tylko trwałość, ale też wygląd. – Twoje spawanie konstrukcji stalowych będą służyć latami. Realizujemy zlecenia w całym Szczecinek, zarówno dla klientów indywidualnych, jak i firm.",
@@ -887,13 +946,14 @@
   {
     "slugCity": "szczecinek",
     "city": "Szczecinek",
+"defCity":"Szczecinku",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Realizujemy zlecenia w całym Szczecinek, zarówno dla klientów indywidualnych, jak i firm. Klasa i solidność w jednym. – Twoje spawanie schodów stalowych będą służyć latami. W Szczecinku zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Realizujemy zlecenia w całym Szczecinek, zarówno dla klientów indywidualnych, jak i firm. Klasa i solidność w jednym. – Nasza wyjotkowa konstrukcja będzie służyć latami. W Szczecinku zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
     "cta": "Zapytaj o szczegóły projektu!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Szczecinek | Spawanie z konsultacją techniczną",
-      "description": "Usługa spawanie schodów stalowych w mieście Szczecinek. Najwyższa jakość i terminowa realizacja. Zadzwoń po wycenę!",
+      "title": "Estetyczne konstrukcje schodowe -  Szczecinek | Spawanie z konsultacją techniczną",
+      "description": "Spawanie schodów stalowych w mieście Szczecinek. Najwyższa jakość i terminowa realizacja. Zadzwoń po wycenę!",
       "keywords": "Stalumo, spawanie, metaloplastyka, balustrady i schody stalowe, ogrodzenia",
     "street": "ul. Dworcowa 2",
     "postalCode": "78-410"
@@ -902,13 +962,14 @@
   {
     "slugCity": "bialogard",
     "city": "Białogard",
+"defCity":"Białogardzie",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Luksusowy wygląd, niezawodna trwałość. – Twoje spawanie barierek będą służyć latami. W Białogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Luksusowy wygląd, niezawodna trwałość. – Twoje barierki firmy Stalumo będą służyć latami. W Białogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie.",
     "cta": "Zadzwoń po szczegóły projektu teraz!",
     "seo": {
-      "title": "Spawanie barierek – Białogard | Spawanie pod klucz",
-      "description": "Usługa spawanie barierek w mieście Białogard. Trwałość i punktualność w każdym detalu. Skontaktuj się z nami!",
+      "title": "Barierki stalowe na wymiar - Białogard | Spawanie pod klucz",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Białogard. Trwałość i punktualność w każdym detalu. Skontaktuj się z nami!",
       "keywords": "Tychowo, Karlino, Rarwino, Żelimucha, Pomianowo, balustrady Białogard",
     "street": "ul. Wojska Polskiego 87/88",
     "postalCode": "78-200"
@@ -917,6 +978,7 @@
   {
     "slugCity": "bialogard",
     "city": "Białogard",
+"defCity":"Białogardzie",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta. W Białogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Jakość, którą widać i czuć. – Twoje spawanie balustrad będą służyć latami.",
@@ -932,13 +994,14 @@
   {
     "slugCity": "bialogard",
     "city": "Białogard",
+"defCity":"Białogardzie",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta. Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Białogard, zarówno dla klientów indywidualnych, jak i firm.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta. Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Białogard, zarówno dla klientów indywidualnych, jak i firm.",
     "cta": "Umów się na spotkanie z ekspertem!",
     "seo": {
-      "title": "Spawanie bram – Białogard | Spawanie na którym możesz polegać",
-      "description": "Usługa spawanie bram w mieście Białogard. Profesjonalizm i szybkie terminy. Czekamy na Twój telefon!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Białogard | Spawanie na którym możesz polegać",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Białogard. Profesjonalizm i szybkie terminy. Czekamy na Twój telefon!",
       "keywords": "Świelino, Dębczyno, Żegocino, Podborsko, Stare Dębno, ogrodzenia metalowe",
     "street": "ul. Chopina Fryderyka 30",
     "postalCode": "78-210"
@@ -947,6 +1010,7 @@
   {
     "slugCity": "bialogard",
     "city": "Białogard",
+"defCity":"Białogardzie",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "W Białogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie ogrodzeń sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Białogard, zarówno dla klientów indywidualnych, jak i firm.",
@@ -962,6 +1026,7 @@
   {
     "slugCity": "bialogard",
     "city": "Białogard",
+"defCity":"Białogardzie",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Realizujemy zlecenia w całym Białogard, zarówno dla klientów indywidualnych, jak i firm. W Białogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie konstrukcji stalowych sprawia, że jesteśmy liderem w regionie.",
@@ -977,13 +1042,14 @@
   {
     "slugCity": "bialogard",
     "city": "Białogard",
+"defCity":"Białogardzie",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Estetyczne rzemiosło o wysokiej trwałości – Twoje spawanie schodów stalowych będą służyć latami. W Białogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Estetyczne rzemiosło o wysokiej trwałości – Nasza wyjotkowa konstrukcja będzie służyć latami. W Białogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie.",
     "cta": "Zarezerwuj termin już dzisiaj!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Białogard | Bezpieczne i zgodne ze sztuką spawanie",
-      "description": "Usługa spawanie schodów stalowych w mieście Białogard. Najwyższy standard i terminowość. Skontaktuj się z nami!",
+      "title": "Estetyczne konstrukcje schodowe -  Białogard | Bezpieczne i zgodne ze sztuką spawanie",
+      "description": "Spawanie schodów stalowych w mieście Białogard. Najwyższy standard i terminowość. Skontaktuj się z nami!",
       "keywords": "Spawanie, trwałość i jakość, estetyczne konstrukcje stalowe, Stalumo",
     "street": "ul. 1 Maja 23",
     "postalCode": "78-200"
@@ -992,13 +1058,14 @@
   {
     "slugCity": "gryfice",
     "city": "Gryfice",
+"defCity":"Gryficach",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Ekskluzywne formy, solidna podstaw – Twoje spawanie barierek będą służyć latami. Realizujemy zlecenia w całym Gryfice, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Ekskluzywne formy, solidna podstaw – Twoje barierki firmy Stalumo będą służyć latami. Realizujemy zlecenia w całym Gryfice, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie.",
     "cta": "Umów się na spotkanie dziś!",
     "seo": {
-      "title": "Spawanie barierek – Gryfice | Jakość potwierdzona opiniami",
-      "description": "Usługa spawanie barierek w mieście Gryfice. Trwałość i estetyka w każdym projekcie. Czekamy na Ciebie!",
+      "title": "Barierki stalowe na wymiar - Gryfice | Jakość potwierdzona opiniami",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Gryfice. Trwałość i estetyka w każdym projekcie. Czekamy na Ciebie!",
       "keywords": "Brojce, Trzygłów, Przybiernówko, Rybokarty, Borzyszewo, balustrady stalowe Gryfice",
     "street": "ul. Sprzymierzonych 2",
     "postalCode": "74-100"
@@ -1007,6 +1074,7 @@
   {
     "slugCity": "gryfice",
     "city": "Gryfice",
+"defCity":"Gryficach",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Realizujemy zlecenia w całym Gryfice, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta. Design spotyka niezawodność. – Twoje spawanie balustrad będą służyć latami.",
@@ -1022,13 +1090,14 @@
   {
     "slugCity": "gryfice",
     "city": "Gryfice",
+"defCity":"Gryficach",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Wyrafinowana trwałość. – Twoje spawanie bram będą służyć latami. W Gruficach zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Wyrafinowana trwałość. – Twoja nowoczesna brama będziesłużyć latami. W Gruficach zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta.",
     "cta": "Zadzwoń i zamów projekt!",
     "seo": {
-      "title": "Spawanie bram – Gryfice | Eksperci w spawaniu",
-      "description": "Usługa spawanie bram w mieście Gryfice. Profesjonalne usługi i punktualność. Skontaktuj się dzisiaj!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Gryfice | Eksperci w spawaniu",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Gryfice. Profesjonalne usługi i punktualność. Skontaktuj się dzisiaj!",
       "keywords": "Uniestowo, Prusinowo, Modlimowo, Barkowo, Słudwia, stalowe ogrodzenia",
     "street": "ul. 11 Listopada 8",
     "postalCode": "74-101"
@@ -1037,6 +1106,7 @@
   {
     "slugCity": "gryfice",
     "city": "Gryfice",
+"defCity":"Gryficach",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie ogrodzeń do potrzeb klienta. Subtelna elegancja na mocnym fundamencie. – Twoje spawanie ogrodzeń będą służyć latami. W Gruficach zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -1052,6 +1122,7 @@
   {
     "slugCity": "gryfice",
     "city": "Gryfice",
+"defCity":"Gryficach",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Trwałość klasy premium. – Twoje spawanie konstrukcji stalowych będą służyć latami. W Gruficach zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie konstrukcji stalowych do potrzeb klienta.",
@@ -1067,13 +1138,14 @@
   {
     "slugCity": "gryfice",
     "city": "Gryfice",
+"defCity":"Gryficach",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Realizujemy zlecenia w całym Gryfice, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie. Stal w eleganckim wydaniu. – Twoje spawanie schodów stalowych będą służyć latami.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Realizujemy zlecenia w całym Gryfice, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie. Stal w eleganckim wydaniu. – Nasza wyjotkowa konstrukcja będzie służyć latami.",
     "cta": "Skontaktuj się i zamów wycenę!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Gryfice | Spawamy to, czego inni się boją",
-      "description": "Usługa spawanie schodów stalowych w mieście Gryfice. Trwałość i terminowa realizacja. Skontaktuj się z nami!",
+      "title": "Estetyczne konstrukcje schodowe -  Gryfice | Spawamy to, czego inni się boją",
+      "description": "Spawanie schodów stalowych w mieście Gryfice. Trwałość i terminowa realizacja. Skontaktuj się z nami!",
       "keywords": "Spawanie, bramy, konstrukcje stalowe, balustrady estetyczne, Stalumo",
     "street": "ul. Okrężna 11",
     "postalCode": "74-100"
@@ -1082,13 +1154,14 @@
   {
     "slugCity": "mysliborz",
     "city": "Myślibórz",
+"defCity":"Myśliborzu",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Realizujemy zlecenia w całym Myślibórz, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie. W Myśliborzu zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Realizujemy zlecenia w całym Myślibórz, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie. W Myśliborzu zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
     "cta": "Zadzwoń po szczegóły usługi!",
     "seo": {
-      "title": "Spawanie barierek – Myślibórz | Twoje spawanie – nasza specjalność",
-      "description": "Usługa spawanie barierek w mieście Myślibórz. Solidność i estetyka w każdym detalu. Zadzwoń już dziś!",
+      "title": "Barierki stalowe na wymiar - Myślibórz | Twoje spawanie – nasza specjalność",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Myślibórz. Solidność i estetyka w każdym detalu. Zadzwoń już dziś!",
       "keywords": "Barlinek, Nowogródek Pomorski, Dębno, Trzcińsko-Zdrój, Golenice, balustrady stalowe",
     "street": "ul. Rynek im. Jana Pawła II 1",
     "postalCode": "74-300"
@@ -1097,6 +1170,7 @@
   {
     "slugCity": "mysliborz",
     "city": "Myślibórz",
+"defCity":"Myśliborzu",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Dobrze zrobione i dobrze wygląda. – Twoje spawanie balustrad będą służyć latami. Realizujemy zlecenia w całym Myślibórz, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta.",
@@ -1112,13 +1186,14 @@
   {
     "slugCity": "mysliborz",
     "city": "Myślibórz",
+"defCity":"Myśliborzu",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie. W Myśliborzu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Mocne, estetyczne, Twoje. – Twoje spawanie bram będą służyć latami.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie. W Myśliborzu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Mocne, estetyczne, Twoje. – Twoja nowoczesna brama będziesłużyć latami.",
     "cta": "Zapytaj o nasze rozwiązania!",
     "seo": {
-      "title": "Spawanie bram – Myślibórz | Profesjonalizm widoczny w każdym spawie",
-      "description": "Usługa spawanie bram w mieście Myślibórz. Profesjonalizm i trwałe rozwiązania. Skontaktuj się teraz!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Myślibórz | Profesjonalizm widoczny w każdym spawie",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Myślibórz. Profesjonalizm i trwałe rozwiązania. Skontaktuj się teraz!",
       "keywords": "Golenice, Głazów, Różańsko, Renice, Krusze, ogrodzenia stalowe i bramy",
     "street": "ul. Północna 15",
     "postalCode": "74-300"
@@ -1127,6 +1202,7 @@
   {
     "slugCity": "mysliborz",
     "city": "Myślibórz",
+"defCity":"Myśliborzu",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie ogrodzeń do potrzeb klienta. W Myśliborzu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Realizujemy zlecenia w całym Myślibórz, zarówno dla klientów indywidualnych, jak i firm.",
@@ -1142,6 +1218,7 @@
   {
     "slugCity": "mysliborz",
     "city": "Myślibórz",
+"defCity":"Myśliborzu",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Realizujemy zlecenia w całym Myślibórz, zarówno dla klientów indywidualnych, jak i firm. W Myśliborzu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie konstrukcji stalowych do potrzeb klienta.",
@@ -1157,13 +1234,14 @@
   {
     "slugCity": "mysliborz",
     "city": "Myślibórz",
+"defCity":"Myśliborzu",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie. W Myśliborzu zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie. W Myśliborzu zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
     "cta": "Zarezerwuj termin na realizację!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Myślibórz | Spawanie, które łączy na lata",
-      "description": "Usługa spawanie schodów stalowych w mieście Myślibórz. Najwyższa jakość i punktualność. Zadzwoń po wycenę!",
+      "title": "Estetyczne konstrukcje schodowe -  Myślibórz | Spawanie, które łączy na lata",
+      "description": "Spawanie schodów stalowych w mieście Myślibórz. Najwyższa jakość i punktualność. Zadzwoń po wycenę!",
       "keywords": "Stalumo, konstrukcje spawane, metalowe elementy, balustrady, ogrodzenia",
     "street": "ul. Golenice 32",
     "postalCode": "74-300"
@@ -1172,13 +1250,14 @@
   {
     "slugCity": "nowogard",
     "city": "Nowogard",
+"defCity":"Nowogardzie",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie barierek do potrzeb klienta. Prosto, ale pięknie i trwale. – Twoje spawanie barierek będą służyć latami. W Nowogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując tworzenie barierek do potrzeb klienta. Prosto, ale pięknie i trwale. – Twoje barierki firmy Stalumo będą służyć latami. W Nowogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
     "cta": "Zarezerwuj termin na konsultację dzisiaj!",
     "seo": {
-      "title": "Spawanie barierek – Nowogard | Jakość spawania, którą widać",
-      "description": "Usługa spawanie barierek w mieście Nowogard. Trwałość i estetyka w każdym projekcie. Zapytaj już teraz!",
+      "title": "Barierki stalowe na wymiar - Nowogard | Jakość spawania, którą widać",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Nowogard. Trwałość i estetyka w każdym projekcie. Zapytaj już teraz!",
       "keywords": "Orzechowo, Karsk, Wyszomierz, Warnkowo, Kulice, balustrady stalowe Nowogard",
   "street": "ul. Smużyny",
     "postalCode": "72-200"
@@ -1187,6 +1266,7 @@
   {
     "slugCity": "nowogard",
     "city": "Nowogard",
+"defCity":"Nowogardzie",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "W Nowogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta. Realizujemy zlecenia w całym Nowogard, zarówno dla klientów indywidualnych, jak i firm.",
@@ -1202,13 +1282,14 @@
   {
     "slugCity": "nowogard",
     "city": "Nowogard",
+"defCity":"Nowogardzie",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "W Nowogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Zrobione tak, żeby się podobało i nie zawiodło. – Twoje spawanie bram będą służyć latami. Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "W Nowogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Zrobione tak, żeby się podobało i nie zawiodło. – Twoja nowoczesna brama będziesłużyć latami. Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie.",
     "cta": "Zadzwoń po indywidualną ofertę!  ",
     "seo": {
-      "title": "Spawanie bram – Nowogard | Solidne spawy, solidna firma",
-      "description": "Usługa spawanie bram w mieście Nowogard. Profesjonalne usługi i jakość. Czekamy na Twój kontakt!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Nowogard | Solidne spawy, solidna firma",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Nowogard. Profesjonalne usługi i jakość. Czekamy na Twój kontakt!",
       "keywords": "Żabowo, Ostrzyca, Miodne, Strzelewo, Wojcieszyn, konstrukcje stalowe Stalumo",
     "street": "ul. Jana Pawła II",
     "postalCode": "72-200"
@@ -1217,6 +1298,7 @@
   {
     "slugCity": "nowogard",
     "city": "Nowogard",
+"defCity":"Nowogardzie",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "W Nowogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Realizujemy zlecenia w całym Nowogard, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawanie ogrodzeń sprawia, że jesteśmy liderem w regionie.",
@@ -1232,6 +1314,7 @@
   {
     "slugCity": "nowogard",
     "city": "Nowogard",
+"defCity":"Nowogardzie",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Realizujemy zlecenia w całym Nowogard, zarówno dla klientów indywidualnych, jak i firm. W Nowogardzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie konstrukcji stalowych sprawia, że jesteśmy liderem w regionie.",
@@ -1247,13 +1330,14 @@
   {
     "slugCity": "nowogard",
     "city": "Nowogard",
+"defCity":"Nowogardzie",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Realizujemy zlecenia w całym Nowogard, zarówno dla klientów indywidualnych, jak i firm. Bez kompromisów – i mocne, i ładne. – Twoje spawanie schodów stalowych będą służyć latami.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Realizujemy zlecenia w całym Nowogard, zarówno dla klientów indywidualnych, jak i firm. Bez kompromisów – i mocne, i ładne. – Nasza wyjotkowa konstrukcja będzie służyć latami.",
     "cta": "Zadzwoń po szczegóły oferty!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Nowogard | Łączymy metale – dzielimy się doświadczeniem",
-      "description": "Usługa spawanie schodów stalowych w mieście Nowogard. Najwyższy standard usług i estetyka. Zapytaj o ofertę!",
+      "title": "Estetyczne konstrukcje schodowe -  Nowogard | Łączymy metale – dzielimy się doświadczeniem",
+      "description": "Spawanie schodów stalowych w mieście Nowogard. Najwyższy standard usług i estetyka. Zapytaj o ofertę!",
       "keywords": "Spawanie, ogrodzenia metalowe, balustrady Nowogard, schody stalowe, Stalumo",
     "street": "ul. Lutyków",
     "postalCode": "72-200"
@@ -1262,13 +1346,14 @@
   {
     "slugCity": "drawsko-pomorskie",
     "city": "Drawsko pomorskie",
+"defCity":"Drawsku pomorskim",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie barierek do potrzeb klienta. W Drawsku Pomorskim zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując tworzenie barierek do potrzeb klienta. W Drawsku Pomorskim zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie.",
     "cta": "Umów się na wycenę już dziś!",
     "seo": {
-      "title": "Spawanie barierek – Drawsko Pomorskie | Każdy spaw to nasza wizytówka",
-      "description": "Usługa spawanie barierek w mieście Drawsko Pomorskie. Trwałość i terminowa realizacja. Czekamy na Twój telefon!",
+      "title": "Barierki stalowe na wymiar - Drawsko Pomorskie | Każdy spaw to nasza wizytówka",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Drawsko Pomorskie. Trwałość i terminowa realizacja. Czekamy na Twój telefon!",
       "keywords": "Złocieniec, Kalisz Pomorski, Ostrowice, Czaplinek, Siemczyno, stalowe barierki, bramy spawane",
       "street": "ul. Pocztowa 21",
     "postalCode": "78-500"
@@ -1278,6 +1363,7 @@
   {
     "slugCity": "drawsko-pomorskie",
     "city": "Drawsko pomorskie",
+"defCity":"Drawsku pomorskim",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Realizujemy zlecenia w całym Drawsko Pomorskie, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta. W Drawsku Pomorskim zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -1293,13 +1379,14 @@
   {
     "slugCity": "drawsko-pomorskie",
     "city": "Drawsko pomorskie",
+"defCity":"Drawsku pomorskim",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta. W Drawsku Pomorskim zyskaliśmy zaufanie wielu klientów – dołącz do nich! Trwałość i wygląd w jednej cenie. – Twoje spawanie bram będą służyć latami.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta. W Drawsku Pomorskim zyskaliśmy zaufanie wielu klientów – dołącz do nich! Trwałość i wygląd w jednej cenie. – Twoja nowoczesna brama będziesłużyć latami.",
     "cta": "Zadzwoń po indywidualną wycenę!",
     "seo": {
-      "title": "Spawanie bram – Drawsko Pomorskie | Stal pod kontrolą",
-      "description": "Usługa spawanie bram w mieście Drawsko Pomorskie. Profesjonalizm i estetyka w każdym projekcie. Zadzwoń po szczegóły!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Drawsko Pomorskie | Stal pod kontrolą",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Drawsko Pomorskie. Profesjonalizm i estetyka w każdym projekcie. Zadzwoń po szczegóły!",
       "keywords": "Nowe Worowo, Linowno, Mielenko Drawskie, Suliszewo, Gęsiniec, ogrodzenia stalowe, usługi spawalnicze",
     "street": "ul. Połczyńska 9",
     "postalCode": "78-500"
@@ -1308,6 +1395,7 @@
   {
     "slugCity": "drawsko-pomorskie",
     "city": "Drawsko pomorskie",
+"defCity":"Drawsku pomorskim",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "W Drawsku Pomorskim zyskaliśmy zaufanie wielu klientów – dołącz do nich! Tak powinno wyglądać rzemiosło. – Twoje spawanie ogrodzeń będą służyć latami. Nasze doświadczenie w zakresie spawanie ogrodzeń sprawia, że jesteśmy liderem w regionie.",
@@ -1323,6 +1411,7 @@
   {
     "slugCity": "drawsko-pomorskie",
     "city": "Drawsko pomorskie",
+"defCity":"Drawsku pomorskim",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie konstrukcji stalowych do potrzeb klienta. Tworzone z myślą o oczach i trwałości. – Twoje spawanie konstrukcji stalowych będą służyć latami. W Drawsku Pomorskim zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -1338,13 +1427,14 @@
   {
     "slugCity": "drawsko-pomorskie",
     "city": "Drawsko pomorskie",
+"defCity":"Drawsku pomorskim",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "W Drawsku Pomorskim zyskaliśmy zaufanie wielu klientów – dołącz do nich! Realizujemy zlecenia w całym Drawsko Pomorskie, zarówno dla klientów indywidualnych, jak i firm. Dobre wykonanie to też dobry wygląd. – Twoje spawanie schodów stalowych będą służyć latami.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "W Drawsku Pomorskim zyskaliśmy zaufanie wielu klientów – dołącz do nich! Realizujemy zlecenia w całym Drawsko Pomorskie, zarówno dla klientów indywidualnych, jak i firm. Dobre wykonanie to też dobry wygląd. – Nasza wyjotkowa konstrukcja będzie służyć latami.",
     "cta": "Umów się na spotkanie dzisiaj!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Drawsko Pomorskie | Precyzja, która robi różnicę",
-      "description": "Usługa spawanie schodów stalowych w mieście Drawsko Pomorskie. Najwyższa jakość i szybkie wykonanie. Czekamy na Twój kontakt!",
+      "title": "Estetyczne konstrukcje schodowe -  Drawsko Pomorskie | Precyzja, która robi różnicę",
+      "description": "Spawanie schodów stalowych w mieście Drawsko Pomorskie. Najwyższa jakość i szybkie wykonanie. Czekamy na Twój kontakt!",
       "keywords": "Darskowo, Glinki, Broczyno, Woliczno, Czarne Małe, schody stalowe, balustrady metalowe",
     "street": "ul. Sadowa",
     "postalCode": "78-500"
@@ -1353,13 +1443,14 @@
   {
     "slugCity": "zlocieniec",
     "city": "Złocieniec",
+"defCity":"Złocienieńcu",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie barierek do potrzeb klienta. Długo służy, dobrze wygląda. – Twoje spawanie barierek będą służyć latami. Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując tworzenie barierek do potrzeb klienta. Długo służy, dobrze wygląda. – Twoje barierki firmy Stalumo będą służyć latami. Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie.",
     "cta": "Skontaktuj się i zamów usługę! ",
     "seo": {
-      "title": "Spawanie barierek – Złocieniec | Twój projekt, nasze spawanie",
-      "description": "Usługa spawanie barierek w mieście Złocieniec. Trwałość i estetyka w każdym detalu. Skontaktuj się dzisiaj!",
+      "title": "Barierki stalowe na wymiar - Złocieniec | Twój projekt, nasze spawanie",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Złocieniec. Trwałość i estetyka w każdym detalu. Skontaktuj się dzisiaj!",
       "keywords": "Cieszyno, Lubieszewo, Kosobudy, Darskowo, Siecino, balustrady stalowe Złocieniec",
     "street": "ul. I Dywizji Wojska Polskiego 15",
     "postalCode": "78-520"
@@ -1368,6 +1459,7 @@
   {
     "slugCity": "zlocieniec",
     "city": "Złocieniec",
+"defCity":"Złocienieńcu",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Solidna forma. Piękna treść. – Twoje spawanie balustrad będą służyć latami. Realizujemy zlecenia w całym Złocieniec, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta.",
@@ -1383,13 +1475,14 @@
   {
     "slugCity": "zlocieniec",
     "city": "Złocieniec",
+"defCity":"Złocienieńcu",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Realizujemy zlecenia w całym Złocieniec, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Realizujemy zlecenia w całym Złocieniec, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta.",
     "cta": "Poznaj nasze usługi już teraz!",
     "seo": {
-      "title": "Spawanie bram – Złocieniec | Precyzyjne łączenie metali",
-      "description": "Usługa spawanie bram w mieście Złocieniec. Profesjonalne usługi i trwałość. Skontaktuj się z nami!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Złocieniec | Precyzyjne łączenie metali",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Złocieniec. Profesjonalne usługi i trwałość. Skontaktuj się z nami!",
       "keywords": "Uraz, Gronowo, Lubieszewo, Czarnkowie, Rzęśnica, ogrodzenia i schody stalowe",
     "street": "ul. Dworcowa 3",
     "postalCode": "78-520"
@@ -1398,6 +1491,7 @@
   {
     "slugCity": "zlocieniec",
     "city": "Złocieniec",
+"defCity":"Złocienieńcu",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "W Złocieńcu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Konstrukcje z charakterem. – Twoje spawanie ogrodzeń będą służyć latami. Realizujemy zlecenia w całym Złocieniec, zarówno dla klientów indywidualnych, jak i firm.",
@@ -1413,6 +1507,7 @@
   {
     "slugCity": "zlocieniec",
     "city": "Złocieniec",
+"defCity":"Złocienieńcu",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "W Złocieńcu zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie konstrukcji stalowych sprawia, że jesteśmy liderem w regionie. Zrobione do podziwiania. – Twoje spawanie konstrukcji stalowych będą służyć latami.",
@@ -1428,13 +1523,14 @@
   {
     "slugCity": "zlocieniec",
     "city": "Złocieniec",
+"defCity":"Złocienieńcu",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Trwałość wpisana w styl. – Twoje spawanie schodów stalowych będą służyć latami. Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Trwałość wpisana w styl. – Nasza wyjotkowa konstrukcja będzie służyć latami. Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie.",
     "cta": "Skontaktuj się po wycenę projektu!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Złocieniec | Zakład spawalniczy – jakość bez kompromisów",
-      "description": "Usługa spawanie schodów stalowych w mieście Złocieniec. Najwyższy standard i punktualność. Skontaktuj się już dziś!",
+      "title": "Estetyczne konstrukcje schodowe -  Złocieniec | Zakład spawalniczy – jakość bez kompromisów",
+      "description": "Spawanie schodów stalowych w mieście Złocieniec. Najwyższy standard i punktualność. Skontaktuj się już dziś!",
       "keywords": "Spawanie Złocieniec, stalowe konstrukcje, estetyka i trwałość, Stalumo",
     "street": "ul. Modrzewiowa 2",
     "postalCode": "78-520"
@@ -1443,13 +1539,14 @@
   {
     "slugCity": "lobez",
     "city": "Łobez",
+"defCity":"Łobzie",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Realizujemy zlecenia w całym Łobez, zarówno dla klientów indywidualnych, jak i firm. W Łobzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Realizujemy zlecenia w całym Łobez, zarówno dla klientów indywidualnych, jak i firm. W Łobzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie.",
     "cta": "Zarezerwuj swój termin teraz!",
     "seo": {
-      "title": "Spawanie barierek – Łobez | Kompleksowe prace spawalnicze",
-      "description": "Usługa spawanie barierek w mieście Łobez. Trwałość i jakość w każdym projekcie. Zadzwoń po ofertę!",
+      "title": "Barierki stalowe na wymiar - Łobez | Kompleksowe prace spawalnicze",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Łobez. Trwałość i jakość w każdym projekcie. Zadzwoń po ofertę!",
       "keywords": "Węgorzyno, Bonin, Radowo Małe, Dobra, Dalno, balustrady stalowe Łobez",
     "street": "ul. Władysława Łokietka 15",
     "postalCode": "73-150"
@@ -1458,6 +1555,7 @@
   {
     "slugCity": "lobez",
     "city": "Łobez",
+"defCity":"Łobzie",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "W Łobzie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta. Nasze doświadczenie w zakresie spawanie balustrad sprawia, że jesteśmy liderem w regionie.",
@@ -1473,13 +1571,14 @@
   {
     "slugCity": "lobez",
     "city": "Łobez",
+"defCity":"Łobzie",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Realizujemy zlecenia w całym Łobez, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Realizujemy zlecenia w całym Łobez, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta.",
     "cta": "Umów się na spotkanie już teraz!",
     "seo": {
-      "title": "Spawanie bram – Łobez | Konstrukcje i spawanie",
-      "description": "Usługa spawanie bram w mieście Łobez. Profesjonalizm i szybkie wykonanie. Czekamy na Twój kontakt!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Łobez | Konstrukcje i spawanie",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Łobez. Profesjonalizm i szybkie wykonanie. Czekamy na Twój kontakt!",
       "keywords": "Unimie, Niedźwiedź, Przyborze, Świętobór, Żerzyno, bramy i balustrady metalowe",
     "street": "ul. Spokojna 3",
     "postalCode": "73-150"
@@ -1488,6 +1587,7 @@
   {
     "slugCity": "lobez",
     "city": "Łobez",
+"defCity":"Łobzie",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Piękno, które stoi mocno. – Twoje spawanie ogrodzeń będą służyć latami. Realizujemy zlecenia w całym Łobez, zarówno dla klientów indywidualnych, jak i firm. W Łobzie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -1503,6 +1603,7 @@
   {
     "slugCity": "lobez",
     "city": "Łobez",
+"defCity":"Łobzie",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie konstrukcji stalowych do potrzeb klienta. Realizujemy zlecenia w całym Łobez, zarówno dla klientów indywidualnych, jak i firm. W Łobzie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -1518,13 +1619,14 @@
   {
     "slugCity": "lobez",
     "city": "Łobez",
+"defCity":"Łobzie",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Trwałość w estetycznej ramie. – Twoje spawanie schodów stalowych będą służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Realizujemy zlecenia w całym Łobez, zarówno dla klientów indywidualnych, jak i firm.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Trwałość w estetycznej ramie. – Nasza wyjotkowa konstrukcja będzie służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Realizujemy zlecenia w całym Łobez, zarówno dla klientów indywidualnych, jak i firm.",
     "cta": "Skorzystaj z wyceny już dziś!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Łobez | Realizacja spawalnicza od A do Z",
-      "description": "Usługa spawanie schodów stalowych w mieście Łobez. Najwyższa jakość i estetyka. Zadzwoń po szczegóły!",
+      "title": "Estetyczne konstrukcje schodowe -  Łobez | Realizacja spawalnicza od A do Z",
+      "description": "Spawanie schodów stalowych w mieście Łobez. Najwyższa jakość i estetyka. Zadzwoń po szczegóły!",
       "keywords": "Łobez, stalowe konstrukcje, balustrady, spawanie, ogrodzenia, Stalumo",
     "street": "ul. Konopnickiej 7",
     "postalCode": "73-150"
@@ -1533,13 +1635,14 @@
   {
     "slugCity": "swidwin",
     "city": "Świdwin",
+"defCity":"Świdwinie",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Fundament stylu. – Twoje spawanie barierek będą służyć latami. W Świdwinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując spawanie barierek do potrzeb klienta.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Fundament stylu. – Twoje barierki firmy Stalumo będą służyć latami. W Świdwinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Każdy projekt traktujemy indywidualnie, dostosowując tworzenie barierek do potrzeb klienta.",
     "cta": "Poznaj naszą ofertę dzisiaj!",
     "seo": {
-      "title": "Spawanie barierek – Świdwin | Twoi partnerzy w spawaniu",
-      "description": "Usługa spawanie barierek w mieście Świdwin. Trwałość i szybkie terminy. Czekamy na Twój telefon!",
+      "title": "Barierki stalowe na wymiar - Świdwin | Twoi partnerzy w spawaniu",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Świdwin. Trwałość i szybkie terminy. Czekamy na Twój telefon!",
       "keywords": "Bierzwnica, Sławoborze, Lekowo, Kluczkowo, Rzepczyno, balustrady stalowe Świdwin",
     "street": "ul. Armii Krajowej 22a",
     "postalCode": "78-300"
@@ -1548,6 +1651,7 @@
   {
     "slugCity": "swidwin",
     "city": "Świdwin",
+"defCity":"Świdwinie",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Design, który wytrzymuje próbę czasu. – Twoje spawanie balustrad będą służyć latami. Realizujemy zlecenia w całym Świdwin, zarówno dla klientów indywidualnych, jak i firm. W Świdwinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -1563,13 +1667,14 @@
   {
     "slugCity": "swidwin",
     "city": "Świdwin",
+"defCity":"Świdwinie",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "W Świdwinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nie tylko trwałość – styl też się liczy. – Twoje spawanie bram będą służyć latami. Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "W Świdwinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nie tylko trwałość – styl też się liczy. – Twoja nowoczesna brama będziesłużyć latami. Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta.",
     "cta": "Skontaktuj się po indywidualny projekt!",
     "seo": {
-      "title": "Spawanie bram – Świdwin | Łączymy precyzję z pasją",
-      "description": "Usługa spawanie bram w mieście Świdwin. Gwarantujemy solidność i terminowość. Zapytaj o wycenę!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Świdwin | Łączymy precyzję z pasją",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Świdwin. Gwarantujemy solidność i terminowość. Zapytaj o wycenę!",
       "keywords": "Kołacz, Redło, Rusinowo, Bełtno, Trzciana, bramy przesuwne i konstrukcje stalowe",
     "street": "ul. Żwirki i Wigury 3",
     "postalCode": "78-300"
@@ -1578,6 +1683,7 @@
   {
     "slugCity": "swidwin",
     "city": "Świdwin",
+"defCity":"Świdwinie",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie ogrodzeń do potrzeb klienta. Nasze doświadczenie w zakresie spawanie ogrodzeń sprawia, że jesteśmy liderem w regionie. W Świdwinie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -1593,6 +1699,7 @@
   {
     "slugCity": "swidwin",
     "city": "Świdwin",
+"defCity":"Świdwinie",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie konstrukcji stalowych do potrzeb klienta. Realizujemy zlecenia w całym Świdwin, zarówno dla klientów indywidualnych, jak i firm. Zainwestuj w estetykę i solidność. – Twoje spawanie konstrukcji stalowych będą służyć latami.",
@@ -1608,13 +1715,14 @@
   {
     "slugCity": "swidwin",
     "city": "Świdwin",
+"defCity":"Świdwinie",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "W Świdwinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie. Wybierz rozwiązanie trwałe i piękne. – Twoje spawanie schodów stalowych będą służyć latami.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "W Świdwinie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie. Wybierz rozwiązanie trwałe i piękne. – Nasza wyjotkowa konstrukcja będzie służyć latami.",
     "cta": "Poznaj nasze rozwiązania – zadzwoń!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Świdwin | Rzemiosło spawalnicze z tradycją",
-      "description": "Usługa spawanie schodów stalowych w mieście Świdwin. Trwałość i punktualność w każdym detalu. Zadzwoń już dziś!",
+      "title": "Estetyczne konstrukcje schodowe -  Świdwin | Rzemiosło spawalnicze z tradycją",
+      "description": "Spawanie schodów stalowych w mieście Świdwin. Trwałość i punktualność w każdym detalu. Zadzwoń już dziś!",
       "keywords": "Spawanie Świdwin, trwałe ogrodzenia, konstrukcje stalowe, Stalumo balustrady",
   "street": "ul. Sportowa 6",
     "postalCode": "78-300"
@@ -1623,13 +1731,14 @@
   {
     "slugCity": "choszczno",
     "city": "Choszczno",
+"defCity":"Choszcznie",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "W Choszcznie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Choszczno, zarówno dla klientów indywidualnych, jak i firm.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "W Choszcznie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie. Realizujemy zlecenia w całym Choszczno, zarówno dla klientów indywidualnych, jak i firm.",
     "cta": "Zarezerwuj swój termin na usługę!",
     "seo": {
-      "title": "Spawanie barierek – Choszczno | Łączymy metal. Tworzymy przyszłość.",
-      "description": "Usługa spawanie barierek w mieście Choszczno. Zapewniamy jakość i szybkie wykonanie. Skontaktuj się z nami!",
+      "title": "Barierki stalowe na wymiar - Choszczno | Łączymy metal. Tworzymy przyszłość.",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Choszczno. Zapewniamy jakość i szybkie wykonanie. Skontaktuj się z nami!",
       "keywords": "Pełczyce, Krzęcin, Recz, Zamęcin, Raduń, balustrady stalowe Choszczno",
     "street": "ul. Władysława Jagiełły 22",
     "postalCode": "73-201"
@@ -1638,6 +1747,7 @@
   {
     "slugCity": "choszczno",
     "city": "Choszczno",
+"defCity":"Choszcznie",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie balustrad do potrzeb klienta. Nasze doświadczenie w zakresie spawanie balustrad sprawia, że jesteśmy liderem w regionie. W Choszcznie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -1653,13 +1763,14 @@
   {
     "slugCity": "choszczno",
     "city": "Choszczno",
+"defCity":"Choszcznie",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta. W Choszcznie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Skontaktuj się – zbuduj coś, co wygląda i działa. – Twoje spawanie bram będą służyć latami.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta. W Choszcznie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Skontaktuj się – zbuduj coś, co wygląda i działa. – Twoja nowoczesna brama będziesłużyć latami.",
     "cta": "Zarezerwuj swój termin dziś!",
     "seo": {
-      "title": "Spawanie bram – Choszczno | Innowacyjne rozwiązania spawalnicze",
-      "description": "Usługa spawanie bram w mieście Choszczno. Gwarancja estetyki i solidności. Czekamy na Twój kontakt!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Choszczno | Innowacyjne rozwiązania spawalnicze",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Choszczno. Gwarancja estetyki i solidności. Czekamy na Twój kontakt!",
       "keywords": "Stradzewo, Zwierzyn, Suliszewo, Koplin, Piasecznik, bramy przesuwne i balustrady",
    "street": "ul. Obrońców Westerplatte 5",
     "postalCode": "73-200"
@@ -1668,6 +1779,7 @@
   {
     "slugCity": "choszczno",
     "city": "Choszczno",
+"defCity":"Choszcznie",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "W Choszcznie zyskaliśmy zaufanie wielu klientów – dołącz do nich! Postaw na mocne i stylowe konstrukcje. – Twoje spawanie ogrodzeń będą służyć latami. Realizujemy zlecenia w całym Choszczno, zarówno dla klientów indywidualnych, jak i firm.",
@@ -1683,6 +1795,7 @@
   {
     "slugCity": "choszczno",
     "city": "Choszczno",
+"defCity":"Choszcznie",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Realizujemy zlecenia w całym Choszczno, zarówno dla klientów indywidualnych, jak i firm. Pokaż jakość – stwórz coś estetycznego. – Twoje spawanie konstrukcji stalowych będą służyć latami. W Choszcznie zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -1698,13 +1811,14 @@
   {
     "slugCity": "choszczno",
     "city": "Choszczno",
+"defCity":"Choszcznie",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "Realizujemy zlecenia w całym Choszczno, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Zrób to dobrze – z klasą i trwałością. – Twoje spawanie schodów stalowych będą służyć latami.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "Realizujemy zlecenia w całym Choszczno, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta. Zrób to dobrze – z klasą i trwałością. – Nasza wyjotkowa konstrukcja będzie służyć latami.",
     "cta": "Zadzwoń i poznaj szczegóły!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Choszczno | Najlepsze schody na terenie Choszczna ",
-      "description": "Usługa spawanie schodów stalowych w mieście Choszczno. Trwałość i estetyka w każdym projekcie. Zapytaj już teraz!",
+      "title": "Estetyczne konstrukcje schodowe -  Choszczno | Najlepsze schody na terenie Choszczna ",
+      "description": "Spawanie schodów stalowych w mieście Choszczno. Trwałość i estetyka w każdym projekcie. Zapytaj już teraz!",
       "keywords": "Choszczno, bramy stalowe, balustrady, konstrukcje, schody stalowe, Stalumo",
     "street": "ul. Krótka 2",
     "postalCode": "73-200"
@@ -1713,13 +1827,14 @@
   {
     "slugCity": "barlinek",
     "city": "Barlinek",
+"defCity":"Barlinku",
     "service_slug": "barierki",
-    "service_name": "Spawanie barierek",
-    "description": "Zobacz, jak wygląda solidność. – Twoje spawanie barierek będą służyć latami. Realizujemy zlecenia w całym Barlinek, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie spawanie barierek sprawia, że jesteśmy liderem w regionie.",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Zobacz, jak wygląda solidność. – Twoje barierki firmy Stalumo będą służyć latami. Realizujemy zlecenia w całym Barlinek, zarówno dla klientów indywidualnych, jak i firm. Nasze doświadczenie w zakresie  tworzenia projektowania i montażu sprawia, że jesteśmy liderem w regionie.",
     "cta": "Zadzwoń i odkryj możliwości!",
     "seo": {
-      "title": "Spawanie barierek – Barlinek | Nowoczesne barierki wraz z jakością wykonania",
-      "description": "Usługa spawanie barierek w mieście Barlinek. Zapewniamy jakość i terminowość. Skontaktuj się z nami!",
+      "title": "Barierki stalowe na wymiar - Barlinek | Nowoczesne barierki wraz z jakością wykonania",
+      "description": "Usługa projektowania wraz produkcją i montażem barierek barierek w mieście Barlinek. Zapewniamy jakość i terminowość. Skontaktuj się z nami!",
       "keywords": "Mostkowo, Lutówko, Dzikowo, Krzynka, Równo – balustrady stalowe Barlinek",
     "street": "ul. Różana 3",
     "postalCode": "74-320"
@@ -1728,6 +1843,7 @@
   {
     "slugCity": "barlinek",
     "city": "Barlinek",
+"defCity":"Barlinku",
     "service_slug": "balustrady",
     "service_name": "Spawanie balustrad",
     "description": "Przekonaj się, że trwałość może być piękna. – Twoje spawanie balustrad będą służyć latami. Realizujemy zlecenia w całym Barlinek, zarówno dla klientów indywidualnych, jak i firm. W Barlinku zyskaliśmy zaufanie wielu klientów – dołącz do nich!",
@@ -1743,13 +1859,14 @@
   {
     "slugCity": "barlinek",
     "city": "Barlinek",
+"defCity":"Barlinku",
     "service_slug": "bramy",
-    "service_name": "Spawanie bram",
-    "description": "W Barlinku zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie bram sprawia, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując spawanie bram do potrzeb klienta.",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "W Barlinku zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w w zakresie tworzenia bram, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując nasze bramy do potrzeb klienta.",
     "cta": "Skorzystaj z wyceny teraz!",
     "seo": {
-      "title": "Spawanie bram – Barlinek | Bramy otwierane za pomoca telefonu",
-      "description": "Usługa spawanie bram w mieście Barlinek. Gwarantujemy solidność i szybkie wykonanie. Zadzwoń już dziś!",
+      "title": "Kompleksowa realizacja bram stalowych na wymiar – Barlinek | Bramy otwierane za pomoca telefonu",
+      "description": "Kompleksowa realizacja bram stalowych na wymiar w mieście Barlinek. Gwarantujemy solidność i szybkie wykonanie. Zadzwoń już dziś!",
       "keywords": "Osina, Pełczyce, Danków, Strąpie, Rychnówko – bramy i konstrukcje metalowe",
     "street": "ul. Sądowa 5",
     "postalCode": "74-320"
@@ -1758,6 +1875,7 @@
   {
     "slugCity": "barlinek",
     "city": "Barlinek",
+"defCity":"Barlinku",
     "service_slug": "ogrodzenia",
     "service_name": "Spawanie ogrodzeń",
     "description": "Twoje projekty zasługują na więcej niż trwałość. – Twoje spawanie ogrodzeń będą służyć latami. Realizujemy zlecenia w całym Barlinek, zarówno dla klientów indywidualnych, jak i firm. Każdy projekt traktujemy indywidualnie, dostosowując spawanie ogrodzeń do potrzeb klienta.",
@@ -1773,6 +1891,7 @@
   {
     "slugCity": "barlinek",
     "city": "Barlinek",
+"defCity":"Barlinku",
     "service_slug": "konstrukcje-stalowe",
     "service_name": "Spawanie konstrukcji stalowych",
     "description": "Czas na jakość, która wygląda dobrze. – Twoje spawanie konstrukcji stalowych będą służyć latami. W Barlinku zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie konstrukcji stalowych sprawia, że jesteśmy liderem w regionie.",
@@ -1788,13 +1907,14 @@
   {
     "slugCity": "barlinek",
     "city": "Barlinek",
+"defCity":"Barlinku",
     "service_slug": "schody",
-    "service_name": "Spawanie schodów stalowych",
-    "description": "W Barlinku zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawanie schodów stalowych sprawia, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta.",
+    "service_name": "Relizacja konstrukcji stalowych dla schodów",
+    "description": "W Barlinku zyskaliśmy zaufanie wielu klientów – dołącz do nich! Nasze doświadczenie w zakresie spawania schodów stalowych sprawia, że jesteśmy liderem w regionie. Każdy projekt traktujemy indywidualnie, dostosowując spawanie schodów stalowych do potrzeb klienta.",
     "cta": "Zapytaj o wycenę już dziś!",
     "seo": {
-      "title": "Spawanie schodów stalowych – Barlinek | Innowacyjne konstrukcje schodowe.",
-      "description": "Usługa spawanie schodów stalowych w mieście Barlinek. Trwałość i terminowa realizacja. Czekamy na Twój kontakt!",
+      "title": "Estetyczne konstrukcje schodowe -  Barlinek | Innowacyjne konstrukcje schodowe.",
+      "description": "Spawanie schodów stalowych w mieście Barlinek. Trwałość i terminowa realizacja. Czekamy na Twój kontakt!",
       "keywords": "Barlinek, nowoczesne balustrady, ogrodzenia stalowe, trwałość, Stalumo",
     "street": "ul. Szpitalna 4",
     "postalCode": "74-320"
