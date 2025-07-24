@@ -14,6 +14,8 @@ type ServiceEntry = {
     title: string;
     description: string;
     keywords: string;
+    postalCode: string;
+    street: string;
   };
 };
 
@@ -80,7 +82,30 @@ export default function Page({ params }: any) {
 
   if (!entry) notFound(); // 🔴 Ważne: 404 jeśli brak danych
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Stalumo",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Kolejowa 6",
+      "addressLocality": "Drawno",
+      "postalCode": "73-220",
+      "addressCountry": "PL"
+    },
+    telephone: "+48 784-532-549",
+ "areaServed": [
+  {
+    "@type": "City",
+    "name": entry.city
+  },
+  entry?.seo.postalCode
+],
+    "url": `https://stalumo.com/pl/${slug}~${city}`
+  };
+
   return (
+    
     <section className="max-w-[1280px] mx-auto px-4 py-24 flex flex-col gap-16">
     <div className="bg-gradient-to-r from-[#EB4036] to-[#9e1c12] rounded-xl p-10 text-white flex flex-col items-start gap-4 shadow-xl mt-20">
     <h2 className="text-[2.5rem] font-semibold uppercase max-lg:text-[1.8rem]">    {entry.city} {entry.service_name}</h2>
@@ -94,6 +119,10 @@ export default function Page({ params }: any) {
            {entry.cta}
         </Link>
   </div>
+  <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
   </section>
   );
 }
