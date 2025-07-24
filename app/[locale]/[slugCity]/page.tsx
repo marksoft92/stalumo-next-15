@@ -99,6 +99,7 @@ export default function Page({ params }: any) {
     "@type": "City",
     "name": entry.city
   },
+  { "@type": "AdministrativeArea", "name": "Zachodniopomorskie" },
   entry?.seo.postalCode
 ],
     "url": `https://stalumo.com/pl/${slug}~${city}`
