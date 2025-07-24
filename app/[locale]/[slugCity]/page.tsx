@@ -95,6 +95,7 @@ export default function Page({ params }: any) {
     },
     "@id": "https://stalumo.com#stalumo",
     telephone: "+48 784-532-549",
+    "priceRange": "500–10000 PLN",
     "hasMap": "https://www.google.com/maps/place/ul.+Kolejowa+6,+73-220+Drawno",
     "description": "Stalumo oferuje profesjonalne usługi spawania i montażu bram,ogrodzeń,balustrad i inych konstrukcji stalowych. Gwarantujemy jakość, terminowość i lokalną obsługę.",
     "image": "https://stalumo.com/assets/images/stalumo.png",
