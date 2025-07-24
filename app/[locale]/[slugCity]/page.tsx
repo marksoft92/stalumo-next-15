@@ -93,7 +93,25 @@ export default function Page({ params }: any) {
       "postalCode": "73-220",
       "addressCountry": "PL"
     },
+    "@id": "https://stalumo.com#stalumo",
     telephone: "+48 784-532-549",
+    "hasMap": "https://www.google.com/maps/place/ul.+Kolejowa+6,+73-220+Drawno",
+    "description": "Stalumo oferuje profesjonalne usługi spawania i montażu bram,ogrodzeń,balustrad i inych konstrukcji stalowych. Gwarantujemy jakość, terminowość i lokalną obsługę.",
+    "image": "https://stalumo.com/assets/images/stalumo.png",
+    "openingHoursSpecification": [
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "08:00",
+    "closes": "18:00"
+  }
+],
  "areaServed": [
   {
     "@type": "City",
