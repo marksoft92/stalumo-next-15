@@ -98,9 +98,9 @@ const FAQ = () => {
           ))}
         </div>
       </div>
-      
+
     </div>
-          <div className="bg-gradient-to-r from-[#EB4036] to-[#9e1c12] rounded-xl p-10 text-white flex flex-col items-start gap-4 shadow-xl mt-20">
+    {/* <div className="bg-gradient-to-r from-[#EB4036] to-[#9e1c12] rounded-xl p-10 text-white flex flex-col items-start gap-4 shadow-xl mt-20">
           <h2 className="text-[2.5rem] font-semibold uppercase max-lg:text-[1.8rem]">{t("ctaTitle")}</h2>
           <p className="text-lg font-raleway leading-[2rem]">
           {t("contactDescription")}
@@ -111,8 +111,8 @@ const FAQ = () => {
               >
                 {t("cta")}
               </Link>
-        </div>
-    </>
+        </div> */}
+  </>
   );
 };
 

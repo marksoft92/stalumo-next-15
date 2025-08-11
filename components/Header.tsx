@@ -14,7 +14,7 @@ export default async function NavBar() {
 
   const navLinks: NavLink[] = [
     { href: "/", label: t("home") },
-    { href: "/offer", label: t("offer") },
+    // { href: "/offer", label: t("offer") },
     { href: "/contact", label: t("contact") },
     { href: "/gallery", label: t("gallery") },
     { href: "/about", label: t("about") },

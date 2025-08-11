@@ -42,31 +42,31 @@ export default function GalleryPage() {
   }, []);
 
   return (
-<>
-    <Container>
-      <PerformanceSlider images={imagesSlider} maxHeight={"500px"} />
-      <div>
-        <div className="flex flex-col items-center relative min-h-[500px] justify-center">
-          <h2 className="text-[6rem] font-semibold uppercase">{t("title")}</h2>
-          <h3>
-            <Link
-              className="text-[1.6rem] font-semibold uppercase text-[#EB4036]"
-              href="/"
-            >
-              {t("homeTitle")}
-            </Link>
-            <span className="text-[1.6rem] font-semibold uppercase ">
-              /{t("title")}
-            </span>
-          </h3>
+    <>
+      <Container>
+        <PerformanceSlider images={imagesSlider} maxHeight={"500px"} />
+        <div>
+          <div className="flex flex-col items-center relative min-h-[500px] justify-center">
+            <h2 className="text-[6rem] font-semibold uppercase">{t("title")}</h2>
+            <h3>
+              <Link
+                className="text-[1.6rem] font-semibold uppercase text-[#EB4036]"
+                href="/"
+              >
+                {t("homeTitle")}
+              </Link>
+              <span className="text-[1.6rem] font-semibold uppercase ">
+                /{t("title")}
+              </span>
+            </h3>
+          </div>
+          <section className="grid grid-cols-3 gap-5 my-10 max-lg:flex max-lg:flex-col max-lg:items-center">
+            {images.map((image, index) => (
+              <BoxImg key={index} url={image?.url} alt={image?.alt} images={images} index={index} />
+            ))}
+          </section>
         </div>
-        <section className="grid grid-cols-3 gap-5 my-10 max-lg:flex max-lg:flex-col max-lg:items-center">
-          {images.map((image, index) => (
-            <BoxImg key={index} url={image?.url} alt={image?.alt} images={images} index={index} />
-          ))}
-        </section>
-      </div>
-      <div className="bg-gradient-to-r from-[#EB4036] to-[#9e1c12] rounded-xl p-10 text-white flex flex-col items-start gap-4 shadow-xl mt-20">
+        {/* <div className="bg-gradient-to-r from-[#EB4036] to-[#9e1c12] rounded-xl p-10 text-white flex flex-col items-start gap-4 shadow-xl mt-20">
     <h2 className="text-[2.5rem] font-semibold uppercase max-lg:text-[1.8rem]">{t("ctaTitle")}</h2>
     <p className="text-lg font-raleway leading-[2rem]">
     {t("contactDescription")}
@@ -77,8 +77,8 @@ export default function GalleryPage() {
         >
           {t("cta")}
         </Link>
-  </div>
-    </Container>
-</>
+  </div> */}
+      </Container>
+    </>
   );
 }
