@@ -15,7 +15,7 @@ export async function generateMetadata({
       keywords:
         "steel gallery, metalwork projects, custom steel railings, gates inspiration, Stalumo portfolio",
       url: "https://stalumo.com/en/gallery",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
     pl: {
       title: "Galeria | Stalumo - Realizacje Balustrad, Bram i Konstrukcji",
@@ -24,7 +24,7 @@ export async function generateMetadata({
       keywords:
         "galeria stalumo, realizacje stalowe, projekty balustrad, bramy stalowe, portfolio konstrukcji stalowych",
       url: "https://stalumo.com/pl/projekty",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
     de: {
       title: "Galerie | Stalumo - Maßgeschneiderte Stahlprojekte & Inspiration",
@@ -33,7 +33,7 @@ export async function generateMetadata({
       keywords:
         "Stahl Galerie, Metallarbeiten Projekte, maßgefertigte Geländer, Tore Inspiration, Stalumo Referenzen",
       url: "https://stalumo.com/de/projekte",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
   };
 

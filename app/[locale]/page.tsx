@@ -24,7 +24,7 @@ export async function generateMetadata({
         keywords:
           "steel railings, gates, steel constructions, custom steel designs, railings, metal work",
         url: "https://stalumo.com/en",
-        image: "https://stalumo.com/assets/images/logo.png",
+        image: "https://stalumo.com/assets/images/og.png",
       },
       pl: {
         title: "Balustrady, Bramy i Konstrukcje Stalowe na Zamówienie",
@@ -32,7 +32,7 @@ export async function generateMetadata({
         keywords:
           "balustrady stalowe, bramy stalowe, konstrukcje stalowe, ogrodzenia stalowe, stalowe na zamówienie",
         url: "https://stalumo.com/pl",
-        image: "https://stalumo.com/assets/images/logo.png",
+        image: "https://stalumo.com/assets/images/og.png",
       },
       de: {
         title: "Stahlgeländer, Tore & Maßgefertigte Metallkonstruktionen",
@@ -40,7 +40,7 @@ export async function generateMetadata({
         keywords:
           "stahlgeländer, toren, stahlkonstruktionen, maßgefertigte stahlkonstruktionen",
         url: "https://stalumo.com/de",
-        image: "https://stalumo.com/assets/images/logo.png",
+        image: "https://stalumo.com/assets/images/og.png",
       },
     };
   

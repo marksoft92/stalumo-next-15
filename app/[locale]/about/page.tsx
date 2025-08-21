@@ -20,7 +20,7 @@ export async function generateMetadata({
       keywords:
         "about Stalumo, custom steel company, steelwork team, metalwork experience, steel craftsmanship",
       url: "https://stalumo.com/en/about-us",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
     pl: {
       title: "O Nas | Stalumo - Specjaliści od Stali i Konstrukcji",
@@ -29,7 +29,7 @@ export async function generateMetadata({
       keywords:
         "o nas stalumo, firma stalowa, konstrukcje stalowe, balustrady stalowe, doświadczenie w metaloplastyce",
       url: "https://stalumo.com/pl/o-nas",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
     de: {
       title: "Über Uns | Stalumo - Maßgeschneiderte Stahl- und Metalllösungen",
@@ -38,7 +38,7 @@ export async function generateMetadata({
       keywords:
         "über Stalumo, stahlbau unternehmen, metallarbeiten team, maßgefertigte lösungen, stahl konstruktionen",
       url: "https://stalumo.com/de/uber-uns",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
   };
 

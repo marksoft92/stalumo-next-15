@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: {
       keywords:
         "custom steel railings, steel fences, metal gates, welded structures, metalwork offer, steel fabrication, custom metal products, Stalumo",
       url: "https://stalumo.com/en/offer",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
     pl: {
       title: "Oferta | Stalumo - Balustrady, Ogrodzenia i Konstrukcje Stalowe",
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: {
       keywords:
         "balustrady stalowe, ogrodzenia metalowe, bramy stalowe, konstrukcje spawane, wyroby ze stali, oferta metaloplastyki, konstrukcje na zamówienie, Stalumo",
       url: "https://stalumo.com/pl/offer",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
     de: {
       title: "Angebot | Stalumo - Maßgefertigte Geländer, Zäune und Stahltore",
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: {
       keywords:
         "Stahlgeländer, Metallzäune, maßgefertigte Tore, geschweißte Konstruktionen, Metallbau, individuelle Metallprodukte, Metallbearbeitung, Stalumo",
       url: "https://stalumo.com/de/offer",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
   };
   

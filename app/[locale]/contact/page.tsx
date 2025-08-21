@@ -15,7 +15,7 @@ export async function generateMetadata({
       keywords:
         "contact Stalumo, steel railing contact, metalwork inquiry, custom steel gates, steel consultation",
       url: "https://stalumo.com/en/contact",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
     pl: {
       title: "Kontakt ze Stalumo | Balustrady, Bramy i Konstrukcje Stalowe",
@@ -24,7 +24,7 @@ export async function generateMetadata({
       keywords:
         "kontakt stalumo, balustrady kontakt, bramy stalowe kontakt, stalowe konstrukcje zapytanie, oferta stalowa",
       url: "https://stalumo.com/pl/kontakt",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
     de: {
       title: "Kontakt Stalumo | Maßgefertigte Stahlgeländer & Metallarbeiten",
@@ -33,7 +33,7 @@ export async function generateMetadata({
       keywords:
         "kontakt Stalumo, stahlgeländer anfrage, metallarbeiten kontakt, maßgefertigte stahlkonstruktionen, tor kontakt",
       url: "https://stalumo.com/de/kontaktiere-mich",
-      image: "https://stalumo.com/assets/images/logo.png",
+      image: "https://stalumo.com/assets/images/og.png",
     },
   };
 

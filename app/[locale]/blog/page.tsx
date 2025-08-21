@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
       type: "website",
       images: [
         {
-          url: "https://stalumo.com/assets/images/logo.png", // lub dedykowana grafika dla bloga
+          url: "https://stalumo.com/assets/images/og.png", // lub dedykowana grafika dla bloga
           width: 1200,
           height: 630,
           alt: t("title"),

@@ -6,7 +6,7 @@ export const StructuredData = ({ locale }: { locale: any }) => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Stalumo",
-    image: "https://stalumo.com/assets/images/logo.png",
+    image: "https://stalumo.com/assets/images/og.png",
     "@id": baseUrl,
     url: baseUrl,
     telephone: "+48 784-532-549",
