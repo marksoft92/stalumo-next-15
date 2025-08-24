@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import ProductBox from "./product";
 import { headers } from "next/headers";
 
-const fetchPosts = async (locale: any,slug: any) => {
+const fetchPosts = async (locale: any, slug: any) => {
   const headersList = await headers();
   const host = headersList.get("host");
   const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
@@ -34,14 +34,16 @@ const ProductPage = async ({ params }: { params: any }) => {
   const slug = params.slug;
   const locale = params.locale
 
-  const productData = await fetchPosts(locale,slug);
+  const productData = await fetchPosts(locale, slug);
 
 
   if (!productData) {
     notFound();
   }
 
-  return <ProductBox data={productData} />;
+  return <ProductBox
+    productData={productData}
+  />;
 };
 
 export default ProductPage;

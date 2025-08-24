@@ -67,17 +67,28 @@
             "Wysyłka w 24h",
             "Gwarancja 24 miesiące"
           ],
+
           "reviews": {
-            "rating": 5,
-            "reviewCount": 14,
+            "rating": 4.8,
+            "reviewCount": 127,
             "reviewsList": [
               {
-                "name": "Adam K.",
-                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja."
+                "name": "Adam Kowalski",
+                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja i równomierne grillowanie.",
+                "rating": 5,
+                "date": "15.08.2024"
               },
               {
-                "name": "Marta P.",
-                "content": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam!"
+                "name": "Marta Przybylska",
+                "tconent": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam wszystkim miłośnikom grillowania!",
+                "rating": 5,
+                "date": "12.08.2024"
+              },
+              {
+                "name": "Tomasz Nowak",
+                "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
+                "rating": 4,
+                "date": "08.08.2024"
               }
             ]
           },
@@ -153,17 +164,28 @@
             "Shipping within 24h",
             "24-month warranty"
           ],
+  
           "reviews": {
-            "rating": 5,
-            "reviewCount": 14,
+            "rating": 4.8,
+            "reviewCount": 127,
             "reviewsList": [
               {
-                "name": "John D.",
-                "content": "Great quality, works perfectly for every party. Solid build."
+                "name": "Adam Kowalski",
+                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja i równomierne grillowanie.",
+                "rating": 5,
+                "date": "15.08.2024"
               },
               {
-                "name": "Emily S.",
-                "content": "Nice look and easy to use. Steel is indeed weatherproof. Recommended!"
+                "name": "Marta Przybylska",
+                "tconent": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam wszystkim miłośnikom grillowania!",
+                "rating": 5,
+                "date": "12.08.2024"
+              },
+              {
+                "name": "Tomasz Nowak",
+                "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
+                "rating": 4,
+                "date": "08.08.2024"
               }
             ]
           },
@@ -235,17 +257,28 @@
             "Versand innerhalb von 24h",
             "24 Monate Garantie"
           ],
+
           "reviews": {
-            "rating": 5,
-            "reviewCount": 14,
+            "rating": 4.8,
+            "reviewCount": 127,
             "reviewsList": [
               {
-                "name": "Thomas M.",
-                "content": "Top Qualität, perfekt für jede Gartenparty. Sehr stabil."
+                "name": "Adam Kowalski",
+                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja i równomierne grillowanie.",
+                "rating": 5,
+                "date": "15.08.2024"
               },
               {
-                "name": "Lisa K.",
-                "content": "Sieht gut aus und ist einfach zu bedienen. Wirklich wetterfest. Sehr zu empfehlen!"
+                "name": "Marta Przybylska",
+                "tconent": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam wszystkim miłośnikom grillowania!",
+                "rating": 5,
+                "date": "12.08.2024"
+              },
+              {
+                "name": "Tomasz Nowak",
+                "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
+                "rating": 4,
+                "date": "08.08.2024"
               }
             ]
           },
@@ -341,17 +374,29 @@
             "Wysyłka w 24h",
             "Gwarancja 24 miesiące"
           ],
+
+
           "reviews": {
-            "rating": 5,
-            "reviewCount": 14,
+            "rating": 4.8,
+            "reviewCount": 127,
             "reviewsList": [
               {
-                "name": "Adam K.",
-                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja."
+                "name": "Adam Kowalski",
+                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja i równomierne grillowanie.",
+                "rating": 5,
+                "date": "15.08.2024"
               },
               {
-                "name": "Marta P.",
-                "content": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam!"
+                "name": "Marta Przybylska",
+                "tconent": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam wszystkim miłośnikom grillowania!",
+                "rating": 5,
+                "date": "12.08.2024"
+              },
+              {
+                "name": "Tomasz Nowak",
+                "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
+                "rating": 4,
+                "date": "08.08.2024"
               }
             ]
           },
@@ -427,17 +472,28 @@
             "Shipping within 24h",
             "24-month warranty"
           ],
+
           "reviews": {
-            "rating": 5,
-            "reviewCount": 14,
+            "rating": 4.8,
+            "reviewCount": 127,
             "reviewsList": [
               {
-                "name": "John D.",
-                "content": "Great quality, works perfectly for every party. Solid build."
+                "name": "Adam Kowalski",
+                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja i równomierne grillowanie.",
+                "rating": 5,
+                "date": "15.08.2024"
               },
               {
-                "name": "Emily S.",
-                "content": "Nice look and easy to use. Steel is indeed weatherproof. Recommended!"
+                "name": "Marta Przybylska",
+                "tconent": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam wszystkim miłośnikom grillowania!",
+                "rating": 5,
+                "date": "12.08.2024"
+              },
+              {
+                "name": "Tomasz Nowak",
+                "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
+                "rating": 4,
+                "date": "08.08.2024"
               }
             ]
           },
@@ -509,17 +565,28 @@
             "Versand innerhalb von 24h",
             "24 Monate Garantie"
           ],
+
           "reviews": {
-            "rating": 5,
-            "reviewCount": 14,
+            "rating": 4.8,
+            "reviewCount": 127,
             "reviewsList": [
               {
-                "name": "Thomas M.",
-                "content": "Top Qualität, perfekt für jede Gartenparty. Sehr stabil."
+                "name": "Adam Kowalski",
+                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja i równomierne grillowanie.",
+                "rating": 5,
+                "date": "15.08.2024"
               },
               {
-                "name": "Lisa K.",
-                "content": "Sieht gut aus und ist einfach zu bedienen. Wirklich wetterfest. Sehr zu empfehlen!"
+                "name": "Marta Przybylska",
+                "tconent": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam wszystkim miłośnikom grillowania!",
+                "rating": 5,
+                "date": "12.08.2024"
+              },
+              {
+                "name": "Tomasz Nowak",
+                "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
+                "rating": 4,
+                "date": "08.08.2024"
               }
             ]
           },
