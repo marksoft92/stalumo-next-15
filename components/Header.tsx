@@ -22,7 +22,7 @@ export default async function NavBar() {
   ];
 
   return (
-    <div className="flex justify-between items-center max-w-full sticky top-0 z-10 w-full bg-[#121212]">
+    <div className="flex justify-between items-center max-w-full sticky top-0 z-10 w-full bg-[#121212] z-50">
       <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px] sticky top-0 z-10 w-full bg-[#121212]">
         <Link href="/">
           <Image
