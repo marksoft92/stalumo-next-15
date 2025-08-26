@@ -214,7 +214,7 @@ export default async function Footer(locale: any) {
             {[
               { number: "500+", text: `${t("happyClients")}` },
               { number: "10+", text: `${t("experienceYears")}` },
-              { number: "98%", text: `${t("experienceYears")}` },
+              { number: "98%", text: `${t("projectsOnTime")}` },
               { number: "5.0★", text: `${t("averageRating")}` }
             ].map((stat, index) => (
               <motion.div
