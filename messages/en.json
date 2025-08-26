@@ -190,6 +190,18 @@
 
   },
   "Contact": {
+    "formTitle":"Send us a message",
+    "formSubtitle":"We'll get back to you within 24 hours",
+    "feature1Title":"Quick Response",
+    "feature2Title":"Secure & Private",
+    "feature3Title":"Expert Consultation",
+    "feature1Desc":"We respond within 24 hours",
+    "feature2Desc":"Your data is protected",
+    "feature3Desc":"Professional advice included",
+    "trustTitle":"Trusted by",
+    "clients":"Clients",
+    "years":"Years",
+    "rating":"Rating",
     "title": "Contact Us",
     "homeTitle": "Home",
     "description": "Got a project in mind? Reach out to us via the contact form, and we'll respond as soon as possible. We're happy to assist you in bringing your idea to life, ensuring expert help and top-quality execution. We look forward to your questions and suggestions – together, we’ll create something exceptional!",

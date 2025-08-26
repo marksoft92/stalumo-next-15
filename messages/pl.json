@@ -190,6 +190,18 @@
  
   },
   "Contact": {
+    "formTitle": "Wyślij nam wiadomość",
+    "formSubtitle": "Odpowiemy w ciągu 24 godzin",
+    "feature1Title": "Szybka odpowiedź",
+    "feature2Title": "Bezpiecznie i prywatnie",
+    "feature3Title": "Konsultacja ekspercka",
+    "feature1Desc": "Odpowiadamy w ciągu 24 godzin",
+    "feature2Desc": "Twoje dane są chronione",
+    "feature3Desc": "Profesjonalna porada w cenie",
+    "trustTitle": "Zaufali nam",
+    "clients": "Klienci",
+    "years": "Lata",
+    "rating": "Ocena",
     "title": "Skontaktuj się z nami",
     "homeTitle": "Strona główna",
     "description": "Masz projekt na myśli? Skontaktuj się z nami przez formularz kontaktowy, a my odpowiemy jak najszybciej. Z przyjemnością pomożemy Ci w realizacji Twojego pomysłu, zapewniając fachową pomoc i najwyższą jakość wykonania. Czekamy na Twoje pytania i propozycje – razem stworzymy coś wyjątkowego!",
