@@ -84,15 +84,14 @@ export default async function Footer(locale: any) {
               </div>
               
               <p className="text-[#A5A5A5] leading-relaxed">
-                Wiodąca firma spawalnicza w województwie zachodniopomorskim. 
-                Specjalizujemy się w konstrukcjach stalowych najwyższej jakości.
+              {t("description")}
               </p>
 
               {/* Trust Indicators */}
               <div className="flex items-center gap-4">
                 {[
-                  { icon: Shield, text: "Certyfikowany" },
-                  { icon: Award, text: "10+ lat" },
+                  { icon: Shield, text: `${t("certified")}` },
+                  { icon: Award, text: `10+ ${t("years")}` },
                   { icon: Star, text: "5.0★" }
                 ].map((indicator, index) => (
                   <div key={index} className="flex items-center gap-2 text-sm">
@@ -134,7 +133,7 @@ export default async function Footer(locale: any) {
                     73-220 Drawno, Poland
                   </p>
                   <div className="flex items-center gap-2 mt-3 text-[#EB4036] text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span>Zobacz na mapie</span>
+                    <span>{t("see_on_map")}</span>
                     <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                   </div>
                 </Link>
@@ -162,10 +161,10 @@ export default async function Footer(locale: any) {
                     {emailObfuscation}
                   </h2>
                   <p className="text-[#A5A5A5] text-sm mb-3">
-                    Napisz do nas
+                   
                   </p>
                   <div className="flex items-center gap-2 text-[#EB4036] text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span>Wyślij wiadomość</span>
+                    <span>{t("send_message")}</span>
                     <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                   </div>
                 </Link>
@@ -195,11 +194,11 @@ export default async function Footer(locale: any) {
                   <div className="flex items-center gap-2 mb-3">
                     <Clock className="w-4 h-4 text-[#A5A5A5]" />
                     <p className="text-[#A5A5A5] text-sm">
-                      Pn-Pt: 8:00-18:00
+                    {t("time_range")}
                     </p>
                   </div>
                   <div className="flex items-center gap-2 text-[#EB4036] text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span>Zadzwoń teraz</span>
+                    <span>{t("call_now")}</span>
                     <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                   </div>
                 </Link>
@@ -213,10 +212,10 @@ export default async function Footer(locale: any) {
             variants={fadeInUp}
           >
             {[
-              { number: "500+", text: "Zadowolonych klientów" },
-              { number: "10+", text: "Lat doświadczenia" },
-              { number: "98%", text: "Projektów na czas" },
-              { number: "5.0★", text: "Średnia ocen" }
+              { number: "500+", text: `${t("happyClients")}` },
+              { number: "10+", text: `${t("experienceYears")}` },
+              { number: "98%", text: `${t("experienceYears")}` },
+              { number: "5.0★", text: `${t("averageRating")}` }
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -241,60 +240,78 @@ export default async function Footer(locale: any) {
             <motion.div variants={fadeInUp}>
               <h3 className="text-white font-bold text-lg mb-4 flex items-center gap-2">
                 <Building2 className="w-5 h-5 text-[#EB4036]" />
-                Nasze usługi
+                {t("ourServices")}
               </h3>
               <div className="space-y-3">
-                {[
-                  "Barierki stalowe",
-                  "Balustrady schodowe", 
-                  "Ogrodzenia metalowe",
-                  "Konstrukcje stalowe"
-                ].map((service, index) => (
-                  <div key={index} className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
+       
+                  <div  className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
                     <ChevronRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-1 transition-transform" />
-                    <span className="text-sm">{service}</span>
+                    <span className="text-sm">{t("steelRailings")}</span>
                   </div>
-                ))}
+                  <div className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
+                    <ChevronRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-1 transition-transform" />
+                    <span className="text-sm">{t("stairRailings")}</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
+                    <ChevronRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-1 transition-transform" />
+                    <span className="text-sm">{t("metalFences")}</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
+                    <ChevronRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-1 transition-transform" />
+                    <span className="text-sm">{t("steelStructures")}</span>
+                  </div>
+                
               </div>
             </motion.div>
 
             <motion.div variants={fadeInUp}>
               <h3 className="text-white font-bold text-lg mb-4 flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-[#EB4036]" />
-                Obszar działania
+                {t("serviceArea")}
               </h3>
               <div className="space-y-3">
-                {[
-                  "Szczecin i okolice",
-                  "Koszalin", 
-                  "Stargard",
-                  "Całe woj. zachodniopomorskie"
-                ].map((area, index) => (
-                  <div key={index} className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
+              <div  className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
                     <ChevronRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-1 transition-transform" />
-                    <span className="text-sm">{area}</span>
+                    <span className="text-sm">{t("poland")}</span>
                   </div>
-                ))}
+                  <div  className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
+                    <ChevronRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-1 transition-transform" />
+                    <span className="text-sm">{t("germany")}</span>
+                  </div>
+                  <div  className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
+                    <ChevronRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-1 transition-transform" />
+                    <span className="text-sm">{t("netherlands")}</span>
+                  </div>
+
+
               </div>
             </motion.div>
 
             <motion.div variants={fadeInUp}>
               <h3 className="text-white font-bold text-lg mb-4 flex items-center gap-2">
                 <Shield className="w-5 h-5 text-[#EB4036]" />
-                Certyfikaty
+                {t("certified")}
               </h3>
               <div className="space-y-3">
-                {[
-                  "PN-EN ISO 3834",
-                  "Uprawnienia spawalnicze",
-                  "Certyfikat jakości",
-                  "Ubezpieczenie OC"
-                ].map((cert, index) => (
-                  <div key={index} className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
+
+
+                  <div className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
                     <ChevronRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-1 transition-transform" />
-                    <span className="text-sm">{cert}</span>
+                    <span className="text-sm">PN-EN ISO 3834</span>
                   </div>
-                ))}
+                       <div className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
+                       <ChevronRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-1 transition-transform" />
+                       <span className="text-sm">{t("weldingLicenses")}</span>
+                     </div>
+                          <div className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
+                          <ChevronRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-1 transition-transform" />
+                          <span className="text-sm">{t("qualityCertificate")}</span>
+                        </div>
+                             <div className="flex items-center gap-3 text-[#A5A5A5] hover:text-white transition-colors cursor-pointer group">
+                             <ChevronRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-1 transition-transform" />
+                             <span className="text-sm">{t("insurance")}</span>
+                           </div>
+               
               </div>
             </motion.div>
           </motion.div>

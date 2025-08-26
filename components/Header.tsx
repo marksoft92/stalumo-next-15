@@ -96,7 +96,7 @@ export default  function NavBar() {
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
-                <span className="font-medium">Pn-Pt: 8:00-18:00</span>
+                <span className="font-medium">{t("time_range")}</span>
               </div>
             </motion.div>
 
@@ -111,11 +111,11 @@ export default  function NavBar() {
               </div>
               <div className="flex items-center gap-2">
                 <Award className="w-4 h-4" />
-                <span className="font-medium">10+ lat</span>
+                <span className="font-medium">10+ {t("years")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Shield className="w-4 h-4" />
-                <span className="font-medium">Certyfikowany</span>
+                <span className="font-medium">{t("certified")}</span>
               </div>
             </motion.div>
           </motion.div>
