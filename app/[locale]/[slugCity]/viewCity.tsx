@@ -239,22 +239,7 @@ export default function Page({ entry }: any) {
   return (
     <>
       {/* Floating Action Button */}
-      <motion.div
-        className="fixed bottom-8 right-8 z-50"
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ delay: 1, type: "spring", stiffness: 300 }}
-      >
-        <Link
-          href="/contact"
-          className="bg-[#EB4036] text-white p-4 rounded-full shadow-2xl hover:bg-[#d63428] transition-all duration-300 flex items-center gap-2 group"
-        >
-          <Phone className="w-6 h-6" />
-          <span className="hidden group-hover:inline-block whitespace-nowrap pr-2 font-medium">
-            Zadzwoń teraz!
-          </span>
-        </Link>
-      </motion.div>
+      
 
       <div className="min-h-screen bg-gradient-to-br from-[#0A0A0A] via-[#111111] to-[#1A1A1A]">
 
@@ -659,22 +644,7 @@ export default function Page({ entry }: any) {
               </div>
 
               {/* Floating Card */}
-              <motion.div
-                className="absolute -top-6 -right-6 bg-[#EB4036] p-6 rounded-xl shadow-2xl"
-                animate={{
-                  y: [0, -10, 0],
-                  rotate: [0, 2, 0]
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }}
-              >
-                <Award className="w-8 h-8 text-white mb-2" />
-                <div className="text-white font-bold">10+ lat</div>
-                <div className="text-white text-sm opacity-90">doświadczenia</div>
-              </motion.div>
+              
             </motion.div>
           </motion.section>
 
