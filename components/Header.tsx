@@ -38,8 +38,8 @@ const staggerContainer = {
   }
 };
 
-export default  function NavBar() {
-  const t =  useTranslations("Header");
+export default function NavBar() {
+  const t = useTranslations("Header");
 
   type NavLink = {
     href: string | any;
@@ -57,7 +57,7 @@ export default  function NavBar() {
   return (
     <>
       {/* Top Info Bar - ukryty na mobilnych */}
-      <motion.div 
+      <motion.div
         className="hidden md:block bg-gradient-to-r from-[#EB4036] to-[#d63428] text-white py-2 relative overflow-hidden"
         initial="initial"
         animate="animate"
@@ -71,14 +71,14 @@ export default  function NavBar() {
             }}
           />
         </div>
-        
+
         <div className="max-w-[1280px] mx-auto px-4 relative z-10">
-          <motion.div 
+          <motion.div
             className="flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-4 text-sm"
             variants={staggerContainer}
           >
             {/* Contact Info */}
-            <motion.div 
+            <motion.div
               className="flex flex-col sm:flex-row items-center gap-3 lg:gap-6"
               variants={fadeIn}
             >
@@ -101,7 +101,7 @@ export default  function NavBar() {
             </motion.div>
 
             {/* Trust Indicators */}
-            <motion.div 
+            <motion.div
               className="flex items-center gap-4"
               variants={fadeIn}
             >
@@ -123,7 +123,7 @@ export default  function NavBar() {
       </motion.div>
 
       {/* Main Navigation */}
-      <motion.header 
+      <motion.header
         className="sticky top-0 z-50 bg-[#121212]/95 backdrop-blur-md border-b border-[#333] shadow-2xl"
         initial="initial"
         animate="animate"
@@ -131,7 +131,7 @@ export default  function NavBar() {
       >
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#121212] via-[#1A1A1A] to-[#121212] opacity-80"></div>
-        
+
         <div className="max-w-[1280px] mx-auto px-4 py-3 md:py-4 relative z-10">
           <div className="flex justify-between items-center">
             {/* Logo */}
@@ -157,7 +157,7 @@ export default  function NavBar() {
             </motion.div>
 
             {/* Desktop Navigation */}
-            <motion.nav 
+            <motion.nav
               className="hidden lg:flex items-center"
               variants={staggerContainer}
             >
@@ -175,7 +175,7 @@ export default  function NavBar() {
                     >
                       {link.label}
                       {/* Underline effect */}
-                      <div className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-[#EB4036] group-hover:w-3/4 group-hover:left-1/8 transition-all duration-300"></div>
+                      <div className="absolute bottom-1 w-0 h-0.5 bg-[#EB4036] group-hover:w-full group-hover:left-1/8 transition-all duration-300"></div>
                     </Link>
                   </motion.div>
                 ))}
@@ -204,7 +204,7 @@ export default  function NavBar() {
                 className="hidden sm:flex items-center gap-2"
                 variants={fadeIn}
               >
-                <a 
+                <a
                   href="tel:+48784532549"
                   className="flex items-center gap-1 text-white hover:text-[#EB4036] transition-colors text-sm"
                 >
@@ -220,7 +220,7 @@ export default  function NavBar() {
               >
                 <LocaleSwitcher />
               </motion.div>
-              
+
               {/* Mobile CTA */}
               <motion.div
                 className="flex-shrink-0"
@@ -254,7 +254,7 @@ export default  function NavBar() {
       </motion.header>
 
       {/* Floating Action Buttons - Mobile Only */}
-      <motion.div 
+      <motion.div
         className="lg:hidden fixed bottom-6 right-4 z-40 flex flex-col gap-3"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
@@ -290,21 +290,21 @@ export default  function NavBar() {
       />
 
       {/* Mobile Quick Contact Bar - tylko na bardzo małych ekranach */}
-      <motion.div 
+      <motion.div
         className="sm:hidden fixed bottom-0 left-0 right-0 bg-[#121212]/95 backdrop-blur-md border-t border-[#333] z-40 p-3"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}
       >
         <div className="flex items-center justify-between gap-2">
-          <a 
+          <a
             href="tel:+48784532549"
             className="flex items-center gap-2 text-white hover:text-[#EB4036] transition-colors text-sm bg-[#1A1A1A] px-3 py-2 rounded-lg flex-1 justify-center"
           >
             <Phone className="w-4 h-4" />
             <span>Zadzwoń</span>
           </a>
-          <a 
+          <a
             href="mailto:office@stalumo.com"
             className="flex items-center gap-2 text-white hover:text-[#EB4036] transition-colors text-sm bg-[#1A1A1A] px-3 py-2 rounded-lg flex-1 justify-center"
           >
