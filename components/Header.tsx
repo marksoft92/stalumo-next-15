@@ -1,11 +1,45 @@
+"use client"
 import LocaleSwitcher from "./LocaleSwitcher";
 import { Link } from "@/i18n/routing";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import HamburgerMenu from "./ui/hamburgerMenu";
+import { motion } from "framer-motion";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  ArrowRight,
+  Building2,
+  Star,
+  Award,
+  Shield
+} from "lucide-react";
 
-export default async function NavBar() {
-  const t = await getTranslations("Header");
+// Animation variants
+const slideInDown = {
+  initial: { opacity: 0, y: -50 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6, ease: "easeOut" }
+};
+
+const fadeIn = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 0.5 }
+};
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
+
+export default  function NavBar() {
+  const t =  useTranslations("Header");
 
   type NavLink = {
     href: string | any;
@@ -14,7 +48,6 @@ export default async function NavBar() {
 
   const navLinks: NavLink[] = [
     { href: "/", label: t("home") },
-    // { href: "/offer", label: t("offer") },
     { href: "/contact", label: t("contact") },
     { href: "/gallery", label: t("gallery") },
     { href: "/about", label: t("about") },
@@ -22,32 +55,271 @@ export default async function NavBar() {
   ];
 
   return (
-    <div className="flex justify-between items-center max-w-full sticky top-0 z-10 w-full bg-[#121212] z-50">
-      <div className="flex justify-between items-center p-4 mx-auto max-w-[1280px] sticky top-0 z-10 w-full bg-[#121212]">
-        <Link href="/">
-          <Image
-            src="/assets/images/stalumo.png"
-            width={145}
-            height={113}
-            alt="Logo Stalumo"
-            loading="lazy"
+    <>
+      {/* Top Info Bar - ukryty na mobilnych */}
+      <motion.div 
+        className="hidden md:block bg-gradient-to-r from-[#EB4036] to-[#d63428] text-white py-2 relative overflow-hidden"
+        initial="initial"
+        animate="animate"
+        variants={slideInDown}
+      >
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-full h-full"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.3'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`
+            }}
           />
-        </Link>
-        <div className="max-lg:hidden">
-          {navLinks.map((link, index) => (
-            <Link
-              key={index}
-              className="uppercase font-bold text-[1rem] font-oswald px-[20px] hover:text-[#EB4036]"
-              href={link.href}
-            >
-              {link.label}
-            </Link>
-          ))}
         </div>
-        <LocaleSwitcher />
-      </div>
-      <HamburgerMenu navLinks={navLinks} />
+        
+        <div className="max-w-[1280px] mx-auto px-4 relative z-10">
+          <motion.div 
+            className="flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-4 text-sm"
+            variants={staggerContainer}
+          >
+            {/* Contact Info */}
+            <motion.div 
+              className="flex flex-col sm:flex-row items-center gap-3 lg:gap-6"
+              variants={fadeIn}
+            >
+              <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4" />
+                <a href="tel:+48784532549" className="hover:text-gray-200 transition-colors font-medium">
+                  +48 784-532-549
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4" />
+                <a href="mailto:office@stalumo.com" className="hover:text-gray-200 transition-colors font-medium">
+                  office@stalumo.com
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock className="w-4 h-4" />
+                <span className="font-medium">Pn-Pt: 8:00-18:00</span>
+              </div>
+            </motion.div>
 
-    </div>
+            {/* Trust Indicators */}
+            <motion.div 
+              className="flex items-center gap-4"
+              variants={fadeIn}
+            >
+              <div className="flex items-center gap-2">
+                <Star className="w-4 h-4 fill-current" />
+                <span className="font-bold">5.0</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Award className="w-4 h-4" />
+                <span className="font-medium">10+ lat</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Shield className="w-4 h-4" />
+                <span className="font-medium">Certyfikowany</span>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </motion.div>
+
+      {/* Main Navigation */}
+      <motion.header 
+        className="sticky top-0 z-50 bg-[#121212]/95 backdrop-blur-md border-b border-[#333] shadow-2xl"
+        initial="initial"
+        animate="animate"
+        variants={slideInDown}
+      >
+        {/* Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#121212] via-[#1A1A1A] to-[#121212] opacity-80"></div>
+        
+        <div className="max-w-[1280px] mx-auto px-4 py-3 md:py-4 relative z-10">
+          <div className="flex justify-between items-center">
+            {/* Logo */}
+            <motion.div
+              className="relative group flex-shrink-0"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Link href="/" className="block">
+                <div className="relative">
+                  <Image
+                    src="/assets/images/stalumo.png"
+                    width={100}
+                    height={78}
+                    alt="Logo Stalumo"
+                    loading="lazy"
+                    className="w-auto h-12 md:h-16 lg:h-20 brightness-110 group-hover:brightness-125 transition-all duration-300"
+                  />
+                  {/* Glow effect on hover */}
+                  <div className="absolute inset-0 bg-[#EB4036] opacity-0 group-hover:opacity-20 blur-xl transition-all duration-300 rounded-lg"></div>
+                </div>
+              </Link>
+            </motion.div>
+
+            {/* Desktop Navigation */}
+            <motion.nav 
+              className="hidden lg:flex items-center"
+              variants={staggerContainer}
+            >
+              <div className="flex items-center gap-2">
+                {navLinks.map((link, index) => (
+                  <motion.div
+                    key={index}
+                    variants={fadeIn}
+                    whileHover={{ y: -2 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <Link
+                      className="group relative uppercase font-bold text-[1rem] font-oswald px-6 py-3 text-white hover:text-[#EB4036] transition-all duration-300 rounded-lg hover:bg-[#1A1A1A]"
+                      href={link.href}
+                    >
+                      {link.label}
+                      {/* Underline effect */}
+                      <div className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-[#EB4036] group-hover:w-3/4 group-hover:left-1/8 transition-all duration-300"></div>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* CTA Button */}
+              <motion.div
+                className="ml-6 pl-6 border-l border-[#333]"
+                variants={fadeIn}
+                whileHover={{ scale: 1.05 }}
+              >
+                <Link
+                  href="/contact"
+                  className="group bg-[#EB4036] hover:bg-[#d63428] text-white px-6 py-3 rounded-lg font-semibold uppercase text-sm tracking-wider transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-2xl hover:shadow-[#EB4036]/25"
+                >
+                  Wycena
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </motion.div>
+            </motion.nav>
+
+            {/* Mobile Right Side - Language Switcher & Mobile Menu */}
+            <div className="flex items-center gap-2 md:gap-4 lg:hidden">
+              {/* Mobile Contact Info */}
+              <motion.div
+                className="hidden sm:flex items-center gap-2"
+                variants={fadeIn}
+              >
+                <a 
+                  href="tel:+48784532549"
+                  className="flex items-center gap-1 text-white hover:text-[#EB4036] transition-colors text-sm"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span className="hidden md:inline">784-532-549</span>
+                </a>
+              </motion.div>
+
+              <motion.div
+                variants={fadeIn}
+                whileHover={{ scale: 1.05 }}
+                className="flex-shrink-0"
+              >
+                <LocaleSwitcher />
+              </motion.div>
+              
+              {/* Mobile CTA */}
+              <motion.div
+                className="flex-shrink-0"
+                variants={fadeIn}
+              >
+                <Link
+                  href="/contact"
+                  className="bg-[#EB4036] hover:bg-[#d63428] text-white px-3 py-2 md:px-4 md:py-2 rounded-lg font-semibold text-xs md:text-sm transition-all duration-300 whitespace-nowrap"
+                >
+                  Kontakt
+                </Link>
+              </motion.div>
+
+              {/* Hamburger Menu */}
+              <div className="flex-shrink-0">
+                <HamburgerMenu navLinks={navLinks} />
+              </div>
+            </div>
+
+            {/* Desktop Language Switcher (when mobile menu is hidden) */}
+            <div className="hidden lg:flex items-center gap-4">
+              <motion.div
+                variants={fadeIn}
+                whileHover={{ scale: 1.05 }}
+              >
+                <LocaleSwitcher />
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </motion.header>
+
+      {/* Floating Action Buttons - Mobile Only */}
+      <motion.div 
+        className="lg:hidden fixed bottom-6 right-4 z-40 flex flex-col gap-3"
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 1, duration: 0.6 }}
+      >
+        {/* Call Button */}
+        <motion.a
+          href="tel:+48784532549"
+          className="w-12 h-12 md:w-14 md:h-14 bg-[#EB4036] hover:bg-[#d63428] text-white rounded-full shadow-xl flex items-center justify-center transition-colors"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <Phone className="w-5 h-5 md:w-6 md:h-6" />
+        </motion.a>
+
+        {/* Email Button */}
+        <motion.a
+          href="mailto:office@stalumo.com"
+          className="w-12 h-12 md:w-14 md:h-14 bg-[#333] hover:bg-[#444] text-white rounded-full shadow-xl flex items-center justify-center transition-colors"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <Mail className="w-5 h-5 md:w-6 md:h-6" />
+        </motion.a>
+      </motion.div>
+
+      {/* Progress Bar */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#EB4036] to-[#d63428] z-50 origin-left"
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: 1 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+      />
+
+      {/* Mobile Quick Contact Bar - tylko na bardzo małych ekranach */}
+      <motion.div 
+        className="sm:hidden fixed bottom-0 left-0 right-0 bg-[#121212]/95 backdrop-blur-md border-t border-[#333] z-40 p-3"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 0.6 }}
+      >
+        <div className="flex items-center justify-between gap-2">
+          <a 
+            href="tel:+48784532549"
+            className="flex items-center gap-2 text-white hover:text-[#EB4036] transition-colors text-sm bg-[#1A1A1A] px-3 py-2 rounded-lg flex-1 justify-center"
+          >
+            <Phone className="w-4 h-4" />
+            <span>Zadzwoń</span>
+          </a>
+          <a 
+            href="mailto:office@stalumo.com"
+            className="flex items-center gap-2 text-white hover:text-[#EB4036] transition-colors text-sm bg-[#1A1A1A] px-3 py-2 rounded-lg flex-1 justify-center"
+          >
+            <Mail className="w-4 h-4" />
+            <span>Email</span>
+          </a>
+          <Link
+            href="/contact"
+            className="flex items-center gap-2 bg-[#EB4036] hover:bg-[#d63428] text-white px-3 py-2 rounded-lg text-sm transition-colors flex-1 justify-center"
+          >
+            <ArrowRight className="w-4 h-4" />
+            <span>Wycena</span>
+          </Link>
+        </div>
+      </motion.div>
+    </>
   );
 }
