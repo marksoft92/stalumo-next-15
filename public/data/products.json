@@ -2,9 +2,9 @@
   "products": [
     {
       "slugs": { 
-        "pl": "piecyk-stalumo",
-        "en": "stalumo-steel-stove",
-        "de": "stahlofen-stalumo"}
+        "pl": "palenisko-ogrodowe-stalumo",
+        "en": "garden-fire-pit-stalumo",
+        "de": "garten-feuerschale-stalumo"}
       ,
       "images": [
         "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__0.jpg",
@@ -23,43 +23,49 @@
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       "locales": {
         "pl": {
-          "title": "Grill Titan 900",
+          "title": "Palenisko ogrodowe STALUMO – ręcznie wykonane z najwyższej klasy stali.",
           "description": [
-            "Grill Titan 900 to wyjątkowe rozwiązanie stworzone dla prawdziwych miłośników grillowania, którzy nie akceptują kompromisów w kwestii jakości i funkcjonalności. Ten nowoczesny grill został zaprojektowany z myślą o intensywnym użytkowaniu w każdych warunkach atmosferycznych. Wykonany ze stali walcowanej na zimno najwyższej jakości, charakteryzuje się niezwykłą odpornością na korozję, wysokie temperatury oraz mechaniczne uszkodzenia.",
-            "Dzięki przemyślanej konstrukcji i ergonomicznemu designowi, Grill Titan 900 zapewnia równomierne rozprowadzanie ciepła na całej powierzchni grillowania, co gwarantuje perfekcyjne przygotowanie każdej potrawy. Duży ruszt o powierzchni grillowania umożliwia jednoczesne przygotowanie posiłków dla całej rodziny lub grupy przyjaciół. Zaawansowany system regulacji ciepła pozwala na precyzyjne kontrolowanie temperatury i dostosowanie jej do rodzaju grillowanego produktu.",
-            "Idealny nie tylko do domowego ogrodu czy tarasu, ale także na wycieczki, camping i wszelkie imprezy plenerowe. Solidna, stabilna konstrukcja zapewnia bezpieczeństwo użytkowania, a matowe wykończenie w kolorze czarnym nadaje mu elegancki, profesjonalny wygląd."
+            "Palenisko ogrodowe STALUMO to nie tylko źródło ciepła – to centralny punkt Twojego ogrodu.",
+            "Zaprojektowane dla tych, którzy cenią jakość, estetykę i unikalność.",
+            "Ręcznie wykonane w Polsce, z wytrzymałej stali, odpornej na warunki atmosferyczne.",
+            "Idealne do wieczorów z winem, rozmów z przyjaciółmi i momentów, które zostają w pamięci na lata."
           ],
           "specifications": [
-            "Materiał: Stal walcowana na zimno - najwyższa jakość i trwałość",
-            "Wymiary: 68 x 39 x 58.5 cm - optymalne proporcje",
-            "Powierzchnia grillowania: 39 x 68 cm (2652 cm²)",
-            "Kolor: Czarny mat - eleganckie wykończenie odporne na zarysowania",
-            "Waga: 15 kg - stabilność bez nadmiernej ciężkości",
-            "Wysokość robocza: 58.5 cm - komfortowe grillowanie",
-            "Stabilna konstrukcja - nogi z regulacją wysokości",
-            "Prosty montaż - instrukcja w języku polskim"
+            "Materiał: Stal żaroodporna – trwałość i odporność na wysokie temperatury",
+            "Profil: Płaskownik stalowy 12×50 mm – solidna konstrukcja",
+            "Zabezpieczenie: Farba żaroodporna – ochrona i estetyka",
+            "Szerokość: ok. 60 cm (tolerancja ±2 cm)",
+            "Wysokość: ok. 90 cm (tolerancja ±2 cm)",
+            "Waga: ok. 160 kg – masywna stabilność",
+            "Wytrzymałość cieplna: odporny na ekstremalne temperatury",
+            "Pojemność cieplna: do ogrzania nawet 20 osób"
           ],
           "advantages": [
-            "Odporność na wysokie temperatury do 800°C",
-            "Powłoka antykorozyjna - długotrwała ochrona",
-            "System wentylacji - optymalne spalanie",
-            "Ergonomiczne uchwyty - bezpieczne przenoszenie",
-            "Łatwe czyszczenie - gładkie powierzchnie",
-            "Kompatybilność z węglem drzewnym i brykietem",
-            "Gwarancja producenta 24 miesiące"
+            "Design klasy premium – elegancja i prestiż",
+            "Ręczna produkcja – każdy egzemplarz unikalny",
+            "Wysokogatunkowa stal – gwarancja trwałości",
+            "Możliwość personalizacji (np. grawer, inicjały, data)",
+            "Wyprodukowano w Polsce – lokalna produkcja",
+            "Stabilna i masywna konstrukcja – bezpieczeństwo użytkowania",
+            "Symbol spotkań i luksusu – więcej niż palenisko"
           ],
           "included": [
-            "Korpus grilla ze stali walcowanej",
-            "Ruszt grillowy chromowany",
-            "Nogi z regulacją (4 szt.)",
-            "Elementy montażowe",
-            "Instrukcja obsługi w języku polskim",
-            "Karta gwarancyjna"
+            "Palenisko ogrodowe STALUMO Premium (ręcznie wykonane)",
+            "Certyfikat autentyczności „Pierwsza seria 2025”",
+            "Instrukcja obsługi",
+            "Karta gwarancyjna (24 miesiące)",
+            "Bezpłatna personalizacja dla pierwszych 5 klientów"
+          ],
+          "features": [
+            { "icon": "ThermometerSun", "title": "Wytrzymałość cieplna", "subtitle": "odporny na ekstremalne temperatury" },
+            { "icon": "Wind", "title": "Materiał klasy premium", "subtitle": "Stal żaroodporna – trwałość i odporność na wysokie temperatury" },
+            { "icon": "Shield", "title": "24 miesiące", "subtitle": "Gwarancja" },
+            { "icon": "Zap", "title": "ok. 160 kg", "subtitle": "Stabilna waga" }
           ],
           "price": {
-            "old": "899,00 zł",
-            "discountPercent": "17%",
-            "current": "749,00 zł",
+            "old": "7300",
+            "discountPercent": "5%",
+            "current": "6900 zł",
             "freeShippingThreshold": "500 zł"
           },
           "availability": [
@@ -69,8 +75,8 @@
           ],
 
           "reviews": {
-            "rating": 4.8,
-            "reviewCount": 127,
+            "rating": 5,
+            "reviewCount": 8,
             "reviewsList": [
               {
                 "name": "Adam Kowalski",
@@ -87,7 +93,7 @@
               {
                 "name": "Tomasz Nowak",
                 "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
-                "rating": 4,
+                "rating": 5,
                 "date": "08.08.2024"
               }
             ]
@@ -119,501 +125,292 @@
             }
           ]
         },
-        "en": {
-          "title": "Titan Grill 900",
-          "description": [
-            "The Titan Grill 900 is an exceptional solution created for true barbecue enthusiasts who do not accept compromises in quality and functionality. This modern grill is designed for heavy use in all weather conditions. Made from high-quality cold-rolled steel, it offers excellent resistance to corrosion, high temperatures, and mechanical damage.",
-            "Thanks to its thoughtful construction and ergonomic design, the Titan Grill 900 provides even heat distribution across the entire grilling surface, ensuring perfect preparation of every dish. The large grill grate allows for simultaneous cooking for the whole family or a group of friends. The advanced heat control system enables precise temperature regulation and adaptation to the type of food being grilled.",
-            "Perfect not only for the home garden or terrace, but also for trips, camping, and all outdoor events. The solid, stable construction ensures safe use, and the matte black finish gives it an elegant, professional look."
-          ],
-          "specifications": [
-            "Material: Cold-rolled steel – top quality and durability",
-            "Dimensions: 68 x 39 x 58.5 cm – optimal proportions",
-            "Grill surface: 39 x 68 cm (2652 cm²)",
-            "Color: Matte black – elegant and scratch-resistant finish",
-            "Weight: 15 kg – stability without excessive heaviness",
-            "Working height: 58.5 cm – comfortable grilling",
-            "Stable construction – adjustable legs",
-            "Easy assembly – English instruction manual"
-          ],
-          "advantages": [
-            "Heat resistance up to 800°C",
-            "Anti-corrosion coating – long-lasting protection",
-            "Ventilation system – optimal combustion",
-            "Ergonomic handles – safe transport",
-            "Easy cleaning – smooth surfaces",
-            "Compatible with charcoal and briquettes",
-            "24-month manufacturer warranty"
-          ],
-          "included": [
-            "Steel grill body made of cold-rolled steel",
-            "Chromed grill grate",
-            "Adjustable legs (4 pcs.)",
-            "Assembly components",
-            "User manual in English",
-            "Warranty card"
-          ],
-          "price": {
-            "old": "899.00 PLN",
-            "discountPercent": "17%",
-            "current": "749.00 PLN",
-            "freeShippingThreshold": "500 PLN"
-          },
-          "availability": [
-            "Available immediately",
-            "Shipping within 24h",
-            "24-month warranty"
-          ],
-  
-          "reviews": {
-            "rating": 4.8,
-            "reviewCount": 127,
-            "reviewsList": [
-              {
-                "name": "Adam Kowalski",
-                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja i równomierne grillowanie.",
-                "rating": 5,
-                "date": "15.08.2024"
-              },
-              {
-                "name": "Marta Przybylska",
-                "tconent": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam wszystkim miłośnikom grillowania!",
-                "rating": 5,
-                "date": "12.08.2024"
-              },
-              {
-                "name": "Tomasz Nowak",
-                "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
-                "rating": 4,
-                "date": "08.08.2024"
-              }
-            ]
-          },
-          "relatedProducts": [
-            {
-              "name": "Grill Pro 600",
-              "price": "749,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg"
-            },
-            {
-              "name": "Grill Master XL",
-              "price": "899,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg"
-            },
-            {
-              "name": "Grill Compact 400",
-              "price": "549,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_2.jpg"
-            },
-            {
-              "name": "Wędzarnia Stalumo",
-              "price": "999,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_3.jpg"
-            }
-          ]
-        },
-        "de": {
-          "title": "Titan Grill 900",
-          "description": [
-            "Der Titan Grill 900 ist eine außergewöhnliche Lösung für echte Grillliebhaber, die keine Kompromisse bei Qualität und Funktionalität eingehen. Dieser moderne Grill wurde für den intensiven Einsatz bei allen Wetterbedingungen entwickelt. Hergestellt aus hochwertigem kaltgewalztem Stahl, ist er besonders widerstandsfähig gegen Korrosion, hohe Temperaturen und mechanische Beschädigungen.",
-            "Dank der durchdachten Konstruktion und dem ergonomischen Design sorgt der Titan Grill 900 für eine gleichmäßige Wärmeverteilung über die gesamte Grillfläche und garantiert so perfekte Grillergebnisse. Der große Grillrost ermöglicht die gleichzeitige Zubereitung von Speisen für die ganze Familie oder eine Gruppe von Freunden. Das fortschrittliche Wärmeregulierungssystem erlaubt eine präzise Temperaturkontrolle und Anpassung an das Grillgut.",
-            "Ideal nicht nur für den heimischen Garten oder die Terrasse, sondern auch für Ausflüge, Camping und alle Outdoor-Veranstaltungen. Die stabile Konstruktion gewährleistet Sicherheit bei der Nutzung und das mattschwarze Finish verleiht ihm ein elegantes, professionelles Aussehen."
-          ],
-          "specifications": [
-            "Material: Kaltgewalzter Stahl – höchste Qualität und Langlebigkeit",
-            "Maße: 68 x 39 x 58,5 cm – optimale Proportionen",
-            "Grillfläche: 39 x 68 cm (2652 cm²)",
-            "Farbe: Mattschwarz – elegantes und kratzfestes Finish",
-            "Gewicht: 15 kg – Stabilität ohne übermäßiges Gewicht",
-            "Arbeitshöhe: 58,5 cm – komfortables Grillen",
-            "Stabile Konstruktion – höhenverstellbare Beine",
-            "Einfache Montage – Anleitung auf Deutsch"
-          ],
-          "advantages": [
-            "Hitzebeständig bis zu 800°C",
-            "Korrosionsschutzbeschichtung – langlebiger Schutz",
-            "Belüftungssystem – optimales Verbrennen",
-            "Ergonomische Griffe – sicheres Tragen",
-            "Einfache Reinigung – glatte Oberflächen",
-            "Kompatibel mit Holzkohle und Briketts",
-            "24 Monate Herstellergarantie"
-          ],
-          "included": [
-            "Grillkörper aus kaltgewalztem Stahl",
-            "Verchromter Grillrost",
-            "Höhenverstellbare Beine (4 Stk.)",
-            "Montagezubehör",
-            "Bedienungsanleitung auf Deutsch",
-            "Garantiekarte"
-          ],
-          "price": {
-            "old": "899,00 zł",
-            "discountPercent": "17%",
-            "current": "749,00 zł",
-            "freeShippingThreshold": "500 zł"
-          },
-          "availability": [
-            "Sofort verfügbar",
-            "Versand innerhalb von 24h",
-            "24 Monate Garantie"
-          ],
-
-          "reviews": {
-            "rating": 4.8,
-            "reviewCount": 127,
-            "reviewsList": [
-              {
-                "name": "Adam Kowalski",
-                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja i równomierne grillowanie.",
-                "rating": 5,
-                "date": "15.08.2024"
-              },
-              {
-                "name": "Marta Przybylska",
-                "tconent": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam wszystkim miłośnikom grillowania!",
-                "rating": 5,
-                "date": "12.08.2024"
-              },
-              {
-                "name": "Tomasz Nowak",
-                "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
-                "rating": 4,
-                "date": "08.08.2024"
-              }
-            ]
-          },
-          "relatedProducts": [
-            {
-              "name": "Grill Pro 600",
-              "price": "749,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg"
-            },
-            {
-              "name": "Grill Master XL",
-              "price": "899,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg"
-            },
-            {
-              "name": "Grill Compact 400",
-              "price": "549,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_2.jpg"
-            },
-            {
-              "name": "Wędzarnia Stalumo",
-              "price": "999,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_3.jpg"
-            }
-          ]
-        }
+"en": {
+    "title": "STALUMO Garden Fire Pit – Handcrafted from Premium Steel",
+    "description": [
+      "The STALUMO garden fire pit is not just a source of heat – it is the centerpiece of your garden.",
+      "Designed for those who value quality, aesthetics, and uniqueness.",
+      "Handmade in Poland from durable steel, resistant to weather conditions.",
+      "Perfect for evenings with wine, conversations with friends, and moments that remain in memory for years."
+    ],
+    "specifications": [
+      "Material: Heat-resistant steel – durability and high-temperature resistance",
+      "Profile: Steel flat bar 12×50 mm – solid construction",
+      "Coating: Heat-resistant paint – protection and aesthetics",
+      "Width: approx. 60 cm (tolerance ±2 cm)",
+      "Height: approx. 90 cm (tolerance ±2 cm)",
+      "Weight: approx. 160 kg – massive stability",
+      "Heat resistance: withstands extreme temperatures",
+      "Heat capacity: enough to warm up to 20 people"
+    ],
+    "advantages": [
+      "Premium-class design – elegance and prestige",
+      "Handmade production – each piece is unique",
+      "High-quality steel – guarantee of durability",
+      "Personalization options (e.g., engraving, initials, date)",
+      "Made in Poland – local production",
+      "Stable and massive construction – safe to use",
+      "Symbol of gatherings and luxury – more than a fire pit"
+    ],
+    "included": [
+      "STALUMO Premium garden fire pit (handmade)",
+      "Certificate of authenticity 'First Series 2025'",
+      "User manual",
+      "Warranty card (24 months)",
+      "Free personalization for the first 5 customers"
+    ],
+    "features": [
+      { "icon": "ThermometerSun", "title": "Heat Resistance", "subtitle": "withstands extreme temperatures" },
+      { "icon": "Wind", "title": "Premium Material", "subtitle": "Heat-resistant steel – durable and weatherproof" },
+      { "icon": "Shield", "title": "24 months", "subtitle": "Warranty" },
+      { "icon": "Zap", "title": "approx. 160 kg", "subtitle": "Stable weight" }
+    ],
+    "price": { "old": "7300", "discountPercent": "5%", "current": "6900 PLN", "freeShippingThreshold": "500 PLN" },
+    "availability": ["Available immediately", "Shipping within 24h", "24-month warranty"],
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 6,
+      "reviewsList": [
+        { "name": "Adam Kowalski", "content": "Excellent quality, grill works perfectly at every event. Solid construction and even grilling.", "rating": 5, "date": "15.08.2024" },
+        { "name": "Marta Przybylska", "content": "Aesthetic and easy to use. The steel really withstands rain. I recommend it to all barbecue enthusiasts!", "rating": 5, "date": "12.08.2024" },
+        { "name": "Tomasz Nowak", "content": "Very good value for money. Simple assembly, clear manual. The grill makes an impression.", "rating": 4, "date": "08.08.2024" }
+      ]
+    },
+    "relatedProducts": [
+      { "name": "Grill Pro 600", "price": "749,00 PLN", "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg", "url": "/en/products" },
+      { "name": "Grill Master XL", "price": "899,00 PLN", "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg", "url": "/en/products" },
+      { "name": "Grill Compact 400", "price": "549,00 PLN", "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_2.jpg", "url": "/en/products" },
+      { "name": "Stalumo Smoker", "price": "999,00 PLN", "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_3.jpg", "url": "/en/products" }
+    ]
+  },
+  "de": {
+    "title": "STALUMO Garten-Feuerstelle – Handgefertigt aus Premiumstahl",
+    "description": [
+      "Die STALUMO Garten-Feuerstelle ist nicht nur eine Wärmequelle – sie ist der Mittelpunkt Ihres Gartens.",
+      "Entwickelt für diejenigen, die Qualität, Ästhetik und Einzigartigkeit schätzen.",
+      "Handgefertigt in Polen aus langlebigem Stahl, wetterfest.",
+      "Perfekt für Abende mit Wein, Gespräche mit Freunden und Momente, die jahrelang in Erinnerung bleiben."
+    ],
+    "specifications": [
+      "Material: Hitzebeständiger Stahl – langlebig und temperaturresistent",
+      "Profil: Stahlflachstange 12×50 mm – solide Konstruktion",
+      "Beschichtung: Hitzebeständiger Lack – Schutz und Ästhetik",
+      "Breite: ca. 60 cm (Toleranz ±2 cm)",
+      "Höhe: ca. 90 cm (Toleranz ±2 cm)",
+      "Gewicht: ca. 160 kg – massive Stabilität",
+      "Hitzebeständigkeit: widersteht extremen Temperaturen",
+      "Wärmekapazität: ausreichend für bis zu 20 Personen"
+    ],
+    "advantages": [
+      "Premium-Design – Eleganz und Prestige",
+      "Handgefertigt – jedes Exemplar einzigartig",
+      "Hochwertiger Stahl – Garantie für Langlebigkeit",
+      "Personalisierungsoptionen (z.B. Gravur, Initialen, Datum)",
+      "Hergestellt in Polen – lokale Produktion",
+      "Stabile und massive Konstruktion – sicher in der Nutzung",
+      "Symbol für Treffen und Luxus – mehr als nur eine Feuerstelle"
+    ],
+    "included": [
+      "STALUMO Premium Garten-Feuerstelle (handgefertigt)",
+      "Echtheitszertifikat 'Erste Serie 2025'",
+      "Bedienungsanleitung",
+      "Garantiekarte (24 Monate)",
+      "Kostenlose Personalisierung für die ersten 5 Kunden"
+    ],
+    "features": [
+      { "icon": "ThermometerSun", "title": "Hitzebeständigkeit", "subtitle": "widersteht extremen Temperaturen" },
+      { "icon": "Wind", "title": "Premium-Material", "subtitle": "Hitzebeständiger Stahl – langlebig und wetterfest" },
+      { "icon": "Shield", "title": "24 Monate", "subtitle": "Garantie" },
+      { "icon": "Zap", "title": "ca. 160 kg", "subtitle": "Stabiles Gewicht" }
+    ],
+    "price": { "old": "7300", "discountPercent": "5%", "current": "6900 PLN", "freeShippingThreshold": "500 PLN" },
+    "availability": ["Sofort verfügbar", "Versand innerhalb von 24h", "24 Monate Garantie"],
+    "reviews": {
+      "rating": 5,
+      "reviewCount": 6,
+      "reviewsList": [
+        { "name": "Adam Kowalski", "content": "Ausgezeichnete Qualität, Grill funktioniert perfekt bei jeder Veranstaltung. Solide Konstruktion und gleichmäßiges Grillen.", "rating": 5, "date": "15.08.2024" },
+        { "name": "Marta Przybylska", "content": "Ästhetisch und einfach zu bedienen. Der Stahl hält wirklich Regen stand. Ich empfehle es allen Grillfans!", "rating": 5, "date": "12.08.2024" },
+        { "name": "Tomasz Nowak", "content": "Sehr gutes Preis-Leistungs-Verhältnis. Einfache Montage, klare Anleitung. Der Grill hinterlässt Eindruck.", "rating": 4, "date": "08.08.2024" }
+      ]
+    },
+    "relatedProducts": [
+      { "name": "Grill Pro 600", "price": "749,00 PLN", "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg", "url": "/de/produkte" },
+      { "name": "Grill Master XL", "price": "899,00 PLN", "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg", "url": "/de/produkte" },
+      { "name": "Grill Compact 400", "price": "549,00 PLN", "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_2.jpg", "url": "/de/produkte" },
+      { "name": "Stalumo Räucherofen", "price": "999,00 PLN", "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_3.jpg", "url": "/de/produkte" }
+    ]
+  }
       }
     },
     {
-      "slugs": { 
-        "pl": "piecyk-stalumo",
-        "en": "stalumo-steel-stove",
-        "de": "stahlofen-stalumo"}
-      ,
+      "slugs": {
+        "pl": "grill-beczka-stalumo",
+        "en": "stalumo-barrel-grill",
+        "de": "stalumo-fass-grill"
+      },
       "images": [
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__0.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__1.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__2.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__0.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__1.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__2.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__0.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__1.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__2.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__0.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__1.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__2.jpg",
-        "/assets/images/products/Flux_Dev_Create_an_image_of_a_steel_grill_for_a_campfire_coal__3.jpg"],
+        "/assets/images/products/stalumo_barrel_0.jpg",
+        "/assets/images/products/stalumo_barrel_1.jpg",
+        "/assets/images/products/stalumo_barrel_2.jpg",
+        "/assets/images/products/stalumo_barrel_3.jpg"
+      ],
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       "locales": {
         "pl": {
-          "title": "Grill Titan 900",
+          "title": "Grill STALUMO Beczka – stalowy grill ogrodowy z wędzarnią (BBQ)",
           "description": [
-            "Grill Titan 900 to wyjątkowe rozwiązanie stworzone dla prawdziwych miłośników grillowania, którzy nie akceptują kompromisów w kwestii jakości i funkcjonalności. Ten nowoczesny grill został zaprojektowany z myślą o intensywnym użytkowaniu w każdych warunkach atmosferycznych. Wykonany ze stali walcowanej na zimno najwyższej jakości, charakteryzuje się niezwykłą odpornością na korozję, wysokie temperatury oraz mechaniczne uszkodzenia.",
-            "Dzięki przemyślanej konstrukcji i ergonomicznemu designowi, Grill Titan 900 zapewnia równomierne rozprowadzanie ciepła na całej powierzchni grillowania, co gwarantuje perfekcyjne przygotowanie każdej potrawy. Duży ruszt o powierzchni grillowania umożliwia jednoczesne przygotowanie posiłków dla całej rodziny lub grupy przyjaciół. Zaawansowany system regulacji ciepła pozwala na precyzyjne kontrolowanie temperatury i dostosowanie jej do rodzaju grillowanego produktu.",
-            "Idealny nie tylko do domowego ogrodu czy tarasu, ale także na wycieczki, camping i wszelkie imprezy plenerowe. Solidna, stabilna konstrukcja zapewnia bezpieczeństwo użytkowania, a matowe wykończenie w kolorze czarnym nadaje mu elegancki, profesjonalny wygląd."
+            "Grill STALUMO Beczka to propozycja dla najbardziej wymagających miłośników barbecue. ",
+            "Jego potężna konstrukcja, wykonana w 90% ze stali o grubości aż 4 mm, gwarantuje wyjątkową trwałość i stabilność przez długie lata użytkowania.",
+            "Dzięki połączeniu dużej komory grillowej o pojemności 100 litrów oraz dodatkowej bocznej komory 60 litrów, urządzenie pozwala nie tylko na tradycyjne grillowanie, ale także na grillowanie w stylu amerykańskim z pośrednim źródłem ciepła czy nawet na wykorzystanie go jako wędzarni."
           ],
           "specifications": [
-            "Materiał: Stal walcowana na zimno - najwyższa jakość i trwałość",
-            "Wymiary: 68 x 39 x 58.5 cm - optymalne proporcje",
-            "Powierzchnia grillowania: 39 x 68 cm (2652 cm²)",
-            "Kolor: Czarny mat - eleganckie wykończenie odporne na zarysowania",
-            "Waga: 15 kg - stabilność bez nadmiernej ciężkości",
-            "Wysokość robocza: 58.5 cm - komfortowe grillowanie",
-            "Stabilna konstrukcja - nogi z regulacją wysokości",
-            "Prosty montaż - instrukcja w języku polskim"
+            "Wymiary: 170 × 160 × 70 cm",
+            "Komora główna: ok. 100 l",
+            "Ruszt stalowy: 55 × 40 cm",
+            "Komora boczna: 60 l (grill amerykański / wędzarnia)",
+            "Wykonanie: stal 4 mm, malowana farbą żaroodporną"
           ],
           "advantages": [
-            "Odporność na wysokie temperatury do 800°C",
-            "Powłoka antykorozyjna - długotrwała ochrona",
-            "System wentylacji - optymalne spalanie",
-            "Ergonomiczne uchwyty - bezpieczne przenoszenie",
-            "Łatwe czyszczenie - gładkie powierzchnie",
-            "Kompatybilność z węglem drzewnym i brykietem",
-            "Gwarancja producenta 24 miesiące"
+            "Ręczna produkcja z dbałością o każdy detal",
+            "Ekstremalna wytrzymałość – stal 4 mm nie odkształca się przy intensywnym użytkowaniu",
+            "Uniwersalność – grillowanie klasyczne, amerykańskie i wędzenie w jednym urządzeniu",
+            "Polska jakość premium – produkt w 100% ekologiczny",
+            "Solidna konstrukcja – grill posłuży na lata"
           ],
           "included": [
-            "Korpus grilla ze stali walcowanej",
-            "Ruszt grillowy chromowany",
-            "Nogi z regulacją (4 szt.)",
-            "Elementy montażowe",
-            "Instrukcja obsługi w języku polskim",
-            "Karta gwarancyjna"
+            "Grill STALUMO Beczka (stal 4 mm, malowany farbą żaroodporną)",
+            "Instrukcja obsługi",
+            "Karta gwarancyjna (24 miesiące)"
           ],
-          "price": {
-            "old": "899,00 zł",
-            "discountPercent": "17%",
-            "current": "749,00 zł",
-            "freeShippingThreshold": "500 zł"
-          },
-          "availability": [
-            "Dostępny od ręki",
-            "Wysyłka w 24h",
-            "Gwarancja 24 miesiące"
+          "features": [
+            { "icon": "ThermometerSun", "title": "Wytrzymałość cieplna", "subtitle": "Stal 4 mm, odporna na wysokie temperatury" },
+            { "icon": "Award", "title": "Materiał premium", "subtitle": "Stal malowana farbą żaroodporną, w pełni ekologiczna" },
+            { "icon": "Shield", "title": "24 miesiące", "subtitle": "Gwarancja" },
+            { "icon": "Repeat", "title": "2 w 1", "subtitle": "Grillowanie klasyczne, amerykańskie i wędzenie" }
           ],
-
-
+          "price": { "old": "8900", "discountPercent": "5%", "current": "8450 zł", "freeShippingThreshold": "500 zł" },
+          "availability": ["Dostępny od ręki", "Wysyłka w 24h", "Gwarancja 24 miesiące"],
           "reviews": {
-            "rating": 4.8,
-            "reviewCount": 127,
+            "rating": 5,
+            "reviewCount": 3,
             "reviewsList": [
-              {
-                "name": "Adam Kowalski",
-                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja i równomierne grillowanie.",
-                "rating": 5,
-                "date": "15.08.2024"
-              },
-              {
-                "name": "Marta Przybylska",
-                "tconent": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam wszystkim miłośnikom grillowania!",
-                "rating": 5,
-                "date": "12.08.2024"
-              },
-              {
-                "name": "Tomasz Nowak",
-                "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
-                "rating": 4,
-                "date": "08.08.2024"
-              }
+              { "name": "Adam Kowalski", "content": "Grill STALUMO Beczka jest solidny, wytrzymały i świetnie sprawdza się podczas dużych spotkań. Polecam!", "rating": 5, "date": "20.08.2025" },
+              { "name": "Marta Przybylska", "content": "Estetyczny i funkcjonalny. Wędzenie oraz grillowanie w jednym – idealny dla BBQ fanów.", "rating": 5, "date": "18.08.2025" },
+              { "name": "Tomasz Nowak", "content": "Bardzo dobry wybór. Stabilny, duży ruszt, wysoka jakość materiału.", "rating": 5, "date": "15.08.2025" }
             ]
           },
           "relatedProducts": [
-            {
-              "name": "Grill Pro 600",
-              "price": "749,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg",
-              "url":"/pl/produkty"
-            },
-            {
-              "name": "Grill Master XL",
-              "price": "899,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg",
-              "url":"/pl/produkty"
-            },
-            {
-              "name": "Grill Compact 400",
-              "price": "549,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_2.jpg",
-              "url":"/pl/produkty"
-            },
-            {
-              "name": "Wędzarnia Stalumo",
-              "price": "999,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_3.jpg",
-              "url":"/pl/produkty"
-            }
+            { "name": "Grill Pro 600", "price": "749,00 zł", "image": "/assets/images/products/stalumo_pro_600.jpg", "url": "/pl/produkty" },
+            { "name": "Grill Master XL", "price": "899,00 zł", "image": "/assets/images/products/stalumo_master_xl.jpg", "url": "/pl/produkty" },
+            { "name": "Wędzarnia Stalumo", "price": "999,00 zł", "image": "/assets/images/products/stalumo_smoker.jpg", "url": "/pl/produkty" }
           ]
         },
         "en": {
-          "title": "Titan Grill 900",
+          "title": "STALUMO Barrel Grill – Steel Garden Grill with Smoker (BBQ)",
           "description": [
-            "The Titan Grill 900 is an exceptional solution created for true barbecue enthusiasts who do not accept compromises in quality and functionality. This modern grill is designed for heavy use in all weather conditions. Made from high-quality cold-rolled steel, it offers excellent resistance to corrosion, high temperatures, and mechanical damage.",
-            "Thanks to its thoughtful construction and ergonomic design, the Titan Grill 900 provides even heat distribution across the entire grilling surface, ensuring perfect preparation of every dish. The large grill grate allows for simultaneous cooking for the whole family or a group of friends. The advanced heat control system enables precise temperature regulation and adaptation to the type of food being grilled.",
-            "Perfect not only for the home garden or terrace, but also for trips, camping, and all outdoor events. The solid, stable construction ensures safe use, and the matte black finish gives it an elegant, professional look."
+            "Durable barrel grill made of 4 mm thick steel – guaranteed longevity.",
+            "Main grilling chamber 100 l + side chamber 60 l – perfect for classic and American-style grilling.",
+            "Steel grate 55 × 40 cm.",
+            "Painted with heat-resistant, 100% ecological paint.",
+            "STALUMO Barrel Grill is the centerpiece of your garden kitchen, ideal for family gatherings and parties with friends."
           ],
           "specifications": [
-            "Material: Cold-rolled steel – top quality and durability",
-            "Dimensions: 68 x 39 x 58.5 cm – optimal proportions",
-            "Grill surface: 39 x 68 cm (2652 cm²)",
-            "Color: Matte black – elegant and scratch-resistant finish",
-            "Weight: 15 kg – stability without excessive heaviness",
-            "Working height: 58.5 cm – comfortable grilling",
-            "Stable construction – adjustable legs",
-            "Easy assembly – English instruction manual"
+            "Dimensions: 170 × 160 × 70 cm",
+            "Main chamber: approx. 100 l",
+            "Steel grate: 55 × 40 cm",
+            "Side chamber: 60 l (American-style grill / smoker)",
+            "Construction: 4 mm steel, painted with heat-resistant paint"
           ],
           "advantages": [
-            "Heat resistance up to 800°C",
-            "Anti-corrosion coating – long-lasting protection",
-            "Ventilation system – optimal combustion",
-            "Ergonomic handles – safe transport",
-            "Easy cleaning – smooth surfaces",
-            "Compatible with charcoal and briquettes",
-            "24-month manufacturer warranty"
+            "Handmade with attention to every detail",
+            "Extreme durability – 4 mm steel does not deform under intensive use",
+            "Versatility – classic grilling, American-style, and smoking in one device",
+            "Premium Polish quality – 100% ecological product",
+            "Solid construction – grill will last for years"
           ],
           "included": [
-            "Steel grill body made of cold-rolled steel",
-            "Chromed grill grate",
-            "Adjustable legs (4 pcs.)",
-            "Assembly components",
-            "User manual in English",
-            "Warranty card"
+            "STALUMO Barrel Grill (4 mm steel, heat-resistant paint)",
+            "User manual",
+            "Warranty card (24 months)"
           ],
-          "price": {
-            "old": "899.00 PLN",
-            "discountPercent": "17%",
-            "current": "749.00 PLN",
-            "freeShippingThreshold": "500 PLN"
-          },
-          "availability": [
-            "Available immediately",
-            "Shipping within 24h",
-            "24-month warranty"
+          "features": [
+            { "icon": "ThermometerSun", "title": "Heat Resistance", "subtitle": "4 mm steel, withstands high temperatures" },
+            { "icon": "Wind", "title": "Premium Material", "subtitle": "Heat-resistant, fully ecological steel" },
+            { "icon": "Shield", "title": "24 months", "subtitle": "Warranty" },
+            { "icon": "Zap", "title": "160 kg", "subtitle": "Stable construction" }
           ],
-
+          "price": { "old": "8900", "discountPercent": "5%", "current": "8450 PLN", "freeShippingThreshold": "500 PLN" },
+          "availability": ["Available immediately", "Shipping within 24h", "24-month warranty"],
           "reviews": {
-            "rating": 4.8,
-            "reviewCount": 127,
+            "rating": 5,
+            "reviewCount": 3,
             "reviewsList": [
-              {
-                "name": "Adam Kowalski",
-                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja i równomierne grillowanie.",
-                "rating": 5,
-                "date": "15.08.2024"
-              },
-              {
-                "name": "Marta Przybylska",
-                "tconent": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam wszystkim miłośnikom grillowania!",
-                "rating": 5,
-                "date": "12.08.2024"
-              },
-              {
-                "name": "Tomasz Nowak",
-                "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
-                "rating": 4,
-                "date": "08.08.2024"
-              }
+              { "name": "Adam Kowalski", "content": "The STALUMO Barrel Grill is solid, durable, and perfect for large gatherings. Highly recommended!", "rating": 5, "date": "20.08.2025" },
+              { "name": "Marta Przybylska", "content": "Aesthetic and functional. Grilling and smoking in one – ideal for BBQ fans.", "rating": 5, "date": "18.08.2025" },
+              { "name": "Tomasz Nowak", "content": "Excellent choice. Stable, large grate, high-quality material.", "rating": 5, "date": "15.08.2025" }
             ]
           },
           "relatedProducts": [
-            {
-              "name": "Grill Pro 600",
-              "price": "749,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg"
-            },
-            {
-              "name": "Grill Master XL",
-              "price": "899,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg"
-            },
-            {
-              "name": "Grill Compact 400",
-              "price": "549,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_2.jpg"
-            },
-            {
-              "name": "Wędzarnia Stalumo",
-              "price": "999,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_3.jpg"
-            }
+            { "name": "Grill Pro 600", "price": "749,00 PLN", "image": "/assets/images/products/stalumo_pro_600.jpg", "url": "/en/products" },
+            { "name": "Grill Master XL", "price": "899,00 PLN", "image": "/assets/images/products/stalumo_master_xl.jpg", "url": "/en/products" },
+            { "name": "Stalumo Smoker", "price": "999,00 PLN", "image": "/assets/images/products/stalumo_smoker.jpg", "url": "/en/products" }
           ]
         },
         "de": {
-          "title": "Titan Grill 900",
+          "title": "STALUMO Fassgrill – Stahl-Garten-Grill mit Räucherfunktion (BBQ)",
           "description": [
-            "Der Titan Grill 900 ist eine außergewöhnliche Lösung für echte Grillliebhaber, die keine Kompromisse bei Qualität und Funktionalität eingehen. Dieser moderne Grill wurde für den intensiven Einsatz bei allen Wetterbedingungen entwickelt. Hergestellt aus hochwertigem kaltgewalztem Stahl, ist er besonders widerstandsfähig gegen Korrosion, hohe Temperaturen und mechanische Beschädigungen.",
-            "Dank der durchdachten Konstruktion und dem ergonomischen Design sorgt der Titan Grill 900 für eine gleichmäßige Wärmeverteilung über die gesamte Grillfläche und garantiert so perfekte Grillergebnisse. Der große Grillrost ermöglicht die gleichzeitige Zubereitung von Speisen für die ganze Familie oder eine Gruppe von Freunden. Das fortschrittliche Wärmeregulierungssystem erlaubt eine präzise Temperaturkontrolle und Anpassung an das Grillgut.",
-            "Ideal nicht nur für den heimischen Garten oder die Terrasse, sondern auch für Ausflüge, Camping und alle Outdoor-Veranstaltungen. Die stabile Konstruktion gewährleistet Sicherheit bei der Nutzung und das mattschwarze Finish verleiht ihm ein elegantes, professionelles Aussehen."
+            "Robuster Fassgrill aus 4 mm starkem Stahl – garantiert langlebig.",
+            "Hauptgrillkammer 100 l + Seitenkammer 60 l – ideal für klassisches und amerikanisches Grillen.",
+            "Stahlrost 55 × 40 cm.",
+            "Mit hitzebeständiger, 100% ökologischer Farbe lackiert.",
+            "Der STALUMO Fassgrill ist das Herzstück Ihrer Gartenküche und perfekt für Familienfeste und Partys mit Freunden."
           ],
           "specifications": [
-            "Material: Kaltgewalzter Stahl – höchste Qualität und Langlebigkeit",
-            "Maße: 68 x 39 x 58,5 cm – optimale Proportionen",
-            "Grillfläche: 39 x 68 cm (2652 cm²)",
-            "Farbe: Mattschwarz – elegantes und kratzfestes Finish",
-            "Gewicht: 15 kg – Stabilität ohne übermäßiges Gewicht",
-            "Arbeitshöhe: 58,5 cm – komfortables Grillen",
-            "Stabile Konstruktion – höhenverstellbare Beine",
-            "Einfache Montage – Anleitung auf Deutsch"
+            "Abmessungen: 170 × 160 × 70 cm",
+            "Hauptkammer: ca. 100 l",
+            "Stahlrost: 55 × 40 cm",
+            "Seitenkammer: 60 l (amerikanisches Grillen / Räucherofen)",
+            "Material: 4 mm Stahl, lackiert mit hitzebeständiger Farbe"
           ],
           "advantages": [
-            "Hitzebeständig bis zu 800°C",
-            "Korrosionsschutzbeschichtung – langlebiger Schutz",
-            "Belüftungssystem – optimales Verbrennen",
-            "Ergonomische Griffe – sicheres Tragen",
-            "Einfache Reinigung – glatte Oberflächen",
-            "Kompatibel mit Holzkohle und Briketts",
-            "24 Monate Herstellergarantie"
+            "Handgefertigt mit Liebe zum Detail",
+            "Extreme Haltbarkeit – 4 mm Stahl verformt sich nicht bei intensiver Nutzung",
+            "Vielseitigkeit – klassisches Grillen, amerikanisches Grillen und Räuchern in einem Gerät",
+            "Polnische Premium-Qualität – 100% ökologisches Produkt",
+            "Stabile Konstruktion – Grill hält viele Jahre"
           ],
           "included": [
-            "Grillkörper aus kaltgewalztem Stahl",
-            "Verchromter Grillrost",
-            "Höhenverstellbare Beine (4 Stk.)",
-            "Montagezubehör",
-            "Bedienungsanleitung auf Deutsch",
-            "Garantiekarte"
+            "STALUMO Fassgrill (4 mm Stahl, hitzebeständige Farbe)",
+            "Bedienungsanleitung",
+            "Garantiekarte (24 Monate)"
           ],
-          "price": {
-            "old": "899,00 zł",
-            "discountPercent": "17%",
-            "current": "749,00 zł",
-            "freeShippingThreshold": "500 zł"
-          },
-          "availability": [
-            "Sofort verfügbar",
-            "Versand innerhalb von 24h",
-            "24 Monate Garantie"
+          "features": [
+            { "icon": "ThermometerSun", "title": "Hitzebeständigkeit", "subtitle": "4 mm Stahl, widersteht hohen Temperaturen" },
+            { "icon": "Wind", "title": "Premium-Material", "subtitle": "Hitzebeständiger, ökologischer Stahl" },
+            { "icon": "Shield", "title": "24 Monate", "subtitle": "Garantie" },
+            { "icon": "Zap", "title": "160 kg", "subtitle": "Stabile Konstruktion" }
           ],
-
+          "price": { "old": "8900", "discountPercent": "5%", "current": "8450 PLN", "freeShippingThreshold": "500 PLN" },
+          "availability": ["Sofort verfügbar", "Versand innerhalb von 24h", "24 Monate Garantie"],
           "reviews": {
-            "rating": 4.8,
-            "reviewCount": 127,
+            "rating": 5,
+            "reviewCount": 3,
             "reviewsList": [
-              {
-                "name": "Adam Kowalski",
-                "content": "Świetna jakość, grill sprawdza się perfekcyjnie na każdej imprezie. Solidna konstrukcja i równomierne grillowanie.",
-                "rating": 5,
-                "date": "15.08.2024"
-              },
-              {
-                "name": "Marta Przybylska",
-                "tconent": "Estetyczny i łatwy w użyciu. Stal rzeczywiście wytrzymała na deszcz. Polecam wszystkim miłośnikom grillowania!",
-                "rating": 5,
-                "date": "12.08.2024"
-              },
-              {
-                "name": "Tomasz Nowak",
-                "content": "Bardzo dobry stosunek jakości do ceny. Montaż prosty, instrukcja przejrzysta. Grill robi wrażenie.",
-                "rating": 4,
-                "date": "08.08.2024"
-              }
+              { "name": "Adam Kowalski", "content": "Der STALUMO Fassgrill ist robust, langlebig und perfekt für große Treffen. Sehr empfehlenswert!", "rating": 5, "date": "20.08.2025" },
+              { "name": "Marta Przybylska", "content": "Ästhetisch und funktional. Grillen und Räuchern in einem – ideal für BBQ-Fans.", "rating": 5, "date": "18.08.2025" },
+              { "name": "Tomasz Nowak", "content": "Ausgezeichnete Wahl. Stabil, großer Rost, hochwertiges Material.", "rating": 5, "date": "15.08.2025" }
             ]
           },
           "relatedProducts": [
-            {
-              "name": "Grill Pro 600",
-              "price": "749,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg"
-            },
-            {
-              "name": "Grill Master XL",
-              "price": "899,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg"
-            },
-            {
-              "name": "Grill Compact 400",
-              "price": "549,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_2.jpg"
-            },
-            {
-              "name": "Wędzarnia Stalumo",
-              "price": "999,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_3.jpg"
-            }
+            { "name": "Grill Pro 600", "price": "749,00 PLN", "image": "/assets/images/products/stalumo_pro_600.jpg", "url": "/de/produkte" },
+            { "name": "Grill Master XL", "price": "899,00 PLN", "image": "/assets/images/products/stalumo_master_xl.jpg", "url": "/de/produkte" },
+            { "name": "Stalumo Räucherofen", "price": "999,00 PLN", "image": "/assets/images/products/stalumo_smoker.jpg", "url": "/de/produkte" }
           ]
         }
       }
     }
+    
+
   ]
 }

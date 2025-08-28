@@ -20,7 +20,8 @@ import {
   ArrowRight,
   Zap,
   ThermometerSun,
-  Wind
+  Wind,
+  Repeat
 } from "lucide-react";
 
 const ProductBox = ({ productData }: any) => {
@@ -30,7 +31,28 @@ const ProductBox = ({ productData }: any) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
   const [currentReview, setCurrentReview] = useState(0);
 
-
+const iconsMap: Record<string, any> = {
+  Star,
+  Truck,
+  Shield,
+  Clock,
+  ChevronLeft,
+  ChevronRight,
+  Heart,
+  Share2,
+  ShoppingCart,
+  Plus,
+  Minus,
+  Flame,
+  Award,
+  CheckCircle,
+  Users,
+  Package,
+  ArrowRight,
+  Zap,
+  ThermometerSun,
+  Wind,Repeat
+}
 
   const nextImage = () => {
     setSelectedImageIndex((prev) => (prev + 1) % productData.images.length);
@@ -40,12 +62,7 @@ const ProductBox = ({ productData }: any) => {
     setSelectedImageIndex((prev) => (prev - 1 + productData.images.length) % productData.images.length);
   };
 
-  const features = [
-    { icon: ThermometerSun, title: "800°C", subtitle: "Max temperatura" },
-    { icon: Wind, title: "System wentylacji", subtitle: "Optymalne spalanie" },
-    { icon: Shield, title: "24 miesiące", subtitle: "Gwarancja" },
-    { icon: Zap, title: "15 kg", subtitle: "Stabilna waga" }
-  ];
+
 
   return (
     <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 min-h-screen text-white">
@@ -167,14 +184,20 @@ const ProductBox = ({ productData }: any) => {
 
               {/* Key Features */}
               <div className="grid grid-cols-2 gap-4">
-                {features.map((feature, index) => (
-                  <div key={index} className="bg-gradient-to-br from-neutral-800/50 to-neutral-900/50 backdrop-blur-sm p-4 rounded-xl border border-neutral-700/50">
-                    <feature.icon className="w-8 h-8 text-red-400 mb-2" />
-                    <div className="font-semibold text-white">{feature.title}</div>
-                    <div className="text-sm text-neutral-400">{feature.subtitle}</div>
-                  </div>
-                ))}
-              </div>
+  {(productData?.features || []).map((feature: any, index: number) => {
+    const IconComponent = iconsMap[feature.icon];
+    return (
+      <div
+        key={index}
+        className="bg-gradient-to-br from-neutral-800/50 to-neutral-900/50 backdrop-blur-sm p-4 rounded-xl border border-neutral-700/50"
+      >
+        {IconComponent && <IconComponent className="w-8 h-8 text-red-400 mb-2" />}
+        <div className="font-semibold text-white">{feature.title}</div>
+        <div className="text-sm text-neutral-400">{feature.subtitle}</div>
+      </div>
+    );
+  })}
+</div>
 
               {/* Quantity & Add to Cart */}
               <div className="space-y-4">
