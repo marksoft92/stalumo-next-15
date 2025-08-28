@@ -58,7 +58,7 @@
           ],
           "features": [
             { "icon": "ThermometerSun", "title": "Wytrzymałość cieplna", "subtitle": "odporny na ekstremalne temperatury" },
-            { "icon": "Wind", "title": "Materiał klasy premium", "subtitle": "Stal żaroodporna – trwałość i odporność na wysokie temperatury" },
+            { "icon": "Award", "title": "Materiał klasy premium", "subtitle": "Stal żaroodporna – trwałość i odporność na wysokie temperatury" },
             { "icon": "Shield", "title": "24 miesiące", "subtitle": "Gwarancja" },
             { "icon": "Zap", "title": "ok. 160 kg", "subtitle": "Stabilna waga" }
           ],
@@ -100,28 +100,10 @@
           },
           "relatedProducts": [
             {
-              "name": "Grill Pro 600",
-              "price": "749,00 zł",
+              "name": "Grill STALUMO Beczka",
+              "price": "6666 zł",
               "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg",
-              "url":"/pl/produkty"
-            },
-            {
-              "name": "Grill Master XL",
-              "price": "899,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg",
-              "url":"/pl/produkty"
-            },
-            {
-              "name": "Grill Compact 400",
-              "price": "549,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_2.jpg",
-              "url":"/pl/produkty"
-            },
-            {
-              "name": "Wędzarnia Stalumo",
-              "price": "999,00 zł",
-              "image": "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_3.jpg",
-              "url":"/pl/produkty"
+              "url":"/pl/produkty/grill-beczka-stalumo"
             }
           ]
         },
@@ -287,7 +269,7 @@
             { "icon": "ThermometerSun", "title": "Wytrzymałość cieplna", "subtitle": "Stal 4 mm, odporna na wysokie temperatury" },
             { "icon": "Award", "title": "Materiał premium", "subtitle": "Stal malowana farbą żaroodporną, w pełni ekologiczna" },
             { "icon": "Shield", "title": "24 miesiące", "subtitle": "Gwarancja" },
-            { "icon": "Repeat", "title": "2 w 1", "subtitle": "Grillowanie klasyczne, amerykańskie i wędzenie" }
+            { "icon": "Repeat", "title": "3 w 1", "subtitle": "Grillowanie klasyczne, amerykańskie i wędzenie" }
           ],
           "price": { "old": "8900", "discountPercent": "5%", "current": "8450 zł", "freeShippingThreshold": "500 zł" },
           "availability": ["Dostępny od ręki", "Wysyłka w 24h", "Gwarancja 24 miesiące"],
@@ -301,9 +283,7 @@
             ]
           },
           "relatedProducts": [
-            { "name": "Grill Pro 600", "price": "749,00 zł", "image": "/assets/images/products/stalumo_pro_600.jpg", "url": "/pl/produkty" },
-            { "name": "Grill Master XL", "price": "899,00 zł", "image": "/assets/images/products/stalumo_master_xl.jpg", "url": "/pl/produkty" },
-            { "name": "Wędzarnia Stalumo", "price": "999,00 zł", "image": "/assets/images/products/stalumo_smoker.jpg", "url": "/pl/produkty" }
+            { "name": "Palenisko ogrodowe STALUMO", "price": "6900 zł", "image": "/assets/images/products/stalumo_pro_600.jpg", "url": "/pl/produkty/palenisko-ogrodowe-stalumo" }
           ]
         },
         "en": {

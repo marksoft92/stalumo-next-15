@@ -79,7 +79,7 @@ const iconsMap: Record<string, any> = {
           {/* Product Header */}
           <div className="mb-8">
             <div className="flex items-center gap-4 mb-4">
-              <h1 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white to-neutral-300 bg-clip-text text-transparent">
+              <h1 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white to-neutral-300 bg-clip-text text-transparent py-4">
                 {productData.title}
               </h1>
               <div className="flex items-center gap-2">
