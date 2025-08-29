@@ -52,7 +52,6 @@ const CategoriesPage = async ({ params }: { params: any }) => {
   const locale = params.locale
 
   const productData = await fetchPosts(locale,slug);
-console.log(productData)
 
   if (!productData[0]) {
     notFound();

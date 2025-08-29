@@ -4,53 +4,11 @@ import { notFound } from "next/navigation";
 import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
 import {
-  Shield,
-  Clock,
-  Award,
-  Wrench,
-  MapPin,
-  Phone,
-  Mail,
-  CheckCircle2,
-  Star,
-  Users,
-  Calendar,
-  ArrowRight,
-  Building2,
-  Hammer,
-  Factory,
-  Zap,
-  Target,
-  Truck,
-  Settings,
-  Eye,
-  Heart,
-  MessageSquare,
-  Camera,
-  PlayCircle,
-  Download,
-  FileText,
-  Calculator,
-  ChevronRight,
-  Quote,
-  ThumbsUp,
-  Briefcase,
-  Globe,
-  Sparkles,
-  TrendingUp,
-  ShieldCheck,
-  Clock3,
-  Package,
-  Headphones,
-  Medal,
-  Lightbulb,
-  Gauge,
-  Home,
-
-  TreePine,
-  Building
+  Phone, MapPin, Clock, Star, Award, Zap, ShieldCheck, Wrench,
+  Hammer, Factory, Truck, Settings, Camera, FileText, ThumbsUp,
+  MessageSquare, Calendar, Globe, ChevronRight, Quote, Building2,
+  Sparkles, TrendingUp, CheckCircle, ArrowRight, Heart, Users,Trophy
 } from "lucide-react";
-
 
 type ServiceEntry = {
   slugCity: string;
@@ -66,7 +24,6 @@ type ServiceEntry = {
     keywords: string;
     postalCode: string;
     street: string;
-    slug?: string;
     canonical_url?: string;
     og_title?: string;
     og_description?: string;
@@ -113,1275 +70,1063 @@ type ServiceEntry = {
       question: string;
       answer: string;
     }[];
-  }
+  };
 };
-
-
 
 type Props = {
   params: {
     slugCity: any;
   };
 };
+
 const getTypeIcon = (typeName: string) => {
   const name = typeName.toLowerCase();
-  if (name.includes('balkon')) return Home;
-  if (name.includes('schod')) return Home;
-  if (name.includes('zewnętrz')) return TreePine;
-  if (name.includes('wewnętrz')) return Building;
-  return Shield;
+  if (name.includes("balkon")) return Building2;
+  if (name.includes("schod")) return Building2;
+  if (name.includes("zewnętrz")) return Hammer;
+  if (name.includes("wewnętrz")) return Wrench;
+  return ShieldCheck;
 };
+
 // Animacje
 const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
+  initial: { opacity: 0, y: 50 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 }
+  transition: { duration: 0.6 },
 };
 
-const fadeInDown = {
-  initial: { opacity: 0, y: -30 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 }
-};
-
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
+const scaleIn = {
+  initial: { opacity: 0, scale: 0.9 },
+  animate: { opacity: 1, scale: 1 },
+  transition: { duration: 0.5 },
 };
 
 const slideInLeft = {
   initial: { opacity: 0, x: -50 },
   animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.6 }
+  transition: { duration: 0.6 },
 };
 
 const slideInRight = {
   initial: { opacity: 0, x: 50 },
   animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.6 }
+  transition: { duration: 0.6 },
 };
 
-const slideInUp = {
-  initial: { opacity: 0, y: 50 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 }
-};
-
-const scaleIn = {
-  initial: { opacity: 0, scale: 0.8 },
-  animate: { opacity: 1, scale: 1 },
-  transition: { duration: 0.5 }
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
 };
 
 export default function Page({ entry }: any) {
-  const [slug, city] = entry.slugCity.split('~');
-  const stepIcons = [MessageSquare, Eye, Calculator, Factory, Truck]
-
+  const [slug, city] = entry.slugCity.split("~");
 
   if (!entry) notFound();
 
   const businessSchema = entry.seo.local_business_schema;
-  const faqSchema = entry.seo.faq_schema;
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": businessSchema?.name || "Stalumo",
-    "image": entry.seo.og_image || "https://stalumo.com/assets/images/stalumo.png",
+    name: businessSchema?.name || "Stalumo",
+    image: entry.seo.og_image || "https://stalumo.com/assets/images/stalumo.png",
     "@id": "https://stalumo.com#stalumo",
-    "url": entry.seo.canonical_url || `https://stalumo.com/pl/${slug}~${city}`,
-    "telephone": businessSchema?.telephone || "+48 784-532-549",
-    "priceRange": "500–10000 PLN",
-    "description": entry.description,
-    "sameAs": [
+    url: entry.seo.canonical_url || `https://stalumo.com/pl/${slug}~${city}`,
+    telephone: businessSchema?.telephone || "+48 784-532-549",
+    priceRange: "500–10000 PLN",
+    description: entry.description,
+    sameAs: [
       "https://www.facebook.com/stalumo",
       "https://www.instagram.com/stalumo",
-      "https://www.google.com/maps/place/ul.+Kolejowa+6,+73-220+Drawno"
+      "https://www.google.com/maps/place/ul.+Kolejowa+6,+73-220+Drawno",
     ],
-    "address": {
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": businessSchema?.address.streetAddress || "ul. Kolejowa 6",
-      "addressLocality": businessSchema?.address.addressLocality || "Drawno",
-      "postalCode": businessSchema?.address.postalCode || "73-220",
-      "addressCountry": {
-        "@type": "Country",
-        "name": "Poland"
-      }
+      streetAddress: businessSchema?.address.streetAddress || "ul. Kolejowa 6",
+      addressLocality: businessSchema?.address.addressLocality || "Drawno",
+      postalCode: businessSchema?.address.postalCode || "73-220",
+      addressCountry: { "@type": "Country", name: "Poland" },
     },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": entry.city
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Zachodniopomorskie"
-      }
-    ]
+    areaServed: [
+      { "@type": "City", name: entry.city },
+      { "@type": "AdministrativeArea", name: "Zachodniopomorskie" },
+    ],
   };
 
-  const faqStructuredData = faqSchema ? {
+  const serviceStructuredData = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqSchema.map((faq:any) => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
+    "@type": "Service",
+    name: `${entry.service_name} ${entry.city}`,
+    description: entry.description,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "Stalumo",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: businessSchema?.address.streetAddress || "ul. Kolejowa 6",
+        addressLocality: businessSchema?.address.addressLocality || "Drawno",
+        postalCode: businessSchema?.address.postalCode || "73-220",
+        addressCountry: "Poland",
+      },
+    },
+    areaServed: { "@type": "City", name: entry.city },
+  };
+
+  const faqStructuredData = entry.seo.faq_schema
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: entry.seo.faq_schema.map((faq: any) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
       }
-    }))
-  } : null;
+    : null;
 
   return (
     <>
-      {/* Floating Action Button */}
-      
-
-      <div className="min-h-screen bg-gradient-to-br from-[#0A0A0A] via-[#111111] to-[#1A1A1A]">
-
-        {/* Hero Section with Video Background Effect */}
-        <motion.section
-          className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
-          initial="initial"
-          animate="animate"
-          variants={staggerContainer}
-        >
-          {/* Animated Background */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#EB4036] rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#EB4036] rounded-full blur-3xl animate-pulse delay-1000"></div>
-            <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-blue-500 rounded-full blur-3xl animate-pulse delay-500"></div>
+      <div className="min-h-screen bg-black text-white overflow-hidden">
+        {/* Hero Section */}
+        <section className="relative h-screen flex items-center justify-center">
+          <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 via-black to-gray-900/30">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(235,64,54,0.1),transparent_70%)]"></div>
+            {[...Array(20)].map((_, i) => (
+              <div
+                key={i}
+                className="absolute w-2 h-2 bg-red-500 rounded-full animate-pulse"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  animationDelay: `${Math.random() * 3}s`,
+                  animationDuration: `${2 + Math.random() * 2}s`,
+                }}
+              ></div>
+            ))}
           </div>
 
-          <div className="max-w-[1280px] mx-auto px-4 py-24 relative z-10">
-            <motion.div className="text-center space-y-8" variants={fadeInUp}>
-
-              {/* Badge */}
-              <motion.div
-                className="inline-flex items-center gap-2 bg-[#EB4036] bg-opacity-20 backdrop-blur-sm text-[#EB4036] px-6 py-3 rounded-full border border-[#EB4036] border-opacity-30"
-                variants={fadeInDown}
-              >
-                <Building2 className="w-4 h-4" />
-                <span className="font-semibold uppercase tracking-wider text-sm">
-                  Usługi: {entry.service_name}
+          <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="space-y-8"
+            >
+              <div className="inline-block px-6 py-2 bg-red-500/20 border border-red-500 rounded-full text-red-500 text-sm font-semibold uppercase tracking-[4px] backdrop-blur-sm">
+                {entry.service_name} • {entry.city}
+              </div>
+              <h1 className="text-[2rem] sm:text-[6rem] font-oswald font-black uppercase leading-[0.9] tracking-tight">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-500 to-gray-300">
+                  {entry.seo.h1 || entry.service_name} <span className="text-white/60">w {entry.defCity}</span>
                 </span>
-              </motion.div>
-
-              {/* Main Title */}
-              <motion.h1
-                className="text-white text-[5rem] leading-[0.9] font-oswald font-bold uppercase max-lg:text-[3rem] max-w-4xl mx-auto"
-                variants={fadeInUp}
-              >
-                <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                  {entry.seo.h1 || `${entry.service_name}`}
-                </span>
-                <br />
-                <span className="text-[#EB4036] text-[3rem] max-lg:text-[2rem]">
-                  w {entry.defCity}
-                </span>
-              </motion.h1>
-
-              {/* Description */}
-              <motion.p
-                className="text-[#A5A5A5] text-[1.4rem] leading-[2.2rem] max-w-[70ch] mx-auto font-raleway"
-                variants={fadeInUp}
-              >
-                {entry.seo.description}
-              </motion.p>
-
-              {/* CTA Buttons */}
-              <motion.div
-                className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12"
-                variants={fadeInUp}
-              >
+              </h1>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full"></div>
+              <p className="text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-raleway">
+                {entry.description}
+              </p>
+              <div className="flex flex-col lg:flex-row gap-6 justify-center items-center pt-8">
                 <Link
                   href="/contact"
-                  className="group bg-[#EB4036] hover:bg-[#d63428] text-white px-8 py-4 rounded-xl font-semibold uppercase tracking-wider transition-all duration-300 flex items-center gap-3 shadow-xl hover:shadow-2xl hover:shadow-[#EB4036]/25"
+                  className="group relative px-12 py-4 bg-gradient-to-r from-red-500 to-gray-300 text-black font-bold rounded-full shadow-[0_0_30px_rgba(235,64,54,0.5)] transition-all duration-300 hover:shadow-[0_0_50px_rgba(235,64,54,0.8)] hover:scale-105 uppercase tracking-wide"
                 >
-                  {entry.cta || "Bezpłatna wycena"}
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <span className="relative z-10">{entry.cta || "Bezpłatna wycena"}</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-300 to-red-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </Link>
-
-                <Link href="/gallery" className="group bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-xl font-semibold uppercase tracking-wider transition-all duration-300 flex items-center gap-3">
-                  <PlayCircle className="w-5 h-5" />
-                  Zobacz realizacje
-                </Link>
-              </motion.div>
-
-              {/* Stats Bar */}
-              <motion.div
-                className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 bg-black bg-opacity-40 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-10"
-                variants={staggerContainer}
-              >
-                {[
-                  { icon: Users, number: "500+", text: "Zadowolonych klientów", color: "text-blue-400" },
-                  { icon: Award, number: "10+", text: "Lat doświadczenia", color: "text-green-400" },
-                  { icon: CheckCircle2, number: "98%", text: "Terminowość", color: "text-yellow-400" },
-                  { icon: Star, number: "5.0", text: "Średnia ocen", color: "text-purple-400" }
-                ].map((stat, index) => (
-                  <motion.div
-                    key={index}
-                    className="text-center group"
-                    variants={scaleIn}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <stat.icon className={`w-8 h-8 mx-auto mb-3 ${stat.color} group-hover:scale-110 transition-transform`} />
-                    <div className="text-3xl font-bold text-white mb-1">{stat.number}</div>
-                    <div className="text-sm text-[#A5A5A5]">{stat.text}</div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </motion.div>
-          </div>
-        </motion.section>
-
-        {/* Main Content */}
-        <div className="max-w-[1280px] mx-auto px-4 pb-24 space-y-24">
-
-
-          {/* Service Types - Wykorzystanie content.types */}
-          <motion.section
-            className="relative"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <div className="bg-gradient-to-br from-[#1A1A1A] via-[#222] to-[#2A2A2A] rounded-3xl p-12 border border-[#333] relative overflow-hidden">
-              <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-0 left-0 w-full h-full"
-                  style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23EB4036' fill-opacity='1'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-                  }}
-                ></div>
-              </div>
-
-              <div className="relative z-10">
-                <motion.div className="text-center mb-12" variants={fadeInUp}>
-                  <h2 className="text-4xl font-bold text-white mb-4 flex items-center justify-center gap-3">
-                    <Factory className="w-10 h-10 text-[#EB4036]" />
-                    Rodzaje barierek stalowych w {entry.defCity}
-                  </h2>
-                  <div className="w-24 h-1 bg-gradient-to-r from-[#EB4036] to-transparent mx-auto mb-6"></div>
-                  <p className="text-[#A5A5A5] text-lg max-w-3xl mx-auto">
-                    {entry.description}
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  className="grid md:grid-cols-2 gap-8"
-                  variants={staggerContainer}
-                >
-                  {entry.content.types.map((type:any, index:any) => {
-                    const IconComponent = getTypeIcon(type.name);
-                    return (
-                      <motion.div
-                        key={index}
-                        className="bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A] p-8 rounded-2xl border border-[#404040] group hover:border-[#EB4036] transition-all duration-300"
-                        variants={slideInUp}
-                        whileHover={{ y: -10 }}
-                      >
-                        <div className="bg-[#EB4036] p-4 rounded-xl inline-block mb-6 group-hover:scale-110 transition-transform">
-                          <IconComponent className="w-8 h-8 text-white" />
-                        </div>
-                        <h3 className="text-white text-xl font-bold mb-4">{type.name}</h3>
-                        <p className="text-[#A5A5A5] mb-6">{type.description}</p>
-                        <div className="flex items-center gap-2 text-[#EB4036] font-medium">
-                          <ArrowRight className="w-4 h-4" />
-                          <span>Zobacz więcej</span>
-                        </div>
-                      </motion.div>
-                    );
-                  })}
-                </motion.div>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Services Overview */}
-          <motion.section
-            className="relative"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <div className="bg-gradient-to-br from-[#1A1A1A] via-[#222] to-[#2A2A2A] rounded-3xl p-12 border border-[#333] relative overflow-hidden">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-0 left-0 w-full h-full"
-                  style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23EB4036' fill-opacity='1'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-                  }}
-                ></div>
-              </div>
-
-              <div className="relative z-10">
-                <motion.div className="text-center mb-12" variants={fadeInUp}>
-                  <h2 className="text-4xl font-bold text-white mb-4 flex items-center justify-center gap-3">
-                    <Factory className="w-10 h-10 text-[#EB4036]" />
-                    Kompleksowa obsługa w {entry.defCity}
-                  </h2>
-                  <div className="w-24 h-1 bg-gradient-to-r from-[#EB4036] to-transparent mx-auto mb-6"></div>
-                  <p className="text-[#A5A5A5] text-lg max-w-3xl mx-auto">
-                    Od pomysłu do realizacji - zapewniamy pełen zakres usług spawalniczych
-                    i konstrukcyjnych na najwyższym poziomie.
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  className="grid md:grid-cols-3 gap-8"
-                  variants={staggerContainer}
-                >
-                  {[
-                    {
-                      icon: Lightbulb,
-                      title: "Projektowanie",
-                      desc: "Indywidualne projekty dopasowane do Twoich potrzeb i wymagań technicznych",
-                      features: ["Wizualizacje", "Obliczenia statyczne", "Dokumentacja techniczna"]
-                    },
-                    {
-                      icon: Factory,
-                      title: "Produkcja",
-                      desc: "Wykonanie w nowoczesnym zakładzie z wykorzystaniem najlepszych materiałów",
-                      features: ["Spawanie MIG/MAG/TIG", "Obróbka CNC", "Kontrola jakości"]
-                    },
-                    {
-                      icon: Truck,
-                      title: "Montaż",
-                      desc: "Profesjonalny montaż przez doświadczony zespół z gwarancją wykonania",
-                      features: ["Transport na miejsce", "Montaż specjalistyczny", "Gwarancja"]
-                    }
-                  ].map((service, index) => (
-                    <motion.div
-                      key={index}
-                      className="bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A] p-8 rounded-2xl border border-[#404040] group hover:border-[#EB4036] transition-all duration-300"
-                      variants={slideInUp}
-                      whileHover={{ y: -10 }}
-                    >
-                      <div className="bg-[#EB4036] p-4 rounded-xl inline-block mb-6 group-hover:scale-110 transition-transform">
-                        <service.icon className="w-8 h-8 text-white" />
-                      </div>
-                      <h3 className="text-white text-xl font-bold mb-4">{service.title}</h3>
-                      <p className="text-[#A5A5A5] mb-6">{service.desc}</p>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, idx) => (
-                          <li key={idx} className="text-[#A5A5A5] text-sm flex items-center gap-2">
-                            <CheckCircle2 className="w-4 h-4 text-[#EB4036]" />
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </motion.div>
-                  ))}
-                </motion.div>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Service Areas */}
-          {entry.seo.keywords && (
-            <motion.section
-              className="space-y-12"
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-            >
-              <div className="text-center">
-                <h2 className="text-4xl font-bold text-white mb-6 flex items-center justify-center gap-3">
-                  <MapPin className="w-10 h-10 text-[#EB4036]" />
-                  Obszar naszego działania
-                </h2>
-                <div className="w-24 h-1 bg-gradient-to-r from-[#EB4036] to-transparent mx-auto mb-6"></div>
-                <p className="text-[#A5A5A5] text-lg max-w-3xl mx-auto">
-                  Świadczymy usługi spawalnicze i konstrukcyjne na terenie całego województwa
-                  zachodniopomorskiego oraz sąsiednich regionów.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                <motion.div
-                  className="bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] p-8 rounded-2xl border border-[#404040]"
-                  variants={slideInLeft}
-                >
-                  <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
-                    <Globe className="w-6 h-6 text-[#EB4036]" />
-                    Obsługujemy również inne miejscowości.
-                  </h3>
-                  <div className="grid grid-cols-2 gap-4">
-                    {entry.content.service_area.nearby?.slice(0, 8).map((area: any, index: any) => (
-                      <motion.div
-                        key={index}
-                        className="flex items-center gap-3 p-3 bg-[#2A2A2A] rounded-lg hover:bg-[#EB4036]/20 transition-colors group"
-                        whileHover={{ scale: 1.02 }}
-                      >
-                        <MapPin className="w-4 h-4 text-[#EB4036] group-hover:scale-110 transition-transform" />
-                        <span className="text-[#A5A5A5] group-hover:text-white transition-colors">
-                          {area.trim()}
-                        </span>
-                      </motion.div>
-                    ))}
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  className="bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] p-8 rounded-2xl border border-[#404040]"
-                  variants={slideInRight}
-                >
-                  <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
-                    <Truck className="w-6 h-6 text-[#EB4036]" />
-                    Zasięg działania
-                  </h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between p-4 bg-[#2A2A2A] rounded-lg">
-                      <span className="text-white">Zasięg podstawowy</span>
-                      <span className="text-[#EB4036] font-bold">50 km</span>
-                    </div>
-                    <div className="flex items-center justify-between p-4 bg-[#2A2A2A] rounded-lg">
-                      <span className="text-white">Zasięg rozszerzony</span>
-                      <span className="text-[#EB4036] font-bold">100 km</span>
-                    </div>
-                    <div className="flex items-center justify-between p-4 bg-[#2A2A2A] rounded-lg">
-                      <span className="text-white">Realizacje specjalne</span>
-                      <span className="text-[#EB4036] font-bold">Cała Polska</span>
-                    </div>
-                  </div>
-                  <p className="text-[#A5A5A5] text-sm mt-4">
-                    * Transport i montaż w ramach zasięgu podstawowego bezpłatny
-                  </p>
-                </motion.div>
-              </div>
-            </motion.section>
-          )}
-
-          {/* Why Choose Us */}
-          <motion.section
-            className="grid lg:grid-cols-2 gap-16 items-center"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-          >
-            <motion.div className="space-y-8" variants={slideInLeft}>
-              <div>
-                <h2 className="text-4xl font-bold text-white mb-6 flex items-center gap-3">
-                  <Shield className="w-10 h-10 text-[#EB4036]" />
-                  Dlaczego warto wybrać Stalumo?
-                </h2>
-                <div className="w-24 h-1 bg-gradient-to-r from-[#EB4036] to-transparent mb-6"></div>
-                <p className="text-[#A5A5A5] text-lg mb-8">
-                  Jesteśmy liderem w branży spawalniczej w regionie. Nasze doświadczenie,
-                  nowoczesne technologie i pasja do perfekcji gwarantują najwyższą jakość.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                {[
-                  { icon: Medal, text: "Certyfikowane spawanie według norm PN-EN ISO 3834", highlight: true },
-                  { icon: Clock3, text: "Terminowość - 98% zleceń w terminie", highlight: false },
-                  { icon: ShieldCheck, text: "Gwarancja jakości do 5 lat", highlight: true },
-                  { icon: TrendingUp, text: "Ponad 500 zrealizowanych projektów", highlight: false },
-                  { icon: Headphones, text: "24/7 wsparcie techniczne", highlight: true }
-                ].map((benefit, index) => (
-                  <motion.div
-                    key={index}
-                    className={`flex items-center gap-4 p-4 rounded-xl transition-all duration-300 group cursor-pointer ${benefit.highlight
-                      ? 'bg-gradient-to-r from-[#EB4036]/10 to-transparent border border-[#EB4036]/30'
-                      : 'hover:bg-[#1A1A1A]'
-                      }`}
-                    variants={fadeInUp}
-                    whileHover={{ x: 10, scale: 1.02 }}
-                  >
-                    <div className={`p-3 rounded-lg ${benefit.highlight ? 'bg-[#EB4036]' : 'bg-[#2A2A2A] group-hover:bg-[#EB4036]'} transition-colors`}>
-                      <benefit.icon className="w-5 h-5 text-white" />
-                    </div>
-                    <span className="text-white font-medium">{benefit.text}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="relative"
-              variants={slideInRight}
-            >
-              {/* Main Card */}
-              <div className="bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] p-8 rounded-2xl border border-[#404040] relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#EB4036] opacity-10 rounded-full -translate-y-16 translate-x-16"></div>
-
-                <div className="relative z-10">
-                  <div className="flex items-center gap-3 mb-6">
-                    <Zap className="w-6 h-6 text-[#EB4036]" />
-                    <h3 className="text-xl font-bold text-white">Najnowsze technologie</h3>
-                  </div>
-                  <p className="text-[#A5A5A5] mb-6">
-                    Wykorzystujemy najnowocześniejsze metody spawania i obróbki metali,
-                    zapewniając trwałość i estetykę każdej konstrukcji.
-                  </p>
-
-                  {/* Technology Icons */}
-                  <div className="grid grid-cols-3 gap-4">
-                    {[
-                      { name: "MIG/MAG", icon: Zap },
-                      { name: "TIG", icon: Settings },
-                      { name: "Plazma", icon: Factory },
-                      { name: "CNC", icon: Gauge },
-                      { name: "CAD/CAM", icon: Eye },
-                      { name: "3D Print", icon: Package }
-                    ].map((tech, index) => (
-                      <div key={index} className="text-center p-3 bg-[#2A2A2A] rounded-lg hover:bg-[#EB4036]/20 transition-colors">
-                        <tech.icon className="w-6 h-6 text-[#EB4036] mx-auto mb-2" />
-                        <span className="text-xs text-[#A5A5A5]">{tech.name}</span>
-                      </div>
-                    ))}
-                  </div>
+                <div className="flex items-center gap-4 text-red-500">
+                  <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                  <span className="text-lg font-semibold">Dostępny 24/7</span>
+                  <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
                 </div>
               </div>
-
-              {/* Floating Card */}
-              
             </motion.div>
-          </motion.section>
-
-          {/* Process Timeline */}
-          <motion.section
-            className="space-y-12"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <div className="text-center">
-              <h2 className="text-4xl font-bold text-white mb-6">
-                Jak przebiega współpraca?
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#EB4036] to-transparent mx-auto mb-6"></div>
-              <p className="text-[#A5A5A5] text-lg max-w-3xl mx-auto">
-                Proces realizacji każdego projektu jest starannie zaplanowany i wykonywany
-                z najwyższą precyzją.
-              </p>
+          </div>
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <div className="w-6 h-10 border-2 border-red-500 rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-red-500 rounded-full animate-bounce mt-2"></div>
             </div>
+          </div>
+        </section>
 
-            <div className="relative">
-              {/* Timeline Line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#EB4036] via-[#EB4036]/50 to-transparent lg:block hidden"></div>
-
-              <div className="space-y-16">
-                {[
-                  {
-                    step: "01",
-                    icon: MessageSquare,
-                    title: "Konsultacja",
-                    desc: "Omawiamy Twoje potrzeby, analizujemy wymagania techniczne i przedstawiamy możliwe rozwiązania.",
-                    time: "1-2 dni",
-                    side: "left"
-                  },
-                  {
-                    step: "02",
-                    icon: Eye,
-                    title: "Pomiar i projekt",
-                    desc: "Wykonujemy pomiary na miejscu i przygotowujemy szczegółowy projekt z wizualizacją 3D.",
-                    time: "3-7 dni",
-                    side: "right"
-                  },
-                  {
-                    step: "03",
-                    icon: Calculator,
-                    title: "Wycena",
-                    desc: "Przedstawiamy szczegółową wycenę z harmonogramem realizacji i warunkami współpracy.",
-                    time: "1-2 dni",
-                    side: "left"
-                  },
-                  {
-                    step: "04",
-                    icon: Factory,
-                    title: "Produkcja",
-                    desc: "Rozpoczynamy produkcję zgodnie z zatwierdzonym projektem, stosując najwyższej jakości materiały.",
-                    time: "1-3 tygodnie",
-                    side: "right"
-                  },
-                  {
-                    step: "05",
-                    icon: Truck,
-                    title: "Montaż",
-                    desc: "Dostarczamy i montujemy konstrukcję na miejscu, zapewniając pełną satysfakcję klienta.",
-                    time: "1-2 dni",
-                    side: "left"
-                  }
-                ].map((item, index) => (
-                  <motion.div
-                    key={index}
-                    className={`relative lg:w-1/2 ${item.side === 'right' ? 'lg:ml-auto lg:pl-12' : 'lg:pr-12'}`}
-                    variants={item.side === 'left' ? slideInLeft : slideInRight}
-                  >
-                    {/* Timeline Dot */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:block hidden">
-                      <div className="w-4 h-4 bg-[#EB4036] rounded-full border-4 border-[#0A0A0A]"></div>
-                    </div>
-
-                    <motion.div
-                      className="bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] p-8 rounded-2xl border border-[#404040] group hover:border-[#EB4036] transition-all duration-300"
-                      whileHover={{ scale: 1.02, y: -5 }}
-                    >
-                      <div className="flex items-start gap-4">
-                        <div className="bg-[#EB4036] p-4 rounded-xl group-hover:scale-110 transition-transform">
-                          <item.icon className="w-6 h-6 text-white" />
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex items-center gap-3 mb-3">
-                            <span className="text-[#EB4036] font-bold text-2xl">{item.step}</span>
-                            <span className="text-[#A5A5A5] text-sm bg-[#2A2A2A] px-3 py-1 rounded-full">
-                              {item.time}
-                            </span>
-                          </div>
-                          <h3 className="text-white text-xl font-bold mb-3">{item.title}</h3>
-                          <p className="text-[#A5A5A5]">{item.desc}</p>
-                        </div>
-                      </div>
-                    </motion.div>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </motion.section>
-
-
-
-          {/* Portfolio Section - Wykorzystanie content.portfolio */}
-          <motion.section
-            className="space-y-12"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <div className="text-center">
-              <h2 className="text-4xl font-bold text-white mb-6 flex items-center justify-center gap-3">
-                <Camera className="w-10 h-10 text-[#EB4036]" />
-                Nasze ostatnie realizacje
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#EB4036] to-transparent mx-auto mb-6"></div>
-              <p className="text-[#A5A5A5] text-lg max-w-3xl mx-auto">
-                Każdy projekt to unikalna historia. Zobacz nasze najnowsze realizacje barierek stalowych.
-              </p>
-            </div>
-
+        {/* Sekcja statystyk */}
+        <section className="py-24 relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-gray-500/5"></div>
+          <div className="max-w-7xl mx-auto px-6 relative z-10">
             <motion.div
-              className="grid md:grid-cols-2 gap-8"
-              variants={staggerContainer}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
             >
-              {entry.content.portfolio.map((project:any, index:any) => (
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                  Lider Spawalnictwa w {entry.defCity}
+                </span>
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+            </motion.div>
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              {[
+                { number: "500+", label: "Zadowolonych klientów", suffix: "w regionie", icon: Users },
+                { number: "10+", label: "Lat doświadczenia", suffix: "w spawalnictwie", icon: Award },
+                { number: "98%", label: "Terminowość", suffix: "projektów na czas", icon: Clock },
+                { number: "5.0", label: "Średnia ocen", suffix: "od klientów", icon: Star },
+              ].map((stat, index) => (
                 <motion.div
                   key={index}
-                  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] border border-[#404040] hover:border-[#EB4036] transition-all duration-300"
-                  variants={scaleIn}
-                  whileHover={{ scale: 1.02 }}
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group relative"
                 >
-                  <div className="aspect-[4/3] bg-gradient-to-br from-[#2A2A2A] to-[#404040] relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
-                    <div className="absolute inset-0 bg-[#EB4036]/10"></div>
-                    <div className="absolute inset-0 flex items-center justify-center z-20">
-                      <Camera className="w-16 h-16 text-white/30" />
+                  <div className="bg-gradient-to-br from-gray-900 to-black border border-red-500/30 rounded-2xl p-8 text-center hover:border-red-500/60 transition-all duration-300 hover:shadow-[0_0_30px_rgba(235,64,54,0.2)] hover:scale-105">
+                    <div className="flex justify-center mb-4">
+                      <stat.icon className="w-12 h-12 text-red-500 group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-white font-bold text-lg mb-3">{project.title}</h3>
-                    <p className="text-[#A5A5A5] text-sm mb-4">{project.description}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-[#A5A5A5] text-sm">Zobacz szczegóły</span>
-                      <ArrowRight className="w-4 h-4 text-[#EB4036] group-hover:translate-x-2 transition-transform" />
+                    <div className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-black text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300 mb-4">
+                      {stat.number}
                     </div>
+                    <h3 className="text-xl font-bold text-white mb-2">{stat.label}</h3>
+                    <p className="text-red-500 font-semibold">{stat.suffix}</p>
+                    <div className="absolute top-4 right-4 w-2 h-2 bg-red-500 rounded-full group-hover:w-3 group-hover:h-3 transition-all duration-300"></div>
                   </div>
                 </motion.div>
               ))}
-            </motion.div>
-          </motion.section>
-
-          {/* FAQ Section */}
-          {faqSchema && faqSchema.length > 0 && (
-            <motion.section
-              className="space-y-12"
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-            >
-              <div className="text-center">
-                <h2 className="text-4xl font-bold text-white mb-6">
-                  Najczęściej zadawane pytania
-                </h2>
-                <div className="w-24 h-1 bg-gradient-to-r from-[#EB4036] to-transparent mx-auto mb-6"></div>
-              </div>
-
-              <motion.div
-                className="max-w-4xl mx-auto space-y-4"
-                variants={staggerContainer}
-              >
-                {faqSchema.map((faq:any, index:any) => (
-                  <motion.div
-                    key={index}
-                    className="bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] rounded-2xl border border-[#404040] overflow-hidden group hover:border-[#EB4036] transition-all duration-300"
-                    variants={fadeInUp}
-                  >
-                    <div className="p-8">
-                      <h3 className="text-white font-bold text-lg mb-4 flex items-start gap-4">
-                        <div className="bg-[#EB4036] p-2 rounded-full mt-1 group-hover:scale-110 transition-transform">
-                          <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        {faq.question}
-                      </h3>
-                      <p className="text-[#A5A5A5] leading-relaxed pl-12">
-                        {faq.answer}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </motion.section>
-          )}
-
-          {/* Pricing Guide */}
-          <motion.section
-            className="space-y-12"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <div className="text-center">
-              <h2 className="text-4xl font-bold text-white mb-6 flex items-center justify-center gap-3">
-                <Calculator className="w-10 h-10 text-[#EB4036]" />
-                Orientacyjne ceny usług
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#EB4036] to-transparent mx-auto mb-6"></div>
-              <p className="text-[#A5A5A5] text-lg max-w-3xl mx-auto">
-                Przedstawiamy orientacyjne ceny naszych usług. Dokładna wycena zawsze
-                przygotowywana jest indywidualnie po analizie projektu.
-              </p>
             </div>
+          </div>
+        </section>
 
+        {/* Sekcja "Dlaczego my?" */}
+        <section className="py-24 relative">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(235,64,54,0.1)_0%,transparent_70%)]"></div>
+          <div className="max-w-7xl mx-auto px-6 relative z-10">
             <motion.div
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-              variants={staggerContainer}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-20"
             >
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                  Dlaczego Stalumo w {entry.defCity}?
+                </span>
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full"></div>
+            </motion.div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Barierki stalowe",
-                  price: "250-400 zł/mb",
-                  features: ["Projekt indywidualny", "Montaż", "Transport", "Gwarancja 3 lata"],
-                  popular: false
+                  icon: ShieldCheck,
+                  title: "Lokalny Ekspert",
+                  description: `Znamy potrzeby ${entry.city}. Tworzymy konstrukcje stalowe idealnie dopasowane do lokalnych wymagań.`,
+                  highlight: "10+ lat w regionie",
                 },
                 {
-                  title: "Balustrady schodowe",
-                  price: "300-500 zł/mb",
-                  features: ["Pomiary na miejscu", "Projekt 3D", "Montaż", "Gwarancja 5 lat"],
-                  popular: true
+                  icon: Zap,
+                  title: "Szybka Realizacja",
+                  description: `Dzięki lokalnemu zespołowi w ${entry.defCity} realizujemy projekty w krótkim czasie.`,
+                  highlight: "Gotowe w 7-14 dni",
                 },
                 {
-                  title: "Bramy wjazdowe",
-                  price: "1500-5000 zł/szt",
-                  features: ["Projekt", "Automatyka", "Montaż", "Serwis"],
-                  popular: false
+                  icon: Award,
+                  title: "Najwyższa Jakość",
+                  description: "Wykorzystujemy certyfikowane materiały i nowoczesne technologie spawania.",
+                  highlight: "Gwarancja 5 lat",
                 },
-                {
-                  title: "Ogrodzenia",
-                  price: "150-300 zł/mb",
-                  features: ["Słupki stalowe", "Montaż", "Transport", "Gwarancja 3 lata"],
-                  popular: false
-                },
-                {
-                  title: "Konstrukcje stalowe",
-                  price: "50-150 zł/kg",
-                  features: ["Obliczenia", "Projekt", "Montaż", "Certyfikaty"],
-                  popular: true
-                },
-                {
-                  title: "Schody metalowe",
-                  price: "2000-8000 zł/szt",
-                  features: ["Projekt", "Stopnie drewniane", "Montaż", "Gwarancja 5 lat"],
-                  popular: false
-                }
-              ].map((pricing, index) => (
+              ].map((feature, index) => (
                 <motion.div
                   key={index}
-                  className={`relative p-8 rounded-2xl border transition-all duration-300 group hover:scale-105 ${pricing.popular
-                    ? 'bg-gradient-to-br from-[#EB4036]/20 to-[#EB4036]/5 border-[#EB4036] shadow-lg shadow-[#EB4036]/25'
-                    : 'bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] border-[#404040] hover:border-[#EB4036]'
-                    }`}
-                  variants={scaleIn}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group relative"
                 >
-                  {pricing.popular && (
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#EB4036] text-white px-4 py-2 rounded-full text-sm font-bold">
-                      Najpopularniejsze
+                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-red-500/30 rounded-2xl p-8 hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_40px_rgba(235,64,54,0.3)] hover:scale-105">
+                    <div className="flex justify-center mb-6">
+                      <feature.icon className="w-16 h-16 text-red-500 group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                  )}
-
-                  <div className="text-center mb-6">
-                    <h3 className="text-white text-xl font-bold mb-3">{pricing.title}</h3>
-                    <div className="text-3xl font-bold text-[#EB4036] mb-2">{pricing.price}</div>
+                    <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-500 transition-colors duration-300">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed mb-6">{feature.description}</p>
+                    <div className="inline-block px-4 py-2 bg-red-500/20 border border-red-500 rounded-full text-red-500 text-sm font-semibold">
+                      {feature.highlight}
+                    </div>
+                    <div className="absolute top-4 right-4 w-3 h-3 bg-red-500/50 rounded-full group-hover:bg-red-500 group-hover:shadow-[0_0_20px_rgba(235,64,54,0.8)] transition-all duration-300"></div>
                   </div>
-
-                  <ul className="space-y-3 mb-8">
-                    {pricing.features.map((feature, idx) => (
-                      <li key={idx} className="text-[#A5A5A5] flex items-center gap-3">
-                        <CheckCircle2 className="w-4 h-4 text-[#EB4036] flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-
-                <Link href="/contact">
-                <button className={`w-full py-3 rounded-xl font-semibold uppercase tracking-wider transition-all duration-300 ${pricing.popular
-                                    ? 'bg-[#EB4036] text-white hover:bg-[#d63428]'
-                                    : 'bg-transparent border border-[#EB4036] text-[#EB4036] hover:bg-[#EB4036] hover:text-white'
-                                    }`}>
-                                    Zapytaj o wycenę
-                                  </button>
-                </Link>
                 </motion.div>
               ))}
-            </motion.div>
+            </div>
+          </div>
+        </section>
 
+        {/* Sekcja procesu pracy */}
+        <section className="py-24 bg-gradient-to-b from-black to-gray-900">
+          <div className="max-w-7xl mx-auto px-6">
             <motion.div
-              className="text-center bg-gradient-to-r from-[#1A1A1A] to-[#2A2A2A] p-8 rounded-2xl border border-[#404040]"
-              variants={fadeInUp}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-20"
             >
-              <p className="text-[#A5A5A5] mb-4">
-                <strong className="text-white">Uwaga:</strong> Podane ceny są orientacyjne i mogą się różnić
-                w zależności od złożoności projektu, rodzaju materiałów i lokalizacji.
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                  Jak Pracujemy
+                </span>
+                <br />w {entry.defCity}
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Nasz proces zapewnia precyzyjne i terminowe wykonanie każdego projektu.
               </p>
+            </motion.div>
+            <div className="relative">
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-red-500 to-gray-300 rounded-full"></div>
+              {[
+                {
+                  step: "01",
+                  title: "Konsultacja",
+                  description: `Omawiamy Twoje potrzeby w ${entry.defCity}, analizujemy wymagania techniczne i przedstawiamy rozwiązania.`,
+                  time: "1-2 dni",
+                  icon: MessageSquare,
+                },
+                {
+                  step: "02",
+                  title: "Pomiar i Projekt",
+                  description: "Wykonujemy pomiary na miejscu i przygotowujemy projekt z wizualizacją 3D.",
+                  time: "3-7 dni",
+                  icon: Settings,
+                },
+                {
+                  step: "03",
+                  title: "Wycena",
+                  description: "Przedstawiamy szczegółową wycenę z harmonogramem realizacji.",
+                  time: "1-2 dni",
+                  icon: FileText,
+                },
+                {
+                  step: "04",
+                  title: "Produkcja",
+                  description: "Realizujemy konstrukcję w nowoczesnym zakładzie z użyciem certyfikowanych materiałów.",
+                  time: "1-3 tygodnie",
+                  icon: Factory,
+                },
+                {
+                  step: "05",
+                  title: "Montaż",
+                  description: "Dostarczamy i montujemy konstrukcję, zapewniając pełną satysfakcję.",
+                  time: "1-2 dni",
+                  icon: Truck,
+                },
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.2 }}
+                  className={`flex items-center mb-16 ${index % 2 === 0 ? "flex-row-reverse" : ""}`}
+                >
+                  <div className={`w-1/2 ${index % 2 === 0 ? "pl-16" : "pr-16"}`}>
+                    <div className="bg-gradient-to-br from-gray-900 to-black border border-red-500/30 rounded-2xl p-8 hover:border-red-500/60 transition-all duration-300 hover:shadow-[0_0_30px_rgba(235,64,54,0.2)]">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="text-4xl font-oswald font-black text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                          {item.step}
+                        </div>
+                        <div className="px-3 py-1 bg-red-500/20 border border-red-500 rounded-full text-red-500 text-sm font-semibold">
+                          {item.time}
+                        </div>
+                      </div>
+                      <h3 className="text-2xl font-bold text-white mb-4">{item.title}</h3>
+                      <p className="text-gray-300 leading-relaxed">{item.description}</p>
+                    </div>
+                  </div>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-red-500 rounded-full shadow-[0_0_20px_rgba(235,64,54,0.8)] z-10"></div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Sekcja opinii klientów */}
+        <section className="py-24 relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-gray-500/5"></div>
+          <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-20"
+            >
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                Co Mówią Klienci z <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">{entry.city}</span>
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+              <div className="flex justify-center items-center gap-2">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-8 h-8 text-yellow-400 fill-yellow-400" />
+                ))}
+                <span className="text-2xl font-bold text-red-500 ml-4">5.0/5</span>
+                <span className="text-gray-400">(500+ opinii)</span>
+              </div>
+            </motion.div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {entry?.review?.map((review: any, index: any) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group"
+                >
+                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-red-500/30 rounded-2xl p-8 hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_40px_rgba(235,64,54,0.3)] hover:scale-105">
+                    <Quote className="w-8 h-8 text-red-500 mb-4 opacity-50" />
+                    <p className="text-gray-300 leading-relaxed mb-6 italic text-lg">"{review.author}"</p>
+                    <div className="flex items-center gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                      ))}
+                    </div>
+                    <div className="border-t border-red-500/30 pt-4">
+                      <div className="text-white font-bold">{review.author}</div>
+                      <div className="text-red-500 text-sm">{entry.city}</div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mt-16"
+            >
               <Link
-                href="/contact"
-                className="inline-flex items-center gap-3 bg-[#EB4036] hover:bg-[#d63428] text-white px-8 py-4 rounded-xl font-semibold uppercase tracking-wider transition-all duration-300"
+                href="/opinie"
+                className="inline-block px-8 py-4 border-2 border-red-500 text-red-500 font-semibold rounded-full hover:bg-red-500 hover:text-black transition-all duration-300 uppercase tracking-wide"
               >
-                <Calculator className="w-5 h-5" />
-                Bezpłatna wycena
+                Zobacz wszystkie opinie
               </Link>
             </motion.div>
-          </motion.section>
+          </div>
+        </section>
 
-          {/* Downloads & Resources */}
-          <motion.section
-            className="space-y-12"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <div className="text-center">
-              <h2 className="text-4xl font-bold text-white mb-6 flex items-center justify-center gap-3">
-                <Download className="w-10 h-10 text-[#EB4036]" />
-                Materiały do pobrania
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#EB4036] to-transparent mx-auto mb-6"></div>
-            </div>
-
+        {/* Sekcja lokalizacji */}
+        <section className="py-24 bg-gradient-to-b from-black to-gray-900">
+          <div className="max-w-7xl mx-auto px-6">
             <motion.div
-              className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
-              variants={staggerContainer}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-20"
             >
-              {[
-                {
-                  icon: FileText,
-                  title: "Katalog produktów",
-                  desc: "Pełny katalog naszych usług i realizacji",
-                  format: "PDF • 2.4 MB"
-                },
-                {
-                  icon: Calculator,
-                  title: "Kalkulator kosztów",
-                  desc: "Szybko oszacuj koszt swojego projektu",
-                  format: "Excel • 156 KB"
-                },
-                {
-                  icon: FileText,
-                  title: "Wzór umowy",
-                  desc: "Przykładowa umowa na wykonanie konstrukcji",
-                  format: "PDF • 245 KB"
-                },
-                {
-                  icon: Shield,
-                  title: "Certyfikaty",
-                  desc: "Nasze certyfikaty i uprawnienia",
-                  format: "PDF • 1.8 MB"
-                }
-              ].map((resource, index) => (
-                <motion.button
-                  key={index}
-                  className="bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] p-6 rounded-2xl border border-[#404040] hover:border-[#EB4036] transition-all duration-300 group text-left"
-                  variants={scaleIn}
-                  whileHover={{ y: -5, scale: 1.02 }}
-                >
-                  <resource.icon className="w-8 h-8 text-[#EB4036] mb-4 group-hover:scale-110 transition-transform" />
-                  <h3 className="text-white font-bold mb-2">{resource.title}</h3>
-                  <p className="text-[#A5A5A5] text-sm mb-3">{resource.desc}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-[#A5A5A5] text-xs">{resource.format}</span>
-                    <Download className="w-4 h-4 text-[#EB4036] group-hover:translate-y-1 transition-transform" />
-                  </div>
-                </motion.button>
-              ))}
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                  Obszar Działania
+                </span>
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Obsługujemy {entry.city} i cały region zachodniopomorski z szybkim wsparciem na miejscu.
+              </p>
             </motion.div>
-          </motion.section>
-          {/* Testimonials Section - Wykorzystanie content.testimonials */}
-          <motion.section
-            className="space-y-12"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <div className="text-center">
-              <h2 className="text-4xl font-bold text-white mb-6 flex items-center justify-center gap-3">
-                <ThumbsUp className="w-10 h-10 text-[#EB4036]" />
-                Co mówią nasi klienci
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#EB4036] to-transparent mx-auto mb-6"></div>
-            </div>
-
-            <motion.div
-              className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"
-              variants={staggerContainer}
-            >
-              {entry.content.testimonials.map((testimonial:any, index:any) => (
-                <motion.div
-                  key={index}
-                  className="bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] p-8 rounded-2xl border border-[#404040] relative group hover:border-[#EB4036] transition-all duration-300"
-                  variants={fadeInUp}
-                  whileHover={{ y: -10 }}
-                >
-                  <Quote className="w-8 h-8 text-[#EB4036] mb-4 opacity-50" />
-                  <p className="text-[#A5A5A5] mb-6 italic leading-relaxed">
-                    "{testimonial.review}"
-                  </p>
-
-                  <div className="flex items-center gap-2 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <div className="bg-gradient-to-br from-gray-900 to-black border border-red-500/30 rounded-2xl p-8 hover:shadow-[0_0_40px_rgba(235,64,54,0.3)] transition-all duration-300">
+                  <h3 className="text-3xl font-bold text-white mb-6 text-center">Miasta, które obsługujemy</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    {[
+                                            'Szczecin', 'Koszalin', 'Kołobrzeg', 'Stargard',
+                                            'Świnoujście', 'Police', 'Goleniów', 'Wałcz',
+                                            'Gryfino', 'Szczecinek', 'Białogard', 'Gryfice',
+                                            'Myślibórz', 'Nowogard', 'Złocieniec', 'Łobez'
+                                        ].map((area: string, index: number) => (
+                      <div
+                        key={index}
+                        className={`p-3 rounded-lg text-center font-semibold transition-all duration-300 ${
+                          area.toLowerCase() === city ? "bg-red-500 text-black" : "bg-gray-800 text-gray-300 hover:bg-red-500/20 hover:text-red-500"
+                        }`}
+                      >
+                        {area}
+                      </div>
                     ))}
                   </div>
-
-                  <div className="border-t border-[#404040] pt-4">
-                    <div className="font-bold text-white">{testimonial.author}</div>
+                  <br />
+                  <div className="text-gray-400 text-sm">
+                    Nie ma Twojego miasta na liście? Skontaktuj się z nami – działamy również w mniejszych miejscowościach!
                   </div>
-
-                  <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                    <Star className="w-16 h-16 text-[#EB4036]" />
+                  <br />
+                  <div className="mt-8 p-6 bg-red-500/10 border border-red-500/30 rounded-xl">
+                    <div className="flex items-center justify-center gap-4">
+                      <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse"></div>
+                      <span className="text-red-500 font-bold text-lg">Aktualnie w {entry.defCity}</span>
+                      <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse"></div>
+                    </div>
+                    <p className="text-center text-gray-300 mt-3">Wsparcie 24/7 • Konsultacje gratis</p>
                   </div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </motion.section>
-
-          {/* FAQ Section - Wykorzystanie content.faq i seo.faq_schema */}
-          {entry.content.faq && entry.content.faq.length > 0 && (
-            <motion.section
-              className="space-y-12"
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-            >
-              <div className="text-center">
-                <h2 className="text-4xl font-bold text-white mb-6">
-                  Najczęściej zadawane pytania
-                </h2>
-                <div className="w-24 h-1 bg-gradient-to-r from-[#EB4036] to-transparent mx-auto mb-6"></div>
-                <p className="text-[#A5A5A5] text-lg max-w-3xl mx-auto">
-                  Odpowiedzi na najczęściej zadawane pytania dotyczące naszych barierek stalowych.
-                </p>
-              </div>
-
+                </div>
+              </motion.div>
               <motion.div
-                className="max-w-4xl mx-auto space-y-4"
-                variants={staggerContainer}
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="space-y-8"
               >
-                {entry.content.faq.map((faq:any, index:any) => (
+                <div className="bg-gradient-to-br from-gray-900 to-black border border-red-500/30 rounded-2xl p-8">
+                  <h3 className="text-3xl font-bold text-white mb-6">Skontaktuj się z nami</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-12 h-12 bg-red-500/20 border border-red-500 rounded-full flex items-center justify-center">
+                        <Phone className="w-6 h-6 text-red-500" />
+                      </div>
+                      <div>
+                        <div className="text-gray-400 text-sm">Telefon</div>
+                        <div className="text-white font-bold text-lg">{businessSchema?.telephone || "+48 784 532 549"}</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 bg-red-500/20 border border-red-500 rounded-full flex items-center justify-center">
+                        <MapPin className="w-6 h-6 text-red-500" />
+                      </div>
+                      <div>
+                        <div className="text-gray-400 text-sm">Adres</div>
+                        <div className="text-white font-bold">{businessSchema?.address.streetAddress || "ul. Kolejowa 6"}</div>
+                        <div className="text-red-500">{businessSchema?.address.postalCode || "73-220"} {businessSchema?.address.addressLocality || "Drawno"}</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 bg-red-500/20 border border-red-500 rounded-full flex items-center justify-center">
+                        <Clock className="w-6 h-6 text-red-500" />
+                      </div>
+                      <div>
+                        <div className="text-gray-400 text-sm">Godziny pracy</div>
+                        <div className="text-white font-bold">{businessSchema?.openingHours.join(" • ") || "Pn-Pt: 08:00-16:00"}</div>
+                        <div className="text-red-500">Weekend: na umówienie</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-r from-red-500/10 to-gray-500/10 border border-red-500/30 rounded-2xl p-8">
+                  <h4 className="text-2xl font-bold text-white mb-4">Szybki kontakt w {entry.defCity}</h4>
+                  <p className="text-gray-300 mb-6">Zadzwoń lub napisz - odpowiadamy w 15 minut!</p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Link
+                      href={`tel:${businessSchema?.telephone || "+48784532549"}`}
+                      className="flex-1 bg-red-500 text-black font-bold py-3 px-6 rounded-full text-center hover:bg-red-400 transition-all duration-300 hover:scale-105"
+                    >
+                      Zadzwoń teraz
+                    </Link>
+                    <Link
+                      href="/contact"
+                      className="flex-1 border-2 border-red-500 text-red-500 font-bold py-3 px-6 rounded-full text-center hover:bg-red-500 hover:text-black transition-all duration-300"
+                    >
+                      Formularz
+                    </Link>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Sekcja FAQ */}
+        
+          <section className="py-24 relative">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(235,64,54,0.1)_0%,transparent_70%)]"></div>
+            <div className="max-w-4xl mx-auto px-6 relative z-10">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-20"
+              >
+                <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                    Często Zadawane
+                  </span>
+                  <br />Pytania
+                </h2>
+                <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+                <p className="text-xl text-gray-300">
+                  Odpowiadamy na pytania dotyczące "{entry.service_name}" w {entry.defCity}
+                </p>
+              </motion.div>
+              <div className="space-y-6">
+                {entry?.faq?.map((faq: any, index: any) => (
                   <motion.div
                     key={index}
-                    className="bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] rounded-2xl border border-[#404040] overflow-hidden group hover:border-[#EB4036] transition-all duration-300"
-                    variants={fadeInUp}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className="group"
                   >
-                    <div className="p-8">
-                      <h3 className="text-white font-bold text-lg mb-4 flex items-start gap-4">
-                        <div className="bg-[#EB4036] p-2 rounded-full mt-1 group-hover:scale-110 transition-transform">
-                          <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
+                    <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-red-500/30 rounded-2xl p-8 hover:border-red-500/60 transition-all duration-300 hover:shadow-[0_0_30px_rgba(235,64,54,0.2)]">
+                      <h3 className="text-xl font-bold text-white mb-4 group-hover:text-red-500 transition-colors duration-300">
                         {faq.question}
                       </h3>
-                      <p className="text-[#A5A5A5] leading-relaxed pl-12">
-                        {faq.answer}
-                      </p>
+                      <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
                     </div>
                   </motion.div>
                 ))}
-              </motion.div>
-            </motion.section>
-          )}
+              </div>
+            </div>
+          </section>
+        
 
-          {/* Final CTA Section */}
-          <motion.section
-            className="relative"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <div className="bg-gradient-to-br from-[#EB4036] via-[#EB4036] to-[#d63428] rounded-3xl p-12 text-white shadow-2xl relative overflow-hidden">
-              {/* Background Elements */}
-              <div className="absolute top-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full -translate-y-48 translate-x-48"></div>
-              <div className="absolute bottom-0 left-0 w-80 h-80 bg-white opacity-5 rounded-full translate-y-40 -translate-x-40"></div>
-              <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-white opacity-5 rounded-full -translate-x-32 -translate-y-32"></div>
-
-              <div className="relative z-10">
+        {/* Sekcja portfolio */}
+        <section className="py-24 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 to-black"></div>
+          <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-20"
+            >
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                  Nasze Realizacje
+                </span>
+                <br />w {entry.defCity}
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Zobacz nasze projekty barierek stalowych i konstrukcji w {entry.defCity}.
+              </p>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[].map((project: any, index: any) => (
                 <motion.div
-                  className="grid lg:grid-cols-2 gap-12 items-center"
-                  variants={staggerContainer}
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-black border border-red-500/30 hover:border-red-500/60 transition-all duration-500"
                 >
-                  <motion.div variants={slideInLeft}>
-                    <div className="flex items-center gap-3 mb-6">
-                      <Phone className="w-10 h-10" />
-                      <span className="text-lg font-medium opacity-90">Skontaktuj się z nami</span>
+                  <div className="aspect-[4/3] bg-gradient-to-br from-red-500/20 via-gray-800 to-gray-500/20 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Camera className="w-16 h-16 text-red-500/60 group-hover:text-red-500 group-hover:scale-110 transition-all duration-300" />
                     </div>
-
-                    <h2 className="text-5xl font-bold mb-6 leading-tight max-lg:text-3xl">
-                      Gotowy na realizację swojego projektu?
-                    </h2>
-
-                    <p className="text-xl mb-8 opacity-90 leading-relaxed">
-                      {entry.description || "Zrealizujemy Twój projekt od A do Z. Skontaktuj się z nami już dziś i otrzymaj bezpłatną wycenę w 24h!"}
-                    </p>
-
-                    {/* Quick Contact Info */}
-                    {businessSchema && (
-                      <motion.div
-                        className="space-y-4 mb-8"
-                        variants={staggerContainer}
-                      >
-                        <motion.div
-                          className="flex items-center gap-4"
-                          variants={fadeInUp}
-                        >
-                          <Phone className="w-6 h-6" />
-                          <div>
-                            <div className="font-bold">{businessSchema.telephone}</div>
-                            <div className="text-sm opacity-80">Zadzwoń teraz!</div>
-                          </div>
-                        </motion.div>
-
-                        <motion.div
-                          className="flex items-center gap-4"
-                          variants={fadeInUp}
-                        >
-                          <MapPin className="w-6 h-6" />
-                          <div>
-                            <div className="font-bold">
-                              {businessSchema.address.streetAddress}
-                            </div>
-                            <div className="text-sm opacity-80">
-                              {businessSchema.address.postalCode} {businessSchema.address.addressLocality}
-                            </div>
-                          </div>
-                        </motion.div>
-
-                        <motion.div
-                          className="flex items-center gap-4"
-                          variants={fadeInUp}
-                        >
-                          <Clock className="w-6 h-6" />
-                          <div>
-                            <div className="font-bold">
-                              {businessSchema.openingHours.join(' • ')}
-                            </div>
-                            <div className="text-sm opacity-80">Godziny otwarcia</div>
-                          </div>
-                        </motion.div>
-                      </motion.div>
-                    )}
-                  </motion.div>
-
-                  <motion.div
-                    className="space-y-6"
-                    variants={slideInRight}
-                  >
-                    {/* Primary CTA */}
-                    <motion.div variants={scaleIn}>
-                      <Link
-                        href="/contact"
-                        className="group w-full bg-white text-[#EB4036] px-10 py-6 rounded-2xl font-bold text-xl uppercase tracking-wider hover:bg-gray-100 transition-all duration-300 flex items-center justify-center gap-4 shadow-2xl hover:scale-105"
-                      >
-                        {entry.cta || "Bezpłatna wycena"}
-                        <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
-                      </Link>
-                    </motion.div>
-
-                    {/* Secondary Actions */}
-                    <motion.div
-                      className="grid grid-cols-2 gap-4"
-                      variants={staggerContainer}
-                    >
-                      <motion.a
-                        href={`tel:${businessSchema?.telephone || '+48784532549'}`}
-                        className="group p-4 bg-white bg-opacity-20 rounded-xl hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center gap-3"
-                        variants={scaleIn}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <Phone className="w-6 h-6" />
-                        <span className="font-medium">Zadzwoń</span>
-                      </motion.a>
-
-                      <motion.a
-                        href="mailto:office@stalumo.com"
-                        className="group p-4 bg-white bg-opacity-20 rounded-xl hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center gap-3"
-                        variants={scaleIn}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <Mail className="w-6 h-6" />
-                        <span className="font-medium">E-mail</span>
-                      </motion.a>
-                    </motion.div>
-
-                    {/* Benefits Pills */}
-                    <motion.div
-                      className="flex flex-wrap gap-3 justify-center"
-                      variants={staggerContainer}
-                    >
-                      {[
-                        { icon: Clock3, text: "Wycena w 24h" },
-                        { icon: ShieldCheck, text: "Gwarancja jakości" },
-                        { icon: Truck, text: "Darmowy transport" },
-                        { icon: Headphones, text: "Wsparcie 24/7" }
-                      ].map((benefit, index) => (
-                        <motion.div
-                          key={index}
-                          className="flex items-center gap-2 bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium"
-                          variants={fadeInUp}
-                          whileHover={{ scale: 1.05 }}
-                        >
-                          <benefit.icon className="w-4 h-4" />
-                          <span>{benefit.text}</span>
-                        </motion.div>
-                      ))}
-                    </motion.div>
-
-                    {/* Urgency Indicator */}
-                    <motion.div
-                      className="text-center p-4 bg-white bg-opacity-10 rounded-xl backdrop-blur-sm"
-                      variants={fadeInUp}
-                    >
-                      <div className="flex items-center justify-center gap-2 mb-2">
-                        <Sparkles className="w-5 h-5 animate-pulse" />
-                        <span className="font-bold">Oferta specjalna!</span>
+                    <div className="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-all duration-300">
+                      <div className="bg-black/80 backdrop-blur-sm rounded-xl p-4 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 className="text-white font-bold text-lg mb-2">{project.title}</h3>
+                        <div className="flex items-center gap-2 text-red-500 text-sm mb-1">
+                          <MapPin className="w-4 h-4" />
+                          {entry.city}
+                        </div>
+                        <div className="text-gray-300 text-sm">{project.description}</div>
                       </div>
-                      <p className="text-sm opacity-90">
-                        Przy zamówieniu w tym miesiącu - <strong>10% rabatu</strong> na projekt i montaż
-                      </p>
-                    </motion.div>
-                  </motion.div>
+                    </div>
+                  </div>
                 </motion.div>
+              ))}
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mt-16"
+            >
+              <Link
+                href="/gallery"
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-red-500 to-gray-300 text-black font-bold rounded-full hover:from-gray-300 hover:to-red-500 transition-all duration-300 hover:scale-105"
+              >
+                <Camera className="w-5 h-5" />
+                Zobacz pełne portfolio
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
+            </motion.div>
+          </div>
+        </section>
 
-                {/* Social Proof */}
+        {/* Sekcja technologii */}
+        <section className="py-24 bg-gradient-to-b from-black to-gray-900">
+          <div className="max-w-7xl mx-auto px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-20"
+            >
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                  Technologie
+                </span>
+                <br />& Narzędzia
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Wykorzystujemy nowoczesne technologie spawalnicze i obróbki metali.
+              </p>
+            </motion.div>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                { icon: Zap, name: "MIG/MAG", description: "Spawanie łukowe" },
+                { icon: Settings, name: "TIG", description: "Precyzyjne spawanie" },
+                { icon: Factory, name: "Plazma", description: "Cięcie plazmowe" },
+                { icon: Wrench, name: "CNC", description: "Obróbka precyzyjna" },
+              ].map((tech, index) => (
                 <motion.div
-                  className="mt-12 pt-8 border-t border-white border-opacity-20"
-                  variants={fadeInUp}
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group"
                 >
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                    {[
-                      { number: "500+", text: "Zadowolonych klientów" },
-                      { number: "10+", text: "Lat na rynku" },
-                      { number: "98%", text: "Projektów na czas" },
-                      { number: "5★", text: "Średnia ocen" }
-                    ].map((stat, index) => (
-                      <div key={index} className="space-y-2">
-                        <div className="text-3xl font-bold">{stat.number}</div>
-                        <div className="text-sm opacity-80">{stat.text}</div>
+                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 border border-red-500/30 rounded-2xl p-6 text-center hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(235,64,54,0.3)] hover:scale-105">
+                    <div className="flex justify-center mb-4">
+                      <tech.icon className="w-12 h-12 text-red-500 group-hover:scale-110 group-hover:text-gray-300 transition-all duration-300" />
+                    </div>
+                    <h3 className="text-white font-bold mb-2">{tech.name}</h3>
+                    <p className="text-red-500 text-sm">{tech.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Sekcja kalkulatora kosztów */}
+        <section className="py-24 relative">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(235,64,54,0.1)_0%,transparent_70%)]"></div>
+          <div className="max-w-5xl mx-auto px-6 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-20"
+            >
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                  Cennik Usług
+                </span>
+                <br />w {entry.defCity}
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Sprawdź orientacyjny koszt {entry.service_name} w {entry.city}.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-gray-900/90 to-black/90 backdrop-blur-sm border border-red-500/30 rounded-3xl p-8 lg:p-12"
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="space-y-8">
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className="w-16 h-16 bg-red-500/20 border border-red-500 rounded-2xl flex items-center justify-center">
+                      <FileText className="w-8 h-8 text-red-500" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white">Cennik {entry.service_name}</h3>
+                      <p className="text-red-500">Przejrzyste ceny w {entry.defCity}</p>
+                    </div>
+                  </div>
+                  {[
+                    { size: "Barierki stalowe", price: "250-400 zł/mb", description: "Projekt indywidualny + montaż" },
+                    { size: "Balustrady schodowe", price: "300-500 zł/mb", description: "Projekt 3D + gwarancja 5 lat" },
+                    { size: "Konstrukcje stalowe", price: "50-150 zł/kg", description: "Obliczenia + certyfikaty" },
+                    { size: "Bramy wjazdowe", price: "1500-5000 zł/szt", description: "Automatyka + serwis" },
+                  ].map((tier, index) => (
+                    <div key={index} className="flex items-center justify-between p-4 bg-red-500/10 border border-red-500/30 rounded-xl hover:border-red-500/50 transition-all duration-300">
+                      <div>
+                        <div className="text-white font-bold">{tier.size}</div>
+                        <div className="text-gray-400 text-sm">{tier.description}</div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-red-500 font-bold text-lg">{tier.price}</div>
+                        <div className="text-gray-400 text-sm">projekt + wdrożenie</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="bg-gradient-to-br from-red-500/10 to-gray-500/10 border border-red-500/40 rounded-2xl p-8">
+                  <div className="text-center mb-8">
+                    <div className="w-20 h-20 bg-red-500/20 border-2 border-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <TrendingUp className="w-10 h-10 text-red-500" />
+                    </div>
+                    <h4 className="text-2xl font-bold text-white mb-2">Bezpłatna Wycena</h4>
+                    <p className="text-gray-300">Dokładny kosztorys w 24h</p>
+                  </div>
+                  <div className="space-y-4 mb-8">
+                    {["Konsultacja na miejscu", "Projekt 3D gratis", "Bez zobowiązań", "Gwarancja najlepszej ceny"].map((item, index) => (
+                      <div key={index} className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-red-500" />
+                        <span className="text-gray-300">{item}</span>
                       </div>
                     ))}
                   </div>
-                </motion.div>
-              </div>
-            </div>
-          </motion.section>
-
-        </div>
-
-        {/* Trust Indicators Footer */}
-        <motion.section
-          className="bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] py-16"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-        >
-          <div className="max-w-[1280px] mx-auto px-4">
-            <motion.div
-              className="grid grid-cols-2 md:grid-cols-6 gap-8 items-center"
-              variants={staggerContainer}
-            >
-              {[
-                { icon: ShieldCheck, text: "Certyfikowany zakład" },
-                { icon: Medal, text: "Nagrodzeni jakością" },
-                { icon: Users, text: "500+ klientów" },
-                { icon: Clock3, text: "Terminowość" },
-                { icon: Award, text: "10 lat doświadczenia" },
-                { icon: Headphones, text: "Wsparcie 24/7" }
-              ].map((trust, index) => (
-                <motion.div
-                  key={index}
-                  className="text-center group"
-                  variants={fadeInUp}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <trust.icon className="w-8 h-8 text-[#EB4036] mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                  <p className="text-[#A5A5A5] text-sm font-medium group-hover:text-white transition-colors">
-                    {trust.text}
-                  </p>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            {/* Final Company Info */}
-            <motion.div
-              className="mt-16 text-center border-t border-[#333] pt-12"
-              variants={fadeInUp}
-            >
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Building2 className="w-8 h-8 text-[#EB4036]" />
-                <h3 className="text-2xl font-bold text-white">STALUMO</h3>
-              </div>
-              <p className="text-[#A5A5A5] max-w-2xl mx-auto mb-6">
-                Jesteśmy wiodącą firmą spawalniczą w województwie zachodniopomorskim.
-                Specjalizujemy się w projektowaniu, produkcji i montażu konstrukcji stalowych
-                najwyższej jakości.
-              </p>
-              <div className="flex flex-wrap justify-center gap-6 text-sm text-[#A5A5A5]">
-                <span>NIP: 5941613140</span>
-                <span>REGON: 525281099</span>
-              
+                  <Link
+                    href="/contact"
+                    className="w-full bg-gradient-to-r from-red-500 to-gray-300 text-black font-bold py-4 px-6 rounded-full text-center hover:from-gray-300 hover:to-red-500 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-block"
+                  >
+                    Zamów bezpłatną wycenę
+                  </Link>
+                </div>
               </div>
             </motion.div>
           </div>
-        </motion.section>
+        </section>
 
+        {/* Sekcja certyfikatów */}
+        <section className="py-24 bg-gradient-to-b from-black to-gray-900">
+          <div className="max-w-7xl mx-auto px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-20"
+            >
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                  Certyfikaty
+                </span>
+                <br />& Nagrody
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Nasze kompetencje w spawalnictwie potwierdzone certyfikatami branżowymi.
+              </p>
+            </motion.div>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+              {[
+                { icon: Award, title: "PN-EN ISO 3834", description: "Certyfikat spawania", year: "2023" },
+                { icon: ShieldCheck, title: "ISO 9001", description: "Zarządzanie jakością", year: "Ważny" },
+                { icon: Trophy, title: "Lider Regionu", description: "Nagroda Zachodniopomorskie 2023", year: "2023" },
+                { icon: Star, title: "Certyfikat Jakości", description: "Branża metalowa", year: "2024" },
+              ].map((cert, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group"
+                >
+                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 border border-red-500/30 rounded-2xl p-6 text-center hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(235,64,54,0.3)] hover:scale-105">
+                    <div className="flex justify-center mb-4">
+                      <cert.icon className="w-16 h-16 text-red-500 group-hover:scale-110 group-hover:text-yellow-400 transition-all duration-300" />
+                    </div>
+                    <h3 className="text-white font-bold text-lg mb-2">{cert.title}</h3>
+                    <p className="text-gray-300 text-sm mb-3 leading-relaxed">{cert.description}</p>
+                    <div className="inline-block px-3 py-1 bg-red-500/20 border border-red-500 rounded-full text-red-500 text-xs font-semibold">
+                      {cert.year}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+            <div className="bg-gradient-to-r from-red-500/10 to-gray-500/10 border border-red-500/30 rounded-3xl p-8 lg:p-12">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div className="text-center lg:text-left">
+                  <h3 className="text-3xl font-bold text-white mb-4">Zaufali Nam w {entry.defCity}</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Setki zadowolonych klientów potwierdza jakość naszych usług spawalniczych.
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="text-4xl font-oswald font-black text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300 mb-2">
+                      500+
+                    </div>
+                    <div className="text-white font-semibold">Projektów</div>
+                    <div className="text-red-500 text-sm">w regionie</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-oswald font-black text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300 mb-2">
+                      98%
+                    </div>
+                    <div className="text-white font-semibold">Rekomendacji</div>
+                    <div className="text-red-500 text-sm">od klientów</div>
+                  </div>
+                </div>
+                <div className="flex justify-center lg:justify-end">
+                  <Link
+                    href="/certyfikaty"
+                    className="inline-flex items-center gap-3 px-8 py-4 border-2 border-red-500 text-red-500 font-semibold rounded-full hover:bg-red-500 hover:text-black transition-all duration-300 hover:scale-105"
+                  >
+                    <ShieldCheck className="w-5 h-5" />
+                    Zobacz certyfikaty
+                    <ArrowRight className="w-5 h-5" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Sekcja blog/porady */}
+        <section className="py-24 relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-gray-500/5"></div>
+          <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-20"
+            >
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                  Porady & Inspiracje
+                </span>
+                <br />w {entry.defCity}
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Wskazówki i trendy w {entry.service_name} dla mieszkańców {entry.city}.
+              </p>
+            </motion.div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  title: `Jak Wybrać Barierki Stalowe w ${entry.city}`,
+                  excerpt: "Przewodnik po wyborze odpowiednich barierek dla Twojego domu lub firmy.",
+                  readTime: "5 min",
+                  category: "Poradnik",
+                },
+                {
+                  title: `Trendy 2024 w Konstrukcjach Stalowych w ${entry.city}`,
+                  excerpt: "Najnowsze rozwiązania w projektowaniu i montażu barierek i balustrad.",
+                  readTime: "7 min",
+                  category: "Trendy",
+                },
+                {
+                  title: `Konserwacja Konstrukcji Stalowych w ${entry.city}`,
+                  excerpt: "Jak dbać o barierki i konstrukcje, by służyły przez lata.",
+                  readTime: "4 min",
+                  category: "Konserwacja",
+                },
+              ].map((article, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group"
+                >
+                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-red-500/30 rounded-2xl overflow-hidden hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_40px_rgba(235,64,54,0.3)] hover:scale-105">
+                    <div className="aspect-[16/9] bg-gradient-to-br from-red-500/20 via-gray-800 to-gray-500/20 relative overflow-hidden">
+                      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500"></div>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <Camera className="w-16 h-16 text-red-500/60 group-hover:text-red-500 group-hover:scale-110 transition-all duration-300" />
+                      </div>
+                      <div className="absolute top-4 left-4">
+                        <span className="px-3 py-1 bg-red-500/80 text-black text-sm font-semibold rounded-full">
+                          {article.category}
+                        </span>
+                      </div>
+                      <div className="absolute top-4 right-4">
+                        <div className="flex items-center gap-2 px-3 py-1 bg-black/60 backdrop-blur-sm rounded-full text-white text-sm">
+                          <Clock className="w-4 h-4" />
+                          {article.readTime}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-500 transition-colors duration-300 leading-tight">
+                        {article.title}
+                      </h3>
+                      <p className="text-gray-300 text-sm leading-relaxed mb-4">{article.excerpt}</p>
+                      <div className="flex items-center justify-between">
+                        <div className="text-red-500 font-semibold text-sm">Czytaj więcej</div>
+                        <ArrowRight className="w-5 h-5 text-red-500 group-hover:translate-x-1 transition-transform duration-300" />
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mt-16"
+            >
+              <Link
+                href="/blog"
+                className="group inline-flex items-center gap-3 px-8 py-4 border-2 border-red-500 text-red-500 font-semibold rounded-full hover:bg-red-500 hover:text-black transition-all duration-300 hover:scale-105"
+              >
+                <MessageSquare className="w-5 h-5" />
+                Więcej artykułów
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="py-32 bg-gradient-to-r from-red-500/10 via-gray-500/10 to-red-500/10 relative">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(235,64,54,0.2),transparent_70%)]"></div>
+          <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="space-y-8"
+            >
+              <h2 className="text-[2rem] sm:text-5xl lg:text-7xl font-oswald font-black uppercase leading-[0.9]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-gray-300 to-red-500">
+                  Gotowy na Start?
+                </span>
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full"></div>
+              <p className="text-2xl text-gray-300 leading-relaxed">
+                Zacznij w {entry.defCity} już dziś!<br />
+                <span className="text-red-500 font-semibold">Bezpłatna wycena • Wsparcie 24/7 • Gwarancja jakości</span>
+              </p>
+              <div className="flex flex-col lg:flex-row gap-6 justify-center items-center pt-8">
+                <Link
+                  href={`tel:${businessSchema?.telephone || "+48784532549"}`}
+                  className="group relative px-16 py-6 bg-gradient-to-r from-red-500 to-gray-300 text-black font-black text-xl rounded-full shadow-[0_0_40px_rgba(235,64,54,0.6)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(235,64,54,0.9)] hover:scale-110 uppercase tracking-wide"
+                >
+                  <span className="relative z-10">📞 Zadzwoń Teraz</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-300 to-red-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </Link>
+                <Link
+                  href="/contact"
+                  className="group px-12 py-6 border-3 border-red-500 text-red-500 font-bold text-xl rounded-full hover:bg-red-500 hover:text-black transition-all duration-300 hover:scale-105 uppercase tracking-wide"
+                >
+                  ✉️ Napisz do Nas
+                </Link>
+              </div>
+              <div className="pt-12 grid grid-cols-1 lg:grid-cols-3 gap-8 text-center">
+                {[
+                  { icon: Zap, text: "Odpowiedź w 15 min" },
+                  { icon: Truck, text: "Szybki montaż" },
+                  { icon: ShieldCheck, text: "Gwarancja jakości" },
+                ].map((item, index) => (
+                  <div key={index} className="flex flex-col items-center gap-3">
+                    <item.icon className="w-12 h-12 text-red-500" />
+                    <div className="text-red-500 font-semibold text-lg">{item.text}</div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
       </div>
 
-      {/* Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceStructuredData) }} />
       {faqStructuredData && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }} />
       )}
     </>
   );

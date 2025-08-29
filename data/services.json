@@ -1,0 +1,680 @@
+[
+    {
+      "options": [
+        {
+          "icon": "Wrench",
+          "name": "Spawanie MIG/MAG",
+          "description": "Efektywne spawanie barierek stalowych"
+        },
+        {
+          "icon": "Hammer",
+          "name": "Spawanie TIG",
+          "description": "Precyzyjne połączenia dla trwałości"
+        },
+        {
+          "icon": "Factory",
+          "name": "Projektowanie Barierek",
+          "description": "Indywidualne projekty na wymiar"
+        },
+        {
+          "icon": "Truck",
+          "name": "Montaż Barierek",
+          "description": "Profesjonalny montaż u klienta"
+        },
+        {
+          "icon": "ShieldCheck",
+          "name": "Gwarancja Jakości",
+          "description": "Materiały certyfikowane i testy"
+        },
+        {
+          "icon": "Palette",
+          "name": "Wykończenie",
+          "description": "Malowanie proszkowe i polerowanie"
+        },
+        {
+          "icon": "MapPin",
+          "name": "Lokalna Obsługa",
+          "description": "Usługi w regionie z dojazdem"
+        },
+        {
+          "icon": "Settings",
+          "name": "Konserwacja",
+          "description": "Serwis i konserwacja barierek"
+        },
+        {
+          "icon": "LineChart",
+          "name": "Optymalizacja",
+          "description": "Dopasowanie do potrzeb architektonicznych"
+        },
+        {
+          "icon": "Users",
+          "name": "Doradztwo",
+          "description": "Eksperckie porady w projektowaniu"
+        }
+      ],
+      "package": [
+        { "size": "Podstawowy", "price": "od 250", "description": "Prosta barierka stalowa z montażem" },
+        { "size": "Standardowy", "price": "od 350", "description": "Barierka z elementami ozdobnymi" },
+        { "size": "Premium", "price": "od 500", "description": "Zaawansowana barierka z wykończeniem" },
+        { "size": "Biznesowy", "price": "od 800", "description": "Kompleksowa realizacja dla firm" }
+      ],
+      "service_slug": "barierki",
+      "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+      "description": "Projektujemy i montujemy barierki stalowe na wymiar. Zapewniamy trwałość, estetykę i terminowość. W {defCity} zdobyliśmy uznanie wielu klientów.",
+      "cta": "Zamów barierki stalowe już dziś!",
+      "seo": {
+        "title": "Barierki stalowe – {defCity} | Profesjonalne spawanie barierek",
+        "description": "Tworzymy barierki stalowe w {defCity}. Nowoczesny design, trwałość i dostosowanie do potrzeb.",
+        "keywords": "barierki stalowe, spawanie barierek, barierki na wymiar, balustrady, konstrukcje stalowe"
+      },
+      "longtail_1": "Barierki stalowe dla firm ",
+      "longtail_2": "Barierki na balkon ",
+      "longtail_3": "Nowoczesne barierki stalowe ",
+      "longtail_4": "Projektowanie barierek ",
+      "longtail_5": "Agencja spawania barierek ",
+      "longtail_6": "Profesjonalne barierki ",
+      "longtail_7": "Barierki z montażem ",
+      "longtail_8": "Trwałe barierki stalowe ",
+      "longtail_9": "Tanie barierki na wymiar ",
+      "longtail_10": "Barierki z gwarancją ",
+      "faq": [
+        {
+          "question": "Ile kosztuje barierka stalowa w {defCity}?",
+          "answer": "Cena zależy od długości i wzoru. Proste barierki zaczynają się od 250 zł/mb."
+        },
+        {
+          "question": "Jak długo trwa montaż barierki?",
+          "answer": "Montaż trwa zazwyczaj 1-2 dni, w zależności od zakresu projektu."
+        },
+        {
+          "question": "Czy barierki są odporne na korozję?",
+          "answer": "Tak, używamy stali nierdzewnej i malowania proszkowego dla ochrony."
+        },
+        {
+          "question": "Czy oferujecie barierki na wymiar?",
+          "answer": "Tak, wszystkie barierki są projektowane indywidualnie pod klienta."
+        },
+        {
+          "question": "Czy zajmujecie się konserwacją barierek?",
+          "answer": "Tak, oferujemy usługi serwisowe i konserwacyjne."
+        }
+      ],
+      "review": [
+        {
+          "comment": "Barierki są solidne i pięknie wyglądają. Montaż szybki i bezproblemowy.",
+          "author": "Anna K.",
+          "address": "{defCity}",
+          "data": "2025-05-15"
+        },
+        {
+          "comment": "Profesjonalna obsługa, dobry projekt i trwałe wykonanie. Polecam!",
+          "author": "Piotr M.",
+          "address": "{defCity}",
+          "data": "2025-06-20"
+        },
+        {
+          "comment": "Barierki na balkon idealnie pasują do domu. Świetna jakość.",
+          "author": "Maria Z.",
+          "address": "{defCity}",
+          "data": "2025-07-10"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "icon": "Hammer",
+          "name": "Spawanie Balustrad",
+          "description": "Precyzyjne spawanie balustrad schodowych"
+        },
+        {
+          "icon": "Wrench",
+          "name": "Montaż Balustrad",
+          "description": "Profesjonalny montaż balustrad w domu"
+        },
+        {
+          "icon": "Settings",
+          "name": "Projekt Balustrad",
+          "description": "Indywidualne projekty balustrad na wymiar"
+        },
+        {
+          "icon": "ShieldCheck",
+          "name": "Gwarancja",
+          "description": "Balustrady z certyfikowanymi materiałami"
+        },
+        {
+          "icon": "Palette",
+          "name": "Wykończenie Balustrad",
+          "description": "Malowanie i polerowanie balustrad"
+        },
+        {
+          "icon": "MapPin",
+          "name": "Dojazd",
+          "description": "Usługi spawania balustrad z dojazdem"
+        },
+        {
+          "icon": "LineChart",
+          "name": "Optymalizacja",
+          "description": "Dopasowanie balustrad do architektury"
+        },
+        {
+          "icon": "Users",
+          "name": "Doradztwo",
+          "description": "Eksperckie porady w spawaniu balustrad"
+        }
+      ],
+      "package": [
+        { "size": "Podstawowy", "price": "od 300", "description": "Prosta balustrada schodowa" },
+        { "size": "Standardowy", "price": "od 400", "description": "Balustrada z elementami ozdobnymi" },
+        { "size": "Premium", "price": "od 600", "description": "Zaawansowana balustrada z wykończeniem" },
+        { "size": "Biznesowy", "price": "od 900", "description": "Kompleksowa realizacja balustrad dla obiektów" }
+      ],
+      "service_slug": "balustrady",
+      "service_name": "Spawanie balustrad",
+      "description": "Spawamy balustrady z dbałością o detale. Zapewniamy trwałe połączenia i estetyczne wykończenie. W {defCity} jesteśmy znani z jakości.",
+      "cta": "Zamów spawanie balustrad!",
+      "seo": {
+        "title": "Spawanie balustrad – {defCity} | Trwałe balustrady schodowe",
+        "description": "Profesjonalne spawanie balustrad w {defCity}. Solidne i estetyczne balustrady na wymiar.",
+        "keywords": "spawanie balustrad, balustrady schodowe, balustrady na wymiar, barierki, konstrukcje stalowe"
+      },
+      "longtail_1": "Balustrady schodowe dla domów ",
+      "longtail_2": "Spawanie balustrad ",
+      "longtail_3": "Nowoczesne balustrady ",
+      "longtail_4": "Balustrady z montażem ",
+      "longtail_5": "Agencja spawania balustrad ",
+      "longtail_6": "Profesjonalne balustrady ",
+      "longtail_7": "Balustrady zewnętrzne ",
+      "longtail_8": "Trwałe balustrady schodowe ",
+      "longtail_9": "Tanie balustrady na wymiar ",
+      "longtail_10": "Balustrady z gwarancją ",
+      "faq": [
+        {
+          "question": "Ile kosztuje spawanie balustrady w {defCity}?",
+          "answer": "Cena zależy od długości i typu. Proste balustrady od 300 zł/mb."
+        },
+        {
+          "question": "Jak długo trwa spawanie balustrady?",
+          "answer": "Spawanie trwa 1-3 dni, w zależności od skomplikowania."
+        },
+        {
+          "question": "Czy balustrady są odporne na korozję?",
+          "answer": "Tak, stosujemy stal nierdzewną i ochronne powłoki."
+        },
+        {
+          "question": "Czy oferujecie balustrady na wymiar?",
+          "answer": "Tak, spawamy balustrady indywidualnie pod projekt."
+        },
+        {
+          "question": "Czy zajmujecie się montażem balustrad?",
+          "answer": "Tak, oferujemy pełny montaż i serwis."
+        }
+      ],
+      "review": [
+        {
+          "comment": "Balustrady schodowe są piękne i solidne. Spawanie na najwyższym poziomie.",
+          "author": "Jan K.",
+          "address": "{defCity}",
+          "data": "2025-04-10"
+        },
+        {
+          "comment": "Szybka realizacja i profesjonalne podejście. Balustrady idealnie pasują.",
+          "author": "Ewa M.",
+          "address": "{defCity}",
+          "data": "2025-05-20"
+        },
+        {
+          "comment": "Jakość spawania i materiałów bez zarzutu. Polecam usługi.",
+          "author": "Tomasz Z.",
+          "address": "{defCity}",
+          "data": "2025-06-15"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "icon": "Truck",
+          "name": "Bramy Przesuwne",
+          "description": "Automatyczne bramy przesuwne"
+        },
+        {
+          "icon": "Factory",
+          "name": "Bramy Uchylne",
+          "description": "Tradycyjne bramy uchylne na wymiar"
+        },
+        {
+          "icon": "Settings",
+          "name": "Automatyka Bram",
+          "description": "Systemy automatycznego otwierania"
+        },
+        {
+          "icon": "ShieldCheck",
+          "name": "Gwarancja",
+          "description": "Bramy z certyfikowanymi materiałami"
+        },
+        {
+          "icon": "Palette",
+          "name": "Wykończenie Bram",
+          "description": "Malowanie proszkowe bram"
+        },
+        {
+          "icon": "MapPin",
+          "name": "Dojazd",
+          "description": "Usługi spawania bram z dojazdem"
+        },
+        {
+          "icon": "LineChart",
+          "name": "Optymalizacja",
+          "description": "Dopasowanie bram do posesji"
+        },
+        {
+          "icon": "Users",
+          "name": "Doradztwo",
+          "description": "Porady w wyborze bram"
+        }
+      ],
+      "package": [
+        { "size": "Podstawowy", "price": "od 1500", "description": "Prosta brama stalowa" },
+        { "size": "Standardowy", "price": "od 3000", "description": "Brama z automatyką" },
+        { "size": "Premium", "price": "od 5000", "description": "Zaawansowana brama przesuwna" },
+        { "size": "Biznesowy", "price": "od 8000", "description": "Kompleksowa brama dla obiektów" }
+      ],
+      "service_slug": "bramy",
+      "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+      "description": "Projektujemy i spawamy bramy stalowe na wymiar. Zapewniamy automatyka, trwałość i estetyczne wykończenie. W {defCity} jesteśmy ekspertami od bram.",
+      "cta": "Zamów bramę na wymiar!",
+      "seo": {
+        "title": "Bramy stalowe – {defCity} | Profesjonalne spawanie bram",
+        "description": "Tworzymy bramy stalowe w {defCity}. Nowoczesne, trwałe i automatyczne bramy na wymiar."
+  , "keywords": "bramy stalowe, spawanie bram, bramy przesuwne, automatyka bram, konstrukcje stalowe"
+      },
+      "longtail_1": "Bramy stalowe dla firm ",
+      "longtail_2": "Bramy przesuwne ",
+      "longtail_3": "Nowoczesne bramy ",
+      "longtail_4": "Projektowanie bram ",
+      "longtail_5": "Agencja spawania bram ",
+      "longtail_6": "Profesjonalne bramy ",
+      "longtail_7": "Bramy z automatyką ",
+      "longtail_8": "Trwałe bramy stalowe ",
+      "longtail_9": "Tanie bramy na wymiar ",
+      "longtail_10": "Bramy z gwarancją ",
+      "faq": [
+        {
+          "question": "Ile kosztuje brama stalowa w {defCity}?",
+          "answer": "Cena zaczyna się od 1500 zł za sztuka, w zależności od typu i automatyki."
+        },
+        {
+          "question": "Jak długo trwa realizacja bramy?",
+          "answer": "Realizacja trwa 2-4 tygodnie, w zależności od projektu."
+        },
+        {
+          "question": "Czy bramy są odporne na pogodę?",
+          "answer": "Tak, używamy stali ocynkowanej i malowania proszkowego."
+        },
+        {
+          "question": "Czy oferujecie bramy na wymiar?",
+          "answer": "Tak, wszystkie bramy są dostosowane do potrzeb klienta."
+        },
+        {
+          "question": "Czy zajmujecie się automatyką bram?",
+          "answer": "Tak, integrujemy systemy automatycznego otwierania."
+        }
+      ],
+      "review": [
+        {
+          "comment": "Brama przesuwna działa idealnie. Spawanie solidne, montaż szybki.",
+          "author": "Michał K.",
+          "address": "{defCity}",
+          "data": "2025-03-10"
+        },
+        {
+          "comment": "Profesjonalna obsługa, brama na wymiar pasuje idealnie do posesji.",
+          "author": "Katarzyna P.",
+          "address": "{defCity}",
+          "data": "2025-04-15"
+        },
+        {
+          "comment": "Automatyczna brama to wygoda. Jakość wykonania na najwyższym poziomie.",
+          "author": "Robert Z.",
+          "address": "{defCity}",
+          "data": "2025-05-20"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "icon": "Hammer",
+          "name": "Spawanie Ogrodzeń",
+          "description": "Trwałe spawanie ogrodzeń panelowych"
+        },
+        {
+          "icon": "Factory",
+          "name": "Ogrodzenia Metalowe",
+          "description": "Ogrodzenia z metalu na wymiar"
+        },
+        {
+          "icon": "Settings",
+          "name": "Projekt Ogrodzeń",
+          "description": "Indywidualne projekty ogrodzeń"
+        },
+        {
+          "icon": "ShieldCheck",
+          "name": "Gwarancja",
+          "description": "Ogrodzenia z certyfikowanymi materiałami"
+        },
+        {
+          "icon": "Palette",
+          "name": "Wykończenie",
+          "description": "Malowanie ogrodzeń proszkowo"
+        },
+        {
+          "icon": "MapPin",
+          "name": "Dojazd",
+          "description": "Usługi spawania ogrodzeń z dojazdem"
+        },
+        {
+          "icon": "LineChart",
+          "name": "Optymalizacja",
+          "description": "Dopasowanie ogrodzeń do terenu"
+        },
+        {
+          "icon": "Users",
+          "name": "Doradztwo",
+          "description": "Porady w wyborze ogrodzeń"
+        }
+      ],
+      "package": [
+        { "size": "Podstawowy", "price": "od 150", "description": "Proste ogrodzenie panelowe" },
+        { "size": "Standardowy", "price": "od 250", "description": "Ogrodzenie z elementami ozdobnymi" },
+        { "size": "Premium", "price": "od 350", "description": "Zaawansowane ogrodzenie z wykończeniem" },
+        { "size": "Biznesowy", "price": "od 500", "description": "Kompleksowa realizacja ogrodzeń dla obiektów" }
+      ],
+      "service_slug": "ogrodzenia",
+      "service_name": "Spawanie ogrodzeń",
+      "description": "Spawamy ogrodzenia z dbałością o trwałość i estetykę. Oferujemy ogrodzenia panelowe, metalowe i na wymiar. W {defCity} zapewniamy profesjonalizm.",
+      "cta": "Zamów spawanie ogrodzeń!",
+      "seo": {
+        "title": "Ogrodzenia stalowe – {defCity} | Profesjonalne spawanie ogrodzeń",
+        "description": "Tworzymy ogrodzenia stalowe w {defCity}. Trwałe, estetyczne i na wymiar ogrodzenia."
+  , "keywords": "spawanie ogrodzeń, ogrodzenia panelowe, ogrodzenia na wymiar, bramy, balustrady"
+      },
+      "longtail_1": "Ogrodzenia panelowe dla firm ",
+      "longtail_2": "Spawanie ogrodzeń ",
+      "longtail_3": "Nowoczesne ogrodzenia ",
+      "longtail_4": "Projektowanie ogrodzeń ",
+      "longtail_5": "Agencja spawania ogrodzeń ",
+      "longtail_6": "Profesjonalne ogrodzenia ",
+      "longtail_7": "Ogrodzenia z montażem ",
+      "longtail_8": "Trwałe ogrodzenia metalowe ",
+      "longtail_9": "Tanie ogrodzenia na wymiar ",
+      "longtail_10": "Ogrodzenia z gwarancją ",
+      "faq": [
+        {
+          "question": "Ile kosztuje spawanie ogrodzenia w {defCity}?",
+          "answer": "Cena zaczyna się od 150 zł/mb, w zależności od typu i materiału."
+        },
+        {
+          "question": "Jak długo trwa montaż ogrodzenia?",
+          "answer": "Montaż trwa 2-5 dni, w zależności od długości."
+        },
+        {
+          "question": "Czy ogrodzenia są odporne na korozję?",
+          "answer": "Tak, stosujemy stal ocynkowaną i powłoki ochronne."
+        },
+        {
+          "question": "Czy oferujecie ogrodzenia na wymiar?",
+          "answer": "Tak, spawamy ogrodzenia indywidualnie pod projekt."
+        },
+        {
+          "question": "Czy zajmujecie się konserwacją ogrodzeń?",
+          "answer": "Tak, oferujemy serwis i konserwację."
+        }
+      ],
+      "review": [
+        {
+          "comment": "Ogrodzenie panelowe jest solidne i ładnie się prezentuje. Spawanie profesjonalne.",
+          "author": "Adam K.",
+          "address": "{defCity}",
+          "data": "2025-04-05"
+        },
+        {
+          "comment": "Szybka realizacja ogrodzenia na wymiar. Jakość na wysoki poziomie.",
+          "author": "Beata M.",
+          "address": "{defCity}",
+          "data": "2025-05-10"
+        },
+        {
+          "comment": "Ogrodzenie metalowe przetrwa lata. Polecam usługi spawalnicze.",
+          "author": "Krzysztof Z.",
+          "address": "{defCity}",
+          "data": "2025-06-15"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "icon": "Factory",
+          "name": "Spawanie Konstrukcji",
+          "description": "Precyzyjne spawanie konstrukcji stalowych"
+        },
+        {
+          "icon": "Hammer",
+          "name": "Konstrukcje Na Wymiar",
+          "description": "Konstrukcje dostosowane do potrzeb"
+        },
+        {
+          "icon": "Settings",
+          "name": "Projekt Konstrukcji",
+          "description": "Indywidualne projekty konstrukcji"
+        },
+        {
+          "icon": "ShieldCheck",
+          "name": "Gwarancja",
+          "description": "Konstrukcje z certyfikowanymi materiałami"
+        },
+        {
+          "icon": "Palette",
+          "name": "Wykończenie",
+          "description": "Malowanie i zabezpieczenie konstrukcji"
+        },
+        {
+          "icon": "MapPin",
+          "name": "Dojazd",
+          "description": "Usługi spawania konstrukcji z dojazdem"
+        },
+        {
+          "icon": "LineChart",
+          "name": "Optymalizacja",
+          "description": "Dopasowanie konstrukcji do wymagań"
+        },
+        {
+          "icon": "Users",
+          "name": "Doradztwo",
+          "description": "Porady w spawaniu konstrukcji"
+        }
+      ],
+      "package": [
+        { "size": "Podstawowy", "price": "od 50", "description": "Prosta konstrukcja stalowa" },
+        { "size": "Standardowy", "price": "od 100", "description": "Konstrukcja z elementami złożonymi" },
+        { "size": "Premium", "price": "od 150", "description": "Zaawansowana konstrukcja z wykończeniem" },
+        { "size": "Biznesowy", "price": "od 250", "description": "Kompleksowa realizacja konstrukcji dla obiektów" }
+      ],
+      "service_slug": "konstrukcje-stalowe",
+      "service_name": "Spawanie konstrukcji stalowych",
+      "description": "Spawamy konstrukcje stalowe z precyzją i trwałością. Oferujemy konstrukcje na wymiar dla budownictwa i przemysłu. W {defCity} jesteśmy specjalistami.",
+      "cta": "Zamów spawanie konstrukcji!",
+      "seo": {
+        "title": "Konstrukcje stalowe – {defCity} | Profesjonalne spawanie konstrukcji",
+        "description": "Tworzymy konstrukcje stalowe w {defCity}. Trwałe i na wymiar konstrukcje dla domu i firmy."
+  , "keywords": "spawanie konstrukcji, konstrukcje stalowe, konstrukcje na wymiar, barierki, bramy"
+      },
+      "longtail_1": "Konstrukcje stalowe dla firm ",
+      "longtail_2": "Spawanie konstrukcji ",
+      "longtail_3": "Nowoczesne konstrukcje ",
+      "longtail_4": "Projektowanie konstrukcji ",
+      "longtail_5": "Agencja spawania konstrukcji ",
+      "longtail_6": "Profesjonalne konstrukcje ",
+      "longtail_7": "Konstrukcje z montażem ",
+      "longtail_8": "Trwałe konstrukcje stalowe ",
+      "longtail_9": "Tanie konstrukcje na wymiar ",
+      "longtail_10": "Konstrukcje z gwarancją ",
+      "faq": [
+        {
+          "question": "Ile kosztuje spawanie konstrukcji w {defCity}?",
+          "answer": "Cena zaczyna się od 50 zł/kg, w zależności od typu i materiału."
+        },
+        {
+          "question": "Jak długo trwa realizacja konstrukcji?",
+          "answer": "Realizacja trwa 1-4 tygodnie, w zależności od projektu."
+        },
+        {
+          "question": "Czy konstrukcje są odporne na korozję?",
+          "answer": "Tak, stosujemy stal ocynkowaną i powłoki ochronne."
+        },
+        {
+          "question": "Czy oferujecie konstrukcje na wymiar?",
+          "answer": "Tak, spawamy konstrukcje indywidualnie pod projekt."
+        },
+        {
+          "question": "Czy zajmujecie się montażem konstrukcji?",
+          "answer": "Tak, oferujemy pełny montaż i serwis."
+        }
+      ],
+      "review": [
+        {
+          "comment": "Konstrukcje stalowe są solidne i precyzyjnie wykonane. Polecam.",
+          "author": "Piotr K.",
+          "address": "{defCity}",
+          "data": "2025-03-20"
+        },
+        {
+          "comment": "Szybka realizacja konstrukcji na wymiar. Jakość bez zarzutu.",
+          "author": "Anna M.",
+          "address": "{defCity}",
+          "data": "2025-04-25"
+        },
+        {
+          "comment": "Spawanie konstrukcji na najwyższym poziomie. Trwałe i estetyczne.",
+          "author": "Michał Z.",
+          "address": "{defCity}",
+          "data": "2025-05-30"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "icon": "Hammer",
+          "name": "Spawanie Schodów",
+          "description": "Precyzyjne spawanie schodów metalowych"
+        },
+        {
+          "icon": "Wrench",
+          "name": "Schody Na Wymiar",
+          "description": "Schody dostosowane do wnętrz"
+        },
+        {
+          "icon": "Settings",
+          "name": "Projekt Schodów",
+          "description": "Indywidualne projekty schodów"
+        },
+        {
+          "icon": "ShieldCheck",
+          "name": "Gwarancja",
+          "description": "Schody z certyfikowanymi materiałami"
+        },
+        {
+          "icon": "Palette",
+          "name": "Wykończenie",
+          "description": "Malowanie i zabezpieczenie schodów"
+        },
+        {
+          "icon": "MapPin",
+          "name": "Dojazd",
+          "description": "Usługi spawania schodów z dojazdem"
+        },
+        {
+          "icon": "LineChart",
+          "name": "Optymalizacja",
+          "description": "Dopasowanie schodów do przestrzeni"
+        },
+        {
+          "icon": "Users",
+          "name": "Doradztwo",
+          "description": "Porady w wyborze schodów"
+        }
+      ],
+      "package": [
+        { "size": "Podstawowy", "price": "od 2000", "description": "Proste schody metalowe" },
+        { "size": "Standardowy", "price": "od 4000", "description": "Schody z balustradą" },
+        { "size": "Premium", "price": "od 6000", "description": "Zaawansowane schody z wykończeniem" },
+        { "size": "Biznesowy", "price": "od 8000", "description": "Kompleksowa realizacja schodów dla obiektów" }
+      ],
+      "service_slug": "schody",
+      "service_name": "Realizacja konstrukcji stalowych dla schodów",
+      "description": "Spawamy schody stalowe z precyzją i estetyką. Oferujemy schody na wymiar dla domów i obiektów. W {defCity} jesteśmy specjalistami od schodów.",
+      "cta": "Zamów schody stalowe!",
+      "seo": {
+        "title": "Schody stalowe – {defCity} | Profesjonalne spawanie schodów",
+        "description": "Tworzymy schody stalowe w {defCity}. Trwałe, estetyczne i na wymiar schody metalowe."
+  , "keywords": "spawanie schodów, schody stalowe, schody na wymiar, balustrady, konstrukcje"
+      },
+      "longtail_1": "Schody stalowe dla domów ",
+      "longtail_2": "Spawanie schodów ",
+      "longtail_3": "Nowoczesne schody ",
+      "longtail_4": "Projektowanie schodów ",
+      "longtail_5": "Agencja spawania schodów ",
+      "longtail_6": "Profesjonalne schody ",
+      "longtail_7": "Schody z montażem ",
+      "longtail_8": "Trwałe schody metalowe ",
+      "longtail_9": "Tanie schody na wymiar ",
+      "longtail_10": "Schody z gwarancją ",
+      "faq": [
+        {
+          "question": "Ile kosztuje spawanie schodów w {defCity}?",
+          "answer": "Cena zaczyna się od 2000 zł/szt, w zależności od typu i długości."
+        },
+        {
+          "question": "Jak długo trwa realizacja schodów?",
+          "answer": "Realizacja trwa 2-4 tygodnie, w zależności od projektu."
+        },
+        {
+          "question": "Czy schody są odporne na korozję?",
+          "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
+        },
+        {
+          "question": "Czy oferujecie schody na wymiar?",
+          "answer": "Tak, spawamy schody indywidualnie pod projekt."
+        },
+        {
+          "question": "Czy zajmujecie się montażem schodów?",
+          "answer": "Tak, oferujemy pełny montaż i serwis."
+        }
+      ],
+      "review": [
+        {
+          "comment": "Schody stalowe są solidne i pięknie się prezentują. Spawanie profesjonalne.",
+          "author": "Katarzyna K.",
+          "address": "{defCity}",
+          "data": "2025-03-15"
+        },
+        {
+          "comment": "Szybka realizacja schodów na wymiar. Jakość wykonania doskonała.",
+          "author": "Marcin M.",
+          "address": "{defCity}",
+          "data": "2025-04-20"
+        },
+        {
+          "comment": "Schody metalowe przetrwają lata. Polecam usługi.",
+          "author": "Ewa Z.",
+          "address": "{defCity}",
+          "data": "2025-05-25"
+        }
+      ]
+    }
+  ]
+  
+  
