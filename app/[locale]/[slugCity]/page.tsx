@@ -14,7 +14,7 @@ export async function generateStaticParams() {
 export default async function Page({ params }: any) {
 
   const [serviceSlug, citySlug] = params.slugCity.split("~");
-console.log(serviceSlug, citySlug)
+
   const serviceEntry = services.find(s => s.service_slug === serviceSlug);
   const cityEntry = cities.find((c: any) => c.slugCity === citySlug);
 

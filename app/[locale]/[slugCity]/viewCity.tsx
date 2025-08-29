@@ -7,7 +7,7 @@ import {
   Phone, MapPin, Clock, Star, Award, Zap, ShieldCheck, Wrench,
   Hammer, Factory, Truck, Settings, Camera, FileText, ThumbsUp,
   MessageSquare, Calendar, Globe, ChevronRight, Quote, Building2,
-  Sparkles, TrendingUp, CheckCircle, ArrowRight, Heart, Users,Trophy
+  Sparkles, TrendingUp, CheckCircle, ArrowRight, Heart, Users, Trophy
 } from "lucide-react";
 
 type ServiceEntry = {
@@ -177,14 +177,14 @@ export default function Page({ entry }: any) {
 
   const faqStructuredData = entry.seo.faq_schema
     ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: entry.seo.faq_schema.map((faq: any) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: { "@type": "Answer", text: faq.answer },
-        })),
-      }
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: entry.seo.faq_schema.map((faq: any) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: { "@type": "Answer", text: faq.answer },
+      })),
+    }
     : null;
 
   return (
@@ -475,7 +475,7 @@ export default function Page({ entry }: any) {
               </div>
             </motion.div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {entry?.review?.map((review: any, index: any) => (
+              {entry?.review?.map((review: any, index: any) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 50 }}
@@ -507,7 +507,7 @@ export default function Page({ entry }: any) {
               className="text-center mt-16"
             >
               <Link
-                href="/opinie"
+                href="/opinions"
                 className="inline-block px-8 py-4 border-2 border-red-500 text-red-500 font-semibold rounded-full hover:bg-red-500 hover:text-black transition-all duration-300 uppercase tracking-wide"
               >
                 Zobacz wszystkie opinie
@@ -546,16 +546,15 @@ export default function Page({ entry }: any) {
                   <h3 className="text-3xl font-bold text-white mb-6 text-center">Miasta, które obsługujemy</h3>
                   <div className="grid grid-cols-2 gap-4">
                     {[
-                                            'Szczecin', 'Koszalin', 'Kołobrzeg', 'Stargard',
-                                            'Świnoujście', 'Police', 'Goleniów', 'Wałcz',
-                                            'Gryfino', 'Szczecinek', 'Białogard', 'Gryfice',
-                                            'Myślibórz', 'Nowogard', 'Złocieniec', 'Łobez'
-                                        ].map((area: string, index: number) => (
+                      'Szczecin', 'Koszalin', 'Kołobrzeg', 'Stargard',
+                      'Świnoujście', 'Police', 'Goleniów', 'Wałcz',
+                      'Gryfino', 'Szczecinek', 'Białogard', 'Gryfice',
+                      'Myślibórz', 'Nowogard', 'Złocieniec', 'Łobez'
+                    ].map((area: string, index: number) => (
                       <div
                         key={index}
-                        className={`p-3 rounded-lg text-center font-semibold transition-all duration-300 ${
-                          area.toLowerCase() === city ? "bg-red-500 text-black" : "bg-gray-800 text-gray-300 hover:bg-red-500/20 hover:text-red-500"
-                        }`}
+                        className={`p-3 rounded-lg text-center font-semibold transition-all duration-300 ${area.toLowerCase() === city ? "bg-red-500 text-black" : "bg-gray-800 text-gray-300 hover:bg-red-500/20 hover:text-red-500"
+                          }`}
                       >
                         {area}
                       </div>
@@ -620,12 +619,12 @@ export default function Page({ entry }: any) {
                   <h4 className="text-2xl font-bold text-white mb-4">Szybki kontakt w {entry.defCity}</h4>
                   <p className="text-gray-300 mb-6">Zadzwoń lub napisz - odpowiadamy w 15 minut!</p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Link
+                    <a
                       href={`tel:${businessSchema?.telephone || "+48784532549"}`}
                       className="flex-1 bg-red-500 text-black font-bold py-3 px-6 rounded-full text-center hover:bg-red-400 transition-all duration-300 hover:scale-105"
                     >
                       Zadzwoń teraz
-                    </Link>
+                    </a>
                     <Link
                       href="/contact"
                       className="flex-1 border-2 border-red-500 text-red-500 font-bold py-3 px-6 rounded-full text-center hover:bg-red-500 hover:text-black transition-all duration-300"
@@ -640,49 +639,49 @@ export default function Page({ entry }: any) {
         </section>
 
         {/* Sekcja FAQ */}
-        
-          <section className="py-24 relative">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(235,64,54,0.1)_0%,transparent_70%)]"></div>
-            <div className="max-w-4xl mx-auto px-6 relative z-10">
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-center mb-20"
-              >
-                <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
-                    Często Zadawane
-                  </span>
-                  <br />Pytania
-                </h2>
-                <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
-                <p className="text-xl text-gray-300">
-                  Odpowiadamy na pytania dotyczące "{entry.service_name}" w {entry.defCity}
-                </p>
-              </motion.div>
-              <div className="space-y-6">
-                {entry?.faq?.map((faq: any, index: any) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="group"
-                  >
-                    <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-red-500/30 rounded-2xl p-8 hover:border-red-500/60 transition-all duration-300 hover:shadow-[0_0_30px_rgba(235,64,54,0.2)]">
-                      <h3 className="text-xl font-bold text-white mb-4 group-hover:text-red-500 transition-colors duration-300">
-                        {faq.question}
-                      </h3>
-                      <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+
+        <section className="py-24 relative">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(235,64,54,0.1)_0%,transparent_70%)]"></div>
+          <div className="max-w-4xl mx-auto px-6 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-20"
+            >
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                  Często Zadawane
+                </span>
+                <br />Pytania
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+              <p className="text-xl text-gray-300">
+                Odpowiadamy na pytania dotyczące "{entry.service_name}" w {entry.defCity}
+              </p>
+            </motion.div>
+            <div className="space-y-6">
+              {entry?.faq?.map((faq: any, index: any) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group"
+                >
+                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-red-500/30 rounded-2xl p-8 hover:border-red-500/60 transition-all duration-300 hover:shadow-[0_0_30px_rgba(235,64,54,0.2)]">
+                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-red-500 transition-colors duration-300">
+                      {faq.question}
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
-          </section>
-        
+          </div>
+        </section>
+
 
         {/* Sekcja portfolio */}
         <section className="py-24 relative overflow-hidden">
@@ -958,7 +957,7 @@ export default function Page({ entry }: any) {
                 </div>
                 <div className="flex justify-center lg:justify-end">
                   <Link
-                    href="/certyfikaty"
+                    href="/certificates"
                     className="inline-flex items-center gap-3 px-8 py-4 border-2 border-red-500 text-red-500 font-semibold rounded-full hover:bg-red-500 hover:text-black transition-all duration-300 hover:scale-105"
                   >
                     <ShieldCheck className="w-5 h-5" />
@@ -1092,13 +1091,13 @@ export default function Page({ entry }: any) {
                 <span className="text-red-500 font-semibold">Bezpłatna wycena • Wsparcie 24/7 • Gwarancja jakości</span>
               </p>
               <div className="flex flex-col lg:flex-row gap-6 justify-center items-center pt-8">
-                <Link
+                <a
                   href={`tel:${businessSchema?.telephone || "+48784532549"}`}
                   className="group relative px-16 py-6 bg-gradient-to-r from-red-500 to-gray-300 text-black font-black text-xl rounded-full shadow-[0_0_40px_rgba(235,64,54,0.6)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(235,64,54,0.9)] hover:scale-110 uppercase tracking-wide"
                 >
                   <span className="relative z-10">📞 Zadzwoń Teraz</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-gray-300 to-red-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </Link>
+                </a>
                 <Link
                   href="/contact"
                   className="group px-12 py-6 border-3 border-red-500 text-red-500 font-bold text-xl rounded-full hover:bg-red-500 hover:text-black transition-all duration-300 hover:scale-105 uppercase tracking-wide"
