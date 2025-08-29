@@ -674,7 +674,562 @@
           "data": "2025-05-25"
         }
       ]
-    }
+    },
+    {
+      "options": [
+          {
+              "icon": "Fire",
+              "name": "Spawanie Grilli",
+              "description": "Precyzyjne spawanie grilli stalowych"
+          },
+          {
+              "icon": "Factory",
+              "name": "Grille na Wymiar",
+              "description": "Indywidualne projekty grilli ogrodowych"
+          },
+          {
+              "icon": "Palette",
+              "name": "Wykończenie Grilli",
+              "description": "Malowanie proszkowe i polerowanie"
+          },
+          {
+              "icon": "ShieldCheck",
+              "name": "Gwarancja Jakości",
+              "description": "Materiały certyfikowane i trwałe"
+          },
+          {
+              "icon": "MapPin",
+              "name": "Lokalna Obsługa",
+              "description": "Usługi w regionie z dojazdem"
+          },
+          {
+              "icon": "LineChart",
+              "name": "Optymalizacja",
+              "description": "Dopasowanie grilli do potrzeb klienta"
+          },
+          {
+              "icon": "Users",
+              "name": "Doradztwo",
+              "description": "Porady w projektowaniu grilli"
+          },
+          {
+              "icon": "Settings",
+              "name": "Konserwacja",
+              "description": "Serwis i konserwacja grilli"
+          }
+      ],
+      "package": [
+          { "size": "Podstawowy", "price": "od 500", "description": "Prosty grill stalowy" },
+          { "size": "Standardowy", "price": "od 800", "description": "Grill z dodatkowymi funkcjami" },
+          { "size": "Premium", "price": "od 1200", "description": "Zaawansowany grill z wykończeniem" },
+          { "size": "Biznesowy", "price": "od 2000", "description": "Grill dla gastronomii lub dużych ogrodów" }
+      ],
+      "service_slug": "grille",
+      "service_name": "Grille stalowe na wymiar",
+      "description": "Projektujemy i spawamy grille stalowe na wymiar. Oferujemy trwałość, funkcjonalność i estetykę dla ogrodów i gastronomii. W {defCity} dostarczamy grille najwyższej jakości.",
+      "cta": "Zamów grill stalowy już dziś!",
+      "seo": {
+          "title": "Grille stalowe – {defCity} | Profesjonalne spawanie grilli",
+          "description": "Tworzymy grille stalowe w {defCity}. Trwałe, estetyczne i na wymiar grille ogrodowe.",
+          "keywords": "grille stalowe, spawanie grilli, grille na wymiar, grille ogrodowe, konstrukcje stalowe"
+      },
+      "longtail_1": "Grille stalowe dla ogrodów ",
+      "longtail_2": "Spawanie grilli ",
+      "longtail_3": "Nowoczesne grille ",
+      "longtail_4": "Projektowanie grilli ",
+      "longtail_5": "Agencja spawania grilli ",
+      "longtail_6": "Profesjonalne grille ",
+      "longtail_7": "Grille z montażem ",
+      "longtail_8": "Trwałe grille stalowe ",
+      "longtail_9": "Tanie grille na wymiar ",
+      "longtail_10": "Grille z gwarancją ",
+      "faq": [
+          {
+              "question": "Ile kosztuje grill stalowy w {defCity}?",
+              "answer": "Cena zaczyna się od 500 zł, w zależności od rozmiaru i funkcji."
+          },
+          {
+              "question": "Jak długo trwa wykonanie grilla?",
+              "answer": "Realizacja trwa 1-2 tygodnie, w zależności od projektu."
+          },
+          {
+              "question": "Czy grille są odporne na korozję?",
+              "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
+          },
+          {
+              "question": "Czy oferujecie grille na wymiar?",
+              "answer": "Tak, projektujemy grille indywidualnie pod klienta."
+          },
+          {
+              "question": "Czy zajmujecie się konserwacją grilli?",
+              "answer": "Tak, oferujemy serwis i konserwację grilli."
+          }
+      ],
+      "review": [
+          {
+              "comment": "Grill stalowy jest solidny i funkcjonalny. Idealny do ogrodu!",
+              "author": "Paweł K.",
+              "address": "{defCity}",
+              "data": "2025-06-10"
+          },
+          {
+              "comment": "Szybka realizacja i profesjonalne podejście. Grill na wymiar rewelacyjny.",
+              "author": "Magda L.",
+              "address": "{defCity}",
+              "data": "2025-07-15"
+          },
+          {
+              "comment": "Jakość wykonania grilla bez zarzutu. Polecam usługi!",
+              "author": "Tomasz R.",
+              "address": "{defCity}",
+              "data": "2025-08-05"
+          }
+      ]
+  },
+  {
+    "options": [
+        {
+            "icon": "Fire",
+            "name": "Spawanie Palenisk",
+            "description": "Precyzyjne spawanie palenisk stalowych"
+        },
+        {
+            "icon": "Factory",
+            "name": "Paleniska na Wymiar",
+            "description": "Indywidualne projekty palenisk ogrodowych"
+        },
+        {
+            "icon": "Palette",
+            "name": "Wykończenie Palenisk",
+            "description": "Malowanie proszkowe i polerowanie"
+        },
+        {
+            "icon": "ShieldCheck",
+            "name": "Gwarancja Jakości",
+            "description": "Materiały certyfikowane i trwałe"
+        },
+        {
+            "icon": "MapPin",
+            "name": "Lokalna Obsługa",
+            "description": "Usługi w regionie z dojazdem"
+        },
+        {
+            "icon": "LineChart",
+            "name": "Optymalizacja",
+            "description": "Dopasowanie palenisk do przestrzeni"
+        },
+        {
+            "icon": "Users",
+            "name": "Doradztwo",
+            "description": "Porady w projektowaniu palenisk"
+        },
+        {
+            "icon": "Settings",
+            "name": "Konserwacja",
+            "description": "Serwis i konserwacja palenisk"
+        }
+    ],
+    "package": [
+        { "size": "Podstawowy", "price": "od 400", "description": "Proste palenisko stalowe" },
+        { "size": "Standardowy", "price": "od 700", "description": "Palenisko z dodatkowymi elementami" },
+        { "size": "Premium", "price": "od 1000", "description": "Zaawansowane palenisko z wykończeniem" },
+        { "size": "Biznesowy", "price": "od 1500", "description": "Palenisko dla dużych ogrodów lub przestrzeni komercyjnych" }
+    ],
+    "service_slug": "paleniska",
+    "service_name": "Paleniska stalowe na wymiar",
+    "description": "Tworzymy paleniska stalowe na wymiar, idealne do ogrodów i przestrzeni rekreacyjnych. Zapewniamy trwałość i estetykę. W {defCity} jesteśmy ekspertami od palenisk.",
+    "cta": "Zamów palenisko stalowe już dziś!",
+    "seo": {
+        "title": "Paleniska stalowe – {defCity} | Profesjonalne spawanie palenisk",
+        "description": "Tworzymy paleniska stalowe w {defCity}. Trwałe, estetyczne i na wymiar paleniska ogrodowe.",
+        "keywords": "paleniska stalowe, spawanie palenisk, paleniska na wymiar, grille, konstrukcje stalowe"
+    },
+    "longtail_1": "Paleniska stalowe dla ogrodów ",
+    "longtail_2": "Spawanie palenisk ",
+    "longtail_3": "Nowoczesne paleniska ",
+    "longtail_4": "Projektowanie palenisk ",
+    "longtail_5": "Agencja spawania palenisk ",
+    "longtail_6": "Profesjonalne paleniska ",
+    "longtail_7": "Paleniska z montażem ",
+    "longtail_8": "Trwałe paleniska stalowe ",
+    "longtail_9": "Tanie paleniska na wymiar ",
+    "longtail_10": "Paleniska z gwarancją ",
+    "faq": [
+        {
+            "question": "Ile kosztuje palenisko stalowe w {defCity}?",
+            "answer": "Cena zaczyna się od 400 zł, w zależności od rozmiaru i projektu."
+        },
+        {
+            "question": "Jak długo trwa wykonanie paleniska?",
+            "answer": "Realizacja trwa 1-2 tygodnie, w zależności od projektu."
+        },
+        {
+            "question": "Czy paleniska są odporne na korozję?",
+            "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
+        },
+        {
+            "question": "Czy oferujecie paleniska na wymiar?",
+            "answer": "Tak, projektujemy paleniska indywidualnie pod klienta."
+        },
+        {
+            "question": "Czy zajmujecie się konserwacją palenisk?",
+            "answer": "Tak, oferujemy serwis i konserwację palenisk."
+        }
+    ],
+    "review": [
+        {
+            "comment": "Palenisko stalowe wygląda świetnie i jest bardzo trwałe. Polecam!",
+            "author": "Joanna K.",
+            "address": "{defCity}",
+            "data": "2025-06-20"
+        },
+        {
+            "comment": "Szybka realizacja paleniska na wymiar. Idealne do ogrodu.",
+            "author": "Kamil S.",
+            "address": "{defCity}",
+            "data": "2025-07-10"
+        },
+        {
+            "comment": "Jakość paleniska i spawania na najwyższym poziomie. Super usługa!",
+            "author": "Monika P.",
+            "address": "{defCity}",
+            "data": "2025-08-01"
+        }
+    ]
+},
+{
+  "options": [
+      {
+          "icon": "Factory",
+          "name": "Spawanie Wiat",
+          "description": "Precyzyjne spawanie wiat stalowych"
+      },
+      {
+          "icon": "Wrench",
+          "name": "Zadaszenia na Wymiar",
+          "description": "Indywidualne projekty zadaszeń"
+      },
+      {
+          "icon": "Palette",
+          "name": "Wykończenie Zadaszeń",
+          "description": "Malowanie proszkowe i polerowanie"
+      },
+      {
+          "icon": "ShieldCheck",
+          "name": "Gwarancja Jakości",
+          "description": "Materiały certyfikowane i trwałe"
+      },
+      {
+          "icon": "MapPin",
+          "name": "Lokalna Obsługa",
+          "description": "Usługi w regionie z dojazdem"
+      },
+      {
+          "icon": "LineChart",
+          "name": "Optymalizacja",
+          "description": "Dopasowanie zadaszeń do przestrzeni"
+      },
+      {
+          "icon": "Users",
+          "name": "Doradztwo",
+          "description": "Porady w projektowaniu zadaszeń"
+      },
+      {
+          "icon": "Settings",
+          "name": "Konserwacja",
+          "description": "Serwis i konserwacja wiat"
+      }
+  ],
+  "package": [
+      { "size": "Podstawowy", "price": "od 1000", "description": "Prosta wiata stalowa" },
+      { "size": "Standardowy", "price": "od 2000", "description": "Wiata z dodatkowymi elementami" },
+      { "size": "Premium", "price": "od 3500", "description": "Zaawansowana wiata z wykończeniem" },
+      { "size": "Biznesowy", "price": "od 5000", "description": "Kompleksowa wiata dla firm lub dużych posesji" }
+  ],
+  "service_slug": "wiaty-zadaszenia",
+  "service_name": "Wiaty i zadaszenia stalowe na wymiar",
+  "description": "Projektujemy i spawamy wiaty oraz zadaszenia stalowe na wymiar. Zapewniamy ochronę przed pogodą i estetykę. W {defCity} dostarczamy solidne konstrukcje.",
+  "cta": "Zamów wiatę lub zadaszenie stalowe!",
+  "seo": {
+      "title": "Wiaty i zadaszenia stalowe – {defCity} | Profesjonalne spawanie",
+      "description": "Tworzymy wiaty i zadaszenia stalowe w {defCity}. Trwałe, estetyczne i na wymiar konstrukcje.",
+      "keywords": "wiaty stalowe, zadaszenia na wymiar, spawanie wiat, konstrukcje stalowe, zadaszenia"
+  },
+  "longtail_1": "Wiaty stalowe dla firm ",
+  "longtail_2": "Spawanie zadaszeń ",
+  "longtail_3": "Nowoczesne wiaty ",
+  "longtail_4": "Projektowanie zadaszeń ",
+  "longtail_5": "Agencja spawania wiat ",
+  "longtail_6": "Profesjonalne zadaszenia ",
+  "longtail_7": "Wiaty z montażem ",
+  "longtail_8": "Trwałe wiaty stalowe ",
+  "longtail_9": "Tanie zadaszenia na wymiar ",
+  "longtail_10": "Wiaty z gwarancją ",
+  "faq": [
+      {
+          "question": "Ile kosztuje wiata stalowa w {defCity}?",
+          "answer": "Cena zaczyna się od 1000 zł, w zależności od rozmiaru i projektu."
+      },
+      {
+          "question": "Jak długo trwa realizacja wiaty?",
+          "answer": "Realizacja trwa 2-4 tygodnie, w zależności od projektu."
+      },
+      {
+          "question": "Czy wiaty są odporne na korozję?",
+          "answer": "Tak, używamy stali ocynkowanej i powłok ochronnych."
+      },
+      {
+          "question": "Czy oferujecie zadaszenia na wymiar?",
+          "answer": "Tak, projektujemy wiaty indywidualnie pod klienta."
+      },
+      {
+          "question": "Czy zajmujecie się montażem wiat?",
+          "answer": "Tak, oferujemy pełny montaż i serwis."
+      }
+  ],
+  "review": [
+      {
+          "comment": "Wiata stalowa jest solidna i estetyczna. Montaż bezproblemowy.",
+          "author": "Robert K.",
+          "address": "{defCity}",
+          "data": "2025-06-15"
+      },
+      {
+          "comment": "Zadaszenie na wymiar idealnie pasuje do posesji. Polecam!",
+          "author": "Alicja M.",
+          "address": "{defCity}",
+          "data": "2025-07-20"
+      },
+      {
+          "comment": "Jakość spawania i materiałów na najwyższym poziomie. Super usługa.",
+          "author": "Grzegorz P.",
+          "address": "{defCity}",
+          "data": "2025-08-10"
+      }
+  ]
+},
+{
+  "options": [
+      {
+          "icon": "Hammer",
+          "name": "Spawanie Mebli",
+          "description": "Precyzyjne spawanie mebli ogrodowych"
+      },
+      {
+          "icon": "Factory",
+          "name": "Meble na Wymiar",
+          "description": "Indywidualne projekty mebli stalowych"
+      },
+      {
+          "icon": "Palette",
+          "name": "Wykończenie Mebli",
+          "description": "Malowanie proszkowe i polerowanie"
+      },
+      {
+          "icon": "ShieldCheck",
+          "name": "Gwarancja Jakości",
+          "description": "Materiały certyfikowane i trwałe"
+      },
+      {
+          "icon": "MapPin",
+          "name": "Lokalna Obsługa",
+          "description": "Usługi w regionie z dojazdem"
+      },
+      {
+          "icon": "LineChart",
+          "name": "Optymalizacja",
+          "description": "Dopasowanie mebli do przestrzeni"
+      },
+      {
+          "icon": "Users",
+          "name": "Doradztwo",
+          "description": "Porady w projektowaniu mebli"
+      },
+      {
+          "icon": "Settings",
+          "name": "Konserwacja",
+          "description": "Serwis i konserwacja mebli"
+      }
+  ],
+  "package": [
+      { "size": "Podstawowy", "price": "od 300", "description": "Prosty zestaw mebli stalowych" },
+      { "size": "Standardowy", "price": "od 600", "description": "Meble z dodatkowymi elementami" },
+      { "size": "Premium", "price": "od 1000", "description": "Zaawansowany zestaw mebli z wykończeniem" },
+      { "size": "Biznesowy", "price": "od 1500", "description": "Kompleksowy zestaw mebli dla przestrzeni komercyjnych" }
+  ],
+  "service_slug": "meble-ogrodowe",
+  "service_name": "Meble ogrodowe stalowe na wymiar",
+  "description": "Tworzymy stalowe meble ogrodowe na wymiar, łączące trwałość i nowoczesny design. Idealne do ogrodów i przestrzeni zewnętrznych. W {defCity} zapewniamy wysoką jakość.",
+  "cta": "Zamów meble ogrodowe stalowe!",
+  "seo": {
+      "title": "Meble ogrodowe stalowe – {defCity} | Profesjonalne spawanie mebli",
+      "description": "Tworzymy meble ogrodowe stalowe w {defCity}. Trwałe, estetyczne i na wymiar meble do ogrodu.",
+      "keywords": "meble ogrodowe stalowe, spawanie mebli, meble na wymiar, grille, paleniska"
+  },
+  "longtail_1": "Meble ogrodowe dla firm ",
+  "longtail_2": "Spawanie mebli ogrodowych ",
+  "longtail_3": "Nowoczesne meble stalowe ",
+  "longtail_4": "Projektowanie mebli ogrodowych ",
+  "longtail_5": "Agencja spawania mebli ",
+  "longtail_6": "Profesjonalne meble ogrodowe ",
+  "longtail_7": "Meble z montażem ",
+  "longtail_8": "Trwałe meble stalowe ",
+  "longtail_9": "Tanie meble na wymiar ",
+  "longtail_10": "Meble ogrodowe z gwarancją ",
+  "faq": [
+      {
+          "question": "Ile kosztują meble ogrodowe stalowe w {defCity}?",
+          "answer": "Cena zaczyna się od 300 zł za element, w zależności od projektu."
+      },
+      {
+          "question": "Jak długo trwa wykonanie mebli ogrodowych?",
+          "answer": "Realizacja trwa 1-3 tygodnie, w zależności od projektu."
+      },
+      {
+          "question": "Czy meble są odporne na korozję?",
+          "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
+      },
+      {
+          "question": "Czy oferujecie meble na wymiar?",
+          "answer": "Tak, projektujemy meble indywidualnie pod klienta."
+      },
+      {
+          "question": "Czy zajmujecie się konserwacją mebli?",
+          "answer": "Tak, oferujemy serwis i konserwację mebli."
+      }
+  ],
+  "review": [
+      {
+          "comment": "Meble ogrodowe stalowe są piękne i solidne. Idealne do ogrodu!",
+          "author": "Agnieszka K.",
+          "address": "{defCity}",
+          "data": "2025-06-25"
+      },
+      {
+          "comment": "Szybka realizacja mebli na wymiar. Jakość bez zarzutu.",
+          "author": "Marek S.",
+          "address": "{defCity}",
+          "data": "2025-07-05"
+      },
+      {
+          "comment": "Meble stalowe wyglądają nowocześnie i są trwałe. Polecam!",
+          "author": "Zofia P.",
+          "address": "{defCity}",
+          "data": "2025-08-15"
+      }
+  ]
+},
+{
+  "options": [
+      {
+          "icon": "Factory",
+          "name": "Spawanie Garaży",
+          "description": "Precyzyjne spawanie konstrukcji garażowych"
+      },
+      {
+          "icon": "Wrench",
+          "name": "Garaże na Wymiar",
+          "description": "Indywidualne projekty garaży stalowych"
+      },
+      {
+          "icon": "Palette",
+          "name": "Wykończenie Garaży",
+          "description": "Malowanie proszkowe i zabezpieczenie"
+      },
+      {
+          "icon": "ShieldCheck",
+          "name": "Gwarancja Jakości",
+          "description": "Materiały certyfikowane i trwałe"
+      },
+      {
+          "icon": "MapPin",
+          "name": "Lokalna Obsługa",
+          "description": "Usługi w regionie z dojazdem"
+      },
+      {
+          "icon": "LineChart",
+          "name": "Optymalizacja",
+          "description": "Dopasowanie garaży do posesji"
+      },
+      {
+          "icon": "Users",
+          "name": "Doradztwo",
+          "description": "Porady w projektowaniu garaży"
+      },
+      {
+          "icon": "Settings",
+          "name": "Konserwacja",
+          "description": "Serwis i konserwacja garaży"
+      }
+  ],
+  "package": [
+      { "size": "Podstawowy", "price": "od 5000", "description": "Prosty garaż stalowy" },
+      { "size": "Standardowy", "price": "od 8000", "description": "Garaż z dodatkowymi elementami" },
+      { "size": "Premium", "price": "od 12000", "description": "Zaawansowany garaż z wykończeniem" },
+      { "size": "Biznesowy", "price": "od 18000", "description": "Kompleksowy garaż dla dużych posesji lub firm" }
+  ],
+  "service_slug": "garaze-stalowe",
+  "service_name": "Konstrukcje garażowe stalowe na wymiar",
+  "description": "Projektujemy i spawamy stalowe konstrukcje garażowe na wymiar. Zapewniamy trwałość, funkcjonalność i estetykę. W {defCity} jesteśmy specjalistami od garaży.",
+  "cta": "Zamów garaż stalowy już dziś!",
+  "seo": {
+      "title": "Garaże stalowe – {defCity} | Profesjonalne spawanie garaży",
+      "description": "Tworzymy garaże stalowe w {defCity}. Trwałe, funkcjonalne i na wymiar konstrukcje garażowe.",
+      "keywords": "garaże stalowe, spawanie garaży, garaże na wymiar, wiaty, konstrukcje stalowe"
+  },
+  "longtail_1": "Garaże stalowe dla firm ",
+  "longtail_2": "Spawanie garaży ",
+  "longtail_3": "Nowoczesne garaże stalowe ",
+  "longtail_4": "Projektowanie garaży ",
+  "longtail_5": "Agencja spawania garaży ",
+  "longtail_6": "Profesjonalne garaże ",
+  "longtail_7": "Garaże z montażem ",
+  "longtail_8": "Trwałe garaże stalowe ",
+  "longtail_9": "Tanie garaże na wymiar ",
+  "longtail_10": "Garaże z gwarancją ",
+  "faq": [
+      {
+          "question": "Ile kosztuje garaż stalowy w {defCity}?",
+          "answer": "Cena zaczyna się od 5000 zł, w zależności od rozmiaru i projektu."
+      },
+      {
+          "question": "Jak długo trwa wykonanie garażu?",
+          "answer": "Realizacja trwa 3-6 tygodni, w zależności od projektu."
+      },
+      {
+          "question": "Czy garaże są odporne na korozję?",
+          "answer": "Tak, używamy stali ocynkowanej i powłok ochronnych."
+      },
+      {
+          "question": "Czy oferujecie garaże na wymiar?",
+          "answer": "Tak, projektujemy garaże indywidualnie pod klienta."
+      },
+      {
+          "question": "Czy zajmujecie się montażem garaży?",
+          "answer": "Tak, oferujemy pełny montaż i serwis."
+      }
+  ],
+  "review": [
+      {
+          "comment": "Garaż stalowy jest solidny i funkcjonalny. Montaż bez zarzutu.",
+          "author": "Tomasz K.",
+          "address": "{defCity}",
+          "data": "2025-07-20"
+      },
+      {
+          "comment": "Szybka realizacja garażu na wymiar. Jakość świetna!",
+          "author": "Elżbieta M.",
+          "address": "{defCity}",
+          "data": "2025-08-15"
+      },
+      {
+          "comment": "Garaż stalowy wygląda nowocześnie i jest trwały. Polecam!",
+          "author": "Krzysztof P.",
+          "address": "{defCity}",
+          "data": "2025-08-25"
+      }
+  ]
+}
   ]
   
   

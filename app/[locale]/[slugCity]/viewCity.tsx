@@ -486,7 +486,7 @@ export default function Page({ entry }: any) {
                 >
                   <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-red-500/30 rounded-2xl p-8 hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_40px_rgba(235,64,54,0.3)] hover:scale-105">
                     <Quote className="w-8 h-8 text-red-500 mb-4 opacity-50" />
-                    <p className="text-gray-300 leading-relaxed mb-6 italic text-lg">"{review.author}"</p>
+                    <p className="text-gray-300 leading-relaxed mb-6 italic text-lg">"{review.comment}"</p>
                     <div className="flex items-center gap-1 mb-4">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
@@ -494,7 +494,7 @@ export default function Page({ entry }: any) {
                     </div>
                     <div className="border-t border-red-500/30 pt-4">
                       <div className="text-white font-bold">{review.author}</div>
-                      <div className="text-red-500 text-sm">{entry.city}</div>
+                      <div className="text-red-500 text-sm">{review.data}</div>
                     </div>
                   </div>
                 </motion.div>
