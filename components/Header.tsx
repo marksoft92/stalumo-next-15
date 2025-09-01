@@ -97,7 +97,7 @@ export default function NavBar() {
     {
       href: "/offer",
       label: t("offer"),
-      hasSubmenu: true,
+      hasSubmenu: false,
       submenu: offerSubmenu
     },
   ];
