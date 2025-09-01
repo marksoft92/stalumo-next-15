@@ -23,6 +23,26 @@ export const routing = defineRouting({
       pl: "/oferta",
       de: "/angebot",
     },
+    "/offer/barriers": {
+      en: "/offer/barriers",
+      pl: "/oferta/barierki",
+      de: "/angebot/gelander",
+    },
+    "/offer/gates": {
+      en: "/offer/gates",
+      pl: "/oferta/bramy",
+      de: "/angebot/tore",
+    },
+    "/offer/fences": {
+      en: "/offer/fences",
+      pl: "/oferta/ogrodzenia",
+      de: "/angebot/gehege",
+    },
+    "/offer/other-steel-structures": {
+      en: "/offer/other-steel-structures",
+      pl: "/oferta/inne-stalowe-konstrukcje",
+      de: "/angebot/andere-stahlkonstruktionen",
+    },
     "/gallery": {
       en: "/gallery",
       pl: "/projekty",
@@ -62,6 +82,11 @@ export const routing = defineRouting({
       en: "/certificates",
       pl: "/certyfikaty",
       de: "/zertifikate",
+    },
+    "/shop": {
+      en: "/store",
+      pl: "/sklep",
+      de: "/speichern",
     }
   },
 });

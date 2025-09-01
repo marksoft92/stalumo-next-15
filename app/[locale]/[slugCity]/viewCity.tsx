@@ -9,6 +9,7 @@ import {
   MessageSquare, Calendar, Globe, ChevronRight, Quote, Building2,
   Sparkles, TrendingUp, CheckCircle, ArrowRight, Heart, Users, Trophy
 } from "lucide-react";
+import Image from "next/image";
 
 type ServiceEntry = {
   slugCity: string;
@@ -345,7 +346,7 @@ export default function Page({ entry }: any) {
                   transition={{ delay: index * 0.1 }}
                   className="group relative"
                 >
-                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-red-500/30 rounded-2xl p-8 hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_40px_rgba(235,64,54,0.3)] hover:scale-105">
+                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-red-500/30 rounded-2xl p-8 hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_40px_rgba(235,64,54,0.3)] hover:scale-105 h-full flex flex-col justify-between">
                     <div className="flex justify-center mb-6">
                       <feature.icon className="w-16 h-16 text-red-500 group-hover:scale-110 transition-transform duration-300" />
                     </div>
@@ -385,7 +386,7 @@ export default function Page({ entry }: any) {
               </p>
             </motion.div>
             <div className="relative">
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-red-500 to-gray-300 rounded-full"></div>
+              <div className="hidden sm:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-red-500 to-gray-300 rounded-full"></div>
               {[
                 {
                   step: "01",
@@ -431,7 +432,7 @@ export default function Page({ entry }: any) {
                   transition={{ delay: index * 0.2 }}
                   className={`flex items-center mb-16 ${index % 2 === 0 ? "flex-row-reverse" : ""}`}
                 >
-                  <div className={`w-1/2 ${index % 2 === 0 ? "pl-16" : "pr-16"}`}>
+                  <div className={`w-full sm:w-1/2 ${index % 2 === 0 ? "sm:pl-16" : "sm:pr-16"}`}>
                     <div className="bg-gradient-to-br from-gray-900 to-black border border-red-500/30 rounded-2xl p-8 hover:border-red-500/60 transition-all duration-300 hover:shadow-[0_0_30px_rgba(235,64,54,0.2)]">
                       <div className="flex items-center gap-4 mb-4">
                         <div className="text-4xl font-oswald font-black text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
@@ -445,7 +446,7 @@ export default function Page({ entry }: any) {
                       <p className="text-gray-300 leading-relaxed">{item.description}</p>
                     </div>
                   </div>
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-red-500 rounded-full shadow-[0_0_20px_rgba(235,64,54,0.8)] z-10"></div>
+                  <div className="hidden sm:flex sm:items-center sm:justify-center absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-red-500 rounded-full shadow-[0_0_20px_rgba(235,64,54,0.8)] z-10"><item.icon className="w-3 h-3 text-white-500 group-hover:scale-110 group-hover:text-gray-300 transition-all duration-300" /></div>
                 </motion.div>
               ))}
             </div>
@@ -695,17 +696,17 @@ export default function Page({ entry }: any) {
             >
               <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
-                  Nasze Realizacje
+                  Nasze Ostatnie Realizacje
                 </span>
-                <br />w {entry.defCity}
+
               </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Zobacz nasze projekty barierek stalowych i konstrukcji w {entry.defCity}.
+                Zobacz nasze projekty barierek stalowych i konstrukcji..
               </p>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[].map((project: any, index: any) => (
+              {entry.image.map((project: any, index: any) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 50 }}
@@ -717,7 +718,9 @@ export default function Page({ entry }: any) {
                   <div className="aspect-[4/3] bg-gradient-to-br from-red-500/20 via-gray-800 to-gray-500/20 relative overflow-hidden">
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <Camera className="w-16 h-16 text-red-500/60 group-hover:text-red-500 group-hover:scale-110 transition-all duration-300" />
+                      <Image fill src={project.url} alt={project.title} className="w-16 h-16 text-red-500/60 group-hover:text-red-500 group-hover:scale-110 transition-all duration-300 object-cover" />
+
+                      {/* <Camera className="w-16 h-16 text-red-500/60 group-hover:text-red-500 group-hover:scale-110 transition-all duration-300" /> */}
                     </div>
                     <div className="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-all duration-300">
                       <div className="bg-black/80 backdrop-blur-sm rounded-xl p-4 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-300">
@@ -786,7 +789,7 @@ export default function Page({ entry }: any) {
                   transition={{ delay: index * 0.1 }}
                   className="group"
                 >
-                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 border border-red-500/30 rounded-2xl p-6 text-center hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(235,64,54,0.3)] hover:scale-105">
+                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 border border-red-500/30 rounded-2xl p-6 text-center hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(235,64,54,0.3)] hover:scale-105 h-full">
                     <div className="flex justify-center mb-4">
                       <tech.icon className="w-12 h-12 text-red-500 group-hover:scale-110 group-hover:text-gray-300 transition-all duration-300" />
                     </div>
@@ -918,7 +921,7 @@ export default function Page({ entry }: any) {
                   transition={{ delay: index * 0.1 }}
                   className="group"
                 >
-                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 border border-red-500/30 rounded-2xl p-6 text-center hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(235,64,54,0.3)] hover:scale-105">
+                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 border border-red-500/30 rounded-2xl p-6 text-center hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(235,64,54,0.3)] hover:scale-105 h-full flex flex-col justify-between">
                     <div className="flex justify-center mb-4">
                       <cert.icon className="w-16 h-16 text-red-500 group-hover:scale-110 group-hover:text-yellow-400 transition-all duration-300" />
                     </div>
@@ -992,64 +995,47 @@ export default function Page({ entry }: any) {
               </p>
             </motion.div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: `Jak Wybrać Barierki Stalowe w ${entry.city}`,
-                  excerpt: "Przewodnik po wyborze odpowiednich barierek dla Twojego domu lub firmy.",
-                  readTime: "5 min",
-                  category: "Poradnik",
-                },
-                {
-                  title: `Trendy 2024 w Konstrukcjach Stalowych w ${entry.city}`,
-                  excerpt: "Najnowsze rozwiązania w projektowaniu i montażu barierek i balustrad.",
-                  readTime: "7 min",
-                  category: "Trendy",
-                },
-                {
-                  title: `Konserwacja Konstrukcji Stalowych w ${entry.city}`,
-                  excerpt: "Jak dbać o barierki i konstrukcje, by służyły przez lata.",
-                  readTime: "4 min",
-                  category: "Konserwacja",
-                },
-              ].map((article, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="group"
-                >
-                  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-red-500/30 rounded-2xl overflow-hidden hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_40px_rgba(235,64,54,0.3)] hover:scale-105">
-                    <div className="aspect-[16/9] bg-gradient-to-br from-red-500/20 via-gray-800 to-gray-500/20 relative overflow-hidden">
-                      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500"></div>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <Camera className="w-16 h-16 text-red-500/60 group-hover:text-red-500 group-hover:scale-110 transition-all duration-300" />
+              {entry.blogPost?.map((article: any, index: any) => (
+                <Link href={article.url}>
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className="group h-full"
+                  >
+                    <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-red-500/30 rounded-2xl overflow-hidden hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_40px_rgba(235,64,54,0.3)] hover:scale-105 h-full">
+                      <div className="aspect-[16/9] bg-gradient-to-br from-red-500/20 via-gray-800 to-gray-500/20 relative overflow-hidden">
+                        <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500"></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <Image fill src={article.imgUrl} alt={article.title} className="w-16 h-16 text-red-500/60 group-hover:text-red-500 group-hover:scale-110 transition-all duration-300 object-cover" />
+                        </div>
+                        <div className="absolute top-4 left-4">
+                          <span className="px-3 py-1 bg-red-500/80 text-black text-sm font-semibold rounded-full">
+                            {article.category}
+                          </span>
+                        </div>
+                        <div className="absolute top-4 right-4">
+                          <div className="flex items-center gap-2 px-3 py-1 bg-black/60 backdrop-blur-sm rounded-full text-white text-sm">
+                            <Clock className="w-4 h-4" />
+                            {article.readTime}
+                          </div>
+                        </div>
                       </div>
-                      <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1 bg-red-500/80 text-black text-sm font-semibold rounded-full">
-                          {article.category}
-                        </span>
-                      </div>
-                      <div className="absolute top-4 right-4">
-                        <div className="flex items-center gap-2 px-3 py-1 bg-black/60 backdrop-blur-sm rounded-full text-white text-sm">
-                          <Clock className="w-4 h-4" />
-                          {article.readTime}
+                      <div className="p-6">
+                        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-500 transition-colors duration-300 leading-tight">
+                          {article.title}
+                        </h3>
+                        <p className="text-gray-300 text-sm leading-relaxed mb-4">{article.excerpt}</p>
+                        <div className="flex items-center justify-between">
+                          <div className="text-red-500 font-semibold text-sm">Czytaj więcej</div>
+                          <ArrowRight className="w-5 h-5 text-red-500 group-hover:translate-x-1 transition-transform duration-300" />
                         </div>
                       </div>
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-500 transition-colors duration-300 leading-tight">
-                        {article.title}
-                      </h3>
-                      <p className="text-gray-300 text-sm leading-relaxed mb-4">{article.excerpt}</p>
-                      <div className="flex items-center justify-between">
-                        <div className="text-red-500 font-semibold text-sm">Czytaj więcej</div>
-                        <ArrowRight className="w-5 h-5 text-red-500 group-hover:translate-x-1 transition-transform duration-300" />
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
+                  </motion.div>
+                </Link>
               ))}
             </div>
             <motion.div

@@ -1,848 +1,1279 @@
 [
-    {
-      "options": [
-        {
-          "icon": "Wrench",
-          "name": "Spawanie MIG/MAG",
-          "description": "Efektywne spawanie barierek stalowych"
-        },
-        {
-          "icon": "Hammer",
-          "name": "Spawanie TIG",
-          "description": "Precyzyjne połączenia dla trwałości"
-        },
-        {
-          "icon": "Factory",
-          "name": "Projektowanie Barierek",
-          "description": "Indywidualne projekty na wymiar"
-        },
-        {
-          "icon": "Truck",
-          "name": "Montaż Barierek",
-          "description": "Profesjonalny montaż u klienta"
-        },
-        {
-          "icon": "ShieldCheck",
-          "name": "Gwarancja Jakości",
-          "description": "Materiały certyfikowane i testy"
-        },
-        {
-          "icon": "Palette",
-          "name": "Wykończenie",
-          "description": "Malowanie proszkowe i polerowanie"
-        },
-        {
-          "icon": "MapPin",
-          "name": "Lokalna Obsługa",
-          "description": "Usługi w regionie z dojazdem"
-        },
-        {
-          "icon": "Settings",
-          "name": "Konserwacja",
-          "description": "Serwis i konserwacja barierek"
-        },
-        {
-          "icon": "LineChart",
-          "name": "Optymalizacja",
-          "description": "Dopasowanie do potrzeb architektonicznych"
-        },
-        {
-          "icon": "Users",
-          "name": "Doradztwo",
-          "description": "Eksperckie porady w projektowaniu"
-        }
-      ],
-      "package": [
-        { "size": "Podstawowy", "price": "od 250", "description": "Prosta barierka stalowa z montażem" },
-        { "size": "Standardowy", "price": "od 350", "description": "Barierka z elementami ozdobnymi" },
-        { "size": "Premium", "price": "od 500", "description": "Zaawansowana barierka z wykończeniem" },
-        { "size": "Biznesowy", "price": "od 800", "description": "Kompleksowa realizacja dla firm" }
-      ],
-      "service_slug": "barierki",
-      "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
-      "description": "Projektujemy i montujemy barierki stalowe na wymiar. Zapewniamy trwałość, estetykę i terminowość. W {defCity} zdobyliśmy uznanie wielu klientów.",
-      "cta": "Zamów barierki stalowe już dziś!",
-      "seo": {
-        "title": "Barierki stalowe – {defCity} | Profesjonalne spawanie barierek",
-        "description": "Tworzymy barierki stalowe w {defCity}. Nowoczesny design, trwałość i dostosowanie do potrzeb.",
-        "keywords": "barierki stalowe, spawanie barierek, barierki na wymiar, balustrady, konstrukcje stalowe"
-      },
-      "longtail_1": "Barierki stalowe dla firm ",
-      "longtail_2": "Barierki na balkon ",
-      "longtail_3": "Nowoczesne barierki stalowe ",
-      "longtail_4": "Projektowanie barierek ",
-      "longtail_5": "Agencja spawania barierek ",
-      "longtail_6": "Profesjonalne barierki ",
-      "longtail_7": "Barierki z montażem ",
-      "longtail_8": "Trwałe barierki stalowe ",
-      "longtail_9": "Tanie barierki na wymiar ",
-      "longtail_10": "Barierki z gwarancją ",
-      "faq": [
-        {
-          "question": "Ile kosztuje barierka stalowa w {defCity}?",
-          "answer": "Cena zależy od długości i wzoru. Proste barierki zaczynają się od 250 zł/mb."
-        },
-        {
-          "question": "Jak długo trwa montaż barierki?",
-          "answer": "Montaż trwa zazwyczaj 1-2 dni, w zależności od zakresu projektu."
-        },
-        {
-          "question": "Czy barierki są odporne na korozję?",
-          "answer": "Tak, używamy stali nierdzewnej i malowania proszkowego dla ochrony."
-        },
-        {
-          "question": "Czy oferujecie barierki na wymiar?",
-          "answer": "Tak, wszystkie barierki są projektowane indywidualnie pod klienta."
-        },
-        {
-          "question": "Czy zajmujecie się konserwacją barierek?",
-          "answer": "Tak, oferujemy usługi serwisowe i konserwacyjne."
-        }
-      ],
-      "review": [
-        {
-          "comment": "Barierki są solidne i pięknie wyglądają. Montaż szybki i bezproblemowy.",
-          "author": "Anna K.",
-          "address": "{defCity}",
-          "data": "2025-05-15"
-        },
-        {
-          "comment": "Profesjonalna obsługa, dobry projekt i trwałe wykonanie. Polecam!",
-          "author": "Piotr M.",
-          "address": "{defCity}",
-          "data": "2025-06-20"
-        },
-        {
-          "comment": "Barierki na balkon idealnie pasują do domu. Świetna jakość.",
-          "author": "Maria Z.",
-          "address": "{defCity}",
-          "data": "2025-07-10"
-        }
-      ]
-    },
-    {
-      "options": [
-        {
-          "icon": "Hammer",
-          "name": "Spawanie Balustrad",
-          "description": "Precyzyjne spawanie balustrad schodowych"
-        },
-        {
-          "icon": "Wrench",
-          "name": "Montaż Balustrad",
-          "description": "Profesjonalny montaż balustrad w domu"
-        },
-        {
-          "icon": "Settings",
-          "name": "Projekt Balustrad",
-          "description": "Indywidualne projekty balustrad na wymiar"
-        },
-        {
-          "icon": "ShieldCheck",
-          "name": "Gwarancja",
-          "description": "Balustrady z certyfikowanymi materiałami"
-        },
-        {
-          "icon": "Palette",
-          "name": "Wykończenie Balustrad",
-          "description": "Malowanie i polerowanie balustrad"
-        },
-        {
-          "icon": "MapPin",
-          "name": "Dojazd",
-          "description": "Usługi spawania balustrad z dojazdem"
-        },
-        {
-          "icon": "LineChart",
-          "name": "Optymalizacja",
-          "description": "Dopasowanie balustrad do architektury"
-        },
-        {
-          "icon": "Users",
-          "name": "Doradztwo",
-          "description": "Eksperckie porady w spawaniu balustrad"
-        }
-      ],
-      "package": [
-        { "size": "Podstawowy", "price": "od 300", "description": "Prosta balustrada schodowa" },
-        { "size": "Standardowy", "price": "od 400", "description": "Balustrada z elementami ozdobnymi" },
-        { "size": "Premium", "price": "od 600", "description": "Zaawansowana balustrada z wykończeniem" },
-        { "size": "Biznesowy", "price": "od 900", "description": "Kompleksowa realizacja balustrad dla obiektów" }
-      ],
-      "service_slug": "balustrady",
-      "service_name": "Spawanie balustrad",
-      "description": "Spawamy balustrady z dbałością o detale. Zapewniamy trwałe połączenia i estetyczne wykończenie. W {defCity} jesteśmy znani z jakości.",
-      "cta": "Zamów spawanie balustrad!",
-      "seo": {
-        "title": "Spawanie balustrad – {defCity} | Trwałe balustrady schodowe",
-        "description": "Profesjonalne spawanie balustrad w {defCity}. Solidne i estetyczne balustrady na wymiar.",
-        "keywords": "spawanie balustrad, balustrady schodowe, balustrady na wymiar, barierki, konstrukcje stalowe"
-      },
-      "longtail_1": "Balustrady schodowe dla domów ",
-      "longtail_2": "Spawanie balustrad ",
-      "longtail_3": "Nowoczesne balustrady ",
-      "longtail_4": "Balustrady z montażem ",
-      "longtail_5": "Agencja spawania balustrad ",
-      "longtail_6": "Profesjonalne balustrady ",
-      "longtail_7": "Balustrady zewnętrzne ",
-      "longtail_8": "Trwałe balustrady schodowe ",
-      "longtail_9": "Tanie balustrady na wymiar ",
-      "longtail_10": "Balustrady z gwarancją ",
-      "faq": [
-        {
-          "question": "Ile kosztuje spawanie balustrady w {defCity}?",
-          "answer": "Cena zależy od długości i typu. Proste balustrady od 300 zł/mb."
-        },
-        {
-          "question": "Jak długo trwa spawanie balustrady?",
-          "answer": "Spawanie trwa 1-3 dni, w zależności od skomplikowania."
-        },
-        {
-          "question": "Czy balustrady są odporne na korozję?",
-          "answer": "Tak, stosujemy stal nierdzewną i ochronne powłoki."
-        },
-        {
-          "question": "Czy oferujecie balustrady na wymiar?",
-          "answer": "Tak, spawamy balustrady indywidualnie pod projekt."
-        },
-        {
-          "question": "Czy zajmujecie się montażem balustrad?",
-          "answer": "Tak, oferujemy pełny montaż i serwis."
-        }
-      ],
-      "review": [
-        {
-          "comment": "Balustrady schodowe są piękne i solidne. Spawanie na najwyższym poziomie.",
-          "author": "Jan K.",
-          "address": "{defCity}",
-          "data": "2025-04-10"
-        },
-        {
-          "comment": "Szybka realizacja i profesjonalne podejście. Balustrady idealnie pasują.",
-          "author": "Ewa M.",
-          "address": "{defCity}",
-          "data": "2025-05-20"
-        },
-        {
-          "comment": "Jakość spawania i materiałów bez zarzutu. Polecam usługi.",
-          "author": "Tomasz Z.",
-          "address": "{defCity}",
-          "data": "2025-06-15"
-        }
-      ]
-    },
-    {
-      "options": [
-        {
-          "icon": "Truck",
-          "name": "Bramy Przesuwne",
-          "description": "Automatyczne bramy przesuwne"
-        },
-        {
-          "icon": "Factory",
-          "name": "Bramy Uchylne",
-          "description": "Tradycyjne bramy uchylne na wymiar"
-        },
-        {
-          "icon": "Settings",
-          "name": "Automatyka Bram",
-          "description": "Systemy automatycznego otwierania"
-        },
-        {
-          "icon": "ShieldCheck",
-          "name": "Gwarancja",
-          "description": "Bramy z certyfikowanymi materiałami"
-        },
-        {
-          "icon": "Palette",
-          "name": "Wykończenie Bram",
-          "description": "Malowanie proszkowe bram"
-        },
-        {
-          "icon": "MapPin",
-          "name": "Dojazd",
-          "description": "Usługi spawania bram z dojazdem"
-        },
-        {
-          "icon": "LineChart",
-          "name": "Optymalizacja",
-          "description": "Dopasowanie bram do posesji"
-        },
-        {
-          "icon": "Users",
-          "name": "Doradztwo",
-          "description": "Porady w wyborze bram"
-        }
-      ],
-      "package": [
-        { "size": "Podstawowy", "price": "od 1500", "description": "Prosta brama stalowa" },
-        { "size": "Standardowy", "price": "od 3000", "description": "Brama z automatyką" },
-        { "size": "Premium", "price": "od 5000", "description": "Zaawansowana brama przesuwna" },
-        { "size": "Biznesowy", "price": "od 8000", "description": "Kompleksowa brama dla obiektów" }
-      ],
-      "service_slug": "bramy",
-      "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
-      "description": "Projektujemy i spawamy bramy stalowe na wymiar. Zapewniamy automatyka, trwałość i estetyczne wykończenie. W {defCity} jesteśmy ekspertami od bram.",
-      "cta": "Zamów bramę na wymiar!",
-      "seo": {
-        "title": "Bramy stalowe – {defCity} | Profesjonalne spawanie bram",
-        "description": "Tworzymy bramy stalowe w {defCity}. Nowoczesne, trwałe i automatyczne bramy na wymiar."
-  , "keywords": "bramy stalowe, spawanie bram, bramy przesuwne, automatyka bram, konstrukcje stalowe"
-      },
-      "longtail_1": "Bramy stalowe dla firm ",
-      "longtail_2": "Bramy przesuwne ",
-      "longtail_3": "Nowoczesne bramy ",
-      "longtail_4": "Projektowanie bram ",
-      "longtail_5": "Agencja spawania bram ",
-      "longtail_6": "Profesjonalne bramy ",
-      "longtail_7": "Bramy z automatyką ",
-      "longtail_8": "Trwałe bramy stalowe ",
-      "longtail_9": "Tanie bramy na wymiar ",
-      "longtail_10": "Bramy z gwarancją ",
-      "faq": [
-        {
-          "question": "Ile kosztuje brama stalowa w {defCity}?",
-          "answer": "Cena zaczyna się od 1500 zł za sztuka, w zależności od typu i automatyki."
-        },
-        {
-          "question": "Jak długo trwa realizacja bramy?",
-          "answer": "Realizacja trwa 2-4 tygodnie, w zależności od projektu."
-        },
-        {
-          "question": "Czy bramy są odporne na pogodę?",
-          "answer": "Tak, używamy stali ocynkowanej i malowania proszkowego."
-        },
-        {
-          "question": "Czy oferujecie bramy na wymiar?",
-          "answer": "Tak, wszystkie bramy są dostosowane do potrzeb klienta."
-        },
-        {
-          "question": "Czy zajmujecie się automatyką bram?",
-          "answer": "Tak, integrujemy systemy automatycznego otwierania."
-        }
-      ],
-      "review": [
-        {
-          "comment": "Brama przesuwna działa idealnie. Spawanie solidne, montaż szybki.",
-          "author": "Michał K.",
-          "address": "{defCity}",
-          "data": "2025-03-10"
-        },
-        {
-          "comment": "Profesjonalna obsługa, brama na wymiar pasuje idealnie do posesji.",
-          "author": "Katarzyna P.",
-          "address": "{defCity}",
-          "data": "2025-04-15"
-        },
-        {
-          "comment": "Automatyczna brama to wygoda. Jakość wykonania na najwyższym poziomie.",
-          "author": "Robert Z.",
-          "address": "{defCity}",
-          "data": "2025-05-20"
-        }
-      ]
-    },
-    {
-      "options": [
-        {
-          "icon": "Hammer",
-          "name": "Spawanie Ogrodzeń",
-          "description": "Trwałe spawanie ogrodzeń panelowych"
-        },
-        {
-          "icon": "Factory",
-          "name": "Ogrodzenia Metalowe",
-          "description": "Ogrodzenia z metalu na wymiar"
-        },
-        {
-          "icon": "Settings",
-          "name": "Projekt Ogrodzeń",
-          "description": "Indywidualne projekty ogrodzeń"
-        },
-        {
-          "icon": "ShieldCheck",
-          "name": "Gwarancja",
-          "description": "Ogrodzenia z certyfikowanymi materiałami"
-        },
-        {
-          "icon": "Palette",
-          "name": "Wykończenie",
-          "description": "Malowanie ogrodzeń proszkowo"
-        },
-        {
-          "icon": "MapPin",
-          "name": "Dojazd",
-          "description": "Usługi spawania ogrodzeń z dojazdem"
-        },
-        {
-          "icon": "LineChart",
-          "name": "Optymalizacja",
-          "description": "Dopasowanie ogrodzeń do terenu"
-        },
-        {
-          "icon": "Users",
-          "name": "Doradztwo",
-          "description": "Porady w wyborze ogrodzeń"
-        }
-      ],
-      "package": [
-        { "size": "Podstawowy", "price": "od 150", "description": "Proste ogrodzenie panelowe" },
-        { "size": "Standardowy", "price": "od 250", "description": "Ogrodzenie z elementami ozdobnymi" },
-        { "size": "Premium", "price": "od 350", "description": "Zaawansowane ogrodzenie z wykończeniem" },
-        { "size": "Biznesowy", "price": "od 500", "description": "Kompleksowa realizacja ogrodzeń dla obiektów" }
-      ],
-      "service_slug": "ogrodzenia",
-      "service_name": "Spawanie ogrodzeń",
-      "description": "Spawamy ogrodzenia z dbałością o trwałość i estetykę. Oferujemy ogrodzenia panelowe, metalowe i na wymiar. W {defCity} zapewniamy profesjonalizm.",
-      "cta": "Zamów spawanie ogrodzeń!",
-      "seo": {
-        "title": "Ogrodzenia stalowe – {defCity} | Profesjonalne spawanie ogrodzeń",
-        "description": "Tworzymy ogrodzenia stalowe w {defCity}. Trwałe, estetyczne i na wymiar ogrodzenia."
-  , "keywords": "spawanie ogrodzeń, ogrodzenia panelowe, ogrodzenia na wymiar, bramy, balustrady"
-      },
-      "longtail_1": "Ogrodzenia panelowe dla firm ",
-      "longtail_2": "Spawanie ogrodzeń ",
-      "longtail_3": "Nowoczesne ogrodzenia ",
-      "longtail_4": "Projektowanie ogrodzeń ",
-      "longtail_5": "Agencja spawania ogrodzeń ",
-      "longtail_6": "Profesjonalne ogrodzenia ",
-      "longtail_7": "Ogrodzenia z montażem ",
-      "longtail_8": "Trwałe ogrodzenia metalowe ",
-      "longtail_9": "Tanie ogrodzenia na wymiar ",
-      "longtail_10": "Ogrodzenia z gwarancją ",
-      "faq": [
-        {
-          "question": "Ile kosztuje spawanie ogrodzenia w {defCity}?",
-          "answer": "Cena zaczyna się od 150 zł/mb, w zależności od typu i materiału."
-        },
-        {
-          "question": "Jak długo trwa montaż ogrodzenia?",
-          "answer": "Montaż trwa 2-5 dni, w zależności od długości."
-        },
-        {
-          "question": "Czy ogrodzenia są odporne na korozję?",
-          "answer": "Tak, stosujemy stal ocynkowaną i powłoki ochronne."
-        },
-        {
-          "question": "Czy oferujecie ogrodzenia na wymiar?",
-          "answer": "Tak, spawamy ogrodzenia indywidualnie pod projekt."
-        },
-        {
-          "question": "Czy zajmujecie się konserwacją ogrodzeń?",
-          "answer": "Tak, oferujemy serwis i konserwację."
-        }
-      ],
-      "review": [
-        {
-          "comment": "Ogrodzenie panelowe jest solidne i ładnie się prezentuje. Spawanie profesjonalne.",
-          "author": "Adam K.",
-          "address": "{defCity}",
-          "data": "2025-04-05"
-        },
-        {
-          "comment": "Szybka realizacja ogrodzenia na wymiar. Jakość na wysoki poziomie.",
-          "author": "Beata M.",
-          "address": "{defCity}",
-          "data": "2025-05-10"
-        },
-        {
-          "comment": "Ogrodzenie metalowe przetrwa lata. Polecam usługi spawalnicze.",
-          "author": "Krzysztof Z.",
-          "address": "{defCity}",
-          "data": "2025-06-15"
-        }
-      ]
-    },
-    {
-      "options": [
-        {
-          "icon": "Factory",
-          "name": "Spawanie Konstrukcji",
-          "description": "Precyzyjne spawanie konstrukcji stalowych"
-        },
-        {
-          "icon": "Hammer",
-          "name": "Konstrukcje Na Wymiar",
-          "description": "Konstrukcje dostosowane do potrzeb"
-        },
-        {
-          "icon": "Settings",
-          "name": "Projekt Konstrukcji",
-          "description": "Indywidualne projekty konstrukcji"
-        },
-        {
-          "icon": "ShieldCheck",
-          "name": "Gwarancja",
-          "description": "Konstrukcje z certyfikowanymi materiałami"
-        },
-        {
-          "icon": "Palette",
-          "name": "Wykończenie",
-          "description": "Malowanie i zabezpieczenie konstrukcji"
-        },
-        {
-          "icon": "MapPin",
-          "name": "Dojazd",
-          "description": "Usługi spawania konstrukcji z dojazdem"
-        },
-        {
-          "icon": "LineChart",
-          "name": "Optymalizacja",
-          "description": "Dopasowanie konstrukcji do wymagań"
-        },
-        {
-          "icon": "Users",
-          "name": "Doradztwo",
-          "description": "Porady w spawaniu konstrukcji"
-        }
-      ],
-      "package": [
-        { "size": "Podstawowy", "price": "od 50", "description": "Prosta konstrukcja stalowa" },
-        { "size": "Standardowy", "price": "od 100", "description": "Konstrukcja z elementami złożonymi" },
-        { "size": "Premium", "price": "od 150", "description": "Zaawansowana konstrukcja z wykończeniem" },
-        { "size": "Biznesowy", "price": "od 250", "description": "Kompleksowa realizacja konstrukcji dla obiektów" }
-      ],
-      "service_slug": "konstrukcje-stalowe",
-      "service_name": "Spawanie konstrukcji stalowych",
-      "description": "Spawamy konstrukcje stalowe z precyzją i trwałością. Oferujemy konstrukcje na wymiar dla budownictwa i przemysłu. W {defCity} jesteśmy specjalistami.",
-      "cta": "Zamów spawanie konstrukcji!",
-      "seo": {
-        "title": "Konstrukcje stalowe – {defCity} | Profesjonalne spawanie konstrukcji",
-        "description": "Tworzymy konstrukcje stalowe w {defCity}. Trwałe i na wymiar konstrukcje dla domu i firmy."
-  , "keywords": "spawanie konstrukcji, konstrukcje stalowe, konstrukcje na wymiar, barierki, bramy"
-      },
-      "longtail_1": "Konstrukcje stalowe dla firm ",
-      "longtail_2": "Spawanie konstrukcji ",
-      "longtail_3": "Nowoczesne konstrukcje ",
-      "longtail_4": "Projektowanie konstrukcji ",
-      "longtail_5": "Agencja spawania konstrukcji ",
-      "longtail_6": "Profesjonalne konstrukcje ",
-      "longtail_7": "Konstrukcje z montażem ",
-      "longtail_8": "Trwałe konstrukcje stalowe ",
-      "longtail_9": "Tanie konstrukcje na wymiar ",
-      "longtail_10": "Konstrukcje z gwarancją ",
-      "faq": [
-        {
-          "question": "Ile kosztuje spawanie konstrukcji w {defCity}?",
-          "answer": "Cena zaczyna się od 50 zł/kg, w zależności od typu i materiału."
-        },
-        {
-          "question": "Jak długo trwa realizacja konstrukcji?",
-          "answer": "Realizacja trwa 1-4 tygodnie, w zależności od projektu."
-        },
-        {
-          "question": "Czy konstrukcje są odporne na korozję?",
-          "answer": "Tak, stosujemy stal ocynkowaną i powłoki ochronne."
-        },
-        {
-          "question": "Czy oferujecie konstrukcje na wymiar?",
-          "answer": "Tak, spawamy konstrukcje indywidualnie pod projekt."
-        },
-        {
-          "question": "Czy zajmujecie się montażem konstrukcji?",
-          "answer": "Tak, oferujemy pełny montaż i serwis."
-        }
-      ],
-      "review": [
-        {
-          "comment": "Konstrukcje stalowe są solidne i precyzyjnie wykonane. Polecam.",
-          "author": "Piotr K.",
-          "address": "{defCity}",
-          "data": "2025-03-20"
-        },
-        {
-          "comment": "Szybka realizacja konstrukcji na wymiar. Jakość bez zarzutu.",
-          "author": "Anna M.",
-          "address": "{defCity}",
-          "data": "2025-04-25"
-        },
-        {
-          "comment": "Spawanie konstrukcji na najwyższym poziomie. Trwałe i estetyczne.",
-          "author": "Michał Z.",
-          "address": "{defCity}",
-          "data": "2025-05-30"
-        }
-      ]
-    },
-    {
-      "options": [
-        {
-          "icon": "Hammer",
-          "name": "Spawanie Schodów",
-          "description": "Precyzyjne spawanie schodów metalowych"
-        },
-        {
-          "icon": "Wrench",
-          "name": "Schody Na Wymiar",
-          "description": "Schody dostosowane do wnętrz"
-        },
-        {
-          "icon": "Settings",
-          "name": "Projekt Schodów",
-          "description": "Indywidualne projekty schodów"
-        },
-        {
-          "icon": "ShieldCheck",
-          "name": "Gwarancja",
-          "description": "Schody z certyfikowanymi materiałami"
-        },
-        {
-          "icon": "Palette",
-          "name": "Wykończenie",
-          "description": "Malowanie i zabezpieczenie schodów"
-        },
-        {
-          "icon": "MapPin",
-          "name": "Dojazd",
-          "description": "Usługi spawania schodów z dojazdem"
-        },
-        {
-          "icon": "LineChart",
-          "name": "Optymalizacja",
-          "description": "Dopasowanie schodów do przestrzeni"
-        },
-        {
-          "icon": "Users",
-          "name": "Doradztwo",
-          "description": "Porady w wyborze schodów"
-        }
-      ],
-      "package": [
-        { "size": "Podstawowy", "price": "od 2000", "description": "Proste schody metalowe" },
-        { "size": "Standardowy", "price": "od 4000", "description": "Schody z balustradą" },
-        { "size": "Premium", "price": "od 6000", "description": "Zaawansowane schody z wykończeniem" },
-        { "size": "Biznesowy", "price": "od 8000", "description": "Kompleksowa realizacja schodów dla obiektów" }
-      ],
-      "service_slug": "schody",
-      "service_name": "Realizacja konstrukcji stalowych dla schodów",
-      "description": "Spawamy schody stalowe z precyzją i estetyką. Oferujemy schody na wymiar dla domów i obiektów. W {defCity} jesteśmy specjalistami od schodów.",
-      "cta": "Zamów schody stalowe!",
-      "seo": {
-        "title": "Schody stalowe – {defCity} | Profesjonalne spawanie schodów",
-        "description": "Tworzymy schody stalowe w {defCity}. Trwałe, estetyczne i na wymiar schody metalowe."
-  , "keywords": "spawanie schodów, schody stalowe, schody na wymiar, balustrady, konstrukcje"
-      },
-      "longtail_1": "Schody stalowe dla domów ",
-      "longtail_2": "Spawanie schodów ",
-      "longtail_3": "Nowoczesne schody ",
-      "longtail_4": "Projektowanie schodów ",
-      "longtail_5": "Agencja spawania schodów ",
-      "longtail_6": "Profesjonalne schody ",
-      "longtail_7": "Schody z montażem ",
-      "longtail_8": "Trwałe schody metalowe ",
-      "longtail_9": "Tanie schody na wymiar ",
-      "longtail_10": "Schody z gwarancją ",
-      "faq": [
-        {
-          "question": "Ile kosztuje spawanie schodów w {defCity}?",
-          "answer": "Cena zaczyna się od 2000 zł/szt, w zależności od typu i długości."
-        },
-        {
-          "question": "Jak długo trwa realizacja schodów?",
-          "answer": "Realizacja trwa 2-4 tygodnie, w zależności od projektu."
-        },
-        {
-          "question": "Czy schody są odporne na korozję?",
-          "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
-        },
-        {
-          "question": "Czy oferujecie schody na wymiar?",
-          "answer": "Tak, spawamy schody indywidualnie pod projekt."
-        },
-        {
-          "question": "Czy zajmujecie się montażem schodów?",
-          "answer": "Tak, oferujemy pełny montaż i serwis."
-        }
-      ],
-      "review": [
-        {
-          "comment": "Schody stalowe są solidne i pięknie się prezentują. Spawanie profesjonalne.",
-          "author": "Katarzyna K.",
-          "address": "{defCity}",
-          "data": "2025-03-15"
-        },
-        {
-          "comment": "Szybka realizacja schodów na wymiar. Jakość wykonania doskonała.",
-          "author": "Marcin M.",
-          "address": "{defCity}",
-          "data": "2025-04-20"
-        },
-        {
-          "comment": "Schody metalowe przetrwają lata. Polecam usługi.",
-          "author": "Ewa Z.",
-          "address": "{defCity}",
-          "data": "2025-05-25"
-        }
-      ]
-    },
-    {
-      "options": [
-          {
-              "icon": "Fire",
-              "name": "Spawanie Grilli",
-              "description": "Precyzyjne spawanie grilli stalowych"
-          },
-          {
-              "icon": "Factory",
-              "name": "Grille na Wymiar",
-              "description": "Indywidualne projekty grilli ogrodowych"
-          },
-          {
-              "icon": "Palette",
-              "name": "Wykończenie Grilli",
-              "description": "Malowanie proszkowe i polerowanie"
-          },
-          {
-              "icon": "ShieldCheck",
-              "name": "Gwarancja Jakości",
-              "description": "Materiały certyfikowane i trwałe"
-          },
-          {
-              "icon": "MapPin",
-              "name": "Lokalna Obsługa",
-              "description": "Usługi w regionie z dojazdem"
-          },
-          {
-              "icon": "LineChart",
-              "name": "Optymalizacja",
-              "description": "Dopasowanie grilli do potrzeb klienta"
-          },
-          {
-              "icon": "Users",
-              "name": "Doradztwo",
-              "description": "Porady w projektowaniu grilli"
-          },
-          {
-              "icon": "Settings",
-              "name": "Konserwacja",
-              "description": "Serwis i konserwacja grilli"
-          }
-      ],
-      "package": [
-          { "size": "Podstawowy", "price": "od 500", "description": "Prosty grill stalowy" },
-          { "size": "Standardowy", "price": "od 800", "description": "Grill z dodatkowymi funkcjami" },
-          { "size": "Premium", "price": "od 1200", "description": "Zaawansowany grill z wykończeniem" },
-          { "size": "Biznesowy", "price": "od 2000", "description": "Grill dla gastronomii lub dużych ogrodów" }
-      ],
-      "service_slug": "grille",
-      "service_name": "Grille stalowe na wymiar",
-      "description": "Projektujemy i spawamy grille stalowe na wymiar. Oferujemy trwałość, funkcjonalność i estetykę dla ogrodów i gastronomii. W {defCity} dostarczamy grille najwyższej jakości.",
-      "cta": "Zamów grill stalowy już dziś!",
-      "seo": {
-          "title": "Grille stalowe – {defCity} | Profesjonalne spawanie grilli",
-          "description": "Tworzymy grille stalowe w {defCity}. Trwałe, estetyczne i na wymiar grille ogrodowe.",
-          "keywords": "grille stalowe, spawanie grilli, grille na wymiar, grille ogrodowe, konstrukcje stalowe"
-      },
-      "longtail_1": "Grille stalowe dla ogrodów ",
-      "longtail_2": "Spawanie grilli ",
-      "longtail_3": "Nowoczesne grille ",
-      "longtail_4": "Projektowanie grilli ",
-      "longtail_5": "Agencja spawania grilli ",
-      "longtail_6": "Profesjonalne grille ",
-      "longtail_7": "Grille z montażem ",
-      "longtail_8": "Trwałe grille stalowe ",
-      "longtail_9": "Tanie grille na wymiar ",
-      "longtail_10": "Grille z gwarancją ",
-      "faq": [
-          {
-              "question": "Ile kosztuje grill stalowy w {defCity}?",
-              "answer": "Cena zaczyna się od 500 zł, w zależności od rozmiaru i funkcji."
-          },
-          {
-              "question": "Jak długo trwa wykonanie grilla?",
-              "answer": "Realizacja trwa 1-2 tygodnie, w zależności od projektu."
-          },
-          {
-              "question": "Czy grille są odporne na korozję?",
-              "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
-          },
-          {
-              "question": "Czy oferujecie grille na wymiar?",
-              "answer": "Tak, projektujemy grille indywidualnie pod klienta."
-          },
-          {
-              "question": "Czy zajmujecie się konserwacją grilli?",
-              "answer": "Tak, oferujemy serwis i konserwację grilli."
-          }
-      ],
-      "review": [
-          {
-              "comment": "Grill stalowy jest solidny i funkcjonalny. Idealny do ogrodu!",
-              "author": "Paweł K.",
-              "address": "{defCity}",
-              "data": "2025-06-10"
-          },
-          {
-              "comment": "Szybka realizacja i profesjonalne podejście. Grill na wymiar rewelacyjny.",
-              "author": "Magda L.",
-              "address": "{defCity}",
-              "data": "2025-07-15"
-          },
-          {
-              "comment": "Jakość wykonania grilla bez zarzutu. Polecam usługi!",
-              "author": "Tomasz R.",
-              "address": "{defCity}",
-              "data": "2025-08-05"
-          }
-      ]
-  },
   {
+ "blogPost": [
+             {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
+      },
+      {
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
+      },
+
+      {
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
+      }
+    ],
     "options": [
-        {
-            "icon": "Fire",
-            "name": "Spawanie Palenisk",
-            "description": "Precyzyjne spawanie palenisk stalowych"
-        },
-        {
-            "icon": "Factory",
-            "name": "Paleniska na Wymiar",
-            "description": "Indywidualne projekty palenisk ogrodowych"
-        },
-        {
-            "icon": "Palette",
-            "name": "Wykończenie Palenisk",
-            "description": "Malowanie proszkowe i polerowanie"
-        },
-        {
-            "icon": "ShieldCheck",
-            "name": "Gwarancja Jakości",
-            "description": "Materiały certyfikowane i trwałe"
-        },
-        {
-            "icon": "MapPin",
-            "name": "Lokalna Obsługa",
-            "description": "Usługi w regionie z dojazdem"
-        },
-        {
-            "icon": "LineChart",
-            "name": "Optymalizacja",
-            "description": "Dopasowanie palenisk do przestrzeni"
-        },
-        {
-            "icon": "Users",
-            "name": "Doradztwo",
-            "description": "Porady w projektowaniu palenisk"
-        },
-        {
-            "icon": "Settings",
-            "name": "Konserwacja",
-            "description": "Serwis i konserwacja palenisk"
-        }
+      {
+        "icon": "Wrench",
+        "name": "Spawanie MIG/MAG",
+        "description": "Efektywne spawanie barierek stalowych"
+      },
+      {
+        "icon": "Hammer",
+        "name": "Spawanie TIG",
+        "description": "Precyzyjne połączenia dla trwałości"
+      },
+      {
+        "icon": "Factory",
+        "name": "Projektowanie Barierek",
+        "description": "Indywidualne projekty na wymiar"
+      },
+      {
+        "icon": "Truck",
+        "name": "Montaż Barierek",
+        "description": "Profesjonalny montaż u klienta"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja Jakości",
+        "description": "Materiały certyfikowane i testy"
+      },
+      {
+        "icon": "Palette",
+        "name": "Wykończenie",
+        "description": "Malowanie proszkowe i polerowanie"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Lokalna Obsługa",
+        "description": "Usługi w regionie z dojazdem"
+      },
+      {
+        "icon": "Settings",
+        "name": "Konserwacja",
+        "description": "Serwis i konserwacja barierek"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie do potrzeb architektonicznych"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Eksperckie porady w projektowaniu"
+      }
+    ],
+    "image": [
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG",
+        "title": "barierka stalowa",
+        "description": "Barierka stalowa"
+      },
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/8f97a0d9-41da-4dac-9777-662784eac29c-barierka5.jpg",
+        "title": "barierka stalowa",
+        "description": "Barierka stalowa"
+      },
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/8a91c7c0-39e8-469d-914c-9f5d224880f2-barierka3.jpg",
+        "title": "barierka stalowa",
+        "description": "Barierka stalowa"
+      }
     ],
     "package": [
-        { "size": "Podstawowy", "price": "od 400", "description": "Proste palenisko stalowe" },
-        { "size": "Standardowy", "price": "od 700", "description": "Palenisko z dodatkowymi elementami" },
-        { "size": "Premium", "price": "od 1000", "description": "Zaawansowane palenisko z wykończeniem" },
-        { "size": "Biznesowy", "price": "od 1500", "description": "Palenisko dla dużych ogrodów lub przestrzeni komercyjnych" }
+      {
+        "size": "Podstawowy",
+        "price": "od 250",
+        "description": "Prosta barierka stalowa z montażem"
+      },
+      {
+        "size": "Standardowy",
+        "price": "od 350",
+        "description": "Barierka z elementami ozdobnymi"
+      },
+      {
+        "size": "Premium",
+        "price": "od 500",
+        "description": "Zaawansowana barierka z wykończeniem"
+      },
+      {
+        "size": "Biznesowy",
+        "price": "od 800",
+        "description": "Kompleksowa realizacja dla firm"
+      }
+    ],
+    "service_slug": "barierki",
+    "service_name": "Nowoczesne i trwałe barierki stalowe firmy Stalumo",
+    "description": "Projektujemy i montujemy barierki stalowe na wymiar. Zapewniamy trwałość, estetykę i terminowość. W {defCity} zdobyliśmy uznanie wielu klientów.",
+    "cta": "Zamów barierki stalowe już dziś!",
+    "seo": {
+      "title": "Barierki stalowe – {defCity} | Profesjonalne spawanie barierek",
+      "description": "Tworzymy barierki stalowe w {defCity}. Nowoczesny design, trwałość i dostosowanie do potrzeb.",
+      "keywords": "barierki stalowe, spawanie barierek, barierki na wymiar, balustrady, konstrukcje stalowe"
+    },
+    "longtail_1": "Barierki stalowe dla firm ",
+    "longtail_2": "Barierki na balkon ",
+    "longtail_3": "Nowoczesne barierki stalowe ",
+    "longtail_4": "Projektowanie barierek ",
+    "longtail_5": "Agencja spawania barierek ",
+    "longtail_6": "Profesjonalne barierki ",
+    "longtail_7": "Barierki z montażem ",
+    "longtail_8": "Trwałe barierki stalowe ",
+    "longtail_9": "Tanie barierki na wymiar ",
+    "longtail_10": "Barierki z gwarancją ",
+    "faq": [
+      {
+        "question": "Ile kosztuje barierka stalowa w {defCity}?",
+        "answer": "Cena zależy od długości i wzoru. Proste barierki zaczynają się od 250 zł/mb."
+      },
+      {
+        "question": "Jak długo trwa montaż barierki?",
+        "answer": "Montaż trwa zazwyczaj 1-2 dni, w zależności od zakresu projektu."
+      },
+      {
+        "question": "Czy barierki są odporne na korozję?",
+        "answer": "Tak, używamy stali nierdzewnej i malowania proszkowego dla ochrony."
+      },
+      {
+        "question": "Czy oferujecie barierki na wymiar?",
+        "answer": "Tak, wszystkie barierki są projektowane indywidualnie pod klienta."
+      },
+      {
+        "question": "Czy zajmujecie się konserwacją barierek?",
+        "answer": "Tak, oferujemy usługi serwisowe i konserwacyjne."
+      }
+    ],
+    "review": [
+      {
+        "comment": "Barierki są solidne i pięknie wyglądają. Montaż szybki i bezproblemowy.",
+        "author": "Anna K.",
+        "address": "{defCity}",
+        "data": "2025-05-15"
+      },
+      {
+        "comment": "Profesjonalna obsługa, dobry projekt i trwałe wykonanie. Polecam!",
+        "author": "Piotr M.",
+        "address": "{defCity}",
+        "data": "2025-06-20"
+      },
+      {
+        "comment": "Barierki na balkon idealnie pasują do domu. Świetna jakość.",
+        "author": "Maria Z.",
+        "address": "{defCity}",
+        "data": "2025-07-10"
+      }
+    ]
+  },
+  {
+ "blogPost": [
+             {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
+      },
+      {
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
+      },
+
+      {
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
+      }
+    ],
+    "options": [
+      {
+        "icon": "Hammer",
+        "name": "Spawanie Balustrad",
+        "description": "Precyzyjne spawanie balustrad schodowych"
+      },
+      {
+        "icon": "Wrench",
+        "name": "Montaż Balustrad",
+        "description": "Profesjonalny montaż balustrad w domu"
+      },
+      {
+        "icon": "Settings",
+        "name": "Projekt Balustrad",
+        "description": "Indywidualne projekty balustrad na wymiar"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja",
+        "description": "Balustrady z certyfikowanymi materiałami"
+      },
+      {
+        "icon": "Palette",
+        "name": "Wykończenie Balustrad",
+        "description": "Malowanie i polerowanie balustrad"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Dojazd",
+        "description": "Usługi spawania balustrad z dojazdem"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie balustrad do architektury"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Eksperckie porady w spawaniu balustrad"
+      }
+    ],
+    "image": [
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/e28cfb2d-9217-4b26-b2fe-95e7132f3c63-IMG_0999.JPG",
+        "title": "balustrada stalowa",
+        "description": "Balustrada stalowa"
+      },
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/ec6b10d7-fa76-4307-a706-c452da6bc772-4248572A-FDC5-45C0-B117-522CA48586E3.JPG",
+        "title": "balustrada stalowa",
+        "description": "Balustrada stalowa"
+      },
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/7e42073b-8a02-40c0-84e4-05a39ab59ee4-Made with insMind-balustrada6.jpg",
+        "title": "balustrada stalowa",
+        "description": "Balustrada stalowa"
+      }
+    ],
+    "package": [
+      {
+        "size": "Podstawowy",
+        "price": "od 300",
+        "description": "Prosta balustrada schodowa"
+      },
+      {
+        "size": "Standardowy",
+        "price": "od 400",
+        "description": "Balustrada z elementami ozdobnymi"
+      },
+      {
+        "size": "Premium",
+        "price": "od 600",
+        "description": "Zaawansowana balustrada z wykończeniem"
+      },
+      {
+        "size": "Biznesowy",
+        "price": "od 900",
+        "description": "Kompleksowa realizacja balustrad dla obiektów"
+      }
+    ],
+    "service_slug": "balustrady",
+    "service_name": "Spawanie balustrad",
+    "description": "Spawamy balustrady z dbałością o detale. Zapewniamy trwałe połączenia i estetyczne wykończenie. W {defCity} jesteśmy znani z jakości.",
+    "cta": "Zamów spawanie balustrad!",
+    "seo": {
+      "title": "Spawanie balustrad – {defCity} | Trwałe balustrady schodowe",
+      "description": "Profesjonalne spawanie balustrad w {defCity}. Solidne i estetyczne balustrady na wymiar.",
+      "keywords": "spawanie balustrad, balustrady schodowe, balustrady na wymiar, barierki, konstrukcje stalowe"
+    },
+    "longtail_1": "Balustrady schodowe dla domów ",
+    "longtail_2": "Spawanie balustrad ",
+    "longtail_3": "Nowoczesne balustrady ",
+    "longtail_4": "Balustrady z montażem ",
+    "longtail_5": "Agencja spawania balustrad ",
+    "longtail_6": "Profesjonalne balustrady ",
+    "longtail_7": "Balustrady zewnętrzne ",
+    "longtail_8": "Trwałe balustrady schodowe ",
+    "longtail_9": "Tanie balustrady na wymiar ",
+    "longtail_10": "Balustrady z gwarancją ",
+    "faq": [
+      {
+        "question": "Ile kosztuje spawanie balustrady w {defCity}?",
+        "answer": "Cena zależy od długości i typu. Proste balustrady od 300 zł/mb."
+      },
+      {
+        "question": "Jak długo trwa spawanie balustrady?",
+        "answer": "Spawanie trwa 1-3 dni, w zależności od skomplikowania."
+      },
+      {
+        "question": "Czy balustrady są odporne na korozję?",
+        "answer": "Tak, stosujemy stal nierdzewną i ochronne powłoki."
+      },
+      {
+        "question": "Czy oferujecie balustrady na wymiar?",
+        "answer": "Tak, spawamy balustrady indywidualnie pod projekt."
+      },
+      {
+        "question": "Czy zajmujecie się montażem balustrad?",
+        "answer": "Tak, oferujemy pełny montaż i serwis."
+      }
+    ],
+    "review": [
+      {
+        "comment": "Balustrady schodowe są piękne i solidne. Spawanie na najwyższym poziomie.",
+        "author": "Jan K.",
+        "address": "{defCity}",
+        "data": "2025-04-10"
+      },
+      {
+        "comment": "Szybka realizacja i profesjonalne podejście. Balustrady idealnie pasują.",
+        "author": "Ewa M.",
+        "address": "{defCity}",
+        "data": "2025-05-20"
+      },
+      {
+        "comment": "Jakość spawania i materiałów bez zarzutu. Polecam usługi.",
+        "author": "Tomasz Z.",
+        "address": "{defCity}",
+        "data": "2025-06-15"
+      }
+    ]
+  },
+  {
+    "image": [
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/811ae2e7-f94e-4876-92b0-1ea92a03a44c-IMG_1830.JPG",
+        "title": "Brama przesuwna",
+        "description": "Brama przesuwna"
+      }
+    ],
+ "blogPost": [
+             {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
+      },
+      {
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
+      },
+
+      {
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
+      }
+    ],
+    "options": [
+      {
+        "icon": "Truck",
+        "name": "Bramy Przesuwne",
+        "description": "Automatyczne bramy przesuwne"
+      },
+      {
+        "icon": "Factory",
+        "name": "Bramy Uchylne",
+        "description": "Tradycyjne bramy uchylne na wymiar"
+      },
+      {
+        "icon": "Settings",
+        "name": "Automatyka Bram",
+        "description": "Systemy automatycznego otwierania"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja",
+        "description": "Bramy z certyfikowanymi materiałami"
+      },
+      {
+        "icon": "Palette",
+        "name": "Wykończenie Bram",
+        "description": "Malowanie proszkowe bram"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Dojazd",
+        "description": "Usługi spawania bram z dojazdem"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie bram do posesji"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Porady w wyborze bram"
+      }
+    ],
+    "package": [
+      {
+        "size": "Podstawowy",
+        "price": "od 1500",
+        "description": "Prosta brama stalowa"
+      },
+      {
+        "size": "Standardowy",
+        "price": "od 3000",
+        "description": "Brama z automatyką"
+      },
+      {
+        "size": "Premium",
+        "price": "od 5000",
+        "description": "Zaawansowana brama przesuwna"
+      },
+      {
+        "size": "Biznesowy",
+        "price": "od 8000",
+        "description": "Kompleksowa brama dla obiektów"
+      }
+    ],
+    "service_slug": "bramy",
+    "service_name": "Kompleksowa realizacja bram stalowych na wymiar",
+    "description": "Projektujemy i spawamy bramy stalowe na wymiar. Zapewniamy automatyka, trwałość i estetyczne wykończenie. W {defCity} jesteśmy ekspertami od bram.",
+    "cta": "Zamów bramę na wymiar!",
+    "seo": {
+      "title": "Bramy stalowe – {defCity} | Profesjonalne spawanie bram",
+      "description": "Tworzymy bramy stalowe w {defCity}. Nowoczesne, trwałe i automatyczne bramy na wymiar.",
+      "keywords": "bramy stalowe, spawanie bram, bramy przesuwne, automatyka bram, konstrukcje stalowe"
+    },
+    "longtail_1": "Bramy stalowe dla firm ",
+    "longtail_2": "Bramy przesuwne ",
+    "longtail_3": "Nowoczesne bramy ",
+    "longtail_4": "Projektowanie bram ",
+    "longtail_5": "Agencja spawania bram ",
+    "longtail_6": "Profesjonalne bramy ",
+    "longtail_7": "Bramy z automatyką ",
+    "longtail_8": "Trwałe bramy stalowe ",
+    "longtail_9": "Tanie bramy na wymiar ",
+    "longtail_10": "Bramy z gwarancją ",
+    "faq": [
+      {
+        "question": "Ile kosztuje brama stalowa w {defCity}?",
+        "answer": "Cena zaczyna się od 1500 zł za sztuka, w zależności od typu i automatyki."
+      },
+      {
+        "question": "Jak długo trwa realizacja bramy?",
+        "answer": "Realizacja trwa 2-4 tygodnie, w zależności od projektu."
+      },
+      {
+        "question": "Czy bramy są odporne na pogodę?",
+        "answer": "Tak, używamy stali ocynkowanej i malowania proszkowego."
+      },
+      {
+        "question": "Czy oferujecie bramy na wymiar?",
+        "answer": "Tak, wszystkie bramy są dostosowane do potrzeb klienta."
+      },
+      {
+        "question": "Czy zajmujecie się automatyką bram?",
+        "answer": "Tak, integrujemy systemy automatycznego otwierania."
+      }
+    ],
+    "review": [
+      {
+        "comment": "Brama przesuwna działa idealnie. Spawanie solidne, montaż szybki.",
+        "author": "Michał K.",
+        "address": "{defCity}",
+        "data": "2025-03-10"
+      },
+      {
+        "comment": "Profesjonalna obsługa, brama na wymiar pasuje idealnie do posesji.",
+        "author": "Katarzyna P.",
+        "address": "{defCity}",
+        "data": "2025-04-15"
+      },
+      {
+        "comment": "Automatyczna brama to wygoda. Jakość wykonania na najwyższym poziomie.",
+        "author": "Robert Z.",
+        "address": "{defCity}",
+        "data": "2025-05-20"
+      }
+    ]
+  },
+  {
+ "blogPost": [
+             {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
+      },
+      {
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
+      },
+
+      {
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
+      }
+    ],
+    "options": [
+      {
+        "icon": "Hammer",
+        "name": "Spawanie Ogrodzeń",
+        "description": "Trwałe spawanie ogrodzeń panelowych"
+      },
+      {
+        "icon": "Factory",
+        "name": "Ogrodzenia Metalowe",
+        "description": "Ogrodzenia z metalu na wymiar"
+      },
+      {
+        "icon": "Settings",
+        "name": "Projekt Ogrodzeń",
+        "description": "Indywidualne projekty ogrodzeń"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja",
+        "description": "Ogrodzenia z certyfikowanymi materiałami"
+      },
+      {
+        "icon": "Palette",
+        "name": "Wykończenie",
+        "description": "Malowanie ogrodzeń proszkowo"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Dojazd",
+        "description": "Usługi spawania ogrodzeń z dojazdem"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie ogrodzeń do terenu"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Porady w wyborze ogrodzeń"
+      }
+    ],
+    "package": [
+      {
+        "size": "Podstawowy",
+        "price": "od 150",
+        "description": "Proste ogrodzenie panelowe"
+      },
+      {
+        "size": "Standardowy",
+        "price": "od 250",
+        "description": "Ogrodzenie z elementami ozdobnymi"
+      },
+      {
+        "size": "Premium",
+        "price": "od 350",
+        "description": "Zaawansowane ogrodzenie z wykończeniem"
+      },
+      {
+        "size": "Biznesowy",
+        "price": "od 500",
+        "description": "Kompleksowa realizacja ogrodzeń dla obiektów"
+      }
+    ],
+    "image": [
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/af223d91-2aae-4786-beeb-1e844299409f-Made with insMind-mikychillinphoto_2025-04-28_10-49-12-topaz-denoise-color.jpeg",
+        "title": "Ogrodzenia",
+        "description": "Ogrodzenia"
+      },
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg",
+        "title": "Ogrodzenia",
+        "description": "Ogrodzenia"
+      },
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/8c333b1e-3f11-4c3d-a3ae-83a5e4b18ecc-IMG_1822.PNG",
+        "title": "Ogrodzenia",
+        "description": "Ogrodzenia z metalu na wymiar"
+      }
+    ],
+    "service_slug": "ogrodzenia",
+    "service_name": "Spawanie ogrodzeń",
+    "description": "Spawamy ogrodzenia z dbałością o trwałość i estetykę. Oferujemy ogrodzenia panelowe, metalowe i na wymiar. W {defCity} zapewniamy profesjonalizm.",
+    "cta": "Zamów spawanie ogrodzeń!",
+    "seo": {
+      "title": "Ogrodzenia stalowe – {defCity} | Profesjonalne spawanie ogrodzeń",
+      "description": "Tworzymy ogrodzenia stalowe w {defCity}. Trwałe, estetyczne i na wymiar ogrodzenia.",
+      "keywords": "spawanie ogrodzeń, ogrodzenia panelowe, ogrodzenia na wymiar, bramy, balustrady"
+    },
+    "longtail_1": "Ogrodzenia panelowe dla firm ",
+    "longtail_2": "Spawanie ogrodzeń ",
+    "longtail_3": "Nowoczesne ogrodzenia ",
+    "longtail_4": "Projektowanie ogrodzeń ",
+    "longtail_5": "Agencja spawania ogrodzeń ",
+    "longtail_6": "Profesjonalne ogrodzenia ",
+    "longtail_7": "Ogrodzenia z montażem ",
+    "longtail_8": "Trwałe ogrodzenia metalowe ",
+    "longtail_9": "Tanie ogrodzenia na wymiar ",
+    "longtail_10": "Ogrodzenia z gwarancją ",
+    "faq": [
+      {
+        "question": "Ile kosztuje spawanie ogrodzenia w {defCity}?",
+        "answer": "Cena zaczyna się od 150 zł/mb, w zależności od typu i materiału."
+      },
+      {
+        "question": "Jak długo trwa montaż ogrodzenia?",
+        "answer": "Montaż trwa 2-5 dni, w zależności od długości."
+      },
+      {
+        "question": "Czy ogrodzenia są odporne na korozję?",
+        "answer": "Tak, stosujemy stal ocynkowaną i powłoki ochronne."
+      },
+      {
+        "question": "Czy oferujecie ogrodzenia na wymiar?",
+        "answer": "Tak, spawamy ogrodzenia indywidualnie pod projekt."
+      },
+      {
+        "question": "Czy zajmujecie się konserwacją ogrodzeń?",
+        "answer": "Tak, oferujemy serwis i konserwację."
+      }
+    ],
+    "review": [
+      {
+        "comment": "Ogrodzenie panelowe jest solidne i ładnie się prezentuje. Spawanie profesjonalne.",
+        "author": "Adam K.",
+        "address": "{defCity}",
+        "data": "2025-04-05"
+      },
+      {
+        "comment": "Szybka realizacja ogrodzenia na wymiar. Jakość na wysoki poziomie.",
+        "author": "Beata M.",
+        "address": "{defCity}",
+        "data": "2025-05-10"
+      },
+      {
+        "comment": "Ogrodzenie metalowe przetrwa lata. Polecam usługi spawalnicze.",
+        "author": "Krzysztof Z.",
+        "address": "{defCity}",
+        "data": "2025-06-15"
+      }
+    ]
+  },
+  {
+ "blogPost": [
+             {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
+      },
+      {
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
+      },
+
+      {
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
+      }
+    ],
+    "options": [
+      {
+        "icon": "Factory",
+        "name": "Spawanie Konstrukcji",
+        "description": "Precyzyjne spawanie konstrukcji stalowych"
+      },
+      {
+        "icon": "Hammer",
+        "name": "Konstrukcje Na Wymiar",
+        "description": "Konstrukcje dostosowane do potrzeb"
+      },
+      {
+        "icon": "Settings",
+        "name": "Projekt Konstrukcji",
+        "description": "Indywidualne projekty konstrukcji"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja",
+        "description": "Konstrukcje z certyfikowanymi materiałami"
+      },
+      {
+        "icon": "Palette",
+        "name": "Wykończenie",
+        "description": "Malowanie i zabezpieczenie konstrukcji"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Dojazd",
+        "description": "Usługi spawania konstrukcji z dojazdem"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie konstrukcji do wymagań"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Porady w spawaniu konstrukcji"
+      }
+    ],
+    "package": [
+      {
+        "size": "Podstawowy",
+        "price": "od 50",
+        "description": "Prosta konstrukcja stalowa"
+      },
+      {
+        "size": "Standardowy",
+        "price": "od 100",
+        "description": "Konstrukcja z elementami złożonymi"
+      },
+      {
+        "size": "Premium",
+        "price": "od 150",
+        "description": "Zaawansowana konstrukcja z wykończeniem"
+      },
+      {
+        "size": "Biznesowy",
+        "price": "od 250",
+        "description": "Kompleksowa realizacja konstrukcji dla obiektów"
+      }
+    ],
+    "image": [
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/cde89481-73ef-4559-8815-377f875c797b-IMG_1825.JPG",
+        "title": "Konstrukcje stalowe",
+        "description": "konstrukcje stalowe"
+      },
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/0429c519-8e89-4f93-94ff-8f272568275a-IMG_1837.JPG",
+        "title": "Konstrukcje stalowe",
+        "description": "konstrukcje stalowe"
+      },
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg",
+        "title": "Konstrukcje stalowe",
+        "description": "konstrukcje stalowe"
+      }
+    ],
+    "service_slug": "konstrukcje-stalowe",
+    "service_name": "Spawanie konstrukcji stalowych",
+    "description": "Spawamy konstrukcje stalowe z precyzją i trwałością. Oferujemy konstrukcje na wymiar dla budownictwa i przemysłu. W {defCity} jesteśmy specjalistami.",
+    "cta": "Zamów spawanie konstrukcji!",
+    "seo": {
+      "title": "Konstrukcje stalowe – {defCity} | Profesjonalne spawanie konstrukcji",
+      "description": "Tworzymy konstrukcje stalowe w {defCity}. Trwałe i na wymiar konstrukcje dla domu i firmy.",
+      "keywords": "spawanie konstrukcji, konstrukcje stalowe, konstrukcje na wymiar, barierki, bramy"
+    },
+    "longtail_1": "Konstrukcje stalowe dla firm ",
+    "longtail_2": "Spawanie konstrukcji ",
+    "longtail_3": "Nowoczesne konstrukcje ",
+    "longtail_4": "Projektowanie konstrukcji ",
+    "longtail_5": "Agencja spawania konstrukcji ",
+    "longtail_6": "Profesjonalne konstrukcje ",
+    "longtail_7": "Konstrukcje z montażem ",
+    "longtail_8": "Trwałe konstrukcje stalowe ",
+    "longtail_9": "Tanie konstrukcje na wymiar ",
+    "longtail_10": "Konstrukcje z gwarancją ",
+    "faq": [
+      {
+        "question": "Ile kosztuje spawanie konstrukcji w {defCity}?",
+        "answer": "Cena zaczyna się od 50 zł/kg, w zależności od typu i materiału."
+      },
+      {
+        "question": "Jak długo trwa realizacja konstrukcji?",
+        "answer": "Realizacja trwa 1-4 tygodnie, w zależności od projektu."
+      },
+      {
+        "question": "Czy konstrukcje są odporne na korozję?",
+        "answer": "Tak, stosujemy stal ocynkowaną i powłoki ochronne."
+      },
+      {
+        "question": "Czy oferujecie konstrukcje na wymiar?",
+        "answer": "Tak, spawamy konstrukcje indywidualnie pod projekt."
+      },
+      {
+        "question": "Czy zajmujecie się montażem konstrukcji?",
+        "answer": "Tak, oferujemy pełny montaż i serwis."
+      }
+    ],
+    "review": [
+      {
+        "comment": "Konstrukcje stalowe są solidne i precyzyjnie wykonane. Polecam.",
+        "author": "Piotr K.",
+        "address": "{defCity}",
+        "data": "2025-03-20"
+      },
+      {
+        "comment": "Szybka realizacja konstrukcji na wymiar. Jakość bez zarzutu.",
+        "author": "Anna M.",
+        "address": "{defCity}",
+        "data": "2025-04-25"
+      },
+      {
+        "comment": "Spawanie konstrukcji na najwyższym poziomie. Trwałe i estetyczne.",
+        "author": "Michał Z.",
+        "address": "{defCity}",
+        "data": "2025-05-30"
+      }
+    ]
+  },
+  {
+ "blogPost": [
+             {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
+      },
+      {
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
+      },
+
+      {
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
+      }
+    ],
+    "options": [
+      {
+        "icon": "Hammer",
+        "name": "Spawanie Schodów",
+        "description": "Precyzyjne spawanie schodów metalowych"
+      },
+      {
+        "icon": "Wrench",
+        "name": "Schody Na Wymiar",
+        "description": "Schody dostosowane do wnętrz"
+      },
+      {
+        "icon": "Settings",
+        "name": "Projekt Schodów",
+        "description": "Indywidualne projekty schodów"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja",
+        "description": "Schody z certyfikowanymi materiałami"
+      },
+      {
+        "icon": "Palette",
+        "name": "Wykończenie",
+        "description": "Malowanie i zabezpieczenie schodów"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Dojazd",
+        "description": "Usługi spawania schodów z dojazdem"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie schodów do przestrzeni"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Porady w wyborze schodów"
+      }
+    ],
+    "package": [
+      {
+        "size": "Podstawowy",
+        "price": "od 2000",
+        "description": "Proste schody metalowe"
+      },
+      {
+        "size": "Standardowy",
+        "price": "od 4000",
+        "description": "Schody z balustradą"
+      },
+      {
+        "size": "Premium",
+        "price": "od 6000",
+        "description": "Zaawansowane schody z wykończeniem"
+      },
+      {
+        "size": "Biznesowy",
+        "price": "od 8000",
+        "description": "Kompleksowa realizacja schodów dla obiektów"
+      }
+    ],
+    "image": [
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/4c148b8b-3313-4ee6-8eea-d027e52002ee-schodystalowe.JPG",
+        "title": "Stalowe schody",
+        "description": "Stalowe schody"
+      },
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/8a91c7c0-39e8-469d-914c-9f5d224880f2-barierka3.jpg",
+        "title": "Stalowe schody",
+        "description": "Stalowe schody"
+      }
+    ],
+    "service_slug": "schody",
+    "service_name": "Realizacja konstrukcji stalowych dla schodów",
+    "description": "Spawamy schody stalowe z precyzją i estetyką. Oferujemy schody na wymiar dla domów i obiektów. W {defCity} jesteśmy specjalistami od schodów.",
+    "cta": "Zamów schody stalowe!",
+    "seo": {
+      "title": "Schody stalowe – {defCity} | Profesjonalne spawanie schodów",
+      "description": "Tworzymy schody stalowe w {defCity}. Trwałe, estetyczne i na wymiar schody metalowe.",
+      "keywords": "spawanie schodów, schody stalowe, schody na wymiar, balustrady, konstrukcje"
+    },
+    "longtail_1": "Schody stalowe dla domów ",
+    "longtail_2": "Spawanie schodów ",
+    "longtail_3": "Nowoczesne schody ",
+    "longtail_4": "Projektowanie schodów ",
+    "longtail_5": "Agencja spawania schodów ",
+    "longtail_6": "Profesjonalne schody ",
+    "longtail_7": "Schody z montażem ",
+    "longtail_8": "Trwałe schody metalowe ",
+    "longtail_9": "Tanie schody na wymiar ",
+    "longtail_10": "Schody z gwarancją ",
+    "faq": [
+      {
+        "question": "Ile kosztuje spawanie schodów w {defCity}?",
+        "answer": "Cena zaczyna się od 2000 zł/szt, w zależności od typu i długości."
+      },
+      {
+        "question": "Jak długo trwa realizacja schodów?",
+        "answer": "Realizacja trwa 2-4 tygodnie, w zależności od projektu."
+      },
+      {
+        "question": "Czy schody są odporne na korozję?",
+        "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
+      },
+      {
+        "question": "Czy oferujecie schody na wymiar?",
+        "answer": "Tak, spawamy schody indywidualnie pod projekt."
+      },
+      {
+        "question": "Czy zajmujecie się montażem schodów?",
+        "answer": "Tak, oferujemy pełny montaż i serwis."
+      }
+    ],
+    "review": [
+      {
+        "comment": "Schody stalowe są solidne i pięknie się prezentują. Spawanie profesjonalne.",
+        "author": "Katarzyna K.",
+        "address": "{defCity}",
+        "data": "2025-03-15"
+      },
+      {
+        "comment": "Szybka realizacja schodów na wymiar. Jakość wykonania doskonała.",
+        "author": "Marcin M.",
+        "address": "{defCity}",
+        "data": "2025-04-20"
+      },
+      {
+        "comment": "Schody metalowe przetrwają lata. Polecam usługi.",
+        "author": "Ewa Z.",
+        "address": "{defCity}",
+        "data": "2025-05-25"
+      }
+    ]
+  },
+  {
+ "blogPost": [
+             {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
+      },
+      {
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
+      },
+
+      {
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
+      }
+    ],
+    "options": [
+      {
+        "icon": "Fire",
+        "name": "Spawanie Grilli",
+        "description": "Precyzyjne spawanie grilli stalowych"
+      },
+      {
+        "icon": "Factory",
+        "name": "Grille na Wymiar",
+        "description": "Indywidualne projekty grilli ogrodowych"
+      },
+      {
+        "icon": "Palette",
+        "name": "Wykończenie Grilli",
+        "description": "Malowanie proszkowe i polerowanie"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja Jakości",
+        "description": "Materiały certyfikowane i trwałe"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Lokalna Obsługa",
+        "description": "Usługi w regionie z dojazdem"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie grilli do potrzeb klienta"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Porady w projektowaniu grilli"
+      },
+      {
+        "icon": "Settings",
+        "name": "Konserwacja",
+        "description": "Serwis i konserwacja grilli"
+      }
+    ],
+    "package": [
+      {
+        "size": "Podstawowy",
+        "price": "od 500",
+        "description": "Prosty grill stalowy"
+      },
+      {
+        "size": "Standardowy",
+        "price": "od 800",
+        "description": "Grill z dodatkowymi funkcjami"
+      },
+      {
+        "size": "Premium",
+        "price": "od 1200",
+        "description": "Zaawansowany grill z wykończeniem"
+      },
+      {
+        "size": "Biznesowy",
+        "price": "od 2000",
+        "description": "Grill dla gastronomii lub dużych ogrodów"
+      }
+    ],
+    "service_slug": "grille",
+    "service_name": "Grille stalowe na wymiar",
+    "description": "Projektujemy i spawamy grille stalowe na wymiar. Oferujemy trwałość, funkcjonalność i estetykę dla ogrodów i gastronomii. W {defCity} dostarczamy grille najwyższej jakości.",
+    "cta": "Zamów grill stalowy już dziś!",
+    "seo": {
+      "title": "Grille stalowe – {defCity} | Profesjonalne spawanie grilli",
+      "description": "Tworzymy grille stalowe w {defCity}. Trwałe, estetyczne i na wymiar grille ogrodowe.",
+      "keywords": "grille stalowe, spawanie grilli, grille na wymiar, grille ogrodowe, konstrukcje stalowe"
+    },
+    "longtail_1": "Grille stalowe dla ogrodów ",
+    "longtail_2": "Spawanie grilli ",
+    "longtail_3": "Nowoczesne grille ",
+    "longtail_4": "Projektowanie grilli ",
+    "longtail_5": "Agencja spawania grilli ",
+    "longtail_6": "Profesjonalne grille ",
+    "longtail_7": "Grille z montażem ",
+    "longtail_8": "Trwałe grille stalowe ",
+    "longtail_9": "Tanie grille na wymiar ",
+    "longtail_10": "Grille z gwarancją ",
+    "faq": [
+      {
+        "question": "Ile kosztuje grill stalowy w {defCity}?",
+        "answer": "Cena zaczyna się od 500 zł, w zależności od rozmiaru i funkcji."
+      },
+      {
+        "question": "Jak długo trwa wykonanie grilla?",
+        "answer": "Realizacja trwa 1-2 tygodnie, w zależności od projektu."
+      },
+      {
+        "question": "Czy grille są odporne na korozję?",
+        "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
+      },
+      {
+        "question": "Czy oferujecie grille na wymiar?",
+        "answer": "Tak, projektujemy grille indywidualnie pod klienta."
+      },
+      {
+        "question": "Czy zajmujecie się konserwacją grilli?",
+        "answer": "Tak, oferujemy serwis i konserwację grilli."
+      }
+    ],
+    "review": [
+      {
+        "comment": "Grill stalowy jest solidny i funkcjonalny. Idealny do ogrodu!",
+        "author": "Paweł K.",
+        "address": "{defCity}",
+        "data": "2025-06-10"
+      },
+      {
+        "comment": "Szybka realizacja i profesjonalne podejście. Grill na wymiar rewelacyjny.",
+        "author": "Magda L.",
+        "address": "{defCity}",
+        "data": "2025-07-15"
+      },
+      {
+        "comment": "Jakość wykonania grilla bez zarzutu. Polecam usługi!",
+        "author": "Tomasz R.",
+        "address": "{defCity}",
+        "data": "2025-08-05"
+      }
+    ]
+  },
+  {
+ "blogPost": [
+             {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
+      },
+      {
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
+      },
+
+      {
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
+      }
+    ],
+    "options": [
+      {
+        "icon": "Fire",
+        "name": "Spawanie Palenisk",
+        "description": "Precyzyjne spawanie palenisk stalowych"
+      },
+      {
+        "icon": "Factory",
+        "name": "Paleniska na Wymiar",
+        "description": "Indywidualne projekty palenisk ogrodowych"
+      },
+      {
+        "icon": "Palette",
+        "name": "Wykończenie Palenisk",
+        "description": "Malowanie proszkowe i polerowanie"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja Jakości",
+        "description": "Materiały certyfikowane i trwałe"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Lokalna Obsługa",
+        "description": "Usługi w regionie z dojazdem"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie palenisk do przestrzeni"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Porady w projektowaniu palenisk"
+      },
+      {
+        "icon": "Settings",
+        "name": "Konserwacja",
+        "description": "Serwis i konserwacja palenisk"
+      }
+    ],
+    "package": [
+      {
+        "size": "Podstawowy",
+        "price": "od 400",
+        "description": "Proste palenisko stalowe"
+      },
+      {
+        "size": "Standardowy",
+        "price": "od 700",
+        "description": "Palenisko z dodatkowymi elementami"
+      },
+      {
+        "size": "Premium",
+        "price": "od 1000",
+        "description": "Zaawansowane palenisko z wykończeniem"
+      },
+      {
+        "size": "Biznesowy",
+        "price": "od 1500",
+        "description": "Palenisko dla dużych ogrodów lub przestrzeni komercyjnych"
+      }
     ],
     "service_slug": "paleniska",
     "service_name": "Paleniska stalowe na wymiar",
     "description": "Tworzymy paleniska stalowe na wymiar, idealne do ogrodów i przestrzeni rekreacyjnych. Zapewniamy trwałość i estetykę. W {defCity} jesteśmy ekspertami od palenisk.",
     "cta": "Zamów palenisko stalowe już dziś!",
     "seo": {
-        "title": "Paleniska stalowe – {defCity} | Profesjonalne spawanie palenisk",
-        "description": "Tworzymy paleniska stalowe w {defCity}. Trwałe, estetyczne i na wymiar paleniska ogrodowe.",
-        "keywords": "paleniska stalowe, spawanie palenisk, paleniska na wymiar, grille, konstrukcje stalowe"
+      "title": "Paleniska stalowe – {defCity} | Profesjonalne spawanie palenisk",
+      "description": "Tworzymy paleniska stalowe w {defCity}. Trwałe, estetyczne i na wymiar paleniska ogrodowe.",
+      "keywords": "paleniska stalowe, spawanie palenisk, paleniska na wymiar, grille, konstrukcje stalowe"
     },
     "longtail_1": "Paleniska stalowe dla ogrodów ",
     "longtail_2": "Spawanie palenisk ",
@@ -855,381 +1286,515 @@
     "longtail_9": "Tanie paleniska na wymiar ",
     "longtail_10": "Paleniska z gwarancją ",
     "faq": [
-        {
-            "question": "Ile kosztuje palenisko stalowe w {defCity}?",
-            "answer": "Cena zaczyna się od 400 zł, w zależności od rozmiaru i projektu."
-        },
-        {
-            "question": "Jak długo trwa wykonanie paleniska?",
-            "answer": "Realizacja trwa 1-2 tygodnie, w zależności od projektu."
-        },
-        {
-            "question": "Czy paleniska są odporne na korozję?",
-            "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
-        },
-        {
-            "question": "Czy oferujecie paleniska na wymiar?",
-            "answer": "Tak, projektujemy paleniska indywidualnie pod klienta."
-        },
-        {
-            "question": "Czy zajmujecie się konserwacją palenisk?",
-            "answer": "Tak, oferujemy serwis i konserwację palenisk."
-        }
+      {
+        "question": "Ile kosztuje palenisko stalowe w {defCity}?",
+        "answer": "Cena zaczyna się od 400 zł, w zależności od rozmiaru i projektu."
+      },
+      {
+        "question": "Jak długo trwa wykonanie paleniska?",
+        "answer": "Realizacja trwa 1-2 tygodnie, w zależności od projektu."
+      },
+      {
+        "question": "Czy paleniska są odporne na korozję?",
+        "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
+      },
+      {
+        "question": "Czy oferujecie paleniska na wymiar?",
+        "answer": "Tak, projektujemy paleniska indywidualnie pod klienta."
+      },
+      {
+        "question": "Czy zajmujecie się konserwacją palenisk?",
+        "answer": "Tak, oferujemy serwis i konserwację palenisk."
+      }
     ],
     "review": [
-        {
-            "comment": "Palenisko stalowe wygląda świetnie i jest bardzo trwałe. Polecam!",
-            "author": "Joanna K.",
-            "address": "{defCity}",
-            "data": "2025-06-20"
-        },
-        {
-            "comment": "Szybka realizacja paleniska na wymiar. Idealne do ogrodu.",
-            "author": "Kamil S.",
-            "address": "{defCity}",
-            "data": "2025-07-10"
-        },
-        {
-            "comment": "Jakość paleniska i spawania na najwyższym poziomie. Super usługa!",
-            "author": "Monika P.",
-            "address": "{defCity}",
-            "data": "2025-08-01"
-        }
-    ]
-},
-{
-  "options": [
       {
-          "icon": "Factory",
-          "name": "Spawanie Wiat",
-          "description": "Precyzyjne spawanie wiat stalowych"
+        "comment": "Palenisko stalowe wygląda świetnie i jest bardzo trwałe. Polecam!",
+        "author": "Joanna K.",
+        "address": "{defCity}",
+        "data": "2025-06-20"
       },
       {
-          "icon": "Wrench",
-          "name": "Zadaszenia na Wymiar",
-          "description": "Indywidualne projekty zadaszeń"
+        "comment": "Szybka realizacja paleniska na wymiar. Idealne do ogrodu.",
+        "author": "Kamil S.",
+        "address": "{defCity}",
+        "data": "2025-07-10"
       },
       {
-          "icon": "Palette",
-          "name": "Wykończenie Zadaszeń",
-          "description": "Malowanie proszkowe i polerowanie"
-      },
-      {
-          "icon": "ShieldCheck",
-          "name": "Gwarancja Jakości",
-          "description": "Materiały certyfikowane i trwałe"
-      },
-      {
-          "icon": "MapPin",
-          "name": "Lokalna Obsługa",
-          "description": "Usługi w regionie z dojazdem"
-      },
-      {
-          "icon": "LineChart",
-          "name": "Optymalizacja",
-          "description": "Dopasowanie zadaszeń do przestrzeni"
-      },
-      {
-          "icon": "Users",
-          "name": "Doradztwo",
-          "description": "Porady w projektowaniu zadaszeń"
-      },
-      {
-          "icon": "Settings",
-          "name": "Konserwacja",
-          "description": "Serwis i konserwacja wiat"
+        "comment": "Jakość paleniska i spawania na najwyższym poziomie. Super usługa!",
+        "author": "Monika P.",
+        "address": "{defCity}",
+        "data": "2025-08-01"
       }
-  ],
-  "package": [
-      { "size": "Podstawowy", "price": "od 1000", "description": "Prosta wiata stalowa" },
-      { "size": "Standardowy", "price": "od 2000", "description": "Wiata z dodatkowymi elementami" },
-      { "size": "Premium", "price": "od 3500", "description": "Zaawansowana wiata z wykończeniem" },
-      { "size": "Biznesowy", "price": "od 5000", "description": "Kompleksowa wiata dla firm lub dużych posesji" }
-  ],
-  "service_slug": "wiaty-zadaszenia",
-  "service_name": "Wiaty i zadaszenia stalowe na wymiar",
-  "description": "Projektujemy i spawamy wiaty oraz zadaszenia stalowe na wymiar. Zapewniamy ochronę przed pogodą i estetykę. W {defCity} dostarczamy solidne konstrukcje.",
-  "cta": "Zamów wiatę lub zadaszenie stalowe!",
-  "seo": {
+    ]
+  },
+  {
+ "blogPost": [
+             {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
+      },
+      {
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
+      },
+
+      {
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
+      }
+    ],
+    "options": [
+      {
+        "icon": "Factory",
+        "name": "Spawanie Wiat",
+        "description": "Precyzyjne spawanie wiat stalowych"
+      },
+      {
+        "icon": "Wrench",
+        "name": "Zadaszenia na Wymiar",
+        "description": "Indywidualne projekty zadaszeń"
+      },
+      {
+        "icon": "Palette",
+        "name": "Wykończenie Zadaszeń",
+        "description": "Malowanie proszkowe i polerowanie"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja Jakości",
+        "description": "Materiały certyfikowane i trwałe"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Lokalna Obsługa",
+        "description": "Usługi w regionie z dojazdem"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie zadaszeń do przestrzeni"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Porady w projektowaniu zadaszeń"
+      },
+      {
+        "icon": "Settings",
+        "name": "Konserwacja",
+        "description": "Serwis i konserwacja wiat"
+      }
+    ],
+    "image": [
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/0429c519-8e89-4f93-94ff-8f272568275a-IMG_1837.JPG",
+        "title": "Brama przesuwna",
+        "description": "Wiaty i zadaszenia stalowe na wymiar"
+      }
+    ],
+    "package": [
+      {
+        "size": "Podstawowy",
+        "price": "od 1000",
+        "description": "Prosta wiata stalowa"
+      },
+      {
+        "size": "Standardowy",
+        "price": "od 2000",
+        "description": "Wiata z dodatkowymi elementami"
+      },
+      {
+        "size": "Premium",
+        "price": "od 3500",
+        "description": "Zaawansowana wiata z wykończeniem"
+      },
+      {
+        "size": "Biznesowy",
+        "price": "od 5000",
+        "description": "Kompleksowa wiata dla firm lub dużych posesji"
+      }
+    ],
+    "service_slug": "wiaty-zadaszenia",
+    "service_name": "Wiaty i zadaszenia stalowe na wymiar",
+    "description": "Projektujemy i spawamy wiaty oraz zadaszenia stalowe na wymiar. Zapewniamy ochronę przed pogodą i estetykę. W {defCity} dostarczamy solidne konstrukcje.",
+    "cta": "Zamów wiatę lub zadaszenie stalowe!",
+    "seo": {
       "title": "Wiaty i zadaszenia stalowe – {defCity} | Profesjonalne spawanie",
       "description": "Tworzymy wiaty i zadaszenia stalowe w {defCity}. Trwałe, estetyczne i na wymiar konstrukcje.",
       "keywords": "wiaty stalowe, zadaszenia na wymiar, spawanie wiat, konstrukcje stalowe, zadaszenia"
+    },
+    "longtail_1": "Wiaty stalowe dla firm ",
+    "longtail_2": "Spawanie zadaszeń ",
+    "longtail_3": "Nowoczesne wiaty ",
+    "longtail_4": "Projektowanie zadaszeń ",
+    "longtail_5": "Agencja spawania wiat ",
+    "longtail_6": "Profesjonalne zadaszenia ",
+    "longtail_7": "Wiaty z montażem ",
+    "longtail_8": "Trwałe wiaty stalowe ",
+    "longtail_9": "Tanie zadaszenia na wymiar ",
+    "longtail_10": "Wiaty z gwarancją ",
+    "faq": [
+      {
+        "question": "Ile kosztuje wiata stalowa w {defCity}?",
+        "answer": "Cena zaczyna się od 1000 zł, w zależności od rozmiaru i projektu."
+      },
+      {
+        "question": "Jak długo trwa realizacja wiaty?",
+        "answer": "Realizacja trwa 2-4 tygodnie, w zależności od projektu."
+      },
+      {
+        "question": "Czy wiaty są odporne na korozję?",
+        "answer": "Tak, używamy stali ocynkowanej i powłok ochronnych."
+      },
+      {
+        "question": "Czy oferujecie zadaszenia na wymiar?",
+        "answer": "Tak, projektujemy wiaty indywidualnie pod klienta."
+      },
+      {
+        "question": "Czy zajmujecie się montażem wiat?",
+        "answer": "Tak, oferujemy pełny montaż i serwis."
+      }
+    ],
+    "review": [
+      {
+        "comment": "Wiata stalowa jest solidna i estetyczna. Montaż bezproblemowy.",
+        "author": "Robert K.",
+        "address": "{defCity}",
+        "data": "2025-06-15"
+      },
+      {
+        "comment": "Zadaszenie na wymiar idealnie pasuje do posesji. Polecam!",
+        "author": "Alicja M.",
+        "address": "{defCity}",
+        "data": "2025-07-20"
+      },
+      {
+        "comment": "Jakość spawania i materiałów na najwyższym poziomie. Super usługa.",
+        "author": "Grzegorz P.",
+        "address": "{defCity}",
+        "data": "2025-08-10"
+      }
+    ]
   },
-  "longtail_1": "Wiaty stalowe dla firm ",
-  "longtail_2": "Spawanie zadaszeń ",
-  "longtail_3": "Nowoczesne wiaty ",
-  "longtail_4": "Projektowanie zadaszeń ",
-  "longtail_5": "Agencja spawania wiat ",
-  "longtail_6": "Profesjonalne zadaszenia ",
-  "longtail_7": "Wiaty z montażem ",
-  "longtail_8": "Trwałe wiaty stalowe ",
-  "longtail_9": "Tanie zadaszenia na wymiar ",
-  "longtail_10": "Wiaty z gwarancją ",
-  "faq": [
-      {
-          "question": "Ile kosztuje wiata stalowa w {defCity}?",
-          "answer": "Cena zaczyna się od 1000 zł, w zależności od rozmiaru i projektu."
+  {
+ "blogPost": [
+             {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
       },
       {
-          "question": "Jak długo trwa realizacja wiaty?",
-          "answer": "Realizacja trwa 2-4 tygodnie, w zależności od projektu."
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
       },
+
       {
-          "question": "Czy wiaty są odporne na korozję?",
-          "answer": "Tak, używamy stali ocynkowanej i powłok ochronnych."
-      },
-      {
-          "question": "Czy oferujecie zadaszenia na wymiar?",
-          "answer": "Tak, projektujemy wiaty indywidualnie pod klienta."
-      },
-      {
-          "question": "Czy zajmujecie się montażem wiat?",
-          "answer": "Tak, oferujemy pełny montaż i serwis."
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
       }
-  ],
-  "review": [
+    ],
+    "options": [
       {
-          "comment": "Wiata stalowa jest solidna i estetyczna. Montaż bezproblemowy.",
-          "author": "Robert K.",
-          "address": "{defCity}",
-          "data": "2025-06-15"
+        "icon": "Hammer",
+        "name": "Spawanie Mebli",
+        "description": "Precyzyjne spawanie mebli ogrodowych"
       },
       {
-          "comment": "Zadaszenie na wymiar idealnie pasuje do posesji. Polecam!",
-          "author": "Alicja M.",
-          "address": "{defCity}",
-          "data": "2025-07-20"
+        "icon": "Factory",
+        "name": "Meble na Wymiar",
+        "description": "Indywidualne projekty mebli stalowych"
       },
       {
-          "comment": "Jakość spawania i materiałów na najwyższym poziomie. Super usługa.",
-          "author": "Grzegorz P.",
-          "address": "{defCity}",
-          "data": "2025-08-10"
+        "icon": "Palette",
+        "name": "Wykończenie Mebli",
+        "description": "Malowanie proszkowe i polerowanie"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja Jakości",
+        "description": "Materiały certyfikowane i trwałe"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Lokalna Obsługa",
+        "description": "Usługi w regionie z dojazdem"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie mebli do przestrzeni"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Porady w projektowaniu mebli"
+      },
+      {
+        "icon": "Settings",
+        "name": "Konserwacja",
+        "description": "Serwis i konserwacja mebli"
       }
-  ]
-},
-{
-  "options": [
+    ],
+    "package": [
       {
-          "icon": "Hammer",
-          "name": "Spawanie Mebli",
-          "description": "Precyzyjne spawanie mebli ogrodowych"
+        "size": "Podstawowy",
+        "price": "od 300",
+        "description": "Prosty zestaw mebli stalowych"
       },
       {
-          "icon": "Factory",
-          "name": "Meble na Wymiar",
-          "description": "Indywidualne projekty mebli stalowych"
+        "size": "Standardowy",
+        "price": "od 600",
+        "description": "Meble z dodatkowymi elementami"
       },
       {
-          "icon": "Palette",
-          "name": "Wykończenie Mebli",
-          "description": "Malowanie proszkowe i polerowanie"
+        "size": "Premium",
+        "price": "od 1000",
+        "description": "Zaawansowany zestaw mebli z wykończeniem"
       },
       {
-          "icon": "ShieldCheck",
-          "name": "Gwarancja Jakości",
-          "description": "Materiały certyfikowane i trwałe"
-      },
-      {
-          "icon": "MapPin",
-          "name": "Lokalna Obsługa",
-          "description": "Usługi w regionie z dojazdem"
-      },
-      {
-          "icon": "LineChart",
-          "name": "Optymalizacja",
-          "description": "Dopasowanie mebli do przestrzeni"
-      },
-      {
-          "icon": "Users",
-          "name": "Doradztwo",
-          "description": "Porady w projektowaniu mebli"
-      },
-      {
-          "icon": "Settings",
-          "name": "Konserwacja",
-          "description": "Serwis i konserwacja mebli"
+        "size": "Biznesowy",
+        "price": "od 1500",
+        "description": "Kompleksowy zestaw mebli dla przestrzeni komercyjnych"
       }
-  ],
-  "package": [
-      { "size": "Podstawowy", "price": "od 300", "description": "Prosty zestaw mebli stalowych" },
-      { "size": "Standardowy", "price": "od 600", "description": "Meble z dodatkowymi elementami" },
-      { "size": "Premium", "price": "od 1000", "description": "Zaawansowany zestaw mebli z wykończeniem" },
-      { "size": "Biznesowy", "price": "od 1500", "description": "Kompleksowy zestaw mebli dla przestrzeni komercyjnych" }
-  ],
-  "service_slug": "meble-ogrodowe",
-  "service_name": "Meble ogrodowe stalowe na wymiar",
-  "description": "Tworzymy stalowe meble ogrodowe na wymiar, łączące trwałość i nowoczesny design. Idealne do ogrodów i przestrzeni zewnętrznych. W {defCity} zapewniamy wysoką jakość.",
-  "cta": "Zamów meble ogrodowe stalowe!",
-  "seo": {
+    ],
+    "service_slug": "meble-ogrodowe",
+    "service_name": "Meble ogrodowe stalowe na wymiar",
+    "description": "Tworzymy stalowe meble ogrodowe na wymiar, łączące trwałość i nowoczesny design. Idealne do ogrodów i przestrzeni zewnętrznych. W {defCity} zapewniamy wysoką jakość.",
+    "cta": "Zamów meble ogrodowe stalowe!",
+    "seo": {
       "title": "Meble ogrodowe stalowe – {defCity} | Profesjonalne spawanie mebli",
       "description": "Tworzymy meble ogrodowe stalowe w {defCity}. Trwałe, estetyczne i na wymiar meble do ogrodu.",
       "keywords": "meble ogrodowe stalowe, spawanie mebli, meble na wymiar, grille, paleniska"
+    },
+    "longtail_1": "Meble ogrodowe dla firm ",
+    "longtail_2": "Spawanie mebli ogrodowych ",
+    "longtail_3": "Nowoczesne meble stalowe ",
+    "longtail_4": "Projektowanie mebli ogrodowych ",
+    "longtail_5": "Agencja spawania mebli ",
+    "longtail_6": "Profesjonalne meble ogrodowe ",
+    "longtail_7": "Meble z montażem ",
+    "longtail_8": "Trwałe meble stalowe ",
+    "longtail_9": "Tanie meble na wymiar ",
+    "longtail_10": "Meble ogrodowe z gwarancją ",
+    "faq": [
+      {
+        "question": "Ile kosztują meble ogrodowe stalowe w {defCity}?",
+        "answer": "Cena zaczyna się od 300 zł za element, w zależności od projektu."
+      },
+      {
+        "question": "Jak długo trwa wykonanie mebli ogrodowych?",
+        "answer": "Realizacja trwa 1-3 tygodnie, w zależności od projektu."
+      },
+      {
+        "question": "Czy meble są odporne na korozję?",
+        "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
+      },
+      {
+        "question": "Czy oferujecie meble na wymiar?",
+        "answer": "Tak, projektujemy meble indywidualnie pod klienta."
+      },
+      {
+        "question": "Czy zajmujecie się konserwacją mebli?",
+        "answer": "Tak, oferujemy serwis i konserwację mebli."
+      }
+    ],
+    "review": [
+      {
+        "comment": "Meble ogrodowe stalowe są piękne i solidne. Idealne do ogrodu!",
+        "author": "Agnieszka K.",
+        "address": "{defCity}",
+        "data": "2025-06-25"
+      },
+      {
+        "comment": "Szybka realizacja mebli na wymiar. Jakość bez zarzutu.",
+        "author": "Marek S.",
+        "address": "{defCity}",
+        "data": "2025-07-05"
+      },
+      {
+        "comment": "Meble stalowe wyglądają nowocześnie i są trwałe. Polecam!",
+        "author": "Zofia P.",
+        "address": "{defCity}",
+        "data": "2025-08-15"
+      }
+    ]
   },
-  "longtail_1": "Meble ogrodowe dla firm ",
-  "longtail_2": "Spawanie mebli ogrodowych ",
-  "longtail_3": "Nowoczesne meble stalowe ",
-  "longtail_4": "Projektowanie mebli ogrodowych ",
-  "longtail_5": "Agencja spawania mebli ",
-  "longtail_6": "Profesjonalne meble ogrodowe ",
-  "longtail_7": "Meble z montażem ",
-  "longtail_8": "Trwałe meble stalowe ",
-  "longtail_9": "Tanie meble na wymiar ",
-  "longtail_10": "Meble ogrodowe z gwarancją ",
-  "faq": [
-      {
-          "question": "Ile kosztują meble ogrodowe stalowe w {defCity}?",
-          "answer": "Cena zaczyna się od 300 zł za element, w zależności od projektu."
+  {
+ "blogPost": [
+             {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
       },
       {
-          "question": "Jak długo trwa wykonanie mebli ogrodowych?",
-          "answer": "Realizacja trwa 1-3 tygodnie, w zależności od projektu."
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
       },
+
       {
-          "question": "Czy meble są odporne na korozję?",
-          "answer": "Tak, używamy stali nierdzewnej i powłok ochronnych."
-      },
-      {
-          "question": "Czy oferujecie meble na wymiar?",
-          "answer": "Tak, projektujemy meble indywidualnie pod klienta."
-      },
-      {
-          "question": "Czy zajmujecie się konserwacją mebli?",
-          "answer": "Tak, oferujemy serwis i konserwację mebli."
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
       }
-  ],
-  "review": [
+    ],
+    "options": [
       {
-          "comment": "Meble ogrodowe stalowe są piękne i solidne. Idealne do ogrodu!",
-          "author": "Agnieszka K.",
-          "address": "{defCity}",
-          "data": "2025-06-25"
+        "icon": "Factory",
+        "name": "Spawanie Garaży",
+        "description": "Precyzyjne spawanie konstrukcji garażowych"
       },
       {
-          "comment": "Szybka realizacja mebli na wymiar. Jakość bez zarzutu.",
-          "author": "Marek S.",
-          "address": "{defCity}",
-          "data": "2025-07-05"
+        "icon": "Wrench",
+        "name": "Garaże na Wymiar",
+        "description": "Indywidualne projekty garaży stalowych"
       },
       {
-          "comment": "Meble stalowe wyglądają nowocześnie i są trwałe. Polecam!",
-          "author": "Zofia P.",
-          "address": "{defCity}",
-          "data": "2025-08-15"
+        "icon": "Palette",
+        "name": "Wykończenie Garaży",
+        "description": "Malowanie proszkowe i zabezpieczenie"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja Jakości",
+        "description": "Materiały certyfikowane i trwałe"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Lokalna Obsługa",
+        "description": "Usługi w regionie z dojazdem"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie garaży do posesji"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Porady w projektowaniu garaży"
+      },
+      {
+        "icon": "Settings",
+        "name": "Konserwacja",
+        "description": "Serwis i konserwacja garaży"
       }
-  ]
-},
-{
-  "options": [
+    ],
+    "package": [
       {
-          "icon": "Factory",
-          "name": "Spawanie Garaży",
-          "description": "Precyzyjne spawanie konstrukcji garażowych"
+        "size": "Podstawowy",
+        "price": "od 5000",
+        "description": "Prosty garaż stalowy"
       },
       {
-          "icon": "Wrench",
-          "name": "Garaże na Wymiar",
-          "description": "Indywidualne projekty garaży stalowych"
+        "size": "Standardowy",
+        "price": "od 8000",
+        "description": "Garaż z dodatkowymi elementami"
       },
       {
-          "icon": "Palette",
-          "name": "Wykończenie Garaży",
-          "description": "Malowanie proszkowe i zabezpieczenie"
+        "size": "Premium",
+        "price": "od 12000",
+        "description": "Zaawansowany garaż z wykończeniem"
       },
       {
-          "icon": "ShieldCheck",
-          "name": "Gwarancja Jakości",
-          "description": "Materiały certyfikowane i trwałe"
-      },
-      {
-          "icon": "MapPin",
-          "name": "Lokalna Obsługa",
-          "description": "Usługi w regionie z dojazdem"
-      },
-      {
-          "icon": "LineChart",
-          "name": "Optymalizacja",
-          "description": "Dopasowanie garaży do posesji"
-      },
-      {
-          "icon": "Users",
-          "name": "Doradztwo",
-          "description": "Porady w projektowaniu garaży"
-      },
-      {
-          "icon": "Settings",
-          "name": "Konserwacja",
-          "description": "Serwis i konserwacja garaży"
+        "size": "Biznesowy",
+        "price": "od 18000",
+        "description": "Kompleksowy garaż dla dużych posesji lub firm"
       }
-  ],
-  "package": [
-      { "size": "Podstawowy", "price": "od 5000", "description": "Prosty garaż stalowy" },
-      { "size": "Standardowy", "price": "od 8000", "description": "Garaż z dodatkowymi elementami" },
-      { "size": "Premium", "price": "od 12000", "description": "Zaawansowany garaż z wykończeniem" },
-      { "size": "Biznesowy", "price": "od 18000", "description": "Kompleksowy garaż dla dużych posesji lub firm" }
-  ],
-  "service_slug": "garaze-stalowe",
-  "service_name": "Konstrukcje garażowe stalowe na wymiar",
-  "description": "Projektujemy i spawamy stalowe konstrukcje garażowe na wymiar. Zapewniamy trwałość, funkcjonalność i estetykę. W {defCity} jesteśmy specjalistami od garaży.",
-  "cta": "Zamów garaż stalowy już dziś!",
-  "seo": {
+    ],
+    "service_slug": "garaze-stalowe",
+    "service_name": "Konstrukcje garażowe stalowe na wymiar",
+    "description": "Projektujemy i spawamy stalowe konstrukcje garażowe na wymiar. Zapewniamy trwałość, funkcjonalność i estetykę. W {defCity} jesteśmy specjalistami od garaży.",
+    "cta": "Zamów garaż stalowy już dziś!",
+    "seo": {
       "title": "Garaże stalowe – {defCity} | Profesjonalne spawanie garaży",
       "description": "Tworzymy garaże stalowe w {defCity}. Trwałe, funkcjonalne i na wymiar konstrukcje garażowe.",
       "keywords": "garaże stalowe, spawanie garaży, garaże na wymiar, wiaty, konstrukcje stalowe"
-  },
-  "longtail_1": "Garaże stalowe dla firm ",
-  "longtail_2": "Spawanie garaży ",
-  "longtail_3": "Nowoczesne garaże stalowe ",
-  "longtail_4": "Projektowanie garaży ",
-  "longtail_5": "Agencja spawania garaży ",
-  "longtail_6": "Profesjonalne garaże ",
-  "longtail_7": "Garaże z montażem ",
-  "longtail_8": "Trwałe garaże stalowe ",
-  "longtail_9": "Tanie garaże na wymiar ",
-  "longtail_10": "Garaże z gwarancją ",
-  "faq": [
+    },
+    "longtail_1": "Garaże stalowe dla firm ",
+    "longtail_2": "Spawanie garaży ",
+    "longtail_3": "Nowoczesne garaże stalowe ",
+    "longtail_4": "Projektowanie garaży ",
+    "longtail_5": "Agencja spawania garaży ",
+    "longtail_6": "Profesjonalne garaże ",
+    "longtail_7": "Garaże z montażem ",
+    "longtail_8": "Trwałe garaże stalowe ",
+    "longtail_9": "Tanie garaże na wymiar ",
+    "longtail_10": "Garaże z gwarancją ",
+    "faq": [
       {
-          "question": "Ile kosztuje garaż stalowy w {defCity}?",
-          "answer": "Cena zaczyna się od 5000 zł, w zależności od rozmiaru i projektu."
+        "question": "Ile kosztuje garaż stalowy w {defCity}?",
+        "answer": "Cena zaczyna się od 5000 zł, w zależności od rozmiaru i projektu."
       },
       {
-          "question": "Jak długo trwa wykonanie garażu?",
-          "answer": "Realizacja trwa 3-6 tygodni, w zależności od projektu."
+        "question": "Jak długo trwa wykonanie garażu?",
+        "answer": "Realizacja trwa 3-6 tygodni, w zależności od projektu."
       },
       {
-          "question": "Czy garaże są odporne na korozję?",
-          "answer": "Tak, używamy stali ocynkowanej i powłok ochronnych."
+        "question": "Czy garaże są odporne na korozję?",
+        "answer": "Tak, używamy stali ocynkowanej i powłok ochronnych."
       },
       {
-          "question": "Czy oferujecie garaże na wymiar?",
-          "answer": "Tak, projektujemy garaże indywidualnie pod klienta."
+        "question": "Czy oferujecie garaże na wymiar?",
+        "answer": "Tak, projektujemy garaże indywidualnie pod klienta."
       },
       {
-          "question": "Czy zajmujecie się montażem garaży?",
-          "answer": "Tak, oferujemy pełny montaż i serwis."
+        "question": "Czy zajmujecie się montażem garaży?",
+        "answer": "Tak, oferujemy pełny montaż i serwis."
       }
-  ],
-  "review": [
+    ],
+    "review": [
       {
-          "comment": "Garaż stalowy jest solidny i funkcjonalny. Montaż bez zarzutu.",
-          "author": "Tomasz K.",
-          "address": "{defCity}",
-          "data": "2025-07-20"
+        "comment": "Garaż stalowy jest solidny i funkcjonalny. Montaż bez zarzutu.",
+        "author": "Tomasz K.",
+        "address": "{defCity}",
+        "data": "2025-07-20"
       },
       {
-          "comment": "Szybka realizacja garażu na wymiar. Jakość świetna!",
-          "author": "Elżbieta M.",
-          "address": "{defCity}",
-          "data": "2025-08-15"
+        "comment": "Szybka realizacja garażu na wymiar. Jakość świetna!",
+        "author": "Elżbieta M.",
+        "address": "{defCity}",
+        "data": "2025-08-15"
       },
       {
-          "comment": "Garaż stalowy wygląda nowocześnie i jest trwały. Polecam!",
-          "author": "Krzysztof P.",
-          "address": "{defCity}",
-          "data": "2025-08-25"
+        "comment": "Garaż stalowy wygląda nowocześnie i jest trwały. Polecam!",
+        "author": "Krzysztof P.",
+        "address": "{defCity}",
+        "data": "2025-08-25"
       }
-  ]
-}
-  ]
-  
-  
+    ]
+  }
+]

@@ -4,7 +4,8 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import HamburgerMenu from "./ui/hamburgerMenu";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState, useRef } from 'react';
 import {
   Phone,
   Mail,
@@ -14,7 +15,12 @@ import {
   Building2,
   Star,
   Award,
-  Shield
+  Shield,
+  ChevronDown,
+  Fence,
+  DoorOpen,
+  Home,
+  Wrench
 } from "lucide-react";
 
 // Animation variants
@@ -40,11 +46,47 @@ const staggerContainer = {
 
 export default function NavBar() {
   const t = useTranslations("Header");
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   type NavLink = {
     href: string | any;
     label: string | any;
+    hasSubmenu?: boolean;
+    submenu?: {
+      href: string;
+      label: string;
+      icon: JSX.Element;
+      description: string;
+    }[];
   };
+
+  const offerSubmenu = [
+    {
+      href: "/offer/barriers",
+      label: "Barierki",
+      icon: <Fence className="w-4 h-4" />,
+      description: "Balustrady i barierki"
+    },
+    {
+      href: "/offer/gates",
+      label: "Bramy",
+      icon: <DoorOpen className="w-4 h-4" />,
+      description: "Bramy wjazdowe"
+    },
+    {
+      href: "/offer/fences",
+      label: "Ogrodzenia",
+      icon: <Home className="w-4 h-4" />,
+      description: "Systemy ogrodzeń"
+    },
+    {
+      href: "/offer/other-steel-structures",
+      label: "Konstrukcje stalowe",
+      icon: <Building2 className="w-4 h-4" />,
+      description: "Elementy stalowe"
+    }
+  ];
 
   const navLinks: NavLink[] = [
     { href: "/", label: t("home") },
@@ -52,7 +94,34 @@ export default function NavBar() {
     { href: "/gallery", label: t("gallery") },
     { href: "/about", label: t("about") },
     { href: "/blog", label: t("blog") },
+    {
+      href: "/offer",
+      label: t("offer"),
+      hasSubmenu: true,
+      submenu: offerSubmenu
+    },
   ];
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setOpenDropdown(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const handleDropdownClick = (linkLabel: string, e: React.MouseEvent) => {
+    if (linkLabel === t("offer")) {
+      e.preventDefault();
+      setOpenDropdown(openDropdown === linkLabel ? null : linkLabel);
+    }
+  };
 
   return (
     <>
@@ -161,22 +230,75 @@ export default function NavBar() {
               className="hidden lg:flex items-center"
               variants={staggerContainer}
             >
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 relative" ref={dropdownRef}>
                 {navLinks.map((link, index) => (
                   <motion.div
                     key={index}
                     variants={fadeIn}
-                    whileHover={{ y: -2 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+                    className="relative group"
                   >
-                    <Link
-                      className="group relative uppercase font-bold text-[1rem] font-oswald px-6 py-3 text-white hover:text-[#EB4036] transition-all duration-300 rounded-lg hover:bg-[#1A1A1A]"
-                      href={link.href}
+                    <motion.div
+                      whileHover={{ y: -2 }}
+                      transition={{ type: "spring", stiffness: 300 }}
                     >
-                      {link.label}
-                      {/* Underline effect */}
-                      <div className="absolute bottom-1 w-0 h-0.5 bg-[#EB4036] group-hover:w-full group-hover:left-1/8 transition-all duration-300"></div>
-                    </Link>
+                      <Link
+                        className="group relative uppercase font-bold text-[1rem] font-oswald px-6 py-3 text-white hover:text-[#EB4036] transition-all duration-300 rounded-lg hover:bg-[#1A1A1A] flex items-center gap-2"
+                        href={link.hasSubmenu ? "#" : link.href}
+                        onClick={(e) => link.hasSubmenu && handleDropdownClick(link.label, e)}
+                      >
+                        {link.label}
+                        {link.hasSubmenu && (
+                          <ChevronDown
+                            className={`w-4 h-4 transition-all duration-300 ${openDropdown === link.label ? 'rotate-180 text-[#EB4036]' : ''
+                              }`}
+                          />
+                        )}
+                        {/* Underline effect */}
+                        <div className="absolute bottom-1 w-0 h-0.5 bg-[#EB4036] group-hover:w-full group-hover:left-1/8 transition-all duration-300"></div>
+                      </Link>
+                    </motion.div>
+
+                    {/* Desktop Dropdown */}
+                    <AnimatePresence>
+                      {link.hasSubmenu && openDropdown === link.label && (
+                        <motion.div
+                          initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                          animate={{ opacity: 1, y: 0, scale: 1 }}
+                          exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute top-full left-0 mt-4 w-80 bg-[#121212]/95 backdrop-blur-xl border border-[#EB4036]/20 rounded-2xl shadow-[0_0_50px_rgba(235,64,54,0.3)] overflow-hidden"
+                        >
+                          <div className="p-2">
+                            {link.submenu?.map((subLink, subIndex) => (
+                              <motion.a
+                                key={subLink.href}
+                                href={subLink.href}
+                                className="group flex items-center gap-4 px-4 py-3 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-[#EB4036]/10 hover:to-[#d63428]/10 rounded-xl transition-all duration-300 border border-transparent hover:border-[#EB4036]/20"
+                                onClick={() => setOpenDropdown(null)}
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: subIndex * 0.05 }}
+                                whileHover={{ x: 8 }}
+                              >
+                                <div className="text-[#EB4036] group-hover:scale-110 transition-transform duration-300">
+                                  {subLink.icon}
+                                </div>
+                                <div className="flex-1">
+                                  <div className="font-medium">{subLink.label}</div>
+                                  <div className="text-xs text-gray-500 group-hover:text-gray-400">
+                                    {subLink.description}
+                                  </div>
+                                </div>
+                                <ArrowRight className="w-3 h-3 text-[#EB4036] opacity-0 group-hover:opacity-100 transition-opacity" />
+                              </motion.a>
+                            ))}
+                          </div>
+
+                          {/* Dropdown glow effect */}
+                          <div className="absolute inset-0 bg-gradient-to-r from-[#EB4036]/5 to-[#d63428]/5 pointer-events-none rounded-2xl" />
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </motion.div>
                 ))}
               </div>
