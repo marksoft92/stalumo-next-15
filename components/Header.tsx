@@ -254,7 +254,7 @@ export default function NavBar() {
                           />
                         )}
                         {/* Underline effect */}
-                        <div className="absolute bottom-1 w-0 h-0.5 bg-[#EB4036] group-hover:w-full group-hover:left-1/8 transition-all duration-300"></div>
+                        <div className="absolute bottom-1 w-0 h-0.5 bg-[#EB4036] group-hover:w-full group-hover:left-1/8 transition-all duration-300 left-0"></div>
                       </Link>
                     </motion.div>
 
