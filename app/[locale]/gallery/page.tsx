@@ -7,7 +7,7 @@ export async function generateMetadata({
 }: any): Promise<any> {
   const { locale } = params;
 
-  const meta:any = {
+  const meta: any = {
     en: {
       title: "Gallery | Stalumo - Custom Steel Projects & Inspiration",
       description:
@@ -80,6 +80,7 @@ export async function generateMetadata({
   };
 }
 
-export default function GalleryPage() {
-  return <GalleryContainer />;
+export default function GalleryPage({ params }: any) {
+
+  return <GalleryContainer locale={params.locale} />;
 }

@@ -41,6 +41,20 @@ model Image {
   url String
   alt String
   category String
+  featured     Boolean       @default(false)
+  translations Translation[]
+}
+
+model Translation {
+  id        Int      @id @default(autoincrement())
+  imageId   Int
+  language  String
+  title     String
+  description String
+  date      DateTime
+  image     Image    @relation(fields: [imageId], references: [id], onDelete: Cascade)
+
+  @@index([imageId], map: "Translation_imageId_fkey")
 }
 
 model User {
