@@ -52,7 +52,7 @@ bg-[#02010100]  border-solid border-[1px] border-[#EB4036] text-[25px] leading-[
             />
           </a>
           <a
-            href="https://www.tiktok.com/@stalumo.com?is_from_webapp=1&sender_device=pc"
+            href="https://www.tiktok.com/@stalumo"
             target="_blank"
             className="box-content hover:bg-[#EB4036] transition-all duration-300 ease-in-out
 bg-[#02010100]  border-solid border-[1px] border-[#EB4036] text-[25px] leading-[25px] rounded-full"
