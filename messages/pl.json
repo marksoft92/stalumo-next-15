@@ -163,6 +163,66 @@
     "description": "Odkryj nasz blog o spawaniu, bramach, garażach i barierkach. Znajdziesz praktyczne porady oraz informacje o konstrukcjach stalowych w Niemczech i Polsce.",
     "keywords": "produkcja ogrodzeń, spawanie, konstrukcje stalowe, blog o spawaniu, kostrukcje stalowe niemcy"
   },
+  "AboutStalumo": {
+    "founder":"Założyciel",
+    "projectMenager":"Menadżer projektów",
+    "experience_label2":"DOŚWIADCZENIA",
+    "experience_label": "10 LAT DOŚWIADCZENIA",
+    "hero_title": "O STALUMO",
+    "hero_description": "Jesteśmy zespołem doświadczonych specjalistów, którzy z pasją tworzą konstrukcje stalowe najwyższej jakości. Nasze doświadczenie i zaangażowanie gwarantują realizację projektów na najwyższym poziomie.",
+    "btn_projects": "Zobacz Nasze Realizacje",
+    "btn_contact": "Skontaktuj się z Nami",
+  
+    "stats_projects": "Zrealizowanych Projektów",
+    "stats_years": "Lat Doświadczenia",
+    "stats_clients": "Zadowolonych Klientów",
+    "stats_satisfaction": "Satysfakcji Klientów",
+  
+    "section_about_title": "Kim Jesteśmy",
+    "section_about_subtitle": "Poznaj naszą historię, misję i wizję, które kierują nami każdego dnia",
+    "tab_mission": "Nasza Misja",
+    "tab_mission_content": "Naszą misją jest tworzenie konstrukcji metalowych, które łączą trwałość, funkcjonalność i estetykę. Wierzymy, że metal może być nie tylko materiałem budowlanym, ale także fundamentem pięknych i inspirujących przestrzeni. Każdy projekt traktujemy jako wyjątkowe wyzwanie, dostosowując rozwiązania do indywidualnych potrzeb klientów. Dzięki doświadczeniu zdobytemu na rynkach polskim i niemieckim, łączymy lokalne tradycje rzemieślnicze z nowoczesnymi technologiami, aby dostarczać produkty, które będą służyć przez lata.",
+    "tab_vision": "Nasza Wizja",
+    "tab_vision_content": "Naszą wizją jest rozwój Stalumo jako lidera w branży metalowej, który wyznacza nowe standardy jakości i profesjonalizmu. Chcemy tworzyć rozwiązania, które nie tylko spełniają oczekiwania klientów, ale je przewyższają – łącząc innowacyjność z rzetelnym wykonaniem. Dążymy do tego, aby marka Stalumo była synonimem solidności, nowoczesnego designu i elastyczności w realizacji nawet najbardziej wymagających projektów. Wierzymy, że dzięki pasji i ciągłemu rozwojowi, nasze produkty będą inspiracją i przykładem rzemieślniczej doskonałości.",
+    "tab_history": "Nasza Historia",
+    "tab_history_content": "Historia Stalumo rozpoczęła się w 2010 roku, gdy z pasji do metalu i chęci tworzenia czegoś wyjątkowego powstała mała firma rodzinna. Od samego początku naszym celem było dostarczanie produktów najwyższej jakości – od spawanych konstrukcji po bramy, balustrady i ogrodzenia. Z czasem, dzięki zaangażowaniu i ciężkiej pracy, rozwinęliśmy działalność i zaczęliśmy realizować projekty również na rynku niemieckim. Dziś Stalumo to zespół doświadczonych specjalistów, dla których metal nie jest tylko materiałem, ale sposobem wyrażania pasji i dążenia do doskonałości.",
+  
+    "values_title": "Nasze Wartości",
+    "values_subtitle": "Fundamenty, na których opiera się nasza działalność",
+    "value_quality": "Najwyższa Jakość",
+    "value_quality_desc": "Używamy tylko najlepszych materiałów i nowoczesnych technologii",
+    "value_time": "Terminowość",
+    "value_time_desc": "Zawsze dotrzymujemy ustalonych terminów realizacji projektów",
+    "value_passion": "Pasja do Rzemiosła",
+    "value_passion_desc": "Każdy projekt traktujemy z najwyższą starannością i zaangażowaniem",
+    "value_growth": "Ciągły Rozwój",
+    "value_growth_desc": "Inwestujemy w nowe technologie i podnoszenie kwalifikacji zespołu",
+  
+    "services_title": "Nasze Usługi",
+    "services_subtitle": "Kompleksowe rozwiązania w zakresie konstrukcji stalowych",
+    "service_balustrades": "Balustrady Stalowe",
+    "service_balustrades_desc": "Eleganckie i bezpieczne rozwiązania dla Twojego domu",
+    "service_gates": "Bramy i Ogrodzenia",
+    "service_gates_desc": "Funkcjonalne zabezpieczenia wykonane z precyzją",
+    "service_constructions": "Konstrukcje Stalowe",
+    "service_constructions_desc": "Solidne konstrukcje dostosowane do Twoich potrzeb",
+    "service_custom": "Projekty Indywidualne",
+    "service_custom_desc": "Unikalne rozwiązania według Twoich wyobrażeń",
+  
+    "team_title": "Nasz Zespół",
+    "team_subtitle": "Poznaj ludzi, którzy stoją za sukcesem STALUMO",
+  
+    "testimonials_title": "Co Mówią Klienci",
+    "testimonials_subtitle": "Opinie zadowolonych klientów są naszą największą nagrodą",
+  
+    "cta_title": "Gotowy na Współpracę?",
+    "cta_subtitle": "Skontaktuj się z nami już dziś i omówmy Twój projekt. Oferujemy bezpłatną konsultację i wycenę.",
+    "cta_btn_call": "Zadzwoń Teraz",
+    "cta_btn_mail": "Napisz do Nas"
+  },
+  
+
+
   "About": {
     "title": "O nas",
     "homeTitle": "Strona główna",

@@ -164,6 +164,64 @@
     "description": "Entdecken Sie unseren Blog über Schweißen, Tore, Garagen und Geländer. Finden Sie praktische Tipps und Informationen über Stahlkonstruktionen in Deutschland und Polen.",
     "keywords": "Zaunproduktion, Schweißen, Stahlkonstruktionen, Schweißblog, Stahlkonstruktionen Deutschland"
   },
+  "AboutStalumo": {
+    "founder":"Gründer",
+    "projectMenager":"Projektleiter",
+    "experience_label2":"ERFAHRUNG",
+    "experience_label": "10 JAHRE ERFAHRUNG",
+    "hero_title": "Über STALUMO",
+    "hero_description": "Wir sind ein Team erfahrener Spezialisten, die mit Leidenschaft hochwertige Stahlkonstruktionen schaffen. Unsere Erfahrung und unser Engagement garantieren die Umsetzung von Projekten auf höchstem Niveau.",
+    "btn_projects": "Unsere Projekte ansehen",
+    "btn_contact": "Kontaktieren Sie uns",
+  
+    "stats_projects": "Abgeschlossene Projekte",
+    "stats_years": "Jahre Erfahrung",
+    "stats_clients": "Zufriedene Kunden",
+    "stats_satisfaction": "Kundenzufriedenheit",
+  
+    "section_about_title": "Wer wir sind",
+    "section_about_subtitle": "Lernen Sie unsere Geschichte, Mission und Vision kennen, die uns jeden Tag antreiben",
+    "tab_mission": "Unsere Mission",
+    "tab_mission_content": "Unsere Mission ist es, Metallkonstruktionen zu schaffen, die Langlebigkeit, Funktionalität und Ästhetik miteinander verbinden. Wir sind überzeugt, dass Metall nicht nur ein Werkstoff ist, sondern auch die Grundlage für schöne und inspirierende Räume sein kann. Jedes Projekt betrachten wir als eine einzigartige Aufgabe, bei der wir unsere Lösungen individuell an die Bedürfnisse unserer Kunden anpassen. Mit Erfahrung auf den polnischen und deutschen Märkten kombinieren wir traditionelles Handwerk mit moderner Technologie, um Produkte zu liefern, die viele Jahre Bestand haben.",
+    "tab_vision": "Unsere Vision",
+    "tab_vision_content": "Unsere Vision ist es, Stalumo zu einem führenden Unternehmen in der Metallbranche zu entwickeln, das neue Maßstäbe für Qualität und Professionalität setzt. Wir wollen Lösungen schaffen, die nicht nur die Erwartungen unserer Kunden erfüllen, sondern sie übertreffen – durch Innovation und höchste Präzision. Stalumo soll als Synonym für Zuverlässigkeit, modernes Design und Flexibilität bei der Umsetzung auch komplexester Projekte stehen. Mit Leidenschaft und kontinuierlicher Weiterentwicklung wollen wir Metallprodukte anbieten, die inspirieren und ein Beispiel für handwerkliche Exzellenz sind.",
+    "tab_history": "Unsere Geschichte",
+    "tab_history_content": "Die Geschichte von Stalumo begann im Jahr 2010, als aus der Leidenschaft für Metall und dem Wunsch, etwas Einzigartiges zu schaffen, ein kleines Familienunternehmen entstand. Von Anfang an war es unser Ziel, Produkte von höchster Qualität zu liefern – von geschweißten Konstruktionen bis hin zu Toren, Geländern und Zäunen. Mit der Zeit wuchs unser Unternehmen, und wir begannen, auch Projekte in Deutschland zu realisieren. Heute ist Stalumo ein Team erfahrener Spezialisten, für die Metall nicht nur ein Werkstoff ist, sondern ein Ausdruck von Leidenschaft und Streben nach Perfektion.",
+  
+    "values_title": "Unsere Werte",
+    "values_subtitle": "Die Grundlagen, auf denen unser Unternehmen basiert",
+    "value_quality": "Höchste Qualität",
+    "value_quality_desc": "Wir verwenden nur die besten Materialien und moderne Technologien",
+    "value_time": "Pünktlichkeit",
+    "value_time_desc": "Wir halten immer die vereinbarten Projektfristen ein",
+    "value_passion": "Leidenschaft fürs Handwerk",
+    "value_passion_desc": "Jedes Projekt behandeln wir mit größter Sorgfalt und Engagement",
+    "value_growth": "Kontinuierliche Entwicklung",
+    "value_growth_desc": "Wir investieren in neue Technologien und die Weiterbildung unseres Teams",
+  
+    "services_title": "Unsere Dienstleistungen",
+    "services_subtitle": "Umfassende Lösungen im Bereich Stahlkonstruktionen",
+    "service_balustrades": "Stahlgeländer",
+    "service_balustrades_desc": "Elegante und sichere Lösungen für Ihr Zuhause",
+    "service_gates": "Tore und Zäune",
+    "service_gates_desc": "Funktionale Sicherheitslösungen mit Präzision gefertigt",
+    "service_constructions": "Stahlkonstruktionen",
+    "service_constructions_desc": "Solide Konstruktionen, die auf Ihre Bedürfnisse zugeschnitten sind",
+    "service_custom": "Individuelle Projekte",
+    "service_custom_desc": "Einzigartige Lösungen nach Ihren Vorstellungen",
+  
+    "team_title": "Unser Team",
+    "team_subtitle": "Lernen Sie die Menschen kennen, die hinter dem Erfolg von STALUMO stehen",
+  
+    "testimonials_title": "Was unsere Kunden sagen",
+    "testimonials_subtitle": "Die Meinungen zufriedener Kunden sind unsere größte Belohnung",
+  
+    "cta_title": "Bereit zur Zusammenarbeit?",
+    "cta_subtitle": "Kontaktieren Sie uns noch heute und besprechen Sie Ihr Projekt. Wir bieten eine kostenlose Beratung und Kostenschätzung.",
+    "cta_btn_call": "Jetzt anrufen",
+    "cta_btn_mail": "Schreiben Sie uns"
+  }
+  ,
   "About": {
     "title": "Über uns",
     "homeTitle": "Startseite",

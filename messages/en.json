@@ -162,6 +162,63 @@
     "description": "Discover our blog about welding, gates, garages, and railings. Find practical advice and information about steel structures in Germany and Poland.",
     "keywords": "fence production, welding, steel structures, welding blog, steel structures Germany"
   },
+  "AboutStalumo": { 
+    "founder":"Founder",
+    "projectMenager":"Project Manager",
+    "experience_label": "10 YEARS OF EXPERIENCE",
+    "hero_title": "About STALUMO",
+    "hero_description": "We are a team of experienced specialists who passionately create top-quality steel structures. Our experience and commitment guarantee project execution at the highest level.",
+    "btn_projects": "See Our Projects",
+    "btn_contact": "Contact Us",
+  
+    "stats_projects": "Completed Projects",
+    "stats_years": "Years of Experience",
+    "stats_clients": "Satisfied Clients",
+    "stats_satisfaction": "Client Satisfaction",
+  
+    "section_about_title": "Who We Are",
+    "section_about_subtitle": "Discover our history, mission, and vision that guide us every day",
+    "tab_mission": "Our Mission",
+    "tab_mission_content": "Our mission is to create metal structures that combine durability, functionality, and aesthetics. We believe that metal is not just a construction material, but also the foundation of inspiring and beautiful spaces. Every project is a unique challenge for us, and we adapt our solutions to the individual needs of each client. With experience gained in both the Polish and German markets, we merge traditional craftsmanship with modern technologies to deliver products that stand the test of time.",
+    "tab_vision": "Our Vision",
+    "tab_vision_content": "Our vision is to establish Stalumo as a leader in the metal industry, setting new standards of quality and professionalism. We aim to provide solutions that not only meet but exceed our clients’ expectations – blending innovation with precision. We want the Stalumo brand to be recognized as a symbol of reliability, modern design, and flexibility in handling even the most demanding projects. Through passion and continuous growth, we strive to offer metalwork that inspires and reflects true craftsmanship.",
+    "tab_history": "Our History",
+    "tab_history_content": "The story of Stalumo began in 2010, when a family with a passion for metal decided to create something unique. From the very beginning, our goal was to deliver top-quality products – from welded constructions to gates, railings, and fences. Over the years, thanks to dedication and hard work, our company expanded and started completing projects in Germany as well. Today, Stalumo is a team of skilled specialists for whom working with metal is not just a profession, but a way to express passion and the pursuit of excellence.",
+  
+    "values_title": "Our Values",
+    "values_subtitle": "The foundations on which our business is built",
+    "value_quality": "Top Quality",
+    "value_quality_desc": "We use only the best materials and modern technologies",
+    "value_time": "Timeliness",
+    "value_time_desc": "We always meet the agreed project deadlines",
+    "value_passion": "Passion for Craftsmanship",
+    "value_passion_desc": "We approach every project with utmost care and dedication",
+    "value_growth": "Continuous Growth",
+    "value_growth_desc": "We invest in new technologies and improving our team’s skills",
+  
+    "services_title": "Our Services",
+    "services_subtitle": "Comprehensive solutions in the field of steel constructions",
+    "service_balustrades": "Steel Railings",
+    "service_balustrades_desc": "Elegant and safe solutions for your home",
+    "service_gates": "Gates and Fences",
+    "service_gates_desc": "Functional security solutions made with precision",
+    "service_constructions": "Steel Constructions",
+    "service_constructions_desc": "Solid constructions tailored to your needs",
+    "service_custom": "Custom Projects",
+    "service_custom_desc": "Unique solutions based on your ideas",
+  
+    "team_title": "Our Team",
+    "team_subtitle": "Meet the people behind STALUMO’s success",
+  
+    "testimonials_title": "What Clients Say",
+    "testimonials_subtitle": "The opinions of satisfied clients are our greatest reward",
+  
+    "cta_title": "Ready to Collaborate?",
+    "cta_subtitle": "Contact us today and let’s discuss your project. We offer free consultation and cost estimation.",
+    "cta_btn_call": "Call Now",
+    "cta_btn_mail": "Write to Us"
+  }
+  ,
   "About": {
     "title": "About Us",
     "homeTitle": "Home",
