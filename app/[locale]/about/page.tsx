@@ -30,6 +30,8 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
+
+
 // Animation variants
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -129,24 +131,9 @@ export default function AboutPage() {
 
   ];
 
-  const testimonials = [
-    {
-      name: "Jan Kowalczyk",
-      role: "Właściciel domu",
-      content: "Fantastyczna jakość wykonania balustrady. Zespół STALUMO przekroczył nasze oczekiwania!",
-      rating: 5,
-      image: "/api/placeholder/80/80"
-    },
-    {
-      name: "Maria Nowakowa",
-      role: "Architekt",
-      content: "Profesjonalizm i terminowość na najwyższym poziomie. Polecam wszystkim!",
-      rating: 5,
-      image: "/api/placeholder/80/80"
-    }
-  ];
 
-  const tabContent = {
+
+  const tabContent: any = {
     mission: {
       title: t("tab_mission"),
       content: t("tab_mission_content")
@@ -311,7 +298,7 @@ export default function AboutPage() {
                   : 'bg-[#2A2A2A] text-[#707070] hover:text-[#EB4036] hover:bg-[#2A2A2A]/80'
                   }`}
               >
-                {content.title}
+                {tabContent[activeTab as keyof typeof tabContent]?.title}
               </button>
             ))}
           </div>
