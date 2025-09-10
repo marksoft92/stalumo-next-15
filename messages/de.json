@@ -120,7 +120,8 @@
       "offer":"Angebot",
       "certified": "Zertifiziert",
       "years": "Jahre",
-       "time_range": "Mo-Fr: 8:00-18:00"
+       "time_range": "Mo-Fr: 8:00-18:00",
+           "store":"speichern"
   },
   "Footer": {
     "location": "Standort",
@@ -482,7 +483,27 @@
   "productTitle":"Grill",
   "checkProduct": "Produkt ansehen",
   "description": "Entdecken Sie einzigartige, handgefertigte Stahlprodukte – robust, stilvoll und mit Leidenschaft gefertigt. Stöbern Sie in unseren Kategorien und finden Sie das perfekte Accessoire für Ihr Zuhause oder Ihren Garten.",
-  "keywords": "Stahlprodukte, handgefertigte Stahldekorationen, Stahlornamente, handgearbeiteter Stahl, Stahlelemente für Innenräume, Stahlhandwerk, Stahlmöbel, Stahlzubehör, Stahldekor, künstlerischer Stahl, handgefertigte Stahlwaren, Stahlakzente für Innenräume"
+  "keywords": "Stahlprodukte, handgefertigte Stahldekorationen, Stahlornamente, handgearbeiteter Stahl, Stahlelemente für Innenräume, Stahlhandwerk, Stahlmöbel, Stahlzubehör, Stahldekor, künstlerischer Stahl, handgefertigte Stahlwaren, Stahlakzente für Innenräume",
+    "freeShiping": "Kostenlose Lieferung für Bestellungen über 500 PLN",
+    "opinions": "Meinungen",
+    "review": "Kundenmeinungen",
+    "productDescription": "Beschreibung",
+    "productSpecification": "Spezifikation",
+    "productAdvantages": "Vorteile",
+    "productIncluded": "Im Set enthalten",
+    "productFullDescription": "Produktbeschreibung",
+    "productAddToCart": "In den Warenkorb",
+    "productQuantity": "Menge",
+    "productRelatedProducts": "Ähnliche Produkte",
+    "productViewAll": "Alle ansehen",
+    "productFreeShipping": "Kostenloser Versand",
+    "productFreeShippingInfo": "Bei Bestellungen über 500€",
+    "productWarranty": "24 Monate Garantie",
+    "productFullProtection": "Vollständiger Produktschutz",
+    "productFastShipping": "Versand innerhalb 24h",
+    "productFastShippingInfo": "Schnelle Auftragsabwicklung",
+    "productTechnicalSpecification": "Technische Spezifikation",
+    "productKeyAdvantages": "Wichtige Vorteile"
 },
 "PrivacyPolicy": {
     "title": "Datenschutzrichtlinie – stalumo.com",
@@ -523,7 +544,16 @@
     
     "section10Title": "Google Analytics und Cookie-Einwilligung",
     "section10Content": "Wir verwenden Google Analytics 4, einen Webanalysedienst von Google LLC, zur anonymen Auswertung der Nutzung unserer Website. Erfasste Daten können anonymisierte IP-Adressen, Informationen zum Betriebssystem, Browsertyp und Nutzungsverhalten umfassen.\n\nStandardmäßig werden durch Google Analytics keine Daten gespeichert, solange keine Einwilligung vorliegt (analytics_storage: 'denied'). Die Erfassung beginnt erst nach Zustimmung über das Cookie-Banner. Du kannst deine Einwilligung jederzeit widerrufen, indem du deine Browsereinstellungen änderst oder das Cookie-Banner erneut aufrufst (falls verfügbar).\n\nWenn Daten an Google LLC (mit Sitz in den USA) übermittelt werden, erfolgt dies auf Grundlage der Standardvertragsklauseln gemäß Art. 46 DSGVO.\n\nWeitere Informationen:\n- Datenschutzerklärung von Google: https://policies.google.com/privacy\n- Nutzungsbedingungen von Google Analytics: https://marketingplatform.google.com/about/analytics/terms/de/\n- Standardvertragsklauseln (SCC): https://support.google.com/analytics/answer/9012600"
-  }
-
+  },
+"Cart": {
+  "yourCart": "Dein Warenkorb",
+  "total": "Gesamt",
+  "checkout": "Zur Kasse",
+  "freeDeliveryInfo": "inklusive kostenloser Lieferung innerhalb Polens",
+  "emptyCart": "Dein Warenkorb ist leer",
+  "emptyCartTitle": "DEIN WARENKORB IST LEER",
+  "emptyCartDescription": "Es sieht so aus, als hättest du noch keine Produkte in deinen Warenkorb gelegt. Entdecke unsere tollen Angebote und finde etwas Perfektes für dich!",
+  "backToShop": "Zurück zum Shop"
+}
 
 }

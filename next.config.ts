@@ -13,6 +13,12 @@ const nextConfig: NextConfig = {
         pathname: "/image-public-uploads/**",
         search: "",
       },
+      {
+        protocol: "https",
+        hostname: "payments.stalumo.com",
+        port: "",
+        pathname: "/**", // jeśli chcesz pozwolić na wszystkie ścieżki z tej domeny
+      },
     ],
   },
   // async headers() {

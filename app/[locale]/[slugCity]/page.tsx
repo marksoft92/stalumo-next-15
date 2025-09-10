@@ -45,7 +45,7 @@ export default async function Page({ params }: any) {
     city: cityEntry.city
   };
 
-  console.log(entry)
+
   // return <></>;
   return <ViewCity entry={entry} />;
 }

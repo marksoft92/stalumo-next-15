@@ -19,27 +19,27 @@ const altText = {
 export default function DelayedSlider({ images, maxHeight, ...props }: any) {
   const [showSlider, setShowSlider] = useState(false);
   const params = useParams();
-console.log(params.locale)
+
   useEffect(() => {
     const timer = setTimeout(() => setShowSlider(true), 3000);
     return () => clearTimeout(timer);
   }, []);
 
-  console.log(props)
+
 
   if (!showSlider) {
     return (
 
-        <Image
-          src={images[images?.length-1]}
-          alt={altText[params.locale as keyof typeof altText]}
-          fill
-          style={{ objectFit: "cover" ,maxHeight: maxHeight, opacity: '0.1'}}
-          priority
-          className="w-full h-screen bg-cover bg-center absolute z-[-1] transition-transform duration-[1000ms] ease-linear left-0 !top-[10rem]"
-          sizes="100vw"
-        />
-      
+      <Image
+        src={images[images?.length - 1]}
+        alt={altText[params.locale as keyof typeof altText]}
+        fill
+        style={{ objectFit: "cover", maxHeight: maxHeight, opacity: '0.1' }}
+        priority
+        className="w-full h-screen bg-cover bg-center absolute z-[-1] transition-transform duration-[1000ms] ease-linear left-0 !top-[10rem]"
+        sizes="100vw"
+      />
+
     );
   }
 

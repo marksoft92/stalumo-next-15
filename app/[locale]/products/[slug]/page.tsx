@@ -3,38 +3,46 @@ import { notFound } from "next/navigation";
 import ProductBox from "./product";
 import { headers } from "next/headers";
 
-const fetchPosts = async (locale: any, slug: any) => {
-  const headersList = await headers();
-  const host = headersList.get("host");
-  const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-  const baseUrl = `${protocol}://${host}`;
+const fetchProducts = async (locale: string, page: number, limit: number, slug: string) => {
+  try {
+    const url = `${process.env.APP_URL}api/products?locale=${locale}&page=${page}&limit=${limit}`;
 
-  const res = await fetch(`${baseUrl}/data/products.json`);
-  if (!res.ok) return null;
 
-  const data = await res.json();
+    const res = await fetch(url, { cache: "no-store" }); // zawsze aktualne dane
+    if (!res.ok) {
+      throw new Error("❌ Failed to fetch products");
+    }
 
-  const product = data?.products?.find((p: any) =>
-    Object.values(p.slugs).includes(slug)
-  );
+    const data = await res.json();
 
-  // Jeśli znaleziono, zwróć dane z locales[locale] + inne globalne dane jak images/video
-  if (product) {
-    return {
-      ...product.locales[locale],
-      images: product.images,
-      video: product.video,
-    };
+    const product = data?.find((p: any) =>
+      Object.values(p.meta_data_parsed.slugs).includes(slug)
+    );
+
+
+    // ✅ Jeżeli chcesz wyciągnąć locale + globalne dane (jak w starym fetchPosts)
+    if (product) {
+      return {
+        ...product,
+        ...product.meta_data_parsed.locales[locale],
+        // images: product.meta_data_parsed.images,
+        video: product.meta_data_parsed.video,
+      };
+    }
+
+    return null;
+  } catch (err) {
+    console.error("❌ Błąd podczas pobierania produktów:", err);
+    return [];
   }
-
-  return null;
 };
+
 
 const ProductPage = async ({ params }: { params: any }) => {
   const slug = params.slug;
   const locale = params.locale
 
-  const productData = await fetchPosts(locale, slug);
+  const productData = await fetchProducts(locale, 1, 12, slug);
 
 
   if (!productData) {
@@ -43,6 +51,7 @@ const ProductPage = async ({ params }: { params: any }) => {
 
   return <ProductBox
     productData={productData}
+    locale={locale}
   />;
 };
 

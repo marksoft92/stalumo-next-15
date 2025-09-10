@@ -118,7 +118,8 @@
       "offer":"Offer",
          "time_range": "Mon-Fri: 8:00 AM - 6:00 PM",
          "certified": "Certified",
-         "years": "years"
+         "years": "years",
+             "store":"Store"
   },
   "Footer": {
     "location": "Location",
@@ -480,7 +481,27 @@
   "loading": "Loading...",
   "checkProduct": "See product",
   "description": "Discover unique, handcrafted steel products – durable, stylish, and made with passion. Browse our categories to find the perfect addition to your interior or garden.",
-  "keywords": "steel products, handmade steel decorations, steel ornaments, handcrafted steel, steel interior elements, steel craftsmanship, steel furniture, steel accessories, steel decor, artistic steel, handmade steelwork, steel interior accents"
+  "keywords": "steel products, handmade steel decorations, steel ornaments, handcrafted steel, steel interior elements, steel craftsmanship, steel furniture, steel accessories, steel decor, artistic steel, handmade steelwork, steel interior accents",
+    "freeShiping": "Free delivery for orders over PLN 500",
+    "opinions": "Opinions",
+    "review": "Customer opinions",
+    "productDescription": "Description",
+    "productSpecification": "Specification",
+    "productAdvantages": "Advantages",
+    "productIncluded": "Included in the set",
+    "productFullDescription": "Product description",
+    "productAddToCart": "Add to cart",
+    "productQuantity": "Quantity",
+    "productRelatedProducts": "Related products",
+    "productViewAll": "View all",
+    "productFreeShipping": "Free shipping",
+    "productFreeShippingInfo": "For orders over 500€",
+    "productWarranty": "24 months warranty",
+    "productFullProtection": "Full product protection",
+    "productFastShipping": "Shipping within 24h",
+    "productFastShippingInfo": "Fast order processing",
+    "productTechnicalSpecification": "Technical specification",
+    "productKeyAdvantages": "Key advantages"
 },
 "PrivacyPolicy": {
   "title": "Privacy Policy – stalumo.com",
@@ -521,7 +542,16 @@
   
   "section10Title": "Google Analytics and cookie consent",
   "section10Content": "We use Google Analytics 4, a web analytics service provided by Google LLC, to anonymously analyze how users interact with our website. Collected data may include anonymized IP addresses, browser and system information, and activity on our site.\n\nBy default, before you give your consent, Google Analytics does not store or process your data (analytics_storage: 'denied'). Tracking begins only after you have given your consent via the cookie banner. You may withdraw your consent at any time by adjusting your browser settings or by revisiting the cookie banner (if available).\n\nIf any data is transferred to Google LLC (based in the USA), such transfer is based on the European Commission's Standard Contractual Clauses under Article 46 of the GDPR.\n\nMore information:\n- Google Privacy Policy: https://policies.google.com/privacy\n- Google Analytics Terms of Service: https://marketingplatform.google.com/about/analytics/terms/us/\n- Standard Contractual Clauses (SCC): https://support.google.com/analytics/answer/9012600"
+},
+"Cart": {
+  "yourCart": "Your Cart",
+  "total": "Total",
+  "checkout": "Proceed to Checkout",
+  "freeDeliveryInfo": "including free delivery within Poland",
+  "emptyCart": "Your cart is empty",
+  "emptyCartTitle": "YOUR CART IS EMPTY",
+  "emptyCartDescription": "It looks like you haven’t added any products to your cart yet. Discover our amazing deals and find something perfect for you!",
+  "backToShop": "Back to shop"
 }
-
 
 }
