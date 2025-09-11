@@ -42,7 +42,7 @@ export async function POST(req: Request) {
                 country: body.country,
             },
             line_items: body.line_items || [], // ❗ z globalnego store
-            meta_data: body.vat_number ? [{ key: "_vat_number", value: body.vat_number }] : [],
+            meta_data: body.vat_number ? [{ key: "billing_nip", value: body.vat_number }] : [],
         };
 
         const res = await fetch(`${apiUrl}/orders`, {
