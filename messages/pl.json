@@ -596,12 +596,53 @@
   "order_description": "Wypełnij formularz po lewej stronie, aby sfinalizować zamówienie. Wszystkie dane są bezpiecznie przetwarzane.",
   "cart_products": "Produkty w koszyku:",
   "feature_fast": "Szybka realizacja",
-  "feature_fast_desc": "Realizujemy zamówienia w 7-14 dni roboczych",
+  "feature_fast_desc": "Realizujemy zamówienia w 2-14 dni roboczych",
   "feature_secure": "Bezpieczne płatności",
   "feature_secure_desc": "Twoje dane są chronione szyfrowaniem SSL",
   "feature_quality": "Gwarancja jakości",
   "feature_quality_desc": "2 lat gwarancji na wszystkie nasze produkty",
-  "trust_customers": "Zaufało nam już 500+ klientów"}
+  "trust_customers": "Zaufało nam już 500+ klientów"
+},
+"Terms": {
+  "title": "Regulamin sklepu internetowego",
+  "updated": "Ostatnia aktualizacja: 15.09.2025",
+  "intro": "Niniejszy Regulamin określa zasady korzystania ze sklepu internetowego, składania zamówień oraz prawa i obowiązki Klienta i Sprzedawcy.",
+
+  "section1Title": "1. Postanowienia ogólne",
+  "section1Content": "Sklep internetowy dostępny pod adresem www.stalumo.com prowadzony jest przez Stalumo NIP: 5941613140 REGON: 525281099.\nSklep oferuje produkty wykonywane ręcznie na indywidualne zamówienie (grille, paleniska i inne wyroby).",
+
+  "section2Title": "2. Definicje",
+  "section2aTitle": "Klient",
+  "section2aContent": "Osoba fizyczna, prawna lub jednostka organizacyjna składająca zamówienie.",
+  "section2bTitle": "Produkt",
+  "section2bContent": "Rzecz ruchoma oferowana w Sklepie, wykonywana na indywidualne zamówienie Klienta.",
+
+  "section3Title": "3. Składanie zamówień",
+  "section3Content": "Zamówienia można składać za pośrednictwem strony internetowej. Warunkiem jest podanie prawdziwych danych i akceptacja regulaminu.",
+
+  "section4Title": "4. Ceny i płatności",
+  "section4Content": "Wszystkie ceny podane są w PLN, zawierają VAT. Dostępne płatności: przelew bankowy, płatności elektroniczne. Realizacja po zaksięgowaniu wpłaty.",
+
+  "section5Title": "5. Realizacja zamówień i dostawa",
+  "section5Content": "Produkty wykonywane są ręcznie, na zamówienie. Czas realizacji ustalany jest indywidualnie. Dostawa odbywa się kurierem lub odbiorem osobistym.",
+
+  "section6Title": "6. Prawo odstąpienia od umowy",
+  "section6Content": "Zgodnie z art. 38 pkt 3 ustawy o prawach konsumenta, prawo odstąpienia od umowy nie przysługuje w przypadku produktów wykonywanych na indywidualne zamówienie.",
+
+  "section7Title": "7. Reklamacje",
+  "section7Content": "Reklamacje należy zgłaszać mailowo lub pisemnie. Sprzedawca rozpatruje reklamację w ciągu 14 dni.",
+
+  "section8Title": "8. Ochrona danych osobowych",
+  "section8Content": "Administratorem danych jest Sprzedawca. Dane są przetwarzane w celu realizacji zamówień i obsługi Klienta. Szczegóły w Polityce prywatności.",
+
+  "section9Title": "9. Postanowienia końcowe",
+  "section9Content": "Sprzedawca zastrzega sobie prawo do zmian regulaminu. Do umów zawartych wcześniej stosuje się regulamin obowiązujący w dniu zamówienia.",
+
+  "section10Title": "10. Prawo właściwe i spory",
+  "section10Content": "W sprawach nieuregulowanych zastosowanie mają przepisy prawa polskiego. Spory rozstrzygane są przez sądy właściwe dla siedziby Sprzedawcy.",
+
+  "contactNote": "W razie pytań prosimy o kontakt z obsługą sklepu."
+}
 
 
 

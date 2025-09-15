@@ -97,6 +97,11 @@ export const routing = defineRouting({
       en: "/checkout",
       pl: "/checkout",
       de: "/checkout",
+    },
+    "/terms": {
+      en: "/terms",
+      pl: "/terms",
+      de: "/terms",
     }
   },
 });

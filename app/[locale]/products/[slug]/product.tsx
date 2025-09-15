@@ -406,10 +406,12 @@ const ProductBox = ({ productData, locale }: any) => {
         <div className="mb-12">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold">{t("productRelatedProducts")}</h2>
-            <button className="flex items-center gap-2 text-red-400 hover:text-red-300 transition-colors">
-              {t("productViewAll")}
-              <ArrowRight className="w-5 h-5" />
-            </button>
+            <Link href="/products">
+              <button className="flex items-center gap-2 text-red-400 hover:text-red-300 transition-colors">
+                {t("productViewAll")}
+                <ArrowRight className="w-5 h-5" />
+              </button>
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -437,16 +439,18 @@ const ProductBox = ({ productData, locale }: any) => {
                   </div>
 
                   <div className="flex items-center gap-2">
-                    <span className="text-lg font-bold text-red-500">{productData.sale_price}</span>
+                    <span className="text-lg font-bold text-red-500">{product.price}</span>
                     {product.oldPrice && (
-                      <span className="text-sm text-neutral-500 line-through">{productData.regular_price}</span>
+                      <span className="text-sm text-neutral-500 line-through">{product.price}</span>
                     )}
                   </div>
 
-                  <button className="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg group-hover:shadow-red-500/25">
-                    <ShoppingCart className="w-4 h-4" />
-                    Zobacz produkt
-                  </button>
+                  <Link href={product.url}>
+                    <button className="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg group-hover:shadow-red-500/25">
+                      <ShoppingCart className="w-4 h-4" />
+                      {t("checkProduct")}
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}

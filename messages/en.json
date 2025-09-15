@@ -588,11 +588,52 @@
 "order_description": "Fill in the form on the left to complete your order. All data is securely processed.",
 "cart_products": "Products in cart:",
 "feature_fast": "Fast processing",
-"feature_fast_desc": "We process orders within 7-14 business days",
+"feature_fast_desc": "We process orders within 2-14 business days",
 "feature_secure": "Secure payments",
 "feature_secure_desc": "Your data is protected with SSL encryption",
 "feature_quality": "Quality guarantee",
 "feature_quality_desc": "5-year warranty on all our products",
-"trust_customers": "Trusted by 500+ customers"}
+"trust_customers": "Trusted by 500+ customers"
+},
+"Terms": {
+    "title": "Terms and Conditions",
+    "updated": "Last updated: 15.09.2025",
+    "intro": "These Terms and Conditions govern the use of the online store, product orders, and the rights and obligations of the Customer and the Seller.",
+
+    "section1Title": "1. General Provisions",
+    "section1Content": "The online store at www.stalumo.com is operated by Stalumo NIP: 5941613140 REGON: 525281099.\nThe store offers handmade, custom-made products (grills, fire pits, and others).",
+
+    "section2Title": "2. Definitions",
+    "section2aTitle": "Customer",
+    "section2aContent": "A natural or legal person placing an order.",
+    "section2bTitle": "Product",
+    "section2bContent": "A movable item offered in the Store, custom-made for the Customer.",
+
+    "section3Title": "3. Orders",
+    "section3Content": "Orders are placed via the website. Providing accurate data and accepting these Terms is required.",
+
+    "section4Title": "4. Prices and Payments",
+    "section4Content": "All prices are quoted in PLN and include VAT. Payment methods: bank transfer, online payments. Orders are processed after payment is received.",
+
+    "section5Title": "5. Order Fulfillment and Delivery",
+    "section5Content": "Products are handmade and custom-made. Processing time is agreed individually. Delivery by courier or personal pickup.",
+
+    "section6Title": "6. Right of Withdrawal",
+    "section6Content": "According to Article 38(3) of the Polish Consumer Rights Act, the right of withdrawal does not apply to products made to individual specifications.",
+
+    "section7Title": "7. Complaints",
+    "section7Content": "Complaints must be submitted by email or in writing. The Seller will review the complaint within 14 days.",
+
+    "section8Title": "8. Data Protection",
+    "section8Content": "The Seller is the data controller. Personal data is processed for order fulfillment and customer service. Details are available in the Privacy Policy.",
+
+    "section9Title": "9. Final Provisions",
+    "section9Content": "The Seller reserves the right to amend these Terms. For previously concluded contracts, the version valid at the time of order applies.",
+
+    "section10Title": "10. Governing Law and Disputes",
+    "section10Content": "Polish law applies. Disputes are resolved by the competent courts at the Seller's registered office.",
+
+    "contactNote": "If you have any questions, please contact customer support."
+  }
 
 }

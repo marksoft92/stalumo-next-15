@@ -1,113 +1,81 @@
 import { Metadata } from "next";
 import Container from "@/components/ui/container";
+import ProductCard from "@/components/ProductCard";
+import PerformanceSlider from "@/components/PerformanceSlider";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
-import PerformanceSlider from "@/components/PerformanceSlider";
-import ProductCard from "@/components/ProductCard";
-import { headers } from "next/headers";
+import { Alert } from "@mui/material";
 import { notFound } from "next/navigation";
-// Funkcja do generowania metadanych SEO
 
-export async function generateMetadata({ params }: any): Promise<Metadata> {
-  const t = await getTranslations("Categories");
-  const p = await params
-  return {
-    title: `${t("title")}`, // Dynamiczny tytuł
-    description: t("description"), // Dynamiczny opis
-    authors: [{ name: "Stalumo", url: "/about" }],
-    keywords: `${t("keywords")}`,
-    openGraph: {
-      title: `${t("title")} | My Website`,
-      description: t("description"),
-      url: `/${p.locale}/blog`,
-      siteName: "Stalumo.com",
-      type: "website",
-    },
-  };
-}
-
-// Pobieranie początkowych postów z AP
-
-const fetchPosts = async (locale: any,slug: any) => {
-  const headersList = await headers();
-  const host = headersList.get("host");
-  const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-  const baseUrl = `${protocol}://${host}`;
-
-  const res = await fetch(`${baseUrl}/data/products.json`);
-  if (!res.ok) return null;
-  const data = await res.json();
-  const product = data?.products
-
-  if (product) {
-    return product
+const fetchProducts = async (locale: string, page: number, limit: number) => {
+  try {
+    const res = await fetch(
+      `${process.env.APP_URL}api/products?locale=${locale}&page=${page}&limit=${limit}`,
+      { cache: "no-store" } // zawsze aktualne dane
+    );
+    if (!res.ok) {
+      throw new Error("Failed to fetch products");
+    }
+    const data = await res.json();
+    return data; // zakładam że API zwraca tablicę produktów
+  } catch (err) {
+    console.error("Błąd podczas pobierania produktów:", err);
+    return [];
   }
-
-  return null;
 };
 
+const images: string[] = [
+  "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg",
+  "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg",
+];
 
-const CategoriesPage = async ({ params }: { params: any }) => {
-  const slug = params.slug;
-  const locale = params.locale
+const ProductsPageContainer = async ({ params }: { params: any }) => {
+  const { locale } = params;
+  const products = await fetchProducts(locale, 1, 12);
 
-  const productData = await fetchPosts(locale,slug);
-
-  if (!productData[0]) {
+  if (!products || products.length === 0) {
     notFound();
   }
 
 
-  const imagesSlider: string[] = [
-    "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_0.jpg",
-    "/assets/images/products/Flux_Dev_Generate_a_highly_detailed_realistic_image_of_a_steel_1.jpg",
-
-  ];
 
   const t = await getTranslations("Products");
+  const currency = locale === "pl" ? 'zł' : "PLN"
   return (
     <Container>
-      <PerformanceSlider images={imagesSlider} maxHeight={"500px"} />
-      <div className="flex flex-col items-center relative min-h-[500px] justify-center">
-          <h2 className="text-[6rem] font-semibold uppercase text-center max-lg:text-[4rem] ">{t("title")}</h2>
-          <h3 className="text-center">
-            <Link
-              className="text-[1.6rem] font-semibold uppercase text-[#EB4036]"
-              href="/"
-            >
-              {t("homeTitle")}
-            </Link>
-            <span className="text-[1.6rem] font-semibold uppercase ">
-              /{t("title")}
-            </span>
-          </h3>
-        </div>
       <div>
 
 
-        <div className=" ">
-      <div className="max-w-6xl mx-auto">
+        {(products?.length && (
+          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden mt-[5rem]">
+            {products.map((p: any) => (
 
-
-        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden mt-[5rem]">
-          {productData.map((cat:any) => (
-  
-            <ProductCard 
-            slug={(locale === 'pl' ? '/produkty/' : locale === 'en' ? '/products/' : '/producten/')+cat?.slugs?.[locale]}
-            title={cat?.locales?.[locale]?.title}
-            imageUrl={cat?.images?.[0]}
-            price= {cat?.locales?.[locale]?.price?.current}
-
-            />
-           
-          ))}
-        </div>
-      </div>
-    </div>
-        
+              <ProductCard
+                currency={currency}
+                key={p.id}
+                slug={
+                  (locale === "pl"
+                    ? "/produkty/"
+                    : locale === "en"
+                      ? "/products/"
+                      : "/producten/") + p?.meta_data_parsed?.slugs?.[locale]
+                }
+                title={p?.meta_data_parsed?.locales?.[locale]?.title}
+                imageUrl={p?.images?.[0]?.src}
+                price={p?.sale_price}
+                regular_price={p?.regular_price}
+                features={p?.meta_data_parsed?.locales?.[locale]?.availability}
+              />
+            ))}
+          </div>
+        )) || (
+            <h2 className="my-5">
+              <Alert severity="warning">{t("empty")}</Alert>
+            </h2>
+          )}
       </div>
     </Container>
   );
 };
 
-export default CategoriesPage;
+export default ProductsPageContainer;

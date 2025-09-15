@@ -591,13 +591,53 @@
   "order_description": "Füllen Sie das Formular auf der linken Seite aus, um Ihre Bestellung abzuschließen. Alle Daten werden sicher verarbeitet.",
   "cart_products": "Produkte im Warenkorb:",
   "feature_fast": "Schnelle Abwicklung",
-  "feature_fast_desc": "Wir bearbeiten Bestellungen innerhalb von 7-14 Werktagen",
+  "feature_fast_desc": "Wir bearbeiten Bestellungen innerhalb von 2-14 Werktagen",
   "feature_secure": "Sichere Zahlungen",
   "feature_secure_desc": "Ihre Daten sind durch SSL-Verschlüsselung geschützt",
   "feature_quality": "Qualitätsgarantie",
   "feature_quality_desc": "5 Jahre Garantie auf alle unsere Produkte",
   "trust_customers": "Bereits 500+ zufriedene Kunden"
 
-}
+},
+"Terms": {
+    "title": "Allgemeine Geschäftsbedingungen (AGB)",
+    "updated": "Letzte Aktualisierung: 15.09.2025",
+    "intro": "Diese AGB regeln die Nutzung des Online-Shops, die Bestellung von Produkten sowie die Rechte und Pflichten von Kunde und Verkäufer.",
+
+    "section1Title": "1. Allgemeine Bestimmungen",
+    "section1Content": "Der Online-Shop unter www.stalumo.com wird von Stalumo NIP: 5941613140 REGON: 525281099. betrieben.\nDer Shop bietet handgefertigte Produkte auf individuelle Bestellung (Grills, Feuerstellen und andere).",
+
+    "section2Title": "2. Definitionen",
+    "section2aTitle": "Kunde",
+    "section2aContent": "Natürliche oder juristische Person, die eine Bestellung aufgibt.",
+    "section2bTitle": "Produkt",
+    "section2bContent": "Bewegliche Sache, die im Shop angeboten und individuell für den Kunden gefertigt wird.",
+
+    "section3Title": "3. Bestellung",
+    "section3Content": "Bestellungen erfolgen über die Website. Voraussetzung ist die Angabe wahrheitsgemäßer Daten und die Zustimmung zu den AGB.",
+
+    "section4Title": "4. Preise und Zahlungen",
+    "section4Content": "Alle Preise sind in PLN angegeben und enthalten die Mehrwertsteuer. Zahlungsmethoden: Banküberweisung, Online-Zahlung. Bearbeitung nach Zahlungseingang.",
+
+    "section5Title": "5. Auftragsausführung und Lieferung",
+    "section5Content": "Produkte werden handgefertigt und auf Bestellung gefertigt. Die Bearbeitungszeit wird individuell vereinbart. Lieferung per Kurier oder persönliche Abholung.",
+
+    "section6Title": "6. Widerrufsrecht",
+    "section6Content": "Gemäß Art. 38 Abs. 3 des polnischen Verbraucherschutzgesetzes besteht kein Widerrufsrecht für individuell angefertigte Produkte.",
+
+    "section7Title": "7. Reklamationen",
+    "section7Content": "Reklamationen sind per E-Mail oder schriftlich einzureichen. Der Verkäufer bearbeitet die Reklamation innerhalb von 14 Tagen.",
+
+    "section8Title": "8. Datenschutz",
+    "section8Content": "Verantwortlicher für die Datenverarbeitung ist der Verkäufer. Die Daten werden zur Auftragsabwicklung und Kundenbetreuung verwendet. Details in der Datenschutzerklärung.",
+
+    "section9Title": "9. Schlussbestimmungen",
+    "section9Content": "Der Verkäufer behält sich das Recht vor, die AGB zu ändern. Für zuvor geschlossene Verträge gelten die zum Zeitpunkt der Bestellung gültigen Bedingungen.",
+
+    "section10Title": "10. Anwendbares Recht und Streitigkeiten",
+    "section10Content": "Es gilt polnisches Recht. Streitigkeiten werden durch die zuständigen Gerichte am Sitz des Verkäufers entschieden.",
+
+    "contactNote": "Bei Fragen wenden Sie sich bitte an den Kundenservice."
+  }
 
 }
