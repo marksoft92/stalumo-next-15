@@ -453,8 +453,8 @@ export default function CheckoutForm() {
                                         <h4 className="text-white font-semibold mb-3">{t("cart_products")}</h4>
                                         {line_items.map((item:any) => (
                                             <div key={item.product_id} className="flex justify-between text-[#A5A5A5] mb-2">
-                                                <span>{t("email")}Produkt ID: {item.product_id}</span>
-                                                <span>{t("email")}Ilość: {item.quantity}</span>
+                                                <span>{t("product_id")}: {item.product_id}</span>
+                                                <span>{t("count")}: {item.quantity}</span>
                                             </div>
                                         ))}
                                     </div>

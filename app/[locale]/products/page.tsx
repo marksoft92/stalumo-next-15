@@ -8,6 +8,7 @@ import { Alert } from "@mui/material";
 import { notFound } from "next/navigation";
 
 const fetchProducts = async (locale: string, page: number, limit: number) => {
+
   try {
     const res = await fetch(
       `${process.env.APP_URL}api/products?locale=${locale}&page=${page}&limit=${limit}`,

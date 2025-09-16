@@ -557,6 +557,8 @@
   "backToShop": "Back to shop"
 },
 "Checkout": { "order_success": "✅ Order sent successfully!",
+"count":"Count",
+"product_id":"Product ID",
 "order_error": "❌ Error: {{error}}",
 "order_error_unknown": "❌ Network or server error",
 "checkout_title": "CHECKOUT",

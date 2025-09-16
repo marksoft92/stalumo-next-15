@@ -560,6 +560,8 @@
 },
 "Checkout": {
 "order_success": "✅ Bestellung erfolgreich gesendet!",
+"count":"Anzahl",
+"product_id":"Produkt-ID",
   "order_error": "Fehler",
   "order_error_unknown": "❌ Netzwerk- oder Serverfehler",
   "checkout_title": "BESTELLABSCHLUSS",

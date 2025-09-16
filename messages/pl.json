@@ -565,6 +565,8 @@
   },
   
   "Checkout": { "order_success": "✅ Zamówienie wysłane pomyślnie!",
+  "count":"Ilość",
+  "product_id":"ID produktu",
   "order_error": "Bład",
   "order_error_unknown": "❌ Błąd sieci lub serwera",
   "checkout_title": "FINALIZACJA ZAMÓWIENIA",

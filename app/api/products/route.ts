@@ -18,7 +18,6 @@ export async function GET(req: Request) {
         }
 
         const auth = Buffer.from(`${consumerKey}:${consumerSecret}`).toString("base64");
-
         const res = await fetch(
             `${apiUrl}/products?per_page=${limit}&page=${page}`,
             {
