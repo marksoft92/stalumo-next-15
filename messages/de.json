@@ -121,7 +121,8 @@
       "certified": "Zertifiziert",
       "years": "Jahre",
        "time_range": "Mo-Fr: 8:00-18:00",
-           "store":"speichern"
+           "store":"speichern",
+           "estimate":"Kostenvoranschlag"
   },
   "Footer": {
     "location": "Standort",
@@ -280,6 +281,7 @@
   "project": "Haben Sie ein Projekt?",
   "quantity": "Menge (lfm / Stk. / m² – im Beschreibungstext präzisieren oder Konstruktionsmaße angeben)",
   "assembly": "Montageservice",
+  "location":"Standort",
   "phone": "Telefonnummer",
   "date": "Bevorzugter Starttermin",
   "yes": "Ja",
@@ -298,7 +300,8 @@
     "quantity": "Menge",
     "assembly": "Montage",
     "phone": "Telefonnummer",
-    "date": "Startdatum"
+    "date": "Startdatum",
+    "location":"Standort"
   }
 }
 

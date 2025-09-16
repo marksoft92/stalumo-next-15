@@ -20,7 +20,8 @@ import {
   Shield,
   FileText,
   Building2,
-  Star
+  Star,
+  MapPin
 } from "lucide-react";
 import Link from "next/link";
 
@@ -53,6 +54,7 @@ export default function ContactForm(locale: any) {
   const [project, setProject] = useState("");
   const [quantity, setQuantity] = useState("");
   const [assembly, setAssembly] = useState("");
+  const [location, setLocation] = useState("");
   const [phone, setPhone] = useState("");
   const [startDate, setStartDate] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -82,6 +84,7 @@ export default function ContactForm(locale: any) {
   ${t("form.summary.project")}: ${project}
   ${t("form.summary.quantity")}: ${quantity}
   ${t("form.summary.assembly")}: ${assembly}
+    ${t("form.summary.location")}: ${location}
   ${t("form.summary.phone")}: ${phone}
   ${t("form.summary.date")}: ${startDate}
   `.trim();
@@ -165,6 +168,20 @@ export default function ContactForm(locale: any) {
                       type="text"
                       value={topic}
                       onChange={(e) => setTopic(e.target.value)}
+                      required
+                      className="w-full px-4 py-4 bg-[#2A2A2A] border border-[#404040] text-white placeholder-[#A5A5A5] rounded-xl focus:border-[#EB4036] focus:ring-2 focus:ring-[#EB4036]/20 transition-all duration-300"
+
+                    />
+                  </motion.div>
+
+                  <motion.div variants={fadeInUp}>
+                    <label className="flex items-center gap-2 text-sm font-semibold text-white mb-3">
+                      <MapPin className="w-4 h-4 text-[#EB4036]" />
+                      {t("form.location")}
+                    </label>
+                    <input                    
+                      value={location}
+                      onChange={(e) => setLocation(e.target.value)}
                       required
                       className="w-full px-4 py-4 bg-[#2A2A2A] border border-[#404040] text-white placeholder-[#A5A5A5] rounded-xl focus:border-[#EB4036] focus:ring-2 focus:ring-[#EB4036]/20 transition-all duration-300"
 

@@ -120,7 +120,8 @@
     "time_range": "Pn-Pt: 8:00-18:00",
     "certified": "Certyfikowany",
     "years": "lat",
-    "store":"Sklep"
+    "store":"Sklep",
+    "estimate":"Wycena"
   },
   "Footer": {
     "location": "Lokalizacja",
@@ -280,6 +281,7 @@
   "project": "Czy posiadasz projekt?",
   "quantity": "Ilość (mb / szt / m² – doprecyzować przy opisie lub podać wymiar konstrukcji)",
   "assembly": "Usługa montażu",
+  "location":"Lokalizacja",
   "phone": "Numer telefonu",
   "date": "Preferowana data rozpoczęcia prac",
   "yes": "Tak",
@@ -298,7 +300,8 @@
     "quantity": "Ilość",
     "assembly": "Usługa montażu",
     "phone": "Numer telefonu",
-    "date": "Data rozpoczęcia prac"
+    "date": "Data rozpoczęcia prac",
+    "location":"Lokalizacja"
   }
 }
 
