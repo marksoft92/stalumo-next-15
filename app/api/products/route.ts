@@ -104,7 +104,8 @@ export async function POST(req: Request) {
 
         // jeśli WooPayments zwróci `payment_url`
         if (order.payment_url) {
-            console.log("👉 Payment URL:", order.payment_url);
+// order.payment_url
+            console.log("👉 Payment URL:", 1);
         }
 
         return NextResponse.json(order);
