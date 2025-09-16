@@ -12,22 +12,22 @@ interface CartProps {
 
 
 export default function Cart({ products, locale }: CartProps) {
-    const lineItems = useCartStore((state) => state.line_items);
-    const removeFromCart = useCartStore((state) => state.removeItem);
-    const updateQuantity = useCartStore((state) => state.updateQuantity);
+    const lineItems = useCartStore((state:any) => state.line_items);
+    const removeFromCart = useCartStore((state:any) => state.removeItem);
+    const updateQuantity = useCartStore((state:any) => state.updateQuantity);
     const itsPolish = locale === 'pl'
     const currency = itsPolish ? "zł" : "PLN"
     const t = useTranslations("Cart")
     // Mapowanie koszyka na produkty
     const cartItems = lineItems
-        .map((item) => {
+        .map((item:any) => {
             const product = products.find((p) => p.id === item.product_id);
             return product ? { ...product, quantity: item.quantity } : null;
         })
         .filter(Boolean);
 
     const totalPrice = cartItems.reduce(
-        (sum, item: any) => sum + Number(item.sale_price) * item.quantity,
+        (sum:any, item: any) => sum + Number(item.sale_price) * item.quantity,
         0
     );
 

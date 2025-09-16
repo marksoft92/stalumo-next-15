@@ -30,12 +30,12 @@ import { Link } from "@/i18n/routing";
 
 
 const ProductBox = ({ productData, locale }: any) => {
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  const [quantity, setQuantity] = useState(1);
-  const [activeTab, setActiveTab] = useState('description');
-  const [isWishlisted, setIsWishlisted] = useState(false);
-  const [currentReview, setCurrentReview] = useState(0);
-  const addItem = useCartStore((state) => state.addItem);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<any>(0);
+  const [quantity, setQuantity] = useState<any>(1);
+  const [activeTab, setActiveTab] = useState<any>('description');
+  const [isWishlisted, setIsWishlisted] = useState<any>(false);
+  const [currentReview, setCurrentReview] = useState<any>(0);
+  const addItem = useCartStore((state:any) => state.addItem);
 
   const iconsMap: Record<string, any> = {
     Star,
@@ -61,11 +61,11 @@ const ProductBox = ({ productData, locale }: any) => {
   }
 
   const nextImage = () => {
-    setSelectedImageIndex((prev) => (prev + 1) % productData.images.length);
+    setSelectedImageIndex((prev:any) => (prev + 1) % productData.images.length);
   };
 
   const prevImage = () => {
-    setSelectedImageIndex((prev) => (prev - 1 + productData.images.length) % productData.images.length);
+    setSelectedImageIndex((prev:any) => (prev - 1 + productData.images.length) % productData.images.length);
   };
 
   const difference = Math.round(((productData.regular_price * 1 - productData.sale_price * 1) / productData.regular_price) * 100);
@@ -75,7 +75,7 @@ const ProductBox = ({ productData, locale }: any) => {
 
 
 
-  const lineItems = useCartStore((state) => state.line_items);
+  const lineItems = useCartStore((state:any) => state.line_items);
   const currency = locale === 'pl' ? 'zł' : 'PLN'
 
 

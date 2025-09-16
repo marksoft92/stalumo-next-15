@@ -161,7 +161,7 @@ export default function CheckoutForm() {
                         <div className="mt-4 p-3 bg-blue-500/20 rounded-lg">
                             <p className="text-blue-300">
                                 {t("cart_debug1")} {line_items.length} |
-                                {t("cart_debug2")} {line_items.reduce((sum, item) => sum + item.quantity, 0)}
+                                {t("cart_debug2")} {line_items.reduce((sum:any, item:any) => sum + item.quantity, 0)}
                             </p>
                         </div>
                     </motion.div>
@@ -451,7 +451,7 @@ export default function CheckoutForm() {
                                 {line_items.length > 0 && (
                                     <div className="mb-6 p-4 bg-[#2A2A2A] rounded-xl border border-[#404040]">
                                         <h4 className="text-white font-semibold mb-3">{t("cart_products")}</h4>
-                                        {line_items.map((item) => (
+                                        {line_items.map((item:any) => (
                                             <div key={item.product_id} className="flex justify-between text-[#A5A5A5] mb-2">
                                                 <span>{t("email")}Produkt ID: {item.product_id}</span>
                                                 <span>{t("email")}Ilość: {item.quantity}</span>
