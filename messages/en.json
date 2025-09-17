@@ -504,7 +504,8 @@
     "productFastShipping": "Shipping within 24h",
     "productFastShippingInfo": "Fast order processing",
     "productTechnicalSpecification": "Technical specification",
-    "productKeyAdvantages": "Key advantages"
+    "productKeyAdvantages": "Key advantages",
+    "reviewLabel": "Based on"
 },
 "PrivacyPolicy": {
   "title": "Privacy Policy – stalumo.com",

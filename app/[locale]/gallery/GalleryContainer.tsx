@@ -61,12 +61,24 @@ export default function GalleryPage(locale: any) {
   const [filter, setFilter] = useState<string>('all');
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(true);
-
+  const [isMobile, setIsMobile] = useState<boolean>(false);
   const [images, setImages] = useState<any[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   const t = useTranslations("Gallery");
 
+
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // np. breakpoint mobile
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
 
   // Categories will be calculated dynamically based on fetched images
@@ -244,8 +256,11 @@ export default function GalleryPage(locale: any) {
                     </button>
                     <button
                       onClick={() => setViewMode('list')}
+                      disabled={isMobile}
+                      style={{
+                        cursor: isMobile ? "not-allowed" : "pointer"}}
                       className={`p-2 rounded-lg transition-all duration-300 ${viewMode === 'list'
-                        ? 'bg-[#EB4036] text-[#A5A5A5]'
+                        ? 'bg-[#EB4036] text-[#A5A5A5] none-sm'
                         : 'text-[#707070] hover:text-[#A5A5A5]'
                         }`}
                     >

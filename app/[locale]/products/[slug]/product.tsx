@@ -250,7 +250,7 @@ const ProductBox = ({ productData, locale }: any) => {
       {/* Product Details Tabs */}
       <div className="container mx-auto px-4 sm:px-8 lg:px-24 py-16">
         <div className="mb-8">
-          <div className="flex flex-wrap gap-1 bg-neutral-800/50 p-1 rounded-xl backdrop-blur-sm">
+          <div className="flex flex-wrap gap-1 bg-neutral-800/50 p-1 rounded-xl backdrop-blur-sm justify-center md:justify-start">
             {[
               { id: 'description', label: t("productDescription"), icon: Package },
               { id: 'specs', label: t("productSpecification"), icon: Award },
@@ -354,7 +354,7 @@ const ProductBox = ({ productData, locale }: any) => {
                     />
                   ))}
                 </div>
-                <div className="text-neutral-400">na podstawie {productData.reviews?.reviewCount} {t("opinions")}</div>
+                <div className="text-neutral-400">{t("reviewLabel")} {productData.reviews?.reviewCount} {t("opinions")}</div>
               </div>
 
               <div className="flex-1 space-y-2">
@@ -364,10 +364,10 @@ const ProductBox = ({ productData, locale }: any) => {
                     <div className="flex-1 bg-neutral-800 rounded-full h-2">
                       <div
                         className="bg-gradient-to-r from-yellow-400 to-yellow-500 h-2 rounded-full"
-                        style={{ width: `${stars === 5 ? '85' : stars === 4 ? '12' : '2'}%` }}
+                        style={{ width: `${stars === 5 ? '100' : stars === 4 ? '0' : '0'}%` }}
                       ></div>
                     </div>
-                    <span className="text-sm text-neutral-400 w-8">{stars === 5 ? '108' : stars === 4 ? '15' : '4'}</span>
+                    <span className="text-sm text-neutral-400 w-8">{stars === 5 ?  productData.reviews?.reviewCount : 0}</span>
                   </div>
                 ))}
               </div>
