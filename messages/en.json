@@ -120,7 +120,9 @@
          "certified": "Certified",
          "years": "years",
              "store":"Store",
-               "estimate":"Estimate"
+               "estimate":"Estimate",
+                   "cta_btn_call": "Call",
+    "cta_btn_mail": "Email"
   },
   "Footer": {
     "location": "Location",

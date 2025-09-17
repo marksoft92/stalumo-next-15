@@ -385,13 +385,13 @@ export default function NavBar() {
       </motion.header>
 
       {/* Floating Action Buttons - Mobile Only */}
-      <motion.div
+      {/* <motion.div
         className="lg:hidden fixed bottom-6 right-4 z-40 flex flex-col gap-3"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1, duration: 0.6 }}
       >
-        {/* Call Button */}
+       
         <motion.a
           href="tel:+48784532549"
           className="w-12 h-12 md:w-14 md:h-14 bg-[#EB4036] hover:bg-[#d63428] text-white rounded-full shadow-xl flex items-center justify-center transition-colors"
@@ -401,7 +401,7 @@ export default function NavBar() {
           <Phone className="w-5 h-5 md:w-6 md:h-6" />
         </motion.a>
 
-        {/* Email Button */}
+        
         <motion.a
           href="mailto:office@stalumo.com"
           className="w-12 h-12 md:w-14 md:h-14 bg-[#333] hover:bg-[#444] text-white rounded-full shadow-xl flex items-center justify-center transition-colors"
@@ -410,7 +410,7 @@ export default function NavBar() {
         >
           <Mail className="w-5 h-5 md:w-6 md:h-6" />
         </motion.a>
-      </motion.div>
+      </motion.div> */}
 
       {/* Progress Bar */}
       <motion.div
@@ -433,21 +433,21 @@ export default function NavBar() {
             className="flex items-center gap-2 text-white hover:text-[#EB4036] transition-colors text-sm bg-[#1A1A1A] px-3 py-2 rounded-lg flex-1 justify-center"
           >
             <Phone className="w-4 h-4" />
-            <span>Zadzwoń</span>
+            <span>{t("cta_btn_call")}</span>
           </a>
           <a
             href="mailto:office@stalumo.com"
             className="flex items-center gap-2 text-white hover:text-[#EB4036] transition-colors text-sm bg-[#1A1A1A] px-3 py-2 rounded-lg flex-1 justify-center"
           >
             <Mail className="w-4 h-4" />
-            <span>Email</span>
+            <span>{t("cta_btn_mail")}</span>
           </a>
           <Link
             href="/contact"
             className="flex items-center gap-2 bg-[#EB4036] hover:bg-[#d63428] text-white px-3 py-2 rounded-lg text-sm transition-colors flex-1 justify-center"
           >
             <ArrowRight className="w-4 h-4" />
-            <span>Wycena</span>
+            <span>{t("estimate")}</span>
           </Link>
         </div>
       </motion.div>

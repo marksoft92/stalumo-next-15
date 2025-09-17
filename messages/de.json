@@ -122,7 +122,9 @@
       "years": "Jahre",
        "time_range": "Mo-Fr: 8:00-18:00",
            "store":"speichern",
-           "estimate":"Kostenvoranschlag"
+           "estimate":"Kostenvoranschlag",
+               "cta_btn_call": "Jetzt",
+    "cta_btn_mail": "Email"
   },
   "Footer": {
     "location": "Standort",

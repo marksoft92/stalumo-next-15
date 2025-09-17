@@ -121,6 +121,8 @@
     "certified": "Certyfikowany",
     "years": "lat",
     "store":"Sklep",
+        "cta_btn_call": "Zadzwoń",
+    "cta_btn_mail": "Email",
     "estimate":"Wycena"
   },
   "Footer": {
