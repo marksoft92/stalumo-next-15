@@ -104,7 +104,7 @@ function ProductCardClient({
                 alt={title}
                 width={300}
                 height={300}
-                className="w-full h-52 object-cover"
+                className="w-full h-[27rem] object-cover"
               />
             </motion.div>
 
