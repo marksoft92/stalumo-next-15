@@ -567,7 +567,7 @@
     "backToShop": "Powrót do sklepu"
   },
   
-  "Checkout": { "order_success": "✅ Zamówienie wysłane pomyślnie!",
+  "Checkout": { 
   "count":"Ilość",
   "product_id":"ID produktu",
   "order_error": "Bład",
@@ -609,7 +609,10 @@
   "feature_secure_desc": "Twoje dane są chronione szyfrowaniem SSL",
   "feature_quality": "Gwarancja jakości",
   "feature_quality_desc": "2 lat gwarancji na wszystkie nasze produkty",
-  "trust_customers": "Zaufało nam już 500+ klientów"
+  "trust_customers": "Zaufało nam już 500+ klientów",
+  "order_success": "Zamówienie złożone!",
+  "redirecting_to_payment": "Przekierowanie do płatności w ciągu:",
+  "go_to_payment_now": "Przejdź od razu do płatności"
 },
 "Terms": {
   "title": "Regulamin sklepu internetowego",

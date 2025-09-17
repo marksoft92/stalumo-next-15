@@ -23,6 +23,7 @@ import { useCartStore } from "@/store/cartStore"; // Zmień na właściwą ście
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import EmptyCart from "@/components/cart/EmptyCart";
+import { PaymentModal } from "@/components/cart/PaymentModal";
 // Animation variants
 const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -78,6 +79,10 @@ export default function CheckoutForm() {
 
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState("");
+    const [showPaymentModal, setShowPaymentModal] = useState(false);
+    const [paymentUrl, setPaymentUrl] = useState("");
+    
+
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         setForm({ ...form, [e.target.name]: e.target.value });
@@ -108,6 +113,8 @@ export default function CheckoutForm() {
             const data = await response.json();
 
             if (response.ok) {
+                setPaymentUrl(data?.payment_url || "");
+                setShowPaymentModal(true);
                 setMessage(t("order_success"));
                 clearCart();
                 setForm({
@@ -122,6 +129,9 @@ export default function CheckoutForm() {
                     country: "PL",
                     vat_number: "",
                 });
+                setShowPaymentModal(true);
+                setPaymentUrl(data?.payment_url || "");
+
             } else {
                 setMessage(`❌ ${t("order_error")} ${data.error || "Nieznany błąd"}`);
             }
@@ -135,11 +145,15 @@ export default function CheckoutForm() {
 
 
 
-    if (!line_items.length) {
+    if (!line_items.length && !showPaymentModal) {
         return <div className="p-8 text-center text-lg"><EmptyCart /></div>;
     }
     return (
         <div className="bg-gradient-to-br from-[#0A0A0A] via-[#111111] to-[#1A1A1A] min-h-screen relative">
+                        <PaymentModal
+  isOpen={showPaymentModal}
+  paymentUrl={paymentUrl}
+/>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     className="relative z-10 py-16"
@@ -352,7 +366,7 @@ export default function CheckoutForm() {
                                             >
                                                 <option value="PL">{t("country_pl")}</option>
                                                 <option value="DE">{t("country_de")}</option>
-                                                <option value="FR">{t("ecountry_frmail")}</option>
+                                                <option value="FR">{t("country_fr")}</option>
                                                 <option value="IT">{t("country_it")}</option>
                                                 <option value="CZ">{t("country_cz")}</option>
                                                 <option value="SK">{t("country_sk")}</option>
