@@ -13,7 +13,6 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, paymentUrl, 
  const t=useTranslations("Checkout")
 
   useEffect(() => {
-    console.log(isOpen)
     if (!isOpen) return;
 
     setCountdown(5);

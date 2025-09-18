@@ -614,7 +614,10 @@
   "redirecting_to_payment": "Przekierowanie do płatności w ciągu:",
   "go_to_payment_now": "Przejdź od razu do płatności",
   "different_shipping":"Inny adres dostawy",
-  "shipping_details":"Inne dane do dostarczenia"
+  "shipping_details":"Inne dane do dostarczenia",
+  "cart":"Koszyk",
+  "products":"Produkty",
+  "homePage":"Strona główna"
 },
 "Terms": {
   "title": "Regulamin sklepu internetowego",

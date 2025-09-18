@@ -605,7 +605,10 @@
   "redirecting_to_payment": "Redirecting to payment in:",
   "go_to_payment_now": "Go to payment now",
     "different_shipping":"Ship to a different address",
-  "shipping_details":"Shipping details"
+  "shipping_details":"Shipping details",
+  "cart": "Cart",
+  "products": "Products",
+  "homePage": "Home page"
 },
 "Terms": {
     "title": "Terms and Conditions",
