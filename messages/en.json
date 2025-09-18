@@ -603,7 +603,9 @@
 "feature_quality_desc": "5-year warranty on all our products",
 "trust_customers": "Trusted by 500+ customers",
   "redirecting_to_payment": "Redirecting to payment in:",
-  "go_to_payment_now": "Go to payment now"
+  "go_to_payment_now": "Go to payment now",
+    "different_shipping":"Ship to a different address",
+  "shipping_details":"Shipping details"
 },
 "Terms": {
     "title": "Terms and Conditions",

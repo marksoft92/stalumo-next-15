@@ -3,153 +3,177 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import {
-    User,
-    Mail,
-    Phone,
-    Building2,
-    MapPin,
-    Package,
-    CheckCircle,
-    AlertCircle,
-    Send,
-    Loader2,
-    Shield,
-    Globe,
-    FileText,
-    Star,
-    ShoppingCart
+  User,
+  Mail,
+  Phone,
+  Building2,
+  MapPin,
+  Package,
+  CheckCircle,
+  AlertCircle,
+  Send,
+  Loader2,
+  Shield,
+  Globe,
+  FileText,
+  Star,
+  ShoppingCart,
+  Truck
 } from "lucide-react";
-import { useCartStore } from "@/store/cartStore"; // Zmień na właściwą ścieżkę
+import { useCartStore } from "@/store/cartStore";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import EmptyCart from "@/components/cart/EmptyCart";
 import { PaymentModal } from "@/components/cart/PaymentModal";
-// Animation variants
+
+// Animations
 const fadeInUp = {
-    initial: { opacity: 0, y: 30 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6 }
 };
-
 const staggerContainer = {
-    animate: {
-        transition: {
-            staggerChildren: 0.1
-        }
-    }
+  animate: { transition: { staggerChildren: 0.1 } }
 };
-
 const scaleIn = {
-    initial: { opacity: 0, scale: 0.95 },
-    animate: { opacity: 1, scale: 1 },
-    transition: { duration: 0.5 }
+  initial: { opacity: 0, scale: 0.95 },
+  animate: { opacity: 1, scale: 1 },
+  transition: { duration: 0.5 }
 };
 
 interface CheckoutData {
+  first_name: string;
+  last_name: string;
+  email: string;
+  phone: string;
+  company?: string;
+  address_1: string;
+  city: string;
+  postcode: string;
+  country: string;
+  vat_number?: string;
+}
+
+
+interface ShipingData {
     first_name: string;
     last_name: string;
-    email: string;
     phone: string;
-    company?: string;
     address_1: string;
     city: string;
     postcode: string;
     country: string;
-    vat_number?: string;
-}
+  }
 
 export default function CheckoutForm() {
-    // Używamy twojego stora
-    const { line_items, clearCart } = useCartStore();
-    const t = useTranslations("Checkout")
-    const tTerms = useTranslations("Terms")
-    const tFooter = useTranslations("Footer")
-    const [form, setForm] = useState<CheckoutData>({
-        first_name: "",
-        last_name: "",
-        email: "",
-        phone: "",
-        company: "",
-        address_1: "",
-        city: "",
-        postcode: "",
-        country: "PL",
-        vat_number: "",
-    });
+  const { line_items, clearCart } = useCartStore();
+  const t = useTranslations("Checkout");
+  const tTerms = useTranslations("Terms");
+  const tFooter = useTranslations("Footer");
 
-    const [loading, setLoading] = useState(false);
-    const [message, setMessage] = useState("");
-    const [showPaymentModal, setShowPaymentModal] = useState(false);
-    const [paymentUrl, setPaymentUrl] = useState("");
-    
+  // billing
+  const [form, setForm] = useState<CheckoutData>({
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone: "",
+    company: "",
+    address_1: "",
+    city: "",
+    postcode: "",
+    country: "PL",
+    vat_number: ""
+  });
 
+  // shipping
+  const [shipping, setShipping] = useState<ShipingData>({
+    first_name:form.first_name,
+    last_name:form.last_name,
+    phone:form.phone,
+    address_1:"",
+    city:"",
+    postcode:"",
+    country: "",
+  });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-        setForm({ ...form, [e.target.name]: e.target.value });
-    };
+  const [useDifferentShipping, setUseDifferentShipping] = useState(false);
 
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setLoading(true);
-        setMessage("");
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+  const [showPaymentModal, setShowPaymentModal] = useState(false);
+  const [paymentUrl, setPaymentUrl] = useState("");
 
-        try {
-            if (line_items.length === 0) {
-                setMessage("Koszyk jest pusty!");
-                setLoading(false);
-                return;
-            }
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => { setForm({ ...form, [e.target.name]: e.target.value }); };
+  const handleChangeShiping = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => { setShipping({ ...shipping, [e.target.name]: e.target.value }); };
 
-            const response = await fetch("/api/woo-order", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    ...form,
-                    line_items,
-                    vat_number: form.vat_number || undefined,
-                }),
-            });
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage("");
 
-            const data = await response.json();
-
-            if (response.ok) {
-                setPaymentUrl(data?.payment_url || "");
-                setShowPaymentModal(true);
-                setMessage(t("order_success"));
-                clearCart();
-                setForm({
-                    first_name: "",
-                    last_name: "",
-                    email: "",
-                    phone: "",
-                    company: "",
-                    address_1: "",
-                    city: "",
-                    postcode: "",
-                    country: "PL",
-                    vat_number: "",
-                });
-                setShowPaymentModal(true);
-                setPaymentUrl(data?.payment_url || "");
-
-            } else {
-                setMessage(`❌ ${t("order_error")} ${data.error || "Nieznany błąd"}`);
-            }
-        } catch (err) {
-            console.error(err);
-            setMessage(t("order_error_unknown"));
-        }
-
+    try {
+      if (line_items.length === 0) {
+        setMessage("Koszyk jest pusty!");
         setLoading(false);
-    };
+        return;
+      }
 
+      const response = await fetch("/api/woo-order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...form,
+          line_items,
+          vat_number: form.vat_number || undefined,
+          shipping: useDifferentShipping ? shipping : form
+        })
+      });
 
+      const data = await response.json();
 
-    if (!line_items.length && !showPaymentModal) {
-        return <div className="p-8 text-center text-lg"><EmptyCart /></div>;
+      if (response.ok) {
+        setPaymentUrl(data?.payment_url || "");
+        setShowPaymentModal(true);
+        setMessage(t("order_success"));
+        clearCart();
+        setForm({
+          first_name: "",
+          last_name: "",
+          email: "",
+          phone: "",
+          company: "",
+          address_1: "",
+          city: "",
+          postcode: "",
+          country: "PL",
+          vat_number: ""
+        });
+        setShipping({
+          first_name: "",
+          last_name: "",
+          phone: "",
+          address_1: "",
+          city: "",
+          postcode: "",
+          country: "PL",
+        });
+        setUseDifferentShipping(false);
+      } else {
+        setMessage(`❌ ${t("order_error")} ${data.error || "Nieznany błąd"}`);
+      }
+    } catch (err) {
+      console.error(err);
+      setMessage(t("order_error_unknown"));
     }
+
+    setLoading(false);
+  };
+
+  if (!line_items.length && !showPaymentModal) {
+    return <div className="p-8 text-center text-lg"><EmptyCart /></div>;
+  }
     return (
-        <div className="bg-gradient-to-br from-[#0A0A0A] via-[#111111] to-[#1A1A1A] min-h-screen relative">
+        <div className="bg-gradient-to-br from-[#0A0A0A] via-[#111111] to-[#1A1A1A]  relative">
                         <PaymentModal
   isOpen={showPaymentModal}
   paymentUrl={paymentUrl}
@@ -374,6 +398,159 @@ export default function CheckoutForm() {
                                         </motion.div>
                                     </div>
 
+
+
+{/* CHECKBOX DIFFRENT ADDRESS */}
+<div className="flex items-center gap-3">
+                  <input
+                    type="checkbox"
+                    checked={useDifferentShipping}
+                    onChange={(e) => setUseDifferentShipping(e.target.checked)}
+                  />
+                  <label className="text-white font-medium flex items-center gap-2">
+                    <Truck className="w-4 h-4 text-[#EB4036]" /> {t("different_shipping")}
+                  </label>
+                </div>
+
+
+
+
+
+                {/* Shipping form */}
+{useDifferentShipping && (
+
+<>                                    <div className="grid md:grid-cols-2 gap-6">
+                                        <motion.div variants={fadeInUp}>
+                                            <label className="flex items-center gap-2 text-sm font-semibold text-white mb-3">
+                                                <User className="w-4 h-4 text-[#EB4036]" />
+                                                {t("first_name")}
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="first_name"
+                                                value={shipping.first_name}
+                                                onChange={handleChangeShiping}
+                                                required
+                                                className="w-full px-4 py-4 bg-[#2A2A2A] border border-[#404040] text-white placeholder-[#A5A5A5] rounded-xl focus:border-[#EB4036] focus:ring-2 focus:ring-[#EB4036]/20 transition-all duration-300"
+                                                placeholder="Wprowadź imię"
+                                            />
+                                        </motion.div>
+
+                                        <motion.div variants={fadeInUp}>
+                                            <label className="flex items-center gap-2 text-sm font-semibold text-white mb-3">
+                                                <User className="w-4 h-4 text-[#EB4036]" />
+                                                {t("last_name")}
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="last_name"
+                                                value={shipping.last_name}
+                                                onChange={handleChangeShiping}
+                                                required
+                                                className="w-full px-4 py-4 bg-[#2A2A2A] border border-[#404040] text-white placeholder-[#A5A5A5] rounded-xl focus:border-[#EB4036] focus:ring-2 focus:ring-[#EB4036]/20 transition-all duration-300"
+                                                placeholder="Wprowadź nazwisko"
+                                            />
+                                        </motion.div>
+                                    </div>
+
+                                    {/* Contact Info */}
+                                    <div className="grid md:grid-cols-2 gap-6">
+
+
+                                        <motion.div variants={fadeInUp}>
+                                            <label className="flex items-center gap-2 text-sm font-semibold text-white mb-3">
+                                                <Phone className="w-4 h-4 text-[#EB4036]" />
+                                                {t("phone")}
+                                            </label>
+                                            <input
+                                                type="tel"
+                                                name="phone"
+                                                value={shipping.phone}
+                                                onChange={handleChangeShiping}
+                                                required
+                                                className="w-full px-4 py-4 bg-[#2A2A2A] border border-[#404040] text-white placeholder-[#A5A5A5] rounded-xl focus:border-[#EB4036] focus:ring-2 focus:ring-[#EB4036]/20 transition-all duration-300"
+                                                placeholder="+48 123 456 789"
+                                            />
+                                        </motion.div>
+                                    </div>
+
+
+                                    {/* Address */}
+                                    <motion.div variants={fadeInUp}>
+                                        <label className="flex items-center gap-2 text-sm font-semibold text-white mb-3">
+                                            <MapPin className="w-4 h-4 text-[#EB4036]" />
+                                            {t("address")}
+                                        </label>
+                                        <input
+                                            type="text"
+                                            name="address_1"
+                                            value={shipping.address_1}
+                                            onChange={handleChangeShiping}
+                                            required
+                                            className="w-full px-4 py-4 bg-[#2A2A2A] border border-[#404040] text-white placeholder-[#A5A5A5] rounded-xl focus:border-[#EB4036] focus:ring-2 focus:ring-[#EB4036]/20 transition-all duration-300"
+                                            placeholder="Ulica i numer"
+                                        />
+                                    </motion.div>
+
+                                    {/* City & Postal Code & Country */}
+                                    <div className="grid md:grid-cols-3 gap-6">
+                                        <motion.div variants={fadeInUp}>
+                                            <label className="flex items-center gap-2 text-sm font-semibold text-white mb-3">
+                                                <Building2 className="w-4 h-4 text-[#EB4036]" />
+                                                {t("city")}
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="city"
+                                                value={shipping.city}
+                                                onChange={handleChangeShiping}
+                                                required
+                                                className="w-full px-4 py-4 bg-[#2A2A2A] border border-[#404040] text-white placeholder-[#A5A5A5] rounded-xl focus:border-[#EB4036] focus:ring-2 focus:ring-[#EB4036]/20 transition-all duration-300"
+                                                placeholder="Warszawa"
+                                            />
+                                        </motion.div>
+
+                                        <motion.div variants={fadeInUp}>
+                                            <label className="flex items-center gap-2 text-sm font-semibold text-white mb-3">
+                                                <MapPin className="w-4 h-4 text-[#EB4036]" />
+                                                {t("postcode")}
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="postcode"
+                                                value={shipping.postcode}
+                                                onChange={handleChangeShiping}
+                                                required
+                                                className="w-full px-4 py-4 bg-[#2A2A2A] border border-[#404040] text-white placeholder-[#A5A5A5] rounded-xl focus:border-[#EB4036] focus:ring-2 focus:ring-[#EB4036]/20 transition-all duration-300"
+                                                placeholder="00-000"
+                                            />
+                                        </motion.div>
+
+                                        <motion.div variants={fadeInUp}>
+                                            <label className="flex items-center gap-2 text-sm font-semibold text-white mb-3">
+                                                <Globe className="w-4 h-4 text-[#EB4036]" />
+                                                {t("country")}
+                                            </label>
+                                            <select
+                                                name="country"
+                                                value={shipping.country}
+                                                onChange={handleChangeShiping}
+                                                required
+                                                className="w-full px-4 py-4 bg-[#2A2A2A] border border-[#404040] text-white rounded-xl focus:border-[#EB4036] focus:ring-2 focus:ring-[#EB4036]/20 transition-all duration-300"
+                                            >
+                                                <option value="PL">{t("country_pl")}</option>
+                                                <option value="DE">{t("country_de")}</option>
+                                                <option value="FR">{t("country_fr")}</option>
+                                                <option value="IT">{t("country_it")}</option>
+                                                <option value="CZ">{t("country_cz")}</option>
+                                                <option value="SK">{t("country_sk")}</option>
+                                            </select>
+                                        </motion.div>
+                                    </div></>
+
+
+)}
+
                                     {/* Messages */}
                                     {message && message.includes("✅") && (
                                         <motion.div
@@ -442,6 +619,8 @@ export default function CheckoutForm() {
                                         </span>
                                     </motion.div>
                                 </div>
+
+
                             </div>
                         </motion.div>
 

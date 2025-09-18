@@ -43,7 +43,7 @@ export default function EmptyCart() {
     const [hoveredProduct, setHoveredProduct] = useState<number | null>(null);
     const t = useTranslations("Cart")
     return (
-        <div className="bg-gradient-to-br from-[#0A0A0A] via-[#111111] to-[#1A1A1A] min-h-screen relative">
+        <div className="relative">
             {/* Background Elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 left-10 w-64 h-64 bg-[#EB4036]/5 rounded-full blur-3xl" />

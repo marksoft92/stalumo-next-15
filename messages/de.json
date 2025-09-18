@@ -606,7 +606,9 @@
   "feature_quality_desc": "5 Jahre Garantie auf alle unsere Produkte",
   "trust_customers": "Bereits 500+ zufriedene Kunden",
     "redirecting_to_payment": "Weiterleitung zur Zahlung in:",
-  "go_to_payment_now": "Jetzt zur Zahlung gehen"
+  "go_to_payment_now": "Jetzt zur Zahlung gehen",
+    "different_shipping":"Andere Lieferadresse",
+  "shipping_details":"Lieferinformationen"
 
 },
 "Terms": {
