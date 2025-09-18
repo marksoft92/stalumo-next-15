@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import Cart from "./Cart";
 import CheckoutForm from "./Ckeckout";
 
 // Fetch produktów (server-side)
