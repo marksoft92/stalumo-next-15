@@ -102,6 +102,11 @@ export const routing = defineRouting({
       en: "/terms",
       pl: "/terms",
       de: "/terms",
+    },
+    "/about_developer": {
+      en: "/about_developer",
+      pl: "/about_developer",
+      de: "/about_developer",
     }
   },
 });
