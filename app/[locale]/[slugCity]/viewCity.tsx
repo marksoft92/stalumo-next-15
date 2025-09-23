@@ -7,7 +7,13 @@ import {
   Phone, MapPin, Clock, Star, Award, Zap, ShieldCheck, Wrench,
   Hammer, Factory, Truck, Settings, Camera, FileText, ThumbsUp,
   MessageSquare, Calendar, Globe, ChevronRight, Quote, Building2,
-  Sparkles, TrendingUp, CheckCircle, ArrowRight, Heart, Users, Trophy
+  Sparkles, TrendingUp, CheckCircle, ArrowRight, Heart, Users, Trophy,
+   Gem, DollarSign,
+  Code, Rocket, 
+   Shield, Target, 
+  MessageCircle, Mail, Navigation, ChevronDown, Play,
+  PieChart, BarChart3, 
+  Cog, Smartphone, Monitor, Database, Palette,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -19,6 +25,7 @@ type ServiceEntry = {
   service_name: string;
   description: string;
   cta: string;
+  options:any;
   seo: {
     title: string;
     description: string;
@@ -79,6 +86,55 @@ type Props = {
     slugCity: any;
   };
 };
+import * as LucideIcons from 'lucide-react';
+
+const iconsMap: Record<string, React.ElementType> = {
+  Power: LucideIcons.Power,
+  Wifi: LucideIcons.Wifi,
+  Database: LucideIcons.Database,
+  Cpu: LucideIcons.Cpu,
+  Settings: LucideIcons.Settings,
+  Video: LucideIcons.Video,
+  Thermometer: LucideIcons.Thermometer,
+  Activity: LucideIcons.Activity,
+  Camera: LucideIcons.Camera,
+  Search: LucideIcons.Search,
+  FileText: LucideIcons.FileText,
+  Wrench: LucideIcons.Wrench,
+  MapPin: LucideIcons.MapPin,
+  PenTool: LucideIcons.PenTool,
+  Link: LucideIcons.Link,
+  BarChart3: LucideIcons.BarChart3,
+  SplitSquareHorizontal: LucideIcons.SplitSquareHorizontal,
+  Megaphone: LucideIcons.Megaphone,
+  Share2: LucideIcons.Share2,
+  Mail: LucideIcons.Mail,
+  Wand2: LucideIcons.Wand2,
+  ShieldCheck: LucideIcons.ShieldCheck,
+  Globe: LucideIcons.Globe,
+  Bot: LucideIcons.Bot,
+  Code2: LucideIcons.Code2,
+  Smartphone: LucideIcons.Smartphone,
+  Monitor: LucideIcons.Monitor,
+  Palette: LucideIcons.Palette,
+  ShoppingCart: LucideIcons.ShoppingCart,
+  Server: LucideIcons.Server,
+  Rocket: LucideIcons.Rocket,
+  Users: LucideIcons.Users,
+  Cloud: LucideIcons.Cloud,
+  LineChart: LucideIcons.LineChart,
+  ClipboardCheck: LucideIcons.ClipboardCheck,
+  Layers: LucideIcons.Layers,
+  Bell: LucideIcons.Bell,
+  CreditCard: LucideIcons.CreditCard,
+  TestTube: LucideIcons.TestTube,
+  Upload: LucideIcons.Upload,
+  Truck: LucideIcons.Truck,
+  Layout: LucideIcons.Layout,
+  Hammer: LucideIcons.Hammer,
+  Factory: LucideIcons.Factory,
+};
+
 
 const getTypeIcon = (typeName: string) => {
   const name = typeName.toLowerCase();
@@ -361,6 +417,56 @@ export default function Page({ entry }: any) {
                   </div>
                 </motion.div>
               ))}
+            </div>
+          </div>
+        </section>
+
+
+       {/* Sekcja technologii */}
+       <section className="py-24 bg-gradient-to-b from-black to-gray-900">
+          <div className="max-w-7xl mx-auto px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-20"
+            >
+              <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
+                Profesjonalizm
+                </span>
+                <br />& Innowacja
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Wykorzystujemy nowoczesne technologie i doświadczenie, aby dostarczać najwyższej jakości usługi dla naszych klientów.
+              </p>
+            </motion.div>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+              {entry.options.map((tech:any, index:any) => {
+                 const IconComponent = iconsMap[tech.icon] || tech.icon; 
+
+return (
+  <motion.div
+  key={index}
+  initial={{ opacity: 0, scale: 0.5 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  viewport={{ once: true }}
+  transition={{ delay: index * 0.1 }}
+  className="group"
+>
+  <div className="bg-gradient-to-br from-gray-900/80 to-black/80 border border-red-500/30 rounded-2xl p-6 text-center hover:border-red-500/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(235,64,54,0.3)] hover:scale-105 h-full">
+    <div className="flex justify-center mb-4">
+      <IconComponent className="w-12 h-12 text-red-500 group-hover:scale-110 group-hover:text-gray-300 transition-all duration-300" />
+    </div>
+    <h3 className="text-white font-bold mb-2">{tech.name}</h3>
+    <p className="text-red-500 text-sm">{tech.description}</p>
+  </div>
+</motion.div>
+)                              
+})}
+            
+            
             </div>
           </div>
         </section>

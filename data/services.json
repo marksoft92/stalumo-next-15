@@ -512,6 +512,168 @@
       }
     ]
   },
+
+  {
+    "image": [
+      {
+        "url": "https://panel.stalumo.pl/image-public-uploads/811ae2e7-f94e-4876-92b0-1ea92a03a44c-IMG_1830.JPG",
+        "title": "Brama przesuwna",
+        "description": "Brama przesuwna"
+      }
+    ],
+    "blogPost": [
+      {
+        "title": "Jakie ogrodzenia stalowe są teraz modne? 5 trendów na 2025",
+        "excerpt": "W 2025 roku modne ogrodzenie stalowe to już nie tylko kwestia ochrony posesji — to świadoma decyzja estetyczna. Stal daje ogromne możliwości: od minimalistycznych form po projekty premium z detalem i strukturą. Oto 5 najpopularniejszych kierunków w projektowaniu ogrodzeń stalowych.",
+        "url": "/blog/jakie-ogrodzenia-stalowe-sa-teraz-modne-5-trendow-na-2025",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg"
+      },
+      {
+        "title": "Konstrukcje stalowe | 5 czynników, które decydują o ich żywotności",
+        "excerpt": "Konstrukcje stalowe cieszą się dużą popularnością w budownictwie ze względu na swoją wytrzymałość, elastyczność projektową i szybki montaż. Ich trwałość może sięgać dziesiątek lat — o ile zadbamy o kilka kluczowych elementów.",
+        "url": "/blog/konstrukcje-stalowe--5-czynnikow-ktore-decyduja-o-ich-zywotnosci",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg"
+      },
+      {
+        "title": "Czym się różni balustrada od barierki?",
+        "excerpt": "W codziennym języku często używamy słów „balustrada” i „barierka” zamiennie. W praktyce jednak — szczególnie w projektowaniu i budownictwie — mają one różne znaczenia.",
+        "url": "/blog/czym-sie-rozni-balustrada-od-barierki-proste-wyjasnienie",
+        "category": "Poradnik",
+        "readTime": "5 min",
+        "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
+      }
+    ],
+    "options": [
+      {
+        "icon": "Truck",
+        "name": "Bramy Przesuwne",
+        "description": "Nowoczesne i automatyczne bramy przesuwne"
+      },
+      {
+        "icon": "Factory",
+        "name": "Bramy Uchylne",
+        "description": "Klasyczne bramy uchylne na wymiar"
+      },
+      {
+        "icon": "Settings",
+        "name": "Automatyka Bram",
+        "description": "Systemy automatycznego otwierania bram"
+      },
+      {
+        "icon": "ShieldCheck",
+        "name": "Gwarancja",
+        "description": "Trwałe bramy z certyfikowanych materiałów"
+      },
+      {
+        "icon": "Palette",
+        "name": "Wykończenie Bram",
+        "description": "Estetyczne malowanie proszkowe"
+      },
+      {
+        "icon": "MapPin",
+        "name": "Montaż z dojazdem",
+        "description": "Profesjonalny montaż bram na miejscu"
+      },
+      {
+        "icon": "LineChart",
+        "name": "Optymalizacja",
+        "description": "Dopasowanie bramy do każdej posesji"
+      },
+      {
+        "icon": "Users",
+        "name": "Doradztwo",
+        "description": "Pomoc w wyborze najlepszej bramy"
+      }
+    ],
+    "package": [
+      {
+        "size": "Podstawowy",
+        "price": "od 1500",
+        "description": "Prosta brama przesuwna stalowa"
+      },
+      {
+        "size": "Standardowy",
+        "price": "od 3000",
+        "description": "Brama przesuwna z automatyką"
+      },
+      {
+        "size": "Premium",
+        "price": "od 5000",
+        "description": "Zaawansowana brama przesuwna na wymiar"
+      },
+      {
+        "size": "Biznesowy",
+        "price": "od 8000",
+        "description": "Kompleksowe rozwiązania bramowe dla firm"
+      }
+    ],
+    "service_slug": "bramy-przesuwne",
+    "service_name": "Kompleksowa realizacja bram przesuwnych na wymiar",
+    "description": "Projektujemy i wykonujemy bramy przesuwne stalowe. Oferujemy automatykę, trwałość i estetyczne wykończenie. W {defCity} jesteśmy ekspertami od bram przesuwnych.",
+    "cta": "Zamów bramę przesuwną na wymiar!",
+    "seo": {
+      "title": "Bramy przesuwne – {defCity} | Profesjonalne bramy stalowe",
+      "description": "Tworzymy bramy przesuwne w {defCity}. Nowoczesne, trwałe i automatyczne bramy stalowe na wymiar.",
+      "keywords": "bramy przesuwne, bramy stalowe, automatyka bram, spawanie bram, bramy na wymiar"
+    },
+    "longtail_1": "Bramy przesuwne dla firm",
+    "longtail_2": "Nowoczesne bramy przesuwne",
+    "longtail_3": "Automatyczne bramy przesuwne",
+    "longtail_4": "Projektowanie bram przesuwnych",
+    "longtail_5": "Agencja spawania bram",
+    "longtail_6": "Profesjonalne bramy przesuwne",
+    "longtail_7": "Bramy przesuwne z automatyką",
+    "longtail_8": "Trwałe bramy przesuwne stalowe",
+    "longtail_9": "Tanie bramy przesuwne na wymiar",
+    "longtail_10": "Bramy przesuwne z gwarancją",
+    "faq": [
+      {
+        "question": "Ile kosztuje brama przesuwna w {defCity}?",
+        "answer": "Cena zaczyna się od 1500 zł, zależnie od projektu i automatyki."
+      },
+      {
+        "question": "Jak długo trwa realizacja bramy przesuwnej?",
+        "answer": "Standardowo 2-4 tygodnie, w zależności od zamówienia."
+      },
+      {
+        "question": "Czy bramy przesuwne są odporne na warunki pogodowe?",
+        "answer": "Tak, stosujemy stal ocynkowaną i malowanie proszkowe."
+      },
+      {
+        "question": "Czy wykonujecie bramy przesuwne na wymiar?",
+        "answer": "Tak, każda brama jest projektowana indywidualnie."
+      },
+      {
+        "question": "Czy oferujecie automatykę do bram przesuwnych?",
+        "answer": "Tak, instalujemy nowoczesne systemy automatyki."
+      }
+    ],
+    "review": [
+      {
+        "comment": "Brama przesuwna działa bez zarzutu, montaż szybki i solidny.",
+        "author": "Michał K.",
+        "address": "{defCity}",
+        "data": "2025-03-10"
+      },
+      {
+        "comment": "Idealnie dopasowana brama przesuwna na wymiar. Polecam!",
+        "author": "Katarzyna P.",
+        "address": "{defCity}",
+        "data": "2025-04-15"
+      },
+      {
+        "comment": "Automatyczna brama przesuwna to ogromna wygoda. Świetne wykonanie.",
+        "author": "Robert Z.",
+        "address": "{defCity}",
+        "data": "2025-05-20"
+      }
+    ]
+  }
+  ,
   {
  "blogPost": [
              {
@@ -1050,7 +1212,7 @@
     ],
     "options": [
       {
-        "icon": "Fire",
+        "icon": "Hammer",
         "name": "Spawanie Grilli",
         "description": "Precyzyjne spawanie grilli stalowych"
       },
@@ -1131,6 +1293,7 @@
     "longtail_8": "Trwałe grille stalowe ",
     "longtail_9": "Tanie grille na wymiar ",
     "longtail_10": "Grille z gwarancją ",
+    "image":[],
     "faq": [
       {
         "question": "Ile kosztuje grill stalowy w {defCity}?",
@@ -1204,7 +1367,7 @@
     ],
     "options": [
       {
-        "icon": "Fire",
+        "icon": "Hammer",
         "name": "Spawanie Palenisk",
         "description": "Precyzyjne spawanie palenisk stalowych"
       },
@@ -1584,6 +1747,7 @@
         "description": "Kompleksowy zestaw mebli dla przestrzeni komercyjnych"
       }
     ],
+    "image":[],
     "service_slug": "meble-ogrodowe",
     "service_name": "Meble ogrodowe stalowe na wymiar",
     "description": "Tworzymy stalowe meble ogrodowe na wymiar, łączące trwałość i nowoczesny design. Idealne do ogrodów i przestrzeni zewnętrznych. W {defCity} zapewniamy wysoką jakość.",
@@ -1739,6 +1903,7 @@
       }
     ],
     "service_slug": "garaze-stalowe",
+    "image":[],
     "service_name": "Konstrukcje garażowe stalowe na wymiar",
     "description": "Projektujemy i spawamy stalowe konstrukcje garażowe na wymiar. Zapewniamy trwałość, funkcjonalność i estetykę. W {defCity} jesteśmy specjalistami od garaży.",
     "cta": "Zamów garaż stalowy już dziś!",
