@@ -10,15 +10,22 @@ const pages = [
     'contact',
     'blog',
     'products',
-    'offer'
+    'offer',
+    'offer/barriers',
+    'offer/gates',
+    'offer/fences',
+    'offer/other-steel-structures',
+    'privacy-policy',
+    'terms',
+    'about_developer'
 ];
 
 const locales = ['en', 'pl', 'de'];
 
 const localizedPaths = {
-    en: ['', 'about-us', 'offer','gallery', 'contact-me', 'blog', 'products','privacy-policy'],
-    pl: ['', 'o-nas', 'oferta','projekty', 'kontakt', 'blog', 'produkty','polityka-prywatności'],
-    de: ['', 'uber-uns', 'angebot','projekte', 'kontaktiere-mich', 'blog', 'producten','datenschutzrichtlinie'],
+    en: ['', 'about-us', 'offer','gallery', 'contact-me', 'blog', 'products','privacy-policy','about_developer','offer/barriers','offer/gates','offer/fences','offer/other-steel-structures','privacy-policy','terms'],
+    pl: ['', 'o-nas', 'oferta','projekty', 'kontakt', 'blog', 'produkty','polityka-prywatności','about_developer','oferta/barierki','oferta/bramy','oferta/ogrodzenia','oferta/inne-stalowe-konstrukcje','polityka-prywatnosci','terms'],
+    de: ['', 'uber-uns', 'angebot','projekte', 'kontaktiere-mich', 'blog', 'producten','datenschutzrichtlinie','about_developer','angebot/gelander','angebot/tore','angebot/gehege"','angebot/andere-stahlkonstruktionen','datenschutzrichtlinie','terms'],
 };
 
 export async function GET() {
