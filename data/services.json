@@ -1266,6 +1266,8 @@
         "description": "Palenisko dla dużych ogrodów lub przestrzeni komercyjnych"
       }
     ],
+    "image": [
+    ],
     "service_slug": "paleniska",
     "service_name": "Paleniska stalowe na wymiar",
     "description": "Tworzymy paleniska stalowe na wymiar, idealne do ogrodów i przestrzeni rekreacyjnych. Zapewniamy trwałość i estetykę. W {defCity} jesteśmy ekspertami od palenisk.",
@@ -1356,6 +1358,7 @@
         "imgUrl": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG"
       }
     ],
+    
     "options": [
       {
         "icon": "Factory",
