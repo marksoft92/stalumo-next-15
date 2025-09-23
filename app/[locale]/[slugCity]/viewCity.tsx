@@ -833,7 +833,7 @@ return (
                         <h3 className="text-white font-bold text-lg mb-2">{project.title}</h3>
                         <div className="flex items-center gap-2 text-red-500 text-sm mb-1">
                           <MapPin className="w-4 h-4" />
-                          {entry.city}
+                          {project?.localization || "Polska, Zachodniopomorskie"}
                         </div>
                         <div className="text-gray-300 text-sm">{project.description}</div>
                       </div>

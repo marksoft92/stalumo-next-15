@@ -83,17 +83,20 @@
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/d6573f33-dd47-4ba1-93dd-d378715a55f3-barierkastalumo.JPG",
         "title": "barierka stalowa",
-        "description": "Barierka stalowa"
+        "description": "Barierka stalowa",
+        "localization":"Niemcy"
       },
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/8f97a0d9-41da-4dac-9777-662784eac29c-barierka5.jpg",
         "title": "barierka stalowa",
-        "description": "Barierka stalowa"
+        "description": "Barierka stalowa",
+        "localization":"Niemcy"
       },
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/8a91c7c0-39e8-469d-914c-9f5d224880f2-barierka3.jpg",
         "title": "barierka stalowa",
-        "description": "Barierka stalowa"
+        "description": "Barierka stalowa",
+        "localization":"Niemcy"
       }
     ],
     "package": [
@@ -254,17 +257,20 @@
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/e28cfb2d-9217-4b26-b2fe-95e7132f3c63-IMG_0999.JPG",
         "title": "balustrada stalowa",
-        "description": "Balustrada stalowa"
+        "description": "Balustrada stalowa",
+        "localization":"Niemcy"
       },
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/ec6b10d7-fa76-4307-a706-c452da6bc772-4248572A-FDC5-45C0-B117-522CA48586E3.JPG",
         "title": "balustrada stalowa",
-        "description": "Balustrada stalowa"
+        "description": "Balustrada stalowa",
+        "localization":"Niemcy"
       },
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/7e42073b-8a02-40c0-84e4-05a39ab59ee4-Made with insMind-balustrada6.jpg",
         "title": "balustrada stalowa",
-        "description": "Balustrada stalowa"
+        "description": "Balustrada stalowa",
+        "localization":"Niemcy"
       }
     ],
     "package": [
@@ -355,20 +361,23 @@
     "image": [
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/811ae2e7-f94e-4876-92b0-1ea92a03a44c-IMG_1830.JPG",
-        "title": "Brama przesuwna",
-        "description": "Brama przesuwna"
+        "title": "Brama przesuwna panel 3D",
+        "description": "Brama przesuwna",
+        "localization":"Polska, Zachodniopomorskie - Drawno"
       },
 
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/9ef74ed5-8b2e-4293-a42b-c41c5ba563fe-Zdj%C4%99cie%20WhatsApp%202025-07-31%20o%2018.28.16_12b720a1.jpg",
         "title": "Brama przesuwna na wymiar",
-        "description": "Brama przesuwna na wymiar"
+        "description": "Brama przesuwna na wymiar",
+        "localization":"okolice Berlina"
 
       },
       {
-        "url": "https://panel.stalumo.pl/image-public-uploads/9ef74ed5-8b2e-4293-a42b-c41c5ba563fe-Zdj%C4%99cie%20WhatsApp%202025-07-31%20o%2018.28.16_12b720a1.jpg",
+        "url": "https://panel.stalumo.pl/image-public-uploads/4f283eb3-acad-4d9d-b303-b5eadfaf8a58-photo_2025-07-31_18-40-26.jpg",
         "title": "Brama skrzydłowa",
-        "description": "Brama skrzydłowa"
+        "description": "Brama skrzydłowa",
+        "localization":"Polska, Zachodniopomorskie - Kiełpino"
       }
     ],
  "blogPost": [
@@ -529,14 +538,16 @@
     "image": [
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/811ae2e7-f94e-4876-92b0-1ea92a03a44c-IMG_1830.JPG",
-        "title": "Brama przesuwna",
-        "description": "Brama przesuwna"
+        "title": "Brama przesuwna PSZOK",
+        "description": "Brama przesuwna",
+        "localization":"Polska, Zachodniopomorskie - Drawno"
       },
 
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/9ef74ed5-8b2e-4293-a42b-c41c5ba563fe-Zdj%C4%99cie%20WhatsApp%202025-07-31%20o%2018.28.16_12b720a1.jpg",
         "title": "Brama przesuwna na wymiar",
-        "description": "Brama przesuwna na wymiar"
+        "description": "Brama przesuwna na wymiar",
+        "localization":"okolice Berlina"
 
       }
     ],
@@ -789,17 +800,20 @@
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/af223d91-2aae-4786-beeb-1e844299409f-Made with insMind-mikychillinphoto_2025-04-28_10-49-12-topaz-denoise-color.jpeg",
         "title": "Ogrodzenia",
-        "description": "Ogrodzenia"
+        "description": "Ogrodzenia",
+        "localization":"Polska, Zachodniopomorskie - Białybór"
       },
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/d9b3f3ce-44e1-4c76-a251-1f9a1ff2f27e-Ogrodzenie Choszcz.jpg",
         "title": "Ogrodzenia",
-        "description": "Ogrodzenia"
+        "description": "Ogrodzenia",
+        "localization":"Polska, Zachodniopomorskie - Drawno"
       },
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/8c333b1e-3f11-4c3d-a3ae-83a5e4b18ecc-IMG_1822.PNG",
         "title": "Ogrodzenia",
-        "description": "Ogrodzenia z metalu na wymiar"
+        "description": "Ogrodzenia z metalu na wymiar",
+        "localization":"Polska, Zachodniopomorskie - Białybór"
       }
     ],
     "service_slug": "ogrodzenia",
@@ -959,18 +973,21 @@
     "image": [
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/cde89481-73ef-4559-8815-377f875c797b-IMG_1825.JPG",
-        "title": "Konstrukcje stalowe",
-        "description": "konstrukcje stalowe"
+        "title": "Konstrukcje stalowe PSZOK",
+        "description": "konstrukcje stalowe",
+        "localization":"Polska, Zachodniopomorskie - Drawno"
       },
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/0429c519-8e89-4f93-94ff-8f272568275a-IMG_1837.JPG",
-        "title": "Konstrukcje stalowe",
-        "description": "konstrukcje stalowe"
+        "title": "Konstrukcje stalowe PSZOK",
+        "description": "konstrukcje stalowe",
+        "localization":"Polska, Zachodniopomorskie - Drawno"
       },
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/ab48dc01-1631-4bef-8583-fef8c94d2346-Made with insMind-wejscie.jpg",
-        "title": "Konstrukcje stalowe",
-        "description": "konstrukcje stalowe"
+        "title": "Konstrukcje stalowe - wiata",
+        "description": "wiata na pojemniki na odpady",
+        "localization":"Niemcy"
       }
     ],
     "service_slug": "konstrukcje-stalowe",
@@ -1131,12 +1148,14 @@
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/4c148b8b-3313-4ee6-8eea-d027e52002ee-schodystalowe.JPG",
         "title": "Stalowe schody",
-        "description": "Stalowe schody"
+        "description": "Stalowe schody",
+        "localization":"Niemcy"
       },
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/8a91c7c0-39e8-469d-914c-9f5d224880f2-barierka3.jpg",
         "title": "Stalowe schody",
-        "description": "Stalowe schody"
+        "description": "Stalowe schody",
+        "localization":"Niemcy"
       }
     ],
     "service_slug": "schody",
@@ -1586,8 +1605,9 @@
     "image": [
       {
         "url": "https://panel.stalumo.pl/image-public-uploads/0429c519-8e89-4f93-94ff-8f272568275a-IMG_1837.JPG",
-        "title": "Brama przesuwna",
-        "description": "Wiaty i zadaszenia stalowe na wymiar"
+        "title": "Pszok Drawno",
+        "description": "Wiaty i zadaszenia stalowe na wymiar",
+        "localization":"Polska, Zachodniopomorskie - Drawno"
       }
     ],
     "package": [
