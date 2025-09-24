@@ -1,69 +1,873 @@
 [
-    { "city": "Szczecin", "defCity": "Szczecinie", "slugCity": "szczecin" },
-    { "city": "Koszalin", "defCity": "Koszalinie", "slugCity": "koszalin" },
-    { "city": "Stargard", "defCity": "Stargardzie", "slugCity": "stargard" },
-    { "city": "Kołobrzeg", "defCity": "Kołobrzegu", "slugCity": "kolobrzeg" },
-    { "city": "Świnoujście", "defCity": "Świnoujściu", "slugCity": "swinoujscie" },
-    { "city": "Szczecinek", "defCity": "Szczecinku", "slugCity": "szczecinek" },
-    { "city": "Police", "defCity": "Policach", "slugCity": "police" },
-    { "city": "Wałcz", "defCity": "Wałczu", "slugCity": "walcz" },
-    { "city": "Białogard", "defCity": "Białogardzie", "slugCity": "bialogard" },
-    { "city": "Goleniów", "defCity": "Goleniowie", "slugCity": "goleniow" },
-    { "city": "Gryfino", "defCity": "Gryfinie", "slugCity": "gryfino" },
-    { "city": "Nowogard", "defCity": "Nowogardzie", "slugCity": "nowogard" },
-    { "city": "Gryfice", "defCity": "Gryficach", "slugCity": "gryfice" },
-    { "city": "Świdwin", "defCity": "Świdwinie", "slugCity": "swidwin" },
-    { "city": "Choszczno", "defCity": "Choszcznie", "slugCity": "choszczno" },
-    { "city": "Dębno", "defCity": "Dębnie", "slugCity": "debno" },
-    { "city": "Barlinek", "defCity": "Barlinku", "slugCity": "barlinek" },
-    { "city": "Darłowo", "defCity": "Darłowie", "slugCity": "darlowo" },
-    { "city": "Złocieniec", "defCity": "Złocieńcu", "slugCity": "zlocieniec" },
-    { "city": "Pyrzyce", "defCity": "Pyrzycach", "slugCity": "pyrzyce" },
-    { "city": "Sławno", "defCity": "Sławnie", "slugCity": "slawno" },
-    { "city": "Drawsko Pomorskie", "defCity": "Drawsku Pomorskim", "slugCity": "drawsko-pomorskie" },
-    { "city": "Myślibórz", "defCity": "Myśliborzu", "slugCity": "mysliborz" },
-    { "city": "Łobez", "defCity": "Łobzie", "slugCity": "lobez" },
-    { "city": "Trzebiatów", "defCity": "Trzebiatowie", "slugCity": "trzebiatow" },
-    { "city": "Kamień Pomorski", "defCity": "Kamieniu Pomorskim", "slugCity": "kamien-pomorski" },
-    { "city": "Połczyn-Zdrój", "defCity": "Połczynie-Zdroju", "slugCity": "polczyn-zdroj" },
-    { "city": "Chojna", "defCity": "Chojnie", "slugCity": "chojna" },
-    { "city": "Czaplinek", "defCity": "Czaplinku", "slugCity": "czaplinek" },
-    { "city": "Sianów", "defCity": "Sianowie", "slugCity": "sianow" },
-    { "city": "Karlino", "defCity": "Karlinie", "slugCity": "karlino" },
-    { "city": "Międzyzdroje", "defCity": "Międzyzdrojach", "slugCity": "miedzyzdroje" },
-    { "city": "Borne Sulinowo", "defCity": "Bornem Sulinowie", "slugCity": "borne-sulinowo" },
-    { "city": "Wolin", "defCity": "Wolinie", "slugCity": "wolin" },
-    { "city": "Kalisz Pomorski", "defCity": "Kaliszu Pomorskim", "slugCity": "kalisz-pomorski" },
-    { "city": "Resko", "defCity": "Resku", "slugCity": "resko" },
-    { "city": "Bobolice", "defCity": "Bobolicach", "slugCity": "bobolice" },
-    { "city": "Płoty", "defCity": "Płotach", "slugCity": "ploty" },
-    { "city": "Lipiany", "defCity": "Lipianach", "slugCity": "lipiany" },
-    { "city": "Barwice", "defCity": "Barwicach", "slugCity": "barwice" },
-    { "city": "Mieszkowice", "defCity": "Mieszkowicach", "slugCity": "mieszkowice" },
-    { "city": "Maszewo", "defCity": "Maszewie", "slugCity": "maszewo" },
-    { "city": "Chociwel", "defCity": "Chociwlu", "slugCity": "chociwel" },
-    { "city": "Mirosławiec", "defCity": "Mirosławcu", "slugCity": "miroslawiec" },
-    { "city": "Mielno", "defCity": "Mielnie", "slugCity": "mielno" },
-    { "city": "Polanów", "defCity": "Polanowie", "slugCity": "polanow" },
-    { "city": "Recz", "defCity": "Reczu", "slugCity": "recz" },
-    { "city": "Węgorzyno", "defCity": "Węgorzynie", "slugCity": "wegorzyno" },
-    { "city": "Dziwnów", "defCity": "Dziwnowie", "slugCity": "dziwnow" },
-    { "city": "Golczewo", "defCity": "Golczewie", "slugCity": "golczewo" },
-    { "city": "Pełczyce", "defCity": "Pełczycach", "slugCity": "pelczyce" },
-    { "city": "Tychowo", "defCity": "Tychowie", "slugCity": "tychowo" },
-    { "city": "Stepnica", "defCity": "Stepnicy", "slugCity": "stepnica" },
-    { "city": "Gościno", "defCity": "Gościnie", "slugCity": "goscino" },
-    { "city": "Człopa", "defCity": "Człopie", "slugCity": "czlopa" },
-    { "city": "Dobra", "defCity": "Dobrej", "slugCity": "dobra" },
-    { "city": "Drawno", "defCity": "Drawnie", "slugCity": "drawno" },
-    { "city": "Dobrzany", "defCity": "Dobrzanach", "slugCity": "dobrzany" },
-    { "city": "Trzcińsko-Zdrój", "defCity": "Trzcińsku-Zdroju", "slugCity": "trzcinsko-zdroj" },
-    { "city": "Biały Bór", "defCity": "Białym Borze", "slugCity": "bialy-bor" },
-    { "city": "Tuczno", "defCity": "Tucznie", "slugCity": "tuczno" },
-    { "city": "Ińsko", "defCity": "Ińsku", "slugCity": "insko" },
-    { "city": "Moryń", "defCity": "Moryniu", "slugCity": "moryn" },
-    { "city": "Cedynia", "defCity": "Cedyni", "slugCity": "cedynia" },
-    { "city": "Suchań", "defCity": "Suchaniu", "slugCity": "suchan" },
-    { "city": "Nowe Warpno", "defCity": "Nowym Warpnie", "slugCity": "nowe-warpno" }
-  ]
-  
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Szczecin",
+    "defCity": "Szczecinie",
+    "slugCity": "szczecin"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Koszalin",
+    "defCity": "Koszalinie",
+    "slugCity": "koszalin"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Stargard",
+    "defCity": "Stargardzie",
+    "slugCity": "stargard"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Kołobrzeg",
+    "defCity": "Kołobrzegu",
+    "slugCity": "kolobrzeg"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Świnoujście",
+    "defCity": "Świnoujściu",
+    "slugCity": "swinoujscie"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Szczecinek",
+    "defCity": "Szczecinku",
+    "slugCity": "szczecinek"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Police",
+    "defCity": "Policach",
+    "slugCity": "police"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Wałcz",
+    "defCity": "Wałczu",
+    "slugCity": "walcz"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Białogard",
+    "defCity": "Białogardzie",
+    "slugCity": "bialogard"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Goleniów",
+    "defCity": "Goleniowie",
+    "slugCity": "goleniow"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Gryfino",
+    "defCity": "Gryfinie",
+    "slugCity": "gryfino"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Nowogard",
+    "defCity": "Nowogardzie",
+    "slugCity": "nowogard"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Gryfice",
+    "defCity": "Gryficach",
+    "slugCity": "gryfice"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Świdwin",
+    "defCity": "Świdwinie",
+    "slugCity": "swidwin"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Choszczno",
+    "defCity": "Choszcznie",
+    "slugCity": "choszczno"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Dębno",
+    "defCity": "Dębnie",
+    "slugCity": "debno"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Barlinek",
+    "defCity": "Barlinku",
+    "slugCity": "barlinek"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Darłowo",
+    "defCity": "Darłowie",
+    "slugCity": "darlowo"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Złocieniec",
+    "defCity": "Złocieńcu",
+    "slugCity": "zlocieniec"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Pyrzyce",
+    "defCity": "Pyrzycach",
+    "slugCity": "pyrzyce"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Sławno",
+    "defCity": "Sławnie",
+    "slugCity": "slawno"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Drawsko Pomorskie",
+    "defCity": "Drawsku Pomorskim",
+    "slugCity": "drawsko-pomorskie"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Myślibórz",
+    "defCity": "Myśliborzu",
+    "slugCity": "mysliborz"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Łobez",
+    "defCity": "Łobzie",
+    "slugCity": "lobez"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Trzebiatów",
+    "defCity": "Trzebiatowie",
+    "slugCity": "trzebiatow"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Kamień Pomorski",
+    "defCity": "Kamieniu Pomorskim",
+    "slugCity": "kamien-pomorski"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Połczyn-Zdrój",
+    "defCity": "Połczynie-Zdroju",
+    "slugCity": "polczyn-zdroj"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Chojna",
+    "defCity": "Chojnie",
+    "slugCity": "chojna"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Czaplinek",
+    "defCity": "Czaplinku",
+    "slugCity": "czaplinek"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Sianów",
+    "defCity": "Sianowie",
+    "slugCity": "sianow"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Karlino",
+    "defCity": "Karlinie",
+    "slugCity": "karlino"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Międzyzdroje",
+    "defCity": "Międzyzdrojach",
+    "slugCity": "miedzyzdroje"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Borne Sulinowo",
+    "defCity": "Bornem Sulinowie",
+    "slugCity": "borne-sulinowo"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Wolin",
+    "defCity": "Wolinie",
+    "slugCity": "wolin"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Kalisz Pomorski",
+    "defCity": "Kaliszu Pomorskim",
+    "slugCity": "kalisz-pomorski"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Resko",
+    "defCity": "Resku",
+    "slugCity": "resko"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Bobolice",
+    "defCity": "Bobolicach",
+    "slugCity": "bobolice"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Płoty",
+    "defCity": "Płotach",
+    "slugCity": "ploty"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Lipiany",
+    "defCity": "Lipianach",
+    "slugCity": "lipiany"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Barwice",
+    "defCity": "Barwicach",
+    "slugCity": "barwice"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Mieszkowice",
+    "defCity": "Mieszkowicach",
+    "slugCity": "mieszkowice"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Maszewo",
+    "defCity": "Maszewie",
+    "slugCity": "maszewo"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Chociwel",
+    "defCity": "Chociwlu",
+    "slugCity": "chociwel"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Mirosławiec",
+    "defCity": "Mirosławcu",
+    "slugCity": "miroslawiec"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Mielno",
+    "defCity": "Mielnie",
+    "slugCity": "mielno"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Polanów",
+    "defCity": "Polanowie",
+    "slugCity": "polanow"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Recz",
+    "defCity": "Reczu",
+    "slugCity": "recz"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Węgorzyno",
+    "defCity": "Węgorzynie",
+    "slugCity": "wegorzyno"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Dziwnów",
+    "defCity": "Dziwnowie",
+    "slugCity": "dziwnow"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Golczewo",
+    "defCity": "Golczewie",
+    "slugCity": "golczewo"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Pełczyce",
+    "defCity": "Pełczycach",
+    "slugCity": "pelczyce"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Tychowo",
+    "defCity": "Tychowie",
+    "slugCity": "tychowo"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Stepnica",
+    "defCity": "Stepnicy",
+    "slugCity": "stepnica"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Gościno",
+    "defCity": "Gościnie",
+    "slugCity": "goscino"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Człopa",
+    "defCity": "Człopie",
+    "slugCity": "czlopa"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Dobra",
+    "defCity": "Dobrej",
+    "slugCity": "dobra"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Drawno",
+    "defCity": "Drawnie",
+    "slugCity": "drawno"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Dobrzany",
+    "defCity": "Dobrzanach",
+    "slugCity": "dobrzany"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Trzcińsko-Zdrój",
+    "defCity": "Trzcińsku-Zdroju",
+    "slugCity": "trzcinsko-zdroj"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Biały Bór",
+    "defCity": "Białym Borze",
+    "slugCity": "bialy-bor"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Tuczno",
+    "defCity": "Tucznie",
+    "slugCity": "tuczno"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Ińsko",
+    "defCity": "Ińsku",
+    "slugCity": "insko"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Moryń",
+    "defCity": "Moryniu",
+    "slugCity": "moryn"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Cedynia",
+    "defCity": "Cedyni",
+    "slugCity": "cedynia"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Suchań",
+    "defCity": "Suchaniu",
+    "slugCity": "suchan"
+  },
+  {
+    "regio": "Zachodniopomorskie",
+"slugRegio": "zachodniopomorskie",
+    "regioDef": "Zachodniopomorskiego",
+    "city": "Nowe Warpno",
+    "defCity": "Nowym Warpnie",
+    "slugCity": "nowe-warpno"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Gdańsk",
+    "defCity": "Gdańsku",
+    "slugCity": "gdansk"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Gdynia",
+    "defCity": "Gdyni",
+    "slugCity": "gdynia"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Słupsk",
+    "defCity": "Słupsku",
+    "slugCity": "slupsk"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Sopot",
+    "defCity": "Sopocie",
+    "slugCity": "sopot"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Tczew",
+    "defCity": "Tczewie",
+    "slugCity": "tczew"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Starogard Gdański",
+    "defCity": "Starogardzie Gdańskim",
+    "slugCity": "starogard-gdanski"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Wejherowo",
+    "defCity": "Wejherowie",
+    "slugCity": "wejherowo"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Rumia",
+    "defCity": "Rumii",
+    "slugCity": "rumia"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Reda",
+    "defCity": "Redzie",
+    "slugCity": "reda"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Chojnice",
+    "defCity": "Chojnicach",
+    "slugCity": "chojnice"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Malbork",
+    "defCity": "Malborku",
+    "slugCity": "malbork"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Kwidzyn",
+    "defCity": "Kwidzynie",
+    "slugCity": "kwidzyn"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Lębork",
+    "defCity": "Lęborku",
+    "slugCity": "lebork"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Człuchów",
+    "defCity": "Człuchowie",
+    "slugCity": "czluchow"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Bytów",
+    "defCity": "Bytowie",
+    "slugCity": "bytow"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Kartuzy",
+    "defCity": "Kartuzach",
+    "slugCity": "kartuzy"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Nowy Dwór Gdański",
+    "defCity": "Nowym Dworze Gdańskim",
+    "slugCity": "nowy-dwor-gdanski"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Sztum",
+    "defCity": "Sztumie",
+    "slugCity": "sztum"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Pruszcz Gdański",
+    "defCity": "Pruszczu Gdańskim",
+    "slugCity": "pruszcz-gdanski"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Ustka",
+    "defCity": "Ustce",
+    "slugCity": "ustka"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Hel",
+    "defCity": "Helu",
+    "slugCity": "hel"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Jastarnia",
+    "defCity": "Jastarni",
+    "slugCity": "jastarnia"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Łeba",
+    "defCity": "Łebie",
+    "slugCity": "leba"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Puck",
+    "defCity": "Pucku",
+    "slugCity": "puck"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Kościerzyna",
+    "defCity": "Kościerzynie",
+    "slugCity": "koscierzyna"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Pelplin",
+    "defCity": "Pelplinie",
+    "slugCity": "pelplin"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Czersk",
+    "defCity": "Czersku",
+    "slugCity": "czersk"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Brusy",
+    "defCity": "Brusach",
+    "slugCity": "brusy"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Miastko",
+    "defCity": "Miastku",
+    "slugCity": "miastko"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Czarne",
+    "defCity": "Czarnem",
+    "slugCity": "czarne"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Ustka",
+    "defCity": "Ustce",
+    "slugCity": "ustka"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Skarszewy",
+    "defCity": "Skarszewach",
+    "slugCity": "skarszewy"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Nowy Staw",
+    "defCity": "Nowym Stawie",
+    "slugCity": "nowy-staw"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Krynica Morska",
+    "defCity": "Krynicy Morskiej",
+    "slugCity": "krynica-morska"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Żukowo",
+    "defCity": "Żukowie",
+    "slugCity": "zukowo"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Sierakowice",
+    "defCity": "Sierakowicach",
+    "slugCity": "sierakowice"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Subkowy",
+    "defCity": "Subkowach",
+    "slugCity": "subkowy"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Somonino",
+    "defCity": "Somoninie",
+    "slugCity": "somonino"
+  },
+  {
+    "regio": "Pomorskie",
+    "slugRegio": "pomorskie",
+    "regioDef": "Pomorskiego",
+    "city": "Prabuty",
+    "defCity": "Prabutach",
+    "slugCity": "prabuty"
+  },
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Gorzów Wielkopolski","defCity":"Gorzowie Wielkopolskim","slugCity":"gorzow-wielkopolski"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Zielona Góra","defCity":"Zielonej Górze","slugCity":"zielona-gora"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Żary","defCity":"Żarach","slugCity":"zary"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Nowa Sól","defCity":"Nowej Soli","slugCity":"nowa-sol"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Świebodzin","defCity":"Świebodzinie","slugCity":"swiebodzin"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Międzyrzecz","defCity":"Międzyrzeczu","slugCity":"miedzyrzecz"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Słubice","defCity":"Słubicach","slugCity":"slubice"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Żagań","defCity":"Żaganiu","slugCity":"zagan"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Krosno Odrzańskie","defCity":"Krosnie Odrzańskim","slugCity":"krosno-odrzanskie"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Gubin","defCity":"Gubinie","slugCity":"gubin"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Wschowa","defCity":"Wschowie","slugCity":"wschowa"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Nowe Miasteczko","defCity":"Nowym Miasteczku","slugCity":"nowe-miasteczko"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Łęknica","defCity":"Łęknicy","slugCity":"leknica"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Sulechów","defCity":"Sulechowie","slugCity":"sulechow"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Tuplice","defCity":"Tuplicach","slugCity":"tuplice"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Gozdnica","defCity":"Gozdnicy","slugCity":"gozdnica"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Dobiegniew","defCity":"Dobiegniewie","slugCity":"dobiegniew"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Skwierzyna","defCity":"Skwierzynie","slugCity":"skwierzyna"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Strzelce Krajeńskie","defCity":"Strzelcach Krajeńskich","slugCity":"strzelce-krajenskie"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Sulęcin","defCity":"Sulęcinie","slugCity":"sulecin"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Trzebiel","defCity":"Trzebielu","slugCity":"trzebiel"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Łagów","defCity":"Łagowie","slugCity":"lagow"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Cybinka","defCity":"Cybince","slugCity":"cybinka"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Bojadła","defCity":"Bojadle","slugCity":"bojadla"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Jasień","defCity":"Jasieniu","slugCity":"jasien"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Lubniewice","defCity":"Lubniewicach","slugCity":"lubniewice"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Górzyca","defCity":"Górzycy","slugCity":"gorzyca"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Sława","defCity":"Sławie","slugCity":"slawa"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Lubrza","defCity":"Lubrzy","slugCity":"lubrza"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Kostrzyn nad Odrą","defCity":"Kostrzynie nad Odrą","slugCity":"kostrzyn-nad-odra"},
+  {"regio":"Lubuskie","slugRegio":"lubuskie","regioDef":"Lubuskiego","city":"Bytom Odrzański","defCity":"Bytomiu Odrzańskim","slugCity":"bytom-odrzanski"}
+]

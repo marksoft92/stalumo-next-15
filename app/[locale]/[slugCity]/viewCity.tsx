@@ -17,6 +17,54 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
+
+
+const cityPoland = {
+"zachodniopomorskie": ['Szczecin', 'Koszalin', 'Kołobrzeg', 'Stargard',
+  'Świnoujście', 'Police', 'Goleniów', 'Wałcz',
+  'Gryfino', 'Szczecinek', 'Białogard', 'Gryfice',
+  'Myślibórz', 'Nowogard', 'Złocieniec', 'Łobez'],
+ "pomorskie": [
+  "Gdańsk",
+  "Gdynia",
+  "Sopot",
+  "Słupsk",
+  "Tczew",
+  "Starogard Gdański",
+  "Wejherowo",
+  "Rumia",
+  "Reda",
+  "Chojnice",
+  "Malbork",
+  "Kwidzyn",
+  "Lębork",
+  "Człuchów",
+  "Bytów",
+  "Kartuzy"
+],
+"lubuskie": [
+  "Gorzów Wielkopolski",
+  "Zielona Góra",
+  "Żary",
+  "Nowa Sól",
+  "Świebodzin",
+  "Międzyrzecz",
+  "Słubice",
+  "Żagań",
+  "Krosno Odrzańskie",
+  "Gubin",
+  "Wschowa",
+  "Sulęcin",
+  "Skwierzyna",
+  "Strzelce Krajeńskie",
+  "Kostrzyn nad Odrą",
+  "Bytom Odrzański"
+],
+
+}
+type RegionKey = keyof typeof cityPoland;
+
+
 type ServiceEntry = {
   slugCity: string;
   city: string;
@@ -209,7 +257,7 @@ export default function Page({ entry }: any) {
     },
     areaServed: [
       { "@type": "City", name: entry.city },
-      { "@type": "AdministrativeArea", name: "Zachodniopomorskie" },
+      { "@type": "AdministrativeArea", name: entry.regio },
     ],
   };
 
@@ -639,7 +687,7 @@ return (
               </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Obsługujemy {entry.city} i cały region zachodniopomorski z szybkim wsparciem na miejscu.
+                Obsługujemy {entry.city} i cały region województwa {entry?.regioDef} z szybkim wsparciem na miejscu.
               </p>
             </motion.div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -652,12 +700,7 @@ return (
                 <div className="bg-gradient-to-br from-gray-900 to-black border border-red-500/30 rounded-2xl p-8 hover:shadow-[0_0_40px_rgba(235,64,54,0.3)] transition-all duration-300">
                   <h3 className="text-3xl font-bold text-white mb-6 text-center">Miasta, które obsługujemy</h3>
                   <div className="grid grid-cols-2 gap-4">
-                    {[
-                      'Szczecin', 'Koszalin', 'Kołobrzeg', 'Stargard',
-                      'Świnoujście', 'Police', 'Goleniów', 'Wałcz',
-                      'Gryfino', 'Szczecinek', 'Białogard', 'Gryfice',
-                      'Myślibórz', 'Nowogard', 'Złocieniec', 'Łobez'
-                    ].map((area: string, index: number) => (
+                    {cityPoland?.[entry.slugRegio as RegionKey].map((area: any, index: any) => (
                       <div
                         key={index}
                         className={`p-3 rounded-lg text-center font-semibold transition-all duration-300 ${area.toLowerCase() === city ? "bg-red-500 text-black" : "bg-gray-800 text-gray-300 hover:bg-red-500/20 hover:text-red-500"

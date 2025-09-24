@@ -42,7 +42,10 @@ export default async function Page({ params }: any) {
     })),
     defCity: cityEntry.defCity,
     slugCity: cityEntry.slugCity,
-    city: cityEntry.city
+    city: cityEntry.city,
+    regio:cityEntry.regio,
+    regioDef:cityEntry.regioDef,
+    slugRegio: cityEntry.slugRegio
   };
 
 
