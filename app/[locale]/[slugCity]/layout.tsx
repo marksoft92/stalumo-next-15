@@ -2,6 +2,7 @@ import services from "@/data/services.json";
 import cities from "@/data/city.json";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
+import { notFound } from "next/navigation";
 interface Props { params: any; }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -11,11 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityEntry = cities.find(c => c.slugCity === citySlug);
 
   if (!serviceEntry || !cityEntry) {
-    return {
-      title: "Nie znaleziono usługi",
-      description: "Strona nie istnieje",
-      robots: "noindex, nofollow",
-    };
+    notFound(); 
   }
 
 

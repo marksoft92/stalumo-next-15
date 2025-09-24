@@ -1,7 +1,6 @@
 import PerformanceSlider from "@/components/PerformanceSlider";
 import Container from "@/components/ui/container";
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
 import Button from "@/components/ui/button";
 
 export default async function NotFound() {
