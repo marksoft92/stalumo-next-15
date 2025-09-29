@@ -151,7 +151,7 @@ const ProductBox = ({ productData, locale }: any) => {
               {/* Thumbnail Gallery */}
               <div className="grid grid-cols-4 gap-4">
 
-                {([...productData?.images , productData?.video] || [])?.map((img: any, index: any) => (
+                {([...productData?.images , productData?.video])?.map((img: any, index: any) => (
                   <button
                     key={index}
                     onClick={() => setSelectedImageIndex(img?.type === 'video' ? 0 : index)}
