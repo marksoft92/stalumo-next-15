@@ -100,7 +100,7 @@ const ProductBox = ({ productData, locale }: any) => {
               </h1>
 
             </div>
-<>{console.log(productData?.video)}</>
+
             {/* Rating */}
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-1">
