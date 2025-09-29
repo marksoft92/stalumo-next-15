@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import Video from "@/components/Video";
 
 
 const ProductBox = ({ productData, locale }: any) => {
@@ -99,7 +100,7 @@ const ProductBox = ({ productData, locale }: any) => {
               </h1>
 
             </div>
-
+<>{console.log(productData?.video)}</>
             {/* Rating */}
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-1">
@@ -150,20 +151,28 @@ const ProductBox = ({ productData, locale }: any) => {
               {/* Thumbnail Gallery */}
               <div className="grid grid-cols-4 gap-4">
 
-                {(productData?.images || [])?.map((img: any, index: any) => (
+                {([...productData?.images , productData?.video] || [])?.map((img: any, index: any) => (
                   <button
                     key={index}
-                    onClick={() => setSelectedImageIndex(index)}
+                    onClick={() => setSelectedImageIndex(img?.type === 'video' ? 0 : index)}
                     className={`aspect-square rounded-lg overflow-hidden transition-all duration-300 ${selectedImageIndex === index
                       ? "ring-2 ring-red-500 opacity-100 scale-105"
                       : "opacity-70 hover:opacity-100"
                       }`}
                   >
-                    <img
+                                      {img?.type === 'video' ? (
+                        <Video
+                        src={img.src}
+                        poster={productData.images[0]?.src} // miniaturka zawsze pierwsze zdjęcie produktu
+                      />
+                    ) : (
+                      img?.src && <img
                       src={img?.src}
                       alt={`Miniatura ${index + 1}`}
                       className="w-full h-full object-cover"
-                    />
+                      />
+                    )}
+
                   </button>
                 ))}
               </div>
