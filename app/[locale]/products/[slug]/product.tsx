@@ -441,10 +441,10 @@ const ProductBox = ({ productData, locale }: any) => {
                     {[...Array(5)].map((_, starIndex) => (
                       <Star
                         key={starIndex}
-                        className={`w-4 h-4 ${starIndex < Math.floor(product?.rating) ? 'text-yellow-400 fill-current' : 'text-neutral-600'}`}
+                        className={`w-4 h-4 ${starIndex < Math.floor(5) ? 'text-yellow-400 fill-current' : 'text-neutral-600'}`}
                       />
                     ))}
-                    <span className="text-sm text-neutral-400 ml-1">({product?.rating})</span>
+                    <span className="text-sm text-neutral-400 ml-1">({5})</span>
                   </div>
 
                   <div className="flex items-center gap-2">
