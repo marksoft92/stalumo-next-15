@@ -46,7 +46,7 @@ function ProductCardClient({
 }: ProductCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
-
+  const [loading, setLoading] = useState(false);
 
   const difference = Math.round(((regular_price - price) / regular_price) * 100);
   const t = useTranslations("Products")
@@ -61,9 +61,17 @@ function ProductCardClient({
       onHoverEnd={() => setIsHovered(false)}
       className="group"
     >
-      <Link href={slug} className="block">
+      <Link href={slug} className="block" onClick={() => setLoading(true)}>
         <div className="relative bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-2xl overflow-hidden shadow-xl border border-neutral-700/50 hover:border-red-500/30 transition-all duration-500">
-
+        {loading && (
+      <div className="absolute inset-0 flex items-center justify-center bg-black/60 z-50">
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ repeat: Infinity, duration: 1 }}
+          className="w-8 h-8 border-2 border-white border-t-transparent rounded-full"
+        />
+      </div>
+    )}
           {/* Top badges */}
           <div className="absolute top-4 left-4 z-20 flex gap-2">
             <motion.div
