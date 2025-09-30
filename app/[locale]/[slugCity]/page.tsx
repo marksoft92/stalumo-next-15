@@ -45,7 +45,8 @@ export default async function Page({ params }: any) {
     city: cityEntry.city,
     regio:cityEntry.regio,
     regioDef:cityEntry.regioDef,
-    slugRegio: cityEntry.slugRegio
+    slugRegio: cityEntry.slugRegio,
+    fromCity: cityEntry.fromCity
   };
 
 

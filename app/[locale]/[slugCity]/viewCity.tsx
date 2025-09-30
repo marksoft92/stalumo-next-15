@@ -321,7 +321,7 @@ export default function Page({ entry }: any) {
               className="space-y-8"
             >
               <div className="inline-block px-6 py-2 bg-red-500/20 border border-red-500 rounded-full text-red-500 text-sm font-semibold uppercase tracking-[4px] backdrop-blur-sm">
-                {entry.service_name} • {entry.city}
+                {entry.cta} • {entry.city}
               </div>
               <h1 className="text-[2rem] sm:text-[6rem] font-oswald font-black uppercase leading-[0.9] tracking-tight">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-500 to-gray-300">
@@ -487,7 +487,7 @@ export default function Page({ entry }: any) {
               </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Wykorzystujemy nowoczesne technologie i doświadczenie, aby dostarczać najwyższej jakości usługi dla naszych klientów.
+              Wykorzystujemy nowoczesne technologie i doświadczenie, aby dostarczać najwyższej jakości usługi dla naszych klientów {entry?.fromCity}
               </p>
             </motion.div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -618,7 +618,7 @@ return (
               className="text-center mb-20"
             >
               <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
-                Co Mówią Klienci z <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">{entry.city}</span>
+                Co Mówią Klienci  <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">{entry.fromCity}</span>
               </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
               <div className="flex justify-center items-center gap-2">
@@ -851,7 +851,7 @@ return (
               </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full mb-8"></div>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Zobacz nasze projekty barierek stalowych i konstrukcji..
+                {entry?.service_name}
               </p>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -1217,7 +1217,7 @@ return (
             >
               <h2 className="text-[2rem] sm:text-5xl lg:text-7xl font-oswald font-black uppercase leading-[0.9]">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-gray-300 to-red-500">
-                  Gotowy na Start?
+                  Gotowy na Start w {entry.defCity}?
                 </span>
               </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-gray-300 mx-auto rounded-full"></div>
