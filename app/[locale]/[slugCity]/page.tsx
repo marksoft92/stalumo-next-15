@@ -1,3 +1,7 @@
+export const dynamicParams = true; // pozwala renderować wszystkie kombinacje
+export const revalidate = false;   // nie korzysta z ISR (unikasz przejściowych 404)
+export const dynamic = "force-static"; // wymusza stabilny plik HTML (200 OK)
+
 import services from "@/data/services.json"; // 10 usług
 import cities from "@/data/city.json";     // 20 miast
 import { notFound } from "next/navigation";
@@ -43,8 +47,8 @@ export default async function Page({ params }: any) {
     defCity: cityEntry.defCity,
     slugCity: cityEntry.slugCity,
     city: cityEntry.city,
-    regio:cityEntry.regio,
-    regioDef:cityEntry.regioDef,
+    regio: cityEntry.regio,
+    regioDef: cityEntry.regioDef,
     slugRegio: cityEntry.slugRegio,
     fromCity: cityEntry.fromCity
   };
