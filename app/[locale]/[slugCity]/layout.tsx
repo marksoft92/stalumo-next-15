@@ -3,11 +3,9 @@ import cities from "@/data/city.json";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
 
-interface Props {
-  params: { slugCity: string };
-}
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   const [slug, citySlug] = params.slugCity.split("~");
 
   const serviceEntry = services.find(item => item.service_slug === slug);
