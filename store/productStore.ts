@@ -26,7 +26,7 @@ export const useProductsStore = create<ProductsState>((set, get) => ({
 
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_APP_URL}api/products?locale=${locale}&page=1&limit=12`,
+        `/api/products?locale=${locale}&page=1&limit=12`,
         { cache: "no-store" }
       );
       if (!res.ok) throw new Error("Failed to fetch products");
