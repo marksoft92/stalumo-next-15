@@ -135,6 +135,7 @@ type Props = {
   };
 };
 import * as LucideIcons from 'lucide-react';
+import HorizontalBaner from "@/components/cart/HorizontalBaner";
 
 const iconsMap: Record<string, React.ElementType> = {
   Power: LucideIcons.Power,
@@ -469,16 +470,16 @@ export default function Page({ entry }: any) {
           </div>
         </section>
 
-
        {/* Sekcja technologii */}
        <section className="py-24 bg-gradient-to-b from-black to-gray-900">
+
           <div className="max-w-7xl mx-auto px-6">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-center mb-20"
-            >
+            ><HorizontalBaner />
               <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
                 Profesjonalizm
@@ -842,7 +843,7 @@ return (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-center mb-20"
-            >
+            ><HorizontalBaner />
               <h2 className="text-[2rem] sm:text-5xl lg:text-6xl font-oswald font-bold uppercase mb-8">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300">
                   Nasze Ostatnie Realizacje

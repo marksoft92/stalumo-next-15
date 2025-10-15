@@ -4,10 +4,12 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import LazyBackground from "@/components/lazyBackground";
+import HorizontalBaner from "@/components/cart/HorizontalBaner";
 const Steps: React.FC = async () => {
   const t = await getTranslations("HomePage.Steps");
-  return (
+  return (<> 
     <section className=" p-1 lg:p-20 steps py-20 flex flex-row w-auto h-full flex-grow self-stretch gap-0 transition-bg duration-300 mt-[-77px] mb-0 ml-0 mr-0 relative gap-[30px] items-end max-lg:flex-col max-lg:flex-col-reverse">
+     
       <div className="flex-1 flex flex-col gap-4 h-full">
         <div className="flex flex-row items-end">
           <Image
@@ -80,7 +82,9 @@ const Steps: React.FC = async () => {
           {t("button")}
         </Link>
       </LazyBackground>
+      
     </section>
+  <HorizontalBaner /></>
   );
 };
 

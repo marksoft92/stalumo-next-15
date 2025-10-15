@@ -29,7 +29,7 @@ export default function ProductsBanner() {
   const items = [...products, ...products];
 
   return (
-    <div className="relative w-full overflow-hidden bg-neutral-900 my-[2rem]">
+    <div className="relative w-full overflow-hidden  my-[2rem]">
       <motion.div
         className="flex w-max"
         animate={{ x: ["0%", "-50%"] }}
@@ -69,7 +69,7 @@ export default function ProductsBanner() {
 
               {/* Treść */}
               <div className="w-1/2 p-4 flex flex-col justify-between text-white">
-                <h3 className="font-semibold text-sm line-clamp-2">
+                <h3 className="font-semibold text-sm line-clamp-2 overflow-visible">
                   {p?.meta_data_parsed?.locales?.[locale]?.title}
                 </h3>
 
