@@ -35,7 +35,7 @@ export default function ProductsBanner() {
         animate={{ x: ["0%", "-50%"] }}
         transition={{
           repeat: Infinity,
-          duration: isMobile ? 8 : 40, // krótszy czas na mobilki
+          duration: isMobile ? 20 : 40, // krótszy czas na mobilki
           ease: "linear",
         }}
       >
