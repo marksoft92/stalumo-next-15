@@ -32,6 +32,7 @@ import Image from "next/image";
 
 
 
+
 // Animation variants
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -289,7 +290,7 @@ export default function AboutPage() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-2 mb-8">
-            {Object.entries(tabContent).map(([key, content]) => (
+            {Object.entries(tabContent).map(([key, content]:any) => (
               <button
                 key={key}
                 onClick={() => setActiveTab(key)}
@@ -298,7 +299,7 @@ export default function AboutPage() {
                   : 'bg-[#2A2A2A] text-[#707070] hover:text-[#EB4036] hover:bg-[#2A2A2A]/80'
                   }`}
               >
-                {tabContent[activeTab as keyof typeof tabContent]?.title}
+                {content?.title}
               </button>
             ))}
           </div>

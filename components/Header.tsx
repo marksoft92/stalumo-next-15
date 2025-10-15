@@ -310,18 +310,11 @@ export default function NavBar() {
                 variants={fadeIn}
                 whileHover={{ scale: 1.05 }}
               >
-                {/* <Link
+                <Link
                   href="/products"
                   className="group bg-[#EB4036] hover:bg-[#d63428] text-white px-6 py-3 rounded-lg font-semibold uppercase text-sm tracking-wider transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-2xl hover:shadow-[#EB4036]/25"
                 >
                   {t("store")}
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link> */}
-                <Link
-                  href="/contact"
-                  className="group bg-[#EB4036] hover:bg-[#d63428] text-white px-6 py-3 rounded-lg font-semibold uppercase text-sm tracking-wider transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-2xl hover:shadow-[#EB4036]/25"
-                >
-                  {t("estimate")}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </motion.div>
@@ -358,10 +351,10 @@ export default function NavBar() {
                 variants={fadeIn}
               >
                 <Link
-                  href="/contact"
+                  href="/products"
                   className="bg-[#EB4036] hover:bg-[#d63428] text-white px-3 py-2 md:px-4 md:py-2 rounded-lg font-semibold text-xs md:text-sm transition-all duration-300 whitespace-nowrap"
                 >
-                  Kontakt
+                  {t("store")}
                 </Link>
               </motion.div>
 
