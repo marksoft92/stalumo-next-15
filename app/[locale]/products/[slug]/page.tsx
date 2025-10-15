@@ -36,7 +36,7 @@ const fetchProducts = async (locale: string, page: number, limit: number, slug: 
   }
 };
 
-export async function generateMetadata({ params }: { params: { locale: string; slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   const { locale, slug } = params;
 
   // pobieramy produkt (możesz wykorzystać tę samą funkcję co w page)
