@@ -11,6 +11,8 @@ import Container from "@/components/ui/container";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import { Locale, routing } from "@/i18n/routing";
 import type { Metadata } from "next";
+import ProductPage from "./products/page";
+import Store from "@/components/sections/home/Store";
 
 export async function generateMetadata({
   params,
@@ -87,7 +89,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function HomePage() {
+export default async function HomePage(params:any) {
 
   return (
     <>
@@ -98,6 +100,8 @@ export default async function HomePage() {
         <ScrollAnimation direction="left"> <About /></ScrollAnimation>
         <ScrollAnimation direction="left"><VisionMission /></ScrollAnimation>
         <OurServices />
+        <Store><ProductPage  {...params}/></Store>
+
         <ScrollAnimation direction="left"><Realization /></ScrollAnimation>
         <ScrollAnimation direction="left"> <OurProcess /></ScrollAnimation>
         <ScrollAnimation direction="left"> <Faq /></ScrollAnimation>
