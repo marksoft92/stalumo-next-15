@@ -425,7 +425,7 @@ const ProductBox = ({ productData, locale }: any) => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {(productData.relatedProducts || []).map((product: any, i: any) => (
-              <div key={i} className="group bg-gradient-to-br from-neutral-800/30 to-neutral-900/30 backdrop-blur-sm rounded-xl p-6 border border-neutral-700/50 hover:border-red-500/50 transition-all duration-300 hover:scale-105">
+              <div key={i} className="flex flex-col justify-between items-center group bg-gradient-to-br from-neutral-800/30 to-neutral-900/30 backdrop-blur-sm rounded-xl p-6 border border-neutral-700/50 hover:border-red-500/50 transition-all duration-300 hover:scale-105">
                 <div className="aspect-square bg-neutral-800 rounded-lg mb-4 overflow-hidden">
                   <img
                     src={product?.image}
@@ -434,7 +434,7 @@ const ProductBox = ({ productData, locale }: any) => {
                   />
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-3 w-full">
                   <h3 className="font-semibold text-white group-hover:text-red-300 transition-colors">{product.name}</h3>
 
                   <div className="flex items-center gap-1 mb-2">
