@@ -52,7 +52,7 @@ const ProductsPageContainer = async ({ params }: { params: any }) => {
 
           {/* Breadcrumb */}
           <nav className="mb-8 text-sm text-neutral-400 mt-[1rem]">
-            <Link href="/"><span>{tHeader("home")}</span></Link> / <Link href="/products"><span>{t("title")}</span></Link> 
+            <Link href="/"><span>{tHeader("home")}</span></Link> / <Link href="/products"><span className="text-white">{t("title")}</span></Link> 
           </nav>
 
         {(products?.length && (
