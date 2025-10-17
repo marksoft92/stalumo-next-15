@@ -77,7 +77,7 @@ const FAQ = () => {
       />
       <div className=" flex flex-col items-center  bg-gradient-to-b from-[#222222] via-[#222222b3] to-[#02010100] z-[1] relative w-[80%] pt-8 max-lg:w-full max-lg: text-center">
         <h4 className="text-[#EB4036] text-[1rem] font-semibold">FAQS</h4>
-        <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem]">
+        <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem] text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-[#EB4036]">
           {t("title")}
         </h2>
         <div className="space-y-4 w-full flex flex-col items-center my-[2rem]">

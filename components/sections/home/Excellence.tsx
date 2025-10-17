@@ -25,8 +25,8 @@ const Excellence: React.FC = async () => {
               {t("subTitle")}
               <div className="hidden w-[15%] max-w-[15%] flex-grow-0 absolute top-[-30px] left-[450px] h-[50px] bg-transparent bg-gradient-to-r from-[#EB4036] to-[#02010100] opacity-[0.8]"></div>
             </h4>
-            <h1 className="mt-10 mb-10 leading-tight --font-oswald text-[#FFFFFF] font-oswald text-[6.5rem] font-semibold uppercase leading-[1em] tracking-[3.8px] max-lg:text-[2.5rem]">
-              {t("title")}
+            <h1 className="mt-10 mb-10 leading-tight --font-oswald  font-oswald text-[6.5rem] font-semibold uppercase leading-[1em] tracking-[3.8px] max-lg:text-[2.5rem] z-0">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-[#EB4036] "> {t("title")}</span> 
             </h1>
             <p className="pt-[10px] pl-0 pr-0 pb-0 text-[#A5A5A5] font-raleway text-[1.2rem] font-normal leading-[1.6em] tracking-[1.6px] word-spacing-[normal] flex-grow-0">
               {t("description")}

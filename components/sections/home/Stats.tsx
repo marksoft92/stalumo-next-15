@@ -9,7 +9,7 @@ const Stats: React.FC = async () => {
         <h4 className="text-[#A5A5A5] text-[1.2rem] font-semibold uppercase ">
           {t("hours")}
         </h4>
-        <h2 className="text-[5.5rem] font-semibold uppercase max-lg:flex">
+        <h2 className="text-[5.5rem] font-semibold uppercase max-lg:flex text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-[#EB4036]">
           1000 <span className="text-[#EB4036]">+</span>
         </h2>
       </div>
@@ -17,7 +17,7 @@ const Stats: React.FC = async () => {
         <h4 className="text-[#A5A5A5] text-[1.2rem] font-semibold uppercase ">
           {t("clients")}
         </h4>
-        <h2 className="text-[5.5rem] font-semibold uppercase max-lg:flex">
+        <h2 className="text-[5.5rem] font-semibold uppercase max-lg:flex text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-[#EB4036]">
           50 <span className="text-[#EB4036]">+</span>
         </h2>
       </div>
@@ -25,7 +25,7 @@ const Stats: React.FC = async () => {
         <h4 className="text-[#A5A5A5] text-[1.2rem] font-semibold uppercase">
           {t("projects")}
         </h4>
-        <h2 className="text-[5.5rem] font-semibold uppercase max-lg:flex">
+        <h2 className="text-[5.5rem] font-semibold uppercase max-lg:flex text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-[#EB4036]">
           115 <span className="text-[#EB4036]">+</span>
         </h2>
       </div>

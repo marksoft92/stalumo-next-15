@@ -12,7 +12,7 @@ const VisionMission: React.FC = async () => {
         <h4 className="text-[#EB4036] text-[1rem] font-semibold uppercase">
           {t("subTitle")}
         </h4>
-        <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem]">
+        <h2 className="text-[3.5rem] font-semibold uppercase max-lg:text-[2.5rem] text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-[#EB4036]">
           {t("title")}
         </h2>
         <p className="text-[#A5A5A5] text-[1.2rem]">{t("description")}</p>
