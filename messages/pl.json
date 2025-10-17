@@ -662,7 +662,23 @@
   "section10Content": "W sprawach nieuregulowanych zastosowanie mają przepisy prawa polskiego. Spory rozstrzygane są przez sądy właściwe dla siedziby Sprzedawcy.",
 
   "contactNote": "W razie pytań prosimy o kontakt z obsługą sklepu."
-}
+},
+
+  "Products_cta": {
+    "badge": "Indywidualne zamówienia",
+    "title": "Nie znalazłeś",
+    "title2":"idealnego produktu?",
+    "description": "Wykonujemy produkty na zamówienie według Twoich wymiarów i projektów. Skontaktuj się z nami, a stworzymy coś wyjątkowego specjalnie dla Ciebie.",
+    "custom_design": "Projekty na wymiar",
+    "free_consultation": "Bezpłatna konsultacja",
+    "quality_guarantee": "Gwarancja jakości",
+    "fast_delivery": "Realizacja w 14 dni",
+    "certified": "Certyfikowane",
+    "experience": "10+ lat",
+    "rating": "★★★★★"
+  }
+
+
 
 
 

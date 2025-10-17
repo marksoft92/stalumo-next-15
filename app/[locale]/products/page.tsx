@@ -2,10 +2,12 @@ import { Metadata } from "next";
 import Container from "@/components/ui/container";
 import ProductCard from "@/components/ProductCard";
 import PerformanceSlider from "@/components/PerformanceSlider";
+import { Flame, Truck, Shield } from 'lucide-react';
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { Alert } from "@mui/material";
 import { notFound } from "next/navigation";
+import ProductsCTASection from "@/components/cart/ProductsCta";
 
 const fetchProducts = async (locale: string, page: number, limit: number) => {
 
@@ -41,14 +43,21 @@ const ProductsPageContainer = async ({ params }: { params: any }) => {
 
 
   const t = await getTranslations("Products");
+  const tHeader = await getTranslations("Header");
   const currency = locale === "pl" ? 'zł' : "PLN"
-  return (
+  return (<>
     <Container>
+
       <div>
 
+          {/* Breadcrumb */}
+          <nav className="mb-8 text-sm text-neutral-400 mt-[1rem]">
+            <Link href="/"><span>{tHeader("home")}</span></Link> / <Link href="/products"><span>{t("title")}</span></Link> 
+          </nav>
 
         {(products?.length && (
-          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden mt-[5rem]">
+          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden mt-[3rem]">
+            
             {products.map((p: any) => (
 
               <ProductCard
@@ -75,7 +84,9 @@ const ProductsPageContainer = async ({ params }: { params: any }) => {
             </h2>
           )}
       </div>
+      <ProductsCTASection />
     </Container>
+    </>
   );
 };
 

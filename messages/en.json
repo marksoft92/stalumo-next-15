@@ -653,6 +653,19 @@
     "section10Content": "Polish law applies. Disputes are resolved by the competent courts at the Seller's registered office.",
 
     "contactNote": "If you have any questions, please contact customer support."
+  },
+  "Products_cta": {
+    "badge": "Custom Orders",
+    "title": "Didn't find",
+    "title2": "the perfect product?",
+    "description": "We create custom-made products according to your dimensions and designs. Contact us and we’ll craft something truly unique just for you.",
+    "custom_design": "Custom Designs",
+    "free_consultation": "Free Consultation",
+    "quality_guarantee": "Quality Guarantee",
+    "fast_delivery": "Delivery within 14 days",
+    "certified": "Certified",
+    "experience": "10+ years",
+    "rating": "★★★★★"
   }
 
 }
