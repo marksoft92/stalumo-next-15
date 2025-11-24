@@ -46,7 +46,7 @@ export default function CookieBanner(locale:any) {
         cookieConsent == null ? "visible" : "hidden"
       }`}
     >
-      <div className="flex flex-col bg-white rounded-[10px] fixed left-1/2 transform -translate-x-1/2  text-[#000] gap-5 p-4 shadow-[0_5px_10px_rgba(254,254,254,0.1)] bottom-0 z-10 max-lg:w-[90%]">
+      <div className="flex flex-col bg-white rounded-[10px] fixed left-1/2 transform -translate-x-1/2  text-[#000] gap-5 p-4 shadow-[0_5px_10px_rgba(254,254,254,0.1)] bottom-[3rem] z-10 max-lg:w-[90%]">
         <div className="cookie-banner-content">
           <div className="cookie-banner-text">
             <h4 className="flex flex-row justify-center text-center p-2 text-[#4070f4]">
