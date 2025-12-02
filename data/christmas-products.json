@@ -1,0 +1,264 @@
+{
+    "products": [
+      {
+        "id": "christmas-tree-stand-tree",
+        "type": "tree",
+        "name": {
+          "pl": "Stojak choinkowy - Choinka",
+          "en": "Christmas Tree Stand - Tree",
+          "de": "Weihnachtsbaumständer - Baum"
+        },
+        "variants": {
+          "colors": ["champagne", "silver", "black", "copper", "gold"],
+          "sizes": ["small", "medium", "large"]
+        },
+        "urls": {
+          "pl": {
+            "small": {
+              "champagne": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-szampanski-maly",
+              "silver": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-srebrny-maly",
+              "black": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-czarny-maly",
+              "copper": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-miedziany-maly",
+              "gold": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-zloty-maly"
+            },
+            "medium": {
+              "champagne": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-szampanski-sredni",
+              "silver": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-srebrny-sredni",
+              "black": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-czarny-sredni",
+              "copper": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-miedziany-sredni",
+              "gold": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-zloty-sredni"
+            },
+            "large": {
+              "champagne": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-szampanski-duzy",
+              "silver": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-srebrny-duzy",
+              "black": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-czarny-duzy",
+              "copper": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-miedziany-duzy",
+              "gold": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-choinka-zloty-duzy"
+            }
+          },
+          "en": {
+            "small": {
+              "champagne": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-champagne-small",
+              "silver": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-silver-small",
+              "black": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-black-small",
+              "copper": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-copper-small",
+              "gold": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-gold-small"
+            },
+            "medium": {
+              "champagne": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-champagne-medium",
+              "silver": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-silver-medium",
+              "black": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-black-medium",
+              "copper": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-copper-medium",
+              "gold": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-gold-medium"
+            },
+            "large": {
+              "champagne": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-champagne-large",
+              "silver": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-silver-large",
+              "black": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-black-large",
+              "copper": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-copper-large",
+              "gold": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-tree-gold-large"
+            }
+          },
+          "de": {
+            "small": {
+              "champagne": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-champagner-klein",
+              "silver": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-silber-klein",
+              "black": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-schwarz-klein",
+              "copper": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-kupfer-klein",
+              "gold": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-gold-klein"
+            },
+            "medium": {
+              "champagne": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-champagner-mittel",
+              "silver": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-silber-mittel",
+              "black": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-schwarz-mittel",
+              "copper": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-kupfer-mittel",
+              "gold": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-gold-mittel"
+            },
+            "large": {
+              "champagne": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-champagner-gross",
+              "silver": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-silber-gross",
+              "black": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-schwarz-gross",
+              "copper": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-kupfer-gross",
+              "gold": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-baum-gold-gross"
+            }
+          }
+        }
+      },
+      {
+        "id": "christmas-tree-stand-snowflake",
+        "type": "snowflake",
+        "name": {
+          "pl": "Stojak choinkowy - Śnieżynka",
+          "en": "Christmas Tree Stand - Snowflake",
+          "de": "Weihnachtsbaumständer - Schneeflocke"
+        },
+        "variants": {
+          "colors": ["champagne", "silver", "black", "copper", "gold"],
+          "sizes": ["small", "medium", "large"]
+        },
+        "urls": {
+          "pl": {
+            "small": {
+              "champagne": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-szampanski-maly",
+              "silver": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-srebrny-maly",
+              "black": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-czarny-maly",
+              "copper": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-miedziany-maly",
+              "gold": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-zloty-maly"
+            },
+            "medium": {
+              "champagne": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-szampanski-sredni",
+              "silver": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-srebrny-sredni",
+              "black": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-czarny-sredni",
+              "copper": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-miedziany-sredni",
+              "gold": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-zloty-sredni"
+            },
+            "large": {
+              "champagne": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-szampanski-duzy",
+              "silver": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-srebrny-duzy",
+              "black": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-czarny-duzy",
+              "copper": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-miedziany-duzy",
+              "gold": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-sniezynka-zloty-duzy"
+            }
+          },
+          "en": {
+            "small": {
+              "champagne": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-champagne-small",
+              "silver": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-silver-small",
+              "black": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-black-small",
+              "copper": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-copper-small",
+              "gold": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-gold-small"
+            },
+            "medium": {
+              "champagne": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-champagne-medium",
+              "silver": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-silver-medium",
+              "black": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-black-medium",
+              "copper": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-copper-medium",
+              "gold": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-gold-medium"
+            },
+            "large": {
+              "champagne": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-champagne-large",
+              "silver": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-silver-large",
+              "black": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-black-large",
+              "copper": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-copper-large",
+              "gold": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-snowflake-gold-large"
+            }
+          },
+          "de": {
+            "small": {
+              "champagne": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-champagner-klein",
+              "silver": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-silber-klein",
+              "black": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-schwarz-klein",
+              "copper": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-kupfer-klein",
+              "gold": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-gold-klein"
+            },
+            "medium": {
+              "champagne": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-champagner-mittel",
+              "silver": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-silber-mittel",
+              "black": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-schwarz-mittel",
+              "copper": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-kupfer-mittel",
+              "gold": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-gold-mittel"
+            },
+            "large": {
+              "champagne": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-champagner-gross",
+              "silver": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-silber-gross",
+              "black": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-schwarz-gross",
+              "copper": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-kupfer-gross",
+              "gold": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-schneeflocke-gold-gross"
+            }
+          }
+        }
+      },
+      {
+        "id": "christmas-tree-stand-star",
+        "type": "star",
+        "name": {
+          "pl": "Stojak choinkowy - Gwiazda",
+          "en": "Christmas Tree Stand - Star",
+          "de": "Weihnachtsbaumständer - Stern"
+        },
+        "variants": {
+          "colors": ["champagne", "silver", "black", "copper", "gold"],
+          "sizes": ["small", "medium", "large"]
+        },
+        "urls": {
+          "pl": {
+            "small": {
+              "champagne": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-szampanski-maly",
+              "silver": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-srebrny-maly",
+              "black": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-czarny-maly",
+              "copper": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-miedziany-maly",
+              "gold": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-zloty-maly"
+            },
+            "medium": {
+              "champagne": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-szampanski-sredni",
+              "silver": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-srebrny-sredni",
+              "black": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-czarny-sredni",
+              "copper": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-miedziany-sredni",
+              "gold": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-zloty-sredni"
+            },
+            "large": {
+              "champagne": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-szampanski-duzy",
+              "silver": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-srebrny-duzy",
+              "black": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-czarny-duzy",
+              "copper": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-miedziany-duzy",
+              "gold": "http://localhost:3000/pl/produkty/stalumo-stojak-choinkowy-gwiazda-zloty-duzy"
+            }
+          },
+          "en": {
+            "small": {
+              "champagne": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-champagne-small",
+              "silver": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-silver-small",
+              "black": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-black-small",
+              "copper": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-copper-small",
+              "gold": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-gold-small"
+            },
+            "medium": {
+              "champagne": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-champagne-medium",
+              "silver": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-silver-medium",
+              "black": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-black-medium",
+              "copper": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-copper-medium",
+              "gold": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-gold-medium"
+            },
+            "large": {
+              "champagne": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-champagne-large",
+              "silver": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-silver-large",
+              "black": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-black-large",
+              "copper": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-copper-large",
+              "gold": "http://localhost:3000/en/products/stalumo-christmas-tree-stand-star-gold-large"
+            }
+          },
+          "de": {
+            "small": {
+              "champagne": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-champagner-klein",
+              "silver": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-silber-klein",
+              "black": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-schwarz-klein",
+              "copper": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-kupfer-klein",
+              "gold": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-gold-klein"
+            },
+            "medium": {
+              "champagne": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-champagner-mittel",
+              "silver": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-silber-mittel",
+              "black": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-schwarz-mittel",
+              "copper": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-kupfer-mittel",
+              "gold": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-gold-mittel"
+            },
+            "large": {
+              "champagne": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-champagner-gross",
+              "silver": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-silber-gross",
+              "black": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-schwarz-gross",
+              "copper": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-kupfer-gross",
+              "gold": "http://localhost:3000/de/producten/stalumo-weihnachtsbaumstaender-stern-gold-gross"
+            }
+          }
+        }
+      }
+    ],
+    "summary": {
+      "total_products": 3,
+      "product_types": ["tree", "snowflake", "star"],
+      "languages": ["pl", "en", "de"],
+      "colors": ["champagne", "silver", "black", "copper", "gold"],
+      "sizes": ["small", "medium", "large"],
+      "total_variants": 45
+    }
+  }

@@ -8,6 +8,7 @@ import { Link } from "@/i18n/routing";
 import { Alert } from "@mui/material";
 import { notFound } from "next/navigation";
 import ProductsCTASection from "@/components/cart/ProductsCta";
+import ProductSpecialCard from "@/components/ProductSpecialCard";
 
 const fetchProducts = async (locale: string, page: number, limit: number) => {
 
@@ -34,7 +35,37 @@ const images: string[] = [
 
 const ProductsPageContainer = async ({ params }: { params: any }) => {
   const { locale } = params;
-  const products = await fetchProducts(locale, 1, 12);
+  const productsAll = await fetchProducts(locale, 1, 12);
+
+
+  const allProducts = Object.values(productsAll);
+
+  // produkty specjalne (stojaki)
+  const specials = productsAll.filter((p: any) => {
+    const name = p?.name?.toLowerCase() || "";
+
+    const isStojak = name.startsWith("stalumo-stojak");
+    const isLarge =
+      name.includes("duzy") ||
+      name.includes("duze") ||
+      name.includes("duży") ||
+      name.includes("duże");
+
+    return isStojak && isLarge;
+  });
+
+  // produkty standardowe (reszta)
+  const products = allProducts.filter((p: any) =>
+    !p?.name?.startsWith("stalumo-stojak")
+  );
+
+
+
+
+
+
+
+
 
   if (!products || products.length === 0) {
     notFound();
@@ -50,14 +81,33 @@ const ProductsPageContainer = async ({ params }: { params: any }) => {
 
       <div>
 
-          {/* Breadcrumb */}
-          <nav className="mb-8 text-sm text-neutral-400 mt-[1rem]">
-            <Link href="/"><span>{tHeader("home")}</span></Link> / <Link href="/products"><span className="text-white">{t("title")}</span></Link> 
-          </nav>
+        {/* Breadcrumb */}
+        <nav className="mb-8 text-sm text-neutral-400 mt-[1rem]">
+          <Link href="/"><span>{tHeader("home")}</span></Link> / <Link href="/products"><span className="text-white">{t("title")}</span></Link>
+        </nav>
 
         {(products?.length && (
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden mt-[3rem]">
-            
+            {specials.map((p: any) => (
+
+              <ProductSpecialCard
+                currency={currency}
+                key={p.id}
+                slug={
+                  (locale === "pl"
+                    ? "/produkty/"
+                    : locale === "en"
+                      ? "/products/"
+                      : "/producten/") + p?.meta_data_parsed?.slugs?.[locale]
+                }
+                title={p?.meta_data_parsed?.locales?.[locale]?.title}
+                imageUrl={p?.images?.[0]?.src}
+                price={p?.sale_price}
+                regular_price={p?.regular_price}
+                features={p?.meta_data_parsed?.locales?.[locale]?.availability}
+              />
+            ))}
+
             {products.map((p: any) => (
 
               <ProductCard
@@ -86,7 +136,7 @@ const ProductsPageContainer = async ({ params }: { params: any }) => {
       </div>
       <ProductsCTASection />
     </Container>
-    </>
+  </>
   );
 };
 

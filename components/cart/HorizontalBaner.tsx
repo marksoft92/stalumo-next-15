@@ -51,8 +51,8 @@ export default function ProductsBanner() {
                 (locale === "pl"
                   ? "/produkty/"
                   : locale === "en"
-                  ? "/products/"
-                  : "/producten/") + p?.meta_data_parsed?.slugs?.[locale]
+                    ? "/products/"
+                    : "/producten/") + p?.meta_data_parsed?.slugs?.[locale]
               }
               key={`${p.id}-${idx}`}
               className="flex w-[400px] h-[200px] min-w-[400px] bg-gradient-to-r from-neutral-800 to-neutral-900 border border-neutral-700/50 rounded-xl overflow-hidden mx-2 shadow-md hover:border-red-500/30 transition-all duration-300"

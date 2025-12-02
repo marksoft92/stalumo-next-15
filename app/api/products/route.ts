@@ -5,7 +5,7 @@ export async function GET(req: Request) {
         const { searchParams } = new URL(req.url);
         const locale = searchParams.get("locale") || "en";
         const page = searchParams.get("page") || "1";
-        const limit = searchParams.get("limit") || "12";
+        const limit = "100";
 
 
 
@@ -57,6 +57,14 @@ export async function GET(req: Request) {
             return product;
         });
 
+
+
+
+
+
+
+
+
         return NextResponse.json(products);
     } catch (err: any) {
         console.error("❌ Błąd w /api/products:", err);
@@ -89,7 +97,7 @@ export async function POST(req: Request) {
             cache: "no-store",
         });
 
- 
+
 
         if (!res.ok) {
             const errorText = await res.text();
@@ -104,8 +112,8 @@ export async function POST(req: Request) {
 
         // jeśli WooPayments zwróci `payment_url`
         if (order.payment_url) {
-// order.payment_url
-console.log("👉 Payment URL:", 1);
+            // order.payment_url
+            console.log("👉 Payment URL:", 1);
         }
 
         return NextResponse.json(order);
