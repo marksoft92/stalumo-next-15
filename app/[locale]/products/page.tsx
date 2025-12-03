@@ -46,10 +46,10 @@ const ProductsPageContainer = async ({ params }: { params: any }) => {
 
     const isStojak = name.startsWith("stalumo-stojak");
     const isLarge =
-      name.includes("duzy") ||
-      name.includes("duze") ||
-      name.includes("duży") ||
-      name.includes("duże");
+      name.includes("maly") ||
+      name.includes("male") ||
+      name.includes("mały") ||
+      name.includes("małe");
 
     return isStojak && isLarge;
   });
