@@ -621,7 +621,17 @@
   "shipping_details":"Inne dane do dostarczenia",
   "cart":"Koszyk",
   "products":"Produkty",
-  "homePage":"Strona główna"
+  "homePage":"Strona główna",
+  "coupon_code": "Kod rabatowy",
+  "coupon_placeholder": "Wprowadź kod rabatowy",
+  "apply": "Zastosuj",
+  "coupon_empty": "Wprowadź kod rabatowy",
+  "coupon_applied": "Kod rabatowy zastosowany!",
+  "coupon_applied_label": "Zastosowano kod",
+  "coupon_invalid": "Nieprawidłowy kod rabatowy",
+  "coupon_error": "Błąd podczas sprawdzania kodu",
+  "discount": "Rabat",
+  "subtotal": "Suma częściowa"
 },
 "Terms": {
   "title": "Regulamin sklepu internetowego",

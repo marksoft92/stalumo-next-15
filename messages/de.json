@@ -615,8 +615,17 @@
   "shipping_details":"Lieferinformationen",
   "cart": "Warenkorb",
   "products": "Produkte",
-  "homePage": "Startseite"
-
+  "homePage": "Startseite",
+"coupon_code": "Gutscheincode",
+      "coupon_placeholder": "Gutscheincode eingeben",
+      "apply": "Anwenden",
+      "coupon_empty": "Gutscheincode eingeben",
+      "coupon_applied": "Gutscheincode angewendet!",
+      "coupon_applied_label": "Angewendeter Code",
+      "coupon_invalid": "Ungültiger Gutscheincode",
+      "coupon_error": "Fehler beim Überprüfen des Codes",
+      "discount": "Rabatt",
+      "subtotal": "Zwischensumme"
 },
 "Terms": {
     "title": "Allgemeine Geschäftsbedingungen (AGB)",

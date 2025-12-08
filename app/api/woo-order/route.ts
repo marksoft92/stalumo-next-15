@@ -1,5 +1,5 @@
+// app/api/woo-order/route.ts
 import { NextResponse } from "next/server";
-import { buffer } from "stream/consumers"; // opcjonalnie jeśli potrzebujesz
 
 export async function POST(req: Request) {
     try {
@@ -16,8 +16,33 @@ export async function POST(req: Request) {
         // 📥 dane zamówienia od klienta (formularz Next.js)
         const body = await req.json();
 
+        // 🔹 Przygotuj meta_data
+        const metaData = [];
+
+        // Dodaj NIP jeśli istnieje
+        if (body.vat_number) {
+            metaData.push({ key: "billing_nip", value: body.vat_number });
+        }
+
+        // Dodaj informację o rabacie jeśli był zastosowany kupon
+        if (body.discount_amount && body.discount_amount > 0) {
+            metaData.push({
+                key: "_cart_discount",
+                value: body.discount_amount.toString()
+            });
+        }
+
+        // 🔹 Przygotuj coupon_lines jeśli był zastosowany kupon
+        const couponLines = [];
+        if (body.coupon_code && body.discount_amount) {
+            couponLines.push({
+                code: body.coupon_code,
+                discount: body.discount_amount.toString()
+            });
+        }
+
         // 🔹 Tworzymy strukturę do WooCommerce API
-        const wooOrder = {
+        const wooOrder: any = {
             payment_method: "wcpay",
             payment_method_title: "WooCommerce Payments",
             set_paid: false,
@@ -33,17 +58,24 @@ export async function POST(req: Request) {
                 phone: body.phone,
             },
             shipping: {
-                first_name:body.shipping.first_name  || body.first_name,
-                last_name:body.shipping.last_name   || body.last_name,
-                address_1:body.shipping.address_1   || body.address_1,
-                city:body.shipping.city   || body.city,
-                postcode: body.shipping.postcode  || body.postcode,
-                country: body.shipping.country  || body.country,            
-                phone:body.shipping.phone   || body.phone,
+                first_name: body.shipping?.first_name || body.first_name,
+                last_name: body.shipping?.last_name || body.last_name,
+                address_1: body.shipping?.address_1 || body.address_1,
+                city: body.shipping?.city || body.city,
+                postcode: body.shipping?.postcode || body.postcode,
+                country: body.shipping?.country || body.country,
+                phone: body.shipping?.phone || body.phone,
             },
-            line_items: body.line_items || [], // ❗ z globalnego store
-            meta_data: body.vat_number ? [{ key: "billing_nip", value: body.vat_number }] : [],
+            line_items: body.line_items || [],
+            meta_data: metaData,
         };
+
+        // ✅ Dodaj coupon_lines tylko jeśli kupon został zastosowany
+        if (couponLines.length > 0) {
+            wooOrder.coupon_lines = couponLines;
+        }
+
+        console.log("📦 Wysyłam zamówienie do WooCommerce:", JSON.stringify(wooOrder, null, 2));
 
         const res = await fetch(`${apiUrl}/orders`, {
             method: "POST",
@@ -54,8 +86,6 @@ export async function POST(req: Request) {
             body: JSON.stringify(wooOrder),
             cache: "no-store",
         });
-
-
 
         if (!res.ok) {
             const errorText = await res.text();
@@ -68,9 +98,11 @@ export async function POST(req: Request) {
 
         const order = await res.json();
 
+        console.log("✅ Zamówienie utworzone:", order.id);
+
         return NextResponse.json(order);
     } catch (err: any) {
         console.error("❌ Błąd w /api/woo-order:", err);
         return NextResponse.json({ error: err.message }, { status: 500 });
     }
-}
+} 

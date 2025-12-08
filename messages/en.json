@@ -612,7 +612,17 @@
   "shipping_details":"Shipping details",
   "cart": "Cart",
   "products": "Products",
-  "homePage": "Home page"
+  "homePage": "Home page",
+  "coupon_code": "Coupon Code",
+      "coupon_placeholder": "Enter coupon code",
+      "apply": "Apply",
+      "coupon_empty": "Enter coupon code",
+      "coupon_applied": "Coupon code applied!",
+      "coupon_applied_label": "Applied code",
+      "coupon_invalid": "Invalid coupon code",
+      "coupon_error": "Error while checking code",
+      "discount": "Discount",
+      "subtotal": "Subtotal"
 },
 "Terms": {
     "title": "Terms and Conditions",
